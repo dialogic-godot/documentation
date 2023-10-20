@@ -1,4 +1,4 @@
-![header_saving_loading](./Media/Headers/saving_loading.png)
+![header_getting_started](./Media/Headers/autoadvance.png)
 
 ## What is Auto-Advance?
 
