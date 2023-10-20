@@ -32,6 +32,10 @@ This only scratches the surface of what's possible though. Here is a small list 
 
 - Access most functionality from code e.g. `Dialogic.Portraits.change_portrait(Emilio, "happy")`, `Dialogic.Backgrounds.update_background("res://icon.png")`
 
+## Getting started
+
+You should follow [this introduction](./Documentation/Getting_Started.md) if you want to get started with dialogic.
+
 ## Can I upgrade my current game made using Dialogic 1?
 
 There are several things to overcome when upgrading from Dialogic 1. First of all, Dialogic 1 is exclusively for Godot 3, while Dialogic 2 is made for Godot 4. That means that you first need to make sure that your project works in Godot 4 by making the necessary adjustments required.
