@@ -25,6 +25,10 @@ For Visual Novels, enabling players to set their text speed is a common practice
 This setting, located within `Dialogic.Setting`, allows you to fine-tune the delay modifier, multiplying "Additional Delay".\
 By default, if this value is not set, Dialogic uses a multiplier of 1, causing no change to the delay.
 
+[comment]: <> (TODO: Add a backlink to the Settings documentation)
+> **Note:** \
+Every setting added to `Dialogic.Setting` is automatically saved and loaded by Dialogic for the *player*.
+
 ### Per Word vs. Per Character
 Some languages, for instance Japanese, don't separate words by spaces.\
 Dialogic uses the popular whitespace used by the spacebar to determine when a word ends and another begins.\
