@@ -60,6 +60,8 @@ BBCode tags can enable Auto-Advance via `[aa]` or `[aa = 10]`.\
 This forces Auto-Advance to last at least until the next Text Timeline Event.\
 If the BBCode provides a valid duration in seconds, Auto-Advance will wait for this amount, ignoring `per_word_delay` and `per_character_delay`, but respecting `await_playing_voice`.
 
+Alternatively, if you want to override the Auto-Advance time for the current event only, add a `?` behind the duration: `[aa = 10?]`.
+
 ### Signal
 Stay informed about changes in Auto-Advance's state by leveraging the `Dialogic.Text.autoadvance_changed` signal.
 
