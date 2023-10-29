@@ -68,6 +68,24 @@ code.highlighter-rouge {
 	font-weight: bold;
 }
 
+code {
+	.k, .ow {
+		color: #ff4381;
+	}
+	.nf {
+		color: #4bccff;
+	}
+	.s2, .s1 {
+		color: #ffff3d;
+	}
+	.kt {
+		color: #7eff7e;
+	}
+	.c1 {
+		color: gray;
+	}
+}
+
 header {
 	background-color: #2980b9;
 	h1 {
