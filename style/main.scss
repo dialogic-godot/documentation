@@ -1,0 +1,33 @@
+---
+---
+
+// small reset
+html, body {
+	margin: 0;
+	padding: 0;
+}
+* {
+	box-sizing: border-box;
+}
+
+
+img {
+	display: block;
+	max-width: 100%;
+	height: auto;
+}
+
+.content {
+	display: grid;
+	grid-template-columns: 320px 1fr;
+	max-width: 100%;
+	
+	aside {
+		background: #eee;
+		padding: 1em;
+	}
+	
+	main {
+		padding: 30px;
+	}
+}

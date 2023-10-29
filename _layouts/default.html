@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ page.title }}</title>
+		<link rel="stylesheet" href="/style/main.css">
+</head>
+<body>
+    <header>
+        <h1>{{ site.title }}</h1>
+        <nav>
+            <!-- Add navigation links here -->
+        </nav>
+    </header>
+
+		<div class="content">
+			<aside>
+					<!-- generate sidebar -->
+<ul>
+	{% for post in site.pages %}
+		{% if post.title %}
+			<li>
+				<a href="{{ post.url }}">{{ post.title }}</a>
+			</li>
+		{% endif %}
+	{% endfor %}
+</ul>
+	
+			</aside>
+			<main>
+					{{ content }}
+			</main>
+		</div>
+
+    <footer>
+        <p>Dialogic &copy; {{ site.time | date: '%Y' }} {{ site.author }}</p>
+    </footer>
+</body>
+</html>

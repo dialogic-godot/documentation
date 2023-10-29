@@ -1,0 +1,9 @@
+defaults:
+  - scope:
+      path: "" # An empty string here means all files in the project.
+      type: "pages" # Assuming you want to apply this to posts. If you want to apply it to pages, use "pages".
+    values:
+      layout: "default"
+title: "Dialogic Documentation"
+author: "Emilio Coppola, Jowan Spooner"
+permalink: pretty

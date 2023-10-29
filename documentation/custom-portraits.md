@@ -1,4 +1,8 @@
-![header_custom_portraits](./Media/Headers/custom_portraits.png)
+---
+title: Custom Portraits
+---
+
+![header_custom_portraits](./media/headers/custom_portraits.png)
 
 <details open>
 <summary>📜 Content</summary>
