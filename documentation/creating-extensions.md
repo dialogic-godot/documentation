@@ -2,7 +2,7 @@
 title: Creating Extensions
 ---
 
-![header_creating_extensions](./media/headers/creating_extensions.png)
+![header_creating_extensions](/media/headers/creating_extensions.png)
 ***Sometimes dialogic is just not enough***. Whether it's an event, an editor, a setting or a text effect that is missing: You can add it.
 An extension is a folder that contains all the information about these things, so that dialogic can use it.
 Extensions are very powerful. Actually just as powerful as dialogic built-in stuff (because it works exactly the same).

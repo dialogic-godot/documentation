@@ -2,7 +2,7 @@
 title: Custom Portraits
 ---
 
-![header_custom_portraits](./media/headers/custom_portraits.png)
+![header_custom_portraits](/media/headers/custom_portraits.png)
 
 <details open>
 <summary>📜 Content</summary>
