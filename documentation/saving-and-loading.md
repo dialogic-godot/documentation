@@ -1,4 +1,8 @@
-![header_saving_loading](./Media/Headers/saving_loading.png)
+---
+title: Saving & Loading
+---
+
+![header_saving_loading](./media/headers/saving_loading.png)
 
 Obviously many games require the ability to save and load.
 

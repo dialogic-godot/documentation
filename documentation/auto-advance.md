@@ -1,4 +1,8 @@
-![header_getting_started](./Media/Headers/autoadvance.png)
+---
+title: Auto-Advance
+---
+
+![header_getting_started](/media/headers/autoadvance.png)
 
 ## What is Auto-Advance?
 
@@ -12,7 +16,7 @@ Let's explore how you can enhance your player's experience with Auto-Advance, ta
 
 ### Text Settings
 In Dialogic's Settings tab, under the Text section, you can find the Auto-Advance settings.
-![header_saving_loading](./Media/AutoAdvance/auto_advance_settings.png)
+![header_saving_loading](/media/auto-advance/auto_advance_settings.png)
 Hover over the tooltip icons to learn more about each settings.
 
 

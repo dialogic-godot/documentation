@@ -1,4 +1,4 @@
-![header_faq](./Media/header_faq.png)
+![header_faq](/media/header_faq.png)
 
 ## May I use Dialogic in one of my projects?
 

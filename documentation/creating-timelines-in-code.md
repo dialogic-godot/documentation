@@ -1,4 +1,8 @@
-![header_timelines_in_code](./Media/timelines_in_code.png)
+---
+title: Creating Timelines In Code
+---
+
+![header_timelines_in_code](./media/timelines_in_code.png)
 
 As timelines and events are just resources, you can create new timelines in code.
 

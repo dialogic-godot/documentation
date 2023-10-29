@@ -1,4 +1,8 @@
-![header_character_portraits](./Media/Headers/character_portraits.png)
+---
+title: Characters & Portraits
+---
+
+![header_character_portraits](./media/headers/character_portraits.png)
 
 The character editor allows to edit character resources (.dch). It has 4 sections.
 
@@ -15,7 +19,7 @@ The character editor allows to edit character resources (.dch). It has 4 section
   
   </details>
 
-<img src="./Media/character_editor.png" width="600"/>
+<img src="./media/character_editor.png" width="600"/>
 
 ## 1. Main Settings
 
@@ -59,7 +63,7 @@ A character can have unlimited portraits, but each has to have a unique name.
 **(1)** Add a new portrait | **(2)** Add a new portrait group | **(3)** Import a folder of images as portraits
 **(4)** Rename a portrait or group *(or double-click or use F2)* | **(5)** Duplicate a portrait | **(6)** Delete a portrait or group *(or Delete key)*
 
-![image](./Media/portrait_list_buttons.png)
+![image](./media/portrait_list_buttons.png)
 
 *Note: Groups are not actually saved. Instead a portrait in gets the name Group/Portrait. This means empty groups will get lost when leaving the editor.*
 
