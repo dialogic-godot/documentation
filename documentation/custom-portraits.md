@@ -4,20 +4,14 @@ title: Custom Portraits
 
 ![header_custom_portraits](/media/headers/custom_portraits.png)
 
-<details open>
-<summary>📜 Content</summary>
 
-- [1. Introduction](#1-Introduction)
+## 📜 Content
 
-- [2. Requirements](#2-Requirements)
-
-- [3. Overwriting methods](#3-Overwriting-methods)
-
-- [4. Export Overrides](#4-Export-overrides)
-
-- [5. Examples](#5-Examples)
-  
-  </details>
+- [1. Introduction](#1-introduction)
+- [2. Requirements](#2-requirements)
+- [3. Overwriting methods](#3-overwriting-methods)
+- [4. Export Overrides](#4-export-overrides)
+- [5. Examples](#5-examples)
 
 ## 1. Introduction
 

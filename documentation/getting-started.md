@@ -4,25 +4,22 @@ title: Getting Started
 
 ![header_getting_started](/media/headers/getting_started.png)
 
-<summary>📜 Content</summary>
+## 📜 Content
 
-- [1. Installation & Activation](#1-Installation--Activation)
-- [2. Meeting the editor](#2-Meeting-the-editor)
-- [3. Creating a timeline](#3-Creating-a-timeline)
-- [4. Creating a character](#4-Creating-a-character)
-- [5. Adding the dialog to your game](#5-Adding-the-dialog-to-your-game)
+- [1. Installation & Activation](#1-installation--activation)
+- [2. Meeting the editor](#2-meeting-the-editor)
+- [3. Creating a timeline](#3-creating-a-timeline)
+- [4. Creating a character](#4-creating-a-character)
+- [5. Adding the dialog to your game](#5-adding-the-dialog-to-your-game)
 
 ## 1. Installation & Activation
 
 First of all, you should install dialogic. This can be done by downloading the latest [release](https://github.com/coppolaemilio/dialogic/releases) zip-file from github, extracting it and moving the addons/dialogic folder to your projects `res://addons/dialogic` (you might have to create the addons folder). 
 
-<details>
-<summary><i>🚧How to install the latest WIP version🚧</i></summary>
+## 🚧How to install the latest WIP version🚧
 
 > *Dialogic is constantly evolving. Oftentimes fixes for bugs or new features might only be available on the main branch. This is especially true during the alpha and beta phase. If you are interested in using the main branch it's easy to do so.*
 > *Go to [the main page of the repository](https://github.com/coppolaemilio/dialogic) and click on the green `Code` button then presse the `Download ZIP` button. From there you can install that zip's content like a release.* 
-
-</details>
 
 Once all the files are where they should be, you can open your project. You will see some errors in the output, but ignore them and enable the plugin under `Project > Project Settings` in the *Plugin* tab. Check the `enabled` button. Then restart your project. If everything went right, you should not see any more errors.
 
@@ -68,7 +65,7 @@ As for timelines, you need to select the place to save to and a name.
 Once your character is created, you will see the character editor. This editor has 4 main sections.
 <img src="/media/character_editor.png" width="600"/>
 
-You can learn more about portraits, custom portraits and the character settings in this tutorial: *[Characters & Portraits](./Characters_&_Portraits.md)*
+You can learn more about portraits, custom portraits and the character settings in this tutorial: *[Characters & Portraits](/documentation/characters-and-portraits)*
 
 ## 5. Adding the dialog to your game
 
@@ -99,11 +96,6 @@ func _input(event:InputEvent):
 Congratulations! You now know the basics of dialogic. There is much more to learn though. Here is a list of tutorials you might want to explore next:
 
 - [Writing timelines in text format](./Timeline_Text_Syntax.md)
-
-- [Characters and Portraits](./Characters_&_Portraits.md)
-
-- [Creating timelines in code](./Creating_Timelines_In_Code.md)
-
-- [Designing your own layout scene](Dialogic_Nodes.md)
-
-- [Creating custom events](Creating_Extensions.md)
+- [Characters and Portraits](/documentation/characters-and-portraits)
+- [Creating timelines in code](/documentation/creating-timelines-in-code)
+- [Designing your own layout scene](/documentation/dialogic-nodes)
