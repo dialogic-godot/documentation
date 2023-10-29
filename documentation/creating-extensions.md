@@ -16,7 +16,7 @@ Extensions are very powerful. Actually just as powerful as dialogic built-in stu
 - [4. Custom Subsystems](#4-custom-subsystems)
 - [5. Custom Animations](#5-custom-animations)
 - [6. Custom dialogic nodes](#6-custom-dialogic-nodes)
-- [7. Custom Settings Pages](#7-custom-Settings-Pages)
+- [7. Custom Settings Pages](#7-custom-settings-pages)
 
 ## 1. Getting started
 
