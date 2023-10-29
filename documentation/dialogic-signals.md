@@ -7,18 +7,13 @@ title: Dialogic Signals
 Dialogic provides a lot of signals that allow you to do all kinds of things.
 If you are new to godot's signals [learn how to use them here](https://docs.godotengine.org/en/stable/getting_started/step_by_step/signals.html).
 
-<details open>
-<summary>📜 Content</summary>
+
+## 📜 Content
 
 - [Signal event](#signal-event)
-
 - [Text signal](#text-signal)
-
-- [Start & End signals](#Start--End-signals)
-
-- [Subsystem signals](#Subsystem-signals)
-
-</details>
+- [Start & End signals](#start--end-signals)
+- [Subsystem signals](#subsystem-signals)
 
 ## Signal event
 

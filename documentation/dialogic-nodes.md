@@ -4,7 +4,7 @@ title: Dialogic Nodes
 
 ![header_dialogic_nodes_layouts](/media/headers/dialogic_nodes_layouts.png)
 
-To make timelines work in your your game, there have to be **Dialogic Nodes** in the tree. Usually this means dialogic will add a **layout scene** made out of DialogicNodes. This is what happens if you call Dialogic.start() and can be set in the [Style editor](./Styles_&_Layouts.md). It is also possible to integrate DialogicNodes into your existing UI. 
+To make timelines work in your your game, there have to be **Dialogic Nodes** in the tree. Usually this means dialogic will add a **layout scene** made out of DialogicNodes. This is what happens if you call Dialogic.start() and can be set in the [Style editor](/documentation/styles-and-layouts). It is also possible to integrate DialogicNodes into your existing UI. 
 
 ## What is a dialogic node?
 

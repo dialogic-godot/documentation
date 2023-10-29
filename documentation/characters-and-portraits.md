@@ -6,18 +6,12 @@ title: Characters & Portraits
 
 The character editor allows to edit character resources (.dch). It has 4 sections.
 
-<details open>
-<summary>📜 Content</summary>
-
+## 📜 Content
 - [1. Main Settings](#1-main-settings)
-
 - [2. Portrait List](#2-portrait-list)
-
-- [3. Preview](#3-Preview)
-
+- [3. Preview](#3-preview)
 - [4. Portrait Settings](#4-portrait-settings)
-  
-  </details>
+
 
 <img src="/media/character_editor.png" width="600"/>
 
@@ -75,7 +69,7 @@ The preview shows the selected portrait (or nothing, if you don't have a portrai
 
 The portrait section consists of multiple sections, each containing settings for the currently selected portrait.
 
-The most important setting is the scene a portrait uses. The default scene allows you to select an image. Learn more about how to create a custom portrait here: [Custom portraits](./Custom_Portraits.md)
+The most important setting is the scene a portrait uses. The default scene allows you to select an image. Learn more about how to create a custom portrait here: [Custom portraits](/documentation/custom-portraits)
 
 For any portrait you can set a scale, offset and mirror setting. These are additive to the main scale, offset and mirror. You can choose to ignore the main character scale to work around this. 
 

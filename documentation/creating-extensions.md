@@ -9,18 +9,14 @@ Extensions are very powerful. Actually just as powerful as dialogic built-in stu
 
 **Extension can add:** main editors, events, subsystems, text effects & modifiers, portrait animations, settings, character settings, layout presets and dialogic nodes.
 
-<details open>
-<summary>📜 Content</summary>
-
-- [1. Getting started](#1-Getting-started)
-- [2. The index.gd file](#2-The-essential-part-indexgd)
+## 📜 Content
+- [1. Getting started](#1-getting-started)
+- [2. The index.gd file](#2-the-essential-part-indexgd)
 - [3. Custom events](#3-custom-events)
-- [4. Custom Subsystems](#4-Custom-Subsystems)
+- [4. Custom Subsystems](#4-custom-subsystems)
 - [5. Custom Animations](#5-custom-animations)
-- [6. Custom dialogic nodes](#6-Custom-dialogic-nodes)
-- [7. Custom Settings Pages](#7-Custom-Settings-Pages)
-
-</details>
+- [6. Custom dialogic nodes](#6-custom-dialogic-nodes)
+- [7. Custom Settings Pages](#7-custom-Settings-Pages)
 
 ## 1. Getting started
 
@@ -170,8 +166,8 @@ Animations are little scripts inheriting the `DialogicAnimation` class, you can 
 
 Your animation script should look something like this (bounce_in as example):
 
-<details open>
-<summary>❗ Animation Example Bounce </summary>
+
+### ❗ Animation Example Bounce 
 
 ```gdscript
 extends DialogicAnimation
@@ -188,8 +184,6 @@ func animate():
     tween.tween_property(node, 'modulate:a', 1.0, time)
     tween.finished.connect(emit_signal.bind('finished_once'))
 ```
-
-</details>
 
 *It's important that you:*
 
@@ -209,7 +203,7 @@ func animate():
 
 ## What are dialogic nodes?
 
-[Dialogic node](./Dialogic_Nodes.md) are nodes that in some way execute something visibly, logically or audibly.
+[Dialogic node](/documentation/dialogic-nodes) are nodes that in some way execute something visibly, logically or audibly.
 They are generally managed by a subsystem and found because they are automatically added to a group. This makes sure it doesn't matter where in the scene tree they are and how many of them exist.
 
 DialogicNodes do not need to be added by the index.gd file!
@@ -221,7 +215,7 @@ DialogicNodes do not need to be added by the index.gd file!
 An extension might want to add a dialogic settings editor. This is just a UI scene that has a script inheriting `DialogicSettingsPage`.
 
 - overwrite some methods (just the ones that you need)
-  - _get_title()
+  - `_get_title()`
   - _get_priority() -> return an int that will influence the order of settings pages
   - _refresh() -> whenever the settings are opened
   - _about_to_close() -> whenever the settings editor closes

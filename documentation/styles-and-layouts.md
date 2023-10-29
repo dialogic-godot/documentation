@@ -4,21 +4,17 @@ title: Styles & Layouts
 
 ![header_style-editor](/media/headers/styles_and_layouts.png)
 
-<details open>
-<summary>📜 Content</summary>
+## 📜 Content
 
-- [1. Styles & Layouts](#1-Styles--Layouts)
-
-- [2. The style editor](#2-The-style-editor)
-  
-  </details>
+- [1. Styles & Layouts](#1-styles--layouts)
+- [2. The style editor](#2-the-style-editor)
 
 # 1. Styles & Layouts
 
 - A **style** is a combination of a layout scene (preset or custom) and a set of settings. 
 - A **layout** is a scene that can display dialog ingame.
 
-Dialogic comes with some **preset layouts**, but you can create your own using DialogicNodes. Learn more about [custom layouts here](./Dialogic_Nodes.md).
+Dialogic comes with some **preset layouts**, but you can create your own using DialogicNodes. Learn more about [custom layouts here](/documentation/dialogic-nodes).
 
 ![layout_presets](/media/layout_presets.png)
 

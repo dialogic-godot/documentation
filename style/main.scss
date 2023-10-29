@@ -1,6 +1,8 @@
 ---
 ---
 
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@100&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
 // small reset
 html, body {
 	margin: 0;
@@ -9,6 +11,7 @@ html, body {
 }
 * {
 	box-sizing: border-box;
+	font-family: 'Lato', sans-serif;
 }
 
 
@@ -20,7 +23,7 @@ img {
 
 .content {
 	display: grid;
-	grid-template-columns: 320px 1fr;
+	grid-template-columns: 320px calc(100% - 320px);
 	max-width: 100%;
 
 	aside {
@@ -43,12 +46,43 @@ img {
 	}
 }
 
+pre {
+  background: #272525;
+  color: white;
+  padding: 17px;
+	font-family: 'JetBrains Mono', monospace;
+	max-width: 100%;
+	overflow: scroll;
+	display: block;
+	span {
+		font-family: 'JetBrains Mono', monospace;
+	}
+}
+
+code.highlighter-rouge {
+	font-family: "JetBrains Mono", monospace;
+  background: #d9d9d9;
+  color: black;
+  padding: 1px 5px;
+  border-radius: 6px;
+	font-weight: bold;
+}
+
 header {
 	background-color: #2980b9;
 	h1 {
-		padding: 0;
+		padding: 14px;
 		margin: 0;
 		color: white;
+		font-size: 22px;
+		display: inline-block;
+	}
+	nav {
+		display: inline-block;
+		a {
+			color: white;
+			text-decoration: none;
+		}
 	}
 }
 
