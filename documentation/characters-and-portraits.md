@@ -54,8 +54,12 @@ The portrait list allows you to add portraits to your character. A portrait is a
 
 A character can have unlimited portraits, but each has to have a unique name.
 
-**(1)** Add a new portrait | **(2)** Add a new portrait group | **(3)** Import a folder of images as portraits
-**(4)** Rename a portrait or group *(or double-click or use F2)* | **(5)** Duplicate a portrait | **(6)** Delete a portrait or group *(or Delete key)*
+1. Add a new portrait
+2. Add a new portrait group
+3. Import a folder of images as portraits
+4. Rename a portrait or group *(or double-click or use F2)*
+5. Duplicate a portrait
+6. Delete a portrait or group *(or Delete key)*
 
 ![image](/media/portrait_list_buttons.png)
 
