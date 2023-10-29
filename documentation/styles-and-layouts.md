@@ -2,7 +2,7 @@
 title: Styles & Layouts
 ---
 
-![header_style-editor](./media/headers/styles_and_layouts.png)
+![header_style-editor](/media/headers/styles_and_layouts.png)
 
 <details open>
 <summary>📜 Content</summary>
@@ -20,7 +20,7 @@ title: Styles & Layouts
 
 Dialogic comes with some **preset layouts**, but you can create your own using DialogicNodes. Learn more about [custom layouts here](./Dialogic_Nodes.md).
 
-![layout_presets](./media/layout_presets.png)
+![layout_presets](/media/layout_presets.png)
 
 *You can add more presets with extensions. Feel free to share cool layouts you've made via the [discord](https://discord.gg/2hHQzkf2pX).*
 
@@ -28,7 +28,7 @@ Dialogic comes with some **preset layouts**, but you can create your own using D
 
 The style editor allows you to create and edit styles. By default you only have the `Default` style that uses the VisualNovel layout.
 
-<img src="./media/style_editor.png" width="600"/>
+<img src="/media/style_editor.png" width="600"/>
 
 ### Style list
 
@@ -44,7 +44,7 @@ The style list section lets you:
 
 You can change the layout the current style uses by clicking `Change` next to the layout thumbnail. This will open a layout selection page:
 
-<img src="./media/style_editor_layout_selection.png" width="600"/>
+<img src="/media/style_editor_layout_selection.png" width="600"/>
 
 - Select Custom will allow you to select a scene from your project
 - Clicking a preset will show info about that preset and allow you to select it

@@ -2,7 +2,7 @@
 title: Dialogic Signals
 ---
 
-![header_signals](./media/headers/signals.png)
+![header_signals](/media/headers/signals.png)
 
 Dialogic provides a lot of signals that allow you to do all kinds of things.
 If you are new to godot's signals [learn how to use them here](https://docs.godotengine.org/en/stable/getting_started/step_by_step/signals.html).
@@ -24,7 +24,7 @@ If you are new to godot's signals [learn how to use them here](https://docs.godo
 
 The signal event will emit the signal `Dialogic.signal_event` and pass along the argument given in the event.
 
-![grafik](./media/signal_event.png)
+![grafik](/media/signal_event.png)
 
 *Here the argument is `"activate_something"`.*
 

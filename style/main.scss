@@ -5,6 +5,7 @@
 html, body {
 	margin: 0;
 	padding: 0;
+	background: #272525;
 }
 * {
 	box-sizing: border-box;
@@ -21,13 +22,42 @@ img {
 	display: grid;
 	grid-template-columns: 320px 1fr;
 	max-width: 100%;
-	
+
 	aside {
-		background: #eee;
+		background: #343131;
 		padding: 1em;
+		ul {
+			// follow scroll
+			position: sticky;
+			top: 30px;
+			a {
+				color: white;
+				text-decoration: none;
+			}
+		}
 	}
 	
 	main {
 		padding: 30px;
+		background: white;
+	}
+}
+
+header {
+	background-color: #2980b9;
+	h1 {
+		padding: 0;
+		margin: 0;
+		color: white;
+	}
+}
+
+footer {
+	background-color: #272525;
+	padding: 30px;
+	p {
+		padding: 0;
+		margin: 0;
+		color: white;
 	}
 }
