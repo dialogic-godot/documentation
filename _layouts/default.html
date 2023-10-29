@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ page.title }}</title>
-		<link rel="stylesheet" href="/style/main.css">
+		<link rel="stylesheet" href="/style/main.css?1">
 </head>
 <body>
     <header>
@@ -36,5 +36,13 @@
     <footer>
         <p>Dialogic &copy; {{ site.time | date: '%Y' }} {{ site.author }}</p>
     </footer>
+
+		<script src="/js/anchor-link.js"></script>
+		<script>
+			document.addEventListener('DOMContentLoaded', () => {
+				// Add icons to easily copy section links.
+				window.applyAnchorLinks('main');
+			});
+		</script>
 </body>
 </html>
