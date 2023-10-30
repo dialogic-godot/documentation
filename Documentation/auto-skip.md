@@ -62,6 +62,23 @@ Don't forget to set `Dialogic.Text.auto_skip.disable_on_unread_text` back to `tr
 For more information, check the scripting documentation!\
 Each variable contains useful descriptions and displays the default values.
 
+## Signals
+When Auto-Skip is enabled or disabled, the feature will emit `signal autoskip_changed(is_enabled: bool)`.
+
+As an example, internally, Dialogic uses this signal to handle skipping for *Text Events* when the event is revealing text or waiting for the user to manually advance.
+
+```gdscript
+# This method has been connected to the autoskip_changed signal.
+func _on_autoskip_enable(enabled: bool):
+	if not enabled:
+		return
+
+	if state == States.REVEALING:
+		Dialogic.Text.skip_text_animation()
+
+	advance.emit()
+```
+
 ## Custom Events
 
 Events come in all sort of behaviours: Delaying input, conditionally branching, fading images, playing audio, …
