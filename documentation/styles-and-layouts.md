@@ -1,5 +1,6 @@
 ---
 title: Styles & Layouts
+order: 3
 ---
 
 ![header_style-editor](/media/headers/styles_and_layouts.png)

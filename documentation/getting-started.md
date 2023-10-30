@@ -1,5 +1,6 @@
 ---
 title: Getting Started
+order: 1
 ---
 
 ![header_getting_started](/media/headers/getting_started.png)

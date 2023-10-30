@@ -1,5 +1,6 @@
 ---
 title: Custom Portraits
+order: 6
 ---
 
 ![header_custom_portraits](/media/headers/custom_portraits.png)
