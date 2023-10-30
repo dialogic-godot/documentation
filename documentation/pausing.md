@@ -1,5 +1,6 @@
 ---
 title: Pausing
+order: 10
 ---
 
 # Pausing

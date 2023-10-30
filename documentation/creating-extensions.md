@@ -1,5 +1,6 @@
 ---
 title: Creating Extensions
+order: 7
 ---
 
 ![header_creating_extensions](/media/headers/creating_extensions.png)

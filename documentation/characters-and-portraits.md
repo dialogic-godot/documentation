@@ -1,5 +1,6 @@
 ---
 title: Characters & Portraits
+order: 2
 ---
 
 ![header_character_portraits](/media/headers/character_portraits.png)
