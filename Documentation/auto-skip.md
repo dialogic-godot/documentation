@@ -81,8 +81,25 @@ func _on_autoskip_enable(enabled: bool):
 
 ## Custom Events
 
-Events come in all sort of behaviours: Delaying input, conditionally branching, fading images, playing audio, …
+Events come in all sort of behaviours: Awaiting signals, instantly executing, a mix of conditions, playing audio, …\
+It's impossible to let an Auto-Skip handle all of these effects gracefully from the outside.\
+Therefore, Auto-Skip's behaviour must be implemented by each Timeline Event.
 
-It's impossible to let an Auto-Skip handle all of these effects gracefully from the outside.
+### What type of event do I have?
+Does your event finish instantly? Does it play audio? Does it await a signal?\
+These situations must be implemented differently.
 
-Therefore, Auto-Skip’s behaviour is implemented by each Timeline Event. Every event can check if Auto-Skip is enabled via `Dialogic.Text.auto_skip.enabled` and then check the time an event may take via `Dialogic.Text.auto_skip.time_per_event`.
+If you await signals, you can use the `autoskip_changed` signal to cause your event to react to Auto-Skip.\
+The Text Event uses this signal to skip the text animation and then advance the timeline.
+
+If you await a timer or perform an action lasting multiple frames, you can use the `time_per_event` variable to limit the time your event may take.\
+Here is a code snippet to give you an idea:
+```gdscript
+var animation_length: float = 10.0
+
+if Dialogic.Text.auto_skip.enabled:
+    var time_per_event: float = Dialogic.Text.auto_skip.time_per_event
+    animation_length = min(time_per_event, animation_length)
+```
+
+This code will cap the animation length to the maximum time set, if Auto-Skip is enabled.
