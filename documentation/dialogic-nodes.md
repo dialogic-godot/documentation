@@ -1,5 +1,6 @@
 ---
 title: Dialogic Nodes
+order: 4
 ---
 
 ![header_dialogic_nodes_layouts](/media/headers/dialogic_nodes_layouts.png)

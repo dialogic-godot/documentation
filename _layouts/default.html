@@ -18,10 +18,11 @@
 			<aside>
 					<!-- generate sidebar -->
 <ul>
-	{% for post in site.pages %}
-		{% if post.title %}
+	{% assign sorted_pages = site.pages | sort:"order" %}
+	{% for entry in sorted_pages %}
+		{% if entry.title %}
 			<li>
-				<a href="{{ post.url }}">{{ post.title }}</a>
+				<a href="{{ entry.url }}">{{ entry.title }}</a>
 			</li>
 		{% endif %}
 	{% endfor %}

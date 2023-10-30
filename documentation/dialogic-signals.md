@@ -1,5 +1,6 @@
 ---
 title: Dialogic Signals
+order: 5
 ---
 
 ![header_signals](/media/headers/signals.png)

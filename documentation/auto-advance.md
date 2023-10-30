@@ -1,5 +1,6 @@
 ---
 title: Auto-Advance
+order: 9
 ---
 
 ![header_getting_started](/media/headers/autoadvance.png)
