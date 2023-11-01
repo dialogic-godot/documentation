@@ -5,18 +5,11 @@ title: Auto-Skip
 ![header_getting_started](/media/headers/autoadvance.png)
 
 ## What is Auto-Skip?
-Auto-Skip is the concept of advancing a timeline until an unseen text or
-an interactive event is reached.
+Auto-Skip is the concept of advancing a timeline faster than you can read it.
 
 In Visual Novels, Auto-Skip helps to navigate already known story branches quickly.
 If your story is not intended to be cyclic, this feature may not be of use to you.
 
-There are two types of this feature:
-
-- Timed Auto-Skip, moving through the timeline by a set maximum delay per event.
-- Instant Auto-Skip, finding the next valid point within one frame.
-
-Some Visual Novels offer one or both flavours of Auto-Skip.
 
 > **Note:** \
 *Instant* Auto-Skip has not been implemented yet.
@@ -33,7 +26,8 @@ However, there are many settings hiding inside the scripting API!
 
 ## Scripting Auto-Skip
 
-All settings reside as variables on the `AutoSkip` class located at `Dialogic.Text.auto_skip`. Hence, you can set the variables to your heart's content!
+All Auto-Skip settings are variables on the `AutoSkip` class.
+This class can be accessed via `Dialogic.Text.auto_skip`.
 
 First, imagine you want to add an Auto-Skip button to your game. You can use the following code to toggle the feature on and off:
 
@@ -55,7 +49,7 @@ Dialogic.Text.auto_skip.time_per_event = 0.3
 Dialogic.Text.auto_skip.disable_on_unread_text = false
 ```
 
-Aforementioned, this is code snippet is useful for debugging.\
+As already mentioned, this is code snippet is useful for debugging.\
 Don't forget to set `Dialogic.Text.auto_skip.disable_on_unread_text` back to `true` again, if you want to test the normal skipping behaviour.
 
 
