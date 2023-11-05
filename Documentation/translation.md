@@ -12,11 +12,16 @@ Sometimes, the word *localisation* is used as well.
 Localisation provides very specific regional considerations for each consumer market.\
 This includes not only translation of the game, but also changes to the game itself to reflect specific cultural differences.
 
+> **Note:** \
+For now, Dialogic supports CSV translation only.
+Godot itself supports `gettext` as well.
+
 ## How to translate timelines?
 
 In Dialogic, head to the Settings tab, a look under the Translation section. Tick the "Enable Translation" checkbox.
 
 ![translation_settings](/media/translation/translation_settings.png)
+
 
 ### Setting up Translation
 
