@@ -3,6 +3,19 @@
 
 @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@100&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 
+
+:root {
+	color-scheme: light dark;
+	--background-color: #eff1f5;
+	--base-color-text: #4a5365;
+}
+@media (prefers-color-scheme: dark) {
+	:root {
+		--background-color: #282828;
+		--base-color-text: #eff1f5;
+	}
+}
+
 // small reset
 html, body {
 	margin: 0;
@@ -42,7 +55,7 @@ img {
 	
 	main {
 		padding: 30px;
-		background: white;
+		background: var(--background-color);
 	}
 }
 
@@ -136,7 +149,7 @@ footer {
 	opacity: 0.9;
 }
 
-@media (prefers-color-scheme: light) {
+@media (prefers-color-scheme: dark) {
 	.anchored-link {
 			filter: invert(1);
 	}
