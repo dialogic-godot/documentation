@@ -65,7 +65,7 @@ You can access them via `Dialogic.Input.auto_advance`.
 
 There are two types of variables:
 
-- **Enable conditions**: `enabled_until_next_event`, `enabled_by_default`, `enabled_until_user_input`
+- **Enable conditions**: `enabled_until_next_event`, `enabled_forced`, `enabled_until_user_input`
 - **Behaviour changing**: `fixed_delay`, `per_word_delay`, `per_character_delay`, `await_playing_voice`, …
 
 As long as one of the enable conditions is `true`, Auto-Advance will continue.
@@ -106,7 +106,7 @@ Stay informed about changes in Auto-Advance's state by leveraging the
 signal toggled(enabled: bool)
 ```
 
-If you are interested in how Dialogic uses this signal internally, the `default_input_handler.gd` file connects to this signal:
+If you are interested in how Dialogic uses this signal internally, `Input` subsystem connects to this signal:
 
 ```gdscript
 Dialogic.Input.autoadvance.toggled.connect(_on_autoadvance_toggled)
@@ -114,8 +114,8 @@ Dialogic.Input.autoadvance.toggled.connect(_on_autoadvance_toggled)
 
 ### API-only Variables
 
-In order to keep things tidy, not all variables can be changed via Dialogic's
-extension UI.
+In order to keep things tidy, not all variables can be changed via Auto-Advance's settings page.\
+The following variables can be accessed via code only.
 
 #### Skipping Voice Clips
 
