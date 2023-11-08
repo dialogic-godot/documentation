@@ -65,7 +65,7 @@ You can access them via `Dialogic.Input.auto_advance`.
 
 There are two types of variables:
 
-- **Enable conditions**: `waiting_for_next_event`, `waiting_for_system`, `waiting_for_user_input`
+- **Enable conditions**: `enabled_until_next_event`, `enabled_by_default`, `enabled_until_user_input`
 - **Behaviour changing**: `fixed_delay`, `per_word_delay`, `per_character_delay`, `await_playing_voice`, …
 
 As long as one of the enable conditions is `true`, Auto-Advance will continue.
@@ -75,16 +75,11 @@ next event.\
 Thanks to the multiple enable conditions, if the player disables Auto-Advances,
 it will still carry on until the next event.
 
-We recommend to set them via following helper methods:
+You can turn any of the enable variables to `true` to enable Auto-Advance. If you have an Auto-Advance button, you can use the following code to enable the feature:
 
-- `Dialogic.Input.auto_advance.set_autoadvance_until_unread_message(is_enabled: bool)`
-- `Dialogic.Input.auto_advance.set_autoadvance_system(is_enabled: bool)`
-- `Dialogic.Input.auto_advance.set_autoadvance_until_next_event(is_enabled: bool)`
-
-If you set the enable flags without these methods, Auto-Advancing *won't* start
-if it's not enabled.
-These methods will automatically evaluate whether Auto-Advance shall be turned
-on or off.
+```gdscript
+Dialogic.Input.auto_advance.enabled_until_user_input = true
+```
 
 #### Ignored Characters
 
