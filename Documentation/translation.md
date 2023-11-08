@@ -12,6 +12,15 @@ Sometimes, the word *localisation* is used as well.
 Localisation provides very specific regional considerations for each consumer market.\
 This includes not only translation of the game, but also changes to the game itself to reflect specific cultural differences.
 
+While Dialogic supports translation of your timeline, it's better to focus on
+your game first and add translation later.\
+However, keeping the translation and localisation in mind is a very good idea:
+- How will you handle variables?
+- Do you need the glossary?
+- What images do you want to localise?
+- Any features in mind that may complicate translation?
+
+
 > **Note:** \
 For now, Dialogic supports CSV translation only.
 Godot itself supports `gettext` as well.
