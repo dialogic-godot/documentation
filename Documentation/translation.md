@@ -34,8 +34,9 @@ In Dialogic, head to the Settings tab, a look under the Translation section. Tic
 
 ### Setting up Translation
 
-Let's walk through the settings! You will have to pick a default locale. This locale will be used as a fallback, if no translation is available for the current locale.
-
+Let's walk through the settings! You will have to pick a default locale.
+This locale must be the language you write the timeline in.
+Additionally, this locale will be used as fallback, if no translation exists for a given translatable event.
 The "translation file mode" allows you to store all your timelines into one file (Per Project) or into multiple files (Per Timeline).
 
 Setting up a translation folder is a good idea, it keeps your project clean and allows you to easily find your translation files.
