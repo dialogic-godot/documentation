@@ -6,12 +6,16 @@
 
 :root {
 	color-scheme: light dark;
-	--background-color: #eff1f5;
 	--base-color-text: #4a5365;
+	--content-background-color: #fcfcfc;
+	--link-color: #8cf;
+	--link-color-hover: #9df;
+	--link-color-active: #6ad;
+	--link-color-visited: #cb99f6;
 }
 @media (prefers-color-scheme: dark) {
 	:root {
-		--background-color: #282828;
+		--content-background-color: #2e3236;
 		--base-color-text: #eff1f5;
 	}
 }
@@ -20,11 +24,16 @@
 html, body {
 	margin: 0;
 	padding: 0;
-	background: #272525;
+	background: #202326;
 }
 * {
 	box-sizing: border-box;
 	font-family: 'Lato', sans-serif;
+}
+
+body {
+	max-width: 1200px;
+	margin: 0 auto;
 }
 
 
@@ -34,13 +43,28 @@ img {
 	height: auto;
 }
 
+a {
+	color: var(--link-color);
+	text-decoration: none;
+	&:hover {
+		color: var(--link-color-hover);
+	}
+	&:active {
+		color: var(--link-color-active);
+	}
+	&:visited {
+		color: var(--link-color-visited);
+	}
+}
+
+
 .content {
 	display: grid;
 	grid-template-columns: 320px calc(100% - 320px);
 	max-width: 100%;
 
 	aside {
-		background: #343131;
+		background: #25282b;
 		padding: 1em;
 		ul {
 			// follow scroll
@@ -55,7 +79,7 @@ img {
 	
 	main {
 		padding: 30px;
-		background: var(--background-color);
+		background: var(--content-background-color);
 	}
 }
 
@@ -76,11 +100,13 @@ pre {
 
 code.highlighter-rouge {
 	font-family: "JetBrains Mono", monospace;
-  background: #d9d9d9;
-  color: black;
+	color: #d68f8f;
+  font-weight: 600;
+	font-size: 14px;
+  background-color: #22252d;
+  border: none;
+  border-radius: 4px;
   padding: 1px 5px;
-  border-radius: 6px;
-	font-weight: bold;
 }
 
 code {
@@ -112,7 +138,7 @@ header {
 	}
 	nav {
 		display: inline-block;
-		a {
+		a, a:visited, a:hover, a:active {
 			color: white;
 			text-decoration: none;
 		}
@@ -120,7 +146,7 @@ header {
 }
 
 footer {
-	background-color: #272525;
+	background-color: #333639;
 	padding: 30px;
 	p {
 		padding: 0;
