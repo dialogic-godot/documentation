@@ -27,7 +27,7 @@ However, there are many settings hiding inside the scripting API!
 
 ## Scripting Auto-Skip
 
-All Auto-Skip settings are variables on the `AutoSkip` class.
+All Auto-Skip settings are variables on the `DialogicAutoSkip` class.
 This class can be accessed via `Dialogic.Text.auto_skip`.
 
 First, imagine you want to add an Auto-Skip button to your game. You can use the following code to toggle the feature on and off:
@@ -57,20 +57,19 @@ Each variable contains useful descriptions and displays the default values.
 
 ## Signals
 
-When Auto-Skip is enabled or disabled, the feature will emit `signal autoskip_changed(is_enabled: bool)`.
+When Auto-Skip is enabled or disabled, the feature will emit the
+`DialogicAutoSkip.toggled` signal.
 
-As an example, internally, Dialogic uses this signal to handle skipping for *Text Events* when the event is revealing text or waiting for the user to manually advance.
+Here is an example on how to connect to the signal:
 
 ```gdscript
-# This method has been connected to the autoskip_changed signal.
-func _on_autoskip_enable(enabled: bool):
-    if not enabled:
-        return
+# Connect to the signal.
+func _init():
+    Dialogic.Input.auto_skip.toggled.connect(_on_auto_skip_toggled)
 
-    if state == States.REVEALING:
-        Dialogic.Text.skip_text_animation()
-
-    advance.emit()
+## If Auto-Skip disables, we want to stop the timer.
+func _on_auto_skip_toggled(is_enabled: bool) -> void:
+    # Your code reacting to Auto-Skip changes goes here!
 ```
 
 ## Custom Events
@@ -84,7 +83,7 @@ Therefore, Auto-Skip's behaviour must be implemented by each Timeline Event.
 Does your event finish instantly? Does it play audio? Does it await a signal?\
 These situations must be implemented differently.
 
-If you await signals, you can use the `autoskip_changed` signal to cause your event to react to Auto-Skip.\
+If you await signals, you can use the `DialogicAutoSkip.toggled` to cause your event to react to Auto-Skip.\
 The Text Event uses this signal to skip the text animation and then advance the timeline.
 
 If you await a timer or perform an action lasting multiple frames, you can use the `time_per_event` variable to limit the time your event may take.\
@@ -93,8 +92,8 @@ Here is a code snippet to give you an idea:
 ```gdscript
 var animation_length: float = 10.0
 
-if Dialogic.Text.auto_skip.enabled:
-    var time_per_event: float = Dialogic.Text.auto_skip.time_per_event
+if Dialogic.Input.auto_skip.enabled:
+    var time_per_event: float = Dialogic.Input.auto_skip.time_per_event
     animation_length = min(time_per_event, animation_length)
 ```
 
