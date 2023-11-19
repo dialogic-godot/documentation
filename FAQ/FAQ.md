@@ -23,4 +23,10 @@ The project is developed under the [MIT License](https://github.com/coppol
 
 *The plugin is cool! Why is it not shipped with Godot? I see a lot of people saying that the plugin should come with Godot, but I believe this should stay as a plugin since most of the people making games won't be using it. I'm flattered by your comments but this will remain a plugin :)*
 
+## How do I start and stop background music?
 
+Use a `Music` event setting a resource and then cancel it with a `Music` event with no resource.
+
+![header_faq](/media/faq/background_music_toggling.png)
+
+This example will fade-in the music over 4 seconds and then fade it out over 5 seconds.
