@@ -15,14 +15,24 @@ order: 1
 
 ## 1. Installation & Activation
 
-First of all, you should install dialogic. This can be done by downloading the latest [release](https://github.com/coppolaemilio/dialogic/releases) zip-file from github, extracting it and moving the addons/dialogic folder to your projects `res://addons/dialogic` (you might have to create the addons folder). 
+Dialogic 2 requires Godot 4.1 or higher. If you don't know what version you have installed, take a look at the bottom of your Godot Editor.
+
+Let's install Dialogic 2:
+- Download the ZIP file here from your wanted Dialogic version: [GitHub Dialogic Releases](https://github.com/coppolaemilio/dialogic/releases).
+- Extract the `addons` folder from this ZIP-file, it contains Dialogic.
+- Move the `addons` folder to your Dialogic project folder.
+
+Now, let's verify you have correctly installed Dialogic:
+- You have this folder path `res://addons/dialogic`
+- Head to `Project > Project Settings`
+- Click the `Plugins` tab.
+- Tick the `enabled` button next to Dialogic.
+- Restart Godot
 
 ## 🚧How to install the latest WIP version🚧
 
 > *Dialogic is constantly evolving. Oftentimes fixes for bugs or new features might only be available on the main branch. This is especially true during the alpha and beta phase. If you are interested in using the main branch it's easy to do so.*
-> *Go to [the main page of the repository](https://github.com/coppolaemilio/dialogic) and click on the green `Code` button then presse the `Download ZIP` button. From there you can install that zip's content like a release.* 
-
-Once all the files are where they should be, you can open your project. You will see some errors in the output, but ignore them and enable the plugin under `Project > Project Settings` in the *Plugin* tab. Check the `enabled` button. Then restart your project. If everything went right, you should not see any more errors.
+> *Go to [the main page of the repository](https://github.com/coppolaemilio/dialogic) and click on the green `Code` button then presse the `Download ZIP` button. From there you can install that ZIP's content like a release.* 
 
 ## 2. Meeting the editor
 
