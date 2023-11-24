@@ -76,8 +76,22 @@ p {
 	aside {
 		background: #25282b;
 		padding: 1em;
+		form input {
+			background-color: #333537;
+			color: var(--base-color-text);
+			border: 2px solid transparent;
+			box-shadow: none;
+			transition: none;
+			font-size: 14px;
+			border-radius: 50px;
+  		padding: 6px 12px;
+			margin-bottom: 20px;
+			width: 100%;
+		}
 		ul {
 			// follow scroll
+			list-style: none;
+			padding: 0;
 			position: sticky;
 			top: 30px;
 			a {
