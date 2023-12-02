@@ -1,7 +1,4 @@
----
-title: Auto-Skip
-order: 10
----
+# Auto-Skip
 
 ![header_getting_started](/media/headers/autoskip.png)
 
