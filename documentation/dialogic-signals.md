@@ -1,7 +1,4 @@
----
-title: Dialogic Signals
-order: 5
----
+# Dialogic Signals
 
 ![header_signals](/media/headers/signals.png)
 
@@ -71,7 +68,7 @@ func _on_timeline_ended():
 Dialogic subsystems have a lot of useful signals. Here is a selection of them:
 
 - `Dialogic.Text` has
-  
+
   - signal `about_to_show_text(info:Dictionary)`
   - signal `text_finished(info:Dictionary)`
   - signal `speaker_updated(character:DialogicCharacter)`
@@ -81,13 +78,13 @@ Dialogic subsystems have a lot of useful signals. Here is a selection of them:
   - signal `animation_textbox_hide`
 
 - `Dialogic.Portraits` has
-  
+
   - signal `character_joined(info:Dictionary)`
   - signal `character_left(info:Dictionary)`
   - signal `character_portrait_changed(info:Dictionary)`
 
 - `Dialogic.VAR` has
-  
+
   - signal `variable_changed(info:Dictionary)`
   - signal `variable_was_set(info:Dictionary)` # only on set variable events
 

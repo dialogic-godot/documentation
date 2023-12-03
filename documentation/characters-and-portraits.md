@@ -1,7 +1,4 @@
----
-title: Characters & Portraits
-order: 2
----
+# Characters & Portraits
 
 ![header_character_portraits](/media/headers/character_portraits.png)
 
@@ -68,7 +65,7 @@ A character can have unlimited portraits, but each has to have a unique name.
 
 ## 3. Preview
 
-The preview shows the selected portrait (or nothing, if you don't have a portrait). You can switch between a `Full view` that will size the character so it's fully visible, and a `Real size` view that shows the character at full scale.  
+The preview shows the selected portrait (or nothing, if you don't have a portrait). You can switch between a `Full view` that will size the character so it's fully visible, and a `Real size` view that shows the character at full scale.
 
 ## 4. Portrait settings
 
@@ -76,6 +73,6 @@ The portrait section consists of multiple sections, each containing settings for
 
 The most important setting is the scene a portrait uses. The default scene allows you to select an image. Learn more about how to create a custom portrait here: [Custom portraits](/documentation/custom-portraits)
 
-For any portrait you can set a scale, offset and mirror setting. These are additive to the main scale, offset and mirror. You can choose to ignore the main character scale to work around this. 
+For any portrait you can set a scale, offset and mirror setting. These are additive to the main scale, offset and mirror. You can choose to ignore the main character scale to work around this.
 
-When you use a custom portrait you can override its exported variables here. 
+When you use a custom portrait you can override its exported variables here.
