@@ -1,6 +1,6 @@
 # Summary
 
-[Getting Started](introduction.md)
+[Getting Started](getting-started.md)
 [FAQ](faq.md)
 
 - [Character & Portraits](characters-and-portraits.md)
