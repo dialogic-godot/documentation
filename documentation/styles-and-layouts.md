@@ -1,7 +1,4 @@
----
-title: Styles & Layouts
-order: 3
----
+# Styles & Layouts
 
 ![header_style-editor](/media/headers/styles_and_layouts.png)
 
@@ -12,7 +9,7 @@ order: 3
 
 # 1. Styles & Layouts
 
-- A **style** is a combination of a layout scene (preset or custom) and a set of settings. 
+- A **style** is a combination of a layout scene (preset or custom) and a set of settings.
 - A **layout** is a scene that can display dialog ingame.
 
 Dialogic comes with some **preset layouts**, but you can create your own using DialogicNodes. Learn more about [custom layouts here](/documentation/dialogic-nodes).

@@ -1,7 +1,4 @@
----
-title: Custom Portraits
-order: 6
----
+# Custom Portraits
 
 ![header_custom_portraits](/media/headers/custom_portraits.png)
 
@@ -27,7 +24,7 @@ One scene can be used for one or multiple portraits. If a scene is used for mult
 There are not a lot of requirements for portrait scenes:
 
 - **Root needs to be Node2D or Control:**
-  *The root nodes needs a position and scale property, so it must be a Node2D or Control node (or a sub-class). 
+  *The root nodes needs a position and scale property, so it must be a Node2D or Control node (or a sub-class).
   Because the root will act as the "pivot-point" it's suggested to use a simple node like Marker2D and have all functional nodes (like sprites, animation players etc.) be children of it.*
 - **Root script extends DialogicPortrait:**
   *The root nodes script should extend the DialogicPortrait class and overwrite some of it's methods.*
@@ -42,7 +39,7 @@ You can customize the behaviour by adding a script to the root node and adding s
 - **_set_mirror(@mirrored):**
   *Different scenes might want to mirror differently (AnimationSprite.flip_h; self.scale.x = -1, etc.). Thus, you will have to implement this functionality yourself.*
 
-- **_get_covered_rect() -> Rect2:** 
+- **_get_covered_rect() -> Rect2:**
   *This is used for correctly sizing your scene, as it's pretty much impossible to know the size of your portrait. If you implement this and return a rect2 that covers your portrait (relative to the root nodes position), the portrait_containers size modes and the character editors `Full View` will work.*
 
 - **_set_extra_data(@data_string):**

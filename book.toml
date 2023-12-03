@@ -1,0 +1,6 @@
+[book]
+authors = ["Emilio Coppola", "Jowan Spooner", "Dialogic Contributors"]
+language = "en"
+multilingual = false
+src = "documentation"
+title = "Dialogic 2 Documentation"

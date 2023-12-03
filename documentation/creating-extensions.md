@@ -1,7 +1,4 @@
----
-title: Creating Extensions
-order: 7
----
+# Creating Extensions
 
 ![header_creating_extensions](/media/headers/creating_extensions.png)
 ***Sometimes dialogic is just not enough***. Whether it's an event, an editor, a setting or a text effect that is missing: You can add it.
@@ -21,7 +18,7 @@ Extensions are very powerful. Actually just as powerful as dialogic built-in stu
 
 ## 1. Getting started
 
-The best way to create an extension is to use the extension creator in the dialogic settings (General). 
+The best way to create an extension is to use the extension creator in the dialogic settings (General).
 
 <img src="/media/extension_creator.png" width="600"/>
 
@@ -123,7 +120,7 @@ func build_event_editor() -> void:
 
 *Other methods you can use are `add_header_label()`, `add_body_edit()` and `add_body_line_break()`. Most of these allow setting a condition as the last parameter, allowing for adaptive visibility. In the example above, the second field will only be visible if any text is typed in the first.*
 
-If you want to learn more about events, I strongly suggest looking at the built-in events. 
+If you want to learn more about events, I strongly suggest looking at the built-in events.
 
 ---
 
@@ -132,7 +129,7 @@ If you want to learn more about events, I strongly suggest looking at the built-
 ## What is a subsystem?
 
 A subsystem is a script that contains useful methods for game execution. Subsystems can be accessed as `Dialogic.SubsystemName.method()` when running the game. They should contain all of your extensions game code.
-For example built-in subsystems include `Text, Portraits, Choices, Audio, etc.`. Their methods are used by the built-in events and can be used by your events as well. 
+For example built-in subsystems include `Text, Portraits, Choices, Audio, etc.`. Their methods are used by the built-in events and can be used by your events as well.
 
 Additionally it's good if a subsystem manages dialogic nodes. This could be done like this:
 
@@ -145,8 +142,8 @@ func update_my_dialogic_nodes(some_setting):
 ## Your custom subsystem
 
 A subsystem is a script inheriting `DialogicSubsystem`. It can override that classes methods.
-The most important methods you might want to override are `clear_game_state()` and `load_game_state()` for saving and loading and `pause()` and `resume()` for pausing. 
-If you want save-persistent data, store it in the `Dialogic.current_state_info` dictionary. 
+The most important methods you might want to override are `clear_game_state()` and `load_game_state()` for saving and loading and `pause()` and `resume()` for pausing.
+If you want save-persistent data, store it in the `Dialogic.current_state_info` dictionary.
 
 ---
 
@@ -168,7 +165,7 @@ Animations are little scripts inheriting the `DialogicAnimation` class, you can 
 Your animation script should look something like this (bounce_in as example):
 
 
-### ❗ Animation Example Bounce 
+### ❗ Animation Example Bounce
 
 ```gdscript
 extends DialogicAnimation
