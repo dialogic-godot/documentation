@@ -1,7 +1,4 @@
----
-title: Auto-Advance
-order: 9
----
+# Auto-Advance
 
 ![header_getting_started](/media/headers/autoadvance.png)
 
@@ -30,6 +27,16 @@ One critical setting is the "Additional Delay", which allows you to choose
 between "Per Character" and "Per Word".\
 These settings modify the pace at which text is displayed, adding extra delays
 either on character or word count.
+
+### Reading Speed
+
+For Visual Novels, enabling players to set their text speed is a common practice.
+To provide the same feature using Dialogic, consider setting `Dialogic.Setting.autoadvance_delay_modifier`.
+
+This setting, located within `Dialogic.Setting`, allows you to fine-tune the
+delay modifier, multiplying "Additional Delay".\
+By default, if this value is not set, Dialogic uses a multiplier of 1, causing
+no change to the delay.
 
 [comment]: <> (TODO: Add a backlink to the Settings documentation)
 
@@ -70,12 +77,6 @@ You can turn any of the enable variables to `true` to enable Auto-Advance. If yo
 ```gdscript
 Dialogic.Input.auto_advance.enabled_until_user_input = true
 ```
-
-#### Reading Speed
-
-For Visual Novels, enabling players to set their text speed is a common practice.
-To provide the same feature using Dialogic, use `Dialogic.Input.auto_advance.delay_modifier`.
-This setting mulitplies the total calculated Auto-Advance delay time. Faster readers may want a lower number.\
 
 #### Ignored Characters
 

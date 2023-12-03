@@ -2,5 +2,5 @@
 authors = ["Emilio Coppola", "Jowan Spooner", "Dialogic Contributors"]
 language = "en"
 multilingual = false
-src = "src"
+src = "documentation"
 title = "Dialogic 2 Documentation"

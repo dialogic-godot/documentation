@@ -1,7 +1,4 @@
----
-title: Saving & Loading
-order: 11
----
+# Saving & Loading
 
 ![header_saving_loading](/media/headers/saving_loading.png)
 
@@ -13,7 +10,7 @@ You can get the current state of dialogic with `Dialogic.get_full_state() -> Dic
 
 # Built-in saving
 
-The saving subsystem allows to save and load easily, including creating a screen-shot and saving to multiple slots. 
+The saving subsystem allows to save and load easily, including creating a screen-shot and saving to multiple slots.
 
 ## Main methods
 
@@ -35,7 +32,7 @@ There are more methods, but these should mostly be enough. By not specifying a s
 
 ## Additional data
 
-You can also save additional data with 
+You can also save additional data with
 
 - `Dialogic.Save.save_file(@slot, @file_name, @data)`
 
