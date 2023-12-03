@@ -1,98 +1,34 @@
-# FAQ
+# Frequently Asked Questions
 
-![header_getting_started](/media/headers/autoskip.png)
+![header_faq](/media/header_faq.png)
 
-## What is Auto-Skip?
+## May I use Dialogic in one of my projects?
 
-Auto-Skip is the concept of advancing a timeline faster than you can read it.
+*Yes, you may use Dialogic to make any kind of game - even commercial ones!
+The project is developed under the [MIT License](https://github.com/coppolaemilio/dialogic/blob/master/LICENSE). All we ask is that you please remember to credit us in your project!*
 
-In Visual Novels, Auto-Skip helps to navigate already known story branches quickly.
-If your story is not intended to be cyclic, this feature may not be of use to you.
+*If you want to be featured on the made with dialogic page, get in touch with us on [emilios discord server](https://discord.gg/2hHQzkf2pX)!*
 
-> **Note:** \
-> *Instant* Auto-Skip has not been implemented yet.
+## How can I change the input?
 
-## How to use it?
+*Dialogic uses a godot `InputAction` for the so called "Input Action". By default this is the `dialogic_default_action` which is automatically created when enabling the plugin. You can either edit this action or use a different input action by changing the setting in the dialogic settings Text section.*
 
-In Dialogic, Auto-Skip can be controlled via the scripting API. If you want to provide the player with an Auto-Skip toggle button, this section will teach you how to implement the logic.
+## How to make dialog show up in game?
 
-First, you can set the time each event is allowed to take via the Text settings page inside Dialogic.
+*The easiest way to make the dialog appear in your game is to call `Dialogic.start("res://path/to/timeline.dtl")` in your game. This will both instance a [layout scene](../Documentation/Styles_&_Layouts.md) and start the timeline.*
 
-![header_saving_loading](/media/auto_skip_settings.png)
+## Why are my portraits not showing up?
 
-However, there are many settings hiding inside the scripting API!
+*When using the VisualNovel layout, in order to make the characters show up on the screen, you need to make them join your current scene using the Character event (Join mode).*
 
-## Scripting Auto-Skip
+## Why isn't this part of godot?
 
-All Auto-Skip settings are variables on the `AutoSkip` class.
-This class can be accessed via `Dialogic.Text.auto_skip`.
+*The plugin is cool! Why is it not shipped with Godot? I see a lot of people saying that the plugin should come with Godot, but I believe this should stay as a plugin since most of the people making games won't be using it. I'm flattered by your comments but this will remain a plugin :)*
 
-First, imagine you want to add an Auto-Skip button to your game. You can use the following code to toggle the feature on and off:
+## How do I start and stop background music?
 
-```gdscript
-Dialogic.Text.auto_skip.enabled = !Dialogic.Text.auto_skip.enabled
-```
+Use a `Music` event setting a resource and then cancel it with a `Music` event with no resource.
 
-Furthermore, think about quickly debugging your timeline, you can use *Jump* and *Label Events* for this, or create your own Auto-Skip debug mode.\
-The upcoming code can help you toggle this behaviour:
+![header_faq](/media/faq/background_music_toggling.png)
 
-```gdscript
-Dialogic.Text.auto_skip.enabled = !Dialogic.Text.auto_skip.enabled
-
-# We can slow the Auto-Skip down to have better control stopping it.
-Dialogic.Text.auto_skip.time_per_event = 0.3
-
-# Important!
-# By default, Auto-Skip cancels on unread text.
-Dialogic.Text.auto_skip.disable_on_unread_text = false
-```
-
-Don't forget to set `disable_on_unread_text` back to `true` again, if you want to return to the default behaviour again.
-
-For more information, check the scripting documentation on the `AutoSkip` class!\
-Each variable contains useful descriptions and displays the default values.
-
-## Signals
-
-When Auto-Skip is enabled or disabled, the feature will emit `signal autoskip_changed(is_enabled: bool)`.
-
-As an example, internally, Dialogic uses this signal to handle skipping for *Text Events* when the event is revealing text or waiting for the user to manually advance.
-
-```gdscript
-# This method has been connected to the autoskip_changed signal.
-func _on_autoskip_enable(enabled: bool):
-    if not enabled:
-        return
-
-    if state == States.REVEALING:
-        Dialogic.Text.skip_text_animation()
-
-    advance.emit()
-```
-
-## Custom Events
-
-Events come in all sort of behaviours: Awaiting signals, instantly executing, a mix of conditions, playing audio, …\
-It's impossible to let an Auto-Skip handle all of these effects gracefully from the outside.\
-Therefore, Auto-Skip's behaviour must be implemented by each Timeline Event.
-
-### What type of event do I have?
-
-Does your event finish instantly? Does it play audio? Does it await a signal?\
-These situations must be implemented differently.
-
-If you await signals, you can use the `autoskip_changed` signal to cause your event to react to Auto-Skip.\
-The Text Event uses this signal to skip the text animation and then advance the timeline.
-
-If you await a timer or perform an action lasting multiple frames, you can use the `time_per_event` variable to limit the time your event may take.\
-Here is a code snippet to give you an idea:
-
-```gdscript
-var animation_length: float = 10.0
-
-if Dialogic.Text.auto_skip.enabled:
-    var time_per_event: float = Dialogic.Text.auto_skip.time_per_event
-    animation_length = min(time_per_event, animation_length)
-```
-
-This code will cap the animation length to the maximum time set, if Auto-Skip is enabled.
+This example will fade-in the music over 4 seconds and then fade it out over 5 seconds.
