@@ -24,10 +24,12 @@ Now, let's verify you have correctly installed Dialogic:
 - Tick the `enabled` button next to Dialogic.
 - Restart Godot
 
-## 🚧How to install the latest WIP version🚧
+## 🚧 How to install the latest WIP Version 🚧
 
-> *Dialogic is constantly evolving. Oftentimes fixes for bugs or new features might only be available on the main branch. This is especially true during the alpha and beta phase. If you are interested in using the main branch it's easy to do so.*
-> *Go to [the main page of the repository](https://github.com/coppolaemilio/dialogic) and click on the green `Code` button then presse the `Download ZIP` button. From there you can install that ZIP's content like a release.* 
+```admonish warning
+*Dialogic is constantly evolving. Oftentimes fixes for bugs or new features might only be available on the main branch. This is especially true during the alpha and beta phase. If you are interested in using the main branch it's easy to do so.*
+*Go to [the main page of the repository](https://github.com/coppolaemilio/dialogic) and click on the green `Code` button then presse the `Download ZIP` button. From there you can install that ZIP's content like a release.*
+```
 
 ## 2. Meeting the editor
 
@@ -62,11 +64,16 @@ You can test the timeline by clicking the `Play Timeline` button at the top righ
 
 ## 4. Creating a character
 
-To create a new character press the `Add Character` button on the top right. 
+To create a new character press the `Add Character` button on the top right.
 
-As for timelines, you need to select the place to save to and a name. 
+As for timelines, you need to select the place to save to and a name.
 
-⚠️*Important: This name (without .dch) is what will be saved whenever you use that character in a timeline and what you will have to write when referencing the character (e.g. `Emilio: This is a text event.`, if the file is named Emilio.dch). So make sure to give it a good name. You can change the name that will actually be displayed in game as the `display_name` property.*
+
+```admonish danger
+This name (without `.dch`) is what will be saved whenever you use that character in a timeline and what you will have to write when referencing the character (e.g. `Emilio: This is a text event.`, if the file is named `Emilio.dch`). So make sure to give it a good name.
+
+You can change the name that will actually be displayed in game as the `display_name` property.
+```
 
 Once your character is created, you will see the character editor. This editor has 4 main sections.
 <img src="/media/character_editor.png" width="600"/>
@@ -77,9 +84,9 @@ You can learn more about portraits, custom portraits and the character settings 
 
 The last important step is to actually have this dialog show up in your game.
 
-For that we need two things to happen: 
+For that we need two things to happen:
 
-- A) having nodes that can display our timeline and 
+- A) having nodes that can display our timeline and
 - B) start the execution of the timeline.
 
 Luckily for us, Dialogic provides a method that does both of those: `Dialogic.start(@timeline_name_or_path)`
