@@ -13,3 +13,16 @@ The `md` files can be displayed in many applications supporting markdown. Howeve
 
 # Structure
 The `src` folder will be used to build the website. The `book` folder contains build files and should not be edited manually.
+
+# Admonish
+The documentation supports admonish.
+You can create these by using the following syntax using `info` as example category:
+````
+```admonish info
+The info text goes here.
+```
+````
+
+Some available admonish categories: `info`, `warning`, `danger`, `tip`, `question`, `bug`, `example`, …
+
+All admonish categories: https://tommilligan.github.io/mdbook-admonish/reference.html#directivese
