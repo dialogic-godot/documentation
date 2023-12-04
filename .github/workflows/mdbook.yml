@@ -40,6 +40,7 @@ jobs:
       - name: Install mdBook Preprocessors
         run: |
           cargo install mdbook-admonish
+          mdbook-admonish install
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v3
