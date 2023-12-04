@@ -165,7 +165,7 @@ Animations are little scripts inheriting the `DialogicAnimation` class, you can 
 Your animation script should look something like this (bounce_in as example):
 
 
-### ❗ Animation Example Bounce
+### Animation Example Bounce
 
 ```gdscript
 extends DialogicAnimation
@@ -183,12 +183,14 @@ func animate():
     tween.finished.connect(emit_signal.bind('finished_once'))
 ```
 
-*It's important that you:*
+```admonish info
+Be aware, you have to:
 
-- extend the `DialogicAnimation` class and implement the animate() method
-- at some point emit the `finished_once` signal (it's called like this because animations can be repeated by dialogic)
+- extend the `DialogicAnimation` class and implement the `animate()` method
+- at some point emit the `finished_once` signal; it's called like this because animations can be repeated by Dialogic
+```
 
-*You have the following variables given to work of:*
+*You have the following variables given to work with:*
 
 - **node** = the node to animate. This is NOT your portrait node directly, but a Node2D that holds that portrait node
 - **time** = the amount of time the animation should take
@@ -204,7 +206,7 @@ func animate():
 [Dialogic node](/documentation/dialogic-nodes) are nodes that in some way execute something visibly, logically or audibly.
 They are generally managed by a subsystem and found because they are automatically added to a group. This makes sure it doesn't matter where in the scene tree they are and how many of them exist.
 
-DialogicNodes do not need to be added by the index.gd file!
+`DialogicNodes` do not need to be added by the `index.gd` file!
 
 ---
 
