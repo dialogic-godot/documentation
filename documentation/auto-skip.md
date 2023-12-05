@@ -1,131 +1,92 @@
-![header_getting_started](/media/headers/autoadvance.png)
+![header_getting_started](/media/headers/autoskip.png)
 
-## What is Auto-Advance?
+## What is Auto-Skip?
 
-Auto-Advance is an experience-changing feature in Dialogic that allows players
-to automatically progress through the timeline without requiring user input!\
-It's particularly useful for providing a hands-free experience to your players,
-offering an alternative to traditional "click-to-advance" methods in games.
+Auto-Skip is the concept of advancing a timeline faster than you can read it.
 
-You may also know this feature by the names "auto-forward" or simply "auto".
+In Visual Novels, Auto-Skip helps to navigate already known story branches quickly.
+If your story is not intended to be cyclic, this feature may not be of use to you.
 
 ## How to use it?
 
-Let's explore how you can enhance your player's experience with Auto-Advance,
-taking into account their reading proficiency and the text's complexity.
+In Dialogic, Auto-Skip can be controlled via the scripting API. If you want to provide the player with an Auto-Skip toggle button, this section will teach you how to implement the logic.
 
-### Text Settings
+First, you can set the time each event is allowed to take via the Text settings page inside Dialogic.
 
-In Dialogic's Settings tab, under the Text section, you can find the
-Auto-Advance settings.
-![header_saving_loading](/media/auto_advance_settings.png)
-Hover over the tooltip icons to learn more about each setting.
+![header_saving_loading](/media/auto_skip_settings.png)
 
-One critical setting is the "Additional Delay", which allows you to choose
-between "Per Character" and "Per Word".\
-These settings modify the pace at which text is displayed, adding extra delays
-either on character or word count.
+However, there are many settings hiding inside the scripting API!
 
+## Scripting Auto-Skip
 
-### Per Word vs. Per Character
+All Auto-Skip settings are variables on the `DialogicAutoSkip` class.
+This class can be accessed via `Dialogic.Input.auto_skip`.
 
-Some languages, for instance Japanese, don't separate words by spaces.\
-Dialogic uses the popular whitespace used by the space bar to determine when a
-word ends and another begins.\
-If you plan on providing multiple localisations, you can set both settings
-via the API.
-
-## Using the Auto-Advance API
-
-With Dialogic's Auto-Advance API, you can effortlessly control and customise the Auto-Advance feature to suit your game's needs. Don't be intimidated; it's more straightforward than you might think!
-
-### Auto-Advance Variables
-
-The variables are used by Dialogic to decide how Auto-Advance must behave.\
-You can access them via `Dialogic.Input.auto_advance`.
-
-There are two types of variables:
-
-- **Enable conditions**: `enabled_until_next_event`, `enabled_forced`, `enabled_until_user_input`
-- **Behaviour changing**: `fixed_delay`, `per_word_delay`, `per_character_delay`, `await_playing_voice`, …
-
-As long as one of the enable conditions is `true`, Auto-Advance will continue.
-This allows stacking the reasons why Auto-Advance has been enabled.\
-Imagine, the player enables Auto-Advance, but the Text event forces it on until the
-next event.\
-Thanks to the multiple enable conditions, if the player disables Auto-Advances,
-it will still carry on until the next event.
-
-You can turn any of the enable-variables to `true` activating Auto-Advance. If you have an Auto-Advance button, you can use the following code to enable the feature:
+First, imagine you want to add an Auto-Skip button to your game. You can use the following code to toggle the feature on and off:
 
 ```gdscript
-Dialogic.Input.auto_advance.enabled_until_user_input = true
+Dialogic.Input.auto_skip.enabled = !Dialogic.Input.auto_skip.enabled
 ```
 
-#### Reading Speed
-
-For Visual Novels, enabling players to set their text speed is a common practice.
-To provide the same feature using Dialogic, use `Dialogic.Input.auto_advance.delay_modifier`.
-This setting multiplies the total calculated Auto-Advance delay time. Faster readers may want a lower number.\
-
-#### Ignored Characters
-
-These characters will be ignored when calculating the text. This feature allows
-you to further fine-tune your Auto-Advance experience. If you don't need it,
-simply toggle it off.
-
-### Auto-Advance via BBCode
-
-BBCode tags can enable Auto-Advance via `[aa]` or `[aa = 10]`.\
-This forces Auto-Advance to last at least until the next Text Timeline Event.\
-If the BBCode provides a valid duration in seconds, Auto-Advance will wait for
-this amount, ignoring `per_word_delay` and `per_character_delay`, but respecting `await_playing_voice`.
-
-Alternatively, if you want to override the Auto-Advance time for the current
-event only, add a `?` behind the duration: `[aa = 10?]`.
-
-### Signal
-
-Stay informed about changes in Auto-Advance's state by leveraging the
-`Dialogic.Input.auto_advance.toggled` signal.
+Furthermore, think about quickly debugging your timeline, you can use *Jump* and *Label Events* for this, or create your own Auto-Skip debug mode.\
+The upcoming code can help you toggle this behaviour:
 
 ```gdscript
-signal toggled(enabled: bool)
+Dialogic.Input.auto_skip.enabled = !Dialogic.Input.auto_skip.enabled
+
+# We can slow the Auto-Skip down to have better control stopping it.
+Dialogic.Input.auto_skip.time_per_event = 0.3
+
+# Important!
+# By default, Auto-Skip cancels on unread text.
+Dialogic.Input.auto_skip.disable_on_unread_text = false
 ```
 
-If you are interested in how Dialogic uses this signal internally, `Input` subsystem connects to this signal:
+Don't forget to set `disable_on_unread_text` back to `true` again, if you want to return to the default behaviour once more.
+
+For more information, check the scripting documentation on the `AutoSkip` class!\
+Each variable contains useful descriptions and displays the default values.
+
+## Signals
+
+When Auto-Skip is enabled or disabled, the feature will emit the
+`DialogicAutoSkip.toggled` signal.
+
+Here is an example on how to connect to the signal:
 
 ```gdscript
-Dialogic.Input.autoadvance.toggled.connect(_on_autoadvance_toggled)
+# Connect to the signal.
+func _init():
+    Dialogic.Input.auto_skip.toggled.connect(_on_auto_skip_toggled)
+
+## If Auto-Skip disables, we want to stop the timer.
+func _on_auto_skip_toggled(is_enabled: bool) -> void:
+    # Your code reacting to Auto-Skip changes goes here!
 ```
 
-### API-only Variables
+## Custom Events
 
-In order to keep things tidy, not all variables can be changed via Auto-Advance's settings page.\
-The following variables can be accessed via code only.
+Events come in all sort of behaviours: Awaiting signals, instantly executing, a mix of conditions, playing audio, …\
+It's impossible to let an Auto-Skip handle all of these effects gracefully from the outside.\
+Therefore, Auto-Skip's behaviour must be implemented by each Timeline Event.
 
-#### Skipping Voice Clips
+### What type of event do I have?
 
-The `await_playing_voice` variable ensures that voice clips finish playing
-before text advances.\
-By default, Dialogic will let all voice clips finish, if you don't want this
-behaviour, you can disable it via the API:
+Does your event finish instantly? Is it playing audio? Awaiting a signal?\
+These situations must be implemented differently.
+
+If you await signals, you can use the `DialogicAutoSkip.toggled` to cause your event to react to Auto-Skip.\
+The Text Event uses this signal to skip the text animation and then advance the timeline.
+
+If you await a timer or perform an action lasting multiple frames, you can use the `time_per_event` variable to limit the time your event may take.\
+Here is a code snippet to give you an idea:
 
 ```gdscript
-Dialogic.Input.auto_advance.await_playing_voice = false
+var animation_length: float = 10.0
+
+if Dialogic.Input.auto_skip.enabled:
+    var time_per_event: float = Dialogic.Input.auto_skip.time_per_event
+    animation_length = min(time_per_event, animation_length)
 ```
 
-#### Per Character and Per Word Delays
-
-To accommodate languages without spaces between words, you can adjust the `per_word_delay` and `per_character_delay` variables using the API.\
- Here's an example of how to configure these settings in your script:
-
-```gdscript
-func _ready():
-    # We can change the settings by directly writing to the returned dictionary.
-    Dialogic.Input.auto_advance.per_word_delay = 0.3
-    Dialogic.Input.auto_advance.per_character_delay = 0.1
-```
-
-Note, if you swap between languages, you'll need to update these settings
-accordingly if you don't want languages with whitespaces to be affected by both.
+This code will cap the animation length to the maximum time set if Auto-Skip is enabled.
