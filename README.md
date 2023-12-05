@@ -14,9 +14,9 @@ The `md` files can be displayed in many applications supporting markdown. Howeve
 ## Book Structure
 The `documentation` folder contains the book pages.
 
-The `theme` folder overrides the [built-in](https://github.com/rust-lang/mdBook/tree/master/src/theme) `mdBook` files. 
+The `theme` folder overrides the [built-in](https://github.com/rust-lang/mdBook/tree/master/src/theme) `mdBook` style/theme files. 
 
-The `book-toml` contains the configuration of the documentation book.
+The `book.toml` contains the configuration of the documentation book.
 
 A preprocessor decides how the book's chapters will be modified before building the final published book.\
 The preprocessors are not part of the built-in feature set and were developed by other developers.\
