@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+/* Godot Engine Syntax Colors, optimised for ayu. */
+:root {
+  --dialogic_keyword-color: #aa7cff;
+  --background-color: #202531;
+  --text-color: #ccced3;
+  --code-tabs-background-color: #353c4c;
+  --symbol-color: #abc8ff;
+  --keyword-color: #ff7085;
+  --control_flow_keyword-color: #ff8ccc;
+  --base_type-color: #42ffc2;
+  --engine_type-color: #8effda;
+  --comment-color: grey;
+  --string-color: #ffeca1;
+  --number-color: #a1ffe0;
+  --function_definition-color:  #ccced3;
+  --decorator-color: #ffb373;
+  --monospace-font-family: "JetBrains Mono", SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, Courier New, Courier, monospace;
+}
+
+
+code.hljs {
+    color: var(--text-color);
+    font-family: var(--monospace-font-family);
+    background-color: var(--background-color)
+}
+
+/* Godot specific highlight.js settings */
+code.hljs .hljs-decorator { color: var(--decorator-color); }
+code.hljs .hljs-dialogic_keyword { color: var(--dialogic_keyword-color); }
+
+
+code.hljs .hljs-symbol { color: var(--symbol-color); }
+
+code.hljs .hljs-keyword { color: var(--keyword-color); }
+
+code.hljs .hljs-control_flow_keyword { color: var(--control_flow_keyword-color); }
+
+code.hljs .hljs-base_type { color: var(--base_type-color); }
+
+code.hljs .hljs-engine_type { color: var(--engine_type-color); }
+
+code.hljs .hljs-comment { color: var(--comment-color); }
+
+code.hljs .hljs-string { color: var(--string-color)}
+
+code.hljs .hljs-number { color: var(--number-color); }
+
+code.hljs .hljs-title { color: var(--function_definition-color); }
+
+code.hljs .hljs-name,
+code.hljs .hljs-tag,
+code.hljs .hljs-attr {
+  color: var(--html-color);
+}
+
+code {
+  display: block;
+  position: relative;
+  font-size: 0.9em;
+  text-align: initial;
+  tab-size: 4;
+}
+
+.inline_code {
+  background-color: grey;
+  color: rgba(255, 255, 255, 0.75);
+  border: none;
+
+}

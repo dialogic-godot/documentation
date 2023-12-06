@@ -1,0 +1,110 @@
+/*
+ * An increased contrast highlighting scheme loosely based on the
+ * "Base16 Atelier Dune Light" theme by Bram de Haan
+ * (http://atelierbram.github.io/syntax-highlighting/atelier-schemes/dune)
+ * Original Base16 color scheme by Chris Kempson
+ * (https://github.com/chriskempson/base16)
+ */
+
+/*
+* Godot Engine Syntax Colors, optimised for ayu, not all values are used in
+* theme.
+*/
+:root {
+    --dialogic_keyword-color: #aa7cff;
+    --background-color: #202531;
+    --text-color: #ccced3;
+    --code-tabs-background-color: #353c4c;
+    --symbol-color: #abc8ff;
+    --keyword-color: #ff7085;
+    --control_flow_keyword-color: #ff8ccc;
+    --base_type-color: #42ffc2;
+    --engine_type-color: #8effda;
+    --comment-color: grey;
+    --string-color: #ffeca1;
+    --number-color: #a1ffe0;
+    --function_definition-color:  #ccced3;
+
+    /* Optimised for this light theme: */
+    --decorator-color: #b95c11;
+    --monospace-font-family: "JetBrains Mono", SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, Courier New, Courier, monospace;
+}
+
+/* Godot specific highlight.js settings */
+code.hljs .hljs-decorator { color: var(--decorator-color); }
+code.hljs .hljs-dialogic_keyword { color: var(--dialogic_keyword-color); }
+
+/* Comment */
+.hljs-comment,
+.hljs-quote {
+  color: #575757;
+}
+
+/* Red */
+.hljs-variable,
+.hljs-template-variable,
+.hljs-attribute,
+.hljs-tag,
+.hljs-name,
+.hljs-regexp,
+.hljs-link,
+.hljs-name,
+.hljs-selector-id,
+.hljs-selector-class {
+  color: #d70025;
+}
+
+/* Orange */
+.hljs-number,
+.hljs-meta,
+.hljs-built_in,
+.hljs-builtin-name,
+.hljs-literal,
+.hljs-type,
+.hljs-params {
+  color: #b21e00;
+}
+
+/* Green */
+.hljs-string,
+.hljs-symbol,
+.hljs-bullet {
+  color: #008200;
+}
+
+/* Blue */
+.hljs-title,
+.hljs-section {
+  color: #516ddf;
+}
+
+/* Purple */
+.hljs-keyword,
+.hljs-selector-tag {
+  color: #9d00ec;
+}
+
+.hljs {
+  display: block;
+  overflow-x: auto;
+  background: #f6f7f6;
+  color: #000;
+}
+
+.hljs-emphasis {
+  font-style: italic;
+}
+
+.hljs-strong {
+  font-weight: bold;
+}
+
+.hljs-addition {
+  color: #22863a;
+  background-color: #f0fff4;
+}
+
+.hljs-deletion {
+  color: #b31d28;
+  background-color: #ffeef0;
+}

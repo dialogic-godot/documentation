@@ -6,7 +6,7 @@
 - [2. Meeting the editor](#2-meeting-the-editor)
 - [3. Creating a timeline](#3-creating-a-timeline)
 - [4. Creating a character](#4-creating-a-character)
-- [5. Adding the dialog to your game](#5-adding-the-dialog-to-your-game)
+- [5. Adding the dialogue to your game](#5-adding-the-dialog-to-your-game)
 
 ## 1. Installation & Activation
 
@@ -36,7 +36,7 @@ Now, let's verify you have correctly installed Dialogic:
 You can now access the dialogic interface by clicking the new tab at the very top (next to 2D, 3D, Script and AssetLib).
 ![godot_main_tabs](/media/godot_main_tabs.png)
 
-You will be greeted by the dialogic home screen. At the top you can see the different editor dialogic has, at the left the a sidebar that will contain recently used characters and timelines.
+You will be greeted by the dialogic home screen. At the top you can see the different editor dialogic has, at the left to a sidebar that will contain recently used characters and timelines.
 
 <img src="/media/editor_overview.png" width="600"/>
 
@@ -80,33 +80,33 @@ Once your character is created, you will see the character editor. This editor h
 
 You can learn more about portraits, custom portraits and the character settings in this tutorial: *[Characters & Portraits](/documentation/characters-and-portraits)*
 
-## 5. Adding the dialog to your game
+## 5. Adding the dialogue to your game
 
-The last important step is to actually have this dialog show up in your game.
+The last important step is to actually have this dialogue show up in your game.
 
-For that we need two things to happen:
+For that, we need two things to happen:
 
 - A) having nodes that can display our timeline and
 - B) start the execution of the timeline.
 
 Luckily for us, Dialogic provides a method that does both of those: `Dialogic.start(@timeline_name_or_path)`
 
-*So code to start your dialog when an input is pressed could look like this:*
+*So the code to start your dialogue when an input is pressed could look like this:*
 
 ```gdscript
-func _input(event:InputEvent):
-    # check if a dialog is already running
-    if Dialogic.current_timeline != null:
-        return
+func _input(event: InputEvent):
+    # check if a dialogue is already running
+    if Dialogic.current_timeline != null:
+        return
 
-    if event is InputEventKey and event.keycode == KEY_ENTER and event.pressed:
-        Dialogic.start('chapterA')
-        get_viewport().set_input_as_handled()
+    if event is InputEventKey and event.keycode == KEY_ENTER and event.pressed:
+        Dialogic.start('chapterA')
+        get_viewport().set_input_as_handled()
 ```
 
-## You have gotten started!
+## You have got started!
 
-Congratulations! You now know the basics of dialogic. There is much more to learn though. Here is a list of tutorials you might want to explore next:
+Congratulations! You now know the basics of dialogic. There is much more to learn, though. Here is a list of tutorials you might want to explore next:
 
 - [Writing timelines in text format](./Timeline_Text_Syntax.md)
 - [Characters and Portraits](/documentation/characters-and-portraits)
