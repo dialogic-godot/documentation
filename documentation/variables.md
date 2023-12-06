@@ -1,6 +1,6 @@
-![header_text_syntax](media/headers/variables.png)
-
 # Variables
+
+![header_text_syntax](media/headers/variables.png)
 
 Variables are good way to keep track of all kinds of things during your game. 
 Dialogic has an easy-to-use and beginner friendly variable system built in. However Dialogic allows to use outside variables (of Autoload Singletons) just as easily. 
@@ -10,16 +10,16 @@ To fully utilize these variables this page contains all you need to know.
 
 ## 📜 Content
 
-- [The dialogic variable editor](##the-dialogic-variable-editor)
-- [Using variables in the timeline](##using-variables-in-the-timeline)
-  - [Variables in texts](###Variables-in-texts)
-  - [Conditions](###Conditions)
-  - [Set Variable event](###Set-variable-event)
-  - [Text Input event](###Text-input-event)
-- [Other uses for variables](##Using-variables-for-other-cool-stuff)
-- [Using variables outside of dialogic](##Using-variables-outside-of-dialogic)
+- [The dialogic variable editor](#the-dialogic-variable-editor)
+- [Using variables in the timeline](#using-variables-in-the-timeline)
+  - [Variables in texts](#Variables-in-texts)
+  - [Conditions](#Conditions)
+  - [Set Variable event](#Set-variable-event)
+  - [Text Input event](#Text-input-event)
+- [Other uses for variables](#Using-variables-for-other-cool-stuff)
+- [Using variables outside of dialogic](#Using-variables-outside-of-dialogic)
 
-## 
+
 
 ## The dialogic variable editor
 

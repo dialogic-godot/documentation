@@ -1,5 +1,5 @@
-![header_text_syntax](media/headers/styles_and_layouts.png)
 # Styles & Layouts
+![header_text_syntax](media/headers/styles_and_layouts.png)
 
 ## Introduction
 
@@ -55,12 +55,11 @@ The next step would be to customize part of your layout (one of the scenes) beyo
 
 An easy way to do this is to use the "Make Custom" button above the layer list and selecting "Current Layer". This will create a copy of that layers scene which you can edit in godot. This is what you would do if you generally like e.g. the textbox, but would like to change something about it that's impossible with just the settings.
 
-```
 ```admonish info
 When editing a layout that's been made custom, be careful which sub-resources (e.g. scripts, fonts, images, etc.) might still be inside the addons/dialogic folder. If you modify these the changes might be lost when updating dialogic. I recommend making any sub-resource "unique" before modifying it. Some, like the scenes root-script however are usually made custom automatically when using "Make Custom".
 ```
 
-```
+
 Alternatively you can start a custom layout scene from scratch. 
 
 - Your scene's root node has to have a script that extends from either `DialogicLayoutBase` or `DialogicLayoutLayer` depending on your use-case. 

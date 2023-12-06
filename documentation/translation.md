@@ -1,3 +1,4 @@
+# Translations
 ![header_getting_started](media/headers/translations.png)
 
 ## What is Translation?
@@ -26,7 +27,7 @@ Godot itself supports `gettext` as well.
 
 In Dialogic, head to the Settings tab, a look under the Translation section. Tick the "Enable Translation" checkbox.
 
-![translation_settings](/media/translation/translation_settings.png)
+![translation_settings](media/translation/translation_settings.png)
 
 ### Setting up Translation
 

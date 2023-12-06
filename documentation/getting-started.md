@@ -28,7 +28,7 @@ Now, let's verify you have correctly installed Dialogic:
 
 ## 🚧 How to install the latest WIP Version 🚧
 
-```admonish warning
+```admonish
 *Dialogic is constantly evolving. Oftentimes fixes for bugs or new features might only be available on the main branch. This is especially true during the alpha and beta phase. If you are interested in using the main branch it's easy to do so.*
 *Go to [the main page of the repository](https://github.com/coppolaemilio/dialogic) and click on the green `Code` button then presse the `Download ZIP` button. From there you can install that ZIP's content like a release.*
 ```
@@ -70,7 +70,7 @@ To create a new character press the `Add Character` button on the top right.
 
 As for timelines, you need to select the place to save to and a name.
 
-```admonish warning
+```admonish
 This name (without `.dch`) is what will be saved whenever you use that character in a timeline and what you will have to write when referencing the character (e.g. `Emilio: This is a text event.`, if the file is named `Emilio.dch`). So make sure to give it a good name.
 
 You can change the name that will actually be displayed in game as the `display_name` property.
