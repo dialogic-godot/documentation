@@ -14,5 +14,6 @@
 - [Creating Timelines In Code](creating-timelines-in-code.md)
 - [Auto-Advance](auto-advance.md)
 - [Auto-Skip](auto-skip.md)
+- [Translations](translation.md)
 - [Pausing](pausing.md)
 - [Saving & Loading](saving-and-loading.md)
