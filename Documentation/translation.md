@@ -1,6 +1,4 @@
-# Translation of Timelines and Characters
-
-![header_getting_started](/media/headers/autoskip.png)
+![header_getting_started](media/headers/translations.png)
 
 ## What is Translation?
 
@@ -13,22 +11,22 @@ This includes not only translation of the game, but also changes to the game its
 While Dialogic supports translation of your timeline, it's better to focus on
 your game first and add translation later.\
 However, keeping the translation and localisation in mind is a very good idea:
+
 - How will you handle variables?
 - Do you need the glossary?
 - What images do you want to localise?
 - Any features in mind that may complicate translation?
 
-
-> **Note:** \
+```admonish
 For now, Dialogic supports CSV translation only.
 Godot itself supports `gettext` as well.
+```
 
 ## How to translate timelines?
 
 In Dialogic, head to the Settings tab, a look under the Translation section. Tick the "Enable Translation" checkbox.
 
 ![translation_settings](/media/translation/translation_settings.png)
-
 
 ### Setting up Translation
 
@@ -97,7 +95,6 @@ This setting is editor-only and may not work in exported projects.
 The translation process is handled by Godot!
 
 In order to change the locale when your game is exported, use the Godot API method on the [TranslationServer](https://docs.godotengine.org/en/stable/classes/class_translationserver.html#translationserver) class:
-
 
 ```gdscript
 # Japanese's language code is "ja"
