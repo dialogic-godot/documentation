@@ -8,8 +8,11 @@ Timelines are saved in a text format, which means that you can use any text-edit
 <summary>📜 Content</summary>
 
 - [About shortcode events](#about-shortcode-events)
+
 - [About special events](#about-special-events)
+
 - [About Indentation](#about-indentation)
+
 - [Example Timeline](#Example-timeline)
   
   </details>
@@ -32,9 +35,9 @@ Some events have a custom syntax, to make writing them easier. This includes:
 
 - Character event: 
   
-  - `Join Emilio (happy) 3 [animation="Bounce In"]`
-  - `Leave Emilio [animation="Bounce Out" length="0.3"]`
-  - `Update Emilio (excited) 4 [animation="Tada" wait="true" repeat="3" move_time="0.3"]`
+  - `join Emilio (happy) 3 [animation="Bounce In"]`
+  - `leave Emilio [animation="Bounce Out" length="0.3"]`
+  - `update Emilio (excited) 4 [animation="Tada" wait="true" repeat="3" move_time="0.3"]`
 
 - Text event: 
   
@@ -86,8 +89,8 @@ Timelines use TAB indentation to know what events belong to a choice or conditio
 ```
 [background path="res://assets/backgroudns/dialogic_factory.png"]
 
-Join Jowan 4
-Jowan (exited): Hello and welcome to[portrait=confused]...[pause=0.5] Wait? What is this?
+join Jowan 4
+jowan (exited): Hello and welcome to[portrait=confused]...[pause=0.5] Wait? What is this?
 
 Join Emilio (happy) 1
 Emilio: Well, this is is the example timeline.
@@ -119,5 +122,3 @@ Jowan (default): So what should this example be about?
 
 [end_timeline]
 ```
-
-
