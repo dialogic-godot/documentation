@@ -5,6 +5,8 @@
 
 - [Character & Portraits](characters-and-portraits.md)
 - [Styles & Layouts](styles-and-layouts.md)
+- [Variables](variables.md)
+- [Timeline Text Syntax](timeline-text-syntax.md)
 - [Dialogic Nodes](dialogic-nodes.md)
 - [Dialogic Signals](dialogic-signals.md)
 - [Custom Portraits](custom-portraits.md)
