@@ -1,6 +1,4 @@
----
-title: Translation
----
+# Translation of Timelines and Characters
 
 ![header_getting_started](/media/headers/autoskip.png)
 
