@@ -1,54 +1,79 @@
+![header_text_syntax](media/headers/styles_and_layouts.png)
 # Styles & Layouts
 
-![header_style-editor](/media/headers/styles_and_layouts.png)
+## Introduction
 
-## 📜 Content
+One important aspect of dialogic is how it allows you to display your timelines. To achieve this there is a number of systems working together: Dialogic Nodes, Layout Scenes and Styles.
 
-- [1. Styles & Layouts](#1-styles--layouts)
-- [2. The style editor](#2-the-style-editor)
+**Dialogic Nodes** are nodes can be placed in any scene. These nodes will be activated by dialogic and do wildly different things, from displaying text, labels or choices to playing sounds or defining a clickable area.
 
-# 1. Styles & Layouts
+**Layout Scenes** are scenes that contain both Dialogic Nodes, other godot Control nodes and custom scripts and provide a standalone UI-part. For example there is a `VisualNovel Textbox Scene`, a `Glossary Popup Scene` or a `Centered Choices Scene`.
 
-- A **style** is a combination of a layout scene (preset or custom) and a set of settings.
-- A **layout** is a scene that can display dialog ingame.
+**Dialogic Styles** are a resource that holds a combination of layout scenes and allows applying settings to them. This is the easiest way of modifying the look of dialogic, as styles can be edited in dialogics Style editor.
 
-Dialogic comes with some **preset layouts**, but you can create your own using DialogicNodes. Learn more about [custom layouts here](/documentation/dialogic-nodes).
+## Working with styles
 
-![layout_presets](/media/layout_presets.png)
+[You can find a video walktrough of dialogic styles here.]([Dialogic 2 - New Style System - YouTube](https://www.youtube.com/watch?v=TLnzSzqBwu4))
 
-*You can add more presets with extensions. Feel free to share cool layouts you've made via the [discord](https://discord.gg/2hHQzkf2pX).*
+A style is made up of
 
-# 2. The style editor
+- One `Base` layout scene (of type DialogicLayoutBase) and settings for that scene.
 
-The style editor allows you to create and edit styles. By default you only have the `Default` style that uses the VisualNovel layout.
+- A list of `Layer` layout scenes (of type DialogicLayoutLayer) and settings for each layer.
 
-<img src="/media/style_editor.png" width="600"/>
+In the style editor you can
 
-### Style list
+- Add new styles (either starting empty or from a premade style)
 
-The style list section lets you:
+- Rename Styles
 
-- add new styles
-- duplicate styles
-- add a new style that inherits the current one
-- delete styles
-- mark the current style as default
+- Add/Replace/Remove layers (both premade scenes and custom scenes)
 
-### Changing the Layout
+- Set all kinds of settings on any of the scenes that are part of that style
 
-You can change the layout the current style uses by clicking `Change` next to the layout thumbnail. This will open a layout selection page:
+- Make one of the premade layers or a whole style custom
 
-<img src="/media/style_editor_layout_selection.png" width="600"/>
+- Make an inherited style from another style (inherits scenes and default settings)
 
-- Select Custom will allow you to select a scene from your project
-- Clicking a preset will show info about that preset and allow you to select it
+- Change the default style
 
-*If your style inherits from another style, the layout is determined by the "parent"-style and cannot be changed.*
+### Using styles in game
 
-### Inheritance
+You can switch between different styles with the `Change Style` event, by calling `Dialogic.Styles.load_style()` before calling `Dialogic.start()`, or by assigning a style to a character.
 
-You can set a style to inherit from another one. A style will inherit the layout and the settings from it's parent style.
+## Custom Styles & Layouts
 
-### Settings
+You can pretty much customize any or all parts of this "Displaying" part of dialogic.
 
-Layouts can expose settings to the editor. These can easily be changed for each style and allow customizing a style. The presets each come with different settings.
+### Custom styles
+
+The simplest is creating a custom style, combining different layers and changing their settings.
+
+### Custom Layout Scenes
+
+The next step would be to customize part of your layout (one of the scenes) beyond what's possible with the provided settings.
+
+An easy way to do this is to use the "Make Custom" button above the layer list and selecting "Current Layer". This will create a copy of that layers scene which you can edit in godot. This is what you would do if you generally like e.g. the textbox, but would like to change something about it that's impossible with just the settings.
+
+```
+```admonish info
+When editing a layout that's been made custom, be careful which sub-resources (e.g. scripts, fonts, images, etc.) might still be inside the addons/dialogic folder. If you modify these the changes might be lost when updating dialogic. I recommend making any sub-resource "unique" before modifying it. Some, like the scenes root-script however are usually made custom automatically when using "Make Custom".
+```
+
+```
+Alternatively you can start a custom layout scene from scratch. 
+
+- Your scene's root node has to have a script that extends from either `DialogicLayoutBase` or `DialogicLayoutLayer` depending on your use-case. 
+
+- In your scenes root script you can export variables which will appear as settings in dialogics style editor. Grouping them with @export_group and @export_subgroup makes it even nicer. Note that not all types are supported here. 
+
+- If you want to utilize dialogics style system then you should apply any @exported settings in a method called `_apply_export_overrides()` which is called whenever the style changes. 
+
+You can add your custom scene in very easily by either using `Add Layer` or `Replace Layer` above the layer list.
+
+### Custom nodes
+
+While dialogics modules usually expect the nodes that display them to be made in a certain way, that doesn't prevent you from actually customizing the nodes themselves. Each dialogic node is just a normal control node with a script attached to it. Usually dialogic nodes interact with dialogic subsystems through a group they add themselves to.
+
+Note that in most cases reacting to some of dialogic signals (or signals of existing dialogic nodes) can be way easier then creating a custom version of a dialogic node.
+```
