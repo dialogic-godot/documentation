@@ -22,6 +22,20 @@ A preprocessor decides how the book's chapters will be modified before building 
 The preprocessors are not part of the built-in feature set and were developed by other developers.\
 They must be installed, see the [`.github/workflows/mdbook.yml`](https://github.com/dialogic-godot/documentation/blob/main/.github/workflows/mdbook.yml) for this.
 
+## Run the documentation locally
+To build the documentation, we need its software `mdBook`, which is written in the Rust Language
+
+1. First, install Rust: https://www.rust-lang.org/tools/install
+Open a new console, this allows `cargo` to function and makes the following commands possible.
+
+2. Let's install `mdBook`: `cargo install mdbook`
+
+3. We need to install the preprocessor for the admonish feature: `cargo install mdbook-admonish`
+
+4. Finally, you can run this command inside this project's root: `mdbook serve --open`
+
+The workflow is also described in the [.github/workflows/mdbook.yml](https://github.com/dialogic-godot/documentation/blob/main/.github/workflows/mdbook.yml) file.
+
 ## Admonish
 The documentation supports admonish. We use a preprocessor for this.
 You can create these by using the following syntax, using `info` as an example category:
