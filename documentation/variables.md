@@ -1,7 +1,4 @@
-```yaml
-title: Variables
-order: 4
-```
+![header_text_syntax](media/headers/variables.png)
 
 # Variables
 

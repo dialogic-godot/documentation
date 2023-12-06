@@ -1,8 +1,4 @@
-```yaml
-title: Styles
-order: 5
-```
-
+![header_text_syntax](media/headers/styles_and_layouts.png)
 # Styles & Layouts
 
 ## Introduction

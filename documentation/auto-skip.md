@@ -1,4 +1,4 @@
-![header_getting_started](/media/headers/autoadvance.png)
+![header_getting_started](media/headers/autoadvance.png)
 
 ## What is Auto-Advance?
 
@@ -25,7 +25,6 @@ One critical setting is the "Additional Delay", which allows you to choose
 between "Per Character" and "Per Word".\
 These settings modify the pace at which text is displayed, adding extra delays
 either on character or word count.
-
 
 ### Per Word vs. Per Character
 
