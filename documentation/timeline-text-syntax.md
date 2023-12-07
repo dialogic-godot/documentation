@@ -21,7 +21,7 @@ Timelines are saved in a text format, which means that you can use any text-edit
 
 Most events follow a shortcodes-like style:
 
-```
+```dtl
 [background path="res://icon.png" fade="1.0"]
 ```
 
