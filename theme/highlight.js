@@ -79,4 +79,101 @@ function hljsDefineGDScript(hljs) {
 	};
 }
 
+
+/*
+    Function returns a highlight definition for GDScript.
+*/
+function hljsDefineDialogicTimeline(hljs) {
+	var KEYWORDS = {
+        /* General keywords */
+		keyword:
+			'join leave update set jump label background set call ' +
+            'music voice sound style clear history end_timeline ',
+
+        /* Keywords altering the code flow. */
+        control_flow_keyword:
+            'if and elif else for match while break continue pass return ',
+
+        /* Improves the Dialogic Autoload's visual clarity. */
+        dialogic_keyword:
+            '',
+
+        /* Built-in types in GDScript. */
+        built_in:
+            '',
+
+		literal:
+			'true false null'
+	};
+
+    var SPEAKER_NAME = {
+        className: 'dialogic_keyword',
+        begin: '\\b[A-Za-z]+\\b(?=\\s*(\\([^)]+\\)|:))'
+    };
+
+    var SPEAKER_TEXT = {
+        className: 'string',
+        begin: ':',
+        end: '$',
+        relevance: 0,
+        contains: []
+    };
+
+	var SPEAKER_EXPRESSION = {
+        className: 'built_in',
+        begin: '\\([^)]+\\)'
+    };
+
+	var SPEAKER_ARGUMENT = {
+		className: 'dialogic_keyword',
+		begin: '(?<=\\b(?:join|leave|jump|label|update)\\s)\\b[A-Za-z]+\\b'
+	  };
+
+    var SPEAKER_EXPRESSION = {
+        className: 'built_in',
+        begin: '\\([^)]+\\)'
+    };
+
+	var EVENT_PROPERTY = {
+		className: 'built_in',
+		begin: '\\b[A-Za-z]+\\b(?=\\s*=)'
+	  };
+
+	return {
+		aliases: ['dtl', 'timeline'],
+		keywords: KEYWORDS,
+		contains: [
+            SPEAKER_NAME,
+            SPEAKER_TEXT,
+            SPEAKER_EXPRESSION,
+			EVENT_PROPERTY,
+			SPEAKER_ARGUMENT,
+			hljs.NUMBER_MODE,
+			hljs.HASH_COMMENT_MODE,
+			{
+				className: 'comment',
+				begin: /"""/, end: /"""/
+			},
+			hljs.QUOTE_STRING_MODE,
+			{
+				variants: [
+					{
+						className: 'function',
+						beginKeywords: 'func'
+					},
+					{
+						className: 'class',
+						beginKeywords: 'class'
+					}
+				],
+				end: /:/,
+				contains: [
+					hljs.UNDERSCORE_TITLE_MODE
+				]
+			},
+		]
+	};
+}
+
 hljs.registerLanguage('gdscript', hljsDefineGDScript);
+hljs.registerLanguage('dialogic-timeline', hljsDefineDialogicTimeline);
