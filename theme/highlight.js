@@ -142,7 +142,6 @@ function hljsDefineDialogicTimeline(hljs) {
             SPEAKER_TEXT,
             SPEAKER_EXPRESSION,
 			SPEAKER_ARGUMENT,
-			ESCAPED_EVENT_BRACKTS,
 			hljs.NUMBER_MODE,
 			hljs.HASH_COMMENT_MODE,
 			{
