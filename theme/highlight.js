@@ -134,6 +134,11 @@ function hljsDefineDialogicTimeline(hljs) {
         begin: '\\([^)]+\\)'
     };
 
+	var EVENT_PROPERTY = {
+		className: 'built_in',
+		begin: '\\b[A-Za-z]+\\b(?=\\s*=)'
+	  };
+
 	return {
 		aliases: ['dtl', 'timeline'],
 		keywords: KEYWORDS,
@@ -141,6 +146,7 @@ function hljsDefineDialogicTimeline(hljs) {
             SPEAKER_NAME,
             SPEAKER_TEXT,
             SPEAKER_EXPRESSION,
+			EVENT_PROPERTY,
 			SPEAKER_ARGUMENT,
 			hljs.NUMBER_MODE,
 			hljs.HASH_COMMENT_MODE,
