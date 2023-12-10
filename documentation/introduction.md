@@ -25,19 +25,19 @@ This is just scratching the surface of what's possible.
 Here is a small list of other things you can do:
 
 
-- [Create events and timelines in code](/documentation/creating-timelines-in-code)
+- [Create events and timelines in code!](creating-timelines-in-code)
 
-- Use built-in "text actions" like `[speed]`, `[pause]`, `[signal]`, `[portrait]`
+- Use built-in "text actions" like `[speed]`, `[pause]`, `[signal]`, `[portrait]`.
 
-- Easy-to-use variables in your timelines!
+- [Easy-to-use variables in your timelines!]((variables.md))
 
 - Create a glossary with strings that can be hovered over to show information.
 
-- Translate characters and timelines with the integrated CSV file system!
+- [Translate characters and timelines](translation.md) with the integrated CSV file system!
 
-- Easily create custom events; they are all resources.
+- [Seamlessly create Custom Events](creating-extensions.md); they are all text resources (`.tres`).
 
-- Access functionality from code, for instance, "Dialogic.Portraits.change_portrait(Emilio, "happy")`, `Dialogic.Backgrounds.update_background("res://icon.png")`
+- Access functionality from code, for instance, `"Dialogic.Portraits.change_portrait(Emilio, "happy")`, `Dialogic.Backgrounds.update_background("res://icon.png")`
 
 ## How do I get started?
 
@@ -47,6 +47,10 @@ Cannot find the right page? Try the search or open an issue on the GitHub reposi
 
 ## Can I upgrade my current game made using Dialogic 1?
 
-There are several things to overcome when upgrading from Dialogic 1. First, Dialogic 1 is exclusively for Godot 3, while Dialogic 2 is made for Godot 4. That means that you first need to make sure that your project works in Godot 4 by making the necessary adjustments.
+There are several things to overcome when upgrading from Dialogic 1.
 
-If you have already made a lot of progress in your game, there is no reason to upgrade. We recommend you stick to Godot 3 and Dialogic 1. But if you want to give it a try, thanks to our contributors, there is a Dialogic 1 to Dialogic 2 converter available.
+First, Dialogic 1 is exclusively for Godot 3, while Dialogic 2 is made for Godot 4. 
+That means that you first need to make sure that your project works in Godot 4 by making the necessary adjustments.
+
+If you have already made a lot of progress in your game, there is no reason to upgrade. We recommend you stick to Godot 3 and Dialogic 1. 
+However, if you want to give it a try, thanks to our contributors, there is a Dialogic 1 to Dialogic 2 converter available.
