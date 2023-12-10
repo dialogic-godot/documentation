@@ -29,7 +29,7 @@ Here is a small list of other things you can do:
 
 - Use built-in "text actions" like `[speed]`, `[pause]`, `[signal]`, `[portrait]`.
 
-- [Easy-to-use variables in your timelines!]((variables.md))
+- [Easy-to-use variables in your timelines!](variables.md)
 
 - Create a glossary with strings that can be hovered over to show information.
 
