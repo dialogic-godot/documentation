@@ -13,7 +13,8 @@ The Dialogic plugin allows you to easily create in-game dialogs or fully fledged
 
 Dialogic 2 empowers you with:
 
-**Timelines**! They control the flow of your story. They can be edited in a writer-friendly **Visual Editor** or your editor of choice.
+1. **Timelines**! They control the flow of your story. They can be edited in a writer-friendly **Visual Editor** or your editor of choice.
+   
 2. **Events**! Each timeline contains events, and Dialogic equips you with many built-ones to get your story started today!
 
 3. **Customization!** Cannot find the right Event? Find out what others created, or create your own specific Events with very little code. They flow right into the Visual Editor too!
@@ -40,7 +41,9 @@ Here is a small list of other things you can do:
 
 ## How do I get started?
 
-[Let's get started](getting-started), there are numerous pages in this documentation, and more are coming!
+First, [let's get Dialogic up and running](getting-started)! After this step, the numerous pages on the left-side navigation bar will aid you with your dialog-driven game adventure! 
+
+Cannot find the right page? Try the search or open an issue on the GitHub repository!
 
 ## Can I upgrade my current game made using Dialogic 1?
 
