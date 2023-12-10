@@ -1,6 +1,6 @@
 # Summary
 
-[Intorduction](introduction.md)
+[Introduction](introduction.md)
 [Getting Started](getting-started.md)
 [FAQ](faq.md)
 
