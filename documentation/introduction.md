@@ -25,7 +25,6 @@ If you prefer to write your timelines in code, you can do that too! Here is the 
 join juliet 1
 juliet: Oh Romeo, what's your favourite game type?
 join romeo 2
-[update_position time="0.0"]
 romeo: Oh Juliet, it's simple...
 - Visual Novels
 	jump VNs
