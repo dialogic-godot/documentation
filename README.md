@@ -14,7 +14,7 @@ The `md` files can be displayed in many applications supporting markdown. Howeve
 ## Book Structure
 The `documentation` folder contains the book pages.
 
-The `theme` folder overrides the [built-in](https://github.com/rust-lang/mdBook/tree/master/src/theme) `mdBook` style/theme files. 
+The `theme` folder overrides the [built-in](https://github.com/rust-lang/mdBook/tree/master/src/theme) `mdBook` style/theme files.
 
 The `book.toml` contains the configuration of the documentation book.
 
@@ -48,3 +48,14 @@ The info text goes here.
 Some available admonish categories: `info`, `warning`, `danger`, `tip`, `question`, `bug`, `example`, …
 
 All admonish categories: https://tommilligan.github.io/mdbook-admonish/reference.html#directivese
+
+## Chapter Banners
+Each page has its own header banner.\
+These can be created via this syntax:
+```html
+<div class="header-banner ocean">
+     <div class="header-label ocean">Creating Extensions</div>
+</div>
+```
+
+Alongside `ocean`, you can find the rest defined here: [header.css](https://github.com/dialogic-godot/documentation/blob/main/header.css).
