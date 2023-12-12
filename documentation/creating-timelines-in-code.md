@@ -1,6 +1,6 @@
-# Creating Timelines In Code
-
-![header_timelines_in_code](/media/headers/timelines_in_code.png)
+<div class="header-banner blurple">
+     <div class="header-label blurple">Variables</div>
+</div>
 
 As timelines and events are just resources, you can create new timelines in code.
 

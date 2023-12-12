@@ -1,6 +1,6 @@
-# Characters & Portraits
-
-![header_character_portraits](/media/headers/character_portraits.png)
+<div class="header-banner ocean">
+     <div class="header-label ocean">Character & Portraits</div>
+</div>
 
 The character editor allows to edit character resources (.dch). It has 4 sections.
 

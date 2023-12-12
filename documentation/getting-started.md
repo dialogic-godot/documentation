@@ -1,4 +1,6 @@
-![header_getting_started](/media/headers/getting_started.png)
+<div class="header-banner blurple">
+     <div class="header-label blurple">Getting Started</div>
+</div>
 
 ## 📜 Content
 
