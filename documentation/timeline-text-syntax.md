@@ -1,4 +1,6 @@
-![header_text_syntax](media/headers/text_syntax.png)
+<div class="header-banner dawn">
+     <div class="header-label dawn">Timeline Text Syntax</div>
+</div>
 
 Timelines are saved in a text format, which means that you can use any text-editing software to edit and create them. The built in text editor provides useful autocompletion and syntax highlighting.
 📜

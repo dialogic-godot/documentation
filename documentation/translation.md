@@ -1,5 +1,7 @@
-# Translations
-![header_getting_started](media/headers/translations.png)
+<div class="header-banner pineapple">
+     <div class="header-label pineapple">Translations</div>
+</div>
+
 
 ## What is Translation?
 

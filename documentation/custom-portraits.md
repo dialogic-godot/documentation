@@ -1,6 +1,6 @@
-# Custom Portraits
-
-![header_custom_portraits](/media/headers/custom_portraits.png)
+<div class="header-banner pineapple">
+     <div class="header-label pineapple">Custom Portraits</div>
+</div>
 
 
 ## 📜 Content
