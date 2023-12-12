@@ -1,0 +1,136 @@
+:root {
+  --header-background-pattern: url('/media/headers/background_pattern.png');
+
+  /* Here are the color variables for the header banners. */
+  /* Purple */
+  --purple-start: #842061;
+  --purple-end: #29184d;
+
+  /* Orange to Green: */
+  --tropical-start: #c27536;
+  --tropical-end: #4ea154;
+
+  /* Dawn: Dark red to orange */
+  --dawn-start: #4e1830;
+  --dawn-end: #a0731f;
+
+  /* Ocean: Green to blue */
+  --ocean-start: #216342;
+  --ocean-end: #2b77a6;
+
+  /* Pineapple: Green to orange */
+  --pineapple-start: #425c19;
+  --pineapple-end: #a87f2b;
+
+  /* Blurple: Blue to purple: */
+  --blurple-start: #6284c6;
+  --blurple-end: #552baf;
+
+}
+
+.header-banner {
+    margin: 7px;
+    box-sizing: border-box;
+    text-align: center;
+    border-radius: 18px;
+    box-shadow: 0 0 6px 0px #4b9aff;
+    padding: 18px 0;
+    background-size: cover;
+}
+
+.header-label {
+    padding: inherit;
+    box-sizing: border-box;
+    color: white;
+    display: inline-block;
+    border-radius: 15px;
+    padding: 5px;
+    font-size: 200%;
+    font-weight: bold;
+    font-family: Segoe UI Heavy, Frutiger, Frutiger Linotype,
+        Dejavu Sans, Helvetica Neue,Arial,sans-serif;
+}
+
+
+/* Purple: Purple hues */
+
+.header-banner.purple {
+  background-image:
+    var(--header-background-pattern),
+    linear-gradient(90deg, var(--purple-end) 0%, var(--purple-start) 100%);
+}
+
+.header-label.purple {
+  background:
+    linear-gradient(90deg, var(--purple-start)  0%, var(--purple-end) 100%)
+}
+
+
+/* Tropical: Orange to green */
+
+.header-banner.tropical {
+  background-image:
+    var(--header-background-pattern),
+    linear-gradient(90deg, var(--tropical-end) 0%, var(--tropical-start) 100%);
+}
+
+.header-label.tropical {
+  background:
+    linear-gradient(90deg, var(--tropical-start)  0%, var(--tropical-end) 100%)
+}
+
+
+/* Dawn: Dark-red to orange */
+
+.header-banner.dawn {
+  background-image:
+    var(--header-background-pattern),
+    linear-gradient(90deg, var(--dawn-end) 0%, var(--dawn-start) 100%);
+}
+
+.header-label.dawn {
+  background:
+    linear-gradient(90deg, var(--dawn-start)  0%, var(--dawn-end) 100%);
+}
+
+
+/* Ocean: Green to blue */
+
+.header-banner.ocean {
+  background-image:
+    var(--header-background-pattern),
+    linear-gradient(90deg, var(--ocean-end) 0%, var(--ocean-start) 100%);
+}
+
+.header-label.ocean {
+  background:
+    linear-gradient(90deg, var(--ocean-start)  0%, var(--ocean-end) 100%);
+}
+
+
+/* Pineapple: Green to orange */
+
+.header-banner.pineapple {
+  background-image:
+    var(--header-background-pattern),
+    linear-gradient(90deg, var(--pineapple-end) 0%, var(--pineapple-start) 100%);
+}
+
+.header-label.pineapple {
+  background:
+    linear-gradient(90deg, var(--pineapple-start)  0%, var(--pineapple-end) 100%);
+}
+
+
+/* Blurple: purple to blue */
+
+.header-banner.blurple {
+  background-image:
+    var(--header-background-pattern),
+    linear-gradient(90deg, var(--blurple-end) 0%, var(--blurple-start) 100%);
+}
+
+.header-label.blurple {
+  background:
+    linear-gradient(90deg, var(--blurple-start)  0%, var(--blurple-end) 100%);
+}
