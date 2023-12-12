@@ -1,6 +1,6 @@
-# Saving & Loading
-
-![header_saving_loading](/media/headers/saving_loading.png)
+<div class="header-banner dawn">
+     <div class="header-label dawn">Saving & Loading</div>
+</div>
 
 Obviously many games require the ability to save and load.
 

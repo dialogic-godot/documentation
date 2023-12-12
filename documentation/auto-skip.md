@@ -1,4 +1,6 @@
-![header_getting_started](/media/headers/autoskip.png)
+<div class="header-banner purple">
+     <div class="header-label purple">Auto-Skip</div>
+</div>
 
 ## What is Auto-Skip?
 

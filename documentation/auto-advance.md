@@ -1,6 +1,7 @@
-# Auto-Advance
+<div class="header-banner purple">
+     <div class="header-label purple">Auto-Advance</div>
+</div>
 
-![header_getting_started](/media/headers/autoadvance.png)
 
 ## What is Auto-Advance?
 

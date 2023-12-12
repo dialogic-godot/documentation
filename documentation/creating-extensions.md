@@ -1,7 +1,10 @@
-# Creating Extensions
+<div class="header-banner ocean">
+     <div class="header-label ocean">Creating Extensions</div>
+</div>
 
-![header_creating_extensions](/media/headers/creating_extensions.png)
-***Sometimes dialogic is just not enough***. Whether it's an event, an editor, a setting or a text effect that is missing: You can add it.
+***Sometimes Dialogic is just not enough***.
+
+ Whether it's an event, an editor, a setting or a text effect that is missing: You can add it.
 An extension is a folder that contains all the information about these things, so that dialogic can use it.
 Extensions are very powerful. Actually just as powerful as dialogic built-in stuff (because it works exactly the same).
 
@@ -22,12 +25,12 @@ The best way to create an extension is to use the extension creator in the dialo
 
 <img src="/media/extension_creator.png" width="600"/>
 
-By clicking the `Create New Extension` button you can setup an extension folder and custom event script very quickly. Enter a name for the new module and select what you would like to add. Then click `Create`.
+By clicking the `Create New Extension` button, you can set up an extension folder and custom event script very quickly. Enter a name for the new module and select what you would like to add. Then click `Create`.
 
-## 2. The essential part: index.gd
+## 2. The essential part: `index.gd`
 
-The central piece of any extension is the `index.gd` script. It is the only thing your extension is required to have. It has to extend DialogicIndexer and can overwrite that classes methods to let dialogic know about what things to add.
-For example this code registers a custom event:
+The central piece of any extension is the `index.gd` script. It is the only thing your extension is required to have. It has to extend `DialogicIndexer` and can overwrite that classes methods to let dialogic know about what things to add.
+For example, this code registers a custom event:
 
 ```gdscript
 func _get_events() -> Array:
@@ -42,9 +45,9 @@ func _get_events() -> Array:
 
 ## What is an event?
 
-A dialogic event is a script that defines a new class inheriting DialogicEvent. This script will define (a) how the event is represented in editor, (b) how it is saved and also (c) what it does during timeline execution when the event is reached.
+A dialogic event is a script that defines a new class inheriting `DialogicEvent`. This script will define (a) how the event is represented in-editor, (b) how it is saved, and also (c) what it does during timeline execution when the event is reached.
 
-Oftentimes events work together with subsystems.
+Often, events work together with subsystems.
 
 ## Your custom event
 
@@ -74,11 +77,11 @@ func _execute() -> void:
         finish()
 ```
 
-*The `finish()` method let's dialogic know to continue with the next event.*
+*The `finish()` method lets Dialogic know to continue with the next event.*
 
 #### 3. General settings:
 
-In the `_init()` method you can set some base settings of your event:
+In the `_init()` method, you can set some base settings of your event:
 
 ```gdscript
 func _init() -> void:
@@ -106,7 +109,7 @@ func get_shortcode_parameters() -> Dictionary:
 ```
 
 *The above event might be saved as `[print text="Some text to print" in_game="true"]`*
-*You can implement a custom saving syntax by overriding `to_text() -> String`, `from_text(@string)` and `is_valid_event(@string) -> bool`. This is what the text-, character, choice, condition and variable events do so take a look at them if this is something you are interested in.*
+*You can implement a custom saving syntax by overriding `to_text() -> String`, `from_text(@string)` and `is_valid_event(@string) -> bool`. This is what the text-, character, choice, condition and variable events do, so take a look at them if this is something you are interested in.*
 
 #### 5. Editor fields:
 
@@ -129,9 +132,9 @@ If you want to learn more about events, I strongly suggest looking at the built-
 ## What is a subsystem?
 
 A subsystem is a script that contains useful methods for game execution. Subsystems can be accessed as `Dialogic.SubsystemName.method()` when running the game. They should contain all of your extensions game code.
-For example built-in subsystems include `Text, Portraits, Choices, Audio, etc.`. Their methods are used by the built-in events and can be used by your events as well.
+For example, built-in subsystems include `Text, Portraits, Choices, Audio, etc.`. Their methods are used by the built-in events and can be used by your events as well.
 
-Additionally it's good if a subsystem manages dialogic nodes. This could be done like this:
+Additionally, it's good if a subsystem manages dialogic nodes. This could be done like this:
 
 ```gdscript
 func update_my_dialogic_nodes(some_setting):
@@ -162,7 +165,7 @@ func _get_portrait_animations() -> Array:
 
 Animations are little scripts inheriting the `DialogicAnimation` class, you can take a look at the default ones (they use tweens) at `dialogic/Modules/Character/DefaultAnimations`.
 
-Your animation script should look something like this (bounce_in as example):
+Your animation script should look something like this (`bounce_in`, for example):
 
 
 ### Animation Example Bounce
@@ -214,7 +217,7 @@ They are generally managed by a subsystem and found because they are automatical
 
 An extension might want to add a dialogic settings editor. This is just a UI scene that has a script inheriting `DialogicSettingsPage`.
 
-- overwrite some methods (just the ones that you need)
+- Overwrite some methods (just the ones that you need)
   - `_get_title()`
   - _get_priority() -> return an int that will influence the order of settings pages
   - _refresh() -> whenever the settings are opened
@@ -223,6 +226,6 @@ An extension might want to add a dialogic settings editor. This is just a UI sce
 - settings are usually saved either
   - in the `project settings` in a subcategory of dialogic (e.g. `dialogic/myextension/setting`):
     - `ProjectSettings.set_setting('dialogic/myextension/setting', some_value)`
-  - you can also save/load editor settings with `DialogicUtil.set_editor_setting('setting', value)` and DialogicUtil.get_editor_setting('setting').
-    - these are project-dependant
+  - You can also save/load editor settings with `DialogicUtil.set_editor_setting('setting', value)` and DialogicUtil.get_editor_setting('setting').
+    - These depend on the project
 - remember that all scripts in this scene must be in @tool mode.

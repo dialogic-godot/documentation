@@ -1,6 +1,6 @@
-
-
-# Introduction to Dialogic 2
+<div class="header-banner dawn">
+     <div class="header-label dawn">Introduction to Dialogic 2</div>
+</div>
 
 ```admonish info
 This documentation is for Dialogic 2.
@@ -11,6 +11,7 @@ Dialogic 2 is still in-development and marked as Alpha, there may be workflow br
 ## What is Dialogic 2?
 
 The Dialogic plugin allows you to easily create in-game dialogs or fully fledged **Visual Novels** with Godot.
+
 Let's have an overview of what Dialogic 2 can do for you!
 
 ### 1. Timelines!
@@ -45,6 +46,7 @@ Cannot find the right Event? Need more options for your character portraits? You
 It's all here and ready for you: Dialogic 2 is easy to use for writers and powerful but intuitive to extend for programmers.
 
 [Create your own specific Events](creating-extensions.md) with very little code, and your designers can instantly use them as if they were part of Dialogic.
+
 
 ### 4. Character system and editor
 
@@ -84,6 +86,7 @@ There are several problems to overcome when upgrading from Dialogic 1.
 
 First, Dialogic 1 is exclusively for Godot 3, while Dialogic 2 requires for Godot 4.1 or higher.
 Hence your project must work in Godot 4.1, it's a very different engine with a lot of changes.
+
 
 If you have already made a lot of progress in your game, there is no reason to upgrade. We recommend you stick to Godot 3 and Dialogic 1.
 However, if you want to give it a try, thanks to our contributors, there is a Dialogic 1 to Dialogic 2 converter available.

@@ -1,9 +1,10 @@
-# Variables
+<div class="header-banner tropical">
+     <div class="header-label tropical">Variables</div>
+</div>
 
-![header_text_syntax](media/headers/variables.png)
 
-Variables are good way to keep track of all kinds of things during your game. 
-Dialogic has an easy-to-use and beginner friendly variable system built in. However Dialogic allows to use outside variables (of Autoload Singletons) just as easily. 
+Variables are good way to keep track of all kinds of things during your game.
+Dialogic has an easy-to-use and beginner friendly variable system built in. However Dialogic allows to use outside variables (of Autoload Singletons) just as easily.
 You can also access the Dialogic variables from outside scripts.
 
 To fully utilize these variables this page contains all you need to know.
@@ -29,7 +30,7 @@ Variables can be grouped together in folders (which just have a name).
 
 Important: Inside a folder no item (variable or folder) can have the same name.
 
-## 
+##
 
 ## Using variables in the timeline
 
@@ -43,7 +44,7 @@ This syntax also allows calling methods on that autoload. Whatever is returned f
 
 You can even do simple operations inside the brackets: `{{Player.Health}/10.0+2}`
 
-### 
+###
 
 ### Conditions
 
@@ -58,18 +59,18 @@ In the visual editor you can simply select the variable from the dropdown and co
 In conditions you can use all the same tricks as in text events and a couple more:
 
 - Accessing autoloads: `Autoload.property`
-  
+
   - *In conditions Autoloads don't have to wrapped in {} brackets.*
 
 - Using autoload methods: `Autoload.check_info("Argument", false)`
-  
+
   - A conidtion always results in a boolean at the end using the same rules as gdscript for type conversion.
 
 - Using variables and typical boolean operators (==, !=, <, >, <=, >=, not, and, or, brackets):
-  
+
   - `{Player.Health} > 5 or {Player.Luck} > randi()%10`
 
-### 
+###
 
 ### Set Variable event
 
@@ -111,13 +112,13 @@ set Autoload.health = {Player.Health} + 2
 
 The value is parsed as an expression similar to what is done with {expressions} inside text events or in conditions. All the same can be done here as well, the only difference is that it won't be converted to string/bool.
 
-### 
+###
 
 ### Text Input event
 
 A special kind of set variable event is the `Text Input` event which allows you to capture a text input the player makes in a variable.
 
-## 
+##
 
 ## Using variables for other cool stuff
 
@@ -129,7 +130,7 @@ A characters `Display Name` can be a variable. That is the best way to control t
 
 You can use variables in glossaries titles, texts and extras. This is the best way to control the texts during the game. You can do all the same things as in the text event.
 
-## 
+##
 
 ## Using variables outside of dialogic
 
