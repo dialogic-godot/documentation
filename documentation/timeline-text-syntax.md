@@ -2,9 +2,11 @@
      <div class="header-label dawn">Timeline Text Syntax</div>
 </div>
 
-Timelines are saved in a text format, which means that you can use any text-editing software to edit and create them. The built in text editor provides useful autocompletion and syntax highlighting.
-📜
-*Info: For dialogic to register your timeline file, it has to use the `.dtl` extension!*
+Timelines are saved in a text format, which means that you can use any text-editing software to edit and create them. The built-in text editor provides useful autocompletion and syntax highlighting.
+
+```admonish info
+For Dialogic to register your timeline file, it has to use the `.dtl` extension!
+```
 
 <details open>
 <summary>📜 Content</summary>
@@ -19,7 +21,7 @@ Timelines are saved in a text format, which means that you can use any text-edit
 
   </details>
 
-## About shortcode events
+## About short code events
 
 Most events follow a shortcodes-like style:
 
@@ -27,13 +29,13 @@ Most events follow a shortcodes-like style:
 [background path="res://icon.png" fade="1.0"]
 ```
 
-The order of the parameters does not matter, but they have to be separated by at least one space. All parameters regardless of type have to be contained in double quotation marks.
+The order of the parameters is not relevant, but they have to be separated by at least one space. All parameters, regardless of type, have to be contained in double quotation marks.
 
-To find all of the parameters you can use on each event, check out their documentation by searching for their class in the godot help or this documentation.
+To find all the parameters you can use on each event, check out their documentation by searching for their class in the Godot Help or this documentation.
 
 ## About special events
 
-Some events have a custom syntax, to make writing them easier. This includes:
+Some events have a custom syntax to make writing them easier. This includes:
 
 - Character event:
 
@@ -45,7 +47,7 @@ Some events have a custom syntax, to make writing them easier. This includes:
 
   - `A wonderful text event, said by noone in particular.`
   - `Emilio (excited): Hello and welcome!`
-  - Ending a text event with \ will make it include the next line as well.
+  - Ending a text event with `\` will make it include the next line as well.
 
 - Choice event:
 
@@ -59,7 +61,7 @@ Some events have a custom syntax, to make writing them easier. This includes:
   - `elif {Player.Health} <= 10:`
   - `else:`
 
-- Set Variable event:
+- Set Variable Event:
 
   - `set {MyVariable} += 10`
   - Supported Operators are =, += , -= , *=, /=
