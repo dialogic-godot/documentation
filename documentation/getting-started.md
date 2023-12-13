@@ -2,6 +2,8 @@
      <div class="header-label blurple">Getting Started</div>
 </div>
 
+*This tutorial teaches you how to install Dialogic and gives a quick overview over the necessary elements you need to know for making a dialog appear in your game.*
+
 ## 📜 Content
 
 - [1. Installation & Activation](#1-installation--activation)
@@ -35,14 +37,17 @@ Now, let's verify you have correctly installed Dialogic:
 *Go to [the main page of the repository](https://github.com/coppolaemilio/dialogic) and click on the green `Code` button then presse the `Download ZIP` button. From there you can install that ZIP's content like a release.*
 ```
 
+---
+
 ## 2. Meeting the editor
 
 You can now access the dialogic interface by clicking the new tab at the very top (next to 2D, 3D, Script and AssetLib).
-![godot_main_tabs](/media/godot_main_tabs.png)
+
+![godot_main_tabs](media/godot_main_tabs.png)
 
 You will be greeted by the dialogic home screen. At the top you can see the different editors dialogic has, at the left a sidebar that will contain recently used characters and timelines.
 
-<img src="/media/editor_overview.png" width="600"/>
+<img title="" src="media/editor_overview.png" alt="" width="600">
 
 In the top right there are some helpful buttons:
 
@@ -52,6 +57,8 @@ In the top right there are some helpful buttons:
 - Play Timeline
 
 We will start by using the first one.
+
+---
 
 ## 3. Creating a timeline
 
@@ -65,6 +72,8 @@ Once you hit `Save`, you can start adding events from the panel at the right of 
 If you want, you can switch to the text editor by clicking on the `Text Editor` button at the top right. You can find out more about writing timelines in text format here: [Writing timelines in text format](timeline-text-syntax.md).
 
 You can test the timeline by clicking the `Play Timeline` button at the top right.
+
+---
 
 ## 4. Creating a character
 
@@ -81,7 +90,9 @@ You can change the name that will actually be displayed in game as the `display_
 Once your character is created, you will see the character editor. This editor has 4 main sections.
 <img src="/media/character_editor.png" width="600"/>
 
-You can learn more about portraits, custom portraits and the character settings in this tutorial: *[Characters & Portraits](characters-and-portraits.md)*
+You can learn more about portraits, custom portraits and the character settings in this tutorial: [Characters & Portraits](characters-and-portraits.md)
+
+---
 
 ## 5. Adding the dialog to your game
 
@@ -114,4 +125,4 @@ Congratulations! You now know the basics of dialogic. There is much more to lear
 - [Writing timelines in text format](timeline-text-syntax.md)
 - [Characters and Portraits](characters-and-portraits.md)
 - [Creating timelines in code](creating-timelines-in-code.md)
-- [Designing your own layout scene](dialogic-nodes.md)
+- [Styles and Layouts](styles-and-layouts.md)

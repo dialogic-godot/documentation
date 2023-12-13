@@ -2,16 +2,16 @@
      <div class="header-label ocean">Character & Portraits</div>
 </div>
 
-The character editor allows to edit character resources (.dch). It has 4 sections.
+*The character editor allows to edit character resources (.dch). It has 4 sections.*
+
+![](media/character_editor.png)
 
 ## 📜 Content
+
 - [1. Main Settings](#1-main-settings)
 - [2. Portrait List](#2-portrait-list)
 - [3. Preview](#3-preview)
 - [4. Portrait Settings](#4-portrait-settings)
-
-
-<img src="/media/character_editor.png" width="600"/>
 
 ## 1. Main Settings
 
@@ -46,6 +46,8 @@ The character resource has a number of settings:
 - **Sound Moods:**
   *A sound mood is a folder of sounds and a random one is played for each letter this characters says. You can have different sound moods on different portraits.*
 
+---
+
 ## 2. Portrait list
 
 The portrait list allows you to add portraits to your character. A portrait is a scene that will be instanced and moved around by dialogic when you use the Character event.
@@ -63,15 +65,19 @@ A character can have unlimited portraits, but each has to have a unique name.
 
 *Note: Groups are not actually saved. Instead a portrait in gets the name Group/Portrait. This means empty groups will get lost when leaving the editor.*
 
+---
+
 ## 3. Preview
 
 The preview shows the selected portrait (or nothing, if you don't have a portrait). You can switch between a `Full view` that will size the character so it's fully visible, and a `Real size` view that shows the character at full scale.
+
+---
 
 ## 4. Portrait settings
 
 The portrait section consists of multiple sections, each containing settings for the currently selected portrait.
 
-The most important setting is the scene a portrait uses. The default scene allows you to select an image. Learn more about how to create a custom portrait here: [Custom portraits](/documentation/custom-portraits)
+The most important setting is the scene a portrait uses. The default scene allows you to select an image. Learn more about how to create a custom portrait here: [Custom portraits](custom-portraits.md)
 
 For any portrait you can set a scale, offset and mirror setting. These are additive to the main scale, offset and mirror. You can choose to ignore the main character scale to work around this.
 
