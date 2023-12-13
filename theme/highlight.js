@@ -50,7 +50,7 @@ function hljsDefineGDScript(hljs) {
             {
                 className: 'decorator',
                 begin: '@',
-                end: '(?![a-zA-Z])',
+                end: '(?![a-zA-Z_])',
             },
 			hljs.NUMBER_MODE,
 			hljs.HASH_COMMENT_MODE,
