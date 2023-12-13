@@ -1,16 +1,28 @@
-# Reference Manager
+<div class="header-banner purple">
+     <div class="header-label purple">Reference Manager</div>
+</div>
 
-## What kind of references are we talking about?
+*The reference manager allows fixing broken references and renaming unique resource identifiers.*
+
+## 📜 Content
+
+- [1. What kind of references are we talking about?](#1-what-kind-of-references-are-we-talking-about)
+- [2. Broken references](#2-broken-references)
+- [3. Unique Identifiers](#3-unique-identifiers)
+
+## 1. What kind of references are we talking about?
 
 Dialogic timelines are saved in text-syntax that often favors being readable over being specific: You do not have to specify the exact character resource every time you reference a character. 
 
-To do this, dialogic assigns each of its resources (*timelines and characters*) a **unique identifier** string. This string is initially based on the file name but can be whatever; the only important thing is: not two resources (of the same type) can have the same identifier. 
+To do this, dialogic assigns each of its resources (*timelines and characters*) a `unique identifier` string. This string is initially based on the file name but can be whatever; the only important thing is: not two resources (of the same type) can have the same identifier. 
 
 There is some other name based references in dialogic, notably *portraits* and *variables*. 
 
-Dialogic provides tools to edit unique identifiers and also easily fix any "broken references" if you choose to rename something after having already used it in a timeline. These tools live in the Reference Manager which can be accessed via the Link button in the toolbar.
+Dialogic provides tools to edit unique identifiers and also easily fix any `broken references` if you choose to rename something after having already used it in a timeline. These tools live in the Reference Manager which can be accessed via the Link button in the toolbar.
 
-## Broken references
+---
+
+## 2. Broken references
 
 The first tab allows you to fix references after you renamed something. 
 
@@ -26,7 +38,7 @@ If you use version control, this would be the perfect moment to commit!
 
 The tool will automatically remove any resolved (or irrelevant) renames from the list when you close the window.
 
-#### Custom replacements (Advanced)
+#### 2.1 Custom replacements (Advanced)
 
 This tool can also be used to manually replace something. This is useful if dialogic didn't correctly pick up on a rename or you would like to replace some other string in all timelines. 
 
@@ -40,7 +52,9 @@ You can also limit a search to only lines related to a specific character (usefu
 
 Lastly click `Add`. An entry will be added to the list. You can then continue like with automatically added entries. 
 
-## Unique identifiers
+--- 
+
+## 3. Unique identifiers
 
 Thes second tab allows you to change the unique identifiers for your characters and timelines.  
 
