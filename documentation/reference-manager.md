@@ -4,13 +4,11 @@
 
 Dialogic timelines are saved in text-syntax that often favors being readable over being specific: You do not have to specify the exact character resource every time you reference a character. 
 
-To do this, dialogic assigns each of it's resources (*timelines and characters*) a **unique identifier** string. This string is initially based on the file name but can be whatever; the only important thing is: not two resources (of the same type) can have the same identifier. 
+To do this, dialogic assigns each of its resources (*timelines and characters*) a **unique identifier** string. This string is initially based on the file name but can be whatever; the only important thing is: not two resources (of the same type) can have the same identifier. 
 
 There is some other name based references in dialogic, notably *portraits* and *variables*. 
 
 Dialogic provides tools to edit unique identifiers and also easily fix any "broken references" if you choose to rename something after having already used it in a timeline. These tools live in the Reference Manager which can be accessed via the Link button in the toolbar.
-
-
 
 ## Broken references
 
@@ -20,7 +18,7 @@ Dialogic will sometimes send you here. In those cases it has usually already add
 
 Simply click `Check Selected` which will scan all timelines for the references in the list above. Check if the results look like they contain the thing you want to actually replace. If not just uncheck them. Then click `Replace`.
 
-```admonish Warning
+```admonish
 This performs a destructive operation on all affected timelines. It can not be easily undone if it goes wrong.
 It usually works fine, but if you use custom regexes you should be pretty careful. 
 If you use version control, this would be the perfect moment to commit! 
@@ -41,8 +39,6 @@ Any of the other options (`Variable`, `Portrait`, `Character`, `Timeline`) will 
 You can also limit a search to only lines related to a specific character (useful for portraits). 
 
 Lastly click `Add`. An entry will be added to the list. You can then continue like with automatically added entries. 
-
-
 
 ## Unique identifiers
 
