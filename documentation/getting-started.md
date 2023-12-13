@@ -43,7 +43,6 @@ Now, let's verify you have correctly installed Dialogic:
 
 You can now access the dialogic interface by clicking the new tab at the very top (next to 2D, 3D, Script and AssetLib).
 
-
 ![godot_main_tabs](media/godot_main_tabs.png)
 
 You will be greeted by the dialogic home screen. At the top you can see the different editors dialogic has, at the left a sidebar that will contain recently used characters and timelines.
