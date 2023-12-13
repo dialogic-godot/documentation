@@ -68,11 +68,11 @@ This allows you to change these values for different portraits that use the same
 @export var modulation := Color.WHITE
 ```
 
-*Would add a Image and Modulation settings to all portraits using this scene.*
+*Would add an Image and Modulation settings to all portraits using this scene.*
 
 If you define an export group called `Main` all the settings in it will be displayed above the others (which are grouped under `Settings`):
 
-![custom-portrait-settings.png](media\custom-portrait-settings.png)
+![Portrait Settings](media/custom-portrait-settings.png)
 
 ---
 
