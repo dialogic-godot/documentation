@@ -2,74 +2,61 @@
      <div class="header-label purple">Auto-Advance</div>
 </div>
 
+*Auto-Advance allows you to advance the timeline without user input.* 
 
-## What is Auto-Advance?
+## 📜 Content
 
-Auto-Advance is an experience-changing feature in Dialogic that allows players
-to automatically progress through the timeline without requiring user input!\
-It's particularly useful for providing a hands-free experience to your players,
-offering an alternative to traditional "click-to-advance" methods in games.
+- [1. What is Auto-Advance](#1-what-is-auto-advance)
+- [2. Main Settings](#2-main-settings)
+- [3. Changing Auto-Advance from code](#3-changing-auto-advance-from-code)
+- [4. Modifying the reading speed](#4-modifying-the-reading-speed)
+- [5. Auto-Advance Text-Effect](#5-auto-advance-text-effect)
+
+## 1. What is Auto-Advance?
+
+Auto-Advance is an experience-changing feature in Dialogic that allows players to automatically progress through the timeline without requiring user input!
+It's particularly useful for providing a hands-free experience to your players, offering an alternative to traditional "click-to-advance" methods in games.
 
 You may also know this feature by the names "auto-forward" or simply "auto".
 
-## How to use it?
+--- 
 
-Let's explore how you can enhance your player's experience with Auto-Advance,
-taking into account their reading proficiency and the text's complexity.
+## 2. Main Settings
 
-### Text Settings
+In Dialogic's Settings tab, under the Text section, you can find the main Auto-Advance settings. Hover over the tooltip icons to learn more about each settings.
+![header_saving_loading](media/auto_advance_settings.png)
 
-In Dialogic's Settings tab, under the Text section, you can find the
-Auto-Advance settings.
-![header_saving_loading](/media/auto_advance_settings.png)
-Hover over the tooltip icons to learn more about each settings.
+#### 2.1  Additional Delay
 
-One critical setting is the "Additional Delay", which allows you to choose
-between "Per Character" and "Per Word".\
-These settings modify the pace at which text is displayed, adding extra delays
-either on character or word count.
+One critical setting is the `Additional Delay`, which allows you to choose between **Per Character** and **Per Word**. These settings modify the pace at which text is displayed,  adding extra delays either on character or word count.
 
-### Reading Speed
+Some languages, for instance Japanese, don't separate words by spaces. Dialogic uses the popular whitespace used by the spacebar to determine when a word ends and another begins. If you plan on providing multiple localisations, you can set both settings via the API.
 
-For Visual Novels, enabling players to set their text speed is a common practice.
-To provide the same feature using Dialogic, consider setting `Dialogic.Setting.autoadvance_delay_modifier`.
+##### Ignored Characters
 
-This setting, located within `Dialogic.Setting`, allows you to fine-tune the
-delay modifier, multiplying "Additional Delay".\
-By default, if this value is not set, Dialogic uses a multiplier of 1, causing
-no change to the delay.
+These characters will be ignored when coutning the characters. This feature allows you to further fine-tune your Auto-Advance experience. If you don't need it, simply toggle it off.
 
-[comment]: <> (TODO: Add a backlink to the Settings documentation)
+---
 
-> **Note:** \
-> Every setting added to `Dialogic.Setting` is automatically saved and loaded by Dialogic for the *player*.
+## 3. Changing Auto-Advance from code
 
-### Per Word vs. Per Character
+Dialogic's Auto-Advance class can be easily accessed via the Input subsystem and allows you to change autoadvance during your game. It also has a number of settings not exposed to the dialogic interface.
 
-Some languages, for instance Japanese, don't separate words by spaces.\
-Dialogic uses the popular whitespace used by the spacebar to determine when a
-word ends and another begins.\
-If you plan on providing multiple localisations, you can set both settings
-via the API.
+All of this functionality lives in `Dialogic.Input.auto_advance` an DialogicAutoAdvance object.
 
-## Using the Auto-Advance API
+### 3.1 Settings/Properties
 
-With Dialogic's Auto-Advance API, you can effortlessly control and customise the Auto-Advance feature to suit your game's needs. Don't be intimidated; it's more straightforward than you might think!
+There are two types of settings/properties:
 
-### Auto-Advance Variables
+#### Enable conditions
 
-The variables are used by Dialogic to decide how Auto-Advance must behave.\
-You can access them via `Dialogic.Input.auto_advance`.
-
-There are two types of variables:
-
-- **Enable conditions**: `enabled_until_next_event`, `enabled_forced`, `enabled_until_user_input`
-- **Behaviour changing**: `fixed_delay`, `per_word_delay`, `per_character_delay`, `await_playing_voice`, …
+- `enabled_until_next_event: bool`
+- `enabled_forced: bool`
+- `enabled_until_user_input: bool`
 
 As long as one of the enable conditions is `true`, Auto-Advance will continue.
-This allows stacking the reasons why Auto-Advance has been enabled.\
-Imagine, the player enables Auto-Advance, but the Text event forces it on until the
-next event.\
+This allows stacking the reasons why Auto-Advance has been enabled. Imagine, the player enables Auto-Advance, but the Text event forces it on until the next event.  
+
 Thanks to the multiple enable conditions, if the player disables Auto-Advances,
 it will still carry on until the next event.
 
@@ -79,64 +66,66 @@ You can turn any of the enable variables to `true` to enable Auto-Advance. If yo
 Dialogic.Input.auto_advance.enabled_until_user_input = true
 ```
 
-#### Ignored Characters
+#### Behaviour changing settings
 
-These characters will be ignored when calculating the text. This feature allows
-you to further fine-tune your Auto-Advance experience. If you don't need it,
-simply toggle it off.
+- `fixed_delay: float` *Same as the base delay in the Settings*
+- `per_word_delay: float` *Additional delay multiplied by the word count*
+- `per_character_delay: float` *Additional delay multiplied by character count*
+- `await_playing_voice: bool` *If true (by default) autoadvance will wait until voice lines have finished*
 
-### Auto-Advance via BBCode
+##### Per Character and Per Word Delays
 
-BBCode tags can enable Auto-Advance via `[aa]` or `[aa = 10]`.\
-This forces Auto-Advance to last at least until the next Text Timeline Event.\
-If the BBCode provides a valid duration in seconds, Auto-Advance will wait for
-this amount, ignoring `per_word_delay` and `per_character_delay`, but respecting `await_playing_voice`.
+You can see that using these properties you can have both per word and character delays which add up.
 
-Alternatively, if you want to override the Auto-Advance time for the current
-event only, add a `?` behind the duration: `[aa = 10?]`.
+To accommodate languages without spaces between words, you can adjust the `per_word_delay` and `per_character_delay` variables when changing language.  
 
-### Signal
+Here's an example of how to configure these settings in your script:
 
-Stay informed about changes in Auto-Advance's state by leveraging the
+```gdscript
+# We can change the settings by directly writing to the returned dictionary.
+Dialogic.Input.auto_advance.per_word_delay = 0.3
+Dialogic.Input.auto_advance.per_character_delay = 0.1
+```
+
+### 3.2 Toggled Signal
+
+If you want to be informed about changes in Auto-Advance's state you can use the
 `Dialogic.Input.auto_advance.toggled` signal.
 
 ```gdscript
 signal toggled(enabled: bool)
 ```
 
-If you are interested in how Dialogic uses this signal internally, `Input` subsystem connects to this signal:
+If you are interested in how Dialogic uses this signal internally, the `Input` subsystem connects to this signal:
 
 ```gdscript
 Dialogic.Input.autoadvance.toggled.connect(_on_autoadvance_toggled)
 ```
 
-### API-only Variables
+---
 
-In order to keep things tidy, not all variables can be changed via Auto-Advance's settings page.\
-The following variables can be accessed via code only.
+## 4. Modifying the reading speed
 
-#### Skipping Voice Clips
+For Visual Novels, enabling players to set their text speed is a common practice.
+To provide the same feature using Dialogic, consider setting `Dialogic.Setting.autoadvance_delay_modifier`.
 
-The `await_playing_voice` variable ensures that voice clips finish playing
-before text advances.\
-By default, Dialogic will let all voice clips finish, if you don't want this
-behaviour, you can disable it via the API:
+This setting, located within `Dialogic.Setting`, allows you to fine-tune the
+delay modifier, multiplying "Additional Delay".  
+By default, if this value is not set, Dialogic uses a multiplier of 1, causing
+no change to the delay.
 
-```gdscript
-Dialogic.Input.auto_advance.await_playing_voice = false
+```admonish Info
+Every setting added to `Dialogic.Setting` is automatically saved and loaded by Dialogic for the *player*.
 ```
 
-#### Per Character and Per Word Delays
+## 5. Auto-Advance Text-Effect
 
-To accommodate languages without spaces between words, you can adjust the `per_word_delay` and `per_character_delay` variables using the API.\
- Here's an example of how to configure these settings in your script:
+By writing `[aa]` or `[aa = 2]`  in your text you can temporarily enable Auto-Advance in a text event and override the delay.
 
-```gdscript
-func _ready():
-    # We can change the settings by directly writing to the returned dictionary.
-    Dialogic.Input.auto_advance.per_word_delay = 0.3
-    Dialogic.Input.auto_advance.per_character_delay = 0.1
-```
+- `[aa]` enables Auto-Advance until (at least) the next text event
 
-Note, if you swap between languages, you'll need to update these settings
-accordingly if you don't want languages with whitespaces to be affected by both.
+- `[aa=2]` enables Auto-Advance and sets the delay to 2 seconds.
+  
+  - This ignores `per_word_delay` and `per_character_delay` but respects `await_playing_voice`.
+
+- `[aa=2?]` does **not** enable Auto-Advance but sets the time to 2 seconds if Auto-Advance is already enabeld.

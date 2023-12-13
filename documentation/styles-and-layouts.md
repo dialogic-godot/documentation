@@ -2,7 +2,15 @@
      <div class="header-label dawn">Styles & Layouts</div>
 </div>
 
-## Introduction
+*This page is all about how dialogic can display timelines in your game using Styles, Layouts and Dialogic Nodes.*
+
+## 📜 Content
+
+- [1. Introduction](#1-introduction)
+- [2. Working with styles](#2-working-with-styles)
+- [3. Custom Styles & Layouts](#3-custom-styles--layouts)
+
+## 1. Introduction
 
 One important aspect of dialogic is how it allows you to display your timelines. To achieve this there are a number of systems working together: Dialogic Nodes, Layout Scenes and Styles.
 
@@ -12,7 +20,7 @@ One important aspect of dialogic is how it allows you to display your timelines.
 
 **Dialogic Styles** are a resource that holds a combination of layout scenes and allows applying settings to them. This is the easiest way of modifying the look of dialogic, as styles can be edited in Dialogic's Style editor.
 
-## Working with styles
+## 2. Working with styles
 
 [You can find a video walktrough of Dialogic styles here.]([Dialogic 2 - New Style System - YouTube](https://www.youtube.com/watch?v=TLnzSzqBwu4))
 
@@ -38,28 +46,27 @@ In the style editor you can
 
 - Change the default style
 
-### Using styles in game
+### 2.1 Using styles in game
 
 You can switch between different styles with the `Change Style` event, by calling `Dialogic.Styles.load_style()` before calling `Dialogic.start()`, or by assigning a style to a character.
 
-## Custom Styles & Layouts
+## 3. Custom Styles & Layouts
 
 You can pretty much customize any or all parts of this "Displaying" part of dialogic.
 
-### Custom styles
+### 3.1 Custom styles
 
 The simplest is creating a custom style, combining different layers and changing their settings.
 
-### Custom Layout Scenes
+### 3.2 Custom Layout Scenes
 
 The next step would be to customize part of your layout (one of the scenes) beyond what's possible with the provided settings.
 
 An easy way to do this is to use the "Make Custom" button above the layer list and selecting "Current Layer". This will create a copy of that layer's scene, which you can edit in Godot. This is what you would do if you generally like, e.g. the text-box, but would like to change something about it that's impossible with just the settings.
 
-```admonish info
+```admonish
 When editing a layout that's been made custom, be careful which sub-resources (e.g. scripts, fonts, images, etc.) might still be inside the addons/dialogic folder. If you modify these the changes might be lost when updating dialogic. I recommend making any sub-resource "unique" before modifying it. Some, like the scenes root-script however are usually made custom automatically when using "Make Custom".
 ```
-
 
 Alternatively, you can start a custom layout scene from scratch.
 
@@ -71,9 +78,8 @@ Alternatively, you can start a custom layout scene from scratch.
 
 You can add your custom scene in very easily by either using `Add Layer` or `Replace Layer` above the layer list.
 
-### Custom nodes
+### 3.3 Custom nodes
 
 While Dialogic's modules usually expect the nodes that display them to be made in a certain way, that doesn't prevent you from actually customizing the nodes themselves. Each dialogic node is just a normal control node with a script attached to it. Usually, dialogic nodes interact with dialogic subsystems through a group they add themselves to.
 
 Note that in most cases reacting to some of dialogic signals (or signals of existing dialogic nodes) can be way easier than creating a custom version of a dialogic node.
-```

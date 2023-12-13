@@ -15,7 +15,7 @@ Dialogic uses a Godot `InputAction` for the so-called "Input Action". By default
 
 ## How to make the dialog show up in game?
 
-The easiest way to make the dialog appear in your game is to call `Dialogic.start("res://path/to/timeline.dtl")` in your game. This will both instance a [layout scene](../Documentation/Styles_&_Layouts.md) and start the timeline.
+The easiest way to make the dialog appear in your game is to call `Dialogic.start("res://path/to/timeline.dtl")` in your game. This will both instance a [layout scene](styles-and-layouts.md) and start the timeline.
 
 ## Why are my portraits not showing up?
 
