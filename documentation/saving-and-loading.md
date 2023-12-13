@@ -2,12 +2,12 @@
      <div class="header-label dawn">Saving & Loading</div>
 </div>
 
-*Obviously many games require the ability to save and load.*
+*Obviously, many games require the ability to save and load.*
 
 ## 📜 Content
 
 - [1. Manual saving](#1-manual-saving)
-- [2. Buil-in saving](#2-built-in-saving)
+- [2. Built-in saving](#2-built-in-saving)
 
 ## 1. Manual saving
 
@@ -17,7 +17,7 @@ You can get the current state of dialogic with `Dialogic.get_full_state() -> Dic
 
 ## 2. Built-in saving
 
-The saving subsystem allows to save and load easily, including creating a screen-shot and saving to multiple slots.
+The saving subsystem allows you to save and load easily, including creating screenshots and saving to multiple slots.
 
 ### 2.1 Main methods
 
@@ -45,7 +45,7 @@ You can also save additional data with
 
 - `Dialogic.Save.load_file(@slot_name, @file_name, @default)`
 
-For example if you have your game data in a dictionary your code could look like this:
+For example, if you have your game data in a dictionary, your code could look like this:
 
 ```gdscript
 func save_game():
@@ -60,4 +60,4 @@ func load_game():
 
 ### 2.3 Global data
 
-You can save info that should be slot-independant (like settings, etc) with `Dialogic.Save.set_global_info(key, value)` and retrieve it with `Dialogic.Save.get_global_info(key, default)`.
+You can save info that should be slot-independent (like settings, etc.) with `Dialogic.Save.set_global_info(key, value)` and retrieve it with `Dialogic.Save.get_global_info(key, default)`.
