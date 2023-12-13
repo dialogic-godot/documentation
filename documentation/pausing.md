@@ -2,7 +2,4 @@
      <div class="header-label purple">Pausing</div>
 </div>
 
-
-# Pausing
-
-You can pause/resume the currently running dialog with `Dialogic.pause()` and `Dialogic.resume()` this does not pause the scene tree.
+You can pause/resume the currently running dialog with `Dialogic.paused = true` and `Dialogic.paused = false`. This does not pause the scene tree.

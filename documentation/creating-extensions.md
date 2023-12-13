@@ -2,15 +2,16 @@
      <div class="header-label ocean">Creating Extensions</div>
 </div>
 
-***Sometimes Dialogic is just not enough***.
+*Sometimes Dialogic is just not enough*.
 
- Whether it's an event, an editor, a setting or a text effect that is missing: You can add it.
-An extension is a folder that contains all the information about these things, so that dialogic can use it.
-Extensions are very powerful. Actually just as powerful as dialogic built-in stuff (because it works exactly the same).
+*Whether it's an event, an editor, a setting or a text effect that is missing: You can add it.
+An extension is a folder that contains all the information about these things, so that dialogic can use it.*
+*Extensions are very powerful. Actually just as powerful as dialogic built-in stuff (because it works exactly the same).*
 
 **Extension can add:** main editors, events, subsystems, text effects & modifiers, portrait animations, settings, character settings, layout presets and dialogic nodes.
 
 ## 📜 Content
+
 - [1. Getting started](#1-getting-started)
 - [2. The index.gd file](#2-the-essential-part-indexgd)
 - [3. Custom events](#3-custom-events)
@@ -26,6 +27,8 @@ The best way to create an extension is to use the extension creator in the dialo
 <img src="/media/extension_creator.png" width="600"/>
 
 By clicking the `Create New Extension` button, you can set up an extension folder and custom event script very quickly. Enter a name for the new module and select what you would like to add. Then click `Create`.
+
+---
 
 ## 2. The essential part: `index.gd`
 
@@ -167,7 +170,6 @@ Animations are little scripts inheriting the `DialogicAnimation` class, you can 
 
 Your animation script should look something like this (`bounce_in`, for example):
 
-
 ### Animation Example Bounce
 
 ```gdscript
@@ -186,7 +188,7 @@ func animate():
     tween.finished.connect(emit_signal.bind('finished_once'))
 ```
 
-```admonish info
+```admonish
 Be aware, you have to:
 
 - extend the `DialogicAnimation` class and implement the `animate()` method
@@ -206,7 +208,7 @@ Be aware, you have to:
 
 ## What are dialogic nodes?
 
-[Dialogic node](/documentation/dialogic-nodes) are nodes that in some way execute something visibly, logically or audibly.
+[Dialogic nodes](dialogic-nodes.md) are nodes that in some way execute something visibly, logically or audibly.
 They are generally managed by a subsystem and found because they are automatically added to a group. This makes sure it doesn't matter where in the scene tree they are and how many of them exist.
 
 `DialogicNodes` do not need to be added by the `index.gd` file!
