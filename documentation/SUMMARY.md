@@ -16,5 +16,6 @@
 - [Auto-Advance](auto-advance.md)
 - [Auto-Skip](auto-skip.md)
 - [Translations](translation.md)
+- [Reference Manager](reference-manager.md)
 - [Pausing](pausing.md)
 - [Saving & Loading](saving-and-loading.md)
