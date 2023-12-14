@@ -32,3 +32,13 @@ Use a `Music` event setting a resource and then cancel it with a `Music` event w
 ![header_faq](/media/faq/background_music_toggling.png)
 
 This example will fade-in the music over 4 seconds and then fade it out over 5 seconds.
+
+## How do I find the current speaker or its portrait index?
+
+The following snippet will get you the current speaker and its portrait information, including the index.
+
+```gdscript
+var current_speaker: DialogicCharacter = Dialogic.Text.get_current_speaker()
+var portrait_info := Dialogic.Portraits.get_character_info(current_speaker)
+var speaker_portrait_index := portrait_info.position_index
+```
