@@ -1,18 +1,11 @@
 <div class="header-banner pineapple">
-     <div class="header-label pineapple">Translations</div>
+     <div class="header-label pineapple">Translations</div>
 </div>
 
 *This page explains how Dialogic allows you to translate timelines and other important parts of your dialogs.*
 
 ## 📜 Content
-
-- [1. What is a translation?](#1-what-is-translation)
-- [2. How do I translate timelines?](#2-how-to-translate-timelines)
-  - [2.1 Setting up translation](#21-setting-up-translation)
-  - [2.2 Writing translations](#22-writing-translations)
-  - [2.3 The translation workflow](#23-the-translation-workflow)
-  - [2.4 Testing translation](#24-testing-translation)
-- [3. Changing the language](#3-changing-the-language)
+[toc]
 
 ## 1. What is a translation?
 
@@ -48,10 +41,10 @@ In Dialogic, head to the Settings tab, and take a look under the Translation sec
 
 Let's walk through the settings! You will have to pick a default locale.
 This locale must be the language you write the timeline in.
-Additionally, this locale will be used as a fallback, if no translation exists for a given translatable event.
+Additionally, this locale will be used as a fallback if no translation exists for a given translatable event.
 The "translation file mode" allows you to store all your timelines into one file (Per Project) or into multiple files (Per Timeline).
 
-Setting up a translation folder is a good idea, it keeps your project clean and allows you to easily find your translation files.
+Setting up a translation folder is a good idea; it keeps your project clean and allows you to easily find your translation files.
 
 ### 2.2 Writing translations
 
@@ -98,7 +91,7 @@ Do you like Visual Novels? #id:15
 That's the spirit! #id:18
 ```
 
-The `#id` tags at the end of each Text Event are the translation IDs. They won't be visible during text display; however,  Dialogic has inserted the text into a CSV file.
+The `#id` tags at the end of each Text Event are the translation IDs. They won't be visible during text display; however,  Dialogic has inserted the text into a CSV file.
 
 ## 2.4 Testing translation
 

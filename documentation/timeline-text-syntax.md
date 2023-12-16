@@ -1,5 +1,5 @@
 <div class="header-banner dawn">
-     <div class="header-label dawn">Timeline Text Syntax</div>
+     <div class="header-label dawn">Timeline Text Syntax</div>
 </div>
 
 Timelines are saved in a text format, which means that you can use any text-editing software to edit and create them. The built-in text editor provides useful autocompletion and syntax highlighting.
@@ -8,18 +8,8 @@ Timelines are saved in a text format, which means that you can use any text-edit
 For Dialogic to register your timeline file, it has to use the `.dtl` extension!
 ```
 
-<details open>
-<summary>📜 Content</summary>
-
-- [About shortcode events](#about-shortcode-events)
-
-- [About special events](#about-special-events)
-
-- [About Indentation](#about-indentation)
-
-- [Example Timeline](#Example-timeline)
-
-  </details>
+## 📜 Content
+[toc]
 
 ## About short code events
 
@@ -39,54 +29,54 @@ Some events have a custom syntax to make writing them easier. This includes:
 
 - Character event:
 
-  - `join Emilio (happy) 3 [animation="Bounce In"]`
-  - `leave Emilio [animation="Bounce Out" length="0.3"]`
-  - `update Emilio (excited) 4 [animation="Tada" wait="true" repeat="3" move_time="0.3"]`
+  - `join Emilio (happy) 3 [animation="Bounce In"]`
+  - `leave Emilio [animation="Bounce Out" length="0.3"]`
+  - `update Emilio (excited) 4 [animation="Tada" wait="true" repeat="3" move_time="0.3"]`
 
 - Text event: 
 
-  - `A wonderful text event, said by noone in particular.`
-  - `Emilio (excited): Hello and welcome!`
-  - Ending a text event with `\` will make it include the next line as well.
+  - `A wonderful text event, said by noone in particular.`
+  - `Emilio (excited): Hello and welcome!`
+  - Ending a text event with `\` will make it include the next line as well.
 
 - Choice event:
 
-  - `- I don't know about that`
-  - `- Yes [if {John.Relationship} > 23]`
-  - `- Sure, I'm the great wizard [if {Stats.Charisma} > 10] [else="disable" alt_text="I'm the great wizard [to insecure]"]`
+  - `- I don't know about that`
+  - `- Yes [if {John.Relationship} > 23]`
+  - `- Sure, I'm the great wizard [if {Stats.Charisma} > 10] [else="disable" alt_text="I'm the great wizard [to insecure]"]`
 
 - Condition event:
 
-  - `if {Player.Wisdom} > 3:`
-  - `elif {Player.Health} <= 10:`
-  - `else:`
+  - `if {Player.Wisdom} > 3:`
+  - `elif {Player.Health} <= 10:`
+  - `else:`
 
 - Set Variable Event:
 
-  - `set {MyVariable} += 10`
-  - Supported Operators are =, += , -= , *=, /=
+  - `set {MyVariable} += 10`
+  - Supported Operators are =, += , -= , *=, /=
 
 - Comment event:
 
-  - `# Todo: Finnish this!!!!`
+  - `# Todo: Finnish this!!!!`
 
 - Label event:
 
-  - `label MyLabelName`
+  - `label MyLabelName`
 
 - Jump event:
 
-  - `jump MyLabelName`
-  - `jump TimelineName/` # the slash is mandatory to clarify this is a timeline not a label
-  - `jump TimelineName/LabelName`
+  - `jump MyLabelName`
+  - `jump TimelineName/` # The slash is mandatory to clarify that this is a timeline, not a label.
+  - `jump TimelineName/LabelName`
 
 - Return event:
 
-  - `return`
+  - `return`
 
 ## About indentation
 
-Timelines use TAB indentation to know what events belong to a choice or condition block. Only changes in indentation are considered, so it doesn't really matter how much you indent as long as you are consistent within one block.
+Timelines use TAB indentation to know what events belong to a choice or condition block. Only changes in indentation are considered, so it doesn't really matter how much you indent, as long as you are consistent within one block.
 
 ## Example timeline
 

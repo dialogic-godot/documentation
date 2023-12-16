@@ -1,16 +1,11 @@
 <div class="header-banner blurple">
-     <div class="header-label blurple">Getting Started</div>
+     <div class="header-label blurple">Getting Started</div>
 </div>
 
-*This tutorial teaches you how to install Dialogic and gives a quick overview over the necessary elements you need to know for making a dialog appear in your game.*
+*This tutorial teaches you how to install Dialogic and gives a quick overview of the necessary elements you need to know for making a dialog appear in your game.*
 
 ## 📜 Content
-
-- [1. Installation & Activation](#1-installation--activation)
-- [2. Meeting the editor](#2-meeting-the-editor)
-- [3. Creating a timeline](#3-creating-a-timeline)
-- [4. Creating a character](#4-creating-a-character)
-- [5. Adding the dialog to your game](#5-adding-the-dialog-to-your-game)
+[toc]
 
 ## 1. Installation & Activation
 
@@ -18,7 +13,7 @@ Dialogic 2 requires Godot 4.1 or higher. If you don't know what version you have
 
 Let's install Dialogic 2:
 
-- Download the ZIP file here from your wanted Dialogic version: [GitHub Dialogic Releases](https://github.com/coppolaemilio/dialogic/releases).
+- Download the ZIP file here for your desired Dialogic version: [GitHub Dialogic Releases](https://github.com/coppolaemilio/dialogic/releases).
 - Extract the `addons` folder from this ZIP-file, it contains Dialogic.
 - Move the `addons` folder to your Dialogic project folder.
 
@@ -49,7 +44,7 @@ You will be greeted by the dialogic home screen. At the top you can see the diff
 
 <img title="" src="media/editor_overview.png" alt="" width="600">
 
-In the top right there are some helpful buttons:
+In the top right, there are some helpful buttons:
 
 - Add Timeline
 - Add Character
@@ -67,9 +62,9 @@ To create a timeline you press the `Add Timeline`. You will need to select a fol
 Once you hit `Save`, you can start adding events from the panel at the right of the editor.
 <img src="/media/timeline_editor.png" width="600"/>
 
-*Tip: You can learn more about each event and it's settings by right-clicking on an event and selecting `Documentation`.*
+*Tip: You can learn more about each event and its settings by right-clicking on an event and selecting `Documentation`.*
 
-If you want, you can switch to the text editor by clicking on the `Text Editor` button at the top right. You can find out more about writing timelines in text format here: [Writing timelines in text format](timeline-text-syntax.md).
+If you like, you can switch to the text editor by clicking on the `Text Editor` button at the top right. You can find out more about writing timelines in text format here: [Writing timelines in text format](timeline-text-syntax.md).
 
 You can test the timeline by clicking the `Play Timeline` button at the top right.
 
@@ -77,7 +72,7 @@ You can test the timeline by clicking the `Play Timeline` button at the top righ
 
 ## 4. Creating a character
 
-To create a new character press the `Add Character` button on the top right.
+To create a new character, press the `Add Character` button on the top right.
 
 As for timelines, you need to select the place to save to and a name.
 
@@ -87,7 +82,7 @@ This name (without `.dch`) is what will be saved whenever you use that character
 You can change the name that will actually be displayed in game as the `display_name` property.
 ```
 
-Once your character is created, you will see the character editor. This editor has 4 main sections.
+Once your character is created, you will see the character editor. This editor has four main sections.
 <img src="/media/character_editor.png" width="600"/>
 
 You can learn more about portraits, custom portraits and the character settings in this tutorial: [Characters & Portraits](characters-and-portraits.md)
@@ -109,18 +104,18 @@ Luckily for us, Dialogic provides a method that does both of those: `Dialogic.st
 
 ```gdscript
 func _input(event: InputEvent):
-    # check if a dialog is already running
-    if Dialogic.current_timeline != null:
-        return
+    # check if a dialog is already running
+    if Dialogic.current_timeline != null:
+        return
 
-    if event is InputEventKey and event.keycode == KEY_ENTER and event.pressed:
-        Dialogic.start('chapterA')
-        get_viewport().set_input_as_handled()
+    if event is InputEventKey and event.keycode == KEY_ENTER and event.pressed:
+        Dialogic.start('chapterA')
+        get_viewport().set_input_as_handled()
 ```
 
 ## You have got started!
 
-Congratulations! You now know the basics of dialogic. There is much more to learn, though. Here is a list of tutorials you might want to explore next:
+Congratulations! You now know the basics of Dialogic. There is much more to learn, though. Here is a list of tutorials you might want to explore next:
 
 - [Writing timelines in text format](timeline-text-syntax.md)
 - [Characters and Portraits](characters-and-portraits.md)
