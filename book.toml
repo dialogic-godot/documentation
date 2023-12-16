@@ -9,9 +9,15 @@ description = "Learn about Dialogic 2 and how to create beautiful dialogues in y
 [output.html]
 git-repository-url = "https://github.com/dialogic-godot/documentation/tree/main/"
 edit-url-template = "https://github.com/dialogic-godot/documentation/edit/main/{path}"
-additional-css = ['mdbook-admonish.css', 'header.css']
+additional-css = ['mdbook-admonish.css', 'header.css', '.\mdbook-admonish.css']
 
 [preprocessor.admonish]
 after = ["links"]
 command = "mdbook-admonish"
 assets_version = "3.0.1" # do not edit: managed by `mdbook-admonish install`
+
+[preprocessor.toc]
+command = "mdbook-toc"
+renderer = ["html"]
+marker = "[toc]"
+max-level = 2

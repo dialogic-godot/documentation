@@ -59,3 +59,13 @@ These can be created via this syntax:
 ```
 
 Alongside `ocean`, you can find the rest defined here: [header.css](https://github.com/dialogic-godot/documentation/blob/main/header.css).
+
+## Table of Contents
+The table of contents is generated automatically when you use the `[toc]` tag in your markdown file.\
+Internally, this is invokes a preprocessor that generates the table of contents based on the headers below the tag.
+
+This is the current style guide for our documentation:
+```
+## 📜 Content
+[toc]
+```

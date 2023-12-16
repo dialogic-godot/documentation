@@ -5,9 +5,7 @@
 *Obviously, many games require the ability to save and load.*
 
 ## 📜 Content
-
-- [1. Manual saving](#1-manual-saving)
-- [2. Built-in saving](#2-built-in-saving)
+[toc]
 
 ## 1. Manual saving
 
