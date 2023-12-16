@@ -6,11 +6,7 @@
 *Auto-Skip allows you or the player to quickly advance the timeline.*
 
 ## 📜 Content
-
-- [1. What is Auto-Skip](#1-what-is-auto-skip)
-- [2. How to use it](#2-how-to-use-it)
-- [3. Enabeling and modifying Auto-Skip](#3-enabeling-and-modifying-auto-skip)
-- [4. Reacting to Auto-Skip](#4-reacting-to-auto-skip)
+[toc]
 
 ## 1. What is Auto-Skip?
 
@@ -23,9 +19,9 @@ If your story is not intended to be cyclic, this feature may not be of use to yo
 
 ## 2. How to use it?
 
-In Dialogic, Auto-Skip can be enabled and modified from code using the DialogicAutoSkip object that can be accessed via the Input subsytem (e.g. `Dialogic.Input.auto_skip`. 
+In Dialogic, Auto-Skip can be enabled and modified from code using the `DialogicAutoSkip` object that can be accessed via the Input subsytem (e.g. `Dialogic.Input.auto_skip`.
 
-The most common way this feature is used to provide the player with an Auto-Skip toggle button. This section will teach you how to implement the logic for this.
+The most common way this feature is used, to provide the player with an Auto-Skip toggle button. This section will teach you how to implement the logic for this.
 
 First, you can set the time each event is allowed to take via the Text settings page inside Dialogic.
 
@@ -35,7 +31,7 @@ However, there are many settings that are not exposed to the interface!
 
 ---
 
-## 3. Enabeling and modifying Auto-Skip~~~~
+## 3. Enabling and modifying Auto-Skip
 
 All Auto-Skip settings are variables on the `DialogicAutoSkip` class. This class can be accessed via `Dialogic.Input.auto_skip`. It has a bunch of useful settings:
 
@@ -43,7 +39,7 @@ All Auto-Skip settings are variables on the `DialogicAutoSkip` class. This class
 
 **Disable Conditions**
 
-If these settings are on they tell dialogic to automatically disable Auto-Skip under certain conditions/at certain moments.
+If these settings are on, they tell dialogic to automatically disable Auto-Skip under certain conditions/at certain moments.
 
 - `disable_on_user_input: bool` *If true (by default) dialogic will disable Auto-Skip when the Dialogic Input Action is triggered.*
 
@@ -51,7 +47,7 @@ If these settings are on they tell dialogic to automatically disable Auto-Skip u
 
 **Enable Condition**
 
-- `enable_on_seen: bool` *If true (by default) dialogic will enable Auto-Skip whenver a text event is reached that you visited before.*
+- `enable_on_seen: bool` *If true (by default) dialogic will enable Auto-Skip whenever a text event is reached that you visited before.*
 
 **General Settings**
 
@@ -65,7 +61,7 @@ So you can enable Auto-Skip like this:
 Dialogic.Input.auto_skip.enabled = !Dialogic.Input.auto_skip.enabled
 ```
 
-You can use this to quickly advance through your timelines, for example for debugging purposes. For this you should disabled the `disable_on_unread_text` setting like this:
+You can use this to quickly advance through your timelines, for example, for debugging purposes. For this you should disable the `disable_on_unread_text` setting like this:
 
 ```gdscript
 Dialogic.Input.auto_skip.disable_on_unread_text = false

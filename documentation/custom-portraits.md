@@ -5,13 +5,7 @@
 *This page describes when and how to create a custom scene to use for one, multiple, or all portraits in your game.*
 
 ## 📜 Content
-
-- [1. Introduction](#1-introduction)
-- [2. Requirements](#2-requirements)
-- [3. Overwriting methods](#3-overwriting-methods)
-- [4. Export Overrides](#4-export-overrides)
-- [5. Tips and Tricks](#5-tips-and-tricks)
-- [6. Examples](#6-examples)
+[toc]
 
 ## 1. Introduction
 
@@ -37,7 +31,7 @@ There are not a lot of requirements for portrait scenes:
 
 ## 3. Overwriting methods
 
-You can customize the behavior by adding a script to the root node and adding specific methods to it. 
+You can customize the behavior by adding a script to the root node and adding specific methods to it.
 
 Like `_ready` or `_process` these will be called automatically by dialogic when needed, and if implemented:
 
