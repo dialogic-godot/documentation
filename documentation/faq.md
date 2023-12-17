@@ -47,3 +47,9 @@ var current_speaker: DialogicCharacter = Dialogic.Text.get_current_speaker()
 var portrait_info := Dialogic.Portraits.get_character_info(current_speaker)
 var speaker_portrait_index := portrait_info.position_index
 ```
+
+## I change the timeline text, but the game shows old text?
+
+If you have enabled translation, you will have to update the CSVs.\
+Once your timeline events have translation IDs, matching CSV rows will take priority.\
+Disabling the translation until you are done with most of the text is recommended.
