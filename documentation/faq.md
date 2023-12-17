@@ -48,6 +48,14 @@ var portrait_info := Dialogic.Portraits.get_character_info(current_speaker)
 var speaker_portrait_index := portrait_info.position_index
 ```
 
+## How can I find the name of the current timeline?
+
+Timelines have no name, they are pure text.\
+However, you can access the resource path:
+```gdscript
+var timeline_path := Dialogic.current_timeline.resource_path
+```
+
 ## I change the timeline text, but the game shows old text?
 
 If you have enabled translation, you will have to update the CSVs.\
