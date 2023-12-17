@@ -93,7 +93,7 @@ That's the spirit! #id:18
 
 The `#id` tags at the end of each Text Event are the translation IDs. They won't be visible during text display; however,  Dialogic has inserted the text into a CSV file.
 
-## 2.4 Testing translation
+### 2.4 Testing translation
 
 If everything went well, you can select a different locale in the "Testing locale" dropdown.\
 Hit "Play Timeline" or "Run Project" and take a look at the translated text.\
