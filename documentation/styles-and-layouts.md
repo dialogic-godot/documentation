@@ -19,9 +19,9 @@ One important aspect of Dialogic is how it allows you to display your timelines.
 
 ## 2. Working with styles
 
-[You can find a video walkthrough of Dialogic styles here.]([Dialogic 2 - New Style System - YouTube](https://www.youtube.com/watch?v=TLnzSzqBwu4))
+You can find a video walkthrough of Dialogic styles here: [Dialogic 2 - New Style System - YouTube](https://www.youtube.com/watch?v=TLnzSzqBwu4)
 
-A style is made up of
+A style is made up of:
 
 - One `Base` layout scene (of type `DialogicLayoutBase`) and settings for that scene.
 
