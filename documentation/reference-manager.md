@@ -6,9 +6,7 @@
 
 ## 📜 Content
 
-- [1. What kind of references are we talking about?](#1-what-kind-of-references-are-we-talking-about)
-- [2. Broken references](#2-broken-references)
-- [3. Unique Identifiers](#3-unique-identifiers)
+[TOC]
 
 ## 1. What kind of references are we talking about?
 
