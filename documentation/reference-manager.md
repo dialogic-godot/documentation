@@ -5,8 +5,7 @@
 *The reference manager allows fixing broken references and renaming unique resource identifiers.*
 
 ## 📜 Content
-
-[TOC]
+[toc]
 
 ## 1. What kind of references are we talking about?
 
