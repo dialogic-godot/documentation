@@ -74,24 +74,24 @@ Dialogic subsystems have many useful signals. Here is a selection of them:
 
 - `Dialogic.Text` has
 
-  - signal `about_to_show_text(info:Dictionary)`
-  - signal `text_finished(info:Dictionary)`
-  - signal `speaker_updated(character:DialogicCharacter)`
-  - signal `textbox_visibility_changed(visible:bool)`
-  - signal `animation_textbox_new_text`
-  - signal `animation_textbox_show`
-  - signal `animation_textbox_hide`
+    - signal `about_to_show_text(info:Dictionary)`
+    - signal `text_finished(info:Dictionary)`
+    - signal `speaker_updated(character:DialogicCharacter)`
+    - signal `textbox_visibility_changed(visible:bool)`
+    - signal `animation_textbox_new_text`
+    - signal `animation_textbox_show`
+    - signal `animation_textbox_hide`
 
 - `Dialogic.Portraits` has
 
-  - signal `character_joined(info:Dictionary)`
-  - signal `character_left(info:Dictionary)`
-  - signal `character_portrait_changed(info:Dictionary)`
+    - signal `character_joined(info:Dictionary)`
+    - signal `character_left(info:Dictionary)`
+    - signal `character_portrait_changed(info:Dictionary)`
 
 - `Dialogic.VAR` has
 
-  - signal `variable_changed(info:Dictionary)`
-  - signal `variable_was_set(info:Dictionary)` # only on set variable events
+    - signal `variable_changed(info:Dictionary)`
+    - signal `variable_was_set(info:Dictionary)` # only on set variable events
 
 And many more. If you want to react to something particular happening, take a look to see if the responsible subsystem has a signal for that.
 
