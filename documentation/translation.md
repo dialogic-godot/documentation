@@ -11,17 +11,17 @@
 
 Translation is a Godot and Dialogic 2 feature, allowing you to translate your game into multiple languages.
 
-Sometimes, the word *localisation* is used as well.
-Localisation provides very specific regional considerations for each consumer market.\
+Sometimes, the word *localization* is used as well.
+Localization provides very specific regional considerations for each audience.\
 This includes not only the translation of the game, but also changes to the game itself to reflect specific cultural differences.
 
 While Dialogic supports the translation of your timeline, it's better to focus on
 your game first and add translation later.\
-However, keeping translation and localisation in mind is an excellent idea:
+However, keeping translation and localization in mind is an excellent idea:
 
 - How will you handle variables?
 - Do you need the glossary?
-- What images do you want to localise?
+- What images do you want to localize?
 - Any features in mind that may complicate translation?
 
 ```admonish info
@@ -29,11 +29,13 @@ For now, Dialogic supports CSV translation only.
 Godot itself supports `gettext` as well.
 ```
 
----
+## 1.1 What can Dialogic translate?
+
+Dialogic can automatically translate your timelines, character names, and glossary entries.
 
 ## 2. How do I translate timelines?
 
-In Dialogic, head to the Settings tab, and take a look under the Translation section. Tick the "Enable Translation" checkbox.
+In Dialogic, head to the Settings tab and take a look under the Translation section. Tick the "Enable Translation" checkbox.
 
 ![translation_settings](media/translation/translation_settings.png)
 
@@ -48,7 +50,7 @@ Setting up a translation folder is a good idea; it keeps your project clean and 
 
 ### 2.2 Writing translations
 
-First of all, you will need a timeline file. Dialogic will automatically find and generate CSV files for you after you hit the "Update CSV files" button.
+First and foremost, you will need a timeline file. Dialogic will automatically find and generate CSV files for you after you hit the "Update CSV files" button.
 
 The CSV format is simple, and you can open it with any spreadsheet software, like Excel or Google Sheets. Even VSCode offers extensions to edit the file.\
 The gist of CSV files is that each line represents a row, and each column is separated by a comma.
@@ -60,7 +62,7 @@ keys,en
 Text/1/text,Hello World!"
 ```
 
-The `keys` are locales, the `en` is the locale code for English. If you choose a different default locale, the locale code will be different.
+The `keys` are locales; the `en` is the locale code for English. If you choose a different default locale, the locale code will be different.
 
 You can add a new language for your game by adding a new column. The following example added "ja" for Japanese to the first row and translated the text in the second row. Pay attention to the commas!
 
@@ -70,10 +72,14 @@ Text/1/text,Hello World!,こんにちは世界！
 ```
 
 That's it! You can now hit "Collect translation," and Dialogic will generate a translation file for you.\
-The translation file is a specific Godot file. Here is their official documentation: [Internationalising games](https://docs.godotengine.org/en/stable/tutorials/i18n/internationalizing_games.html)
+The translation file is a specific Godot file. Here is their official documentation: [Internationalizing games](https://docs.godotengine.org/en/stable/tutorials/i18n/internationalizing_games.html)
 
-```admonish
-In CSV, you use commas to separate columns. However, if you want to use commas inside your text, you will have to wrap your text in quotation marks.
+```admonish info
+In CSV, you use commas to separate columns. However, if you want to use commas inside your text, you will have to wrap your text in quotation marks and escape any nested quotations.
+```
+
+```admonish warning
+Once you generated translation, if you change the text of a translated unit (text event, character name, or glossary entry), you must generate the translation again.
 ```
 
 ### 2.3 The Translation workflow
@@ -93,7 +99,25 @@ That's the spirit! #id:18
 
 The `#id` tags at the end of each Text Event are the translation IDs. They won't be visible during text display; however,  Dialogic has inserted the text into a CSV file.
 
-### 2.4 Testing translation
+### 2.4 Translating Characters
+
+Characters will be translated if they are part of a timeline.
+They will always get put into a per-project file. Their name and nick will be translated.
+
+## 2.5 Translating Glossaries
+
+Glossaries have a reserved property for translation: `_translation_id`.
+This entry does not exist inside the record by default, but will be inserted once a glossary entry gets translated via the "Update CSV files" button.\
+Entries prefixed with `_` (underscore) are considered private and will be ignored. Every other `String` property will be translated and put into the CSV.
+
+```admonish warning
+The name of a glossary must be unique, the same applies for the translated variant.\
+Otherwise, resolving the correct entry will be impossible.
+
+Glossary names or alternatives may not start with `Glossary/`.
+```
+
+## 2. Testing translation
 
 If everything went well, you can select a different locale in the "Testing locale" dropdown.\
 Hit "Play Timeline" or "Run Project" and take a look at the translated text.\

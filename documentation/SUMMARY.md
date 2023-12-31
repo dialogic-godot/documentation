@@ -11,6 +11,7 @@
 - [Dialogic Nodes](dialogic-nodes.md)
 - [Dialogic Signals](dialogic-signals.md)
 - [Custom Portraits](custom-portraits.md)
+- [Glossary](glossary.md)
 - [Creating Extensions](creating-extensions.md)
 - [Creating Timelines In Code](creating-timelines-in-code.md)
 - [Auto-Advance](auto-advance.md)
