@@ -35,20 +35,26 @@ You can customize the behavior by adding a script to the root node and adding sp
 
 Like `_ready` or `_process` these will be called automatically by dialogic when needed, and if implemented:
 
-- **_update_portrait(character: DialogicCharacter, portrait_name: String):**
-  *This method is called when the portrait is instanced and when a change to another portrait using the same scene is performed. For example, you could play a specific animation in an `AnimatedSprite` based on the portrait name or show a specific image.*
+- `_update_portrait(character: DialogicCharacter, portrait_name: String) -> void` \
+This method is called when the portrait is instanced and when a change to another portrait using the same scene is performed. For example, you could play a specific animation in an `AnimatedSprite` based on the portrait name or show a specific image.
 
-- **_set_mirror(is_mirrored: bool):**
-  *Different scenes might want to mirror differently (AnimationSprite.flip_h; self.scale.x = -1, etc.). Thus, you will have to implement this functionality yourself.*
+- `_set_mirror(is_mirrored: bool) -> void` \
+Different scenes might want to mirror differently (AnimationSprite.flip_h; self.scale.x = -1, etc.). Thus, you will have to implement this functionality yourself.
 
-- **_get_covered_rect() -> Rect2:**
-  *This is used for correctly sizing your scene, as it's mostly impossible to know the size of your portrait. If you implement this and return a rect2 that covers your portrait (relative to the root node's position), the portrait_containers size modes and the character editors `Full View` will work.*
+- `_get_covered_rect() -> Rect2:` \
+This is used for correctly sizing your scene, as it's mostly impossible to know the size of your portrait. If you implement this and return a rect2 that covers your portrait (relative to the root node's position), the portrait_containers size modes and the character editors `Full View` will work.
 
-- **_set_extra_data(data: String):**
-  *The Character event Join/Update mode allows specifying some extra information in the text editor. If some information is given, this method will be called. This can be very useful to enable certain things. For example, your character could have different modes or items.*
+- `_set_extra_data(data: String) -> void` \
+The Character event Join/Update mode allows specifying some extra information in the text editor. If some information is given, this method will be called. This can be very useful to enable certain things. For example, your character could have different modes or items.
 
-- **_should_do_portrait_update(character: DialogicCharacter, portrait: String):**
-  *Rarely needed, but if overridden, this will be checked if the portrait change is performed to a portrait with the same scene. If you return false, then this instance will be deleted and a new instance will be made. If not implemented, this defaults to true, meaning this instance will be used for the portrait update too.*
+- `_should_do_portrait_update(character: DialogicCharacter, portrait: String) -> bool` \
+Rarely needed, but if overridden, this will be checked if the portrait change is performed to a portrait with the same scene. If you return false, then this instance will be deleted and a new instance will be made. If not implemented, this defaults to true, meaning this instance will be used for the portrait update too.
+
+- `_highlight() -> void` \
+Invoked when the character becomes the active speaker.
+
+- `_unhighlight() -> void` \
+Invoked when the character is no longer the active speaker, e.g., another character started talking.
 
 ---
 
