@@ -98,7 +98,7 @@ For that, we need two things to happen:
 - A) having nodes that can display our timeline and
 - B) start the execution of the timeline.
 
-Luckily for us, Dialogic provides a method that does both of those: `Dialogic.start(@timeline_name_or_path)`
+Luckily for us, Dialogic provides a method that does both of those: `Dialogic.start(timeline_name_or_path)`
 
 *So the code to start your dialog when an input is pressed could look like this:*
 
