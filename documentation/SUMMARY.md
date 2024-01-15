@@ -1,7 +1,9 @@
+# Summary
+
 [Introduction](introduction.md)
     - [Getting Started](getting-started.md)
-[FAQ](faq.md)
 
+[FAQ](faq.md)
 
 - [Character & Portraits](characters-and-portraits.md)
     - [Custom Portraits](custom-portraits.md)
@@ -11,15 +13,15 @@
 
 - [Variables](variables.md)
 
-- Timelines
+- [Timelines]()
     - [Timeline Text Syntax](timeline-text-syntax.md)
     - [Creating Timelines In Code](creating-timelines-in-code.md)
 
-- Input
+- [Input]()
     - [Auto-Advance](auto-advance.md)
     - [Auto-Skip](auto-skip.md)
 
-- Utilities
+- [Utilities]()
     - [Dialogic Signals](dialogic-signals.md)
     - [Pausing](pausing.md)
     - [Saving & Loading](saving-and-loading.md)
