@@ -61,3 +61,10 @@ var timeline_path := Dialogic.current_timeline.resource_path
 If you have enabled translation, you will have to update the CSVs.\
 Once your timeline events have translation IDs, matching CSV rows will take priority.\
 Disabling the translation until you are done with most of the text is recommended.
+
+## How do I hide the text-box?
+
+You can hide the text box using the following code:
+```gdscript
+Dialogic.Text.hide_text_boxes()
+```
