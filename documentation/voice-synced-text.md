@@ -1,8 +1,8 @@
 <div class="header-banner purple">
-     <div class="header-label purple">Auto-Advance</div>
+     <div class="header-label purple">Voice-Synced Text</div>
 </div>
 
-*Syncing text to playing character voices provides a unique reading experience.*
+*Syncing text to character voices provides a unique reading experience.*
 
 ## 📜 Content
 [toc]
@@ -26,7 +26,7 @@ The voice-synced text feature must be enabled via the Dialogic API. Take a look 
 Dialogic.Text.set_voice_synced_text(true)
 ```
 
-We are suggesting the player decide whether they want this feature enabled.
+We are suggesting the player decides whether they want this feature enabled.
 
 ---
 
