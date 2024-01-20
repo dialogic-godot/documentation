@@ -62,9 +62,12 @@ If you have enabled translation, you will have to update the CSVs.\
 Once your timeline events have translation IDs, matching CSV rows will take priority.\
 Disabling the translation until you are done with most of the text is recommended.
 
-## How do I hide the text-box?
+## How do I hide and show the text-box?
 
-You can hide the text box using the following code:
+The following code allows you to check if the text box is visible and then act based on its state.
 ```gdscript
-Dialogic.Text.hide_text_boxes()
+if Dialogic.Text.is_textbox_visible():
+	Dialogic.Text.hide_text_boxes()
+else:
+	Dialogic.Text.show_text_boxes()
 ```
