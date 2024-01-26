@@ -23,7 +23,7 @@ The preprocessors are not part of the built-in feature set and were developed by
 They must be installed, see the [`.github/workflows/mdbook.yml`](https://github.com/dialogic-godot/documentation/blob/main/.github/workflows/mdbook.yml) for this.
 
 ## Run the documentation locally
-To build the documentation, we need its software `mdBook`, which is written in the Rust Language
+To build the documentation, we need its software `mdBook`, which is written in the Rust Programming Language.
 
 1. First, install Rust: https://www.rust-lang.org/tools/install
 Open a new console, this allows `cargo` to function and makes the following commands possible.
