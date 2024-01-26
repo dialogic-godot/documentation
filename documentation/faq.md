@@ -83,5 +83,5 @@ var style: DialogicStyle := load("res://path/to/my/style.tres")
 style.prepare()
 ```
 
-Last, be aware that Godot's shader compiler runs on demand; whenever new shaders need to be loaded in a style, it will compile, causing a freeze.\
-Hence, it's recommended to compile these ahead of time if you still run into problems still.
+Last, be aware that Godot's shader compiler runs on demand; whenever new shaders need to be loaded in a style (or any resource), it will compile, causing a freeze.\
+Hence, it's recommended to compile these ahead of time if you run into problems still.
