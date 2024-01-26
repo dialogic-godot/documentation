@@ -30,7 +30,7 @@ Open a new console, this allows `cargo` to function and makes the following comm
 
 2. Let's install `mdBook`: `cargo install mdbook`
 
-3. We need to install the preprocessor for the *admonish* feature: `cargo install mdbook-admonish`
+3. We need to install the preprocessor for the *admonish* feature: `cargo install mdbook-admonish` \
    Also, we need the *Table of Contents* (TOC) feature: `cargo install mdbook-toc`
 
 5. Finally, you can run this command inside this project's root: `mdbook serve --open`
