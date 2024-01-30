@@ -43,21 +43,16 @@ mapping glossary name properties
 to their entry array index.
 
 
-### 3.2 Entry Keys
-
-The entry keys are part of the private glossary property `_entry_keys`.\
-They act as a cache, the internals use the entry keys to instantly find the
-correct glossary entry. As fallback, the glossary will iterate over all entries
-and if successful, it will add the entry key to the `_entry_keys` property.
+### 3.2 Alias Keys
 
 An entry key is a unique identifier for a glossary entry, either a name, an
 alternative (alias), or an entry translation ID (CSV key).
 
-The name and alias are used to map the entry to the glossary, allowing the code
+The aliases are used to map the entry to the true glossary entry key, allowing the code
 to map the glossary word to its glossary entry.
 
-However, the entry translation ID allows the code to map a translated glossary
-word to its translation ID and then to the glossary entry.\
+Additionally, the entry's translation ID allows the code to map a translated glossary
+word to its translation ID and then to the glossary entry using the `_translation_keys`. \
 The glossary entry IDs are combined, using the glossary ID and then the entry ID.
 This matches the translation CSV keys for translated glossaries:
 `Glossary/3b/6c/name`.
@@ -67,7 +62,7 @@ This matches the translation CSV keys for translated glossaries:
 
 As a rule of thumb, if you want to access the glossary from code, do not access
 the `_` prefixed aforementioned properties: `_translation_id`,
-`_translation_keys`, `_entry_keys`. They may change over the course of Dialogic's
+`_translation_keys`. They may change over the course of Dialogic's
 development.
 
 Instead, look for the helper methods on `DialogicGlossary`.
