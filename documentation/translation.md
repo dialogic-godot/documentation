@@ -106,16 +106,22 @@ They will always get put into a per-project file. Their name and nick will be tr
 
 ## 2.5 Translating Glossaries
 
-Glossaries have a reserved property for translation: `_translation_id`.
-This entry does not exist inside the record by default, but will be inserted once a glossary entry gets translated via the "Update CSV files" button.\
+Glossaries have a reserved property for translation: `_translation_id`. \
+They also have a reserved `_translation_keys` property, mapping translated words to
+the translation key.
+
+These properties get automatically populated via the "Update CSV files" button.\
 Entries prefixed with `_` (underscore) are considered private and will be ignored. Every other `String` property will be translated and put into the CSV.
 
 ```admonish warning
-The name of a glossary must be unique, the same applies for the translated variant.\
+The name and alternatives of a glossary entry must be unique, the same applies for the translated counterparts.\
 Otherwise, resolving the correct entry will be impossible.
 
 Glossary names or alternatives may not start with `Glossary/`.
 ```
+
+Once translation has been enabled, and you are testing another locale,
+glossaries won't fall back to the default locale when an entry property has not been translated.
 
 ## 2. Testing translation
 
