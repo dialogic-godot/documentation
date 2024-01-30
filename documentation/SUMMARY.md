@@ -27,10 +27,10 @@
   - [Auto-Skip](auto-skip.md)
 
 - [Utilities]()
-  
-  - [Dialogic Signals](dialogic-signals.md)
-  - [Pausing](pausing.md)
-  - [Saving & Loading](saving-and-loading.md)
-  - [Reference Manager](reference-manager.md)
-  - [Creating Extensions](creating-extensions.md)
-  - [Translations](translation.md)
+    - [Dialogic Signals](dialogic-signals.md)
+    - [Pausing](pausing.md)
+    - [Saving & Loading](saving-and-loading.md)
+    - [Reference Manager](reference-manager.md)
+    - [Creating Extensions](creating-extensions.md)
+    - [Glossary](glossary.md)
+    - [Translations](translation.md)

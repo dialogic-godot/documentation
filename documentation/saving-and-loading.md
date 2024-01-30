@@ -27,7 +27,7 @@ Here are the relevant methods:
 
 - `Dialogic.Save.get_slot_names()`
 
-- `Dialogic.Save.remove_slot(@slot_name)`
+- `Dialogic.Save.delete_slot(@slot_name)`
 
 - `Dialogic.Save.reset_slot(@slot_name)`
 

@@ -71,3 +71,17 @@ if Dialogic.Text.is_textbox_visible():
 else:
 	Dialogic.Text.show_text_boxes()
 ```
+
+
+## I encounter a small lag or freeze when starting the dialogue!
+
+Preloading a style can be very useful using its `prepare` method.\
+This can be called on all styles you will need during the splash screen of your game.
+
+```gdscript
+var style: DialogicStyle := load("res://path/to/my/style.tres")
+style.prepare()
+```
+
+Last, be aware that Godot's shader compiler runs on demand; whenever new shaders need to be loaded in a style (or any resource), it will compile, causing a freeze.\
+Hence, it's recommended to compile these ahead of time if you run into problems still.

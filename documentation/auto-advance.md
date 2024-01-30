@@ -35,9 +35,9 @@ These characters will be ignored when counting the characters. This feature allo
 
 ## 3. Changing Auto-Advance from code
 
-Dialogic's Auto-Advance class can be easily accessed via the Input subsystem and allows you to change Auto-Advance during your game. It also has a number of settings not exposed to the dialogic interface.
+Dialogic's Auto-Advance class can be easily accessed via the Inputs subsystem and allows you to change Auto-Advance during your game. It also has a number of settings not exposed to the dialogic interface.
 
-All of this functionality lives in `Dialogic.Input.auto_advance` an `DialogicAutoAdvance` object.
+All of this functionality lives in `Dialogic.Inputs.auto_advance` an `DialogicAutoAdvance` object.
 
 ### 3.1 Settings/Properties
 
@@ -58,7 +58,7 @@ it will still carry on until the next event.
 You can turn any of the enable-variables to `true` to enable Auto-Advance. If you have an Auto-Advance button, you can use the following code to enable the feature:
 
 ```gdscript
-Dialogic.Input.auto_advance.enabled_until_user_input = true
+Dialogic.Inputs.auto_advance.enabled_until_user_input = true
 ```
 
 #### Behaviour changing settings
@@ -78,23 +78,23 @@ Here's an example of how to configure these settings in your script:
 
 ```gdscript
 # We can change the settings by directly writing to the returned dictionary.
-Dialogic.Input.auto_advance.per_word_delay = 0.3
-Dialogic.Input.auto_advance.per_character_delay = 0.1
+Dialogic.Inputs.auto_advance.per_word_delay = 0.3
+Dialogic.Inputs.auto_advance.per_character_delay = 0.1
 ```
 
 ### 3.2 Toggled Signal
 
 If you want to be informed about changes in Auto-Advance's state, you can use the
-`Dialogic.Input.auto_advance.toggled` signal.
+`Dialogic.Inputs.auto_advance.toggled` signal.
 
 ```gdscript
 signal toggled(enabled: bool)
 ```
 
-If you are interested in how Dialogic uses this signal internally, the `Input` subsystem connects to this signal:
+If you are interested in how Dialogic uses this signal internally, the `Inputs` subsystem connects to this signal:
 
 ```gdscript
-Dialogic.Input.autoadvance.toggled.connect(_on_autoadvance_toggled)
+Dialogic.Inputs.autoadvance.toggled.connect(_on_autoadvance_toggled)
 ```
 
 ---
@@ -102,15 +102,15 @@ Dialogic.Input.autoadvance.toggled.connect(_on_autoadvance_toggled)
 ## 4. Modifying the reading speed
 
 For Visual Novels, enabling players to set their text speed is a common practice.
-To provide the same feature using Dialogic, consider setting `Dialogic.Setting.autoadvance_delay_modifier`.
+To provide the same feature using Dialogic, consider setting `Dialogic.Settings.autoadvance_delay_modifier`.
 
-This setting, located within `Dialogic.Setting`, allows you to fine-tune the
+This setting, located within `Dialogic.Settings`, allows you to fine-tune the
 delay modifier, multiplying "Additional Delay".
 By default, if this value is not set, Dialogic uses a multiplier of 1, causing
 no change to the delay.
 
 ```admonish
-Every setting added to `Dialogic.Setting` is automatically saved and loaded by Dialogic for the *player*.
+Every setting added to `Dialogic.Settings` is automatically saved and loaded by Dialogic for the *player*.
 ```
 
 ## 5. Auto-Advance Text-Effect
@@ -120,7 +120,7 @@ By writing `[aa]` or `[aa = 2]` in your text, you can temporarily enable Auto-Ad
 - `[aa]` enables Auto-Advance until (at least) the next text event
 
 - `[aa=2]` enables Auto-Advance and sets the delay to 2 seconds.
-
+  
   - This ignores `per_word_delay` and `per_character_delay` but respects `await_playing_voice`.
 
 - `[aa=2?]` does **not** enable Auto-Advance but sets the time to 2 seconds if Auto-Advance is already enabled.

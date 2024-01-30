@@ -19,7 +19,7 @@ If your story is not intended to be cyclic, this feature may not be of use to yo
 
 ## 2. How to use it?
 
-In Dialogic, Auto-Skip can be enabled and modified from code using the `DialogicAutoSkip` object that can be accessed via the Input subsytem (e.g. `Dialogic.Input.auto_skip`.
+In Dialogic, Auto-Skip can be enabled and modified from code using the `DialogicAutoSkip` object that can be accessed via the Inputs subsytem (e.g. `Dialogic.Inputs.auto_skip`.
 
 The most common way this feature is used, to provide the player with an Auto-Skip toggle button. This section will teach you how to implement the logic for this.
 
@@ -33,7 +33,7 @@ However, there are many settings that are not exposed to the interface!
 
 ## 3. Enabling and modifying Auto-Skip
 
-All Auto-Skip settings are variables on the `DialogicAutoSkip` class. This class can be accessed via `Dialogic.Input.auto_skip`. It has a bunch of useful settings:
+All Auto-Skip settings are variables on the `DialogicAutoSkip` class. This class can be accessed via `Dialogic.Inputs.auto_skip`. It has a bunch of useful settings:
 
 - `enabled: bool` *If true, dialogic will Auto-Skip.*
 
@@ -58,13 +58,13 @@ If these settings are on, they tell dialogic to automatically disable Auto-Skip 
 So you can enable Auto-Skip like this:
 
 ```gdscript
-Dialogic.Input.auto_skip.enabled = !Dialogic.Input.auto_skip.enabled
+Dialogic.Inputs.auto_skip.enabled = !Dialogic.Inputs.auto_skip.enabled
 ```
 
 You can use this to quickly advance through your timelines, for example, for debugging purposes. For this you should disable the `disable_on_unread_text` setting like this:
 
 ```gdscript
-Dialogic.Input.auto_skip.disable_on_unread_text = false
+Dialogic.Inputs.auto_skip.disable_on_unread_text = false
 ```
 
 ```admonish
@@ -83,7 +83,7 @@ Here is an example on how to connect to the signal:
 ```gdscript
 # Connect to the signal.
 func _init():
-    Dialogic.Input.auto_skip.toggled.connect(_on_auto_skip_toggled)
+    Dialogic.Inputs.auto_skip.toggled.connect(_on_auto_skip_toggled)
 
 ## If Auto-Skip disables, we want to stop the timer.
 func _on_auto_skip_toggled(is_enabled: bool) -> void:
@@ -109,8 +109,8 @@ Here is a code snippet to give you an idea:
 ```gdscript
 var animation_length: float = 10.0
 
-if Dialogic.Input.auto_skip.enabled:
-    var time_per_event: float = Dialogic.Input.auto_skip.time_per_event
+if Dialogic.Inputs.auto_skip.enabled:
+    var time_per_event: float = Dialogic.Inputs.auto_skip.time_per_event
     animation_length = min(time_per_event, animation_length)
 ```
 
