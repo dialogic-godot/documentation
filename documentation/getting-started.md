@@ -13,7 +13,7 @@ Dialogic 2 requires Godot 4.1 or higher. If you don't know what version you have
 
 Let's install Dialogic 2:
 
-- Download the ZIP file here for your desired Dialogic version: [GitHub Dialogic Releases](https://github.com/coppolaemilio/dialogic/releases).
+- Download the ZIP file here for your desired Dialogic version: [GitHub Dialogic Releases](https://github.com/dialogic-godot/dialogic/releases).
 - Extract the `addons` folder from this ZIP-file, it contains Dialogic.
 - Move the `addons` folder to your Dialogic project folder.
 
@@ -29,7 +29,7 @@ Now, let's verify you have correctly installed Dialogic:
 
 ```admonish
 *Dialogic is constantly evolving. Oftentimes fixes for bugs or new features might only be available on the main branch. This is especially true during the alpha and beta phase. If you are interested in using the main branch it's easy to do so.*
-*Go to [the main page of the repository](https://github.com/coppolaemilio/dialogic) and click on the green `Code` button then presse the `Download ZIP` button. From there you can install that ZIP's content like a release.*
+*Go to [the main page of the repository](https://github.com/dialogic-godot/dialogic) and click on the green `Code` button then presse the `Download ZIP` button. From there you can install that ZIP's content like a release.*
 ```
 
 ---
@@ -98,7 +98,7 @@ For that, we need two things to happen:
 - A) having nodes that can display our timeline and
 - B) start the execution of the timeline.
 
-Luckily for us, Dialogic provides a method that does both of those: `Dialogic.start(@timeline_name_or_path)`
+Luckily for us, Dialogic provides a method that does both of those: `Dialogic.start(timeline_name_or_path)`
 
 *So the code to start your dialog when an input is pressed could look like this:*
 

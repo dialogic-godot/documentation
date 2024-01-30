@@ -8,7 +8,7 @@
 ## May I use Dialogic in one of my projects?
 
 Yes, you may use Dialogic to make any kind of game - even commercial ones!
-The project is developed under the [MIT License](https://github.com/coppolaemilio/dialogic/blob/master/LICENSE). All we ask is that you please remember to credit us in your project!
+The project is developed under the [MIT License](https://github.com/dialogic-godot/dialogic/blob/master/LICENSE). All we ask is that you please remember to credit us in your project!
 
 If you want to be featured on the "Made with Dialogic"-page, get in touch with us on [Emilio's Discord server](https://discord.gg/2hHQzkf2pX)!
 
@@ -61,3 +61,27 @@ var timeline_path := Dialogic.current_timeline.resource_path
 If you have enabled translation, you will have to update the CSVs.\
 Once your timeline events have translation IDs, matching CSV rows will take priority.\
 Disabling the translation until you are done with most of the text is recommended.
+
+## How do I hide and show the text-box?
+
+The following code allows you to check if the text box is visible and then act based on its state.
+```gdscript
+if Dialogic.Text.is_textbox_visible():
+	Dialogic.Text.hide_text_boxes()
+else:
+	Dialogic.Text.show_text_boxes()
+```
+
+
+## I encounter a small lag or freeze when starting the dialogue!
+
+Preloading a style can be very useful using its `prepare` method.\
+This can be called on all styles you will need during the splash screen of your game.
+
+```gdscript
+var style: DialogicStyle := load("res://path/to/my/style.tres")
+style.prepare()
+```
+
+Last, be aware that Godot's shader compiler runs on demand; whenever new shaders need to be loaded in a style (or any resource), it will compile, causing a freeze.\
+Hence, it's recommended to compile these ahead of time if you run into problems still.

@@ -63,7 +63,10 @@ An easy way to do this is to use the "Make Custom" button above the layer list a
 This will create a copy of that layer's scene, which you can edit in Godot. This is what you would do if you generally like, e.g., the text box, but would like to change something about it that's impossible with just the settings.
 
 ```admonish
-When editing a layout that's been made custom, be careful which sub-resources (e.g. scripts, fonts, images, etc.) might still be inside the addons/dialogic folder. If you modify these the changes might be lost when updating dialogic. I recommend making any sub-resource "unique" before modifying it. Some, like the scenes root-script however are usually made custom automatically when using "Make Custom".
+When editing a layout that's been made custom, be careful which sub-resources (e.g. scripts, fonts, images, etc.) might still be inside the addons/dialogic folder.\
+If you modify these the changes might be lost when updating dialogic.\
+I recommend making any sub-resource "unique" before modifying it.\
+Some, like the scenes root-script however are usually made custom automatically when using "Make Custom".
 ```
 
 Alternatively, you can start a custom layout scene from scratch.
