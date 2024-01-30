@@ -7,6 +7,7 @@
 ![](media/character_editor.png)
 
 ## 📜 Content
+
 [toc]
 
 ## 1. Main Settings
@@ -16,10 +17,10 @@ The character resource has a number of settings:
 #### 1.1 General
 
 - **Display Name:**
-  *This string will be shown on the name label.*
+  *This string will be shown on the name label. Notably this can be a variable if you want the display name to change during the game. Just put the variable name in curly brackets.*
 
 - **Nicknames:**
-  *These strings (comma separated) will also be considered for the `Autocolor names` option.*
+  *These strings (comma separated) will also be considered for the `Autocolor names` option (in the text settings).*
 
 - **Description:**
   *Does nothing. Could help you remember what this character was for.*
@@ -59,7 +60,7 @@ A character can have unlimited portraits, but each has to have a unique name.
 
 ![image](/media/portrait_list_buttons.png)
 
-*Note: Groups are not actually saved. Instead, a portrait gets the name "Group" or "Portrait". This means empty groups will get lost when leaving the editor.*
+*Note: Groups are not actually saved. This means empty groups will get lost when leaving the editor.*
 
 ---
 
