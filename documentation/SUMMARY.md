@@ -27,4 +27,5 @@
     - [Saving & Loading](saving-and-loading.md)
     - [Reference Manager](reference-manager.md)
     - [Creating Extensions](creating-extensions.md)
+    - [Glossary](glossary.md)
     - [Translations](translation.md)
