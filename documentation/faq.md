@@ -79,7 +79,7 @@ Preloading a style can be very useful using its `prepare` method.\
 This can be called on all styles you will need during the splash screen of your game.
 
 ```gdscript
-var style: DialogicStyle := load("res://path/to/my/style.tres")
+var style: DialogicStyle = load("res://path/to/my/style.tres")
 style.prepare()
 ```
 
