@@ -23,7 +23,7 @@ In the end, this feature is more of a preference. Players may start reading slow
 The voice-synced text feature must be enabled via the Dialogic API. Take a look at the following code:
 
 ```gdscript
-Dialogic.Text.set_voice_synced_text(true)
+Dialogic.Text.set_text_voice_synced(true)
 ```
 
 We are suggesting the player decides whether they want this feature enabled.
