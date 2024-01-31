@@ -26,6 +26,9 @@
   - [Auto-Advance](auto-advance.md)
   - [Auto-Skip](auto-skip.md)
 
+- [Text]()
+    - [Text Tags](text-tags.md)
+
 - [Utilities]()
     - [Dialogic Signals](dialogic-signals.md)
     - [Pausing](pausing.md)
