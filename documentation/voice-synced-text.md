@@ -11,10 +11,10 @@
 
 Voice-synced text is a feature in Dialogic that allows you to sync text to playing character voices.
 
-This feature is perfect for visual novels, providing a lot of voice acting. \
+This feature is perfect for visual novels with a lot of voice acting.
 The player may choose to use [Auto-Advance](auto-advance.md) to automatically progress through the timeline while syncing the text to the voice lines instead of letting the text prematurely appear.
 
-In the end, this feature is a preference. Players may start reading slower and do not have to wait for voice lines to finish.
+In the end, this feature is more of a preference. Players may start reading slower and do not have to wait for voice lines to finish.
 
 ---
 
