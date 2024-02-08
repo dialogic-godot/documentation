@@ -204,6 +204,9 @@ Be aware, you have to:
 - **end_position** = where to end the animation
 - **orig_pos** = the position you started at
 
+## Naming animations
+Importantly the name of your animation file will determine if it is a Join, Leave or Update animation! If it ends with `_in` it is a join animation, ending in `_out` makes it a leave animation, while all other names are concidered update animations (often called attention seekers in other software). 
+
 ---
 
 # 6. Custom dialogic nodes
