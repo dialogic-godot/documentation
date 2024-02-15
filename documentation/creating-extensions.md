@@ -65,8 +65,8 @@ These are the things you need to do to make your event fully functional:
 All options of your event should be stored in variables. Define these at the top.
 
 ```gdscript
-var print_text :String = ""
-var in_game:bool = false
+var print_text: String = ""
+var in_game: bool = false
 ```
 
 #### 2. Execution code:
@@ -76,6 +76,7 @@ Add whatever should happen when your event is reached in the `_execute()` method
 ```gdscript
 func _execute() -> void:
     print(print_text)
+
     if in_game and Dialogic.has_subsystem('Text'):
         Dialogic.Text.update_dialog_text(print_text)
     else:
@@ -108,8 +109,8 @@ func get_shortcode() -> String:
 func get_shortcode_parameters() -> Dictionary:
     return {
         #param_name     : property_info
-        "text"            : {"property": "print_text", "default": ""},
-        "ingame"        : {"property": "in_game",    "default": false},
+        "text"            : { "property": "print_text", "default": "" },
+        "ingame"        : { "property": "in_game",    "default": false },
     }
 ```
 
