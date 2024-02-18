@@ -26,11 +26,11 @@ used_file_path | [String](https://docs.godotengine.org/en/latest/classes/class_s
 ## Methods
 Returns | Method 
 --- | --- 
-<span class="hljs-attribute">void</span> | [<span class="hljs-title">add_translation_keys_to_glossary</span>](#property-add_translation_keys_to_glossary) ( `glossary`: [DialogicGlossary](class_dialogicglossary.md) ) 
-<span class="hljs-attribute">void</span> | [<span class="hljs-title">collect_lines_from_characters</span>](#property-collect_lines_from_characters) ( `characters`: [Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html#class-dictionary) ) 
-<span class="hljs-attribute">void</span> | [<span class="hljs-title">collect_lines_from_glossary</span>](#property-collect_lines_from_glossary) ( `glossary`: [DialogicGlossary](class_dialogicglossary.md) ) 
-<span class="hljs-attribute">void</span> | [<span class="hljs-title">collect_lines_from_timeline</span>](#property-collect_lines_from_timeline) ( `timeline`: [DialogicTimeline](class_dialogictimeline.md) ) 
-<span class="hljs-attribute">void</span> | [<span class="hljs-title">update_csv_file_on_disk</span>](#property-update_csv_file_on_disk) ( ) 
+<span style = "color: gray">void</span> | [<span class="hljs-title">add_translation_keys_to_glossary</span>](#property-add_translation_keys_to_glossary) ( `glossary`: [DialogicGlossary](class_dialogicglossary.md) ) 
+<span style = "color: gray">void</span> | [<span class="hljs-title">collect_lines_from_characters</span>](#property-collect_lines_from_characters) ( `characters`: [Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html#class-dictionary) ) 
+<span style = "color: gray">void</span> | [<span class="hljs-title">collect_lines_from_glossary</span>](#property-collect_lines_from_glossary) ( `glossary`: [DialogicGlossary](class_dialogicglossary.md) ) 
+<span style = "color: gray">void</span> | [<span class="hljs-title">collect_lines_from_timeline</span>](#property-collect_lines_from_timeline) ( `timeline`: [DialogicTimeline](class_dialogictimeline.md) ) 
+<span style = "color: gray">void</span> | [<span class="hljs-title">update_csv_file_on_disk</span>](#property-update_csv_file_on_disk) ( ) 
 --- 
 ## Constants
 
@@ -73,7 +73,7 @@ Returns | Method
 
 
 
-<a class="header" id="property-add_translation_keys_to_glossary" href="#property-add_translation_keys_to_glossary">**<span class="hljs-attribute">void</span> [<span class="hljs-title">add_translation_keys_to_glossary</span>](#property-add_translation_keys_to_glossary) ( `glossary`: [DialogicGlossary](class_dialogicglossary.md) )** </a>
+<a class="header" id="property-add_translation_keys_to_glossary" href="#property-add_translation_keys_to_glossary">**<span class="hljs-attribute">func</span> [<span class="hljs-title">add_translation_keys_to_glossary</span>](#property-add_translation_keys_to_glossary) ( `glossary`: [DialogicGlossary](class_dialogicglossary.md) )</a>  ⇒ <span style = "color: gray">void</span>** 
 
 
 
@@ -83,7 +83,7 @@ Reads all `lines` and adds them to the given `glossary`'s internal collection of
 
 
 
-<a class="header" id="property-collect_lines_from_characters" href="#property-collect_lines_from_characters">**<span class="hljs-attribute">void</span> [<span class="hljs-title">collect_lines_from_characters</span>](#property-collect_lines_from_characters) ( `characters`: [Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html#class-dictionary) )** </a>
+<a class="header" id="property-collect_lines_from_characters" href="#property-collect_lines_from_characters">**<span class="hljs-attribute">func</span> [<span class="hljs-title">collect_lines_from_characters</span>](#property-collect_lines_from_characters) ( `characters`: [Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html#class-dictionary) )</a>  ⇒ <span style = "color: gray">void</span>** 
 
 
 
@@ -93,7 +93,7 @@ Collects names from the given `characters` and adds them to the `lines`.  If thi
 
 
 
-<a class="header" id="property-collect_lines_from_glossary" href="#property-collect_lines_from_glossary">**<span class="hljs-attribute">void</span> [<span class="hljs-title">collect_lines_from_glossary</span>](#property-collect_lines_from_glossary) ( `glossary`: [DialogicGlossary](class_dialogicglossary.md) )** </a>
+<a class="header" id="property-collect_lines_from_glossary" href="#property-collect_lines_from_glossary">**<span class="hljs-attribute">func</span> [<span class="hljs-title">collect_lines_from_glossary</span>](#property-collect_lines_from_glossary) ( `glossary`: [DialogicGlossary](class_dialogicglossary.md) )</a>  ⇒ <span style = "color: gray">void</span>** 
 
 
 
@@ -103,7 +103,7 @@ Collects properties from glossary entries from the given `glossary` and adds the
 
 
 
-<a class="header" id="property-collect_lines_from_timeline" href="#property-collect_lines_from_timeline">**<span class="hljs-attribute">void</span> [<span class="hljs-title">collect_lines_from_timeline</span>](#property-collect_lines_from_timeline) ( `timeline`: [DialogicTimeline](class_dialogictimeline.md) )** </a>
+<a class="header" id="property-collect_lines_from_timeline" href="#property-collect_lines_from_timeline">**<span class="hljs-attribute">func</span> [<span class="hljs-title">collect_lines_from_timeline</span>](#property-collect_lines_from_timeline) ( `timeline`: [DialogicTimeline](class_dialogictimeline.md) )</a>  ⇒ <span style = "color: gray">void</span>** 
 
 
 
@@ -113,7 +113,7 @@ Collects translatable events from the given `timeline` and adds them to the `lin
 
 
 
-<a class="header" id="property-update_csv_file_on_disk" href="#property-update_csv_file_on_disk">**<span class="hljs-attribute">void</span> [<span class="hljs-title">update_csv_file_on_disk</span>](#property-update_csv_file_on_disk) ( )** </a>
+<a class="header" id="property-update_csv_file_on_disk" href="#property-update_csv_file_on_disk">**<span class="hljs-attribute">func</span> [<span class="hljs-title">update_csv_file_on_disk</span>](#property-update_csv_file_on_disk) ( )</a>  ⇒ <span style = "color: gray">void</span>** 
 
 
 

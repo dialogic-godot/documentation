@@ -18,11 +18,11 @@ dialogic | [DialogicGameHandler](class_dialogicgamehandler.md) |  `null`
 ## Methods
 Returns | Method 
 --- | --- 
-<span class="hljs-attribute">void</span> | [<span class="hljs-title">clear_game_state</span>](#property-clear_game_state) ( `clear_flag`: [int](https://docs.godotengine.org/en/latest/classes/class_int.html#class-int) = `0` ) 
-<span class="hljs-attribute">void</span> | [<span class="hljs-title">load_game_state</span>](#property-load_game_state) ( `load_flag`: [int](https://docs.godotengine.org/en/latest/classes/class_int.html#class-int) = `0` ) 
-<span class="hljs-attribute">void</span> | [<span class="hljs-title">pause</span>](#property-pause) ( ) 
-<span class="hljs-attribute">void</span> | [<span class="hljs-title">post_install</span>](#property-post_install) ( ) 
-<span class="hljs-attribute">void</span> | [<span class="hljs-title">resume</span>](#property-resume) ( ) 
+<span style = "color: gray">void</span> | [<span class="hljs-title">clear_game_state</span>](#property-clear_game_state) ( `clear_flag`: [int](https://docs.godotengine.org/en/latest/classes/class_int.html#class-int) = `0` ) 
+<span style = "color: gray">void</span> | [<span class="hljs-title">load_game_state</span>](#property-load_game_state) ( `load_flag`: [int](https://docs.godotengine.org/en/latest/classes/class_int.html#class-int) = `0` ) 
+<span style = "color: gray">void</span> | [<span class="hljs-title">pause</span>](#property-pause) ( ) 
+<span style = "color: gray">void</span> | [<span class="hljs-title">post_install</span>](#property-post_install) ( ) 
+<span style = "color: gray">void</span> | [<span class="hljs-title">resume</span>](#property-resume) ( ) 
 --- 
 ## Constants
 
@@ -47,7 +47,7 @@ Returns | Method
 
 
 
-<a class="header" id="property-clear_game_state" href="#property-clear_game_state">**<span class="hljs-attribute">void</span> [<span class="hljs-title">clear_game_state</span>](#property-clear_game_state) ( `clear_flag`: [int](https://docs.godotengine.org/en/latest/classes/class_int.html#class-int) = `0` )** </a>
+<a class="header" id="property-clear_game_state" href="#property-clear_game_state">**<span class="hljs-attribute">func</span> [<span class="hljs-title">clear_game_state</span>](#property-clear_game_state) ( `clear_flag`: [int](https://docs.godotengine.org/en/latest/classes/class_int.html#class-int) = `0` )</a>  ⇒ <span style = "color: gray">void</span>** 
 
 
 
@@ -57,7 +57,7 @@ Returns | Method
 
 
 
-<a class="header" id="property-load_game_state" href="#property-load_game_state">**<span class="hljs-attribute">void</span> [<span class="hljs-title">load_game_state</span>](#property-load_game_state) ( `load_flag`: [int](https://docs.godotengine.org/en/latest/classes/class_int.html#class-int) = `0` )** </a>
+<a class="header" id="property-load_game_state" href="#property-load_game_state">**<span class="hljs-attribute">func</span> [<span class="hljs-title">load_game_state</span>](#property-load_game_state) ( `load_flag`: [int](https://docs.godotengine.org/en/latest/classes/class_int.html#class-int) = `0` )</a>  ⇒ <span style = "color: gray">void</span>** 
 
 
 
@@ -67,7 +67,7 @@ Returns | Method
 
 
 
-<a class="header" id="property-pause" href="#property-pause">**<span class="hljs-attribute">void</span> [<span class="hljs-title">pause</span>](#property-pause) ( )** </a>
+<a class="header" id="property-pause" href="#property-pause">**<span class="hljs-attribute">func</span> [<span class="hljs-title">pause</span>](#property-pause) ( )</a>  ⇒ <span style = "color: gray">void</span>** 
 
 
 
@@ -77,7 +77,7 @@ Returns | Method
 
 
 
-<a class="header" id="property-post_install" href="#property-post_install">**<span class="hljs-attribute">void</span> [<span class="hljs-title">post_install</span>](#property-post_install) ( )** </a>
+<a class="header" id="property-post_install" href="#property-post_install">**<span class="hljs-attribute">func</span> [<span class="hljs-title">post_install</span>](#property-post_install) ( )</a>  ⇒ <span style = "color: gray">void</span>** 
 
 
 
@@ -87,7 +87,7 @@ Returns | Method
 
 
 
-<a class="header" id="property-resume" href="#property-resume">**<span class="hljs-attribute">void</span> [<span class="hljs-title">resume</span>](#property-resume) ( )** </a>
+<a class="header" id="property-resume" href="#property-resume">**<span class="hljs-attribute">func</span> [<span class="hljs-title">resume</span>](#property-resume) ( )</a>  ⇒ <span style = "color: gray">void</span>** 
 
 
 

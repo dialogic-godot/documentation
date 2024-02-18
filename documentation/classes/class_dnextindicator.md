@@ -25,13 +25,13 @@ tween | [Tween](https://docs.godotengine.org/en/latest/classes/class_tween.html#
 ## Methods
 Returns | Method 
 --- | --- 
-<span class="hljs-attribute">void</span> | [<span class="hljs-title">play_animation</span>](#property-play_animation) ( `animation`: [int](https://docs.godotengine.org/en/latest/classes/class_int.html#class-int), `time`: [float](https://docs.godotengine.org/en/latest/classes/class_float.html#class-float) ) 
+<span style = "color: gray">void</span> | [<span class="hljs-title">play_animation</span>](#property-play_animation) ( `animation`: [int](https://docs.godotengine.org/en/latest/classes/class_int.html#class-int), `time`: [float](https://docs.godotengine.org/en/latest/classes/class_float.html#class-float) ) 
 --- 
 ## Property Descriptions
 
 
 
-<a class="header" id="property-play_animation" href="#property-play_animation">**<span class="hljs-attribute">void</span> [<span class="hljs-title">play_animation</span>](#property-play_animation) ( `animation`: [int](https://docs.godotengine.org/en/latest/classes/class_int.html#class-int), `time`: [float](https://docs.godotengine.org/en/latest/classes/class_float.html#class-float) )** </a>
+<a class="header" id="property-play_animation" href="#property-play_animation">**<span class="hljs-attribute">func</span> [<span class="hljs-title">play_animation</span>](#property-play_animation) ( `animation`: [int](https://docs.godotengine.org/en/latest/classes/class_int.html#class-int), `time`: [float](https://docs.godotengine.org/en/latest/classes/class_float.html#class-float) )</a>  ⇒ <span style = "color: gray">void</span>** 
 
 
 

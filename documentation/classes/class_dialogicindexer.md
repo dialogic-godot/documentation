@@ -18,15 +18,15 @@ this_folder | [String](https://docs.godotengine.org/en/latest/classes/class_stri
 ## Methods
 Returns | Method 
 --- | --- 
-<span class="hljs-attribute">void</span> | [<span class="hljs-title">list_dir</span>](#property-list_dir) ( `subdir`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) = `""` ) 
-<span class="hljs-attribute">void</span> | [<span class="hljs-title">list_special_resources</span>](#property-list_special_resources) ( `subdir`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) = `""`, `type`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) = `""`, `extension`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) = `""` ) 
-<span class="hljs-attribute">void</span> | [<span class="hljs-title">scan_for_layout_parts</span>](#property-scan_for_layout_parts) ( ) 
+<span class="hljs-attribute">[Array](https://docs.godotengine.org/en/latest/classes/class_array.html#class-array)</span> | [<span class="hljs-title">list_dir</span>](#property-list_dir) ( `subdir`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) = `""` ) 
+<span class="hljs-attribute">[Dictionary[]](https://docs.godotengine.org/en/latest/classes/class_dictionary.html#class-dictionary)</span> | [<span class="hljs-title">list_special_resources</span>](#property-list_special_resources) ( `subdir`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) = `""`, `type`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) = `""`, `extension`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) = `""` ) 
+<span class="hljs-attribute">[Dictionary[]](https://docs.godotengine.org/en/latest/classes/class_dictionary.html#class-dictionary)</span> | [<span class="hljs-title">scan_for_layout_parts</span>](#property-scan_for_layout_parts) ( ) 
 --- 
 ## Property Descriptions
 
 
 
-<a class="header" id="property-list_dir" href="#property-list_dir">**<span class="hljs-attribute">void</span> [<span class="hljs-title">list_dir</span>](#property-list_dir) ( `subdir`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) = `""` )** </a>
+<a class="header" id="property-list_dir" href="#property-list_dir">**<span class="hljs-attribute">func</span> [<span class="hljs-title">list_dir</span>](#property-list_dir) ( `subdir`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) = `""` )</a>  ⇒ <span class="hljs-attribute">[Array](https://docs.godotengine.org/en/latest/classes/class_array.html#class-array)</span>** 
 
 
 
@@ -36,7 +36,7 @@ Returns | Method
 
 
 
-<a class="header" id="property-list_special_resources" href="#property-list_special_resources">**<span class="hljs-attribute">void</span> [<span class="hljs-title">list_special_resources</span>](#property-list_special_resources) ( `subdir`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) = `""`, `type`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) = `""`, `extension`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) = `""` )** </a>
+<a class="header" id="property-list_special_resources" href="#property-list_special_resources">**<span class="hljs-attribute">func</span> [<span class="hljs-title">list_special_resources</span>](#property-list_special_resources) ( `subdir`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) = `""`, `type`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) = `""`, `extension`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) = `""` )</a>  ⇒ <span class="hljs-attribute">[Dictionary[]](https://docs.godotengine.org/en/latest/classes/class_dictionary.html#class-dictionary)</span>** 
 
 
 
@@ -46,7 +46,7 @@ Returns | Method
 
 
 
-<a class="header" id="property-scan_for_layout_parts" href="#property-scan_for_layout_parts">**<span class="hljs-attribute">void</span> [<span class="hljs-title">scan_for_layout_parts</span>](#property-scan_for_layout_parts) ( )** </a>
+<a class="header" id="property-scan_for_layout_parts" href="#property-scan_for_layout_parts">**<span class="hljs-attribute">func</span> [<span class="hljs-title">scan_for_layout_parts</span>](#property-scan_for_layout_parts) ( )</a>  ⇒ <span class="hljs-attribute">[Dictionary[]](https://docs.godotengine.org/en/latest/classes/class_dictionary.html#class-dictionary)</span>** 
 
 
 

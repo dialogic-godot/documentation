@@ -14,15 +14,15 @@
 ## Methods
 Returns | Method 
 --- | --- 
-<span class="hljs-attribute">void</span> | [<span class="hljs-title">get_editor_scale</span>](#property-get_editor_scale) ( ) 
-<span class="hljs-attribute">void</span> | [<span class="hljs-title">inline</span>](#property-inline) ( `style`: [Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html#class-dictionary) ) 
-<span class="hljs-attribute">void</span> | [<span class="hljs-title">style</span>](#property-style) ( `node`: [Variant](https://docs.godotengine.org/en/latest/classes/class_variant.html#class-variant), `style`: [Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html#class-dictionary) ) 
+<span class="hljs-attribute">[float](https://docs.godotengine.org/en/latest/classes/class_float.html#class-float)</span> | [<span class="hljs-title">get_editor_scale</span>](#property-get_editor_scale) ( ) 
+<span class="hljs-attribute">[StyleBoxFlat](https://docs.godotengine.org/en/latest/classes/class_styleboxflat.html#class-styleboxflat)</span> | [<span class="hljs-title">inline</span>](#property-inline) ( `style`: [Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html#class-dictionary) ) 
+<span class="hljs-attribute">[StyleBoxFlat](https://docs.godotengine.org/en/latest/classes/class_styleboxflat.html#class-styleboxflat)</span> | [<span class="hljs-title">style</span>](#property-style) ( `node`: [Variant](https://docs.godotengine.org/en/latest/classes/class_variant.html#class-variant), `style`: [Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html#class-dictionary) ) 
 --- 
 ## Property Descriptions
 
 
 
-<a class="header" id="property-get_editor_scale" href="#property-get_editor_scale">**<span class="hljs-attribute">void</span> [<span class="hljs-title">get_editor_scale</span>](#property-get_editor_scale) ( )** </a>
+<a class="header" id="property-get_editor_scale" href="#property-get_editor_scale">**<span class="hljs-attribute">func</span> [<span class="hljs-title">get_editor_scale</span>](#property-get_editor_scale) ( )</a>  ⇒ <span class="hljs-attribute">[float](https://docs.godotengine.org/en/latest/classes/class_float.html#class-float)</span>** 
 
 
 
@@ -32,7 +32,7 @@ Returns | Method
 
 
 
-<a class="header" id="property-inline" href="#property-inline">**<span class="hljs-attribute">void</span> [<span class="hljs-title">inline</span>](#property-inline) ( `style`: [Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html#class-dictionary) )** </a>
+<a class="header" id="property-inline" href="#property-inline">**<span class="hljs-attribute">func</span> [<span class="hljs-title">inline</span>](#property-inline) ( `style`: [Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html#class-dictionary) )</a>  ⇒ <span class="hljs-attribute">[StyleBoxFlat](https://docs.godotengine.org/en/latest/classes/class_styleboxflat.html#class-styleboxflat)</span>** 
 
 
 
@@ -42,7 +42,7 @@ Returns | Method
 
 
 
-<a class="header" id="property-style" href="#property-style">**<span class="hljs-attribute">void</span> [<span class="hljs-title">style</span>](#property-style) ( `node`: [Variant](https://docs.godotengine.org/en/latest/classes/class_variant.html#class-variant), `style`: [Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html#class-dictionary) )** </a>
+<a class="header" id="property-style" href="#property-style">**<span class="hljs-attribute">func</span> [<span class="hljs-title">style</span>](#property-style) ( `node`: [Variant](https://docs.godotengine.org/en/latest/classes/class_variant.html#class-variant), `style`: [Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html#class-dictionary) )</a>  ⇒ <span class="hljs-attribute">[StyleBoxFlat](https://docs.godotengine.org/en/latest/classes/class_styleboxflat.html#class-styleboxflat)</span>** 
 
 
 

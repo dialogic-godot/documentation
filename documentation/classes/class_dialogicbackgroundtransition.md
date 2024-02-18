@@ -24,8 +24,8 @@ time | [float](https://docs.godotengine.org/en/latest/classes/class_float.html#c
 ## Methods
 Returns | Method 
 --- | --- 
-<span class="hljs-attribute">void</span> | [<span class="hljs-title">set_shader</span>](#property-set_shader) ( `path_to_shader`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) = `<unknown>` ) 
-<span class="hljs-attribute">void</span> | [<span class="hljs-title">tween_shader_progress</span>](#property-tween_shader_progress) ( `progress_parameter`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) = `"progress"` ) 
+<span class="hljs-attribute">[ShaderMaterial](https://docs.godotengine.org/en/latest/classes/class_shadermaterial.html#class-shadermaterial)</span> | [<span class="hljs-title">set_shader</span>](#property-set_shader) ( `path_to_shader`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) = `<unknown>` ) 
+<span class="hljs-attribute">[PropertyTweener](https://docs.godotengine.org/en/latest/classes/class_propertytweener.html#class-propertytweener)</span> | [<span class="hljs-title">tween_shader_progress</span>](#property-tween_shader_progress) ( `progress_parameter`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) = `"progress"` ) 
 --- 
 
 ## Signals
@@ -43,7 +43,7 @@ Returns | Method
 
 
 
-<a class="header" id="property-set_shader" href="#property-set_shader">**<span class="hljs-attribute">void</span> [<span class="hljs-title">set_shader</span>](#property-set_shader) ( `path_to_shader`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) = `<unknown>` )** </a>
+<a class="header" id="property-set_shader" href="#property-set_shader">**<span class="hljs-attribute">func</span> [<span class="hljs-title">set_shader</span>](#property-set_shader) ( `path_to_shader`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) = `<unknown>` )</a>  ⇒ <span class="hljs-attribute">[ShaderMaterial](https://docs.godotengine.org/en/latest/classes/class_shadermaterial.html#class-shadermaterial)</span>** 
 
 
 
@@ -53,7 +53,7 @@ Returns | Method
 
 
 
-<a class="header" id="property-tween_shader_progress" href="#property-tween_shader_progress">**<span class="hljs-attribute">void</span> [<span class="hljs-title">tween_shader_progress</span>](#property-tween_shader_progress) ( `progress_parameter`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) = `"progress"` )** </a>
+<a class="header" id="property-tween_shader_progress" href="#property-tween_shader_progress">**<span class="hljs-attribute">func</span> [<span class="hljs-title">tween_shader_progress</span>](#property-tween_shader_progress) ( `progress_parameter`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) = `"progress"` )</a>  ⇒ <span class="hljs-attribute">[PropertyTweener](https://docs.godotengine.org/en/latest/classes/class_propertytweener.html#class-propertytweener)</span>** 
 
 
 

@@ -20,16 +20,16 @@ text_label | [NodePath](https://docs.godotengine.org/en/latest/classes/class_nod
 ## Methods
 Returns | Method 
 --- | --- 
-<span class="hljs-attribute">void</span> | [<span class="hljs-title">set_allow_empty</span>](#property-set_allow_empty) ( `boolean`: [bool](https://docs.godotengine.org/en/latest/classes/class_bool.html#class-bool) ) 
-<span class="hljs-attribute">void</span> | [<span class="hljs-title">set_default</span>](#property-set_default) ( `default`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) ) 
-<span class="hljs-attribute">void</span> | [<span class="hljs-title">set_placeholder</span>](#property-set_placeholder) ( `placeholder`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) ) 
-<span class="hljs-attribute">void</span> | [<span class="hljs-title">set_text</span>](#property-set_text) ( `text`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) ) 
+<span style = "color: gray">void</span> | [<span class="hljs-title">set_allow_empty</span>](#property-set_allow_empty) ( `boolean`: [bool](https://docs.godotengine.org/en/latest/classes/class_bool.html#class-bool) ) 
+<span style = "color: gray">void</span> | [<span class="hljs-title">set_default</span>](#property-set_default) ( `default`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) ) 
+<span style = "color: gray">void</span> | [<span class="hljs-title">set_placeholder</span>](#property-set_placeholder) ( `placeholder`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) ) 
+<span style = "color: gray">void</span> | [<span class="hljs-title">set_text</span>](#property-set_text) ( `text`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) ) 
 --- 
 ## Property Descriptions
 
 
 
-<a class="header" id="property-set_allow_empty" href="#property-set_allow_empty">**<span class="hljs-attribute">void</span> [<span class="hljs-title">set_allow_empty</span>](#property-set_allow_empty) ( `boolean`: [bool](https://docs.godotengine.org/en/latest/classes/class_bool.html#class-bool) )** </a>
+<a class="header" id="property-set_allow_empty" href="#property-set_allow_empty">**<span class="hljs-attribute">func</span> [<span class="hljs-title">set_allow_empty</span>](#property-set_allow_empty) ( `boolean`: [bool](https://docs.godotengine.org/en/latest/classes/class_bool.html#class-bool) )</a>  ⇒ <span style = "color: gray">void</span>** 
 
 
 
@@ -39,7 +39,7 @@ Returns | Method
 
 
 
-<a class="header" id="property-set_default" href="#property-set_default">**<span class="hljs-attribute">void</span> [<span class="hljs-title">set_default</span>](#property-set_default) ( `default`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) )** </a>
+<a class="header" id="property-set_default" href="#property-set_default">**<span class="hljs-attribute">func</span> [<span class="hljs-title">set_default</span>](#property-set_default) ( `default`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) )</a>  ⇒ <span style = "color: gray">void</span>** 
 
 
 
@@ -49,7 +49,7 @@ Returns | Method
 
 
 
-<a class="header" id="property-set_placeholder" href="#property-set_placeholder">**<span class="hljs-attribute">void</span> [<span class="hljs-title">set_placeholder</span>](#property-set_placeholder) ( `placeholder`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) )** </a>
+<a class="header" id="property-set_placeholder" href="#property-set_placeholder">**<span class="hljs-attribute">func</span> [<span class="hljs-title">set_placeholder</span>](#property-set_placeholder) ( `placeholder`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) )</a>  ⇒ <span style = "color: gray">void</span>** 
 
 
 
@@ -59,7 +59,7 @@ Returns | Method
 
 
 
-<a class="header" id="property-set_text" href="#property-set_text">**<span class="hljs-attribute">void</span> [<span class="hljs-title">set_text</span>](#property-set_text) ( `text`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) )** </a>
+<a class="header" id="property-set_text" href="#property-set_text">**<span class="hljs-attribute">func</span> [<span class="hljs-title">set_text</span>](#property-set_text) ( `text`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) )</a>  ⇒ <span style = "color: gray">void</span>** 
 
 
 

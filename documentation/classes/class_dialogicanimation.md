@@ -22,10 +22,10 @@ time | [float](https://docs.godotengine.org/en/latest/classes/class_float.html#c
 ## Methods
 Returns | Method 
 --- | --- 
-<span class="hljs-attribute">void</span> | [<span class="hljs-title">animate</span>](#property-animate) ( ) 
-<span class="hljs-attribute">void</span> | [<span class="hljs-title">finished_one_loop</span>](#property-finished_one_loop) ( ) 
-<span class="hljs-attribute">void</span> | [<span class="hljs-title">pause</span>](#property-pause) ( ) 
-<span class="hljs-attribute">void</span> | [<span class="hljs-title">resume</span>](#property-resume) ( ) 
+<span style = "color: gray">void</span> | [<span class="hljs-title">animate</span>](#property-animate) ( ) 
+<span style = "color: gray">void</span> | [<span class="hljs-title">finished_one_loop</span>](#property-finished_one_loop) ( ) 
+<span style = "color: gray">void</span> | [<span class="hljs-title">pause</span>](#property-pause) ( ) 
+<span style = "color: gray">void</span> | [<span class="hljs-title">resume</span>](#property-resume) ( ) 
 --- 
 
 ## Signals
@@ -53,7 +53,7 @@ Returns | Method
 
 
 
-<a class="header" id="property-animate" href="#property-animate">**<span class="hljs-attribute">void</span> [<span class="hljs-title">animate</span>](#property-animate) ( )** </a>
+<a class="header" id="property-animate" href="#property-animate">**<span class="hljs-attribute">func</span> [<span class="hljs-title">animate</span>](#property-animate) ( )</a>  ⇒ <span style = "color: gray">void</span>** 
 
 
 
@@ -63,7 +63,7 @@ To be overridden. Do the actual animating/tweening in here. Use the properties [
 
 
 
-<a class="header" id="property-finished_one_loop" href="#property-finished_one_loop">**<span class="hljs-attribute">void</span> [<span class="hljs-title">finished_one_loop</span>](#property-finished_one_loop) ( )** </a>
+<a class="header" id="property-finished_one_loop" href="#property-finished_one_loop">**<span class="hljs-attribute">func</span> [<span class="hljs-title">finished_one_loop</span>](#property-finished_one_loop) ( )</a>  ⇒ <span style = "color: gray">void</span>** 
 
 
 
@@ -73,7 +73,7 @@ To be overridden. Do the actual animating/tweening in here. Use the properties [
 
 
 
-<a class="header" id="property-pause" href="#property-pause">**<span class="hljs-attribute">void</span> [<span class="hljs-title">pause</span>](#property-pause) ( )** </a>
+<a class="header" id="property-pause" href="#property-pause">**<span class="hljs-attribute">func</span> [<span class="hljs-title">pause</span>](#property-pause) ( )</a>  ⇒ <span style = "color: gray">void</span>** 
 
 
 
@@ -83,7 +83,7 @@ To be overridden. Do the actual animating/tweening in here. Use the properties [
 
 
 
-<a class="header" id="property-resume" href="#property-resume">**<span class="hljs-attribute">void</span> [<span class="hljs-title">resume</span>](#property-resume) ( )** </a>
+<a class="header" id="property-resume" href="#property-resume">**<span class="hljs-attribute">func</span> [<span class="hljs-title">resume</span>](#property-resume) ( )</a>  ⇒ <span style = "color: gray">void</span>** 
 
 
 
