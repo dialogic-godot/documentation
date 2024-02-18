@@ -31,8 +31,8 @@ size_mode | [int](https://docs.godotengine.org/en/latest/classes/class_int.html#
 ## Methods
 Returns | Method 
 --- | --- 
-<span class="hljs-attribute">void</span> | [<span class="hljs-title">get_local_portrait_transform</span>](#property-get_local_portrait_transform) ( `portrait_rect`: [Rect2](https://docs.godotengine.org/en/latest/classes/class_rect2.html#class-rect2), `character_scale`: [float](https://docs.godotengine.org/en/latest/classes/class_float.html#class-float) = `1.0` ) 
-<span class="hljs-attribute">void</span> | [<span class="hljs-title">update_portrait_transforms</span>](#property-update_portrait_transforms) ( ) 
+<span class="hljs-attribute">[Rect2](https://docs.godotengine.org/en/latest/classes/class_rect2.html#class-rect2)</span> | [<span class="hljs-title">get_local_portrait_transform</span>](#property-get_local_portrait_transform) ( `portrait_rect`: [Rect2](https://docs.godotengine.org/en/latest/classes/class_rect2.html#class-rect2), `character_scale`: [float](https://docs.godotengine.org/en/latest/classes/class_float.html#class-float) = `1.0` ) 
+<span style = "color: gray">void</span> | [<span class="hljs-title">update_portrait_transforms</span>](#property-update_portrait_transforms) ( ) 
 --- 
 ## Constants
 
@@ -174,7 +174,7 @@ Returns | Method
 
 
 
-<a class="header" id="property-get_local_portrait_transform" href="#property-get_local_portrait_transform">**<span class="hljs-attribute">void</span> [<span class="hljs-title">get_local_portrait_transform</span>](#property-get_local_portrait_transform) ( `portrait_rect`: [Rect2](https://docs.godotengine.org/en/latest/classes/class_rect2.html#class-rect2), `character_scale`: [float](https://docs.godotengine.org/en/latest/classes/class_float.html#class-float) = `1.0` )** </a>
+<a class="header" id="property-get_local_portrait_transform" href="#property-get_local_portrait_transform">**<span class="hljs-attribute">func</span> [<span class="hljs-title">get_local_portrait_transform</span>](#property-get_local_portrait_transform) ( `portrait_rect`: [Rect2](https://docs.godotengine.org/en/latest/classes/class_rect2.html#class-rect2), `character_scale`: [float](https://docs.godotengine.org/en/latest/classes/class_float.html#class-float) = `1.0` )</a>  ⇒ <span class="hljs-attribute">[Rect2](https://docs.godotengine.org/en/latest/classes/class_rect2.html#class-rect2)</span>** 
 
 
 
@@ -184,7 +184,7 @@ Returns a Rect2 with the position as the position and the scale as the size.
 
 
 
-<a class="header" id="property-update_portrait_transforms" href="#property-update_portrait_transforms">**<span class="hljs-attribute">void</span> [<span class="hljs-title">update_portrait_transforms</span>](#property-update_portrait_transforms) ( )** </a>
+<a class="header" id="property-update_portrait_transforms" href="#property-update_portrait_transforms">**<span class="hljs-attribute">func</span> [<span class="hljs-title">update_portrait_transforms</span>](#property-update_portrait_transforms) ( )</a>  ⇒ <span style = "color: gray">void</span>** 
 
 
 

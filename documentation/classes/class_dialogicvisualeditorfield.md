@@ -19,8 +19,8 @@ property_name | [String](https://docs.godotengine.org/en/latest/classes/class_st
 ## Methods
 Returns | Method 
 --- | --- 
-<span class="hljs-attribute">void</span> | [<span class="hljs-title">set_value</span>](#property-set_value) ( `value`: [Variant](https://docs.godotengine.org/en/latest/classes/class_variant.html#class-variant) ) 
-<span class="hljs-attribute">void</span> | [<span class="hljs-title">take_autofocus</span>](#property-take_autofocus) ( ) 
+<span style = "color: gray">void</span> | [<span class="hljs-title">set_value</span>](#property-set_value) ( `value`: [Variant](https://docs.godotengine.org/en/latest/classes/class_variant.html#class-variant) ) 
+<span style = "color: gray">void</span> | [<span class="hljs-title">take_autofocus</span>](#property-take_autofocus) ( ) 
 --- 
 
 ## Signals
@@ -38,7 +38,7 @@ Returns | Method
 
 
 
-<a class="header" id="property-set_value" href="#property-set_value">**<span class="hljs-attribute">void</span> [<span class="hljs-title">set_value</span>](#property-set_value) ( `value`: [Variant](https://docs.godotengine.org/en/latest/classes/class_variant.html#class-variant) )** </a>
+<a class="header" id="property-set_value" href="#property-set_value">**<span class="hljs-attribute">func</span> [<span class="hljs-title">set_value</span>](#property-set_value) ( `value`: [Variant](https://docs.godotengine.org/en/latest/classes/class_variant.html#class-variant) )</a>  ⇒ <span style = "color: gray">void</span>** 
 
 
 
@@ -48,7 +48,7 @@ Returns | Method
 
 
 
-<a class="header" id="property-take_autofocus" href="#property-take_autofocus">**<span class="hljs-attribute">void</span> [<span class="hljs-title">take_autofocus</span>](#property-take_autofocus) ( )** </a>
+<a class="header" id="property-take_autofocus" href="#property-take_autofocus">**<span class="hljs-attribute">func</span> [<span class="hljs-title">take_autofocus</span>](#property-take_autofocus) ( )</a>  ⇒ <span style = "color: gray">void</span>** 
 
 
 

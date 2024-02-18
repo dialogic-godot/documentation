@@ -35,17 +35,17 @@ z_index | [int](https://docs.godotengine.org/en/latest/classes/class_int.html#cl
 ## Methods
 Returns | Method 
 --- | --- 
-<span class="hljs-attribute">void</span> | [<span class="hljs-title">build_event_editor</span>](#property-build_event_editor) ( ) 
-<span class="hljs-attribute">void</span> | [<span class="hljs-title">from_text</span>](#property-from_text) ( `string`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) ) 
-<span class="hljs-attribute">void</span> | [<span class="hljs-title">get_animation_suggestions</span>](#property-get_animation_suggestions) ( `search_text`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) ) 
-<span class="hljs-attribute">void</span> | [<span class="hljs-title">get_character_suggestions</span>](#property-get_character_suggestions) ( `search_text`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) ) 
-<span class="hljs-attribute">void</span> | [<span class="hljs-title">get_portrait_suggestions</span>](#property-get_portrait_suggestions) ( `search_text`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) ) 
-<span class="hljs-attribute">void</span> | [<span class="hljs-title">get_shortcode_parameters</span>](#property-get_shortcode_parameters) ( ) 
-<span class="hljs-attribute">void</span> | [<span class="hljs-title">has_no_portraits</span>](#property-has_no_portraits) ( ) 
-<span class="hljs-attribute">void</span> | [<span class="hljs-title">is_valid_event</span>](#property-is_valid_event) ( `string`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) ) 
-<span class="hljs-attribute">void</span> | [<span class="hljs-title">should_show_animation_options</span>](#property-should_show_animation_options) ( ) 
-<span class="hljs-attribute">void</span> | [<span class="hljs-title">should_show_portrait_selector</span>](#property-should_show_portrait_selector) ( ) 
-<span class="hljs-attribute">void</span> | [<span class="hljs-title">to_text</span>](#property-to_text) ( ) 
+<span style = "color: gray">void</span> | [<span class="hljs-title">build_event_editor</span>](#property-build_event_editor) ( ) 
+<span style = "color: gray">void</span> | [<span class="hljs-title">from_text</span>](#property-from_text) ( `string`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) ) 
+<span class="hljs-attribute">[Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html#class-dictionary)</span> | [<span class="hljs-title">get_animation_suggestions</span>](#property-get_animation_suggestions) ( `search_text`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) ) 
+<span class="hljs-attribute">[Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html#class-dictionary)</span> | [<span class="hljs-title">get_character_suggestions</span>](#property-get_character_suggestions) ( `search_text`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) ) 
+<span class="hljs-attribute">[Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html#class-dictionary)</span> | [<span class="hljs-title">get_portrait_suggestions</span>](#property-get_portrait_suggestions) ( `search_text`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) ) 
+<span class="hljs-attribute">[Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html#class-dictionary)</span> | [<span class="hljs-title">get_shortcode_parameters</span>](#property-get_shortcode_parameters) ( ) 
+<span class="hljs-attribute">[bool](https://docs.godotengine.org/en/latest/classes/class_bool.html#class-bool)</span> | [<span class="hljs-title">has_no_portraits</span>](#property-has_no_portraits) ( ) 
+<span class="hljs-attribute">[bool](https://docs.godotengine.org/en/latest/classes/class_bool.html#class-bool)</span> | [<span class="hljs-title">is_valid_event</span>](#property-is_valid_event) ( `string`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) ) 
+<span class="hljs-attribute">[bool](https://docs.godotengine.org/en/latest/classes/class_bool.html#class-bool)</span> | [<span class="hljs-title">should_show_animation_options</span>](#property-should_show_animation_options) ( ) 
+<span class="hljs-attribute">[bool](https://docs.godotengine.org/en/latest/classes/class_bool.html#class-bool)</span> | [<span class="hljs-title">should_show_portrait_selector</span>](#property-should_show_portrait_selector) ( ) 
+<span class="hljs-attribute">[String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string)</span> | [<span class="hljs-title">to_text</span>](#property-to_text) ( ) 
 --- 
 ## Constants
 
@@ -79,7 +79,7 @@ Returns | Method
 
 
 
-<a class="header" id="property-build_event_editor" href="#property-build_event_editor">**<span class="hljs-attribute">void</span> [<span class="hljs-title">build_event_editor</span>](#property-build_event_editor) ( )** </a>
+<a class="header" id="property-build_event_editor" href="#property-build_event_editor">**<span class="hljs-attribute">func</span> [<span class="hljs-title">build_event_editor</span>](#property-build_event_editor) ( )</a>  ⇒ <span style = "color: gray">void</span>** 
 
 
 
@@ -89,7 +89,7 @@ Returns | Method
 
 
 
-<a class="header" id="property-from_text" href="#property-from_text">**<span class="hljs-attribute">void</span> [<span class="hljs-title">from_text</span>](#property-from_text) ( `string`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) )** </a>
+<a class="header" id="property-from_text" href="#property-from_text">**<span class="hljs-attribute">func</span> [<span class="hljs-title">from_text</span>](#property-from_text) ( `string`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) )</a>  ⇒ <span style = "color: gray">void</span>** 
 
 
 
@@ -99,7 +99,7 @@ Returns | Method
 
 
 
-<a class="header" id="property-get_animation_suggestions" href="#property-get_animation_suggestions">**<span class="hljs-attribute">void</span> [<span class="hljs-title">get_animation_suggestions</span>](#property-get_animation_suggestions) ( `search_text`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) )** </a>
+<a class="header" id="property-get_animation_suggestions" href="#property-get_animation_suggestions">**<span class="hljs-attribute">func</span> [<span class="hljs-title">get_animation_suggestions</span>](#property-get_animation_suggestions) ( `search_text`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) )</a>  ⇒ <span class="hljs-attribute">[Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html#class-dictionary)</span>** 
 
 
 
@@ -109,7 +109,7 @@ Returns | Method
 
 
 
-<a class="header" id="property-get_character_suggestions" href="#property-get_character_suggestions">**<span class="hljs-attribute">void</span> [<span class="hljs-title">get_character_suggestions</span>](#property-get_character_suggestions) ( `search_text`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) )** </a>
+<a class="header" id="property-get_character_suggestions" href="#property-get_character_suggestions">**<span class="hljs-attribute">func</span> [<span class="hljs-title">get_character_suggestions</span>](#property-get_character_suggestions) ( `search_text`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) )</a>  ⇒ <span class="hljs-attribute">[Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html#class-dictionary)</span>** 
 
 
 
@@ -119,7 +119,7 @@ Returns | Method
 
 
 
-<a class="header" id="property-get_portrait_suggestions" href="#property-get_portrait_suggestions">**<span class="hljs-attribute">void</span> [<span class="hljs-title">get_portrait_suggestions</span>](#property-get_portrait_suggestions) ( `search_text`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) )** </a>
+<a class="header" id="property-get_portrait_suggestions" href="#property-get_portrait_suggestions">**<span class="hljs-attribute">func</span> [<span class="hljs-title">get_portrait_suggestions</span>](#property-get_portrait_suggestions) ( `search_text`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) )</a>  ⇒ <span class="hljs-attribute">[Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html#class-dictionary)</span>** 
 
 
 
@@ -129,7 +129,7 @@ Returns | Method
 
 
 
-<a class="header" id="property-get_shortcode_parameters" href="#property-get_shortcode_parameters">**<span class="hljs-attribute">void</span> [<span class="hljs-title">get_shortcode_parameters</span>](#property-get_shortcode_parameters) ( )** </a>
+<a class="header" id="property-get_shortcode_parameters" href="#property-get_shortcode_parameters">**<span class="hljs-attribute">func</span> [<span class="hljs-title">get_shortcode_parameters</span>](#property-get_shortcode_parameters) ( )</a>  ⇒ <span class="hljs-attribute">[Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html#class-dictionary)</span>** 
 
 
 
@@ -139,7 +139,7 @@ this is only here to provide a list of default values this way the module manage
 
 
 
-<a class="header" id="property-has_no_portraits" href="#property-has_no_portraits">**<span class="hljs-attribute">void</span> [<span class="hljs-title">has_no_portraits</span>](#property-has_no_portraits) ( )** </a>
+<a class="header" id="property-has_no_portraits" href="#property-has_no_portraits">**<span class="hljs-attribute">func</span> [<span class="hljs-title">has_no_portraits</span>](#property-has_no_portraits) ( )</a>  ⇒ <span class="hljs-attribute">[bool](https://docs.godotengine.org/en/latest/classes/class_bool.html#class-bool)</span>** 
 
 
 
@@ -149,7 +149,7 @@ this is only here to provide a list of default values this way the module manage
 
 
 
-<a class="header" id="property-is_valid_event" href="#property-is_valid_event">**<span class="hljs-attribute">void</span> [<span class="hljs-title">is_valid_event</span>](#property-is_valid_event) ( `string`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) )** </a>
+<a class="header" id="property-is_valid_event" href="#property-is_valid_event">**<span class="hljs-attribute">func</span> [<span class="hljs-title">is_valid_event</span>](#property-is_valid_event) ( `string`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) )</a>  ⇒ <span class="hljs-attribute">[bool](https://docs.godotengine.org/en/latest/classes/class_bool.html#class-bool)</span>** 
 
 
 
@@ -159,7 +159,7 @@ this is only here to provide a list of default values this way the module manage
 
 
 
-<a class="header" id="property-should_show_animation_options" href="#property-should_show_animation_options">**<span class="hljs-attribute">void</span> [<span class="hljs-title">should_show_animation_options</span>](#property-should_show_animation_options) ( )** </a>
+<a class="header" id="property-should_show_animation_options" href="#property-should_show_animation_options">**<span class="hljs-attribute">func</span> [<span class="hljs-title">should_show_animation_options</span>](#property-should_show_animation_options) ( )</a>  ⇒ <span class="hljs-attribute">[bool](https://docs.godotengine.org/en/latest/classes/class_bool.html#class-bool)</span>** 
 
 
 
@@ -169,7 +169,7 @@ this is only here to provide a list of default values this way the module manage
 
 
 
-<a class="header" id="property-should_show_portrait_selector" href="#property-should_show_portrait_selector">**<span class="hljs-attribute">void</span> [<span class="hljs-title">should_show_portrait_selector</span>](#property-should_show_portrait_selector) ( )** </a>
+<a class="header" id="property-should_show_portrait_selector" href="#property-should_show_portrait_selector">**<span class="hljs-attribute">func</span> [<span class="hljs-title">should_show_portrait_selector</span>](#property-should_show_portrait_selector) ( )</a>  ⇒ <span class="hljs-attribute">[bool](https://docs.godotengine.org/en/latest/classes/class_bool.html#class-bool)</span>** 
 
 
 
@@ -179,7 +179,7 @@ this is only here to provide a list of default values this way the module manage
 
 
 
-<a class="header" id="property-to_text" href="#property-to_text">**<span class="hljs-attribute">void</span> [<span class="hljs-title">to_text</span>](#property-to_text) ( )** </a>
+<a class="header" id="property-to_text" href="#property-to_text">**<span class="hljs-attribute">func</span> [<span class="hljs-title">to_text</span>](#property-to_text) ( )</a>  ⇒ <span class="hljs-attribute">[String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string)</span>** 
 
 
 

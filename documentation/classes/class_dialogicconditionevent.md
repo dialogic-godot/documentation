@@ -19,12 +19,12 @@ condition_type | [int](https://docs.godotengine.org/en/latest/classes/class_int.
 ## Methods
 Returns | Method 
 --- | --- 
-<span class="hljs-attribute">void</span> | [<span class="hljs-title">build_event_editor</span>](#property-build_event_editor) ( ) 
-<span class="hljs-attribute">void</span> | [<span class="hljs-title">from_text</span>](#property-from_text) ( `string`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) ) 
-<span class="hljs-attribute">void</span> | [<span class="hljs-title">get_end_branch_control</span>](#property-get_end_branch_control) ( ) 
-<span class="hljs-attribute">void</span> | [<span class="hljs-title">is_valid_event</span>](#property-is_valid_event) ( `string`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) ) 
-<span class="hljs-attribute">void</span> | [<span class="hljs-title">should_execute_this_branch</span>](#property-should_execute_this_branch) ( ) 
-<span class="hljs-attribute">void</span> | [<span class="hljs-title">to_text</span>](#property-to_text) ( ) 
+<span style = "color: gray">void</span> | [<span class="hljs-title">build_event_editor</span>](#property-build_event_editor) ( ) 
+<span style = "color: gray">void</span> | [<span class="hljs-title">from_text</span>](#property-from_text) ( `string`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) ) 
+<span class="hljs-attribute">[Control](https://docs.godotengine.org/en/latest/classes/class_control.html#class-control)</span> | [<span class="hljs-title">get_end_branch_control</span>](#property-get_end_branch_control) ( ) 
+<span class="hljs-attribute">[bool](https://docs.godotengine.org/en/latest/classes/class_bool.html#class-bool)</span> | [<span class="hljs-title">is_valid_event</span>](#property-is_valid_event) ( `string`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) ) 
+<span class="hljs-attribute">[bool](https://docs.godotengine.org/en/latest/classes/class_bool.html#class-bool)</span> | [<span class="hljs-title">should_execute_this_branch</span>](#property-should_execute_this_branch) ( ) 
+<span class="hljs-attribute">[String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string)</span> | [<span class="hljs-title">to_text</span>](#property-to_text) ( ) 
 --- 
 ## Constants
 
@@ -58,7 +58,7 @@ Returns | Method
 
 
 
-<a class="header" id="property-build_event_editor" href="#property-build_event_editor">**<span class="hljs-attribute">void</span> [<span class="hljs-title">build_event_editor</span>](#property-build_event_editor) ( )** </a>
+<a class="header" id="property-build_event_editor" href="#property-build_event_editor">**<span class="hljs-attribute">func</span> [<span class="hljs-title">build_event_editor</span>](#property-build_event_editor) ( )</a>  ⇒ <span style = "color: gray">void</span>** 
 
 
 
@@ -68,7 +68,7 @@ Returns | Method
 
 
 
-<a class="header" id="property-from_text" href="#property-from_text">**<span class="hljs-attribute">void</span> [<span class="hljs-title">from_text</span>](#property-from_text) ( `string`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) )** </a>
+<a class="header" id="property-from_text" href="#property-from_text">**<span class="hljs-attribute">func</span> [<span class="hljs-title">from_text</span>](#property-from_text) ( `string`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) )</a>  ⇒ <span style = "color: gray">void</span>** 
 
 
 
@@ -78,7 +78,7 @@ Returns | Method
 
 
 
-<a class="header" id="property-get_end_branch_control" href="#property-get_end_branch_control">**<span class="hljs-attribute">void</span> [<span class="hljs-title">get_end_branch_control</span>](#property-get_end_branch_control) ( )** </a>
+<a class="header" id="property-get_end_branch_control" href="#property-get_end_branch_control">**<span class="hljs-attribute">func</span> [<span class="hljs-title">get_end_branch_control</span>](#property-get_end_branch_control) ( )</a>  ⇒ <span class="hljs-attribute">[Control](https://docs.godotengine.org/en/latest/classes/class_control.html#class-control)</span>** 
 
 
 
@@ -88,7 +88,7 @@ Returns | Method
 
 
 
-<a class="header" id="property-is_valid_event" href="#property-is_valid_event">**<span class="hljs-attribute">void</span> [<span class="hljs-title">is_valid_event</span>](#property-is_valid_event) ( `string`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) )** </a>
+<a class="header" id="property-is_valid_event" href="#property-is_valid_event">**<span class="hljs-attribute">func</span> [<span class="hljs-title">is_valid_event</span>](#property-is_valid_event) ( `string`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) )</a>  ⇒ <span class="hljs-attribute">[bool](https://docs.godotengine.org/en/latest/classes/class_bool.html#class-bool)</span>** 
 
 
 
@@ -98,7 +98,7 @@ Returns | Method
 
 
 
-<a class="header" id="property-should_execute_this_branch" href="#property-should_execute_this_branch">**<span class="hljs-attribute">void</span> [<span class="hljs-title">should_execute_this_branch</span>](#property-should_execute_this_branch) ( )** </a>
+<a class="header" id="property-should_execute_this_branch" href="#property-should_execute_this_branch">**<span class="hljs-attribute">func</span> [<span class="hljs-title">should_execute_this_branch</span>](#property-should_execute_this_branch) ( )</a>  ⇒ <span class="hljs-attribute">[bool](https://docs.godotengine.org/en/latest/classes/class_bool.html#class-bool)</span>** 
 
 
 
@@ -108,7 +108,7 @@ only called if the previous event was an end-branch event return true if this ev
 
 
 
-<a class="header" id="property-to_text" href="#property-to_text">**<span class="hljs-attribute">void</span> [<span class="hljs-title">to_text</span>](#property-to_text) ( )** </a>
+<a class="header" id="property-to_text" href="#property-to_text">**<span class="hljs-attribute">func</span> [<span class="hljs-title">to_text</span>](#property-to_text) ( )</a>  ⇒ <span class="hljs-attribute">[String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string)</span>** 
 
 
 

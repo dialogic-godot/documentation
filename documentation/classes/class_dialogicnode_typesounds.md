@@ -30,8 +30,8 @@ volume_variance | [float](https://docs.godotengine.org/en/latest/classes/class_f
 ## Methods
 Returns | Method 
 --- | --- 
-<span class="hljs-attribute">void</span> | [<span class="hljs-title">load_overwrite</span>](#property-load_overwrite) ( `dictionary`: [Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html#class-dictionary) ) 
-<span class="hljs-attribute">void</span> | [<span class="hljs-title">load_sounds_from_path</span>](#property-load_sounds_from_path) ( `path`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) ) 
+<span style = "color: gray">void</span> | [<span class="hljs-title">load_overwrite</span>](#property-load_overwrite) ( `dictionary`: [Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html#class-dictionary) ) 
+<span class="hljs-attribute">[AudioStream[]](https://docs.godotengine.org/en/latest/classes/class_audiostream.html#class-audiostream)</span> | [<span class="hljs-title">load_sounds_from_path</span>](#property-load_sounds_from_path) ( `path`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) ) 
 --- 
 ## Constants
 
@@ -65,7 +65,7 @@ Returns | Method
 
 
 
-<a class="header" id="property-load_overwrite" href="#property-load_overwrite">**<span class="hljs-attribute">void</span> [<span class="hljs-title">load_overwrite</span>](#property-load_overwrite) ( `dictionary`: [Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html#class-dictionary) )** </a>
+<a class="header" id="property-load_overwrite" href="#property-load_overwrite">**<span class="hljs-attribute">func</span> [<span class="hljs-title">load_overwrite</span>](#property-load_overwrite) ( `dictionary`: [Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html#class-dictionary) )</a>  ⇒ <span style = "color: gray">void</span>** 
 
 
 
@@ -75,7 +75,7 @@ Returns | Method
 
 
 
-<a class="header" id="property-load_sounds_from_path" href="#property-load_sounds_from_path">**<span class="hljs-attribute">void</span> [<span class="hljs-title">load_sounds_from_path</span>](#property-load_sounds_from_path) ( `path`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) )** </a>
+<a class="header" id="property-load_sounds_from_path" href="#property-load_sounds_from_path">**<span class="hljs-attribute">func</span> [<span class="hljs-title">load_sounds_from_path</span>](#property-load_sounds_from_path) ( `path`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) )</a>  ⇒ <span class="hljs-attribute">[AudioStream[]](https://docs.godotengine.org/en/latest/classes/class_audiostream.html#class-audiostream)</span>** 
 
 
 

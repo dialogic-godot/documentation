@@ -27,14 +27,14 @@ scale | [float](https://docs.godotengine.org/en/latest/classes/class_float.html#
 ## Methods
 Returns | Method 
 --- | --- 
-<span class="hljs-attribute">void</span> | [<span class="hljs-title">add_translation_id</span>](#property-add_translation_id) ( ) 
-<span class="hljs-attribute">void</span> | [<span class="hljs-title">get_character_name</span>](#property-get_character_name) ( ) 
-<span class="hljs-attribute">void</span> | [<span class="hljs-title">get_display_name_translated</span>](#property-get_display_name_translated) ( ) 
-<span class="hljs-attribute">void</span> | [<span class="hljs-title">get_nicknames_translated</span>](#property-get_nicknames_translated) ( ) 
-<span class="hljs-attribute">void</span> | [<span class="hljs-title">get_portrait_info</span>](#property-get_portrait_info) ( `portrait_name`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) ) 
-<span class="hljs-attribute">void</span> | [<span class="hljs-title">get_property_translation_key</span>](#property-get_property_translation_key) ( `property`: [int](https://docs.godotengine.org/en/latest/classes/class_int.html#class-int) ) 
-<span class="hljs-attribute">void</span> | [<span class="hljs-title">get_set_translation_id</span>](#property-get_set_translation_id) ( ) 
-<span class="hljs-attribute">void</span> | [<span class="hljs-title">remove_translation_id</span>](#property-remove_translation_id) ( ) 
+<span class="hljs-attribute">[String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string)</span> | [<span class="hljs-title">add_translation_id</span>](#property-add_translation_id) ( ) 
+<span class="hljs-attribute">[String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string)</span> | [<span class="hljs-title">get_character_name</span>](#property-get_character_name) ( ) 
+<span class="hljs-attribute">[String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string)</span> | [<span class="hljs-title">get_display_name_translated</span>](#property-get_display_name_translated) ( ) 
+<span class="hljs-attribute">[Array](https://docs.godotengine.org/en/latest/classes/class_array.html#class-array)</span> | [<span class="hljs-title">get_nicknames_translated</span>](#property-get_nicknames_translated) ( ) 
+<span class="hljs-attribute">[Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html#class-dictionary)</span> | [<span class="hljs-title">get_portrait_info</span>](#property-get_portrait_info) ( `portrait_name`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) ) 
+<span class="hljs-attribute">[String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string)</span> | [<span class="hljs-title">get_property_translation_key</span>](#property-get_property_translation_key) ( `property`: [int](https://docs.godotengine.org/en/latest/classes/class_int.html#class-int) ) 
+<span class="hljs-attribute">[String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string)</span> | [<span class="hljs-title">get_set_translation_id</span>](#property-get_set_translation_id) ( ) 
+<span style = "color: gray">void</span> | [<span class="hljs-title">remove_translation_id</span>](#property-remove_translation_id) ( ) 
 --- 
 ## Constants
 
@@ -59,7 +59,7 @@ Returns | Method
 
 
 
-<a class="header" id="property-add_translation_id" href="#property-add_translation_id">**<span class="hljs-attribute">void</span> [<span class="hljs-title">add_translation_id</span>](#property-add_translation_id) ( )** </a>
+<a class="header" id="property-add_translation_id" href="#property-add_translation_id">**<span class="hljs-attribute">func</span> [<span class="hljs-title">add_translation_id</span>](#property-add_translation_id) ( )</a>  ⇒ <span class="hljs-attribute">[String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string)</span>** 
 
 
 
@@ -69,7 +69,7 @@ Adds a translation ID to the character.
 
 
 
-<a class="header" id="property-get_character_name" href="#property-get_character_name">**<span class="hljs-attribute">void</span> [<span class="hljs-title">get_character_name</span>](#property-get_character_name) ( )** </a>
+<a class="header" id="property-get_character_name" href="#property-get_character_name">**<span class="hljs-attribute">func</span> [<span class="hljs-title">get_character_name</span>](#property-get_character_name) ( )</a>  ⇒ <span class="hljs-attribute">[String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string)</span>** 
 
 
 
@@ -79,7 +79,7 @@ Returns the name of the file (without the extension).
 
 
 
-<a class="header" id="property-get_display_name_translated" href="#property-get_display_name_translated">**<span class="hljs-attribute">void</span> [<span class="hljs-title">get_display_name_translated</span>](#property-get_display_name_translated) ( )** </a>
+<a class="header" id="property-get_display_name_translated" href="#property-get_display_name_translated">**<span class="hljs-attribute">func</span> [<span class="hljs-title">get_display_name_translated</span>](#property-get_display_name_translated) ( )</a>  ⇒ <span class="hljs-attribute">[String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string)</span>** 
 
 
 
@@ -89,7 +89,7 @@ Translates and returns the display name of the character.
 
 
 
-<a class="header" id="property-get_nicknames_translated" href="#property-get_nicknames_translated">**<span class="hljs-attribute">void</span> [<span class="hljs-title">get_nicknames_translated</span>](#property-get_nicknames_translated) ( )** </a>
+<a class="header" id="property-get_nicknames_translated" href="#property-get_nicknames_translated">**<span class="hljs-attribute">func</span> [<span class="hljs-title">get_nicknames_translated</span>](#property-get_nicknames_translated) ( )</a>  ⇒ <span class="hljs-attribute">[Array](https://docs.godotengine.org/en/latest/classes/class_array.html#class-array)</span>** 
 
 
 
@@ -99,7 +99,7 @@ Translates the nicknames of the characters and then returns them as an array of 
 
 
 
-<a class="header" id="property-get_portrait_info" href="#property-get_portrait_info">**<span class="hljs-attribute">void</span> [<span class="hljs-title">get_portrait_info</span>](#property-get_portrait_info) ( `portrait_name`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) )** </a>
+<a class="header" id="property-get_portrait_info" href="#property-get_portrait_info">**<span class="hljs-attribute">func</span> [<span class="hljs-title">get_portrait_info</span>](#property-get_portrait_info) ( `portrait_name`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) )</a>  ⇒ <span class="hljs-attribute">[Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html#class-dictionary)</span>** 
 
 
 
@@ -109,7 +109,7 @@ Returns the info of the given portrait. Uses the default portrait if the given p
 
 
 
-<a class="header" id="property-get_property_translation_key" href="#property-get_property_translation_key">**<span class="hljs-attribute">void</span> [<span class="hljs-title">get_property_translation_key</span>](#property-get_property_translation_key) ( `property`: [int](https://docs.godotengine.org/en/latest/classes/class_int.html#class-int) )** </a>
+<a class="header" id="property-get_property_translation_key" href="#property-get_property_translation_key">**<span class="hljs-attribute">func</span> [<span class="hljs-title">get_property_translation_key</span>](#property-get_property_translation_key) ( `property`: [int](https://docs.godotengine.org/en/latest/classes/class_int.html#class-int) )</a>  ⇒ <span class="hljs-attribute">[String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string)</span>** 
 
 
 
@@ -119,7 +119,7 @@ Checks `property` and matches it to a translation key.  Undefined behaviour if a
 
 
 
-<a class="header" id="property-get_set_translation_id" href="#property-get_set_translation_id">**<span class="hljs-attribute">void</span> [<span class="hljs-title">get_set_translation_id</span>](#property-get_set_translation_id) ( )** </a>
+<a class="header" id="property-get_set_translation_id" href="#property-get_set_translation_id">**<span class="hljs-attribute">func</span> [<span class="hljs-title">get_set_translation_id</span>](#property-get_set_translation_id) ( )</a>  ⇒ <span class="hljs-attribute">[String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string)</span>** 
 
 
 
@@ -129,7 +129,7 @@ Returns the character's translation ID. Adds a translation ID to the character i
 
 
 
-<a class="header" id="property-remove_translation_id" href="#property-remove_translation_id">**<span class="hljs-attribute">void</span> [<span class="hljs-title">remove_translation_id</span>](#property-remove_translation_id) ( )** </a>
+<a class="header" id="property-remove_translation_id" href="#property-remove_translation_id">**<span class="hljs-attribute">func</span> [<span class="hljs-title">remove_translation_id</span>](#property-remove_translation_id) ( )</a>  ⇒ <span style = "color: gray">void</span>** 
 
 
 

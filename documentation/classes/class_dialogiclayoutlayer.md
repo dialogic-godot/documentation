@@ -20,14 +20,14 @@ this_folder | [String](https://docs.godotengine.org/en/latest/classes/class_stri
 ## Methods
 Returns | Method 
 --- | --- 
-<span class="hljs-attribute">void</span> | [<span class="hljs-title">apply_export_overrides</span>](#property-apply_export_overrides) ( ) 
-<span class="hljs-attribute">void</span> | [<span class="hljs-title">get_global_setting</span>](#property-get_global_setting) ( `setting_name`: [StringName](https://docs.godotengine.org/en/latest/classes/class_stringname.html#class-stringname), `default`: [Variant](https://docs.godotengine.org/en/latest/classes/class_variant.html#class-variant) ) 
+<span style = "color: gray">void</span> | [<span class="hljs-title">apply_export_overrides</span>](#property-apply_export_overrides) ( ) 
+<span class="hljs-attribute">[Variant](https://docs.godotengine.org/en/latest/classes/class_variant.html#class-variant)</span> | [<span class="hljs-title">get_global_setting</span>](#property-get_global_setting) ( `setting_name`: [StringName](https://docs.godotengine.org/en/latest/classes/class_stringname.html#class-stringname), `default`: [Variant](https://docs.godotengine.org/en/latest/classes/class_variant.html#class-variant) ) 
 --- 
 ## Property Descriptions
 
 
 
-<a class="header" id="property-apply_export_overrides" href="#property-apply_export_overrides">**<span class="hljs-attribute">void</span> [<span class="hljs-title">apply_export_overrides</span>](#property-apply_export_overrides) ( )** </a>
+<a class="header" id="property-apply_export_overrides" href="#property-apply_export_overrides">**<span class="hljs-attribute">func</span> [<span class="hljs-title">apply_export_overrides</span>](#property-apply_export_overrides) ( )</a>  ⇒ <span style = "color: gray">void</span>** 
 
 
 
@@ -37,7 +37,7 @@ Returns | Method
 
 
 
-<a class="header" id="property-get_global_setting" href="#property-get_global_setting">**<span class="hljs-attribute">void</span> [<span class="hljs-title">get_global_setting</span>](#property-get_global_setting) ( `setting_name`: [StringName](https://docs.godotengine.org/en/latest/classes/class_stringname.html#class-stringname), `default`: [Variant](https://docs.godotengine.org/en/latest/classes/class_variant.html#class-variant) )** </a>
+<a class="header" id="property-get_global_setting" href="#property-get_global_setting">**<span class="hljs-attribute">func</span> [<span class="hljs-title">get_global_setting</span>](#property-get_global_setting) ( `setting_name`: [StringName](https://docs.godotengine.org/en/latest/classes/class_stringname.html#class-stringname), `default`: [Variant](https://docs.godotengine.org/en/latest/classes/class_variant.html#class-variant) )</a>  ⇒ <span class="hljs-attribute">[Variant](https://docs.godotengine.org/en/latest/classes/class_variant.html#class-variant)</span>** 
 
 
 

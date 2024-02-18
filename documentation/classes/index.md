@@ -5,17 +5,6 @@
 
 *All classes from the Dialogic 2 source code.*
             
-## Resource
-
-- [DialogicCharacter](class_dialogiccharacter.md)
-- [DialogicCharacterFormatLoader](class_dialogiccharacterformatloader.md)
-- [DialogicCharacterFormatSaver](class_dialogiccharacterformatsaver.md)
-- [DialogicGlossary](class_dialogicglossary.md)
-- [DialogicStyle](class_dialogicstyle.md)
-- [DialogicStyleLayer](class_dialogicstylelayer.md)
-- [DialogicTimeline](class_dialogictimeline.md)
-- [DialogicTimelineFormatLoader](class_dialogictimelineformatloader.md)
-- [DialogicTimelineFormatSaver](class_dialogictimelineformatsaver.md)
 ## Node
 
 - [DialogicNode_BackgroundHolder](class_dialogicnode_backgroundholder.md)
@@ -29,6 +18,40 @@
 - [DialogicNode_TextBubble](class_dialogicnode_textbubble.md)
 - [DialogicNode_TextInput](class_dialogicnode_textinput.md)
 - [DialogicNode_TypeSounds](class_dialogicnode_typesounds.md)
+## Other
+
+- [DCSS](class_dcss.md)
+- [DialogicAnimation](class_dialogicanimation.md)
+- [DialogicAutoAdvance](class_dialogicautoadvance.md)
+- [DialogicAutoSkip](class_dialogicautoskip.md)
+- [DialogicBackground](class_dialogicbackground.md)
+- [DialogicBackgroundTransition](class_dialogicbackgroundtransition.md)
+- [DialogicCharacterEditorMainSection](class_dialogiccharactereditormainsection.md)
+- [DialogicCharacterEditorPortraitSection](class_dialogiccharactereditorportraitsection.md)
+- [DialogicCsvFile](class_dialogiccsvfile.md)
+- [DialogicEditor](class_dialogiceditor.md)
+- [DialogicGameHandler](class_dialogicgamehandler.md)
+- [DialogicIndexer](class_dialogicindexer.md)
+- [DialogicLayoutBase](class_dialogiclayoutbase.md)
+- [DialogicLayoutLayer](class_dialogiclayoutlayer.md)
+- [DialogicPortrait](class_dialogicportrait.md)
+- [DialogicResourceUtil](class_dialogicresourceutil.md)
+- [DialogicSettingsPage](class_dialogicsettingspage.md)
+- [DialogicSubsystem](class_dialogicsubsystem.md)
+- [DialogicUtil](class_dialogicutil.md)
+- [DialogicVisualEditorField](class_dialogicvisualeditorfield.md)
+- [DNextIndicator](class_dnextindicator.md)
+## Resource
+
+- [DialogicCharacter](class_dialogiccharacter.md)
+- [DialogicCharacterFormatLoader](class_dialogiccharacterformatloader.md)
+- [DialogicCharacterFormatSaver](class_dialogiccharacterformatsaver.md)
+- [DialogicGlossary](class_dialogicglossary.md)
+- [DialogicStyle](class_dialogicstyle.md)
+- [DialogicStyleLayer](class_dialogicstylelayer.md)
+- [DialogicTimeline](class_dialogictimeline.md)
+- [DialogicTimelineFormatLoader](class_dialogictimelineformatloader.md)
+- [DialogicTimelineFormatSaver](class_dialogictimelineformatsaver.md)
 ## Event
 
 - [DialogicBackgroundEvent](class_dialogicbackgroundevent.md)
@@ -59,26 +82,3 @@
 - [DialogicVoiceEvent](class_dialogicvoiceevent.md)
 - [DialogicWaitEvent](class_dialogicwaitevent.md)
 - [DialogicWaitInputEvent](class_dialogicwaitinputevent.md)
-## Other
-
-- [DCSS](class_dcss.md)
-- [DialogicAnimation](class_dialogicanimation.md)
-- [DialogicAutoAdvance](class_dialogicautoadvance.md)
-- [DialogicAutoSkip](class_dialogicautoskip.md)
-- [DialogicBackground](class_dialogicbackground.md)
-- [DialogicBackgroundTransition](class_dialogicbackgroundtransition.md)
-- [DialogicCharacterEditorMainSection](class_dialogiccharactereditormainsection.md)
-- [DialogicCharacterEditorPortraitSection](class_dialogiccharactereditorportraitsection.md)
-- [DialogicCsvFile](class_dialogiccsvfile.md)
-- [DialogicEditor](class_dialogiceditor.md)
-- [DialogicGameHandler](class_dialogicgamehandler.md)
-- [DialogicIndexer](class_dialogicindexer.md)
-- [DialogicLayoutBase](class_dialogiclayoutbase.md)
-- [DialogicLayoutLayer](class_dialogiclayoutlayer.md)
-- [DialogicPortrait](class_dialogicportrait.md)
-- [DialogicResourceUtil](class_dialogicresourceutil.md)
-- [DialogicSettingsPage](class_dialogicsettingspage.md)
-- [DialogicSubsystem](class_dialogicsubsystem.md)
-- [DialogicUtil](class_dialogicutil.md)
-- [DialogicVisualEditorField](class_dialogicvisualeditorfield.md)
-- [DNextIndicator](class_dnextindicator.md)

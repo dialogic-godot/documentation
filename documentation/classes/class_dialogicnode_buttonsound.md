@@ -20,13 +20,13 @@ sound_pressed | [AudioStream](https://docs.godotengine.org/en/latest/classes/cla
 ## Methods
 Returns | Method 
 --- | --- 
-<span class="hljs-attribute">void</span> | [<span class="hljs-title">play_sound</span>](#property-play_sound) ( `sound`: [Variant](https://docs.godotengine.org/en/latest/classes/class_variant.html#class-variant) ) 
+<span style = "color: gray">void</span> | [<span class="hljs-title">play_sound</span>](#property-play_sound) ( `sound`: [Variant](https://docs.godotengine.org/en/latest/classes/class_variant.html#class-variant) ) 
 --- 
 ## Property Descriptions
 
 
 
-<a class="header" id="property-play_sound" href="#property-play_sound">**<span class="hljs-attribute">void</span> [<span class="hljs-title">play_sound</span>](#property-play_sound) ( `sound`: [Variant](https://docs.godotengine.org/en/latest/classes/class_variant.html#class-variant) )** </a>
+<a class="header" id="property-play_sound" href="#property-play_sound">**<span class="hljs-attribute">func</span> [<span class="hljs-title">play_sound</span>](#property-play_sound) ( `sound`: [Variant](https://docs.godotengine.org/en/latest/classes/class_variant.html#class-variant) )</a>  ⇒ <span style = "color: gray">void</span>** 
 
 
 

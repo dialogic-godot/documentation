@@ -25,20 +25,20 @@ speaker_node | [Node](https://docs.godotengine.org/en/latest/classes/class_node.
 ## Methods
 Returns | Method 
 --- | --- 
-<span class="hljs-attribute">void</span> | [<span class="hljs-title">close</span>](#property-close) ( ) 
-<span class="hljs-attribute">void</span> | [<span class="hljs-title">get_bubble</span>](#property-get_bubble) ( ) 
-<span class="hljs-attribute">void</span> | [<span class="hljs-title">get_choice_container</span>](#property-get_choice_container) ( ) 
-<span class="hljs-attribute">void</span> | [<span class="hljs-title">get_dialog_text</span>](#property-get_dialog_text) ( ) 
-<span class="hljs-attribute">void</span> | [<span class="hljs-title">get_name_label</span>](#property-get_name_label) ( ) 
-<span class="hljs-attribute">void</span> | [<span class="hljs-title">get_name_label_panel</span>](#property-get_name_label_panel) ( ) 
-<span class="hljs-attribute">void</span> | [<span class="hljs-title">get_tail</span>](#property-get_tail) ( ) 
-<span class="hljs-attribute">void</span> | [<span class="hljs-title">open</span>](#property-open) ( ) 
+<span style = "color: gray">void</span> | [<span class="hljs-title">close</span>](#property-close) ( ) 
+<span class="hljs-attribute">[Control](https://docs.godotengine.org/en/latest/classes/class_control.html#class-control)</span> | [<span class="hljs-title">get_bubble</span>](#property-get_bubble) ( ) 
+<span class="hljs-attribute">[Container](https://docs.godotengine.org/en/latest/classes/class_container.html#class-container)</span> | [<span class="hljs-title">get_choice_container</span>](#property-get_choice_container) ( ) 
+<span class="hljs-attribute">[DialogicNode_DialogText](class_dialogicnode_dialogtext.md)</span> | [<span class="hljs-title">get_dialog_text</span>](#property-get_dialog_text) ( ) 
+<span class="hljs-attribute">[DialogicNode_NameLabel](class_dialogicnode_namelabel.md)</span> | [<span class="hljs-title">get_name_label</span>](#property-get_name_label) ( ) 
+<span class="hljs-attribute">[PanelContainer](https://docs.godotengine.org/en/latest/classes/class_panelcontainer.html#class-panelcontainer)</span> | [<span class="hljs-title">get_name_label_panel</span>](#property-get_name_label_panel) ( ) 
+<span class="hljs-attribute">[Line2D](https://docs.godotengine.org/en/latest/classes/class_line2d.html#class-line2d)</span> | [<span class="hljs-title">get_tail</span>](#property-get_tail) ( ) 
+<span style = "color: gray">void</span> | [<span class="hljs-title">open</span>](#property-open) ( ) 
 --- 
 ## Property Descriptions
 
 
 
-<a class="header" id="property-close" href="#property-close">**<span class="hljs-attribute">void</span> [<span class="hljs-title">close</span>](#property-close) ( )** </a>
+<a class="header" id="property-close" href="#property-close">**<span class="hljs-attribute">func</span> [<span class="hljs-title">close</span>](#property-close) ( )</a>  ⇒ <span style = "color: gray">void</span>** 
 
 
 
@@ -48,7 +48,7 @@ Returns | Method
 
 
 
-<a class="header" id="property-get_bubble" href="#property-get_bubble">**<span class="hljs-attribute">void</span> [<span class="hljs-title">get_bubble</span>](#property-get_bubble) ( )** </a>
+<a class="header" id="property-get_bubble" href="#property-get_bubble">**<span class="hljs-attribute">func</span> [<span class="hljs-title">get_bubble</span>](#property-get_bubble) ( )</a>  ⇒ <span class="hljs-attribute">[Control](https://docs.godotengine.org/en/latest/classes/class_control.html#class-control)</span>** 
 
 
 
@@ -58,7 +58,7 @@ Returns | Method
 
 
 
-<a class="header" id="property-get_choice_container" href="#property-get_choice_container">**<span class="hljs-attribute">void</span> [<span class="hljs-title">get_choice_container</span>](#property-get_choice_container) ( )** </a>
+<a class="header" id="property-get_choice_container" href="#property-get_choice_container">**<span class="hljs-attribute">func</span> [<span class="hljs-title">get_choice_container</span>](#property-get_choice_container) ( )</a>  ⇒ <span class="hljs-attribute">[Container](https://docs.godotengine.org/en/latest/classes/class_container.html#class-container)</span>** 
 
 
 
@@ -68,7 +68,7 @@ Returns | Method
 
 
 
-<a class="header" id="property-get_dialog_text" href="#property-get_dialog_text">**<span class="hljs-attribute">void</span> [<span class="hljs-title">get_dialog_text</span>](#property-get_dialog_text) ( )** </a>
+<a class="header" id="property-get_dialog_text" href="#property-get_dialog_text">**<span class="hljs-attribute">func</span> [<span class="hljs-title">get_dialog_text</span>](#property-get_dialog_text) ( )</a>  ⇒ <span class="hljs-attribute">[DialogicNode_DialogText](class_dialogicnode_dialogtext.md)</span>** 
 
 
 
@@ -78,7 +78,7 @@ Returns | Method
 
 
 
-<a class="header" id="property-get_name_label" href="#property-get_name_label">**<span class="hljs-attribute">void</span> [<span class="hljs-title">get_name_label</span>](#property-get_name_label) ( )** </a>
+<a class="header" id="property-get_name_label" href="#property-get_name_label">**<span class="hljs-attribute">func</span> [<span class="hljs-title">get_name_label</span>](#property-get_name_label) ( )</a>  ⇒ <span class="hljs-attribute">[DialogicNode_NameLabel](class_dialogicnode_namelabel.md)</span>** 
 
 
 
@@ -88,7 +88,7 @@ Returns | Method
 
 
 
-<a class="header" id="property-get_name_label_panel" href="#property-get_name_label_panel">**<span class="hljs-attribute">void</span> [<span class="hljs-title">get_name_label_panel</span>](#property-get_name_label_panel) ( )** </a>
+<a class="header" id="property-get_name_label_panel" href="#property-get_name_label_panel">**<span class="hljs-attribute">func</span> [<span class="hljs-title">get_name_label_panel</span>](#property-get_name_label_panel) ( )</a>  ⇒ <span class="hljs-attribute">[PanelContainer](https://docs.godotengine.org/en/latest/classes/class_panelcontainer.html#class-panelcontainer)</span>** 
 
 
 
@@ -98,7 +98,7 @@ Returns | Method
 
 
 
-<a class="header" id="property-get_tail" href="#property-get_tail">**<span class="hljs-attribute">void</span> [<span class="hljs-title">get_tail</span>](#property-get_tail) ( )** </a>
+<a class="header" id="property-get_tail" href="#property-get_tail">**<span class="hljs-attribute">func</span> [<span class="hljs-title">get_tail</span>](#property-get_tail) ( )</a>  ⇒ <span class="hljs-attribute">[Line2D](https://docs.godotengine.org/en/latest/classes/class_line2d.html#class-line2d)</span>** 
 
 
 
@@ -108,7 +108,7 @@ Returns | Method
 
 
 
-<a class="header" id="property-open" href="#property-open">**<span class="hljs-attribute">void</span> [<span class="hljs-title">open</span>](#property-open) ( )** </a>
+<a class="header" id="property-open" href="#property-open">**<span class="hljs-attribute">func</span> [<span class="hljs-title">open</span>](#property-open) ( )</a>  ⇒ <span style = "color: gray">void</span>** 
 
 
 
