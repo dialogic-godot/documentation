@@ -6,23 +6,23 @@
 [FAQ](faq.md)
 
 - [Character & Portraits](characters-and-portraits.md)
-  
+
   - [Custom Portraits](custom-portraits.md)
 
 - [Styles & Layouts](styles-and-layouts.md)
-  
+
   - [Dialogic Nodes](dialogic-nodes.md)
 
 - [Variables](variables.md)
 
 - [Timelines]()
-  
+
   - [Writing Text Events](./writing-text-events.md)
   - [Timeline Text Syntax](timeline-text-syntax.md)
   - [Creating Timelines In Code](creating-timelines-in-code.md)
 
 - [Input]()
-  
+
   - [Auto-Advance](auto-advance.md)
   - [Auto-Skip](auto-skip.md)
 
@@ -71,6 +71,25 @@
         - [VoiceEvent](classes/class_dialogicvoiceevent.md)
         - [WaitEvent](classes/class_dialogicwaitevent.md)
         - [WaitInputEvent](classes/class_dialogicwaitinputevent.md)
+
+    - [Subsystem]()
+        - [subsystem_audio](classes/class_subsystem_audio.md)
+        - [subsystem_backgrounds](classes/class_subsystem_backgrounds.md)
+        - [subsystem_portraits](classes/class_subsystem_portraits.md)
+        - [subsystem_choices](classes/class_subsystem_choices.md)
+        - [subsystem_animation](classes/class_subsystem_animation.md)
+        - [subsystem_expression](classes/class_subsystem_expression.md)
+        - [subsystem_input](classes/class_subsystem_input.md)
+        - [subsystem_glossary](classes/class_subsystem_glossary.md)
+        - [subsystem_history](classes/class_subsystem_history.md)
+        - [subsystem_jump](classes/class_subsystem_jump.md)
+        - [subsystem_save](classes/class_subsystem_save.md)
+        - [subsystem_settings](classes/class_subsystem_settings.md)
+        - [subsystem_styles](classes/class_subsystem_styles.md)
+        - [subsystem_text](classes/class_subsystem_text.md)
+        - [subsystem_text_input](classes/class_subsystem_text_input.md)
+        - [subsystem_variables](classes/class_subsystem_variables.md)
+        - [subsystem_voice](classes/class_subsystem_voice.md)
 
     - [Node]()
         - [Node_BackgroundHolder](classes/class_dialogicnode_backgroundholder.md)
