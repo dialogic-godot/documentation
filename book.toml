@@ -9,7 +9,7 @@ description = "Learn about Dialogic 2 and how to create beautiful dialogues in y
 [output.html]
 git-repository-url = "https://github.com/dialogic-godot/documentation/tree/main/"
 edit-url-template = "https://github.com/dialogic-godot/documentation/edit/main/{path}"
-additional-css = ['mdbook-admonish.css', 'header.css']
+additional-css = ["css/mdbook-admonish.css", "css/header.css"]
 
 [preprocessor.admonish]
 after = ["links"]
@@ -21,3 +21,7 @@ command = "mdbook-toc"
 renderer = ["html"]
 marker = "[toc]"
 max-level = 2
+
+[output.html.fold]
+enable = true    # whether or not to enable section folding
+level = 1       # the depth to start folding
