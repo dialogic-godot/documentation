@@ -134,15 +134,3 @@
   background:
     linear-gradient(90deg, var(--blurple-start)  0%, var(--blurple-end) 100%);
 }
-
-/* Path: documentation/css/landing.css */
-
-.method_return {
-  font-weight: bold;
-  color: #ff7b7b;
-}
-
-.method_name {
-  font-weight: bold;
-  color: #d8eb9d;
-}
