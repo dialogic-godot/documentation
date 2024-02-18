@@ -6,7 +6,7 @@
 *This contains the source code documentation of the class `DialogicWaitInputEvent`.*
         
 # DialogicWaitInputEvent
-**Inherits:** DialogicEvent
+**Inherits:** [DialogicEvent](class_dialogicevent.md)
 
 ############################################################################## SAVING/LOADING ##############################################################################
 ## Properties

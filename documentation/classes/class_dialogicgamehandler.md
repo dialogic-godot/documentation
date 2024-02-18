@@ -6,7 +6,7 @@
 *This contains the source code documentation of the class `DialogicGameHandler`.*
         
 # DialogicGameHandler
-**Inherits:** Node
+**Inherits:** [Node](https://docs.godotengine.org/en/latest/classes/class_node.html#class-node)
 
 Autoload script that allows interacting with all of Dialogics systems: - Holds all important information about the current state of Dialogic. - Gives access to all the subystems. - Has methods to start timelines.
 ## Properties

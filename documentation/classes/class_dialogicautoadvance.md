@@ -6,7 +6,7 @@
 *This contains the source code documentation of the class `DialogicAutoAdvance`.*
         
 # DialogicAutoAdvance
-**Inherits:** RefCounted
+**Inherits:** [RefCounted](https://docs.godotengine.org/en/latest/classes/class_refcounted.html#class-refcounted)
 
 This class holds the settings for the Auto-Advance feature. Changing the variables will alter the behaviour of Auto-Advance.
 ## Description

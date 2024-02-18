@@ -6,7 +6,7 @@
 *This contains the source code documentation of the class `DialogicIndexer`.*
         
 # DialogicIndexer
-**Inherits:** RefCounted
+**Inherits:** [RefCounted](https://docs.godotengine.org/en/latest/classes/class_refcounted.html#class-refcounted)
 
 Script that indexes events, subsystems, settings pages and more. [br]Place a script of this type in every folder in "addons/Events". [br]Overwrite the methods to return the contents of that folder.
 ## Properties

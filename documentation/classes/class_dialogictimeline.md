@@ -6,7 +6,7 @@
 *This contains the source code documentation of the class `DialogicTimeline`.*
         
 # DialogicTimeline
-**Inherits:** Resource
+**Inherits:** [Resource](https://docs.godotengine.org/en/latest/classes/class_resource.html#class-resource)
 
 Resource that defines a list of events. It can store them as text and load them from text too.
 ## Properties

@@ -6,6 +6,6 @@
 *This contains the source code documentation of the class `DialogicCharacterFormatLoader`.*
         
 # DialogicCharacterFormatLoader
-**Inherits:** ResourceFormatLoader
+**Inherits:** [ResourceFormatLoader](https://docs.godotengine.org/en/latest/classes/class_resourceformatloader.html#class-resourceformatloader)
 
 

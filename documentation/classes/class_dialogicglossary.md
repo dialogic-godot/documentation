@@ -6,7 +6,7 @@
 *This contains the source code documentation of the class `DialogicGlossary`.*
         
 # DialogicGlossary
-**Inherits:** Resource
+**Inherits:** [Resource](https://docs.godotengine.org/en/latest/classes/class_resource.html#class-resource)
 
 Resource used to store glossary entries. Can be saved to disc and used as a glossary. Add/create glossaries fom the glossaries editor
 ## Properties

@@ -6,7 +6,7 @@
 *This contains the source code documentation of the class `DialogicLayoutBase`.*
         
 # DialogicLayoutBase
-**Inherits:** Node
+**Inherits:** [Node](https://docs.godotengine.org/en/latest/classes/class_node.html#class-node)
 
 Base class that should be extended by custom layouts.
 --- 

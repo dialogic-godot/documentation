@@ -6,7 +6,7 @@
 *This contains the source code documentation of the class `DialogicNode_TypeSounds`.*
         
 # DialogicNode_TypeSounds
-**Inherits:** AudioStreamPlayer
+**Inherits:** [AudioStreamPlayer](https://docs.godotengine.org/en/latest/classes/class_audiostreamplayer.html#class-audiostreamplayer)
 
 Node that allows playing sounds when text characters are revealed. Should be the child of a DialogicNode_DialogText node!
 ## Properties

@@ -6,7 +6,7 @@
 *This contains the source code documentation of the class `DialogicBackground`.*
         
 # DialogicBackground
-**Inherits:** Node
+**Inherits:** [Node](https://docs.godotengine.org/en/latest/classes/class_node.html#class-node)
 
 This is the base class for dialogic backgrounds. Extend it and override it's methods when you create a custom background. You can take a look at the default background to get an idea of how it's working.
 ## Properties

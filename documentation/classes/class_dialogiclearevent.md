@@ -6,7 +6,7 @@
 *This contains the source code documentation of the class `DialogiClearEvent`.*
         
 # DialogiClearEvent
-**Inherits:** DialogicEvent
+**Inherits:** [DialogicEvent](class_dialogicevent.md)
 
 ############################################################################## EDITOR REPRESENTATION ##############################################################################
 ## Properties

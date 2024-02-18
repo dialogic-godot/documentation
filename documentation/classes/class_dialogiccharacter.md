@@ -6,7 +6,7 @@
 *This contains the source code documentation of the class `DialogicCharacter`.*
         
 # DialogicCharacter
-**Inherits:** Resource
+**Inherits:** [Resource](https://docs.godotengine.org/en/latest/classes/class_resource.html#class-resource)
 
 Resource that represents a character in dialog. Manages/contains portraits, custom info and translation of characters.
 ## Properties

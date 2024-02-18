@@ -6,7 +6,7 @@
 *This contains the source code documentation of the class `DialogicStyleLayer`.*
         
 # DialogicStyleLayer
-**Inherits:** Resource
+**Inherits:** [Resource](https://docs.godotengine.org/en/latest/classes/class_resource.html#class-resource)
 
 
 ## Properties

@@ -6,7 +6,7 @@
 *This contains the source code documentation of the class `DialogicNode_ChoiceButton`.*
         
 # DialogicNode_ChoiceButton
-**Inherits:** Button
+**Inherits:** [Button](https://docs.godotengine.org/en/latest/classes/class_button.html#class-button)
 
 Dialogic Node that displays choices.
 ## Properties

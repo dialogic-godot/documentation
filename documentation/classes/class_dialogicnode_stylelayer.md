@@ -6,7 +6,7 @@
 *This contains the source code documentation of the class `DialogicNode_StyleLayer`.*
         
 # DialogicNode_StyleLayer
-**Inherits:** Control
+**Inherits:** [Control](https://docs.godotengine.org/en/latest/classes/class_control.html#class-control)
 
 Control node that is hidden and shown based on the current dialogic style.
 ## Properties

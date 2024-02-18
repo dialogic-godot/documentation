@@ -6,7 +6,7 @@
 *This contains the source code documentation of the class `DialogicCharacterEditorPortraitSection`.*
         
 # DialogicCharacterEditorPortraitSection
-**Inherits:** Control
+**Inherits:** [Control](https://docs.godotengine.org/en/latest/classes/class_control.html#class-control)
 
 Base class for all portrait settings sections. Methods should be overriden. Changes made through fields in such a section should instantly be "saved" to the portrait_items metadata from where they will be saved to the resource.
 ## Properties

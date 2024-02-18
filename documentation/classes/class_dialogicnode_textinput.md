@@ -6,7 +6,7 @@
 *This contains the source code documentation of the class `DialogicNode_TextInput`.*
         
 # DialogicNode_TextInput
-**Inherits:** Control
+**Inherits:** [Control](https://docs.godotengine.org/en/latest/classes/class_control.html#class-control)
 
 Node that will show when a text input field is reached. Should be connected to a (probably contained) label, a line edit and a button to work.
 ## Properties

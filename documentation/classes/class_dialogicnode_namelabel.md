@@ -6,7 +6,7 @@
 *This contains the source code documentation of the class `DialogicNode_NameLabel`.*
         
 # DialogicNode_NameLabel
-**Inherits:** Label
+**Inherits:** [Label](https://docs.godotengine.org/en/latest/classes/class_label.html#class-label)
 
 
 ## Properties

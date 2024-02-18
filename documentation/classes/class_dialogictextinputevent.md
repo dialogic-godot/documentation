@@ -6,7 +6,7 @@
 *This contains the source code documentation of the class `DialogicTextInputEvent`.*
         
 # DialogicTextInputEvent
-**Inherits:** DialogicEvent
+**Inherits:** [DialogicEvent](class_dialogicevent.md)
 
 # Settings
 ## Properties

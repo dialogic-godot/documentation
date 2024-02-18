@@ -6,7 +6,7 @@
 *This contains the source code documentation of the class `DialogicStyle`.*
         
 # DialogicStyle
-**Inherits:** Resource
+**Inherits:** [Resource](https://docs.godotengine.org/en/latest/classes/class_resource.html#class-resource)
 
 A style represents a collection of layers and settings. A style can inherit from another style.
 ## Properties

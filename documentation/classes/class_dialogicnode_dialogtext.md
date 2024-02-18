@@ -6,7 +6,7 @@
 *This contains the source code documentation of the class `DialogicNode_DialogText`.*
         
 # DialogicNode_DialogText
-**Inherits:** RichTextLabel
+**Inherits:** [RichTextLabel](https://docs.godotengine.org/en/latest/classes/class_richtextlabel.html#class-richtextlabel)
 
 Dialogic node that can reveal text at a given (changeable speed).
 ## Properties
