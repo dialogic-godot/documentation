@@ -6,7 +6,7 @@
 *This contains the source code documentation of the class `DialogicCharacterEditorMainSection`.*
         
 # DialogicCharacterEditorMainSection
-**Inherits:** Control
+**Inherits:** [Control](https://docs.godotengine.org/en/latest/classes/class_control.html#class-control)
 
 Base class for all character editor main sections. Methods should be overriden.
 ## Properties

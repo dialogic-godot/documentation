@@ -6,7 +6,7 @@
 *This contains the source code documentation of the class `DialogicEndTimelineEvent`.*
         
 # DialogicEndTimelineEvent
-**Inherits:** DialogicEvent
+**Inherits:** [DialogicEvent](class_dialogicevent.md)
 
 ############################################################################## EDITOR REPRESENTATION ##############################################################################
 --- 

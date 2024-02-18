@@ -6,7 +6,7 @@
 *This contains the source code documentation of the class `DialogicLayoutLayer`.*
         
 # DialogicLayoutLayer
-**Inherits:** Node
+**Inherits:** [Node](https://docs.godotengine.org/en/latest/classes/class_node.html#class-node)
 
 This is turned on automatically when the layout is realized [br] [br]Turn it off, if you want to modify the settings of the nodes yourself.
 ## Properties

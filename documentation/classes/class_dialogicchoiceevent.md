@@ -6,7 +6,7 @@
 *This contains the source code documentation of the class `DialogicChoiceEvent`.*
         
 # DialogicChoiceEvent
-**Inherits:** DialogicEvent
+**Inherits:** [DialogicEvent](class_dialogicevent.md)
 
 Event that allows adding choices. Needs to go after a text event (or another choices EndBranch).
 ## Properties

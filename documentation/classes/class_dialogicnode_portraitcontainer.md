@@ -6,7 +6,7 @@
 *This contains the source code documentation of the class `DialogicNode_PortraitContainer`.*
         
 # DialogicNode_PortraitContainer
-**Inherits:** Control
+**Inherits:** [Control](https://docs.godotengine.org/en/latest/classes/class_control.html#class-control)
 
 Node that defines a position for dialogic portraits and how to display portrait at that position.
 ## Properties

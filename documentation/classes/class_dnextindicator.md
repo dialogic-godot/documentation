@@ -6,7 +6,7 @@
 *This contains the source code documentation of the class `DNextIndicator`.*
         
 # DNextIndicator
-**Inherits:** Control
+**Inherits:** [Control](https://docs.godotengine.org/en/latest/classes/class_control.html#class-control)
 
 Node that is shown when the text is fully revealed. The default implementation allows to set an icon and animation.
 ## Properties

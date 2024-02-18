@@ -6,7 +6,7 @@
 *This contains the source code documentation of the class `DCSS`.*
         
 # DCSS
-**Inherits:** RefCounted
+**Inherits:** [RefCounted](https://docs.godotengine.org/en/latest/classes/class_refcounted.html#class-refcounted)
 
 
 --- 

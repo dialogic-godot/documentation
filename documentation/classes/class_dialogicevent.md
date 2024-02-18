@@ -6,7 +6,7 @@
 *This contains the source code documentation of the class `DialogicEvent`.*
         
 # DialogicEvent
-**Inherits:** Resource
+**Inherits:** [Resource](https://docs.godotengine.org/en/latest/classes/class_resource.html#class-resource)
 
 Base event class for all dialogic events. Implements basic properties, translation, shortcode saving and usefull methods for creating the editor UI.
 ## Properties

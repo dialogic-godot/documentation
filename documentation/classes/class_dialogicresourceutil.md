@@ -6,7 +6,7 @@
 *This contains the source code documentation of the class `DialogicResourceUtil`.*
         
 # DialogicResourceUtil
-**Inherits:** RefCounted
+**Inherits:** [RefCounted](https://docs.godotengine.org/en/latest/classes/class_refcounted.html#class-refcounted)
 
 ##############################################################################
 ## Properties

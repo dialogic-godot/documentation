@@ -6,7 +6,7 @@
 *This contains the source code documentation of the class `DialogicVisualEditorField`.*
         
 # DialogicVisualEditorField
-**Inherits:** Control
+**Inherits:** [Control](https://docs.godotengine.org/en/latest/classes/class_control.html#class-control)
 
 ##############################################################################
 ## Properties

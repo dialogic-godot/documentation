@@ -6,7 +6,7 @@
 *This contains the source code documentation of the class `DialogicConditionEvent`.*
         
 # DialogicConditionEvent
-**Inherits:** DialogicEvent
+**Inherits:** [DialogicEvent](class_dialogicevent.md)
 
 Event that allows branching a timeline based on a condition.
 ## Properties

@@ -6,7 +6,7 @@
 *This contains the source code documentation of the class `DialogicNode_ButtonSound`.*
         
 # DialogicNode_ButtonSound
-**Inherits:** AudioStreamPlayer
+**Inherits:** [AudioStreamPlayer](https://docs.godotengine.org/en/latest/classes/class_audiostreamplayer.html#class-audiostreamplayer)
 
 Node that is used for playing sound effects on hover/focus/press of sibling DialogicNode_ChoiceButtons.
 ## Properties

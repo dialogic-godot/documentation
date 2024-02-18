@@ -6,7 +6,7 @@
 *This contains the source code documentation of the class `DialogicEndBranchEvent`.*
         
 # DialogicEndBranchEvent
-**Inherits:** Resource
+**Inherits:** [Resource](https://docs.godotengine.org/en/latest/classes/class_resource.html#class-resource)
 
 ##############################################################################
 --- 

@@ -6,7 +6,7 @@
 *This contains the source code documentation of the class `DialogicCsvFile`.*
         
 # DialogicCsvFile
-**Inherits:** RefCounted
+**Inherits:** [RefCounted](https://docs.godotengine.org/en/latest/classes/class_refcounted.html#class-refcounted)
 
 Handles translation of a [DialogicTimeline](class_dialogictimeline.md) to a CSV file.
 ## Properties

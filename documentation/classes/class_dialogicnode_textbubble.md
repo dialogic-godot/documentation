@@ -6,7 +6,7 @@
 *This contains the source code documentation of the class `DialogicNode_TextBubble`.*
         
 # DialogicNode_TextBubble
-**Inherits:** Control
+**Inherits:** [Control](https://docs.godotengine.org/en/latest/classes/class_control.html#class-control)
 
 
 ## Properties

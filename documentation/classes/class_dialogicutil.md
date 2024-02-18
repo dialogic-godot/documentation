@@ -6,7 +6,7 @@
 *This contains the source code documentation of the class `DialogicUtil`.*
         
 # DialogicUtil
-**Inherits:** RefCounted
+**Inherits:** [RefCounted](https://docs.godotengine.org/en/latest/classes/class_refcounted.html#class-refcounted)
 
 Script that container helper methods for both editor and game execution. Used whenever the same thing is needed in different parts of the plugin.
 --- 

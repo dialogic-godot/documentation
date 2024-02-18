@@ -6,7 +6,7 @@
 *This contains the source code documentation of the class `DialogicEditor`.*
         
 # DialogicEditor
-**Inherits:** Control
+**Inherits:** [Control](https://docs.godotengine.org/en/latest/classes/class_control.html#class-control)
 
 Base class for all dialogic editors.
 ## Properties

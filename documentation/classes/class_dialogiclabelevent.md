@@ -6,7 +6,7 @@
 *This contains the source code documentation of the class `DialogicLabelEvent`.*
         
 # DialogicLabelEvent
-**Inherits:** DialogicEvent
+**Inherits:** [DialogicEvent](class_dialogicevent.md)
 
 # Settings
 ## Properties

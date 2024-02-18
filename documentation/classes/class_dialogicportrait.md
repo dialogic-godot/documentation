@@ -6,7 +6,7 @@
 *This contains the source code documentation of the class `DialogicPortrait`.*
         
 # DialogicPortrait
-**Inherits:** Node
+**Inherits:** [Node](https://docs.godotengine.org/en/latest/classes/class_node.html#class-node)
 
 Default portrait class. Should be extended by custom portraits.
 ## Properties

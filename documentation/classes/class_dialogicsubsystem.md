@@ -6,7 +6,7 @@
 *This contains the source code documentation of the class `DialogicSubsystem`.*
         
 # DialogicSubsystem
-**Inherits:** Node
+**Inherits:** [Node](https://docs.godotengine.org/en/latest/classes/class_node.html#class-node)
 
 
 ## Properties

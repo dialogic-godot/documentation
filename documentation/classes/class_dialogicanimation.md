@@ -6,7 +6,7 @@
 *This contains the source code documentation of the class `DialogicAnimation`.*
         
 # DialogicAnimation
-**Inherits:** Node
+**Inherits:** [Node](https://docs.godotengine.org/en/latest/classes/class_node.html#class-node)
 
 Class that can be used to animate portraits. Can be extended to create animations.
 ## Properties
