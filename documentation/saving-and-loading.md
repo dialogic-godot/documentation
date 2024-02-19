@@ -13,7 +13,31 @@ The saving subsystem allows you to save and load Dialogic timeline states, game 
 You want to save the player position or the last seen text? The built-in save system has it all covered!
 
 Be aware, Savegames use their name as folder name, operating systems restrict the allowed characters for folder names.
-It's recommended to rely on the Latin alphabet, numbers, and underscores. 
+It's recommended to rely on the Latin alphabet, numbers, and underscores.
+
+If you don't care about Savegame slots, you can do the following:
+
+```gdscript
+# Example signal handling.
+func _on_save_game_button_pressed() -> void:
+    Dialogic.Save.save()
+
+func _on_load_game_button_pressed() -> void:
+    Dialogic.Save.load()
+```
+
+However, these methods will take a screenshot too, which may affect performance slightly.\
+If you want to prevent this from happening, it gets a bit more verbose:
+
+```gdscript
+# Example signal handling.
+func _on_save_game_button_pressed() -> void:
+    Dialogic.Save.save("", false, Dialogic.Save.ThumbnailMode.NONE)
+
+func _on_load_game_button_pressed() -> void:
+    Dialogic.Save.load("", false, Dialogic.Save.ThumbnailMode.NONE)
+```
+
 
 ### 1.1 Take a thumbnail
 
@@ -62,12 +86,12 @@ If you are interested in storing the history of already-seen text, take a look a
 When you play a visual novel and use multiple saves, you may find yourself discovering text bits you already saw, even on entirely different story branches. \
 By default, Dialogic does *not* save the events players have already seen; however, there are two ways to get it working.
 
-1. The first approach is via the Dialogic Editor. Head to the `Settings` tab and select `History`. From here on you can decide if you want the already-seen events must auto-save.
+1. The first approach is via the Dialogic Editor. Head to the `Settings` tab and select `History`. From here on, you can decide if you want the already-seen events must auto-save.
 
 
 2. This approach is a bit different: The following snippet will manually save the history to a file.
 Use this in case the player reached the end of the game (credits?) and you want to ensure that the seen-events are
-properly updated a last time. 
+properly updated a last time.
 
 ```gdscript
 var slot_name := "slot-3-page-2"
@@ -84,12 +108,12 @@ func _reset_seen_history() -> void:
      Dialogic.History.reset_already_seen_history()
 ```
 
-# 2. Handling Slots
+# 2. Handling Savegame Slots
 
 A save game slot is identified by its slot name, a unique word that you, as a developer, decide.\
 One way to name the slots could be by their index and the current save game page (if you intend to have many save games). This could result in slots named `slot_3_page_4`.
 
-# 2.1 Check if a Slot exists
+# 2.1 Check if a Savegame Slot exists
 
 When you create your own save/load layer, you may want to check whether any of these slots even exist.
 
@@ -101,7 +125,7 @@ func load_save_game_slot(slot_name: String) -> void:
 
 However, you may also use `Dialogic.Save.add_empty_slot(slot_name: String)` and populate the missing slots. If you check using the snippet, it's not necessary at all, though.
 
-# 2.2 Delete a Slot
+# 2.2 Delete a Savegame Slot
 
 You can delete a save game slot by using the `Dialogic.Save.delete_slot(slot_name: String)` method.
 
