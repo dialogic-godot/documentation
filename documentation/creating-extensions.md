@@ -6,7 +6,7 @@
 
 *Whether it's an event, an editor, a setting or a text effect that is missing, you can add it.
 An extension is a folder that contains all the information about these things so that Dialogic can use it.*
-*Extensions are powerful. Actually, it's just as powerful as Dialogic's built-in stuff because they are the same.
+*Extensions are powerful. Actually, it's just as powerful as Dialogic's built-in stuff because they are the same.*
 
 **Extensions can add:**
 - main editors
