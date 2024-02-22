@@ -6,7 +6,7 @@
 
 *Whether it's an event, an editor, a setting or a text effect that is missing, you can add it.
 An extension is a folder that contains all the information about these things so that Dialogic can use it.*
-*Extensions are powerful. Actually, it's just as powerful as Dialogic's built-in stuff because they are the same.
+*Extensions are powerful. Actually, it's just as powerful as Dialogic's built-in stuff because they are the same.*
 
 **Extensions can add:**
 - main editors
@@ -91,10 +91,9 @@ In the `_init()` method, you can set some base settings of your event:
 
 ```gdscript
 func _init() -> void:
-    event_name = "Printer"
-    set_default_color('Color3')
-    event_category = Category.Godot
-    help_page_path = "localhost"
+    event_name = "Printer"
+    set_default_color('Color3')
+    event_category = "Godot"
 ```
 
 #### 4. Saving/Loading:
@@ -103,15 +102,15 @@ To implement shortcode saving, return a shortcode identifier in `get_shortcode()
 
 ```gdscript
 func get_shortcode() -> String:
-    return "print"
+    return "print"
 
 
 func get_shortcode_parameters() -> Dictionary:
-    return {
-        #param_name     : property_info
-        "text"            : { "property": "print_text", "default": "" },
-        "ingame"        : { "property": "in_game",    "default": false },
-    }
+    return {
+        #param_name       : property_info
+        "text"            : { "property": "print_text", "default": "" },
+        "ingame"          : { "property": "in_game",    "default": false },
+    }
 ```
 
 *The above event might be saved as `[print text="Some text to print" in_game="true"]`*
@@ -123,8 +122,8 @@ Your event is now fully functional, but in the visual editor, it is still only b
 
 ```gdscript
 func build_event_editor() -> void:
-   add_header_edit("print_text", ValueType.SingleLineText)
-   add_header_edit("in_game", ValueType.Bool, "(also show it in game:", ")", {}, "!print_text.is_empty()")
+   add_header_edit("print_text", ValueType.SINGLELINE_TEXT)
+   add_header_edit("in_game", ValueType.BOOL, {"left_text":"(also show it in game:", "right_text":")"}, "!print_text.is_empty()")
 ```
 
 *Other methods you can use are `add_header_label()`, `add_body_edit()` and `add_body_line_break()`. Most of these allow setting a condition as the last parameter, allowing for adaptive visibility. In the example above, the second field will only be visible if any text is typed in the first.*
@@ -163,8 +162,10 @@ If you want save-persistent data, store it in the `Dialogic.current_state_info` 
 Portrait animations are scripts extending the `DialogicAnimation` class. The easiest way to register them is to have them in a subfolder of your module, and then add the following code to the `index.gd` file:
 
 ```gdscript
-func _get_portrait_animations() -> Array:
-    return list_dir('Animations')
+func _get_special_resources() -> Array[Dictionary]:
+    # First argument is the sub-folder, the second specifies 
+    # what kind of resource this is (needed for Dialogic)
+	return list_special_resources('MySubFolder', &'PortraitAnimation')
 ```
 
 ## Creating an animation
@@ -191,7 +192,7 @@ func animate():
     tween.finished.connect(emit_signal.bind('finished_once'))
 ```
 
-```admonish
+```admonish note
 Be aware, you have to:
 
 - extend the `DialogicAnimation` class and implement the `animate()` method
