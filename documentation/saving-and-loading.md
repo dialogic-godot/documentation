@@ -83,11 +83,10 @@ If you are interested in storing the history of already-seen text, take a look a
 
 ### 1.4 Saving Already-Seen Events
 
-When you play a visual novel and use multiple saves, you may find yourself discovering text bits you already saw, even on entirely different story branches. \
-By default, Dialogic does *not* save the events players have already seen; however, there are two ways to get it working.
+When you play a visual novel and use multiple saves, you may find yourself discovering texts you already read, even on entirely different story branches. \
+By default, Dialogic does *not* save the events players have already seen; however, there are two main ways to get it working.
 
-1. The first approach is via the Dialogic Editor. Head to the `Settings` tab and select `History`. From here on, you can decide if you want the already-seen events must auto-save.
-
+1. The first approach is via the Dialogic Editor. Head to the `Settings` tab and select `History`. From here on, you can decide if you want the already-seen events must auto-save.\
 
 2. This approach is a bit different: The following snippet will manually save the history to a file.
 Use this in case the player reached the end of the game (credits?) and you want to ensure that the seen-events are
@@ -107,6 +106,19 @@ func _load_game() -> void:
 func _reset_seen_history() -> void:
      Dialogic.History.reset_already_seen_history()
 ```
+
+If you prefer to set the configuration from `1.`, take a look at the following snippet:
+
+```gdscript
+func _ready() -> void:
+    Dialogic.History.save_already_seen_history_on_save = true
+    Dialogic.History.save_already_seen_history_on_autosave = true
+```
+
+The example values will cause the already-seen history to automatically save
+on Auto-Save and normal Saves.
+
+
 
 # 2. Handling Savegame Slots
 
