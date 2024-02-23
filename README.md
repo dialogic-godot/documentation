@@ -70,3 +70,12 @@ This is the current style guide for our documentation:
 ## 📜 Content
 [toc]
 ```
+
+## Code Documentation
+
+The Class Reference is built around the documentation used in the source code.\
+You are able to reference `class`es, `method`s, `member`s, `parameter`s, and `subsystem`s.\
+Members are Godot's internal term for variables on classes and subsystems are Dialogic's unique modular core concept.
+
+For instance, you can type `[class MyClassName]` to reference and link to a `class_name MyClassName` Class Reference file.
+
