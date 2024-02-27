@@ -12,15 +12,15 @@ Dialogic node that can reveal text at a given (changeable speed).
 ## Properties
 Name | Type | Default 
 --- | --- | --- 
-active_speed | [float](https://docs.godotengine.org/en/latest/classes/class_float.html#class-float) |  `0.01` 
-alignment | [int](https://docs.godotengine.org/en/latest/classes/class_int.html#class-int) |  `0` 
-base_visible_characters | [int](https://docs.godotengine.org/en/latest/classes/class_int.html#class-int) |  `0` 
-enabled | [bool](https://docs.godotengine.org/en/latest/classes/class_bool.html#class-bool) |  `true` 
-hide_when_empty | [bool](https://docs.godotengine.org/en/latest/classes/class_bool.html#class-bool) |  `false` 
-revealing | [bool](https://docs.godotengine.org/en/latest/classes/class_bool.html#class-bool) |  `false` 
-speed_counter | [float](https://docs.godotengine.org/en/latest/classes/class_float.html#class-float) |  `0.0` 
-start_hidden | [bool](https://docs.godotengine.org/en/latest/classes/class_bool.html#class-bool) |  `true` 
-textbox_root | [Node](https://docs.godotengine.org/en/latest/classes/class_node.html#class-node) |   
+[<span class="hljs-title">active_speed</span>](#property-active_speed) | [float](https://docs.godotengine.org/en/latest/classes/class_float.html#class-float) |  `0.01` 
+[<span class="hljs-title">alignment</span>](#property-alignment) | [int](https://docs.godotengine.org/en/latest/classes/class_int.html#class-int) |  `0` 
+[<span class="hljs-title">base_visible_characters</span>](#property-base_visible_characters) | [int](https://docs.godotengine.org/en/latest/classes/class_int.html#class-int) |  `0` 
+[<span class="hljs-title">enabled</span>](#property-enabled) | [bool](https://docs.godotengine.org/en/latest/classes/class_bool.html#class-bool) |  `true` 
+[<span class="hljs-title">hide_when_empty</span>](#property-hide_when_empty) | [bool](https://docs.godotengine.org/en/latest/classes/class_bool.html#class-bool) |  `false` 
+[<span class="hljs-title">revealing</span>](#property-revealing) | [bool](https://docs.godotengine.org/en/latest/classes/class_bool.html#class-bool) |  `false` 
+[<span class="hljs-title">speed_counter</span>](#property-speed_counter) | [float](https://docs.godotengine.org/en/latest/classes/class_float.html#class-float) |  `0.0` 
+[<span class="hljs-title">start_hidden</span>](#property-start_hidden) | [bool](https://docs.godotengine.org/en/latest/classes/class_bool.html#class-bool) |  `true` 
+[<span class="hljs-title">textbox_root</span>](#property-textbox_root) | [Node](https://docs.godotengine.org/en/latest/classes/class_node.html#class-node) |   
 --- 
 
 ## Methods
@@ -95,27 +95,7 @@ Returns | Method
 
 
 
-<a class="header" id="property-continue_reveal" href="#property-continue_reveal">**<span class="hljs-attribute">func</span> [<span class="hljs-title">continue_reveal</span>](#property-continue_reveal) ( )</a>  ⇒ <span style = "color: gray">void</span>** 
-
-
-
-Reveals one additional character.
-
----
-
-
-
-<a class="header" id="property-finish_text" href="#property-finish_text">**<span class="hljs-attribute">func</span> [<span class="hljs-title">finish_text</span>](#property-finish_text) ( )</a>  ⇒ <span style = "color: gray">void</span>** 
-
-
-
-Reveals the entire text instantly.
-
----
-
-
-
-<a class="header" id="property-reveal_text" href="#property-reveal_text">**<span class="hljs-attribute">func</span> [<span class="hljs-title">reveal_text</span>](#property-reveal_text) ( `_text`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string), `keep_previous`: [bool](https://docs.godotengine.org/en/latest/classes/class_bool.html#class-bool) = `false` )</a>  ⇒ <span style = "color: gray">void</span>** 
+<a class="header" id="property-active_speed" href="#property-active_speed">**<span class="hljs-attribute">var</span> <span class="hljs-title">active_speed</span> <span style = "color: gray"> = </span> 0.01** 
 
 
 
@@ -125,7 +105,119 @@ Reveals the entire text instantly.
 
 
 
-<a class="header" id="property-set_speed" href="#property-set_speed">**<span class="hljs-attribute">func</span> [<span class="hljs-title">set_speed</span>](#property-set_speed) ( `delay_per_character`: [float](https://docs.godotengine.org/en/latest/classes/class_float.html#class-float) )</a>  ⇒ <span style = "color: gray">void</span>** 
+<a class="header" id="property-alignment" href="#property-alignment">**<span class="hljs-attribute">var</span> <span class="hljs-title">alignment</span> <span style = "color: gray"> = </span> 0** 
+
+
+
+ <span style = "color: gray">*No description available.*</span> 
+
+---
+
+
+
+<a class="header" id="property-base_visible_characters" href="#property-base_visible_characters">**<span class="hljs-attribute">var</span> <span class="hljs-title">base_visible_characters</span> <span style = "color: gray"> = </span> 0** 
+
+
+
+ <span style = "color: gray">*No description available.*</span> 
+
+---
+
+
+
+<a class="header" id="property-enabled" href="#property-enabled">**<span class="hljs-attribute">var</span> <span class="hljs-title">enabled</span> <span style = "color: gray"> = </span> true** 
+
+
+
+ <span style = "color: gray">*No description available.*</span> 
+
+---
+
+
+
+<a class="header" id="property-hide_when_empty" href="#property-hide_when_empty">**<span class="hljs-attribute">var</span> <span class="hljs-title">hide_when_empty</span> <span style = "color: gray"> = </span> false** 
+
+
+
+ <span style = "color: gray">*No description available.*</span> 
+
+---
+
+
+
+<a class="header" id="property-revealing" href="#property-revealing">**<span class="hljs-attribute">var</span> <span class="hljs-title">revealing</span> <span style = "color: gray"> = </span> false** 
+
+
+
+ <span style = "color: gray">*No description available.*</span> 
+
+---
+
+
+
+<a class="header" id="property-speed_counter" href="#property-speed_counter">**<span class="hljs-attribute">var</span> <span class="hljs-title">speed_counter</span> <span style = "color: gray"> = </span> 0.0** 
+
+
+
+ <span style = "color: gray">*No description available.*</span> 
+
+---
+
+
+
+<a class="header" id="property-start_hidden" href="#property-start_hidden">**<span class="hljs-attribute">var</span> <span class="hljs-title">start_hidden</span> <span style = "color: gray"> = </span> true** 
+
+
+
+ <span style = "color: gray">*No description available.*</span> 
+
+---
+
+
+
+<a class="header" id="property-textbox_root" href="#property-textbox_root">**<span class="hljs-attribute">var</span> <span class="hljs-title">textbox_root</span> <span style = "color: gray"> = </span> <unknown>** 
+
+
+
+ <span style = "color: gray">*No description available.*</span> 
+
+---
+
+## Methods Descriptions
+
+
+
+<a class="header" id="method-continue_reveal" href="#method-continue_reveal">**<span class="hljs-attribute">func</span> [<span class="hljs-title">continue_reveal</span>](#property-continue_reveal) ( )</a>  ⇒ <span style = "color: gray">void</span>** 
+
+
+
+Reveals one additional character.
+
+---
+
+
+
+<a class="header" id="method-finish_text" href="#method-finish_text">**<span class="hljs-attribute">func</span> [<span class="hljs-title">finish_text</span>](#property-finish_text) ( )</a>  ⇒ <span style = "color: gray">void</span>** 
+
+
+
+Reveals the entire text instantly.
+
+---
+
+
+
+<a class="header" id="method-reveal_text" href="#method-reveal_text">**<span class="hljs-attribute">func</span> [<span class="hljs-title">reveal_text</span>](#property-reveal_text) ( `_text`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string), `keep_previous`: [bool](https://docs.godotengine.org/en/latest/classes/class_bool.html#class-bool) = `false` )</a>  ⇒ <span style = "color: gray">void</span>** 
+
+
+
+ <span style = "color: gray">*No description available.*</span> 
+
+---
+
+
+
+<a class="header" id="method-set_speed" href="#method-set_speed">**<span class="hljs-attribute">func</span> [<span class="hljs-title">set_speed</span>](#property-set_speed) ( `delay_per_character`: [float](https://docs.godotengine.org/en/latest/classes/class_float.html#class-float) )</a>  ⇒ <span style = "color: gray">void</span>** 
 
 
 

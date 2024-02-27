@@ -12,20 +12,20 @@ Node that defines a position for dialogic portraits and how to display portrait 
 ## Properties
 Name | Type | Default 
 --- | --- | --- 
-debug_character | [DialogicCharacter](class_dialogiccharacter.md) |  `null` 
-debug_character_holder_node | [Node2D](https://docs.godotengine.org/en/latest/classes/class_node2d.html#class-node2d) |  `null` 
-debug_character_portrait | [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) |  `""` 
-debug_character_scene_node | [Node](https://docs.godotengine.org/en/latest/classes/class_node.html#class-node) |  `null` 
-debug_origin | [Sprite2D](https://docs.godotengine.org/en/latest/classes/class_sprite2d.html#class-sprite2d) |  `null` 
-default_debug_character | [Resource](https://docs.godotengine.org/en/latest/classes/class_resource.html#class-resource) |   
-default_portrait_scene | [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) |   
-mirrored | [bool](https://docs.godotengine.org/en/latest/classes/class_bool.html#class-bool) |  `false` 
-mode | [int](https://docs.godotengine.org/en/latest/classes/class_int.html#class-int) |  `0` 
-origin_anchor | [int](https://docs.godotengine.org/en/latest/classes/class_int.html#class-int) |  `7` 
-origin_offset | [Vector2](https://docs.godotengine.org/en/latest/classes/class_vector2.html#class-vector2) |  `Vector2(0, 0)` 
-portrait_prefix | [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) |  `""` 
-position_index | [int](https://docs.godotengine.org/en/latest/classes/class_int.html#class-int) |  `0` 
-size_mode | [int](https://docs.godotengine.org/en/latest/classes/class_int.html#class-int) |  `3` 
+[<span class="hljs-title">debug_character</span>](#property-debug_character) | [DialogicCharacter](class_dialogiccharacter.md) |  `null` 
+[<span class="hljs-title">debug_character_holder_node</span>](#property-debug_character_holder_node) | [Node2D](https://docs.godotengine.org/en/latest/classes/class_node2d.html#class-node2d) |  `null` 
+[<span class="hljs-title">debug_character_portrait</span>](#property-debug_character_portrait) | [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) |  `""` 
+[<span class="hljs-title">debug_character_scene_node</span>](#property-debug_character_scene_node) | [Node](https://docs.godotengine.org/en/latest/classes/class_node.html#class-node) |  `null` 
+[<span class="hljs-title">debug_origin</span>](#property-debug_origin) | [Sprite2D](https://docs.godotengine.org/en/latest/classes/class_sprite2d.html#class-sprite2d) |  `null` 
+[<span class="hljs-title">default_debug_character</span>](#property-default_debug_character) | [Resource](https://docs.godotengine.org/en/latest/classes/class_resource.html#class-resource) |   
+[<span class="hljs-title">default_portrait_scene</span>](#property-default_portrait_scene) | [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) |   
+[<span class="hljs-title">mirrored</span>](#property-mirrored) | [bool](https://docs.godotengine.org/en/latest/classes/class_bool.html#class-bool) |  `false` 
+[<span class="hljs-title">mode</span>](#property-mode) | [int](https://docs.godotengine.org/en/latest/classes/class_int.html#class-int) |  `0` 
+[<span class="hljs-title">origin_anchor</span>](#property-origin_anchor) | [int](https://docs.godotengine.org/en/latest/classes/class_int.html#class-int) |  `7` 
+[<span class="hljs-title">origin_offset</span>](#property-origin_offset) | [Vector2](https://docs.godotengine.org/en/latest/classes/class_vector2.html#class-vector2) |  `Vector2(0, 0)` 
+[<span class="hljs-title">portrait_prefix</span>](#property-portrait_prefix) | [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) |  `""` 
+[<span class="hljs-title">position_index</span>](#property-position_index) | [int](https://docs.godotengine.org/en/latest/classes/class_int.html#class-int) |  `0` 
+[<span class="hljs-title">size_mode</span>](#property-size_mode) | [int](https://docs.godotengine.org/en/latest/classes/class_int.html#class-int) |  `3` 
 --- 
 
 ## Methods
@@ -174,7 +174,149 @@ Returns | Method
 
 
 
-<a class="header" id="property-get_local_portrait_transform" href="#property-get_local_portrait_transform">**<span class="hljs-attribute">func</span> [<span class="hljs-title">get_local_portrait_transform</span>](#property-get_local_portrait_transform) ( `portrait_rect`: [Rect2](https://docs.godotengine.org/en/latest/classes/class_rect2.html#class-rect2), `character_scale`: [float](https://docs.godotengine.org/en/latest/classes/class_float.html#class-float) = `1.0` )</a>  ⇒ <span class="hljs-attribute">[Rect2](https://docs.godotengine.org/en/latest/classes/class_rect2.html#class-rect2)</span>** 
+<a class="header" id="property-debug_character" href="#property-debug_character">**<span class="hljs-attribute">var</span> <span class="hljs-title">debug_character</span> <span style = "color: gray"> = </span> null** 
+
+
+
+A character that will be displayed in the editor, useful for getting the right size.
+
+---
+
+
+
+<a class="header" id="property-debug_character_holder_node" href="#property-debug_character_holder_node">**<span class="hljs-attribute">var</span> <span class="hljs-title">debug_character_holder_node</span> <span style = "color: gray"> = </span> null** 
+
+
+
+ <span style = "color: gray">*No description available.*</span> 
+
+---
+
+
+
+<a class="header" id="property-debug_character_portrait" href="#property-debug_character_portrait">**<span class="hljs-attribute">var</span> <span class="hljs-title">debug_character_portrait</span> <span style = "color: gray"> = </span> ""** 
+
+
+
+ <span style = "color: gray">*No description available.*</span> 
+
+---
+
+
+
+<a class="header" id="property-debug_character_scene_node" href="#property-debug_character_scene_node">**<span class="hljs-attribute">var</span> <span class="hljs-title">debug_character_scene_node</span> <span style = "color: gray"> = </span> null** 
+
+
+
+ <span style = "color: gray">*No description available.*</span> 
+
+---
+
+
+
+<a class="header" id="property-debug_origin" href="#property-debug_origin">**<span class="hljs-attribute">var</span> <span class="hljs-title">debug_origin</span> <span style = "color: gray"> = </span> null** 
+
+
+
+ <span style = "color: gray">*No description available.*</span> 
+
+---
+
+
+
+<a class="header" id="property-default_debug_character" href="#property-default_debug_character">**<span class="hljs-attribute">var</span> <span class="hljs-title">default_debug_character</span> <span style = "color: gray"> = </span> <unknown>** 
+
+
+
+ <span style = "color: gray">*No description available.*</span> 
+
+---
+
+
+
+<a class="header" id="property-default_portrait_scene" href="#property-default_portrait_scene">**<span class="hljs-attribute">var</span> <span class="hljs-title">default_portrait_scene</span> <span style = "color: gray"> = </span> <unknown>** 
+
+
+
+ <span style = "color: gray">*No description available.*</span> 
+
+---
+
+
+
+<a class="header" id="property-mirrored" href="#property-mirrored">**<span class="hljs-attribute">var</span> <span class="hljs-title">mirrored</span> <span style = "color: gray"> = </span> false** 
+
+
+
+If true, portraits will be mirrored in this position.
+
+---
+
+
+
+<a class="header" id="property-mode" href="#property-mode">**<span class="hljs-attribute">var</span> <span class="hljs-title">mode</span> <span style = "color: gray"> = </span> 0** 
+
+
+
+ <span style = "color: gray">*No description available.*</span> 
+
+---
+
+
+
+<a class="header" id="property-origin_anchor" href="#property-origin_anchor">**<span class="hljs-attribute">var</span> <span class="hljs-title">origin_anchor</span> <span style = "color: gray"> = </span> 7** 
+
+
+
+The portrait will be placed relative to this point in the container.
+
+---
+
+
+
+<a class="header" id="property-origin_offset" href="#property-origin_offset">**<span class="hljs-attribute">var</span> <span class="hljs-title">origin_offset</span> <span style = "color: gray"> = </span> Vector2(0, 0)** 
+
+
+
+An offset to apply to the origin. Rarely useful.
+
+---
+
+
+
+<a class="header" id="property-portrait_prefix" href="#property-portrait_prefix">**<span class="hljs-attribute">var</span> <span class="hljs-title">portrait_prefix</span> <span style = "color: gray"> = </span> ""** 
+
+
+
+Can be used to use a different portrait. E.g. "Faces/" would mean instead of "happy" it will use portrait "Faces/happy"
+
+---
+
+
+
+<a class="header" id="property-position_index" href="#property-position_index">**<span class="hljs-attribute">var</span> <span class="hljs-title">position_index</span> <span style = "color: gray"> = </span> 0** 
+
+
+
+The position this node corresponds to.
+
+---
+
+
+
+<a class="header" id="property-size_mode" href="#property-size_mode">**<span class="hljs-attribute">var</span> <span class="hljs-title">size_mode</span> <span style = "color: gray"> = </span> 3** 
+
+
+
+Defines how to affect the scale of the portrait
+
+---
+
+## Methods Descriptions
+
+
+
+<a class="header" id="method-get_local_portrait_transform" href="#method-get_local_portrait_transform">**<span class="hljs-attribute">func</span> [<span class="hljs-title">get_local_portrait_transform</span>](#property-get_local_portrait_transform) ( `portrait_rect`: [Rect2](https://docs.godotengine.org/en/latest/classes/class_rect2.html#class-rect2), `character_scale`: [float](https://docs.godotengine.org/en/latest/classes/class_float.html#class-float) = `1.0` )</a>  ⇒ <span class="hljs-attribute">[Rect2](https://docs.godotengine.org/en/latest/classes/class_rect2.html#class-rect2)</span>** 
 
 
 
@@ -184,7 +326,7 @@ Returns a Rect2 with the position as the position and the scale as the size.
 
 
 
-<a class="header" id="property-update_portrait_transforms" href="#property-update_portrait_transforms">**<span class="hljs-attribute">func</span> [<span class="hljs-title">update_portrait_transforms</span>](#property-update_portrait_transforms) ( )</a>  ⇒ <span style = "color: gray">void</span>** 
+<a class="header" id="method-update_portrait_transforms" href="#method-update_portrait_transforms">**<span class="hljs-attribute">func</span> [<span class="hljs-title">update_portrait_transforms</span>](#property-update_portrait_transforms) ( )</a>  ⇒ <span style = "color: gray">void</span>** 
 
 
 

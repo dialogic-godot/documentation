@@ -12,11 +12,11 @@ Class that can be used to animate portraits. Can be extended to create animation
 ## Properties
 Name | Type | Default 
 --- | --- | --- 
-end_position | [Vector2](https://docs.godotengine.org/en/latest/classes/class_vector2.html#class-vector2) |   
-node | [Node](https://docs.godotengine.org/en/latest/classes/class_node.html#class-node) |   
-orig_pos | [Vector2](https://docs.godotengine.org/en/latest/classes/class_vector2.html#class-vector2) |   
-repeats | [int](https://docs.godotengine.org/en/latest/classes/class_int.html#class-int) |   
-time | [float](https://docs.godotengine.org/en/latest/classes/class_float.html#class-float) |   
+[<span class="hljs-title">end_position</span>](#property-end_position) | [Vector2](https://docs.godotengine.org/en/latest/classes/class_vector2.html#class-vector2) |   
+[<span class="hljs-title">node</span>](#property-node) | [Node](https://docs.godotengine.org/en/latest/classes/class_node.html#class-node) |   
+[<span class="hljs-title">orig_pos</span>](#property-orig_pos) | [Vector2](https://docs.godotengine.org/en/latest/classes/class_vector2.html#class-vector2) |   
+[<span class="hljs-title">repeats</span>](#property-repeats) | [int](https://docs.godotengine.org/en/latest/classes/class_int.html#class-int) |   
+[<span class="hljs-title">time</span>](#property-time) | [float](https://docs.godotengine.org/en/latest/classes/class_float.html#class-float) |   
 --- 
 
 ## Methods
@@ -53,7 +53,59 @@ Returns | Method
 
 
 
-<a class="header" id="property-animate" href="#property-animate">**<span class="hljs-attribute">func</span> [<span class="hljs-title">animate</span>](#property-animate) ( )</a>  ⇒ <span style = "color: gray">void</span>** 
+<a class="header" id="property-end_position" href="#property-end_position">**<span class="hljs-attribute">var</span> <span class="hljs-title">end_position</span>** 
+
+
+
+Set at runtime, will be the position at which to end the animation.
+
+---
+
+
+
+<a class="header" id="property-node" href="#property-node">**<span class="hljs-attribute">var</span> <span class="hljs-title">node</span>** 
+
+
+
+Set at runtime, will be the node to animate.
+
+---
+
+
+
+<a class="header" id="property-orig_pos" href="#property-orig_pos">**<span class="hljs-attribute">var</span> <span class="hljs-title">orig_pos</span>** 
+
+
+
+Set at runtime. The position the node started at.
+
+---
+
+
+
+<a class="header" id="property-repeats" href="#property-repeats">**<span class="hljs-attribute">var</span> <span class="hljs-title">repeats</span>** 
+
+
+
+Used to repeate the animation for a number of times.
+
+---
+
+
+
+<a class="header" id="property-time" href="#property-time">**<span class="hljs-attribute">var</span> <span class="hljs-title">time</span>** 
+
+
+
+Set at runtime, will be the length of the animation.
+
+---
+
+## Methods Descriptions
+
+
+
+<a class="header" id="method-animate" href="#method-animate">**<span class="hljs-attribute">func</span> [<span class="hljs-title">animate</span>](#property-animate) ( )</a>  ⇒ <span style = "color: gray">void</span>** 
 
 
 
@@ -63,7 +115,7 @@ To be overridden. Do the actual animating/tweening in here. Use the properties [
 
 
 
-<a class="header" id="property-finished_one_loop" href="#property-finished_one_loop">**<span class="hljs-attribute">func</span> [<span class="hljs-title">finished_one_loop</span>](#property-finished_one_loop) ( )</a>  ⇒ <span style = "color: gray">void</span>** 
+<a class="header" id="method-finished_one_loop" href="#method-finished_one_loop">**<span class="hljs-attribute">func</span> [<span class="hljs-title">finished_one_loop</span>](#property-finished_one_loop) ( )</a>  ⇒ <span style = "color: gray">void</span>** 
 
 
 
@@ -73,7 +125,7 @@ To be overridden. Do the actual animating/tweening in here. Use the properties [
 
 
 
-<a class="header" id="property-pause" href="#property-pause">**<span class="hljs-attribute">func</span> [<span class="hljs-title">pause</span>](#property-pause) ( )</a>  ⇒ <span style = "color: gray">void</span>** 
+<a class="header" id="method-pause" href="#method-pause">**<span class="hljs-attribute">func</span> [<span class="hljs-title">pause</span>](#property-pause) ( )</a>  ⇒ <span style = "color: gray">void</span>** 
 
 
 
@@ -83,7 +135,7 @@ To be overridden. Do the actual animating/tweening in here. Use the properties [
 
 
 
-<a class="header" id="property-resume" href="#property-resume">**<span class="hljs-attribute">func</span> [<span class="hljs-title">resume</span>](#property-resume) ( )</a>  ⇒ <span style = "color: gray">void</span>** 
+<a class="header" id="method-resume" href="#method-resume">**<span class="hljs-attribute">func</span> [<span class="hljs-title">resume</span>](#property-resume) ( )</a>  ⇒ <span style = "color: gray">void</span>** 
 
 
 

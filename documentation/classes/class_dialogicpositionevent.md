@@ -12,10 +12,10 @@
 ## Properties
 Name | Type | Default 
 --- | --- | --- 
-action | [int](https://docs.godotengine.org/en/latest/classes/class_int.html#class-int) |  `0` 
-movement_time | [float](https://docs.godotengine.org/en/latest/classes/class_float.html#class-float) |  `0.0` 
-position | [int](https://docs.godotengine.org/en/latest/classes/class_int.html#class-int) |  `0` 
-vector | [Vector2](https://docs.godotengine.org/en/latest/classes/class_vector2.html#class-vector2) |  `Vector2(0, 0)` 
+[<span class="hljs-title">action</span>](#property-action) | [int](https://docs.godotengine.org/en/latest/classes/class_int.html#class-int) |  `0` 
+[<span class="hljs-title">movement_time</span>](#property-movement_time) | [float](https://docs.godotengine.org/en/latest/classes/class_float.html#class-float) |  `0.0` 
+[<span class="hljs-title">position</span>](#property-position) | [int](https://docs.godotengine.org/en/latest/classes/class_int.html#class-int) |  `0` 
+[<span class="hljs-title">vector</span>](#property-vector) | [Vector2](https://docs.godotengine.org/en/latest/classes/class_vector2.html#class-vector2) |  `Vector2(0, 0)` 
 --- 
 
 ## Methods
@@ -66,7 +66,49 @@ Returns | Method
 
 
 
-<a class="header" id="property-build_event_editor" href="#property-build_event_editor">**<span class="hljs-attribute">func</span> [<span class="hljs-title">build_event_editor</span>](#property-build_event_editor) ( )</a>  ⇒ <span style = "color: gray">void</span>** 
+<a class="header" id="property-action" href="#property-action">**<span class="hljs-attribute">var</span> <span class="hljs-title">action</span> <span style = "color: gray"> = </span> 0** 
+
+
+
+The type of action: SetRelative, SetAbsolute, Reset, ResetAll
+
+---
+
+
+
+<a class="header" id="property-movement_time" href="#property-movement_time">**<span class="hljs-attribute">var</span> <span class="hljs-title">movement_time</span> <span style = "color: gray"> = </span> 0.0** 
+
+
+
+The time the tweening will take.
+
+---
+
+
+
+<a class="header" id="property-position" href="#property-position">**<span class="hljs-attribute">var</span> <span class="hljs-title">position</span> <span style = "color: gray"> = </span> 0** 
+
+
+
+The position that should be affected
+
+---
+
+
+
+<a class="header" id="property-vector" href="#property-vector">**<span class="hljs-attribute">var</span> <span class="hljs-title">vector</span> <span style = "color: gray"> = </span> Vector2(0, 0)** 
+
+
+
+A vector representing a relative change or an absolute position (for SetRelative and SetAbsolute)
+
+---
+
+## Methods Descriptions
+
+
+
+<a class="header" id="method-build_event_editor" href="#method-build_event_editor">**<span class="hljs-attribute">func</span> [<span class="hljs-title">build_event_editor</span>](#property-build_event_editor) ( )</a>  ⇒ <span style = "color: gray">void</span>** 
 
 
 
@@ -76,7 +118,7 @@ Returns | Method
 
 
 
-<a class="header" id="property-get_shortcode" href="#property-get_shortcode">**<span class="hljs-attribute">func</span> [<span class="hljs-title">get_shortcode</span>](#property-get_shortcode) ( )</a>  ⇒ <span class="hljs-attribute">[String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string)</span>** 
+<a class="header" id="method-get_shortcode" href="#method-get_shortcode">**<span class="hljs-attribute">func</span> [<span class="hljs-title">get_shortcode</span>](#property-get_shortcode) ( )</a>  ⇒ <span class="hljs-attribute">[String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string)</span>** 
 
 
 
@@ -86,7 +128,7 @@ Returns | Method
 
 
 
-<a class="header" id="property-get_shortcode_parameters" href="#property-get_shortcode_parameters">**<span class="hljs-attribute">func</span> [<span class="hljs-title">get_shortcode_parameters</span>](#property-get_shortcode_parameters) ( )</a>  ⇒ <span class="hljs-attribute">[Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html#class-dictionary)</span>** 
+<a class="header" id="method-get_shortcode_parameters" href="#method-get_shortcode_parameters">**<span class="hljs-attribute">func</span> [<span class="hljs-title">get_shortcode_parameters</span>](#property-get_shortcode_parameters) ( )</a>  ⇒ <span class="hljs-attribute">[Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html#class-dictionary)</span>** 
 
 
 

@@ -8,47 +8,46 @@
 # DialogicGameHandler
 **Inherits:** [Node](https://docs.godotengine.org/en/latest/classes/class_node.html#class-node)
 
-Autoload script that allows interacting with all of Dialogics systems: - Holds all important information about the current state of Dialogic. - Gives access to all the subystems. - Has methods to start timelines.
+Autoload script that allows you to interact with all of Dialogic's systems:[br]- Holds all important information about the current state of Dialogic.[br]- Provides access to all the subsystems.[br]- Has methods to start/end timelines.[br]
 ## Properties
 Name | Type | Default 
 --- | --- | --- 
-Animations | `Modules/Core/subsystem_animation.gd` |   
-Audio | `Modules/Audio/subsystem_audio.gd` |   
-Backgrounds | `Modules/Background/subsystem_backgrounds.gd` |   
-Choices | `Modules/Choice/subsystem_choices.gd` |   
-Expressions | `Modules/Core/subsystem_expression.gd` |   
-Glossary | `Modules/Glossary/subsystem_glossary.gd` |   
-History | `Modules/History/subsystem_history.gd` |   
-Inputs | `Modules/Core/subsystem_input.gd` |   
-Jump | `Modules/Jump/subsystem_jump.gd` |   
-Portraits | `Modules/Character/subsystem_portraits.gd` |   
-Save | `Modules/Save/subsystem_save.gd` |   
-Settings | `Modules/Settings/subsystem_settings.gd` |   
-Styles | `Modules/Style/subsystem_styles.gd` |   
-Text | `Modules/Text/subsystem_text.gd` |   
-TextInput | `Modules/TextInput/subsystem_text_input.gd` |   
-VAR | `Modules/Variable/subsystem_variables.gd` |   
-Voice | `Modules/Voice/subsystem_voice.gd` |   
-current_event_idx | [int](https://docs.godotengine.org/en/latest/classes/class_int.html#class-int) |  `0` 
-current_state | [int](https://docs.godotengine.org/en/latest/classes/class_int.html#class-int) |  `0` 
-current_state_info | [Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html#class-dictionary) |   
-current_timeline | [DialogicTimeline](class_dialogictimeline.md) |  `null` 
-current_timeline_events | [Array](https://docs.godotengine.org/en/latest/classes/class_array.html#class-array) |   
-paused | [bool](https://docs.godotengine.org/en/latest/classes/class_bool.html#class-bool) |  `false` 
+[<span class="hljs-title">Animations</span>](#property-animations) | `Modules/Core/subsystem_animation.gd` |   
+[<span class="hljs-title">Audio</span>](#property-audio) | `Modules/Audio/subsystem_audio.gd` |   
+[<span class="hljs-title">Backgrounds</span>](#property-backgrounds) | `Modules/Background/subsystem_backgrounds.gd` |   
+[<span class="hljs-title">Choices</span>](#property-choices) | `Modules/Choice/subsystem_choices.gd` |   
+[<span class="hljs-title">Expressions</span>](#property-expressions) | `Modules/Core/subsystem_expression.gd` |   
+[<span class="hljs-title">Glossary</span>](#property-glossary) | `Modules/Glossary/subsystem_glossary.gd` |   
+[<span class="hljs-title">History</span>](#property-history) | `Modules/History/subsystem_history.gd` |   
+[<span class="hljs-title">Inputs</span>](#property-inputs) | `Modules/Core/subsystem_input.gd` |   
+[<span class="hljs-title">Jump</span>](#property-jump) | `Modules/Jump/subsystem_jump.gd` |   
+[<span class="hljs-title">Portraits</span>](#property-portraits) | `Modules/Character/subsystem_portraits.gd` |   
+[<span class="hljs-title">Save</span>](#property-save) | `Modules/Save/subsystem_save.gd` |   
+[<span class="hljs-title">Settings</span>](#property-settings) | `Modules/Settings/subsystem_settings.gd` |   
+[<span class="hljs-title">Styles</span>](#property-styles) | `Modules/Style/subsystem_styles.gd` |   
+[<span class="hljs-title">Text</span>](#property-text) | `Modules/Text/subsystem_text.gd` |   
+[<span class="hljs-title">TextInput</span>](#property-textinput) | `Modules/TextInput/subsystem_text_input.gd` |   
+[<span class="hljs-title">VAR</span>](#property-var) | `Modules/Variable/subsystem_variables.gd` |   
+[<span class="hljs-title">Voice</span>](#property-voice) | `Modules/Voice/subsystem_voice.gd` |   
+[<span class="hljs-title">current_event_idx</span>](#property-current_event_idx) | [int](https://docs.godotengine.org/en/latest/classes/class_int.html#class-int) |  `0` 
+[<span class="hljs-title">current_state</span>](#property-current_state) | [int](https://docs.godotengine.org/en/latest/classes/class_int.html#class-int) |  `0` 
+[<span class="hljs-title">current_state_info</span>](#property-current_state_info) | [Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html#class-dictionary) |   
+[<span class="hljs-title">current_timeline</span>](#property-current_timeline) | [DialogicTimeline](class_dialogictimeline.md) |  `null` 
+[<span class="hljs-title">current_timeline_events</span>](#property-current_timeline_events) | [Array](https://docs.godotengine.org/en/latest/classes/class_array.html#class-array) |   
+[<span class="hljs-title">paused</span>](#property-paused) | [bool](https://docs.godotengine.org/en/latest/classes/class_bool.html#class-bool) |  `false` 
 --- 
 
 ## Methods
 Returns | Method 
 --- | --- 
-<span class="hljs-attribute">[DialogicSubsystem](class_dialogicsubsystem.md)</span> | [<span class="hljs-title">add_subsystem</span>](#property-add_subsystem) ( `_name`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string), `_script_path`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) ) 
+<span class="hljs-attribute">[DialogicSubsystem](class_dialogicsubsystem.md)</span> | [<span class="hljs-title">add_subsystem</span>](#property-add_subsystem) ( `subsystem_name`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string), `script_path`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) ) 
 <span class="hljs-attribute">[bool](https://docs.godotengine.org/en/latest/classes/class_bool.html#class-bool)</span> | [<span class="hljs-title">clear</span>](#property-clear) ( `clear_flags`: [int](https://docs.godotengine.org/en/latest/classes/class_int.html#class-int) = `0` ) 
-<span style = "color: gray">void</span> | [<span class="hljs-title">collect_subsystems</span>](#property-collect_subsystems) ( ) 
 <span style = "color: gray">void</span> | [<span class="hljs-title">end_timeline</span>](#property-end_timeline) ( ) 
 <span class="hljs-attribute">[Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html#class-dictionary)</span> | [<span class="hljs-title">get_full_state</span>](#property-get_full_state) ( ) 
-<span class="hljs-attribute">[DialogicSubsystem](class_dialogicsubsystem.md)</span> | [<span class="hljs-title">get_subsystem</span>](#property-get_subsystem) ( `_name`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) ) 
+<span class="hljs-attribute">[DialogicSubsystem](class_dialogicsubsystem.md)</span> | [<span class="hljs-title">get_subsystem</span>](#property-get_subsystem) ( `subsystem_name`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) ) 
 <span style = "color: gray">void</span> | [<span class="hljs-title">handle_event</span>](#property-handle_event) ( `event_index`: [int](https://docs.godotengine.org/en/latest/classes/class_int.html#class-int) ) 
 <span style = "color: gray">void</span> | [<span class="hljs-title">handle_next_event</span>](#property-handle_next_event) ( `ignore_argument`: [Variant](https://docs.godotengine.org/en/latest/classes/class_variant.html#class-variant) = `""` ) 
-<span class="hljs-attribute">[bool](https://docs.godotengine.org/en/latest/classes/class_bool.html#class-bool)</span> | [<span class="hljs-title">has_subsystem</span>](#property-has_subsystem) ( `_name`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) ) 
+<span class="hljs-attribute">[bool](https://docs.godotengine.org/en/latest/classes/class_bool.html#class-bool)</span> | [<span class="hljs-title">has_subsystem</span>](#property-has_subsystem) ( `subsystem_name`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) ) 
 <span style = "color: gray">void</span> | [<span class="hljs-title">load_full_state</span>](#property-load_full_state) ( `state_info`: [Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html#class-dictionary) ) 
 <span class="hljs-attribute">[Variant](https://docs.godotengine.org/en/latest/classes/class_variant.html#class-variant)</span> | [<span class="hljs-title">preload_timeline</span>](#property-preload_timeline) ( `timeline_resource`: [Variant](https://docs.godotengine.org/en/latest/classes/class_variant.html#class-variant) ) 
 <span class="hljs-attribute">[Node](https://docs.godotengine.org/en/latest/classes/class_node.html#class-node)</span> | [<span class="hljs-title">start</span>](#property-start) ( `timeline`: [Variant](https://docs.godotengine.org/en/latest/classes/class_variant.html#class-variant), `label`: [Variant](https://docs.godotengine.org/en/latest/classes/class_variant.html#class-variant) = `""` ) 
@@ -135,7 +134,7 @@ Returns | Method
 
 
 
-Emitted when [paused] changes to true.
+Emitted when `paused` changes to true.
 
 ---
 
@@ -145,7 +144,7 @@ Emitted when [paused] changes to true.
 
 
 
-Emitted when [paused] changes to false.
+Emitted when `paused` changes to false.
 
 ---
 
@@ -155,7 +154,7 @@ Emitted when [paused] changes to false.
 
 
 
- <span style = "color: gray">*No description available.*</span> 
+Emitted when an event has just been executed (not necessarily when the event finished).
 
 ---
 
@@ -165,7 +164,7 @@ Emitted when [paused] changes to false.
 
 
 
-Emitted when the Signal event was reached
+Emitted when the `Signal Event` was reached
 
 ---
 
@@ -175,7 +174,7 @@ Emitted when the Signal event was reached
 
 
 
-Emitted when [current_state] change.
+Emitted when `current_state` change.
 
 ---
 
@@ -185,7 +184,7 @@ Emitted when [current_state] change.
 
 
 
-Emitted when [signal] effect was reached in text.
+Emitted when `[signal]` effect was reached in text.
 
 ---
 
@@ -195,7 +194,7 @@ Emitted when [signal] effect was reached in text.
 
 
 
- <span style = "color: gray">*No description available.*</span> 
+Emitted when dialog ends (by a timeline end being reached OR end_timeline() being called).
 
 ---
 
@@ -205,7 +204,7 @@ Emitted when [signal] effect was reached in text.
 
 
 
- <span style = "color: gray">*No description available.*</span> 
+Emitted when a timeline was started with [start](#property-start) or [start_timeline](#property-start_timeline).
 
 ---
 
@@ -213,7 +212,7 @@ Emitted when [signal] effect was reached in text.
 
 
 
-<a class="header" id="property-add_subsystem" href="#property-add_subsystem">**<span class="hljs-attribute">func</span> [<span class="hljs-title">add_subsystem</span>](#property-add_subsystem) ( `_name`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string), `_script_path`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) )</a>  ⇒ <span class="hljs-attribute">[DialogicSubsystem](class_dialogicsubsystem.md)</span>** 
+<a class="header" id="property-animations" href="#property-animations">**<span class="hljs-attribute">var</span> <span class="hljs-title">Animations</span> <span style = "color: gray"> = </span> <unknown>** 
 
 
 
@@ -223,17 +222,7 @@ Emitted when [signal] effect was reached in text.
 
 
 
-<a class="header" id="property-clear" href="#property-clear">**<span class="hljs-attribute">func</span> [<span class="hljs-title">clear</span>](#property-clear) ( `clear_flags`: [int](https://docs.godotengine.org/en/latest/classes/class_int.html#class-int) = `0` )</a>  ⇒ <span class="hljs-attribute">[bool](https://docs.godotengine.org/en/latest/classes/class_bool.html#class-bool)</span>** 
-
-
-
-Resets dialogics state fully or partially. By using the clear flags you can specify what info should be kept. For example at timeline end usually it doesn't clear node or subsystem info
-
----
-
-
-
-<a class="header" id="property-collect_subsystems" href="#property-collect_subsystems">**<span class="hljs-attribute">func</span> [<span class="hljs-title">collect_subsystems</span>](#property-collect_subsystems) ( )</a>  ⇒ <span style = "color: gray">void</span>** 
+<a class="header" id="property-audio" href="#property-audio">**<span class="hljs-attribute">var</span> <span class="hljs-title">Audio</span> <span style = "color: gray"> = </span> <unknown>** 
 
 
 
@@ -243,7 +232,7 @@ Resets dialogics state fully or partially. By using the clear flags you can spec
 
 
 
-<a class="header" id="property-end_timeline" href="#property-end_timeline">**<span class="hljs-attribute">func</span> [<span class="hljs-title">end_timeline</span>](#property-end_timeline) ( )</a>  ⇒ <span style = "color: gray">void</span>** 
+<a class="header" id="property-backgrounds" href="#property-backgrounds">**<span class="hljs-attribute">var</span> <span class="hljs-title">Backgrounds</span> <span style = "color: gray"> = </span> <unknown>** 
 
 
 
@@ -253,7 +242,7 @@ Resets dialogics state fully or partially. By using the clear flags you can spec
 
 
 
-<a class="header" id="property-get_full_state" href="#property-get_full_state">**<span class="hljs-attribute">func</span> [<span class="hljs-title">get_full_state</span>](#property-get_full_state) ( )</a>  ⇒ <span class="hljs-attribute">[Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html#class-dictionary)</span>** 
+<a class="header" id="property-choices" href="#property-choices">**<span class="hljs-attribute">var</span> <span class="hljs-title">Choices</span> <span style = "color: gray"> = </span> <unknown>** 
 
 
 
@@ -263,7 +252,7 @@ Resets dialogics state fully or partially. By using the clear flags you can spec
 
 
 
-<a class="header" id="property-get_subsystem" href="#property-get_subsystem">**<span class="hljs-attribute">func</span> [<span class="hljs-title">get_subsystem</span>](#property-get_subsystem) ( `_name`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) )</a>  ⇒ <span class="hljs-attribute">[DialogicSubsystem](class_dialogicsubsystem.md)</span>** 
+<a class="header" id="property-expressions" href="#property-expressions">**<span class="hljs-attribute">var</span> <span class="hljs-title">Expressions</span> <span style = "color: gray"> = </span> <unknown>** 
 
 
 
@@ -273,7 +262,7 @@ Resets dialogics state fully or partially. By using the clear flags you can spec
 
 
 
-<a class="header" id="property-handle_event" href="#property-handle_event">**<span class="hljs-attribute">func</span> [<span class="hljs-title">handle_event</span>](#property-handle_event) ( `event_index`: [int](https://docs.godotengine.org/en/latest/classes/class_int.html#class-int) )</a>  ⇒ <span style = "color: gray">void</span>** 
+<a class="header" id="property-glossary" href="#property-glossary">**<span class="hljs-attribute">var</span> <span class="hljs-title">Glossary</span> <span style = "color: gray"> = </span> <unknown>** 
 
 
 
@@ -283,7 +272,7 @@ Resets dialogics state fully or partially. By using the clear flags you can spec
 
 
 
-<a class="header" id="property-handle_next_event" href="#property-handle_next_event">**<span class="hljs-attribute">func</span> [<span class="hljs-title">handle_next_event</span>](#property-handle_next_event) ( `ignore_argument`: [Variant](https://docs.godotengine.org/en/latest/classes/class_variant.html#class-variant) = `""` )</a>  ⇒ <span style = "color: gray">void</span>** 
+<a class="header" id="property-history" href="#property-history">**<span class="hljs-attribute">var</span> <span class="hljs-title">History</span> <span style = "color: gray"> = </span> <unknown>** 
 
 
 
@@ -293,7 +282,7 @@ Resets dialogics state fully or partially. By using the clear flags you can spec
 
 
 
-<a class="header" id="property-has_subsystem" href="#property-has_subsystem">**<span class="hljs-attribute">func</span> [<span class="hljs-title">has_subsystem</span>](#property-has_subsystem) ( `_name`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) )</a>  ⇒ <span class="hljs-attribute">[bool](https://docs.godotengine.org/en/latest/classes/class_bool.html#class-bool)</span>** 
+<a class="header" id="property-inputs" href="#property-inputs">**<span class="hljs-attribute">var</span> <span class="hljs-title">Inputs</span> <span style = "color: gray"> = </span> <unknown>** 
 
 
 
@@ -303,7 +292,7 @@ Resets dialogics state fully or partially. By using the clear flags you can spec
 
 
 
-<a class="header" id="property-load_full_state" href="#property-load_full_state">**<span class="hljs-attribute">func</span> [<span class="hljs-title">load_full_state</span>](#property-load_full_state) ( `state_info`: [Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html#class-dictionary) )</a>  ⇒ <span style = "color: gray">void</span>** 
+<a class="header" id="property-jump" href="#property-jump">**<span class="hljs-attribute">var</span> <span class="hljs-title">Jump</span> <span style = "color: gray"> = </span> <unknown>** 
 
 
 
@@ -313,7 +302,7 @@ Resets dialogics state fully or partially. By using the clear flags you can spec
 
 
 
-<a class="header" id="property-preload_timeline" href="#property-preload_timeline">**<span class="hljs-attribute">func</span> [<span class="hljs-title">preload_timeline</span>](#property-preload_timeline) ( `timeline_resource`: [Variant](https://docs.godotengine.org/en/latest/classes/class_variant.html#class-variant) )</a>  ⇒ <span class="hljs-attribute">[Variant](https://docs.godotengine.org/en/latest/classes/class_variant.html#class-variant)</span>** 
+<a class="header" id="property-portraits" href="#property-portraits">**<span class="hljs-attribute">var</span> <span class="hljs-title">Portraits</span> <span style = "color: gray"> = </span> <unknown>** 
 
 
 
@@ -323,17 +312,249 @@ Resets dialogics state fully or partially. By using the clear flags you can spec
 
 
 
-<a class="header" id="property-start" href="#property-start">**<span class="hljs-attribute">func</span> [<span class="hljs-title">start</span>](#property-start) ( `timeline`: [Variant](https://docs.godotengine.org/en/latest/classes/class_variant.html#class-variant), `label`: [Variant](https://docs.godotengine.org/en/latest/classes/class_variant.html#class-variant) = `""` )</a>  ⇒ <span class="hljs-attribute">[Node](https://docs.godotengine.org/en/latest/classes/class_node.html#class-node)</span>** 
+<a class="header" id="property-save" href="#property-save">**<span class="hljs-attribute">var</span> <span class="hljs-title">Save</span> <span style = "color: gray"> = </span> <unknown>** 
 
 
 
-Method to start a timeline AND ensure that a layout scene is present. For argument info, checkout start_timeline() -> returns the layout node
+ <span style = "color: gray">*No description available.*</span> 
 
 ---
 
 
 
-<a class="header" id="property-start_timeline" href="#property-start_timeline">**<span class="hljs-attribute">func</span> [<span class="hljs-title">start_timeline</span>](#property-start_timeline) ( `timeline`: [Variant](https://docs.godotengine.org/en/latest/classes/class_variant.html#class-variant), `label_or_idx`: [Variant](https://docs.godotengine.org/en/latest/classes/class_variant.html#class-variant) = `""` )</a>  ⇒ <span style = "color: gray">void</span>** 
+<a class="header" id="property-settings" href="#property-settings">**<span class="hljs-attribute">var</span> <span class="hljs-title">Settings</span> <span style = "color: gray"> = </span> <unknown>** 
+
+
+
+ <span style = "color: gray">*No description available.*</span> 
+
+---
+
+
+
+<a class="header" id="property-styles" href="#property-styles">**<span class="hljs-attribute">var</span> <span class="hljs-title">Styles</span> <span style = "color: gray"> = </span> <unknown>** 
+
+
+
+ <span style = "color: gray">*No description available.*</span> 
+
+---
+
+
+
+<a class="header" id="property-text" href="#property-text">**<span class="hljs-attribute">var</span> <span class="hljs-title">Text</span> <span style = "color: gray"> = </span> <unknown>** 
+
+
+
+ <span style = "color: gray">*No description available.*</span> 
+
+---
+
+
+
+<a class="header" id="property-textinput" href="#property-textinput">**<span class="hljs-attribute">var</span> <span class="hljs-title">TextInput</span> <span style = "color: gray"> = </span> <unknown>** 
+
+
+
+ <span style = "color: gray">*No description available.*</span> 
+
+---
+
+
+
+<a class="header" id="property-var" href="#property-var">**<span class="hljs-attribute">var</span> <span class="hljs-title">VAR</span> <span style = "color: gray"> = </span> <unknown>** 
+
+
+
+ <span style = "color: gray">*No description available.*</span> 
+
+---
+
+
+
+<a class="header" id="property-voice" href="#property-voice">**<span class="hljs-attribute">var</span> <span class="hljs-title">Voice</span> <span style = "color: gray"> = </span> <unknown>** 
+
+
+
+ <span style = "color: gray">*No description available.*</span> 
+
+---
+
+
+
+<a class="header" id="property-current_event_idx" href="#property-current_event_idx">**<span class="hljs-attribute">var</span> <span class="hljs-title">current_event_idx</span> <span style = "color: gray"> = </span> 0** 
+
+
+
+Index of the event the timeline handeling is currently at.
+
+---
+
+
+
+<a class="header" id="property-current_state" href="#property-current_state">**<span class="hljs-attribute">var</span> <span class="hljs-title">current_state</span> <span style = "color: gray"> = </span> 0** 
+
+
+
+Current state (see `States` enum)
+
+---
+
+
+
+<a class="header" id="property-current_state_info" href="#property-current_state_info">**<span class="hljs-attribute">var</span> <span class="hljs-title">current_state_info</span> <span style = "color: gray"> = </span> <unknown>** 
+
+
+
+Contains all information that subsystems consider relevant for the current situation
+
+---
+
+
+
+<a class="header" id="property-current_timeline" href="#property-current_timeline">**<span class="hljs-attribute">var</span> <span class="hljs-title">current_timeline</span> <span style = "color: gray"> = </span> null** 
+
+
+
+Reference to the currently executed timeline.
+
+---
+
+
+
+<a class="header" id="property-current_timeline_events" href="#property-current_timeline_events">**<span class="hljs-attribute">var</span> <span class="hljs-title">current_timeline_events</span> <span style = "color: gray"> = </span> <unknown>** 
+
+
+
+Copy of the `current_timeline`'s events.
+
+---
+
+
+
+<a class="header" id="property-paused" href="#property-paused">**<span class="hljs-attribute">var</span> <span class="hljs-title">paused</span> <span style = "color: gray"> = </span> false** 
+
+
+
+When `true`, many dialogic processes won't continue until it's false again.
+
+---
+
+## Methods Descriptions
+
+
+
+<a class="header" id="method-add_subsystem" href="#method-add_subsystem">**<span class="hljs-attribute">func</span> [<span class="hljs-title">add_subsystem</span>](#property-add_subsystem) ( `subsystem_name`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string), `script_path`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) )</a>  ⇒ <span class="hljs-attribute">[DialogicSubsystem](class_dialogicsubsystem.md)</span>** 
+
+
+
+Adds a subsystem node with the given `subsystem_name` and `script_path`.
+
+---
+
+
+
+<a class="header" id="method-clear" href="#method-clear">**<span class="hljs-attribute">func</span> [<span class="hljs-title">clear</span>](#property-clear) ( `clear_flags`: [int](https://docs.godotengine.org/en/latest/classes/class_int.html#class-int) = `0` )</a>  ⇒ <span class="hljs-attribute">[bool](https://docs.godotengine.org/en/latest/classes/class_bool.html#class-bool)</span>** 
+
+
+
+Resets dialogics state fully or partially. By using the clear flags from the `ClearFlags` enum you can specify what info should be kept. For example at timeline end usually it doesn't clear node or subsystem info
+
+---
+
+
+
+<a class="header" id="method-end_timeline" href="#method-end_timeline">**<span class="hljs-attribute">func</span> [<span class="hljs-title">end_timeline</span>](#property-end_timeline) ( )</a>  ⇒ <span style = "color: gray">void</span>** 
+
+
+
+Clears and stops the current timeline.
+
+---
+
+
+
+<a class="header" id="method-get_full_state" href="#method-get_full_state">**<span class="hljs-attribute">func</span> [<span class="hljs-title">get_full_state</span>](#property-get_full_state) ( )</a>  ⇒ <span class="hljs-attribute">[Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html#class-dictionary)</span>** 
+
+
+
+Returns a dictionary containing all necessary information to later recreate the same state with load_full_state. The [Save](subsystem_save.md) subsystem might be more useful for you. However, this can be used to integrate the info into your own save system.
+
+---
+
+
+
+<a class="header" id="method-get_subsystem" href="#method-get_subsystem">**<span class="hljs-attribute">func</span> [<span class="hljs-title">get_subsystem</span>](#property-get_subsystem) ( `subsystem_name`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) )</a>  ⇒ <span class="hljs-attribute">[DialogicSubsystem](class_dialogicsubsystem.md)</span>** 
+
+
+
+Returns the subsystem node of the given `subsystem_name` or null if it doesn't exist.
+
+---
+
+
+
+<a class="header" id="method-handle_event" href="#method-handle_event">**<span class="hljs-attribute">func</span> [<span class="hljs-title">handle_event</span>](#property-handle_event) ( `event_index`: [int](https://docs.godotengine.org/en/latest/classes/class_int.html#class-int) )</a>  ⇒ <span style = "color: gray">void</span>** 
+
+
+
+Handles the event at the given index `event_index`. You can call this manually, but if another event is still executing, it might have unexpected results.
+
+---
+
+
+
+<a class="header" id="method-handle_next_event" href="#method-handle_next_event">**<span class="hljs-attribute">func</span> [<span class="hljs-title">handle_next_event</span>](#property-handle_next_event) ( `ignore_argument`: [Variant](https://docs.godotengine.org/en/latest/classes/class_variant.html#class-variant) = `""` )</a>  ⇒ <span style = "color: gray">void</span>** 
+
+
+
+Handles the next event.
+
+---
+
+
+
+<a class="header" id="method-has_subsystem" href="#method-has_subsystem">**<span class="hljs-attribute">func</span> [<span class="hljs-title">has_subsystem</span>](#property-has_subsystem) ( `subsystem_name`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) )</a>  ⇒ <span class="hljs-attribute">[bool](https://docs.godotengine.org/en/latest/classes/class_bool.html#class-bool)</span>** 
+
+
+
+Returns `true` if a subystem with the given `subsystem_name` exists.
+
+---
+
+
+
+<a class="header" id="method-load_full_state" href="#method-load_full_state">**<span class="hljs-attribute">func</span> [<span class="hljs-title">load_full_state</span>](#property-load_full_state) ( `state_info`: [Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html#class-dictionary) )</a>  ⇒ <span style = "color: gray">void</span>** 
+
+
+
+This method tries to load the state from the given `state_info`. Will automatically start a timeline and add a layout if a timeline was running when the dictionary was retrieved with [get_full_state](#property-get_full_state).
+
+---
+
+
+
+<a class="header" id="method-preload_timeline" href="#method-preload_timeline">**<span class="hljs-attribute">func</span> [<span class="hljs-title">preload_timeline</span>](#property-preload_timeline) ( `timeline_resource`: [Variant](https://docs.godotengine.org/en/latest/classes/class_variant.html#class-variant) )</a>  ⇒ <span class="hljs-attribute">[Variant](https://docs.godotengine.org/en/latest/classes/class_variant.html#class-variant)</span>** 
+
+
+
+Preloader function, prepares a timeline and returns an object to hold for later `timeline_resource` can be either a path (string) or a loaded timeline (resource)
+
+---
+
+
+
+<a class="header" id="method-start" href="#method-start">**<span class="hljs-attribute">func</span> [<span class="hljs-title">start</span>](#property-start) ( `timeline`: [Variant](https://docs.godotengine.org/en/latest/classes/class_variant.html#class-variant), `label`: [Variant](https://docs.godotengine.org/en/latest/classes/class_variant.html#class-variant) = `""` )</a>  ⇒ <span class="hljs-attribute">[Node](https://docs.godotengine.org/en/latest/classes/class_node.html#class-node)</span>** 
+
+
+
+Method to start a timeline AND ensure that a layout scene is present. For argument info, checkout [start_timeline](#property-start_timeline). -> returns the layout node
+
+---
+
+
+
+<a class="header" id="method-start_timeline" href="#method-start_timeline">**<span class="hljs-attribute">func</span> [<span class="hljs-title">start_timeline</span>](#property-start_timeline) ( `timeline`: [Variant](https://docs.godotengine.org/en/latest/classes/class_variant.html#class-variant), `label_or_idx`: [Variant](https://docs.godotengine.org/en/latest/classes/class_variant.html#class-variant) = `""` )</a>  ⇒ <span style = "color: gray">void</span>** 
 
 
 

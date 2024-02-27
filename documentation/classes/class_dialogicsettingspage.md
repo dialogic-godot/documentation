@@ -12,4 +12,16 @@
 ## Properties
 Name | Type | Default 
 --- | --- | --- 
-short_info | [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) |  `""` 
+[<span class="hljs-title">short_info</span>](#property-short_info) | [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) |  `""` 
+## Property Descriptions
+
+
+
+<a class="header" id="property-short_info" href="#property-short_info">**<span class="hljs-attribute">var</span> <span class="hljs-title">short_info</span> <span style = "color: gray"> = </span> ""** 
+
+
+
+ <span style = "color: gray">*No description available.*</span> 
+
+---
+

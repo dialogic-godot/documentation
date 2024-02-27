@@ -15,18 +15,18 @@ Auto-Advance is a feature that automatically advances the timeline after a playe
 ## Properties
 Name | Type | Default 
 --- | --- | --- 
-autoadvance_timer | [Timer](https://docs.godotengine.org/en/latest/classes/class_timer.html#class-timer) |   
-await_playing_voice | [bool](https://docs.godotengine.org/en/latest/classes/class_bool.html#class-bool) |  `true` 
-delay_modifier | [float](https://docs.godotengine.org/en/latest/classes/class_float.html#class-float) |  `1.0` 
-enabled_forced | [bool](https://docs.godotengine.org/en/latest/classes/class_bool.html#class-bool) |  `false` 
-enabled_until_next_event | [bool](https://docs.godotengine.org/en/latest/classes/class_bool.html#class-bool) |  `false` 
-enabled_until_user_input | [bool](https://docs.godotengine.org/en/latest/classes/class_bool.html#class-bool) |  `false` 
-fixed_delay | [float](https://docs.godotengine.org/en/latest/classes/class_float.html#class-float) |  `1.0` 
-ignored_characters | [Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html#class-dictionary) |   
-ignored_characters_enabled | [bool](https://docs.godotengine.org/en/latest/classes/class_bool.html#class-bool) |  `false` 
-override_delay_for_current_event | [float](https://docs.godotengine.org/en/latest/classes/class_float.html#class-float) |  `-1.0` 
-per_character_delay | [float](https://docs.godotengine.org/en/latest/classes/class_float.html#class-float) |  `0.1` 
-per_word_delay | [float](https://docs.godotengine.org/en/latest/classes/class_float.html#class-float) |  `0.0` 
+[<span class="hljs-title">autoadvance_timer</span>](#property-autoadvance_timer) | [Timer](https://docs.godotengine.org/en/latest/classes/class_timer.html#class-timer) |   
+[<span class="hljs-title">await_playing_voice</span>](#property-await_playing_voice) | [bool](https://docs.godotengine.org/en/latest/classes/class_bool.html#class-bool) |  `true` 
+[<span class="hljs-title">delay_modifier</span>](#property-delay_modifier) | [float](https://docs.godotengine.org/en/latest/classes/class_float.html#class-float) |  `1.0` 
+[<span class="hljs-title">enabled_forced</span>](#property-enabled_forced) | [bool](https://docs.godotengine.org/en/latest/classes/class_bool.html#class-bool) |  `false` 
+[<span class="hljs-title">enabled_until_next_event</span>](#property-enabled_until_next_event) | [bool](https://docs.godotengine.org/en/latest/classes/class_bool.html#class-bool) |  `false` 
+[<span class="hljs-title">enabled_until_user_input</span>](#property-enabled_until_user_input) | [bool](https://docs.godotengine.org/en/latest/classes/class_bool.html#class-bool) |  `false` 
+[<span class="hljs-title">fixed_delay</span>](#property-fixed_delay) | [float](https://docs.godotengine.org/en/latest/classes/class_float.html#class-float) |  `1.0` 
+[<span class="hljs-title">ignored_characters</span>](#property-ignored_characters) | [Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html#class-dictionary) |   
+[<span class="hljs-title">ignored_characters_enabled</span>](#property-ignored_characters_enabled) | [bool](https://docs.godotengine.org/en/latest/classes/class_bool.html#class-bool) |  `false` 
+[<span class="hljs-title">override_delay_for_current_event</span>](#property-override_delay_for_current_event) | [float](https://docs.godotengine.org/en/latest/classes/class_float.html#class-float) |  `-1.0` 
+[<span class="hljs-title">per_character_delay</span>](#property-per_character_delay) | [float](https://docs.godotengine.org/en/latest/classes/class_float.html#class-float) |  `0.1` 
+[<span class="hljs-title">per_word_delay</span>](#property-per_word_delay) | [float](https://docs.godotengine.org/en/latest/classes/class_float.html#class-float) |  `0.0` 
 --- 
 
 ## Methods
@@ -65,7 +65,129 @@ Returns | Method
 
 
 
-<a class="header" id="property-get_progress" href="#property-get_progress">**<span class="hljs-attribute">func</span> [<span class="hljs-title">get_progress</span>](#property-get_progress) ( )</a>  ⇒ <span class="hljs-attribute">[float](https://docs.godotengine.org/en/latest/classes/class_float.html#class-float)</span>** 
+<a class="header" id="property-autoadvance_timer" href="#property-autoadvance_timer">**<span class="hljs-attribute">var</span> <span class="hljs-title">autoadvance_timer</span> <span style = "color: gray"> = </span> <unknown>** 
+
+
+
+ <span style = "color: gray">*No description available.*</span> 
+
+---
+
+
+
+<a class="header" id="property-await_playing_voice" href="#property-await_playing_voice">**<span class="hljs-attribute">var</span> <span class="hljs-title">await_playing_voice</span> <span style = "color: gray"> = </span> true** 
+
+
+
+ <span style = "color: gray">*No description available.*</span> 
+
+---
+
+
+
+<a class="header" id="property-delay_modifier" href="#property-delay_modifier">**<span class="hljs-attribute">var</span> <span class="hljs-title">delay_modifier</span> <span style = "color: gray"> = </span> 1.0** 
+
+
+
+ <span style = "color: gray">*No description available.*</span> 
+
+---
+
+
+
+<a class="header" id="property-enabled_forced" href="#property-enabled_forced">**<span class="hljs-attribute">var</span> <span class="hljs-title">enabled_forced</span> <span style = "color: gray"> = </span> false** 
+
+
+
+If true, Auto-Advance will stay enabled until this is set to false.  This boolean can be used to create an automatic text display.  Stacks with `enabled_until_next_event` and `enabled_until_user_input`.
+
+---
+
+
+
+<a class="header" id="property-enabled_until_next_event" href="#property-enabled_until_next_event">**<span class="hljs-attribute">var</span> <span class="hljs-title">enabled_until_next_event</span> <span style = "color: gray"> = </span> false** 
+
+
+
+If true, Auto-Advance will be active until the next event.  Use this flag to create a temporary Auto-Advance mode. You can utilise `override_delay_for_current_event` to set a temporary Auto-Advance delay for this event.  Stacks with `enabled_forced` and `enabled_until_user_input`.
+
+---
+
+
+
+<a class="header" id="property-enabled_until_user_input" href="#property-enabled_until_user_input">**<span class="hljs-attribute">var</span> <span class="hljs-title">enabled_until_user_input</span> <span style = "color: gray"> = </span> false** 
+
+
+
+If true, Auto-Advance will be active until the player presses a button.  Use this flag when the player wants to enable Auto-Advance.  Stacks with `enabled_forced` and `enabled_until_next_event`.
+
+---
+
+
+
+<a class="header" id="property-fixed_delay" href="#property-fixed_delay">**<span class="hljs-attribute">var</span> <span class="hljs-title">fixed_delay</span> <span style = "color: gray"> = </span> 1.0** 
+
+
+
+ <span style = "color: gray">*No description available.*</span> 
+
+---
+
+
+
+<a class="header" id="property-ignored_characters" href="#property-ignored_characters">**<span class="hljs-attribute">var</span> <span class="hljs-title">ignored_characters</span> <span style = "color: gray"> = </span> <unknown>** 
+
+
+
+ <span style = "color: gray">*No description available.*</span> 
+
+---
+
+
+
+<a class="header" id="property-ignored_characters_enabled" href="#property-ignored_characters_enabled">**<span class="hljs-attribute">var</span> <span class="hljs-title">ignored_characters_enabled</span> <span style = "color: gray"> = </span> false** 
+
+
+
+ <span style = "color: gray">*No description available.*</span> 
+
+---
+
+
+
+<a class="header" id="property-override_delay_for_current_event" href="#property-override_delay_for_current_event">**<span class="hljs-attribute">var</span> <span class="hljs-title">override_delay_for_current_event</span> <span style = "color: gray"> = </span> -1.0** 
+
+
+
+ <span style = "color: gray">*No description available.*</span> 
+
+---
+
+
+
+<a class="header" id="property-per_character_delay" href="#property-per_character_delay">**<span class="hljs-attribute">var</span> <span class="hljs-title">per_character_delay</span> <span style = "color: gray"> = </span> 0.1** 
+
+
+
+ <span style = "color: gray">*No description available.*</span> 
+
+---
+
+
+
+<a class="header" id="property-per_word_delay" href="#property-per_word_delay">**<span class="hljs-attribute">var</span> <span class="hljs-title">per_word_delay</span> <span style = "color: gray"> = </span> 0.0** 
+
+
+
+ <span style = "color: gray">*No description available.*</span> 
+
+---
+
+## Methods Descriptions
+
+
+
+<a class="header" id="method-get_progress" href="#method-get_progress">**<span class="hljs-attribute">func</span> [<span class="hljs-title">get_progress</span>](#property-get_progress) ( )</a>  ⇒ <span class="hljs-attribute">[float](https://docs.godotengine.org/en/latest/classes/class_float.html#class-float)</span>** 
 
 
 
@@ -75,7 +197,7 @@ Returns the progress of the auto-advance timer on a scale between 0 and 1. The h
 
 
 
-<a class="header" id="property-get_time" href="#property-get_time">**<span class="hljs-attribute">func</span> [<span class="hljs-title">get_time</span>](#property-get_time) ( )</a>  ⇒ <span class="hljs-attribute">[float](https://docs.godotengine.org/en/latest/classes/class_float.html#class-float)</span>** 
+<a class="header" id="method-get_time" href="#method-get_time">**<span class="hljs-attribute">func</span> [<span class="hljs-title">get_time</span>](#property-get_time) ( )</a>  ⇒ <span class="hljs-attribute">[float](https://docs.godotengine.org/en/latest/classes/class_float.html#class-float)</span>** 
 
 
 
@@ -85,7 +207,7 @@ Returns the progress of the auto-advance timer on a scale between 0 and 1. The h
 
 
 
-<a class="header" id="property-get_time_left" href="#property-get_time_left">**<span class="hljs-attribute">func</span> [<span class="hljs-title">get_time_left</span>](#property-get_time_left) ( )</a>  ⇒ <span class="hljs-attribute">[float](https://docs.godotengine.org/en/latest/classes/class_float.html#class-float)</span>** 
+<a class="header" id="method-get_time_left" href="#method-get_time_left">**<span class="hljs-attribute">func</span> [<span class="hljs-title">get_time_left</span>](#property-get_time_left) ( )</a>  ⇒ <span class="hljs-attribute">[float](https://docs.godotengine.org/en/latest/classes/class_float.html#class-float)</span>** 
 
 
 
@@ -95,7 +217,7 @@ Returns the progress of the auto-advance timer on a scale between 0 and 1. The h
 
 
 
-<a class="header" id="property-is_advancing" href="#property-is_advancing">**<span class="hljs-attribute">func</span> [<span class="hljs-title">is_advancing</span>](#property-is_advancing) ( )</a>  ⇒ <span class="hljs-attribute">[bool](https://docs.godotengine.org/en/latest/classes/class_bool.html#class-bool)</span>** 
+<a class="header" id="method-is_advancing" href="#method-is_advancing">**<span class="hljs-attribute">func</span> [<span class="hljs-title">is_advancing</span>](#property-is_advancing) ( )</a>  ⇒ <span class="hljs-attribute">[bool](https://docs.godotengine.org/en/latest/classes/class_bool.html#class-bool)</span>** 
 
 
 
@@ -105,7 +227,7 @@ Returns the progress of the auto-advance timer on a scale between 0 and 1. The h
 
 
 
-<a class="header" id="property-is_enabled" href="#property-is_enabled">**<span class="hljs-attribute">func</span> [<span class="hljs-title">is_enabled</span>](#property-is_enabled) ( )</a>  ⇒ <span class="hljs-attribute">[bool](https://docs.godotengine.org/en/latest/classes/class_bool.html#class-bool)</span>** 
+<a class="header" id="method-is_enabled" href="#method-is_enabled">**<span class="hljs-attribute">func</span> [<span class="hljs-title">is_enabled</span>](#property-is_enabled) ( )</a>  ⇒ <span class="hljs-attribute">[bool](https://docs.godotengine.org/en/latest/classes/class_bool.html#class-bool)</span>** 
 
 
 
@@ -115,7 +237,7 @@ Returns whether Auto-Advance is currently considered enabled. Auto-Advance uses 
 
 
 
-<a class="header" id="property-start" href="#property-start">**<span class="hljs-attribute">func</span> [<span class="hljs-title">start</span>](#property-start) ( )</a>  ⇒ <span style = "color: gray">void</span>** 
+<a class="header" id="method-start" href="#method-start">**<span class="hljs-attribute">func</span> [<span class="hljs-title">start</span>](#property-start) ( )</a>  ⇒ <span style = "color: gray">void</span>** 
 
 
 

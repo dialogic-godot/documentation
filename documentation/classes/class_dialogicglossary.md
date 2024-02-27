@@ -12,8 +12,8 @@ Resource used to store glossary entries. Can be saved to disc and used as a glos
 ## Properties
 Name | Type | Default 
 --- | --- | --- 
-enabled | [bool](https://docs.godotengine.org/en/latest/classes/class_bool.html#class-bool) |  `true` 
-entries | [Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html#class-dictionary) |   
+[<span class="hljs-title">enabled</span>](#property-enabled) | [bool](https://docs.godotengine.org/en/latest/classes/class_bool.html#class-bool) |  `true` 
+[<span class="hljs-title">entries</span>](#property-entries) | [Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html#class-dictionary) |   
 --- 
 
 ## Methods
@@ -128,7 +128,29 @@ Returns | Method
 
 
 
-<a class="header" id="property-add_translation_id" href="#property-add_translation_id">**<span class="hljs-attribute">func</span> [<span class="hljs-title">add_translation_id</span>](#property-add_translation_id) ( )</a>  ⇒ <span class="hljs-attribute">[String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string)</span>** 
+<a class="header" id="property-enabled" href="#property-enabled">**<span class="hljs-attribute">var</span> <span class="hljs-title">enabled</span> <span style = "color: gray"> = </span> true** 
+
+
+
+If false, no entries from this glossary will be shown
+
+---
+
+
+
+<a class="header" id="property-entries" href="#property-entries">**<span class="hljs-attribute">var</span> <span class="hljs-title">entries</span> <span style = "color: gray"> = </span> <unknown>** 
+
+
+
+Stores all entries for the glossary.  The value may either be a dictionary, representing an entry, or a string, representing the actual key for the key used. The string key-value pairs are the alias keys, they allow to redirect the actual glossary entry.
+
+---
+
+## Methods Descriptions
+
+
+
+<a class="header" id="method-add_translation_id" href="#method-add_translation_id">**<span class="hljs-attribute">func</span> [<span class="hljs-title">add_translation_id</span>](#property-add_translation_id) ( )</a>  ⇒ <span class="hljs-attribute">[String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string)</span>** 
 
 
 
@@ -138,7 +160,7 @@ This is automatically called, no need to use this.
 
 
 
-<a class="header" id="property-clear_translation_keys" href="#property-clear_translation_keys">**<span class="hljs-attribute">func</span> [<span class="hljs-title">clear_translation_keys</span>](#property-clear_translation_keys) ( )</a>  ⇒ <span style = "color: gray">void</span>** 
+<a class="header" id="method-clear_translation_keys" href="#method-clear_translation_keys">**<span class="hljs-attribute">func</span> [<span class="hljs-title">clear_translation_keys</span>](#property-clear_translation_keys) ( )</a>  ⇒ <span style = "color: gray">void</span>** 
 
 
 
@@ -148,7 +170,7 @@ Clears the lookup tables using translation keys.
 
 
 
-<a class="header" id="property-get_entry" href="#property-get_entry">**<span class="hljs-attribute">func</span> [<span class="hljs-title">get_entry</span>](#property-get_entry) ( `entry_key`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) )</a>  ⇒ <span class="hljs-attribute">[Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html#class-dictionary)</span>** 
+<a class="header" id="method-get_entry" href="#method-get_entry">**<span class="hljs-attribute">func</span> [<span class="hljs-title">get_entry</span>](#property-get_entry) ( `entry_key`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) )</a>  ⇒ <span class="hljs-attribute">[Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html#class-dictionary)</span>** 
 
 
 
@@ -158,7 +180,7 @@ Gets the glossary entry for the given `entry_key`. If there is no matching entry
 
 
 
-<a class="header" id="property-get_property_translation_key" href="#property-get_property_translation_key">**<span class="hljs-attribute">func</span> [<span class="hljs-title">get_property_translation_key</span>](#property-get_property_translation_key) ( `entry_key`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string), `property`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) )</a>  ⇒ <span class="hljs-attribute">[String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string)</span>** 
+<a class="header" id="method-get_property_translation_key" href="#method-get_property_translation_key">**<span class="hljs-attribute">func</span> [<span class="hljs-title">get_property_translation_key</span>](#property-get_property_translation_key) ( `entry_key`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string), `property`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) )</a>  ⇒ <span class="hljs-attribute">[String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string)</span>** 
 
 
 
@@ -168,7 +190,7 @@ Returns a key used to reference this glossary in the translation CSV file.  Time
 
 
 
-<a class="header" id="property-get_set_glossary_entry_translation_id" href="#property-get_set_glossary_entry_translation_id">**<span class="hljs-attribute">func</span> [<span class="hljs-title">get_set_glossary_entry_translation_id</span>](#property-get_set_glossary_entry_translation_id) ( `entry_key`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) )</a>  ⇒ <span class="hljs-attribute">[String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string)</span>** 
+<a class="header" id="method-get_set_glossary_entry_translation_id" href="#method-get_set_glossary_entry_translation_id">**<span class="hljs-attribute">func</span> [<span class="hljs-title">get_set_glossary_entry_translation_id</span>](#property-get_set_glossary_entry_translation_id) ( `entry_key`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) )</a>  ⇒ <span class="hljs-attribute">[String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string)</span>** 
 
 
 
@@ -178,7 +200,7 @@ Tries to get the glossary entry's translation ID. If it does not exist, a new on
 
 
 
-<a class="header" id="property-get_set_glossary_translation_id" href="#property-get_set_glossary_translation_id">**<span class="hljs-attribute">func</span> [<span class="hljs-title">get_set_glossary_translation_id</span>](#property-get_set_glossary_translation_id) ( )</a>  ⇒ <span class="hljs-attribute">[String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string)</span>** 
+<a class="header" id="method-get_set_glossary_translation_id" href="#method-get_set_glossary_translation_id">**<span class="hljs-attribute">func</span> [<span class="hljs-title">get_set_glossary_translation_id</span>](#property-get_set_glossary_translation_id) ( )</a>  ⇒ <span class="hljs-attribute">[String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string)</span>** 
 
 
 
@@ -188,7 +210,7 @@ Tries to get the glossary's translation ID. If it does not exist, a new one will
 
 
 
-<a class="header" id="property-get_set_regex_option" href="#property-get_set_regex_option">**<span class="hljs-attribute">func</span> [<span class="hljs-title">get_set_regex_option</span>](#property-get_set_regex_option) ( `entry_key`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) )</a>  ⇒ <span class="hljs-attribute">[String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string)</span>** 
+<a class="header" id="method-get_set_regex_option" href="#method-get_set_regex_option">**<span class="hljs-attribute">func</span> [<span class="hljs-title">get_set_regex_option</span>](#property-get_set_regex_option) ( `entry_key`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) )</a>  ⇒ <span class="hljs-attribute">[String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string)</span>** 
 
 
 
@@ -198,7 +220,7 @@ Gets the regex option for the given `entry_key`. If the regex option does not ex
 
 
 
-<a class="header" id="property-get_word_translation_key" href="#property-get_word_translation_key">**<span class="hljs-attribute">func</span> [<span class="hljs-title">get_word_translation_key</span>](#property-get_word_translation_key) ( `word`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) )</a>  ⇒ <span class="hljs-attribute">[String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string)</span>** 
+<a class="header" id="method-get_word_translation_key" href="#method-get_word_translation_key">**<span class="hljs-attribute">func</span> [<span class="hljs-title">get_word_translation_key</span>](#property-get_word_translation_key) ( `word`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) )</a>  ⇒ <span class="hljs-attribute">[String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string)</span>** 
 
 
 
@@ -208,7 +230,7 @@ Returns the matching translation key for the given `word`. This key can be used 
 
 
 
-<a class="header" id="property-remove_entry" href="#property-remove_entry">**<span class="hljs-attribute">func</span> [<span class="hljs-title">remove_entry</span>](#property-remove_entry) ( `entry_key`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) )</a>  ⇒ <span class="hljs-attribute">[bool](https://docs.godotengine.org/en/latest/classes/class_bool.html#class-bool)</span>** 
+<a class="header" id="method-remove_entry" href="#method-remove_entry">**<span class="hljs-attribute">func</span> [<span class="hljs-title">remove_entry</span>](#property-remove_entry) ( `entry_key`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) )</a>  ⇒ <span class="hljs-attribute">[bool](https://docs.godotengine.org/en/latest/classes/class_bool.html#class-bool)</span>** 
 
 
 
@@ -218,7 +240,7 @@ Removes an entry and all its aliases (alternative property) from the glossary. `
 
 
 
-<a class="header" id="property-remove_entry_translation_ids" href="#property-remove_entry_translation_ids">**<span class="hljs-attribute">func</span> [<span class="hljs-title">remove_entry_translation_ids</span>](#property-remove_entry_translation_ids) ( )</a>  ⇒ <span style = "color: gray">void</span>** 
+<a class="header" id="method-remove_entry_translation_ids" href="#method-remove_entry_translation_ids">**<span class="hljs-attribute">func</span> [<span class="hljs-title">remove_entry_translation_ids</span>](#property-remove_entry_translation_ids) ( )</a>  ⇒ <span style = "color: gray">void</span>** 
 
 
 
@@ -228,7 +250,7 @@ Removes the translation ID of all glossary entries.
 
 
 
-<a class="header" id="property-remove_translation_id" href="#property-remove_translation_id">**<span class="hljs-attribute">func</span> [<span class="hljs-title">remove_translation_id</span>](#property-remove_translation_id) ( )</a>  ⇒ <span style = "color: gray">void</span>** 
+<a class="header" id="method-remove_translation_id" href="#method-remove_translation_id">**<span class="hljs-attribute">func</span> [<span class="hljs-title">remove_translation_id</span>](#property-remove_translation_id) ( )</a>  ⇒ <span style = "color: gray">void</span>** 
 
 
 
@@ -238,7 +260,7 @@ Removes the translation ID of this glossary.
 
 
 
-<a class="header" id="property-replace_entry_key" href="#property-replace_entry_key">**<span class="hljs-attribute">func</span> [<span class="hljs-title">replace_entry_key</span>](#property-replace_entry_key) ( `old_entry_key`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string), `new_entry_key`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) )</a>  ⇒ <span style = "color: gray">void</span>** 
+<a class="header" id="method-replace_entry_key" href="#method-replace_entry_key">**<span class="hljs-attribute">func</span> [<span class="hljs-title">replace_entry_key</span>](#property-replace_entry_key) ( `old_entry_key`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string), `new_entry_key`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) )</a>  ⇒ <span style = "color: gray">void</span>** 
 
 
 
@@ -248,7 +270,7 @@ Do not use this to update alternative names. In order to update alternative name
 
 
 
-<a class="header" id="property-try_add_entry" href="#property-try_add_entry">**<span class="hljs-attribute">func</span> [<span class="hljs-title">try_add_entry</span>](#property-try_add_entry) ( `entry`: [Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html#class-dictionary) )</a>  ⇒ <span class="hljs-attribute">[bool](https://docs.godotengine.org/en/latest/classes/class_bool.html#class-bool)</span>** 
+<a class="header" id="method-try_add_entry" href="#method-try_add_entry">**<span class="hljs-attribute">func</span> [<span class="hljs-title">try_add_entry</span>](#property-try_add_entry) ( `entry`: [Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html#class-dictionary) )</a>  ⇒ <span class="hljs-attribute">[bool](https://docs.godotengine.org/en/latest/classes/class_bool.html#class-bool)</span>** 
 
 
 
