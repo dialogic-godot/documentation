@@ -78,44 +78,44 @@ func set_player_name(name: String) -> void:
 
 There is no rule for the `key`'s value; being consistent is good, though.
 
-If you are interested in storing the history of already-seen text, take a look at the next chapter.
+If you are interested in storing the history of visited text, take a look at the next chapter.
 
 
-### 1.4 Saving Already-Seen Events
+### 1.4 Saving Visited Events
 
 When you play a visual novel and use multiple saves, you may find yourself discovering texts you already read, even on entirely different story branches. \
-By default, Dialogic does *not* save the events players have already seen; however, there are two main ways to get it working.
+By default, Dialogic does *not* save the events players have already visited; however, there are two main ways to get it working.
 
-1. The first approach is via the Dialogic Editor. Head to the `Settings` tab and select `History`. From here on, you can decide if you want the already-seen events must auto-save.\
+1. The first approach is via the Dialogic Editor. Head to the `Settings` tab and select `History`. From here on, you can decide if you want the already-visited events must auto-save.\
 
 2. This approach is a bit different: The following snippet will manually save the history to a file.
-Use this in case the player reached the end of the game (credits?) and you want to ensure that the seen-events are
+Use this in case the player reached the end of the game (credits?) and you want to ensure that the visited-events are
 properly updated a last time.
 
 ```gdscript
 var slot_name := "slot-3-page-2"
 
 func _save_game() -> void:
-     Dialogic.History.save_already_seen_history()
+     Dialogic.History.save_visited_history()
      Dialogic.Save.save(slot_name)
 
 func _load_game() -> void:
-     Dialogic.History.load_already_seen_history()
+     Dialogic.History.load_visited_history()
      Dialogic.Save.load(slot_name)
 
-func _reset_seen_history() -> void:
-     Dialogic.History.reset_already_seen_history()
+func _reset_visited_history() -> void:
+     Dialogic.History.reset_already_visited_history()
 ```
 
 If you prefer to set the configuration from `1.`, take a look at the following snippet:
 
 ```gdscript
 func _ready() -> void:
-    Dialogic.History.save_already_seen_history_on_save = true
-    Dialogic.History.save_already_seen_history_on_autosave = true
+    Dialogic.History.save_already_visited_history_on_save = true
+    Dialogic.History.save_already_visited_history_on_autosave = true
 ```
 
-The example values will cause the already-seen history to automatically save
+The example values will cause the visited event history to automatically save
 on Auto-Save and normal Saves.
 
 
