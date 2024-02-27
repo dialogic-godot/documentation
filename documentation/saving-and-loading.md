@@ -69,7 +69,9 @@ Dialogic.Save.save(slot_name, false, Dialogic.Save.ThumbnailMode.STORE_ONLY, ext
 
 ### 1.3 Global data
 
-The simple approach to store your game data slot-indepently is to use the `Dialogic.Settings` subsystem.\
+
+
+The simple approach to store your game data slot-independently is to use the `Dialogic.Settings` subsystem.\
 You can directly store the information on it:
 ```gdscript
 Dialogic.Settings.text_speed = 0.05
