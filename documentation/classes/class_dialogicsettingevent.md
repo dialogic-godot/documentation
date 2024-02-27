@@ -12,9 +12,9 @@
 ## Properties
 Name | Type | Default 
 --- | --- | --- 
-mode | [int](https://docs.godotengine.org/en/latest/classes/class_int.html#class-int) |  `0` 
-name | [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) |  `""` 
-value | [Variant](https://docs.godotengine.org/en/latest/classes/class_variant.html#class-variant) |  `""` 
+[<span class="hljs-title">mode</span>](#property-mode) | [int](https://docs.godotengine.org/en/latest/classes/class_int.html#class-int) |  `0` 
+[<span class="hljs-title">name</span>](#property-name) | [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) |  `""` 
+[<span class="hljs-title">value</span>](#property-value) | [Variant](https://docs.godotengine.org/en/latest/classes/class_variant.html#class-variant) |  `""` 
 --- 
 
 ## Methods
@@ -95,7 +95,7 @@ Returns | Method
 
 
 
-<a class="header" id="property-build_event_editor" href="#property-build_event_editor">**<span class="hljs-attribute">func</span> [<span class="hljs-title">build_event_editor</span>](#property-build_event_editor) ( )</a>  ⇒ <span style = "color: gray">void</span>** 
+<a class="header" id="property-mode" href="#property-mode">**<span class="hljs-attribute">var</span> <span class="hljs-title">mode</span> <span style = "color: gray"> = </span> 0** 
 
 
 
@@ -105,7 +105,29 @@ Returns | Method
 
 
 
-<a class="header" id="property-from_text" href="#property-from_text">**<span class="hljs-attribute">func</span> [<span class="hljs-title">from_text</span>](#property-from_text) ( `string`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) )</a>  ⇒ <span style = "color: gray">void</span>** 
+<a class="header" id="property-name" href="#property-name">**<span class="hljs-attribute">var</span> <span class="hljs-title">name</span> <span style = "color: gray"> = </span> ""** 
+
+
+
+The name of the setting to save to.
+
+---
+
+
+
+<a class="header" id="property-value" href="#property-value">**<span class="hljs-attribute">var</span> <span class="hljs-title">value</span> <span style = "color: gray"> = </span> ""** 
+
+
+
+ <span style = "color: gray">*No description available.*</span> 
+
+---
+
+## Methods Descriptions
+
+
+
+<a class="header" id="method-build_event_editor" href="#method-build_event_editor">**<span class="hljs-attribute">func</span> [<span class="hljs-title">build_event_editor</span>](#property-build_event_editor) ( )</a>  ⇒ <span style = "color: gray">void</span>** 
 
 
 
@@ -115,7 +137,7 @@ Returns | Method
 
 
 
-<a class="header" id="property-get_settings_suggestions" href="#property-get_settings_suggestions">**<span class="hljs-attribute">func</span> [<span class="hljs-title">get_settings_suggestions</span>](#property-get_settings_suggestions) ( `filter`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) )</a>  ⇒ <span class="hljs-attribute">[Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html#class-dictionary)</span>** 
+<a class="header" id="method-from_text" href="#method-from_text">**<span class="hljs-attribute">func</span> [<span class="hljs-title">from_text</span>](#property-from_text) ( `string`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) )</a>  ⇒ <span style = "color: gray">void</span>** 
 
 
 
@@ -125,7 +147,7 @@ Returns | Method
 
 
 
-<a class="header" id="property-get_value_suggestions" href="#property-get_value_suggestions">**<span class="hljs-attribute">func</span> [<span class="hljs-title">get_value_suggestions</span>](#property-get_value_suggestions) ( `filter`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) )</a>  ⇒ <span class="hljs-attribute">[Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html#class-dictionary)</span>** 
+<a class="header" id="method-get_settings_suggestions" href="#method-get_settings_suggestions">**<span class="hljs-attribute">func</span> [<span class="hljs-title">get_settings_suggestions</span>](#property-get_settings_suggestions) ( `filter`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) )</a>  ⇒ <span class="hljs-attribute">[Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html#class-dictionary)</span>** 
 
 
 
@@ -135,7 +157,7 @@ Returns | Method
 
 
 
-<a class="header" id="property-is_valid_event" href="#property-is_valid_event">**<span class="hljs-attribute">func</span> [<span class="hljs-title">is_valid_event</span>](#property-is_valid_event) ( `string`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) )</a>  ⇒ <span class="hljs-attribute">[bool](https://docs.godotengine.org/en/latest/classes/class_bool.html#class-bool)</span>** 
+<a class="header" id="method-get_value_suggestions" href="#method-get_value_suggestions">**<span class="hljs-attribute">func</span> [<span class="hljs-title">get_value_suggestions</span>](#property-get_value_suggestions) ( `filter`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) )</a>  ⇒ <span class="hljs-attribute">[Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html#class-dictionary)</span>** 
 
 
 
@@ -145,7 +167,17 @@ Returns | Method
 
 
 
-<a class="header" id="property-to_text" href="#property-to_text">**<span class="hljs-attribute">func</span> [<span class="hljs-title">to_text</span>](#property-to_text) ( )</a>  ⇒ <span class="hljs-attribute">[String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string)</span>** 
+<a class="header" id="method-is_valid_event" href="#method-is_valid_event">**<span class="hljs-attribute">func</span> [<span class="hljs-title">is_valid_event</span>](#property-is_valid_event) ( `string`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) )</a>  ⇒ <span class="hljs-attribute">[bool](https://docs.godotengine.org/en/latest/classes/class_bool.html#class-bool)</span>** 
+
+
+
+ <span style = "color: gray">*No description available.*</span> 
+
+---
+
+
+
+<a class="header" id="method-to_text" href="#method-to_text">**<span class="hljs-attribute">func</span> [<span class="hljs-title">to_text</span>](#property-to_text) ( )</a>  ⇒ <span class="hljs-attribute">[String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string)</span>** 
 
 
 

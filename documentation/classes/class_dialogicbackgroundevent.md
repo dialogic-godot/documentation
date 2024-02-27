@@ -12,10 +12,10 @@
 ## Properties
 Name | Type | Default 
 --- | --- | --- 
-argument | [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) |  `""` 
-fade | [float](https://docs.godotengine.org/en/latest/classes/class_float.html#class-float) |  `0.0` 
-scene | [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) |  `""` 
-transition | [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) |  `""` 
+[<span class="hljs-title">argument</span>](#property-argument) | [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) |  `""` 
+[<span class="hljs-title">fade</span>](#property-fade) | [float](https://docs.godotengine.org/en/latest/classes/class_float.html#class-float) |  `0.0` 
+[<span class="hljs-title">scene</span>](#property-scene) | [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) |  `""` 
+[<span class="hljs-title">transition</span>](#property-transition) | [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) |  `""` 
 --- 
 
 ## Methods
@@ -67,7 +67,49 @@ Returns | Method
 
 
 
-<a class="header" id="property-build_event_editor" href="#property-build_event_editor">**<span class="hljs-attribute">func</span> [<span class="hljs-title">build_event_editor</span>](#property-build_event_editor) ( )</a>  ⇒ <span style = "color: gray">void</span>** 
+<a class="header" id="property-argument" href="#property-argument">**<span class="hljs-attribute">var</span> <span class="hljs-title">argument</span> <span style = "color: gray"> = </span> ""** 
+
+
+
+The argument that is passed to the background scene. For the default scene it's the path to the image to show.
+
+---
+
+
+
+<a class="header" id="property-fade" href="#property-fade">**<span class="hljs-attribute">var</span> <span class="hljs-title">fade</span> <span style = "color: gray"> = </span> 0.0** 
+
+
+
+The time the fade animation will take. Leave at 0 for instant change.
+
+---
+
+
+
+<a class="header" id="property-scene" href="#property-scene">**<span class="hljs-attribute">var</span> <span class="hljs-title">scene</span> <span style = "color: gray"> = </span> ""** 
+
+
+
+The scene to use. If empty, this will default to the DefaultBackground.gd scene. This scene supports images and fading. If you set it to a scene path, then that scene will be instanced. Learn more about custom backgrounds in the Subsystem_Background.gd docs.
+
+---
+
+
+
+<a class="header" id="property-transition" href="#property-transition">**<span class="hljs-attribute">var</span> <span class="hljs-title">transition</span> <span style = "color: gray"> = </span> ""** 
+
+
+
+Name of the transition to use.
+
+---
+
+## Methods Descriptions
+
+
+
+<a class="header" id="method-build_event_editor" href="#method-build_event_editor">**<span class="hljs-attribute">func</span> [<span class="hljs-title">build_event_editor</span>](#property-build_event_editor) ( )</a>  ⇒ <span style = "color: gray">void</span>** 
 
 
 
@@ -77,7 +119,7 @@ Returns | Method
 
 
 
-<a class="header" id="property-get_shortcode" href="#property-get_shortcode">**<span class="hljs-attribute">func</span> [<span class="hljs-title">get_shortcode</span>](#property-get_shortcode) ( )</a>  ⇒ <span class="hljs-attribute">[String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string)</span>** 
+<a class="header" id="method-get_shortcode" href="#method-get_shortcode">**<span class="hljs-attribute">func</span> [<span class="hljs-title">get_shortcode</span>](#property-get_shortcode) ( )</a>  ⇒ <span class="hljs-attribute">[String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string)</span>** 
 
 
 
@@ -87,7 +129,7 @@ Returns | Method
 
 
 
-<a class="header" id="property-get_shortcode_parameters" href="#property-get_shortcode_parameters">**<span class="hljs-attribute">func</span> [<span class="hljs-title">get_shortcode_parameters</span>](#property-get_shortcode_parameters) ( )</a>  ⇒ <span class="hljs-attribute">[Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html#class-dictionary)</span>** 
+<a class="header" id="method-get_shortcode_parameters" href="#method-get_shortcode_parameters">**<span class="hljs-attribute">func</span> [<span class="hljs-title">get_shortcode_parameters</span>](#property-get_shortcode_parameters) ( )</a>  ⇒ <span class="hljs-attribute">[Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html#class-dictionary)</span>** 
 
 
 
@@ -97,7 +139,7 @@ Returns | Method
 
 
 
-<a class="header" id="property-get_transition_suggestions" href="#property-get_transition_suggestions">**<span class="hljs-attribute">func</span> [<span class="hljs-title">get_transition_suggestions</span>](#property-get_transition_suggestions) ( `filter`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) = `""` )</a>  ⇒ <span class="hljs-attribute">[Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html#class-dictionary)</span>** 
+<a class="header" id="method-get_transition_suggestions" href="#method-get_transition_suggestions">**<span class="hljs-attribute">func</span> [<span class="hljs-title">get_transition_suggestions</span>](#property-get_transition_suggestions) ( `filter`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) = `""` )</a>  ⇒ <span class="hljs-attribute">[Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html#class-dictionary)</span>** 
 
 
 

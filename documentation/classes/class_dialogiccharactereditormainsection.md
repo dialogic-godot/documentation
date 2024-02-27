@@ -12,8 +12,8 @@ Base class for all character editor main sections. Methods should be overriden.
 ## Properties
 Name | Type | Default 
 --- | --- | --- 
-character_editor | [Control](https://docs.godotengine.org/en/latest/classes/class_control.html#class-control) |   
-hint_text | [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) |  `""` 
+[<span class="hljs-title">character_editor</span>](#property-character_editor) | [Control](https://docs.godotengine.org/en/latest/classes/class_control.html#class-control) |   
+[<span class="hljs-title">hint_text</span>](#property-hint_text) | [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) |  `""` 
 
 ## Signals
 
@@ -23,6 +23,28 @@ hint_text | [String](https://docs.godotengine.org/en/latest/classes/class_string
 
 
 Emit this, if something changed
+
+---
+
+## Property Descriptions
+
+
+
+<a class="header" id="property-character_editor" href="#property-character_editor">**<span class="hljs-attribute">var</span> <span class="hljs-title">character_editor</span>** 
+
+
+
+Reference to the character editor, set when instantiated
+
+---
+
+
+
+<a class="header" id="property-hint_text" href="#property-hint_text">**<span class="hljs-attribute">var</span> <span class="hljs-title">hint_text</span> <span style = "color: gray"> = </span> ""** 
+
+
+
+If not empty, a hint icon is added to the section title.
 
 ---
 

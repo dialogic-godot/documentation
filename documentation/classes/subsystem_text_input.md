@@ -1,11 +1,11 @@
 
 <div class="header-banner purple">
-<div class="header-label purple">subsystem_text_input</div>
+<div class="header-label purple">subsystem_Text_input</div>
 </div>
 
-*This contains the source code documentation of the class `subsystem_text_input`.*
+*This contains the source code documentation of the class `subsystem_Text_input`.*
         
-# subsystem_text_input
+# subsystem_Text_input
 **Inherits:** [DialogicSubsystem](class_dialogicsubsystem.md)
 
 Subsystem that handles showing of input promts.
@@ -40,21 +40,11 @@ Signal that is fired when a confirmation button was pressed.
 
 ---
 
-## Property Descriptions
+## Methods Descriptions
 
 
 
-<a class="header" id="property-clear_game_state" href="#property-clear_game_state">**<span class="hljs-attribute">func</span> [<span class="hljs-title">clear_game_state</span>](#property-clear_game_state) ( `clear_flag`: [int](https://docs.godotengine.org/en/latest/classes/class_int.html#class-int) = `0` )</a>  ⇒ <span style = "color: gray">void</span>** 
-
-
-
- <span style = "color: gray">*No description available.*</span> 
-
----
-
-
-
-<a class="header" id="property-hide_text_input" href="#property-hide_text_input">**<span class="hljs-attribute">func</span> [<span class="hljs-title">hide_text_input</span>](#property-hide_text_input) ( )</a>  ⇒ <span style = "color: gray">void</span>** 
+<a class="header" id="method-clear_game_state" href="#method-clear_game_state">**<span class="hljs-attribute">func</span> [<span class="hljs-title">clear_game_state</span>](#property-clear_game_state) ( `clear_flag`: [int](https://docs.godotengine.org/en/latest/classes/class_int.html#class-int) = `0` )</a>  ⇒ <span style = "color: gray">void</span>** 
 
 
 
@@ -64,7 +54,17 @@ Signal that is fired when a confirmation button was pressed.
 
 
 
-<a class="header" id="property-show_text_input" href="#property-show_text_input">**<span class="hljs-attribute">func</span> [<span class="hljs-title">show_text_input</span>](#property-show_text_input) ( `text`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) = `""`, `default`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) = `""`, `placeholder`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) = `""`, `allow_empty`: [bool](https://docs.godotengine.org/en/latest/classes/class_bool.html#class-bool) = `false` )</a>  ⇒ <span style = "color: gray">void</span>** 
+<a class="header" id="method-hide_text_input" href="#method-hide_text_input">**<span class="hljs-attribute">func</span> [<span class="hljs-title">hide_text_input</span>](#property-hide_text_input) ( )</a>  ⇒ <span style = "color: gray">void</span>** 
+
+
+
+ <span style = "color: gray">*No description available.*</span> 
+
+---
+
+
+
+<a class="header" id="method-show_text_input" href="#method-show_text_input">**<span class="hljs-attribute">func</span> [<span class="hljs-title">show_text_input</span>](#property-show_text_input) ( `text`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) = `""`, `default`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) = `""`, `placeholder`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) = `""`, `allow_empty`: [bool](https://docs.godotengine.org/en/latest/classes/class_bool.html#class-bool) = `false` )</a>  ⇒ <span style = "color: gray">void</span>** 
 
 
 

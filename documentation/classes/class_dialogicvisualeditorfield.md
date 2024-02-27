@@ -12,8 +12,8 @@
 ## Properties
 Name | Type | Default 
 --- | --- | --- 
-event_resource | [DialogicEvent](class_dialogicevent.md) |  `null` 
-property_name | [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) |  `""` 
+[<span class="hljs-title">event_resource</span>](#property-event_resource) | [DialogicEvent](class_dialogicevent.md) |  `null` 
+[<span class="hljs-title">property_name</span>](#property-property_name) | [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) |  `""` 
 --- 
 
 ## Methods
@@ -38,7 +38,7 @@ Returns | Method
 
 
 
-<a class="header" id="property-set_value" href="#property-set_value">**<span class="hljs-attribute">func</span> [<span class="hljs-title">set_value</span>](#property-set_value) ( `value`: [Variant](https://docs.godotengine.org/en/latest/classes/class_variant.html#class-variant) )</a>  ⇒ <span style = "color: gray">void</span>** 
+<a class="header" id="property-event_resource" href="#property-event_resource">**<span class="hljs-attribute">var</span> <span class="hljs-title">event_resource</span> <span style = "color: gray"> = </span> null** 
 
 
 
@@ -48,7 +48,29 @@ Returns | Method
 
 
 
-<a class="header" id="property-take_autofocus" href="#property-take_autofocus">**<span class="hljs-attribute">func</span> [<span class="hljs-title">take_autofocus</span>](#property-take_autofocus) ( )</a>  ⇒ <span style = "color: gray">void</span>** 
+<a class="header" id="property-property_name" href="#property-property_name">**<span class="hljs-attribute">var</span> <span class="hljs-title">property_name</span> <span style = "color: gray"> = </span> ""** 
+
+
+
+ <span style = "color: gray">*No description available.*</span> 
+
+---
+
+## Methods Descriptions
+
+
+
+<a class="header" id="method-set_value" href="#method-set_value">**<span class="hljs-attribute">func</span> [<span class="hljs-title">set_value</span>](#property-set_value) ( `value`: [Variant](https://docs.godotengine.org/en/latest/classes/class_variant.html#class-variant) )</a>  ⇒ <span style = "color: gray">void</span>** 
+
+
+
+ <span style = "color: gray">*No description available.*</span> 
+
+---
+
+
+
+<a class="header" id="method-take_autofocus" href="#method-take_autofocus">**<span class="hljs-attribute">func</span> [<span class="hljs-title">take_autofocus</span>](#property-take_autofocus) ( )</a>  ⇒ <span style = "color: gray">void</span>** 
 
 
 

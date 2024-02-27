@@ -12,19 +12,19 @@
 ## Properties
 Name | Type | Default 
 --- | --- | --- 
-character | [DialogicCharacter](class_dialogiccharacter.md) |  `null` 
-character_identifier | [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) |   
-completion_text_character_getter_regex | [RegEx](https://docs.godotengine.org/en/latest/classes/class_regex.html#class-regex) |   
-completion_text_effects | [Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html#class-dictionary) |   
-portrait | [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) |  `""` 
-regex | [RegEx](https://docs.godotengine.org/en/latest/classes/class_regex.html#class-regex) |   
-split_regex | [RegEx](https://docs.godotengine.org/en/latest/classes/class_regex.html#class-regex) |   
-state | [int](https://docs.godotengine.org/en/latest/classes/class_int.html#class-int) |  `1` 
-text | [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) |  `""` 
-text_effect_color | [Color](https://docs.godotengine.org/en/latest/classes/class_color.html#class-color) |  `Color(0.537255, 0.509804, 0.462745, 1)` 
-text_effects | [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) |  `""` 
-text_effects_regex | [RegEx](https://docs.godotengine.org/en/latest/classes/class_regex.html#class-regex) |   
-text_random_word_regex | [RegEx](https://docs.godotengine.org/en/latest/classes/class_regex.html#class-regex) |   
+[<span class="hljs-title">character</span>](#property-character) | [DialogicCharacter](class_dialogiccharacter.md) |  `null` 
+[<span class="hljs-title">character_identifier</span>](#property-character_identifier) | [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) |   
+[<span class="hljs-title">completion_text_character_getter_regex</span>](#property-completion_text_character_getter_regex) | [RegEx](https://docs.godotengine.org/en/latest/classes/class_regex.html#class-regex) |   
+[<span class="hljs-title">completion_text_effects</span>](#property-completion_text_effects) | [Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html#class-dictionary) |   
+[<span class="hljs-title">portrait</span>](#property-portrait) | [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) |  `""` 
+[<span class="hljs-title">regex</span>](#property-regex) | [RegEx](https://docs.godotengine.org/en/latest/classes/class_regex.html#class-regex) |   
+[<span class="hljs-title">split_regex</span>](#property-split_regex) | [RegEx](https://docs.godotengine.org/en/latest/classes/class_regex.html#class-regex) |   
+[<span class="hljs-title">state</span>](#property-state) | [int](https://docs.godotengine.org/en/latest/classes/class_int.html#class-int) |  `1` 
+[<span class="hljs-title">text</span>](#property-text) | [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) |  `""` 
+[<span class="hljs-title">text_effect_color</span>](#property-text_effect_color) | [Color](https://docs.godotengine.org/en/latest/classes/class_color.html#class-color) |  `Color(0.537255, 0.509804, 0.462745, 1)` 
+[<span class="hljs-title">text_effects</span>](#property-text_effects) | [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) |  `""` 
+[<span class="hljs-title">text_effects_regex</span>](#property-text_effects_regex) | [RegEx](https://docs.godotengine.org/en/latest/classes/class_regex.html#class-regex) |   
+[<span class="hljs-title">text_random_word_regex</span>](#property-text_random_word_regex) | [RegEx](https://docs.godotengine.org/en/latest/classes/class_regex.html#class-regex) |   
 --- 
 
 ## Methods
@@ -88,7 +88,27 @@ Returns | Method
 
 
 
-<a class="header" id="property-build_event_editor" href="#property-build_event_editor">**<span class="hljs-attribute">func</span> [<span class="hljs-title">build_event_editor</span>](#property-build_event_editor) ( )</a>  ⇒ <span style = "color: gray">void</span>** 
+<a class="header" id="property-character" href="#property-character">**<span class="hljs-attribute">var</span> <span class="hljs-title">character</span> <span style = "color: gray"> = </span> null** 
+
+
+
+If this is not null, the given character (as a resource) will be associated with this event. The DialogicNode_NameLabel will show the characters display_name. If a typing sound is setup, it will play.
+
+---
+
+
+
+<a class="header" id="property-character_identifier" href="#property-character_identifier">**<span class="hljs-attribute">var</span> <span class="hljs-title">character_identifier</span>** 
+
+
+
+Used to set the character resource from the unique name identifier and vice versa
+
+---
+
+
+
+<a class="header" id="property-completion_text_character_getter_regex" href="#property-completion_text_character_getter_regex">**<span class="hljs-attribute">var</span> <span class="hljs-title">completion_text_character_getter_regex</span> <span style = "color: gray"> = </span> <unknown>** 
 
 
 
@@ -98,7 +118,7 @@ Returns | Method
 
 
 
-<a class="header" id="property-do_any_characters_exist" href="#property-do_any_characters_exist">**<span class="hljs-attribute">func</span> [<span class="hljs-title">do_any_characters_exist</span>](#property-do_any_characters_exist) ( )</a>  ⇒ <span class="hljs-attribute">[bool](https://docs.godotengine.org/en/latest/classes/class_bool.html#class-bool)</span>** 
+<a class="header" id="property-completion_text_effects" href="#property-completion_text_effects">**<span class="hljs-attribute">var</span> <span class="hljs-title">completion_text_effects</span> <span style = "color: gray"> = </span> <unknown>** 
 
 
 
@@ -108,7 +128,17 @@ Returns | Method
 
 
 
-<a class="header" id="property-end_text_event" href="#property-end_text_event">**<span class="hljs-attribute">func</span> [<span class="hljs-title">end_text_event</span>](#property-end_text_event) ( )</a>  ⇒ <span style = "color: gray">void</span>** 
+<a class="header" id="property-portrait" href="#property-portrait">**<span class="hljs-attribute">var</span> <span class="hljs-title">portrait</span> <span style = "color: gray"> = </span> ""** 
+
+
+
+If a character is set, this setting can change the portrait of that character.
+
+---
+
+
+
+<a class="header" id="property-regex" href="#property-regex">**<span class="hljs-attribute">var</span> <span class="hljs-title">regex</span> <span style = "color: gray"> = </span> <unknown>** 
 
 
 
@@ -118,7 +148,7 @@ Returns | Method
 
 
 
-<a class="header" id="property-from_text" href="#property-from_text">**<span class="hljs-attribute">func</span> [<span class="hljs-title">from_text</span>](#property-from_text) ( `string`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) )</a>  ⇒ <span style = "color: gray">void</span>** 
+<a class="header" id="property-split_regex" href="#property-split_regex">**<span class="hljs-attribute">var</span> <span class="hljs-title">split_regex</span> <span style = "color: gray"> = </span> <unknown>** 
 
 
 
@@ -128,7 +158,7 @@ Returns | Method
 
 
 
-<a class="header" id="property-get_character_suggestions" href="#property-get_character_suggestions">**<span class="hljs-attribute">func</span> [<span class="hljs-title">get_character_suggestions</span>](#property-get_character_suggestions) ( `search_text`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) )</a>  ⇒ <span class="hljs-attribute">[Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html#class-dictionary)</span>** 
+<a class="header" id="property-state" href="#property-state">**<span class="hljs-attribute">var</span> <span class="hljs-title">state</span> <span style = "color: gray"> = </span> 1** 
 
 
 
@@ -138,7 +168,17 @@ Returns | Method
 
 
 
-<a class="header" id="property-get_portrait_suggestions" href="#property-get_portrait_suggestions">**<span class="hljs-attribute">func</span> [<span class="hljs-title">get_portrait_suggestions</span>](#property-get_portrait_suggestions) ( `search_text`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) )</a>  ⇒ <span class="hljs-attribute">[Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html#class-dictionary)</span>** 
+<a class="header" id="property-text" href="#property-text">**<span class="hljs-attribute">var</span> <span class="hljs-title">text</span> <span style = "color: gray"> = </span> ""** 
+
+
+
+This is the content of the text event. It is supposed to be displayed by a DialogicNode_DialogText node. That means you can use bbcode, but also some custom commands.
+
+---
+
+
+
+<a class="header" id="property-text_effect_color" href="#property-text_effect_color">**<span class="hljs-attribute">var</span> <span class="hljs-title">text_effect_color</span> <span style = "color: gray"> = </span> Color(0.537255, 0.509804, 0.462745, 1)** 
 
 
 
@@ -148,7 +188,7 @@ Returns | Method
 
 
 
-<a class="header" id="property-get_shortcode_parameters" href="#property-get_shortcode_parameters">**<span class="hljs-attribute">func</span> [<span class="hljs-title">get_shortcode_parameters</span>](#property-get_shortcode_parameters) ( )</a>  ⇒ <span class="hljs-attribute">[Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html#class-dictionary)</span>** 
+<a class="header" id="property-text_effects" href="#property-text_effects">**<span class="hljs-attribute">var</span> <span class="hljs-title">text_effects</span> <span style = "color: gray"> = </span> ""** 
 
 
 
@@ -158,7 +198,7 @@ Returns | Method
 
 
 
-<a class="header" id="property-has_no_portraits" href="#property-has_no_portraits">**<span class="hljs-attribute">func</span> [<span class="hljs-title">has_no_portraits</span>](#property-has_no_portraits) ( )</a>  ⇒ <span class="hljs-attribute">[bool](https://docs.godotengine.org/en/latest/classes/class_bool.html#class-bool)</span>** 
+<a class="header" id="property-text_effects_regex" href="#property-text_effects_regex">**<span class="hljs-attribute">var</span> <span class="hljs-title">text_effects_regex</span> <span style = "color: gray"> = </span> <unknown>** 
 
 
 
@@ -168,7 +208,19 @@ Returns | Method
 
 
 
-<a class="header" id="property-is_string_full_event" href="#property-is_string_full_event">**<span class="hljs-attribute">func</span> [<span class="hljs-title">is_string_full_event</span>](#property-is_string_full_event) ( `string`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) )</a>  ⇒ <span class="hljs-attribute">[bool](https://docs.godotengine.org/en/latest/classes/class_bool.html#class-bool)</span>** 
+<a class="header" id="property-text_random_word_regex" href="#property-text_random_word_regex">**<span class="hljs-attribute">var</span> <span class="hljs-title">text_random_word_regex</span> <span style = "color: gray"> = </span> <unknown>** 
+
+
+
+ <span style = "color: gray">*No description available.*</span> 
+
+---
+
+## Methods Descriptions
+
+
+
+<a class="header" id="method-build_event_editor" href="#method-build_event_editor">**<span class="hljs-attribute">func</span> [<span class="hljs-title">build_event_editor</span>](#property-build_event_editor) ( )</a>  ⇒ <span style = "color: gray">void</span>** 
 
 
 
@@ -178,7 +230,7 @@ Returns | Method
 
 
 
-<a class="header" id="property-is_valid_event" href="#property-is_valid_event">**<span class="hljs-attribute">func</span> [<span class="hljs-title">is_valid_event</span>](#property-is_valid_event) ( `string`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) )</a>  ⇒ <span class="hljs-attribute">[bool](https://docs.godotengine.org/en/latest/classes/class_bool.html#class-bool)</span>** 
+<a class="header" id="method-do_any_characters_exist" href="#method-do_any_characters_exist">**<span class="hljs-attribute">func</span> [<span class="hljs-title">do_any_characters_exist</span>](#property-do_any_characters_exist) ( )</a>  ⇒ <span class="hljs-attribute">[bool](https://docs.godotengine.org/en/latest/classes/class_bool.html#class-bool)</span>** 
 
 
 
@@ -188,7 +240,7 @@ Returns | Method
 
 
 
-<a class="header" id="property-load_text_effects" href="#property-load_text_effects">**<span class="hljs-attribute">func</span> [<span class="hljs-title">load_text_effects</span>](#property-load_text_effects) ( )</a>  ⇒ <span style = "color: gray">void</span>** 
+<a class="header" id="method-end_text_event" href="#method-end_text_event">**<span class="hljs-attribute">func</span> [<span class="hljs-title">end_text_event</span>](#property-end_text_event) ( )</a>  ⇒ <span style = "color: gray">void</span>** 
 
 
 
@@ -198,7 +250,7 @@ Returns | Method
 
 
 
-<a class="header" id="property-suggest_bbcode" href="#property-suggest_bbcode">**<span class="hljs-attribute">func</span> [<span class="hljs-title">suggest_bbcode</span>](#property-suggest_bbcode) ( `text`: [CodeEdit](https://docs.godotengine.org/en/latest/classes/class_codeedit.html#class-codeedit) )</a>  ⇒ <span style = "color: gray">void</span>** 
+<a class="header" id="method-from_text" href="#method-from_text">**<span class="hljs-attribute">func</span> [<span class="hljs-title">from_text</span>](#property-from_text) ( `string`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) )</a>  ⇒ <span style = "color: gray">void</span>** 
 
 
 
@@ -208,7 +260,87 @@ Returns | Method
 
 
 
-<a class="header" id="property-to_text" href="#property-to_text">**<span class="hljs-attribute">func</span> [<span class="hljs-title">to_text</span>](#property-to_text) ( )</a>  ⇒ <span class="hljs-attribute">[String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string)</span>** 
+<a class="header" id="method-get_character_suggestions" href="#method-get_character_suggestions">**<span class="hljs-attribute">func</span> [<span class="hljs-title">get_character_suggestions</span>](#property-get_character_suggestions) ( `search_text`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) )</a>  ⇒ <span class="hljs-attribute">[Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html#class-dictionary)</span>** 
+
+
+
+ <span style = "color: gray">*No description available.*</span> 
+
+---
+
+
+
+<a class="header" id="method-get_portrait_suggestions" href="#method-get_portrait_suggestions">**<span class="hljs-attribute">func</span> [<span class="hljs-title">get_portrait_suggestions</span>](#property-get_portrait_suggestions) ( `search_text`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) )</a>  ⇒ <span class="hljs-attribute">[Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html#class-dictionary)</span>** 
+
+
+
+ <span style = "color: gray">*No description available.*</span> 
+
+---
+
+
+
+<a class="header" id="method-get_shortcode_parameters" href="#method-get_shortcode_parameters">**<span class="hljs-attribute">func</span> [<span class="hljs-title">get_shortcode_parameters</span>](#property-get_shortcode_parameters) ( )</a>  ⇒ <span class="hljs-attribute">[Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html#class-dictionary)</span>** 
+
+
+
+ <span style = "color: gray">*No description available.*</span> 
+
+---
+
+
+
+<a class="header" id="method-has_no_portraits" href="#method-has_no_portraits">**<span class="hljs-attribute">func</span> [<span class="hljs-title">has_no_portraits</span>](#property-has_no_portraits) ( )</a>  ⇒ <span class="hljs-attribute">[bool](https://docs.godotengine.org/en/latest/classes/class_bool.html#class-bool)</span>** 
+
+
+
+ <span style = "color: gray">*No description available.*</span> 
+
+---
+
+
+
+<a class="header" id="method-is_string_full_event" href="#method-is_string_full_event">**<span class="hljs-attribute">func</span> [<span class="hljs-title">is_string_full_event</span>](#property-is_string_full_event) ( `string`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) )</a>  ⇒ <span class="hljs-attribute">[bool](https://docs.godotengine.org/en/latest/classes/class_bool.html#class-bool)</span>** 
+
+
+
+ <span style = "color: gray">*No description available.*</span> 
+
+---
+
+
+
+<a class="header" id="method-is_valid_event" href="#method-is_valid_event">**<span class="hljs-attribute">func</span> [<span class="hljs-title">is_valid_event</span>](#property-is_valid_event) ( `string`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) )</a>  ⇒ <span class="hljs-attribute">[bool](https://docs.godotengine.org/en/latest/classes/class_bool.html#class-bool)</span>** 
+
+
+
+ <span style = "color: gray">*No description available.*</span> 
+
+---
+
+
+
+<a class="header" id="method-load_text_effects" href="#method-load_text_effects">**<span class="hljs-attribute">func</span> [<span class="hljs-title">load_text_effects</span>](#property-load_text_effects) ( )</a>  ⇒ <span style = "color: gray">void</span>** 
+
+
+
+ <span style = "color: gray">*No description available.*</span> 
+
+---
+
+
+
+<a class="header" id="method-suggest_bbcode" href="#method-suggest_bbcode">**<span class="hljs-attribute">func</span> [<span class="hljs-title">suggest_bbcode</span>](#property-suggest_bbcode) ( `text`: [CodeEdit](https://docs.godotengine.org/en/latest/classes/class_codeedit.html#class-codeedit) )</a>  ⇒ <span style = "color: gray">void</span>** 
+
+
+
+ <span style = "color: gray">*No description available.*</span> 
+
+---
+
+
+
+<a class="header" id="method-to_text" href="#method-to_text">**<span class="hljs-attribute">func</span> [<span class="hljs-title">to_text</span>](#property-to_text) ( )</a>  ⇒ <span class="hljs-attribute">[String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string)</span>** 
 
 
 

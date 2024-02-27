@@ -12,4 +12,16 @@ Control node that is hidden and shown based on the current dialogic style.
 ## Properties
 Name | Type | Default 
 --- | --- | --- 
-layer_name | [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) |  `"Default"` 
+[<span class="hljs-title">layer_name</span>](#property-layer_name) | [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) |  `"Default"` 
+## Property Descriptions
+
+
+
+<a class="header" id="property-layer_name" href="#property-layer_name">**<span class="hljs-attribute">var</span> <span class="hljs-title">layer_name</span> <span style = "color: gray"> = </span> "Default"** 
+
+
+
+The name this layer listens to
+
+---
+
