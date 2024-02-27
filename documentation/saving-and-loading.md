@@ -69,14 +69,22 @@ Dialogic.Save.save(slot_name, false, Dialogic.Save.ThumbnailMode.STORE_ONLY, ext
 
 ### 1.3 Global data
 
-You can save player settings and other slot-independent details with `Dialogic.Save.set_global_info(key: String, value: Variant)` and retrieve it with `Dialogic.Save.get_global_info(key: String, default: Variant)`.
+The simple approach to store your game data slot-indepently is to use the `Dialogic.Settings` subsystem.\
+You can directly store the information on it:
+```gdscript
+Dialogic.Settings.text_speed = 0.05
+```
 
+On save, the data will be automatically stored into the global save file
+
+However, if you want to write to the global save file directly, you can use the `Dialogic.Save` subsystem:
 ```gdscript
 func set_player_name(name: String) -> void:
+    # Setting a name for the key `player_name`.
     Dialogic.Save.set_global_info("player_name", name)
 ```
 
-There is no rule for the `key`'s value; being consistent is good, though.
+There is no rule for the global info `key`'s value; being consistent is good, though.
 
 If you are interested in storing the history of visited text, take a look at the next chapter.
 
