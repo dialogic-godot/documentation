@@ -12,7 +12,7 @@
 The saving subsystem allows you to save and load Dialogic timeline states, game thumbnails (screenshots), and extra information to Savegame slots. \
 You want to save the player position or the last seen text? The built-in save system has it all covered!
 
-Be aware, Savegames use their name as folder name, operating systems restrict the allowed characters for folder names.
+Be aware that Savegames uses their name as a folder name; operating systems restrict the allowed characters for folder names.
 It's recommended to rely on the Latin alphabet, numbers, and underscores.
 
 If you don't care about Savegame slots, you can do the following:
@@ -26,7 +26,7 @@ func _on_load_game_button_pressed() -> void:
     Dialogic.Save.load()
 ```
 
-However, these methods will take a screenshot too, which may affect performance slightly.\
+However, these methods will take screenshots too, which may affect performance slightly.\
 If you want to prevent this from happening, it gets a bit more verbose:
 
 ```gdscript
@@ -42,7 +42,7 @@ func _on_load_game_button_pressed() -> void:
 ### 1.1 Take a thumbnail
 
 If you would like to use thumbnails per Savegame slot, it's recommended to take the screenshot before opening your *Save & Load* layer. \
-This can be achieved by calling `Dialogic.Save.take_thumbnail()` *before* you show the layer; for instance, in the button signal connection opening the layer.
+This can be achieved by calling `Dialogic.Save.take_thumbnail()` *before* you show the layer; for instance, in the button signal connection, open the layer.
 
 If you go this route, you need to instruct the `Dialogic.Save.save(...)` method to *store only* and *not* take a screenshot.
 
@@ -107,7 +107,7 @@ func _reset_visited_history() -> void:
      Dialogic.History.reset_already_visited_history()
 ```
 
-If you prefer to set the configuration from `1.`, take a look at the following snippet:
+If you prefer to set the configuration via code, take a look at the following snippet:
 
 ```gdscript
 func _ready() -> void:
@@ -144,8 +144,8 @@ You can delete a save game slot by using the `Dialogic.Save.delete_slot(slot_nam
 
 # 3. Manual Saving
 
-If you are keen to work on your own saving and loading system, take a gander at `load_file()` and `save_file()`. \
-These methods are used inside the helper methods mentioned on this page.
+If you want to roll your own save and load system, you can use `Dialogic.get_full_state() -> Dictionary` to get the state of Dialogic and then continue saving it the way you want to.\
+Once you are read to load the data back, you will have to use `Dialogic.load_full_state(state: Dictionary)` to get your data back into Dialogic.
 
-Overall, it's better to have an idea *why* you want to do manual saving and take inspiration from Dialogic's `save` and `load` methods.
-
+Overall, it's better to have an idea *why* you want to do manual saving and take inspiration from Dialogic's `save` and `load` methods.\
+There is a chance, that Dialogic already supports your specific loading and saving requirements.
