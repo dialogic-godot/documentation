@@ -8,6 +8,7 @@
 - [Character & Portraits](characters-and-portraits.md)
 
   - [Custom Portraits](custom-portraits.md)
+  - [Layered Portraits](layered-portraits.md)
 
 - [Styles & Layouts](styles-and-layouts.md)
 
