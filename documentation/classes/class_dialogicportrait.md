@@ -44,7 +44,7 @@ Stores the name of the current portrait.
 
 ---
 
-## Methods Descriptions
+## Method Descriptions
 
 
 

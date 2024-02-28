@@ -35,7 +35,7 @@ The name of the style to change to. Can be set on the DialogicNode_Style.
 
 ---
 
-## Methods Descriptions
+## Method Descriptions
 
 
 

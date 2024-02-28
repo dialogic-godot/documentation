@@ -109,7 +109,7 @@ The default portrait scene.
 
 ---
 
-## Methods Descriptions
+## Method Descriptions
 
 
 

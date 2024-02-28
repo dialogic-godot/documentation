@@ -162,7 +162,7 @@ The delay between the text finishing revealing and the choices appearing
 
 ---
 
-## Methods Descriptions
+## Method Descriptions
 
 
 

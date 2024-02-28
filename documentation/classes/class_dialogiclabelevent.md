@@ -36,7 +36,7 @@ Used to identify the label. Duplicate names in a timeline will mean it always ch
 
 ---
 
-## Methods Descriptions
+## Method Descriptions
 
 
 

@@ -34,7 +34,7 @@ The name of the slot to save to. Learn more in the saving subsystem. If empty, t
 
 ---
 
-## Methods Descriptions
+## Method Descriptions
 
 
 

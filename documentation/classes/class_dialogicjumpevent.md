@@ -60,7 +60,7 @@ Used to set the timeline resource from the unique name identifier and vice versa
 
 ---
 
-## Methods Descriptions
+## Method Descriptions
 
 
 

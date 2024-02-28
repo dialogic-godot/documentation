@@ -57,7 +57,7 @@ The Label to use.
 
 ---
 
-## Methods Descriptions
+## Method Descriptions
 
 
 

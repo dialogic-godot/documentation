@@ -440,7 +440,7 @@ When `true`, many dialogic processes won't continue until it's false again.
 
 ---
 
-## Methods Descriptions
+## Method Descriptions
 
 
 

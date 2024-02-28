@@ -62,7 +62,7 @@ The name of the method to call on the given autoload.
 
 ---
 
-## Methods Descriptions
+## Method Descriptions
 
 
 

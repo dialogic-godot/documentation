@@ -98,7 +98,7 @@ Determines what happens if  [condition] is false. Default will use the action se
 
 ---
 
-## Methods Descriptions
+## Method Descriptions
 
 
 

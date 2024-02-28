@@ -161,7 +161,7 @@ File path used to load the CSV file.
 
 ---
 
-## Methods Descriptions
+## Method Descriptions
 
 
 

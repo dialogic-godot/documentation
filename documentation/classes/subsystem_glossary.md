@@ -57,7 +57,7 @@ List of glossary resources that are used.
 
 ---
 
-## Methods Descriptions
+## Method Descriptions
 
 
 

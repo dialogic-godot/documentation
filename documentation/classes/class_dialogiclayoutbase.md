@@ -20,7 +20,7 @@ Returns | Method
 <span class="hljs-attribute">[Node](https://docs.godotengine.org/en/latest/classes/class_node.html#class-node)</span> | [<span class="hljs-title">get_layer</span>](#property-get_layer) ( `index`: [int](https://docs.godotengine.org/en/latest/classes/class_int.html#class-int) ) 
 <span class="hljs-attribute">[Array](https://docs.godotengine.org/en/latest/classes/class_array.html#class-array)</span> | [<span class="hljs-title">get_layers</span>](#property-get_layers) ( ) 
 --- 
-## Methods Descriptions
+## Method Descriptions
 
 
 

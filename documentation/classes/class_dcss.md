@@ -18,7 +18,7 @@ Returns | Method
 <span class="hljs-attribute">[StyleBoxFlat](https://docs.godotengine.org/en/latest/classes/class_styleboxflat.html#class-styleboxflat)</span> | [<span class="hljs-title">inline</span>](#property-inline) ( `style`: [Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html#class-dictionary) ) 
 <span class="hljs-attribute">[StyleBoxFlat](https://docs.godotengine.org/en/latest/classes/class_styleboxflat.html#class-styleboxflat)</span> | [<span class="hljs-title">style</span>](#property-style) ( `node`: [Variant](https://docs.godotengine.org/en/latest/classes/class_variant.html#class-variant), `style`: [Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html#class-dictionary) ) 
 --- 
-## Methods Descriptions
+## Method Descriptions
 
 
 

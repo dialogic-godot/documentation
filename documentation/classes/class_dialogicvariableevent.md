@@ -182,7 +182,7 @@ The value that is used. Can be a variable as well.
 
 ---
 
-## Methods Descriptions
+## Method Descriptions
 
 
 

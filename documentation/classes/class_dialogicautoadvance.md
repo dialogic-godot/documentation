@@ -183,7 +183,7 @@ If true, Auto-Advance will be active until the player presses a button.  Use thi
 
 ---
 
-## Methods Descriptions
+## Method Descriptions
 
 
 

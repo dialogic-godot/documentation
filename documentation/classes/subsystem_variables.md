@@ -48,7 +48,7 @@ Emitted on any set variable event
 
 ---
 
-## Methods Descriptions
+## Method Descriptions
 
 
 

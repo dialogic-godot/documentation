@@ -62,7 +62,7 @@ The type of action: Clear, Pause or Resume
 
 ---
 
-## Methods Descriptions
+## Method Descriptions
 
 
 

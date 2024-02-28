@@ -193,7 +193,7 @@ Allows changing the volume by a random value from (volume - volume_variance) to 
 
 ---
 
-## Methods Descriptions
+## Method Descriptions
 
 
 

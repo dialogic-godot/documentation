@@ -68,7 +68,7 @@ The volume to play the sound at.
 
 ---
 
-## Methods Descriptions
+## Method Descriptions
 
 
 

@@ -76,7 +76,7 @@ The condition as a string. Will be executed as an Expression.
 
 ---
 
-## Methods Descriptions
+## Method Descriptions
 
 
 

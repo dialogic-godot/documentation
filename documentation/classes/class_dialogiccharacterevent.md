@@ -257,7 +257,7 @@ The z_index that the portrait should have.
 
 ---
 
-## Methods Descriptions
+## Method Descriptions
 
 
 
