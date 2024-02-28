@@ -45,7 +45,7 @@ The time in seconds that the event will stop before continuing.
 
 ---
 
-## Methods Descriptions
+## Method Descriptions
 
 
 

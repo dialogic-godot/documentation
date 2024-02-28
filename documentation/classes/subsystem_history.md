@@ -194,7 +194,7 @@ Used to store `visited_event_history_content` in the global info file. You can c
 
 ---
 
-## Methods Descriptions
+## Method Descriptions
 
 
 

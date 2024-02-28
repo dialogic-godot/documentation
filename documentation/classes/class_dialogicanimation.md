@@ -101,7 +101,7 @@ Set at runtime, will be the length of the animation.
 
 ---
 
-## Methods Descriptions
+## Method Descriptions
 
 
 

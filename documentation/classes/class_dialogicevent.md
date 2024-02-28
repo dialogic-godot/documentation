@@ -468,7 +468,7 @@ If this is true this event will group with other similar events (like choices do
 
 ---
 
-## Methods Descriptions
+## Method Descriptions
 
 
 

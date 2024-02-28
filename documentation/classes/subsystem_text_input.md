@@ -40,7 +40,7 @@ Signal that is fired when a confirmation button was pressed.
 
 ---
 
-## Methods Descriptions
+## Method Descriptions
 
 
 

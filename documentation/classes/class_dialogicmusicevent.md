@@ -79,7 +79,7 @@ The volume the music will be played at.
 
 ---
 
-## Methods Descriptions
+## Method Descriptions
 
 
 

@@ -123,7 +123,7 @@ The name of the setting to save to.
 
 ---
 
-## Methods Descriptions
+## Method Descriptions
 
 
 

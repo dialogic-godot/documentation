@@ -146,7 +146,7 @@ Stores all entries for the glossary.  The value may either be a dictionary, repr
 
 ---
 
-## Methods Descriptions
+## Method Descriptions
 
 
 

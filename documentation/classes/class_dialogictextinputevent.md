@@ -79,7 +79,7 @@ The name/path of the variable to set.
 
 ---
 
-## Methods Descriptions
+## Method Descriptions
 
 
 

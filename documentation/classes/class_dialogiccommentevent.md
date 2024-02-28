@@ -35,7 +35,7 @@ Content of the comment.
 
 ---
 
-## Methods Descriptions
+## Method Descriptions
 
 
 

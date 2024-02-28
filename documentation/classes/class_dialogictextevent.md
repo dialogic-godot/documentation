@@ -216,7 +216,7 @@ This is the content of the text event. It is supposed to be displayed by a Dialo
 
 ---
 
-## Methods Descriptions
+## Method Descriptions
 
 
 

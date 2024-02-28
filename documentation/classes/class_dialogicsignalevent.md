@@ -64,7 +64,7 @@ The argument that will be provided with the signal.
 
 ---
 
-## Methods Descriptions
+## Method Descriptions
 
 
 

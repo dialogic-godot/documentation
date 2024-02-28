@@ -56,7 +56,7 @@ The volume the sound will be played at.
 
 ---
 
-## Methods Descriptions
+## Method Descriptions
 
 
 

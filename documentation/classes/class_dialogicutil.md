@@ -128,7 +128,7 @@ Returns | Method
  <span style = "color: gray">*No description available.*</span> 
 
 ---
-## Methods Descriptions
+## Method Descriptions
 
 
 

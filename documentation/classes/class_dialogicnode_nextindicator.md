@@ -109,7 +109,7 @@ Set the image to use as the indicator.
 
 ---
 
-## Methods Descriptions
+## Method Descriptions
 
 
 

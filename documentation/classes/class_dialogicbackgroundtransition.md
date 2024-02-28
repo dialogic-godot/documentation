@@ -111,7 +111,7 @@ Set before _fade() is called, will be the requested time for the fade
 
 ---
 
-## Methods Descriptions
+## Method Descriptions
 
 
 

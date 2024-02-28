@@ -116,7 +116,7 @@ Returns | Method
 
 ---
 
-## Methods Descriptions
+## Method Descriptions
 
 
 

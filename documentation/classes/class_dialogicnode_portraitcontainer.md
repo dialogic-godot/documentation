@@ -312,7 +312,7 @@ Defines how to affect the scale of the portrait
 
 ---
 
-## Methods Descriptions
+## Method Descriptions
 
 
 

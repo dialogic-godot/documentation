@@ -54,7 +54,7 @@ Sound to be played if one of the sibling ChoiceButtons is pressed. If sibling Ch
 
 ---
 
-## Methods Descriptions
+## Method Descriptions
 
 
 

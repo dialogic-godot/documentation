@@ -192,7 +192,7 @@ After what time interval the auto-save feature will trigger if `autosave_enabled
 
 ---
 
-## Methods Descriptions
+## Method Descriptions
 
 
 

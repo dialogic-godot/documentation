@@ -105,7 +105,7 @@ Name of the transition to use.
 
 ---
 
-## Methods Descriptions
+## Method Descriptions
 
 
 
