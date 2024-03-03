@@ -42,7 +42,7 @@
     - [Translations](translation.md)
 
 - [Class Reference](class_index.md)
-    - [Event]()
+    - [Event](event_class_index.md)
         - [BackgroundEvent](classes/class_dialogicbackgroundevent.md)
         - [CallEvent](classes/class_dialogiccallevent.md)
         - [CharacterEvent](classes/class_dialogiccharacterevent.md)
@@ -72,7 +72,7 @@
         - [WaitEvent](classes/class_dialogicwaitevent.md)
         - [WaitInputEvent](classes/class_dialogicwaitinputevent.md)
 
-    - [Subsystem]()
+    - [Subsystem](subsystem_class_index.md)
         - [Audio](classes/subsystem_audio.md)
         - [Backgrounds](classes/subsystem_backgrounds.md)
         - [Portraits](classes/subsystem_portraits.md)
@@ -91,7 +91,7 @@
         - [Variables](classes/subsystem_variables.md)
         - [Voice](classes/subsystem_voice.md)
 
-    - [Node]()
+    - [Node](node_class_index.md)
         - [Node_BackgroundHolder](classes/class_dialogicnode_backgroundholder.md)
         - [Node_ButtonSound](classes/class_dialogicnode_buttonsound.md)
         - [Node_ChoiceButton](classes/class_dialogicnode_choicebutton.md)
@@ -103,7 +103,8 @@
         - [Node_TextBubble](classes/class_dialogicnode_textbubble.md)
         - [Node_TextInput](classes/class_dialogicnode_textinput.md)
         - [Node_TypeSounds](classes/class_dialogicnode_typesounds.md)
-    - [Resource]()
+
+    - [Resource](resource_class_index.md)
         - [Character](classes/class_dialogiccharacter.md)
         - [CharacterFormatLoader](classes/class_dialogiccharacterformatloader.md)
         - [CharacterFormatSaver](classes/class_dialogiccharacterformatsaver.md)
@@ -113,7 +114,8 @@
         - [Timeline](classes/class_dialogictimeline.md)
         - [TimelineFormatLoader](classes/class_dialogictimelineformatloader.md)
         - [TimelineFormatSaver](classes/class_dialogictimelineformatsaver.md)
-    - [Other]()
+
+    - [Other](other_class_index.md)
         - [DCSS](classes/class_dcss.md)
         - [Animation](classes/class_dialogicanimation.md)
         - [AutoAdvance](classes/class_dialogicautoadvance.md)
