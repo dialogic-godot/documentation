@@ -26,10 +26,10 @@ Name | Type | Default
 ## Methods
 Returns | Method 
 --- | --- 
-<span style = "color: gray">void</span> | [<span class="hljs-title">continue_reveal</span>](#property-continue_reveal) ( ) 
-<span style = "color: gray">void</span> | [<span class="hljs-title">finish_text</span>](#property-finish_text) ( ) 
-<span style = "color: gray">void</span> | [<span class="hljs-title">reveal_text</span>](#property-reveal_text) ( `_text`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string), `keep_previous`: [bool](https://docs.godotengine.org/en/latest/classes/class_bool.html#class-bool) = `false` ) 
-<span style = "color: gray">void</span> | [<span class="hljs-title">set_speed</span>](#property-set_speed) ( `delay_per_character`: [float](https://docs.godotengine.org/en/latest/classes/class_float.html#class-float) ) 
+<span style = "color: gray">void</span> | [<span class="hljs-title">continue_reveal</span>](#method-continue_reveal) ( ) 
+<span style = "color: gray">void</span> | [<span class="hljs-title">finish_text</span>](#method-finish_text) ( ) 
+<span style = "color: gray">void</span> | [<span class="hljs-title">reveal_text</span>](#method-reveal_text) ( `_text`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string), `keep_previous`: [bool](https://docs.godotengine.org/en/latest/classes/class_bool.html#class-bool) = `false` ) 
+<span style = "color: gray">void</span> | [<span class="hljs-title">set_speed</span>](#method-set_speed) ( `delay_per_character`: [float](https://docs.godotengine.org/en/latest/classes/class_float.html#class-float) ) 
 --- 
 ## Constants
 
@@ -187,7 +187,7 @@ Returns | Method
 
 
 
-<a class="header" id="method-continue_reveal" href="#method-continue_reveal">**<span class="hljs-attribute">func</span> [<span class="hljs-title">continue_reveal</span>](#property-continue_reveal) ( )</a>  ⇒ <span style = "color: gray">void</span>** 
+<a class="header" id="method-continue_reveal" href="#method-continue_reveal">**<span class="hljs-attribute">func</span> [<span class="hljs-title">continue_reveal</span>](#method-continue_reveal) ( )</a>  ⇒ <span style = "color: gray">void</span>** 
 
 
 
@@ -197,7 +197,7 @@ Reveals one additional character.
 
 
 
-<a class="header" id="method-finish_text" href="#method-finish_text">**<span class="hljs-attribute">func</span> [<span class="hljs-title">finish_text</span>](#property-finish_text) ( )</a>  ⇒ <span style = "color: gray">void</span>** 
+<a class="header" id="method-finish_text" href="#method-finish_text">**<span class="hljs-attribute">func</span> [<span class="hljs-title">finish_text</span>](#method-finish_text) ( )</a>  ⇒ <span style = "color: gray">void</span>** 
 
 
 
@@ -207,7 +207,7 @@ Reveals the entire text instantly.
 
 
 
-<a class="header" id="method-reveal_text" href="#method-reveal_text">**<span class="hljs-attribute">func</span> [<span class="hljs-title">reveal_text</span>](#property-reveal_text) ( `_text`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string), `keep_previous`: [bool](https://docs.godotengine.org/en/latest/classes/class_bool.html#class-bool) = `false` )</a>  ⇒ <span style = "color: gray">void</span>** 
+<a class="header" id="method-reveal_text" href="#method-reveal_text">**<span class="hljs-attribute">func</span> [<span class="hljs-title">reveal_text</span>](#method-reveal_text) ( `_text`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string), `keep_previous`: [bool](https://docs.godotengine.org/en/latest/classes/class_bool.html#class-bool) = `false` )</a>  ⇒ <span style = "color: gray">void</span>** 
 
 
 
@@ -217,7 +217,7 @@ Reveals the entire text instantly.
 
 
 
-<a class="header" id="method-set_speed" href="#method-set_speed">**<span class="hljs-attribute">func</span> [<span class="hljs-title">set_speed</span>](#property-set_speed) ( `delay_per_character`: [float](https://docs.godotengine.org/en/latest/classes/class_float.html#class-float) )</a>  ⇒ <span style = "color: gray">void</span>** 
+<a class="header" id="method-set_speed" href="#method-set_speed">**<span class="hljs-attribute">func</span> [<span class="hljs-title">set_speed</span>](#method-set_speed) ( `delay_per_character`: [float](https://docs.godotengine.org/en/latest/classes/class_float.html#class-float) )</a>  ⇒ <span style = "color: gray">void</span>** 
 
 
 

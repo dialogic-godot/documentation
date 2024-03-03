@@ -29,7 +29,7 @@ Name | Type | Default
 
 
 
-Emitted whenever the Auto-Skip state changes, from `true` to `false` or vice-versa.
+ Emitted whenever the Auto-Skip state changes, from `true` to `false` or vice-versa. 
 
 ---
 
@@ -71,7 +71,7 @@ If `true`, Auto-Skip will be enabled when the timeline advances to a previously 
 
 
 
-Whether Auto-Skip is enabled or not. If Auto-Skip is referred to be [i]disabled[/i], it refers to setting this this variable to `false`. This variable will automatically emit [autoskip_changed](#signal-autoskip_changed) when changed.
+Whether Auto-Skip is enabled or not. If Auto-Skip is referred to be disabled[/i], it refers to setting this this variable to `false`. This variable will automatically emit [autoskip_changed](#signal-autoskip_changed) when changed.
 
 ---
 

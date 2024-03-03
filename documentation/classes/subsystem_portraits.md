@@ -18,32 +18,32 @@ Name | Type | Default
 ## Methods
 Returns | Method 
 --- | --- 
-<span class="hljs-attribute">[Node](https://docs.godotengine.org/en/latest/classes/class_node.html#class-node)</span> | [<span class="hljs-title">add_character</span>](#property-add_character) ( `character`: [DialogicCharacter](class_dialogiccharacter.md), `portrait`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string), `position_idx`: [int](https://docs.godotengine.org/en/latest/classes/class_int.html#class-int) ) 
-<span style = "color: gray">void</span> | [<span class="hljs-title">add_portrait_position</span>](#property-add_portrait_position) ( `position_index`: [int](https://docs.godotengine.org/en/latest/classes/class_int.html#class-int), `position`: [Vector2](https://docs.godotengine.org/en/latest/classes/class_vector2.html#class-vector2) ) 
-<span class="hljs-attribute">[DialogicAnimation](class_dialogicanimation.md)</span> | [<span class="hljs-title">animate_character</span>](#property-animate_character) ( `character`: [DialogicCharacter](class_dialogiccharacter.md), `animation_path`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string), `length`: [float](https://docs.godotengine.org/en/latest/classes/class_float.html#class-float), `repeats`: [int](https://docs.godotengine.org/en/latest/classes/class_int.html#class-int) = `1` ) 
-<span style = "color: gray">void</span> | [<span class="hljs-title">change_character_extradata</span>](#property-change_character_extradata) ( `character`: [DialogicCharacter](class_dialogiccharacter.md), `extra_data`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) = `""` ) 
-<span style = "color: gray">void</span> | [<span class="hljs-title">change_character_mirror</span>](#property-change_character_mirror) ( `character`: [DialogicCharacter](class_dialogiccharacter.md), `mirrored`: [bool](https://docs.godotengine.org/en/latest/classes/class_bool.html#class-bool) = `false`, `force`: [bool](https://docs.godotengine.org/en/latest/classes/class_bool.html#class-bool) = `false` ) 
-<span style = "color: gray">void</span> | [<span class="hljs-title">change_character_portrait</span>](#property-change_character_portrait) ( `character`: [DialogicCharacter](class_dialogiccharacter.md), `portrait`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string), `update_transform`: [bool](https://docs.godotengine.org/en/latest/classes/class_bool.html#class-bool) = `true` ) 
-<span style = "color: gray">void</span> | [<span class="hljs-title">change_character_z_index</span>](#property-change_character_z_index) ( `character`: [DialogicCharacter](class_dialogiccharacter.md), `z_index`: [int](https://docs.godotengine.org/en/latest/classes/class_int.html#class-int), `update_zindex`: [bool](https://docs.godotengine.org/en/latest/classes/class_bool.html#class-bool) = `true` ) 
-<span style = "color: gray">void</span> | [<span class="hljs-title">change_speaker</span>](#property-change_speaker) ( `speaker`: [DialogicCharacter](class_dialogiccharacter.md) = `null`, `portrait`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) = `""` ) 
-<span style = "color: gray">void</span> | [<span class="hljs-title">clear_game_state</span>](#property-clear_game_state) ( `clear_flag`: [int](https://docs.godotengine.org/en/latest/classes/class_int.html#class-int) = `0` ) 
-<span class="hljs-attribute">[Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html#class-dictionary)</span> | [<span class="hljs-title">get_character_info</span>](#property-get_character_info) ( `character`: [DialogicCharacter](class_dialogiccharacter.md) ) 
-<span class="hljs-attribute">[DialogicCharacter[]](https://docs.godotengine.org/en/latest/classes/class_dialogiccharacter.html#class-dialogiccharacter)</span> | [<span class="hljs-title">get_joined_characters</span>](#property-get_joined_characters) ( ) 
-<span class="hljs-attribute">[DialogicNode_PortraitContainer](class_dialogicnode_portraitcontainer.md)</span> | [<span class="hljs-title">get_portrait_container</span>](#property-get_portrait_container) ( `postion_index`: [int](https://docs.godotengine.org/en/latest/classes/class_int.html#class-int) ) 
-<span class="hljs-attribute">[bool](https://docs.godotengine.org/en/latest/classes/class_bool.html#class-bool)</span> | [<span class="hljs-title">is_character_joined</span>](#property-is_character_joined) ( `character`: [DialogicCharacter](class_dialogiccharacter.md) ) 
-<span class="hljs-attribute">[Node](https://docs.godotengine.org/en/latest/classes/class_node.html#class-node)</span> | [<span class="hljs-title">join_character</span>](#property-join_character) ( `character`: [DialogicCharacter](class_dialogiccharacter.md), `portrait`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string), `position_idx`: [int](https://docs.godotengine.org/en/latest/classes/class_int.html#class-int), `mirrored`: [bool](https://docs.godotengine.org/en/latest/classes/class_bool.html#class-bool) = `false`, `z_index`: [int](https://docs.godotengine.org/en/latest/classes/class_int.html#class-int) = `0`, `extra_data`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) = `""`, `animation_name`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) = `""`, `animation_length`: [float](https://docs.godotengine.org/en/latest/classes/class_float.html#class-float) = `0.0`, `animation_wait`: [bool](https://docs.godotengine.org/en/latest/classes/class_bool.html#class-bool) = `false` ) 
-<span style = "color: gray">void</span> | [<span class="hljs-title">leave_all_characters</span>](#property-leave_all_characters) ( `animation_name`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) = `""`, `animation_length`: [float](https://docs.godotengine.org/en/latest/classes/class_float.html#class-float) = `0.0`, `animation_wait`: [bool](https://docs.godotengine.org/en/latest/classes/class_bool.html#class-bool) = `false` ) 
-<span style = "color: gray">void</span> | [<span class="hljs-title">leave_character</span>](#property-leave_character) ( `character`: [DialogicCharacter](class_dialogiccharacter.md), `animation_name`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) = `""`, `animation_length`: [float](https://docs.godotengine.org/en/latest/classes/class_float.html#class-float) = `0.0`, `animation_wait`: [bool](https://docs.godotengine.org/en/latest/classes/class_bool.html#class-bool) = `false` ) 
-<span style = "color: gray">void</span> | [<span class="hljs-title">load_game_state</span>](#property-load_game_state) ( `load_flag`: [int](https://docs.godotengine.org/en/latest/classes/class_int.html#class-int) = `0` ) 
-<span style = "color: gray">void</span> | [<span class="hljs-title">move_character</span>](#property-move_character) ( `character`: [DialogicCharacter](class_dialogiccharacter.md), `position_idx`: [int](https://docs.godotengine.org/en/latest/classes/class_int.html#class-int), `time`: [float](https://docs.godotengine.org/en/latest/classes/class_float.html#class-float) = `0.0` ) 
-<span style = "color: gray">void</span> | [<span class="hljs-title">move_portrait_position</span>](#property-move_portrait_position) ( `position_index`: [int](https://docs.godotengine.org/en/latest/classes/class_int.html#class-int), `vector`: [Vector2](https://docs.godotengine.org/en/latest/classes/class_vector2.html#class-vector2), `relative`: [bool](https://docs.godotengine.org/en/latest/classes/class_bool.html#class-bool) = `false`, `time`: [float](https://docs.godotengine.org/en/latest/classes/class_float.html#class-float) = `0.0` ) 
-<span style = "color: gray">void</span> | [<span class="hljs-title">pause</span>](#property-pause) ( ) 
-<span style = "color: gray">void</span> | [<span class="hljs-title">remove_character</span>](#property-remove_character) ( `character`: [DialogicCharacter](class_dialogiccharacter.md) ) 
-<span style = "color: gray">void</span> | [<span class="hljs-title">reset_all_portrait_positions</span>](#property-reset_all_portrait_positions) ( `time`: [float](https://docs.godotengine.org/en/latest/classes/class_float.html#class-float) = `0.0` ) 
-<span style = "color: gray">void</span> | [<span class="hljs-title">reset_portrait_position</span>](#property-reset_portrait_position) ( `position_index`: [int](https://docs.godotengine.org/en/latest/classes/class_int.html#class-int), `time`: [float](https://docs.godotengine.org/en/latest/classes/class_float.html#class-float) = `0.0` ) 
-<span style = "color: gray">void</span> | [<span class="hljs-title">resume</span>](#property-resume) ( ) 
-<span style = "color: gray">void</span> | [<span class="hljs-title">text_effect_portrait</span>](#property-text_effect_portrait) ( `text_node`: [Control](https://docs.godotengine.org/en/latest/classes/class_control.html#class-control), `skipped`: [bool](https://docs.godotengine.org/en/latest/classes/class_bool.html#class-bool), `argument`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) ) 
-<span class="hljs-attribute">[bool](https://docs.godotengine.org/en/latest/classes/class_bool.html#class-bool)</span> | [<span class="hljs-title">z_sort_portrait_containers</span>](#property-z_sort_portrait_containers) ( `con1`: [DialogicNode_PortraitContainer](class_dialogicnode_portraitcontainer.md), `con2`: [DialogicNode_PortraitContainer](class_dialogicnode_portraitcontainer.md) ) 
+<span class="hljs-attribute">[Node](https://docs.godotengine.org/en/latest/classes/class_node.html#class-node)</span> | [<span class="hljs-title">add_character</span>](#method-add_character) ( `character`: [DialogicCharacter](class_dialogiccharacter.md), `portrait`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string), `position_idx`: [int](https://docs.godotengine.org/en/latest/classes/class_int.html#class-int) ) 
+<span style = "color: gray">void</span> | [<span class="hljs-title">add_portrait_position</span>](#method-add_portrait_position) ( `position_index`: [int](https://docs.godotengine.org/en/latest/classes/class_int.html#class-int), `position`: [Vector2](https://docs.godotengine.org/en/latest/classes/class_vector2.html#class-vector2) ) 
+<span class="hljs-attribute">[DialogicAnimation](class_dialogicanimation.md)</span> | [<span class="hljs-title">animate_character</span>](#method-animate_character) ( `character`: [DialogicCharacter](class_dialogiccharacter.md), `animation_path`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string), `length`: [float](https://docs.godotengine.org/en/latest/classes/class_float.html#class-float), `repeats`: [int](https://docs.godotengine.org/en/latest/classes/class_int.html#class-int) = `1` ) 
+<span style = "color: gray">void</span> | [<span class="hljs-title">change_character_extradata</span>](#method-change_character_extradata) ( `character`: [DialogicCharacter](class_dialogiccharacter.md), `extra_data`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) = `""` ) 
+<span style = "color: gray">void</span> | [<span class="hljs-title">change_character_mirror</span>](#method-change_character_mirror) ( `character`: [DialogicCharacter](class_dialogiccharacter.md), `mirrored`: [bool](https://docs.godotengine.org/en/latest/classes/class_bool.html#class-bool) = `false`, `force`: [bool](https://docs.godotengine.org/en/latest/classes/class_bool.html#class-bool) = `false` ) 
+<span style = "color: gray">void</span> | [<span class="hljs-title">change_character_portrait</span>](#method-change_character_portrait) ( `character`: [DialogicCharacter](class_dialogiccharacter.md), `portrait`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string), `update_transform`: [bool](https://docs.godotengine.org/en/latest/classes/class_bool.html#class-bool) = `true` ) 
+<span style = "color: gray">void</span> | [<span class="hljs-title">change_character_z_index</span>](#method-change_character_z_index) ( `character`: [DialogicCharacter](class_dialogiccharacter.md), `z_index`: [int](https://docs.godotengine.org/en/latest/classes/class_int.html#class-int), `update_zindex`: [bool](https://docs.godotengine.org/en/latest/classes/class_bool.html#class-bool) = `true` ) 
+<span style = "color: gray">void</span> | [<span class="hljs-title">change_speaker</span>](#method-change_speaker) ( `speaker`: [DialogicCharacter](class_dialogiccharacter.md) = `null`, `portrait`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) = `""` ) 
+<span style = "color: gray">void</span> | [<span class="hljs-title">clear_game_state</span>](#method-clear_game_state) ( `clear_flag`: [int](https://docs.godotengine.org/en/latest/classes/class_int.html#class-int) = `0` ) 
+<span class="hljs-attribute">[Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html#class-dictionary)</span> | [<span class="hljs-title">get_character_info</span>](#method-get_character_info) ( `character`: [DialogicCharacter](class_dialogiccharacter.md) ) 
+<span class="hljs-attribute">[DialogicCharacter[]](https://docs.godotengine.org/en/latest/classes/class_dialogiccharacter.html#class-dialogiccharacter)</span> | [<span class="hljs-title">get_joined_characters</span>](#method-get_joined_characters) ( ) 
+<span class="hljs-attribute">[DialogicNode_PortraitContainer](class_dialogicnode_portraitcontainer.md)</span> | [<span class="hljs-title">get_portrait_container</span>](#method-get_portrait_container) ( `postion_index`: [int](https://docs.godotengine.org/en/latest/classes/class_int.html#class-int) ) 
+<span class="hljs-attribute">[bool](https://docs.godotengine.org/en/latest/classes/class_bool.html#class-bool)</span> | [<span class="hljs-title">is_character_joined</span>](#method-is_character_joined) ( `character`: [DialogicCharacter](class_dialogiccharacter.md) ) 
+<span class="hljs-attribute">[Node](https://docs.godotengine.org/en/latest/classes/class_node.html#class-node)</span> | [<span class="hljs-title">join_character</span>](#method-join_character) ( `character`: [DialogicCharacter](class_dialogiccharacter.md), `portrait`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string), `position_idx`: [int](https://docs.godotengine.org/en/latest/classes/class_int.html#class-int), `mirrored`: [bool](https://docs.godotengine.org/en/latest/classes/class_bool.html#class-bool) = `false`, `z_index`: [int](https://docs.godotengine.org/en/latest/classes/class_int.html#class-int) = `0`, `extra_data`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) = `""`, `animation_name`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) = `""`, `animation_length`: [float](https://docs.godotengine.org/en/latest/classes/class_float.html#class-float) = `0.0`, `animation_wait`: [bool](https://docs.godotengine.org/en/latest/classes/class_bool.html#class-bool) = `false` ) 
+<span style = "color: gray">void</span> | [<span class="hljs-title">leave_all_characters</span>](#method-leave_all_characters) ( `animation_name`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) = `""`, `animation_length`: [float](https://docs.godotengine.org/en/latest/classes/class_float.html#class-float) = `0.0`, `animation_wait`: [bool](https://docs.godotengine.org/en/latest/classes/class_bool.html#class-bool) = `false` ) 
+<span style = "color: gray">void</span> | [<span class="hljs-title">leave_character</span>](#method-leave_character) ( `character`: [DialogicCharacter](class_dialogiccharacter.md), `animation_name`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) = `""`, `animation_length`: [float](https://docs.godotengine.org/en/latest/classes/class_float.html#class-float) = `0.0`, `animation_wait`: [bool](https://docs.godotengine.org/en/latest/classes/class_bool.html#class-bool) = `false` ) 
+<span style = "color: gray">void</span> | [<span class="hljs-title">load_game_state</span>](#method-load_game_state) ( `load_flag`: [int](https://docs.godotengine.org/en/latest/classes/class_int.html#class-int) = `0` ) 
+<span style = "color: gray">void</span> | [<span class="hljs-title">move_character</span>](#method-move_character) ( `character`: [DialogicCharacter](class_dialogiccharacter.md), `position_idx`: [int](https://docs.godotengine.org/en/latest/classes/class_int.html#class-int), `time`: [float](https://docs.godotengine.org/en/latest/classes/class_float.html#class-float) = `0.0` ) 
+<span style = "color: gray">void</span> | [<span class="hljs-title">move_portrait_position</span>](#method-move_portrait_position) ( `position_index`: [int](https://docs.godotengine.org/en/latest/classes/class_int.html#class-int), `vector`: [Vector2](https://docs.godotengine.org/en/latest/classes/class_vector2.html#class-vector2), `relative`: [bool](https://docs.godotengine.org/en/latest/classes/class_bool.html#class-bool) = `false`, `time`: [float](https://docs.godotengine.org/en/latest/classes/class_float.html#class-float) = `0.0` ) 
+<span style = "color: gray">void</span> | [<span class="hljs-title">pause</span>](#method-pause) ( ) 
+<span style = "color: gray">void</span> | [<span class="hljs-title">remove_character</span>](#method-remove_character) ( `character`: [DialogicCharacter](class_dialogiccharacter.md) ) 
+<span style = "color: gray">void</span> | [<span class="hljs-title">reset_all_portrait_positions</span>](#method-reset_all_portrait_positions) ( `time`: [float](https://docs.godotengine.org/en/latest/classes/class_float.html#class-float) = `0.0` ) 
+<span style = "color: gray">void</span> | [<span class="hljs-title">reset_portrait_position</span>](#method-reset_portrait_position) ( `position_index`: [int](https://docs.godotengine.org/en/latest/classes/class_int.html#class-int), `time`: [float](https://docs.godotengine.org/en/latest/classes/class_float.html#class-float) = `0.0` ) 
+<span style = "color: gray">void</span> | [<span class="hljs-title">resume</span>](#method-resume) ( ) 
+<span style = "color: gray">void</span> | [<span class="hljs-title">text_effect_portrait</span>](#method-text_effect_portrait) ( `text_node`: [Control](https://docs.godotengine.org/en/latest/classes/class_control.html#class-control), `skipped`: [bool](https://docs.godotengine.org/en/latest/classes/class_bool.html#class-bool), `argument`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) ) 
+<span class="hljs-attribute">[bool](https://docs.godotengine.org/en/latest/classes/class_bool.html#class-bool)</span> | [<span class="hljs-title">z_sort_portrait_containers</span>](#method-z_sort_portrait_containers) ( `con1`: [DialogicNode_PortraitContainer](class_dialogicnode_portraitcontainer.md), `con2`: [DialogicNode_PortraitContainer](class_dialogicnode_portraitcontainer.md) ) 
 --- 
 
 ## Signals
@@ -113,7 +113,7 @@ The default portrait scene.
 
 
 
-<a class="header" id="method-add_character" href="#method-add_character">**<span class="hljs-attribute">func</span> [<span class="hljs-title">add_character</span>](#property-add_character) ( `character`: [DialogicCharacter](class_dialogiccharacter.md), `portrait`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string), `position_idx`: [int](https://docs.godotengine.org/en/latest/classes/class_int.html#class-int) )</a>  ⇒ <span class="hljs-attribute">[Node](https://docs.godotengine.org/en/latest/classes/class_node.html#class-node)</span>** 
+<a class="header" id="method-add_character" href="#method-add_character">**<span class="hljs-attribute">func</span> [<span class="hljs-title">add_character</span>](#method-add_character) ( `character`: [DialogicCharacter](class_dialogiccharacter.md), `portrait`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string), `position_idx`: [int](https://docs.godotengine.org/en/latest/classes/class_int.html#class-int) )</a>  ⇒ <span class="hljs-attribute">[Node](https://docs.godotengine.org/en/latest/classes/class_node.html#class-node)</span>** 
 
 
 
@@ -123,7 +123,7 @@ The default portrait scene.
 
 
 
-<a class="header" id="method-add_portrait_position" href="#method-add_portrait_position">**<span class="hljs-attribute">func</span> [<span class="hljs-title">add_portrait_position</span>](#property-add_portrait_position) ( `position_index`: [int](https://docs.godotengine.org/en/latest/classes/class_int.html#class-int), `position`: [Vector2](https://docs.godotengine.org/en/latest/classes/class_vector2.html#class-vector2) )</a>  ⇒ <span style = "color: gray">void</span>** 
+<a class="header" id="method-add_portrait_position" href="#method-add_portrait_position">**<span class="hljs-attribute">func</span> [<span class="hljs-title">add_portrait_position</span>](#method-add_portrait_position) ( `position_index`: [int](https://docs.godotengine.org/en/latest/classes/class_int.html#class-int), `position`: [Vector2](https://docs.godotengine.org/en/latest/classes/class_vector2.html#class-vector2) )</a>  ⇒ <span style = "color: gray">void</span>** 
 
 
 
@@ -133,7 +133,7 @@ Creates a new portrait container node. It will copy it's size and most settings 
 
 
 
-<a class="header" id="method-animate_character" href="#method-animate_character">**<span class="hljs-attribute">func</span> [<span class="hljs-title">animate_character</span>](#property-animate_character) ( `character`: [DialogicCharacter](class_dialogiccharacter.md), `animation_path`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string), `length`: [float](https://docs.godotengine.org/en/latest/classes/class_float.html#class-float), `repeats`: [int](https://docs.godotengine.org/en/latest/classes/class_int.html#class-int) = `1` )</a>  ⇒ <span class="hljs-attribute">[DialogicAnimation](class_dialogicanimation.md)</span>** 
+<a class="header" id="method-animate_character" href="#method-animate_character">**<span class="hljs-attribute">func</span> [<span class="hljs-title">animate_character</span>](#method-animate_character) ( `character`: [DialogicCharacter](class_dialogiccharacter.md), `animation_path`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string), `length`: [float](https://docs.godotengine.org/en/latest/classes/class_float.html#class-float), `repeats`: [int](https://docs.godotengine.org/en/latest/classes/class_int.html#class-int) = `1` )</a>  ⇒ <span class="hljs-attribute">[DialogicAnimation](class_dialogicanimation.md)</span>** 
 
 
 
@@ -143,7 +143,7 @@ Starts the given animation on the given character. Only works with joined charac
 
 
 
-<a class="header" id="method-change_character_extradata" href="#method-change_character_extradata">**<span class="hljs-attribute">func</span> [<span class="hljs-title">change_character_extradata</span>](#property-change_character_extradata) ( `character`: [DialogicCharacter](class_dialogiccharacter.md), `extra_data`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) = `""` )</a>  ⇒ <span style = "color: gray">void</span>** 
+<a class="header" id="method-change_character_extradata" href="#method-change_character_extradata">**<span class="hljs-attribute">func</span> [<span class="hljs-title">change_character_extradata</span>](#method-change_character_extradata) ( `character`: [DialogicCharacter](class_dialogiccharacter.md), `extra_data`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) = `""` )</a>  ⇒ <span style = "color: gray">void</span>** 
 
 
 
@@ -153,7 +153,7 @@ Changes the extra data on the given character. Only works with joined characters
 
 
 
-<a class="header" id="method-change_character_mirror" href="#method-change_character_mirror">**<span class="hljs-attribute">func</span> [<span class="hljs-title">change_character_mirror</span>](#property-change_character_mirror) ( `character`: [DialogicCharacter](class_dialogiccharacter.md), `mirrored`: [bool](https://docs.godotengine.org/en/latest/classes/class_bool.html#class-bool) = `false`, `force`: [bool](https://docs.godotengine.org/en/latest/classes/class_bool.html#class-bool) = `false` )</a>  ⇒ <span style = "color: gray">void</span>** 
+<a class="header" id="method-change_character_mirror" href="#method-change_character_mirror">**<span class="hljs-attribute">func</span> [<span class="hljs-title">change_character_mirror</span>](#method-change_character_mirror) ( `character`: [DialogicCharacter](class_dialogiccharacter.md), `mirrored`: [bool](https://docs.godotengine.org/en/latest/classes/class_bool.html#class-bool) = `false`, `force`: [bool](https://docs.godotengine.org/en/latest/classes/class_bool.html#class-bool) = `false` )</a>  ⇒ <span style = "color: gray">void</span>** 
 
 
 
@@ -163,7 +163,7 @@ Changes the mirror of the given character. Only works with joined characters
 
 
 
-<a class="header" id="method-change_character_portrait" href="#method-change_character_portrait">**<span class="hljs-attribute">func</span> [<span class="hljs-title">change_character_portrait</span>](#property-change_character_portrait) ( `character`: [DialogicCharacter](class_dialogiccharacter.md), `portrait`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string), `update_transform`: [bool](https://docs.godotengine.org/en/latest/classes/class_bool.html#class-bool) = `true` )</a>  ⇒ <span style = "color: gray">void</span>** 
+<a class="header" id="method-change_character_portrait" href="#method-change_character_portrait">**<span class="hljs-attribute">func</span> [<span class="hljs-title">change_character_portrait</span>](#method-change_character_portrait) ( `character`: [DialogicCharacter](class_dialogiccharacter.md), `portrait`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string), `update_transform`: [bool](https://docs.godotengine.org/en/latest/classes/class_bool.html#class-bool) = `true` )</a>  ⇒ <span style = "color: gray">void</span>** 
 
 
 
@@ -173,7 +173,7 @@ Changes the portrait of a character. Only works with joined characters.
 
 
 
-<a class="header" id="method-change_character_z_index" href="#method-change_character_z_index">**<span class="hljs-attribute">func</span> [<span class="hljs-title">change_character_z_index</span>](#property-change_character_z_index) ( `character`: [DialogicCharacter](class_dialogiccharacter.md), `z_index`: [int](https://docs.godotengine.org/en/latest/classes/class_int.html#class-int), `update_zindex`: [bool](https://docs.godotengine.org/en/latest/classes/class_bool.html#class-bool) = `true` )</a>  ⇒ <span style = "color: gray">void</span>** 
+<a class="header" id="method-change_character_z_index" href="#method-change_character_z_index">**<span class="hljs-attribute">func</span> [<span class="hljs-title">change_character_z_index</span>](#method-change_character_z_index) ( `character`: [DialogicCharacter](class_dialogiccharacter.md), `z_index`: [int](https://docs.godotengine.org/en/latest/classes/class_int.html#class-int), `update_zindex`: [bool](https://docs.godotengine.org/en/latest/classes/class_bool.html#class-bool) = `true` )</a>  ⇒ <span style = "color: gray">void</span>** 
 
 
 
@@ -183,7 +183,7 @@ Changes the z_index of a character. Only works with joined characters
 
 
 
-<a class="header" id="method-change_speaker" href="#method-change_speaker">**<span class="hljs-attribute">func</span> [<span class="hljs-title">change_speaker</span>](#property-change_speaker) ( `speaker`: [DialogicCharacter](class_dialogiccharacter.md) = `null`, `portrait`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) = `""` )</a>  ⇒ <span style = "color: gray">void</span>** 
+<a class="header" id="method-change_speaker" href="#method-change_speaker">**<span class="hljs-attribute">func</span> [<span class="hljs-title">change_speaker</span>](#method-change_speaker) ( `speaker`: [DialogicCharacter](class_dialogiccharacter.md) = `null`, `portrait`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) = `""` )</a>  ⇒ <span style = "color: gray">void</span>** 
 
 
 
@@ -193,7 +193,7 @@ Updates all portrait containers set to SPEAKER.
 
 
 
-<a class="header" id="method-clear_game_state" href="#method-clear_game_state">**<span class="hljs-attribute">func</span> [<span class="hljs-title">clear_game_state</span>](#property-clear_game_state) ( `clear_flag`: [int](https://docs.godotengine.org/en/latest/classes/class_int.html#class-int) = `0` )</a>  ⇒ <span style = "color: gray">void</span>** 
+<a class="header" id="method-clear_game_state" href="#method-clear_game_state">**<span class="hljs-attribute">func</span> [<span class="hljs-title">clear_game_state</span>](#method-clear_game_state) ( `clear_flag`: [int](https://docs.godotengine.org/en/latest/classes/class_int.html#class-int) = `0` )</a>  ⇒ <span style = "color: gray">void</span>** 
 
 
 
@@ -203,7 +203,7 @@ Updates all portrait containers set to SPEAKER.
 
 
 
-<a class="header" id="method-get_character_info" href="#method-get_character_info">**<span class="hljs-attribute">func</span> [<span class="hljs-title">get_character_info</span>](#property-get_character_info) ( `character`: [DialogicCharacter](class_dialogiccharacter.md) )</a>  ⇒ <span class="hljs-attribute">[Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html#class-dictionary)</span>** 
+<a class="header" id="method-get_character_info" href="#method-get_character_info">**<span class="hljs-attribute">func</span> [<span class="hljs-title">get_character_info</span>](#method-get_character_info) ( `character`: [DialogicCharacter](class_dialogiccharacter.md) )</a>  ⇒ <span class="hljs-attribute">[Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html#class-dictionary)</span>** 
 
 
 
@@ -213,7 +213,7 @@ Returns a dictionary with info on a given character. Keys can be [joined, charac
 
 
 
-<a class="header" id="method-get_joined_characters" href="#method-get_joined_characters">**<span class="hljs-attribute">func</span> [<span class="hljs-title">get_joined_characters</span>](#property-get_joined_characters) ( )</a>  ⇒ <span class="hljs-attribute">[DialogicCharacter[]](https://docs.godotengine.org/en/latest/classes/class_dialogiccharacter.html#class-dialogiccharacter)</span>** 
+<a class="header" id="method-get_joined_characters" href="#method-get_joined_characters">**<span class="hljs-attribute">func</span> [<span class="hljs-title">get_joined_characters</span>](#method-get_joined_characters) ( )</a>  ⇒ <span class="hljs-attribute">[DialogicCharacter[]](https://docs.godotengine.org/en/latest/classes/class_dialogiccharacter.html#class-dialogiccharacter)</span>** 
 
 
 
@@ -223,7 +223,7 @@ Returns a list of the joined charcters (as resources)
 
 
 
-<a class="header" id="method-get_portrait_container" href="#method-get_portrait_container">**<span class="hljs-attribute">func</span> [<span class="hljs-title">get_portrait_container</span>](#property-get_portrait_container) ( `postion_index`: [int](https://docs.godotengine.org/en/latest/classes/class_int.html#class-int) )</a>  ⇒ <span class="hljs-attribute">[DialogicNode_PortraitContainer](class_dialogicnode_portraitcontainer.md)</span>** 
+<a class="header" id="method-get_portrait_container" href="#method-get_portrait_container">**<span class="hljs-attribute">func</span> [<span class="hljs-title">get_portrait_container</span>](#method-get_portrait_container) ( `postion_index`: [int](https://docs.godotengine.org/en/latest/classes/class_int.html#class-int) )</a>  ⇒ <span class="hljs-attribute">[DialogicNode_PortraitContainer](class_dialogicnode_portraitcontainer.md)</span>** 
 
 
 
@@ -233,7 +233,7 @@ Returns a list of the joined charcters (as resources)
 
 
 
-<a class="header" id="method-is_character_joined" href="#method-is_character_joined">**<span class="hljs-attribute">func</span> [<span class="hljs-title">is_character_joined</span>](#property-is_character_joined) ( `character`: [DialogicCharacter](class_dialogiccharacter.md) )</a>  ⇒ <span class="hljs-attribute">[bool](https://docs.godotengine.org/en/latest/classes/class_bool.html#class-bool)</span>** 
+<a class="header" id="method-is_character_joined" href="#method-is_character_joined">**<span class="hljs-attribute">func</span> [<span class="hljs-title">is_character_joined</span>](#method-is_character_joined) ( `character`: [DialogicCharacter](class_dialogiccharacter.md) )</a>  ⇒ <span class="hljs-attribute">[bool](https://docs.godotengine.org/en/latest/classes/class_bool.html#class-bool)</span>** 
 
 
 
@@ -243,7 +243,7 @@ Returns true if the given character is currently joined.
 
 
 
-<a class="header" id="method-join_character" href="#method-join_character">**<span class="hljs-attribute">func</span> [<span class="hljs-title">join_character</span>](#property-join_character) ( `character`: [DialogicCharacter](class_dialogiccharacter.md), `portrait`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string), `position_idx`: [int](https://docs.godotengine.org/en/latest/classes/class_int.html#class-int), `mirrored`: [bool](https://docs.godotengine.org/en/latest/classes/class_bool.html#class-bool) = `false`, `z_index`: [int](https://docs.godotengine.org/en/latest/classes/class_int.html#class-int) = `0`, `extra_data`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) = `""`, `animation_name`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) = `""`, `animation_length`: [float](https://docs.godotengine.org/en/latest/classes/class_float.html#class-float) = `0.0`, `animation_wait`: [bool](https://docs.godotengine.org/en/latest/classes/class_bool.html#class-bool) = `false` )</a>  ⇒ <span class="hljs-attribute">[Node](https://docs.godotengine.org/en/latest/classes/class_node.html#class-node)</span>** 
+<a class="header" id="method-join_character" href="#method-join_character">**<span class="hljs-attribute">func</span> [<span class="hljs-title">join_character</span>](#method-join_character) ( `character`: [DialogicCharacter](class_dialogiccharacter.md), `portrait`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string), `position_idx`: [int](https://docs.godotengine.org/en/latest/classes/class_int.html#class-int), `mirrored`: [bool](https://docs.godotengine.org/en/latest/classes/class_bool.html#class-bool) = `false`, `z_index`: [int](https://docs.godotengine.org/en/latest/classes/class_int.html#class-int) = `0`, `extra_data`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) = `""`, `animation_name`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) = `""`, `animation_length`: [float](https://docs.godotengine.org/en/latest/classes/class_float.html#class-float) = `0.0`, `animation_wait`: [bool](https://docs.godotengine.org/en/latest/classes/class_bool.html#class-bool) = `false` )</a>  ⇒ <span class="hljs-attribute">[Node](https://docs.godotengine.org/en/latest/classes/class_node.html#class-node)</span>** 
 
 
 
@@ -253,7 +253,7 @@ Adds a character at a position and sets it's portrait. If the character is alrea
 
 
 
-<a class="header" id="method-leave_all_characters" href="#method-leave_all_characters">**<span class="hljs-attribute">func</span> [<span class="hljs-title">leave_all_characters</span>](#property-leave_all_characters) ( `animation_name`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) = `""`, `animation_length`: [float](https://docs.godotengine.org/en/latest/classes/class_float.html#class-float) = `0.0`, `animation_wait`: [bool](https://docs.godotengine.org/en/latest/classes/class_bool.html#class-bool) = `false` )</a>  ⇒ <span style = "color: gray">void</span>** 
+<a class="header" id="method-leave_all_characters" href="#method-leave_all_characters">**<span class="hljs-attribute">func</span> [<span class="hljs-title">leave_all_characters</span>](#method-leave_all_characters) ( `animation_name`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) = `""`, `animation_length`: [float](https://docs.godotengine.org/en/latest/classes/class_float.html#class-float) = `0.0`, `animation_wait`: [bool](https://docs.godotengine.org/en/latest/classes/class_bool.html#class-bool) = `false` )</a>  ⇒ <span style = "color: gray">void</span>** 
 
 
 
@@ -263,7 +263,7 @@ Removes all joined characters with a given animation or the default animation.
 
 
 
-<a class="header" id="method-leave_character" href="#method-leave_character">**<span class="hljs-attribute">func</span> [<span class="hljs-title">leave_character</span>](#property-leave_character) ( `character`: [DialogicCharacter](class_dialogiccharacter.md), `animation_name`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) = `""`, `animation_length`: [float](https://docs.godotengine.org/en/latest/classes/class_float.html#class-float) = `0.0`, `animation_wait`: [bool](https://docs.godotengine.org/en/latest/classes/class_bool.html#class-bool) = `false` )</a>  ⇒ <span style = "color: gray">void</span>** 
+<a class="header" id="method-leave_character" href="#method-leave_character">**<span class="hljs-attribute">func</span> [<span class="hljs-title">leave_character</span>](#method-leave_character) ( `character`: [DialogicCharacter](class_dialogiccharacter.md), `animation_name`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) = `""`, `animation_length`: [float](https://docs.godotengine.org/en/latest/classes/class_float.html#class-float) = `0.0`, `animation_wait`: [bool](https://docs.godotengine.org/en/latest/classes/class_bool.html#class-bool) = `false` )</a>  ⇒ <span style = "color: gray">void</span>** 
 
 
 
@@ -273,7 +273,7 @@ Removes a character with a given animation or the default animation.
 
 
 
-<a class="header" id="method-load_game_state" href="#method-load_game_state">**<span class="hljs-attribute">func</span> [<span class="hljs-title">load_game_state</span>](#property-load_game_state) ( `load_flag`: [int](https://docs.godotengine.org/en/latest/classes/class_int.html#class-int) = `0` )</a>  ⇒ <span style = "color: gray">void</span>** 
+<a class="header" id="method-load_game_state" href="#method-load_game_state">**<span class="hljs-attribute">func</span> [<span class="hljs-title">load_game_state</span>](#method-load_game_state) ( `load_flag`: [int](https://docs.godotengine.org/en/latest/classes/class_int.html#class-int) = `0` )</a>  ⇒ <span style = "color: gray">void</span>** 
 
 
 
@@ -283,7 +283,7 @@ Removes a character with a given animation or the default animation.
 
 
 
-<a class="header" id="method-move_character" href="#method-move_character">**<span class="hljs-attribute">func</span> [<span class="hljs-title">move_character</span>](#property-move_character) ( `character`: [DialogicCharacter](class_dialogiccharacter.md), `position_idx`: [int](https://docs.godotengine.org/en/latest/classes/class_int.html#class-int), `time`: [float](https://docs.godotengine.org/en/latest/classes/class_float.html#class-float) = `0.0` )</a>  ⇒ <span style = "color: gray">void</span>** 
+<a class="header" id="method-move_character" href="#method-move_character">**<span class="hljs-attribute">func</span> [<span class="hljs-title">move_character</span>](#method-move_character) ( `character`: [DialogicCharacter](class_dialogiccharacter.md), `position_idx`: [int](https://docs.godotengine.org/en/latest/classes/class_int.html#class-int), `time`: [float](https://docs.godotengine.org/en/latest/classes/class_float.html#class-float) = `0.0` )</a>  ⇒ <span style = "color: gray">void</span>** 
 
 
 
@@ -293,7 +293,7 @@ Moves the given character to the given position. Only works with joined characte
 
 
 
-<a class="header" id="method-move_portrait_position" href="#method-move_portrait_position">**<span class="hljs-attribute">func</span> [<span class="hljs-title">move_portrait_position</span>](#property-move_portrait_position) ( `position_index`: [int](https://docs.godotengine.org/en/latest/classes/class_int.html#class-int), `vector`: [Vector2](https://docs.godotengine.org/en/latest/classes/class_vector2.html#class-vector2), `relative`: [bool](https://docs.godotengine.org/en/latest/classes/class_bool.html#class-bool) = `false`, `time`: [float](https://docs.godotengine.org/en/latest/classes/class_float.html#class-float) = `0.0` )</a>  ⇒ <span style = "color: gray">void</span>** 
+<a class="header" id="method-move_portrait_position" href="#method-move_portrait_position">**<span class="hljs-attribute">func</span> [<span class="hljs-title">move_portrait_position</span>](#method-move_portrait_position) ( `position_index`: [int](https://docs.godotengine.org/en/latest/classes/class_int.html#class-int), `vector`: [Vector2](https://docs.godotengine.org/en/latest/classes/class_vector2.html#class-vector2), `relative`: [bool](https://docs.godotengine.org/en/latest/classes/class_bool.html#class-bool) = `false`, `time`: [float](https://docs.godotengine.org/en/latest/classes/class_float.html#class-float) = `0.0` )</a>  ⇒ <span style = "color: gray">void</span>** 
 
 
 
@@ -303,7 +303,7 @@ Moves the given character to the given position. Only works with joined characte
 
 
 
-<a class="header" id="method-pause" href="#method-pause">**<span class="hljs-attribute">func</span> [<span class="hljs-title">pause</span>](#property-pause) ( )</a>  ⇒ <span style = "color: gray">void</span>** 
+<a class="header" id="method-pause" href="#method-pause">**<span class="hljs-attribute">func</span> [<span class="hljs-title">pause</span>](#method-pause) ( )</a>  ⇒ <span style = "color: gray">void</span>** 
 
 
 
@@ -313,7 +313,7 @@ Moves the given character to the given position. Only works with joined characte
 
 
 
-<a class="header" id="method-remove_character" href="#method-remove_character">**<span class="hljs-attribute">func</span> [<span class="hljs-title">remove_character</span>](#property-remove_character) ( `character`: [DialogicCharacter](class_dialogiccharacter.md) )</a>  ⇒ <span style = "color: gray">void</span>** 
+<a class="header" id="method-remove_character" href="#method-remove_character">**<span class="hljs-attribute">func</span> [<span class="hljs-title">remove_character</span>](#method-remove_character) ( `character`: [DialogicCharacter](class_dialogiccharacter.md) )</a>  ⇒ <span style = "color: gray">void</span>** 
 
 
 
@@ -323,7 +323,7 @@ Removes the given characters portrait. Only works with joined characters
 
 
 
-<a class="header" id="method-reset_all_portrait_positions" href="#method-reset_all_portrait_positions">**<span class="hljs-attribute">func</span> [<span class="hljs-title">reset_all_portrait_positions</span>](#property-reset_all_portrait_positions) ( `time`: [float](https://docs.godotengine.org/en/latest/classes/class_float.html#class-float) = `0.0` )</a>  ⇒ <span style = "color: gray">void</span>** 
+<a class="header" id="method-reset_all_portrait_positions" href="#method-reset_all_portrait_positions">**<span class="hljs-attribute">func</span> [<span class="hljs-title">reset_all_portrait_positions</span>](#method-reset_all_portrait_positions) ( `time`: [float](https://docs.godotengine.org/en/latest/classes/class_float.html#class-float) = `0.0` )</a>  ⇒ <span style = "color: gray">void</span>** 
 
 
 
@@ -333,7 +333,7 @@ Removes the given characters portrait. Only works with joined characters
 
 
 
-<a class="header" id="method-reset_portrait_position" href="#method-reset_portrait_position">**<span class="hljs-attribute">func</span> [<span class="hljs-title">reset_portrait_position</span>](#property-reset_portrait_position) ( `position_index`: [int](https://docs.godotengine.org/en/latest/classes/class_int.html#class-int), `time`: [float](https://docs.godotengine.org/en/latest/classes/class_float.html#class-float) = `0.0` )</a>  ⇒ <span style = "color: gray">void</span>** 
+<a class="header" id="method-reset_portrait_position" href="#method-reset_portrait_position">**<span class="hljs-attribute">func</span> [<span class="hljs-title">reset_portrait_position</span>](#method-reset_portrait_position) ( `position_index`: [int](https://docs.godotengine.org/en/latest/classes/class_int.html#class-int), `time`: [float](https://docs.godotengine.org/en/latest/classes/class_float.html#class-float) = `0.0` )</a>  ⇒ <span style = "color: gray">void</span>** 
 
 
 
@@ -343,7 +343,7 @@ Removes the given characters portrait. Only works with joined characters
 
 
 
-<a class="header" id="method-resume" href="#method-resume">**<span class="hljs-attribute">func</span> [<span class="hljs-title">resume</span>](#property-resume) ( )</a>  ⇒ <span style = "color: gray">void</span>** 
+<a class="header" id="method-resume" href="#method-resume">**<span class="hljs-attribute">func</span> [<span class="hljs-title">resume</span>](#method-resume) ( )</a>  ⇒ <span style = "color: gray">void</span>** 
 
 
 
@@ -353,7 +353,7 @@ Removes the given characters portrait. Only works with joined characters
 
 
 
-<a class="header" id="method-text_effect_portrait" href="#method-text_effect_portrait">**<span class="hljs-attribute">func</span> [<span class="hljs-title">text_effect_portrait</span>](#property-text_effect_portrait) ( `text_node`: [Control](https://docs.godotengine.org/en/latest/classes/class_control.html#class-control), `skipped`: [bool](https://docs.godotengine.org/en/latest/classes/class_bool.html#class-bool), `argument`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) )</a>  ⇒ <span style = "color: gray">void</span>** 
+<a class="header" id="method-text_effect_portrait" href="#method-text_effect_portrait">**<span class="hljs-attribute">func</span> [<span class="hljs-title">text_effect_portrait</span>](#method-text_effect_portrait) ( `text_node`: [Control](https://docs.godotengine.org/en/latest/classes/class_control.html#class-control), `skipped`: [bool](https://docs.godotengine.org/en/latest/classes/class_bool.html#class-bool), `argument`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) )</a>  ⇒ <span style = "color: gray">void</span>** 
 
 
 
@@ -363,7 +363,7 @@ Called from the [portrait=something] text effect.
 
 
 
-<a class="header" id="method-z_sort_portrait_containers" href="#method-z_sort_portrait_containers">**<span class="hljs-attribute">func</span> [<span class="hljs-title">z_sort_portrait_containers</span>](#property-z_sort_portrait_containers) ( `con1`: [DialogicNode_PortraitContainer](class_dialogicnode_portraitcontainer.md), `con2`: [DialogicNode_PortraitContainer](class_dialogicnode_portraitcontainer.md) )</a>  ⇒ <span class="hljs-attribute">[bool](https://docs.godotengine.org/en/latest/classes/class_bool.html#class-bool)</span>** 
+<a class="header" id="method-z_sort_portrait_containers" href="#method-z_sort_portrait_containers">**<span class="hljs-attribute">func</span> [<span class="hljs-title">z_sort_portrait_containers</span>](#method-z_sort_portrait_containers) ( `con1`: [DialogicNode_PortraitContainer](class_dialogicnode_portraitcontainer.md), `con2`: [DialogicNode_PortraitContainer](class_dialogicnode_portraitcontainer.md) )</a>  ⇒ <span class="hljs-attribute">[bool](https://docs.godotengine.org/en/latest/classes/class_bool.html#class-bool)</span>** 
 
 
 

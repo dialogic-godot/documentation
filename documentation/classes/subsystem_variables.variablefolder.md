@@ -20,9 +20,9 @@ Name | Type | Default
 ## Methods
 Returns | Method 
 --- | --- 
-<span class="hljs-attribute">[Array](https://docs.godotengine.org/en/latest/classes/class_array.html#class-array)</span> | [<span class="hljs-title">folders</span>](#property-folders) ( ) 
-<span class="hljs-attribute">[bool](https://docs.godotengine.org/en/latest/classes/class_bool.html#class-bool)</span> | [<span class="hljs-title">has</span>](#property-has) ( `key`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) ) 
-<span class="hljs-attribute">[Array](https://docs.godotengine.org/en/latest/classes/class_array.html#class-array)</span> | [<span class="hljs-title">variables</span>](#property-variables) ( `absolute`: [bool](https://docs.godotengine.org/en/latest/classes/class_bool.html#class-bool) = `false` ) 
+<span class="hljs-attribute">[Array](https://docs.godotengine.org/en/latest/classes/class_array.html#class-array)</span> | [<span class="hljs-title">folders</span>](#method-folders) ( ) 
+<span class="hljs-attribute">[bool](https://docs.godotengine.org/en/latest/classes/class_bool.html#class-bool)</span> | [<span class="hljs-title">has</span>](#method-has) ( `key`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) ) 
+<span class="hljs-attribute">[Array](https://docs.godotengine.org/en/latest/classes/class_array.html#class-array)</span> | [<span class="hljs-title">variables</span>](#method-variables) ( `absolute`: [bool](https://docs.godotengine.org/en/latest/classes/class_bool.html#class-bool) = `false` ) 
 --- 
 ## Property Descriptions
 
@@ -60,7 +60,7 @@ Returns | Method
 
 
 
-<a class="header" id="method-folders" href="#method-folders">**<span class="hljs-attribute">func</span> [<span class="hljs-title">folders</span>](#property-folders) ( )</a>  ⇒ <span class="hljs-attribute">[Array](https://docs.godotengine.org/en/latest/classes/class_array.html#class-array)</span>** 
+<a class="header" id="method-folders" href="#method-folders">**<span class="hljs-attribute">func</span> [<span class="hljs-title">folders</span>](#method-folders) ( )</a>  ⇒ <span class="hljs-attribute">[Array](https://docs.godotengine.org/en/latest/classes/class_array.html#class-array)</span>** 
 
 
 
@@ -70,7 +70,7 @@ Returns | Method
 
 
 
-<a class="header" id="method-has" href="#method-has">**<span class="hljs-attribute">func</span> [<span class="hljs-title">has</span>](#property-has) ( `key`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) )</a>  ⇒ <span class="hljs-attribute">[bool](https://docs.godotengine.org/en/latest/classes/class_bool.html#class-bool)</span>** 
+<a class="header" id="method-has" href="#method-has">**<span class="hljs-attribute">func</span> [<span class="hljs-title">has</span>](#method-has) ( `key`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) )</a>  ⇒ <span class="hljs-attribute">[bool](https://docs.godotengine.org/en/latest/classes/class_bool.html#class-bool)</span>** 
 
 
 
@@ -80,7 +80,7 @@ Returns | Method
 
 
 
-<a class="header" id="method-variables" href="#method-variables">**<span class="hljs-attribute">func</span> [<span class="hljs-title">variables</span>](#property-variables) ( `absolute`: [bool](https://docs.godotengine.org/en/latest/classes/class_bool.html#class-bool) = `false` )</a>  ⇒ <span class="hljs-attribute">[Array](https://docs.godotengine.org/en/latest/classes/class_array.html#class-array)</span>** 
+<a class="header" id="method-variables" href="#method-variables">**<span class="hljs-attribute">func</span> [<span class="hljs-title">variables</span>](#method-variables) ( `absolute`: [bool](https://docs.godotengine.org/en/latest/classes/class_bool.html#class-bool) = `false` )</a>  ⇒ <span class="hljs-attribute">[Array](https://docs.godotengine.org/en/latest/classes/class_array.html#class-array)</span>** 
 
 
 

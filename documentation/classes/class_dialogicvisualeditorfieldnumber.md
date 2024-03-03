@@ -25,12 +25,12 @@ Name | Type | Default
 ## Methods
 Returns | Method 
 --- | --- 
-<span class="hljs-attribute">[float](https://docs.godotengine.org/en/latest/classes/class_float.html#class-float)</span> | [<span class="hljs-title">get_value</span>](#property-get_value) ( ) 
-<span style = "color: gray">void</span> | [<span class="hljs-title">update_prefix</span>](#property-update_prefix) ( `to_prefix`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) ) 
-<span style = "color: gray">void</span> | [<span class="hljs-title">update_suffix</span>](#property-update_suffix) ( `to_suffix`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) ) 
-<span style = "color: gray">void</span> | [<span class="hljs-title">use_decibel_mode</span>](#property-use_decibel_mode) ( `value_step`: [float](https://docs.godotengine.org/en/latest/classes/class_float.html#class-float) = `<unknown>` ) 
-<span style = "color: gray">void</span> | [<span class="hljs-title">use_float_mode</span>](#property-use_float_mode) ( `value_step`: [float](https://docs.godotengine.org/en/latest/classes/class_float.html#class-float) = `0.1` ) 
-<span style = "color: gray">void</span> | [<span class="hljs-title">use_int_mode</span>](#property-use_int_mode) ( `value_step`: [float](https://docs.godotengine.org/en/latest/classes/class_float.html#class-float) = `1.0` ) 
+<span class="hljs-attribute">[float](https://docs.godotengine.org/en/latest/classes/class_float.html#class-float)</span> | [<span class="hljs-title">get_value</span>](#method-get_value) ( ) 
+<span style = "color: gray">void</span> | [<span class="hljs-title">update_prefix</span>](#method-update_prefix) ( `to_prefix`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) ) 
+<span style = "color: gray">void</span> | [<span class="hljs-title">update_suffix</span>](#method-update_suffix) ( `to_suffix`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) ) 
+<span style = "color: gray">void</span> | [<span class="hljs-title">use_decibel_mode</span>](#method-use_decibel_mode) ( `value_step`: [float](https://docs.godotengine.org/en/latest/classes/class_float.html#class-float) = `<unknown>` ) 
+<span style = "color: gray">void</span> | [<span class="hljs-title">use_float_mode</span>](#method-use_float_mode) ( `value_step`: [float](https://docs.godotengine.org/en/latest/classes/class_float.html#class-float) = `0.1` ) 
+<span style = "color: gray">void</span> | [<span class="hljs-title">use_int_mode</span>](#method-use_int_mode) ( `value_step`: [float](https://docs.godotengine.org/en/latest/classes/class_float.html#class-float) = `1.0` ) 
 --- 
 ## Property Descriptions
 
@@ -118,7 +118,7 @@ Returns | Method
 
 
 
-<a class="header" id="method-get_value" href="#method-get_value">**<span class="hljs-attribute">func</span> [<span class="hljs-title">get_value</span>](#property-get_value) ( )</a>  ⇒ <span class="hljs-attribute">[float](https://docs.godotengine.org/en/latest/classes/class_float.html#class-float)</span>** 
+<a class="header" id="method-get_value" href="#method-get_value">**<span class="hljs-attribute">func</span> [<span class="hljs-title">get_value</span>](#method-get_value) ( )</a>  ⇒ <span class="hljs-attribute">[float](https://docs.godotengine.org/en/latest/classes/class_float.html#class-float)</span>** 
 
 
 
@@ -128,7 +128,7 @@ Returns | Method
 
 
 
-<a class="header" id="method-update_prefix" href="#method-update_prefix">**<span class="hljs-attribute">func</span> [<span class="hljs-title">update_prefix</span>](#property-update_prefix) ( `to_prefix`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) )</a>  ⇒ <span style = "color: gray">void</span>** 
+<a class="header" id="method-update_prefix" href="#method-update_prefix">**<span class="hljs-attribute">func</span> [<span class="hljs-title">update_prefix</span>](#method-update_prefix) ( `to_prefix`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) )</a>  ⇒ <span style = "color: gray">void</span>** 
 
 
 
@@ -138,7 +138,7 @@ Returns | Method
 
 
 
-<a class="header" id="method-update_suffix" href="#method-update_suffix">**<span class="hljs-attribute">func</span> [<span class="hljs-title">update_suffix</span>](#property-update_suffix) ( `to_suffix`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) )</a>  ⇒ <span style = "color: gray">void</span>** 
+<a class="header" id="method-update_suffix" href="#method-update_suffix">**<span class="hljs-attribute">func</span> [<span class="hljs-title">update_suffix</span>](#method-update_suffix) ( `to_suffix`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) )</a>  ⇒ <span style = "color: gray">void</span>** 
 
 
 
@@ -148,7 +148,7 @@ Returns | Method
 
 
 
-<a class="header" id="method-use_decibel_mode" href="#method-use_decibel_mode">**<span class="hljs-attribute">func</span> [<span class="hljs-title">use_decibel_mode</span>](#property-use_decibel_mode) ( `value_step`: [float](https://docs.godotengine.org/en/latest/classes/class_float.html#class-float) = `<unknown>` )</a>  ⇒ <span style = "color: gray">void</span>** 
+<a class="header" id="method-use_decibel_mode" href="#method-use_decibel_mode">**<span class="hljs-attribute">func</span> [<span class="hljs-title">use_decibel_mode</span>](#method-use_decibel_mode) ( `value_step`: [float](https://docs.godotengine.org/en/latest/classes/class_float.html#class-float) = `<unknown>` )</a>  ⇒ <span style = "color: gray">void</span>** 
 
 
 
@@ -158,7 +158,7 @@ Returns | Method
 
 
 
-<a class="header" id="method-use_float_mode" href="#method-use_float_mode">**<span class="hljs-attribute">func</span> [<span class="hljs-title">use_float_mode</span>](#property-use_float_mode) ( `value_step`: [float](https://docs.godotengine.org/en/latest/classes/class_float.html#class-float) = `0.1` )</a>  ⇒ <span style = "color: gray">void</span>** 
+<a class="header" id="method-use_float_mode" href="#method-use_float_mode">**<span class="hljs-attribute">func</span> [<span class="hljs-title">use_float_mode</span>](#method-use_float_mode) ( `value_step`: [float](https://docs.godotengine.org/en/latest/classes/class_float.html#class-float) = `0.1` )</a>  ⇒ <span style = "color: gray">void</span>** 
 
 
 
@@ -168,7 +168,7 @@ Returns | Method
 
 
 
-<a class="header" id="method-use_int_mode" href="#method-use_int_mode">**<span class="hljs-attribute">func</span> [<span class="hljs-title">use_int_mode</span>](#property-use_int_mode) ( `value_step`: [float](https://docs.godotengine.org/en/latest/classes/class_float.html#class-float) = `1.0` )</a>  ⇒ <span style = "color: gray">void</span>** 
+<a class="header" id="method-use_int_mode" href="#method-use_int_mode">**<span class="hljs-attribute">func</span> [<span class="hljs-title">use_int_mode</span>](#method-use_int_mode) ( `value_step`: [float](https://docs.godotengine.org/en/latest/classes/class_float.html#class-float) = `1.0` )</a>  ⇒ <span style = "color: gray">void</span>** 
 
 
 

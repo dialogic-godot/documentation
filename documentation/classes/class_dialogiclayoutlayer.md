@@ -8,7 +8,9 @@
 # DialogicLayoutLayer
 **Inherits:** [Node](https://docs.godotengine.org/en/latest/classes/class_node.html#class-node)
 
-This is turned on automatically when the layout is realized [br] [br]Turn it off, if you want to modify the settings of the nodes yourself.
+This is turned on automatically when the layout is realized 
+ 
+Turn it off, if you want to modify the settings of the nodes yourself.
 ## Properties
 Name | Type | Default 
 --- | --- | --- 
@@ -20,8 +22,8 @@ Name | Type | Default
 ## Methods
 Returns | Method 
 --- | --- 
-<span style = "color: gray">void</span> | [<span class="hljs-title">apply_export_overrides</span>](#property-apply_export_overrides) ( ) 
-<span class="hljs-attribute">[Variant](https://docs.godotengine.org/en/latest/classes/class_variant.html#class-variant)</span> | [<span class="hljs-title">get_global_setting</span>](#property-get_global_setting) ( `setting_name`: [StringName](https://docs.godotengine.org/en/latest/classes/class_stringname.html#class-stringname), `default`: [Variant](https://docs.godotengine.org/en/latest/classes/class_variant.html#class-variant) ) 
+<span style = "color: gray">void</span> | [<span class="hljs-title">apply_export_overrides</span>](#method-apply_export_overrides) ( ) 
+<span class="hljs-attribute">[Variant](https://docs.godotengine.org/en/latest/classes/class_variant.html#class-variant)</span> | [<span class="hljs-title">get_global_setting</span>](#method-get_global_setting) ( `setting_name`: [StringName](https://docs.godotengine.org/en/latest/classes/class_stringname.html#class-stringname), `default`: [Variant](https://docs.godotengine.org/en/latest/classes/class_variant.html#class-variant) ) 
 --- 
 ## Property Descriptions
 
@@ -59,7 +61,7 @@ Returns | Method
 
 
 
-<a class="header" id="method-apply_export_overrides" href="#method-apply_export_overrides">**<span class="hljs-attribute">func</span> [<span class="hljs-title">apply_export_overrides</span>](#property-apply_export_overrides) ( )</a>  ⇒ <span style = "color: gray">void</span>** 
+<a class="header" id="method-apply_export_overrides" href="#method-apply_export_overrides">**<span class="hljs-attribute">func</span> [<span class="hljs-title">apply_export_overrides</span>](#method-apply_export_overrides) ( )</a>  ⇒ <span style = "color: gray">void</span>** 
 
 
 
@@ -69,7 +71,7 @@ Returns | Method
 
 
 
-<a class="header" id="method-get_global_setting" href="#method-get_global_setting">**<span class="hljs-attribute">func</span> [<span class="hljs-title">get_global_setting</span>](#property-get_global_setting) ( `setting_name`: [StringName](https://docs.godotengine.org/en/latest/classes/class_stringname.html#class-stringname), `default`: [Variant](https://docs.godotengine.org/en/latest/classes/class_variant.html#class-variant) )</a>  ⇒ <span class="hljs-attribute">[Variant](https://docs.godotengine.org/en/latest/classes/class_variant.html#class-variant)</span>** 
+<a class="header" id="method-get_global_setting" href="#method-get_global_setting">**<span class="hljs-attribute">func</span> [<span class="hljs-title">get_global_setting</span>](#method-get_global_setting) ( `setting_name`: [StringName](https://docs.godotengine.org/en/latest/classes/class_stringname.html#class-stringname), `default`: [Variant](https://docs.godotengine.org/en/latest/classes/class_variant.html#class-variant) )</a>  ⇒ <span class="hljs-attribute">[Variant](https://docs.godotengine.org/en/latest/classes/class_variant.html#class-variant)</span>** 
 
 
 
