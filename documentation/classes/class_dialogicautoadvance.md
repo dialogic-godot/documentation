@@ -32,12 +32,12 @@ Name | Type | Default
 ## Methods
 Returns | Method 
 --- | --- 
-<span class="hljs-attribute">[float](https://docs.godotengine.org/en/latest/classes/class_float.html#class-float)</span> | [<span class="hljs-title">get_progress</span>](#property-get_progress) ( ) 
-<span class="hljs-attribute">[float](https://docs.godotengine.org/en/latest/classes/class_float.html#class-float)</span> | [<span class="hljs-title">get_time</span>](#property-get_time) ( ) 
-<span class="hljs-attribute">[float](https://docs.godotengine.org/en/latest/classes/class_float.html#class-float)</span> | [<span class="hljs-title">get_time_left</span>](#property-get_time_left) ( ) 
-<span class="hljs-attribute">[bool](https://docs.godotengine.org/en/latest/classes/class_bool.html#class-bool)</span> | [<span class="hljs-title">is_advancing</span>](#property-is_advancing) ( ) 
-<span class="hljs-attribute">[bool](https://docs.godotengine.org/en/latest/classes/class_bool.html#class-bool)</span> | [<span class="hljs-title">is_enabled</span>](#property-is_enabled) ( ) 
-<span style = "color: gray">void</span> | [<span class="hljs-title">start</span>](#property-start) ( ) 
+<span class="hljs-attribute">[float](https://docs.godotengine.org/en/latest/classes/class_float.html#class-float)</span> | [<span class="hljs-title">get_progress</span>](#method-get_progress) ( ) 
+<span class="hljs-attribute">[float](https://docs.godotengine.org/en/latest/classes/class_float.html#class-float)</span> | [<span class="hljs-title">get_time</span>](#method-get_time) ( ) 
+<span class="hljs-attribute">[float](https://docs.godotengine.org/en/latest/classes/class_float.html#class-float)</span> | [<span class="hljs-title">get_time_left</span>](#method-get_time_left) ( ) 
+<span class="hljs-attribute">[bool](https://docs.godotengine.org/en/latest/classes/class_bool.html#class-bool)</span> | [<span class="hljs-title">is_advancing</span>](#method-is_advancing) ( ) 
+<span class="hljs-attribute">[bool](https://docs.godotengine.org/en/latest/classes/class_bool.html#class-bool)</span> | [<span class="hljs-title">is_enabled</span>](#method-is_enabled) ( ) 
+<span style = "color: gray">void</span> | [<span class="hljs-title">start</span>](#method-start) ( ) 
 --- 
 
 ## Signals
@@ -187,7 +187,7 @@ If true, Auto-Advance will be active until the player presses a button.  Use thi
 
 
 
-<a class="header" id="method-get_progress" href="#method-get_progress">**<span class="hljs-attribute">func</span> [<span class="hljs-title">get_progress</span>](#property-get_progress) ( )</a>  ⇒ <span class="hljs-attribute">[float](https://docs.godotengine.org/en/latest/classes/class_float.html#class-float)</span>** 
+<a class="header" id="method-get_progress" href="#method-get_progress">**<span class="hljs-attribute">func</span> [<span class="hljs-title">get_progress</span>](#method-get_progress) ( )</a>  ⇒ <span class="hljs-attribute">[float](https://docs.godotengine.org/en/latest/classes/class_float.html#class-float)</span>** 
 
 
 
@@ -197,7 +197,7 @@ Returns the progress of the auto-advance timer on a scale between 0 and 1. The h
 
 
 
-<a class="header" id="method-get_time" href="#method-get_time">**<span class="hljs-attribute">func</span> [<span class="hljs-title">get_time</span>](#property-get_time) ( )</a>  ⇒ <span class="hljs-attribute">[float](https://docs.godotengine.org/en/latest/classes/class_float.html#class-float)</span>** 
+<a class="header" id="method-get_time" href="#method-get_time">**<span class="hljs-attribute">func</span> [<span class="hljs-title">get_time</span>](#method-get_time) ( )</a>  ⇒ <span class="hljs-attribute">[float](https://docs.godotengine.org/en/latest/classes/class_float.html#class-float)</span>** 
 
 
 
@@ -207,7 +207,7 @@ Returns the progress of the auto-advance timer on a scale between 0 and 1. The h
 
 
 
-<a class="header" id="method-get_time_left" href="#method-get_time_left">**<span class="hljs-attribute">func</span> [<span class="hljs-title">get_time_left</span>](#property-get_time_left) ( )</a>  ⇒ <span class="hljs-attribute">[float](https://docs.godotengine.org/en/latest/classes/class_float.html#class-float)</span>** 
+<a class="header" id="method-get_time_left" href="#method-get_time_left">**<span class="hljs-attribute">func</span> [<span class="hljs-title">get_time_left</span>](#method-get_time_left) ( )</a>  ⇒ <span class="hljs-attribute">[float](https://docs.godotengine.org/en/latest/classes/class_float.html#class-float)</span>** 
 
 
 
@@ -217,7 +217,7 @@ Returns the progress of the auto-advance timer on a scale between 0 and 1. The h
 
 
 
-<a class="header" id="method-is_advancing" href="#method-is_advancing">**<span class="hljs-attribute">func</span> [<span class="hljs-title">is_advancing</span>](#property-is_advancing) ( )</a>  ⇒ <span class="hljs-attribute">[bool](https://docs.godotengine.org/en/latest/classes/class_bool.html#class-bool)</span>** 
+<a class="header" id="method-is_advancing" href="#method-is_advancing">**<span class="hljs-attribute">func</span> [<span class="hljs-title">is_advancing</span>](#method-is_advancing) ( )</a>  ⇒ <span class="hljs-attribute">[bool](https://docs.godotengine.org/en/latest/classes/class_bool.html#class-bool)</span>** 
 
 
 
@@ -227,7 +227,7 @@ Returns the progress of the auto-advance timer on a scale between 0 and 1. The h
 
 
 
-<a class="header" id="method-is_enabled" href="#method-is_enabled">**<span class="hljs-attribute">func</span> [<span class="hljs-title">is_enabled</span>](#property-is_enabled) ( )</a>  ⇒ <span class="hljs-attribute">[bool](https://docs.godotengine.org/en/latest/classes/class_bool.html#class-bool)</span>** 
+<a class="header" id="method-is_enabled" href="#method-is_enabled">**<span class="hljs-attribute">func</span> [<span class="hljs-title">is_enabled</span>](#method-is_enabled) ( )</a>  ⇒ <span class="hljs-attribute">[bool](https://docs.godotengine.org/en/latest/classes/class_bool.html#class-bool)</span>** 
 
 
 
@@ -237,7 +237,7 @@ Returns whether Auto-Advance is currently considered enabled. Auto-Advance uses 
 
 
 
-<a class="header" id="method-start" href="#method-start">**<span class="hljs-attribute">func</span> [<span class="hljs-title">start</span>](#property-start) ( )</a>  ⇒ <span style = "color: gray">void</span>** 
+<a class="header" id="method-start" href="#method-start">**<span class="hljs-attribute">func</span> [<span class="hljs-title">start</span>](#method-start) ( )</a>  ⇒ <span style = "color: gray">void</span>** 
 
 
 

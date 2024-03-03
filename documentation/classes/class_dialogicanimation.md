@@ -22,10 +22,10 @@ Name | Type | Default
 ## Methods
 Returns | Method 
 --- | --- 
-<span style = "color: gray">void</span> | [<span class="hljs-title">animate</span>](#property-animate) ( ) 
-<span style = "color: gray">void</span> | [<span class="hljs-title">finished_one_loop</span>](#property-finished_one_loop) ( ) 
-<span style = "color: gray">void</span> | [<span class="hljs-title">pause</span>](#property-pause) ( ) 
-<span style = "color: gray">void</span> | [<span class="hljs-title">resume</span>](#property-resume) ( ) 
+<span style = "color: gray">void</span> | [<span class="hljs-title">animate</span>](#method-animate) ( ) 
+<span style = "color: gray">void</span> | [<span class="hljs-title">finished_one_loop</span>](#method-finished_one_loop) ( ) 
+<span style = "color: gray">void</span> | [<span class="hljs-title">pause</span>](#method-pause) ( ) 
+<span style = "color: gray">void</span> | [<span class="hljs-title">resume</span>](#method-resume) ( ) 
 --- 
 
 ## Signals
@@ -105,17 +105,17 @@ Set at runtime, will be the length of the animation.
 
 
 
-<a class="header" id="method-animate" href="#method-animate">**<span class="hljs-attribute">func</span> [<span class="hljs-title">animate</span>](#property-animate) ( )</a>  ⇒ <span style = "color: gray">void</span>** 
+<a class="header" id="method-animate" href="#method-animate">**<span class="hljs-attribute">func</span> [<span class="hljs-title">animate</span>](#method-animate) ( )</a>  ⇒ <span style = "color: gray">void</span>** 
 
 
 
-To be overridden. Do the actual animating/tweening in here. Use the properties [node], [time], [end_position], [orig_pos].
+To be overridden. Do the actual animating/tweening in here. Use the properties , , , .
 
 ---
 
 
 
-<a class="header" id="method-finished_one_loop" href="#method-finished_one_loop">**<span class="hljs-attribute">func</span> [<span class="hljs-title">finished_one_loop</span>](#property-finished_one_loop) ( )</a>  ⇒ <span style = "color: gray">void</span>** 
+<a class="header" id="method-finished_one_loop" href="#method-finished_one_loop">**<span class="hljs-attribute">func</span> [<span class="hljs-title">finished_one_loop</span>](#method-finished_one_loop) ( )</a>  ⇒ <span style = "color: gray">void</span>** 
 
 
 
@@ -125,7 +125,7 @@ To be overridden. Do the actual animating/tweening in here. Use the properties [
 
 
 
-<a class="header" id="method-pause" href="#method-pause">**<span class="hljs-attribute">func</span> [<span class="hljs-title">pause</span>](#property-pause) ( )</a>  ⇒ <span style = "color: gray">void</span>** 
+<a class="header" id="method-pause" href="#method-pause">**<span class="hljs-attribute">func</span> [<span class="hljs-title">pause</span>](#method-pause) ( )</a>  ⇒ <span style = "color: gray">void</span>** 
 
 
 
@@ -135,7 +135,7 @@ To be overridden. Do the actual animating/tweening in here. Use the properties [
 
 
 
-<a class="header" id="method-resume" href="#method-resume">**<span class="hljs-attribute">func</span> [<span class="hljs-title">resume</span>](#property-resume) ( )</a>  ⇒ <span style = "color: gray">void</span>** 
+<a class="header" id="method-resume" href="#method-resume">**<span class="hljs-attribute">func</span> [<span class="hljs-title">resume</span>](#method-resume) ( )</a>  ⇒ <span style = "color: gray">void</span>** 
 
 
 

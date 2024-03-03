@@ -18,9 +18,9 @@ Name | Type | Default
 ## Methods
 Returns | Method 
 --- | --- 
-<span style = "color: gray">void</span> | [<span class="hljs-title">animation_finished</span>](#property-animation_finished) ( `arg`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) = `""` ) 
-<span class="hljs-attribute">[bool](https://docs.godotengine.org/en/latest/classes/class_bool.html#class-bool)</span> | [<span class="hljs-title">is_animating</span>](#property-is_animating) ( ) 
-<span style = "color: gray">void</span> | [<span class="hljs-title">start_animating</span>](#property-start_animating) ( ) 
+<span style = "color: gray">void</span> | [<span class="hljs-title">animation_finished</span>](#method-animation_finished) ( `arg`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) = `""` ) 
+<span class="hljs-attribute">[bool](https://docs.godotengine.org/en/latest/classes/class_bool.html#class-bool)</span> | [<span class="hljs-title">is_animating</span>](#method-is_animating) ( ) 
+<span style = "color: gray">void</span> | [<span class="hljs-title">start_animating</span>](#method-start_animating) ( ) 
 --- 
 
 ## Signals
@@ -50,7 +50,7 @@ Returns | Method
 
 
 
-<a class="header" id="method-animation_finished" href="#method-animation_finished">**<span class="hljs-attribute">func</span> [<span class="hljs-title">animation_finished</span>](#property-animation_finished) ( `arg`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) = `""` )</a>  ⇒ <span style = "color: gray">void</span>** 
+<a class="header" id="method-animation_finished" href="#method-animation_finished">**<span class="hljs-attribute">func</span> [<span class="hljs-title">animation_finished</span>](#method-animation_finished) ( `arg`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) = `""` )</a>  ⇒ <span style = "color: gray">void</span>** 
 
 
 
@@ -60,7 +60,7 @@ Returns | Method
 
 
 
-<a class="header" id="method-is_animating" href="#method-is_animating">**<span class="hljs-attribute">func</span> [<span class="hljs-title">is_animating</span>](#property-is_animating) ( )</a>  ⇒ <span class="hljs-attribute">[bool](https://docs.godotengine.org/en/latest/classes/class_bool.html#class-bool)</span>** 
+<a class="header" id="method-is_animating" href="#method-is_animating">**<span class="hljs-attribute">func</span> [<span class="hljs-title">is_animating</span>](#method-is_animating) ( )</a>  ⇒ <span class="hljs-attribute">[bool](https://docs.godotengine.org/en/latest/classes/class_bool.html#class-bool)</span>** 
 
 
 
@@ -70,7 +70,7 @@ Returns | Method
 
 
 
-<a class="header" id="method-start_animating" href="#method-start_animating">**<span class="hljs-attribute">func</span> [<span class="hljs-title">start_animating</span>](#property-start_animating) ( )</a>  ⇒ <span style = "color: gray">void</span>** 
+<a class="header" id="method-start_animating" href="#method-start_animating">**<span class="hljs-attribute">func</span> [<span class="hljs-title">start_animating</span>](#method-start_animating) ( )</a>  ⇒ <span style = "color: gray">void</span>** 
 
 
 

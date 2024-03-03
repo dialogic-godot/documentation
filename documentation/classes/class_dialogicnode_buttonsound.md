@@ -20,7 +20,7 @@ Name | Type | Default
 ## Methods
 Returns | Method 
 --- | --- 
-<span style = "color: gray">void</span> | [<span class="hljs-title">play_sound</span>](#property-play_sound) ( `sound`: [Variant](https://docs.godotengine.org/en/latest/classes/class_variant.html#class-variant) ) 
+<span style = "color: gray">void</span> | [<span class="hljs-title">play_sound</span>](#method-play_sound) ( `sound`: [Variant](https://docs.godotengine.org/en/latest/classes/class_variant.html#class-variant) ) 
 --- 
 ## Property Descriptions
 
@@ -30,7 +30,7 @@ Returns | Method
 
 
 
-Sound to be played on focus. See [sound_pressed] for more.
+Sound to be played on focus. See  for more.
 
 ---
 
@@ -40,7 +40,7 @@ Sound to be played on focus. See [sound_pressed] for more.
 
 
 
-Sound to be played on hover. See [sound_pressed] for more.
+Sound to be played on hover. See  for more.
 
 ---
 
@@ -58,7 +58,7 @@ Sound to be played if one of the sibling ChoiceButtons is pressed. If sibling Ch
 
 
 
-<a class="header" id="method-play_sound" href="#method-play_sound">**<span class="hljs-attribute">func</span> [<span class="hljs-title">play_sound</span>](#property-play_sound) ( `sound`: [Variant](https://docs.godotengine.org/en/latest/classes/class_variant.html#class-variant) )</a>  ⇒ <span style = "color: gray">void</span>** 
+<a class="header" id="method-play_sound" href="#method-play_sound">**<span class="hljs-attribute">func</span> [<span class="hljs-title">play_sound</span>](#method-play_sound) ( `sound`: [Variant](https://docs.godotengine.org/en/latest/classes/class_variant.html#class-variant) )</a>  ⇒ <span style = "color: gray">void</span>** 
 
 
 

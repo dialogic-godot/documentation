@@ -30,8 +30,8 @@ Name | Type | Default
 ## Methods
 Returns | Method 
 --- | --- 
-<span style = "color: gray">void</span> | [<span class="hljs-title">load_overwrite</span>](#property-load_overwrite) ( `dictionary`: [Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html#class-dictionary) ) 
-<span class="hljs-attribute">[AudioStream[]](https://docs.godotengine.org/en/latest/classes/class_audiostream.html#class-audiostream)</span> | [<span class="hljs-title">load_sounds_from_path</span>](#property-load_sounds_from_path) ( `path`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) ) 
+<span style = "color: gray">void</span> | [<span class="hljs-title">load_overwrite</span>](#method-load_overwrite) ( `dictionary`: [Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html#class-dictionary) ) 
+<span class="hljs-attribute">[AudioStream[]](https://docs.godotengine.org/en/latest/classes/class_audiostream.html#class-audiostream)</span> | [<span class="hljs-title">load_sounds_from_path</span>](#method-load_sounds_from_path) ( `path`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) ) 
 --- 
 ## Constants
 
@@ -197,7 +197,7 @@ Allows changing the volume by a random value from (volume - volume_variance) to 
 
 
 
-<a class="header" id="method-load_overwrite" href="#method-load_overwrite">**<span class="hljs-attribute">func</span> [<span class="hljs-title">load_overwrite</span>](#property-load_overwrite) ( `dictionary`: [Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html#class-dictionary) )</a>  ⇒ <span style = "color: gray">void</span>** 
+<a class="header" id="method-load_overwrite" href="#method-load_overwrite">**<span class="hljs-attribute">func</span> [<span class="hljs-title">load_overwrite</span>](#method-load_overwrite) ( `dictionary`: [Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html#class-dictionary) )</a>  ⇒ <span style = "color: gray">void</span>** 
 
 
 
@@ -207,7 +207,7 @@ Allows changing the volume by a random value from (volume - volume_variance) to 
 
 
 
-<a class="header" id="method-load_sounds_from_path" href="#method-load_sounds_from_path">**<span class="hljs-attribute">func</span> [<span class="hljs-title">load_sounds_from_path</span>](#property-load_sounds_from_path) ( `path`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) )</a>  ⇒ <span class="hljs-attribute">[AudioStream[]](https://docs.godotengine.org/en/latest/classes/class_audiostream.html#class-audiostream)</span>** 
+<a class="header" id="method-load_sounds_from_path" href="#method-load_sounds_from_path">**<span class="hljs-attribute">func</span> [<span class="hljs-title">load_sounds_from_path</span>](#method-load_sounds_from_path) ( `path`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) )</a>  ⇒ <span class="hljs-attribute">[AudioStream[]](https://docs.godotengine.org/en/latest/classes/class_audiostream.html#class-audiostream)</span>** 
 
 
 

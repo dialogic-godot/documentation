@@ -19,11 +19,11 @@ Name | Type | Default
 ## Methods
 Returns | Method 
 --- | --- 
-<span class="hljs-attribute">[String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string)</span> | [<span class="hljs-title">as_text</span>](#property-as_text) ( ) 
-<span style = "color: gray">void</span> | [<span class="hljs-title">clean</span>](#property-clean) ( ) 
-<span style = "color: gray">void</span> | [<span class="hljs-title">from_text</span>](#property-from_text) ( `text`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) ) 
-<span class="hljs-attribute">[Variant](https://docs.godotengine.org/en/latest/classes/class_variant.html#class-variant)</span> | [<span class="hljs-title">get_event</span>](#property-get_event) ( `index`: [int](https://docs.godotengine.org/en/latest/classes/class_int.html#class-int) ) 
-<span style = "color: gray">void</span> | [<span class="hljs-title">process</span>](#property-process) ( ) 
+<span class="hljs-attribute">[String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string)</span> | [<span class="hljs-title">as_text</span>](#method-as_text) ( ) 
+<span style = "color: gray">void</span> | [<span class="hljs-title">clean</span>](#method-clean) ( ) 
+<span style = "color: gray">void</span> | [<span class="hljs-title">from_text</span>](#method-from_text) ( `text`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) ) 
+<span class="hljs-attribute">[Variant](https://docs.godotengine.org/en/latest/classes/class_variant.html#class-variant)</span> | [<span class="hljs-title">get_event</span>](#method-get_event) ( `index`: [int](https://docs.godotengine.org/en/latest/classes/class_int.html#class-int) ) 
+<span style = "color: gray">void</span> | [<span class="hljs-title">process</span>](#method-process) ( ) 
 --- 
 ## Property Descriptions
 
@@ -51,7 +51,7 @@ Returns | Method
 
 
 
-<a class="header" id="method-as_text" href="#method-as_text">**<span class="hljs-attribute">func</span> [<span class="hljs-title">as_text</span>](#property-as_text) ( )</a>  ⇒ <span class="hljs-attribute">[String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string)</span>** 
+<a class="header" id="method-as_text" href="#method-as_text">**<span class="hljs-attribute">func</span> [<span class="hljs-title">as_text</span>](#method-as_text) ( )</a>  ⇒ <span class="hljs-attribute">[String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string)</span>** 
 
 
 
@@ -61,7 +61,7 @@ Stores all events in their text format and returns them as a string
 
 
 
-<a class="header" id="method-clean" href="#method-clean">**<span class="hljs-attribute">func</span> [<span class="hljs-title">clean</span>](#property-clean) ( )</a>  ⇒ <span style = "color: gray">void</span>** 
+<a class="header" id="method-clean" href="#method-clean">**<span class="hljs-attribute">func</span> [<span class="hljs-title">clean</span>](#method-clean) ( )</a>  ⇒ <span style = "color: gray">void</span>** 
 
 
 
@@ -71,7 +71,7 @@ This method makes sure that all events in a timeline are correctly reset
 
 
 
-<a class="header" id="method-from_text" href="#method-from_text">**<span class="hljs-attribute">func</span> [<span class="hljs-title">from_text</span>](#property-from_text) ( `text`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) )</a>  ⇒ <span style = "color: gray">void</span>** 
+<a class="header" id="method-from_text" href="#method-from_text">**<span class="hljs-attribute">func</span> [<span class="hljs-title">from_text</span>](#method-from_text) ( `text`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) )</a>  ⇒ <span style = "color: gray">void</span>** 
 
 
 
@@ -81,7 +81,7 @@ Parses the lines as seperate events and insert them in an array, so they can be 
 
 
 
-<a class="header" id="method-get_event" href="#method-get_event">**<span class="hljs-attribute">func</span> [<span class="hljs-title">get_event</span>](#property-get_event) ( `index`: [int](https://docs.godotengine.org/en/latest/classes/class_int.html#class-int) )</a>  ⇒ <span class="hljs-attribute">[Variant](https://docs.godotengine.org/en/latest/classes/class_variant.html#class-variant)</span>** 
+<a class="header" id="method-get_event" href="#method-get_event">**<span class="hljs-attribute">func</span> [<span class="hljs-title">get_event</span>](#method-get_event) ( `index`: [int](https://docs.godotengine.org/en/latest/classes/class_int.html#class-int) )</a>  ⇒ <span class="hljs-attribute">[Variant](https://docs.godotengine.org/en/latest/classes/class_variant.html#class-variant)</span>** 
 
 
 
@@ -91,7 +91,7 @@ Helper method
 
 
 
-<a class="header" id="method-process" href="#method-process">**<span class="hljs-attribute">func</span> [<span class="hljs-title">process</span>](#property-process) ( )</a>  ⇒ <span style = "color: gray">void</span>** 
+<a class="header" id="method-process" href="#method-process">**<span class="hljs-attribute">func</span> [<span class="hljs-title">process</span>](#method-process) ( )</a>  ⇒ <span style = "color: gray">void</span>** 
 
 
 

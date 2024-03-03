@@ -22,29 +22,29 @@ Name | Type | Default
 ## Methods
 Returns | Method 
 --- | --- 
-<span style = "color: gray">void</span> | [<span class="hljs-title">add_empty_slot</span>](#property-add_empty_slot) ( `slot_name`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) ) 
-<span style = "color: gray">void</span> | [<span class="hljs-title">clear_game_state</span>](#property-clear_game_state) ( `_clear_flag`: [int](https://docs.godotengine.org/en/latest/classes/class_int.html#class-int) = `0` ) 
-<span style = "color: gray">void</span> | [<span class="hljs-title">delete_slot</span>](#property-delete_slot) ( `slot_name`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) ) 
-<span class="hljs-attribute">[String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string)</span> | [<span class="hljs-title">get_default_slot</span>](#property-get_default_slot) ( ) 
-<span class="hljs-attribute">[String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string)</span> | [<span class="hljs-title">get_encryption_password</span>](#property-get_encryption_password) ( ) 
-<span class="hljs-attribute">[Variant](https://docs.godotengine.org/en/latest/classes/class_variant.html#class-variant)</span> | [<span class="hljs-title">get_global_info</span>](#property-get_global_info) ( `key`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string), `default`: [Variant](https://docs.godotengine.org/en/latest/classes/class_variant.html#class-variant) ) 
-<span class="hljs-attribute">[String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string)</span> | [<span class="hljs-title">get_latest_slot</span>](#property-get_latest_slot) ( ) 
-<span class="hljs-attribute">[Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html#class-dictionary)</span> | [<span class="hljs-title">get_slot_info</span>](#property-get_slot_info) ( `slot_name`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) = `""` ) 
-<span class="hljs-attribute">[Array](https://docs.godotengine.org/en/latest/classes/class_array.html#class-array)</span> | [<span class="hljs-title">get_slot_names</span>](#property-get_slot_names) ( ) 
-<span class="hljs-attribute">[String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string)</span> | [<span class="hljs-title">get_slot_path</span>](#property-get_slot_path) ( `slot_name`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) ) 
-<span class="hljs-attribute">[ImageTexture](https://docs.godotengine.org/en/latest/classes/class_imagetexture.html#class-imagetexture)</span> | [<span class="hljs-title">get_slot_thumbnail</span>](#property-get_slot_thumbnail) ( `slot_name`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) ) 
-<span class="hljs-attribute">[bool](https://docs.godotengine.org/en/latest/classes/class_bool.html#class-bool)</span> | [<span class="hljs-title">has_slot</span>](#property-has_slot) ( `slot_name`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) ) 
-<span style = "color: gray">void</span> | [<span class="hljs-title">load</span>](#property-load) ( `slot_name`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) = `""` ) 
-<span class="hljs-attribute">[Variant](https://docs.godotengine.org/en/latest/classes/class_variant.html#class-variant)</span> | [<span class="hljs-title">load_file</span>](#property-load_file) ( `slot_name`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string), `file_name`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string), `default`: [Variant](https://docs.godotengine.org/en/latest/classes/class_variant.html#class-variant) ) 
-<span style = "color: gray">void</span> | [<span class="hljs-title">perform_autosave</span>](#property-perform_autosave) ( ) 
-<span style = "color: gray">void</span> | [<span class="hljs-title">reset_slot</span>](#property-reset_slot) ( `slot_name`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) = `""` ) 
-<span style = "color: gray">void</span> | [<span class="hljs-title">save</span>](#property-save) ( `slot_name`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) = `""`, `is_autosave`: [bool](https://docs.godotengine.org/en/latest/classes/class_bool.html#class-bool) = `false`, `thumbnail_mode`: [int](https://docs.godotengine.org/en/latest/classes/class_int.html#class-int) = `1`, `slot_info`: [Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html#class-dictionary) = `<unknown>` ) 
-<span style = "color: gray">void</span> | [<span class="hljs-title">save_file</span>](#property-save_file) ( `slot_name`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string), `file_name`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string), `data`: [Variant](https://docs.godotengine.org/en/latest/classes/class_variant.html#class-variant) ) 
-<span style = "color: gray">void</span> | [<span class="hljs-title">save_slot_thumbnail</span>](#property-save_slot_thumbnail) ( `slot_name`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) ) 
-<span style = "color: gray">void</span> | [<span class="hljs-title">set_global_info</span>](#property-set_global_info) ( `key`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string), `value`: [Variant](https://docs.godotengine.org/en/latest/classes/class_variant.html#class-variant) ) 
-<span style = "color: gray">void</span> | [<span class="hljs-title">set_latest_slot</span>](#property-set_latest_slot) ( `slot_name`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) ) 
-<span style = "color: gray">void</span> | [<span class="hljs-title">set_slot_info</span>](#property-set_slot_info) ( `slot_name`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string), `info`: [Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html#class-dictionary) ) 
-<span style = "color: gray">void</span> | [<span class="hljs-title">take_thumbnail</span>](#property-take_thumbnail) ( ) 
+<span style = "color: gray">void</span> | [<span class="hljs-title">add_empty_slot</span>](#method-add_empty_slot) ( `slot_name`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) ) 
+<span style = "color: gray">void</span> | [<span class="hljs-title">clear_game_state</span>](#method-clear_game_state) ( `_clear_flag`: [int](https://docs.godotengine.org/en/latest/classes/class_int.html#class-int) = `0` ) 
+<span style = "color: gray">void</span> | [<span class="hljs-title">delete_slot</span>](#method-delete_slot) ( `slot_name`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) ) 
+<span class="hljs-attribute">[String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string)</span> | [<span class="hljs-title">get_default_slot</span>](#method-get_default_slot) ( ) 
+<span class="hljs-attribute">[String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string)</span> | [<span class="hljs-title">get_encryption_password</span>](#method-get_encryption_password) ( ) 
+<span class="hljs-attribute">[Variant](https://docs.godotengine.org/en/latest/classes/class_variant.html#class-variant)</span> | [<span class="hljs-title">get_global_info</span>](#method-get_global_info) ( `key`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string), `default`: [Variant](https://docs.godotengine.org/en/latest/classes/class_variant.html#class-variant) ) 
+<span class="hljs-attribute">[String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string)</span> | [<span class="hljs-title">get_latest_slot</span>](#method-get_latest_slot) ( ) 
+<span class="hljs-attribute">[Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html#class-dictionary)</span> | [<span class="hljs-title">get_slot_info</span>](#method-get_slot_info) ( `slot_name`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) = `""` ) 
+<span class="hljs-attribute">[Array](https://docs.godotengine.org/en/latest/classes/class_array.html#class-array)</span> | [<span class="hljs-title">get_slot_names</span>](#method-get_slot_names) ( ) 
+<span class="hljs-attribute">[String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string)</span> | [<span class="hljs-title">get_slot_path</span>](#method-get_slot_path) ( `slot_name`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) ) 
+<span class="hljs-attribute">[ImageTexture](https://docs.godotengine.org/en/latest/classes/class_imagetexture.html#class-imagetexture)</span> | [<span class="hljs-title">get_slot_thumbnail</span>](#method-get_slot_thumbnail) ( `slot_name`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) ) 
+<span class="hljs-attribute">[bool](https://docs.godotengine.org/en/latest/classes/class_bool.html#class-bool)</span> | [<span class="hljs-title">has_slot</span>](#method-has_slot) ( `slot_name`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) ) 
+<span style = "color: gray">void</span> | [<span class="hljs-title">load</span>](#method-load) ( `slot_name`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) = `""` ) 
+<span class="hljs-attribute">[Variant](https://docs.godotengine.org/en/latest/classes/class_variant.html#class-variant)</span> | [<span class="hljs-title">load_file</span>](#method-load_file) ( `slot_name`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string), `file_name`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string), `default`: [Variant](https://docs.godotengine.org/en/latest/classes/class_variant.html#class-variant) ) 
+<span style = "color: gray">void</span> | [<span class="hljs-title">perform_autosave</span>](#method-perform_autosave) ( ) 
+<span style = "color: gray">void</span> | [<span class="hljs-title">reset_slot</span>](#method-reset_slot) ( `slot_name`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) = `""` ) 
+<span style = "color: gray">void</span> | [<span class="hljs-title">save</span>](#method-save) ( `slot_name`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) = `""`, `is_autosave`: [bool](https://docs.godotengine.org/en/latest/classes/class_bool.html#class-bool) = `false`, `thumbnail_mode`: [int](https://docs.godotengine.org/en/latest/classes/class_int.html#class-int) = `1`, `slot_info`: [Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html#class-dictionary) = `<unknown>` ) 
+<span style = "color: gray">void</span> | [<span class="hljs-title">save_file</span>](#method-save_file) ( `slot_name`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string), `file_name`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string), `data`: [Variant](https://docs.godotengine.org/en/latest/classes/class_variant.html#class-variant) ) 
+<span style = "color: gray">void</span> | [<span class="hljs-title">save_slot_thumbnail</span>](#method-save_slot_thumbnail) ( `slot_name`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) ) 
+<span style = "color: gray">void</span> | [<span class="hljs-title">set_global_info</span>](#method-set_global_info) ( `key`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string), `value`: [Variant](https://docs.godotengine.org/en/latest/classes/class_variant.html#class-variant) ) 
+<span style = "color: gray">void</span> | [<span class="hljs-title">set_latest_slot</span>](#method-set_latest_slot) ( `slot_name`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) ) 
+<span style = "color: gray">void</span> | [<span class="hljs-title">set_slot_info</span>](#method-set_slot_info) ( `slot_name`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string), `info`: [Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html#class-dictionary) ) 
+<span style = "color: gray">void</span> | [<span class="hljs-title">take_thumbnail</span>](#method-take_thumbnail) ( ) 
 --- 
 ## Constants
 
@@ -136,7 +136,7 @@ Returns | Method
 
 
 
-Emitted when a save happened. The `info` contains the following keys: - slot_name: The `String` name of the slot that the game state was saved to. - is_autosave: `true` if the save was an autosave.
+ Emitted when a save happened. The `info` contains the following keys: - slot_name: The `String` name of the slot that the game state was saved to. - is_autosave: `true` if the save was an autosave. 
 
 ---
 
@@ -196,7 +196,7 @@ After what time interval the auto-save feature will trigger if `autosave_enabled
 
 
 
-<a class="header" id="method-add_empty_slot" href="#method-add_empty_slot">**<span class="hljs-attribute">func</span> [<span class="hljs-title">add_empty_slot</span>](#property-add_empty_slot) ( `slot_name`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) )</a>  ⇒ <span style = "color: gray">void</span>** 
+<a class="header" id="method-add_empty_slot" href="#method-add_empty_slot">**<span class="hljs-attribute">func</span> [<span class="hljs-title">add_empty_slot</span>](#method-add_empty_slot) ( `slot_name`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) )</a>  ⇒ <span style = "color: gray">void</span>** 
 
 
 
@@ -206,7 +206,7 @@ This adds a new save folder with the given name
 
 
 
-<a class="header" id="method-clear_game_state" href="#method-clear_game_state">**<span class="hljs-attribute">func</span> [<span class="hljs-title">clear_game_state</span>](#property-clear_game_state) ( `_clear_flag`: [int](https://docs.godotengine.org/en/latest/classes/class_int.html#class-int) = `0` )</a>  ⇒ <span style = "color: gray">void</span>** 
+<a class="header" id="method-clear_game_state" href="#method-clear_game_state">**<span class="hljs-attribute">func</span> [<span class="hljs-title">clear_game_state</span>](#method-clear_game_state) ( `_clear_flag`: [int](https://docs.godotengine.org/en/latest/classes/class_int.html#class-int) = `0` )</a>  ⇒ <span style = "color: gray">void</span>** 
 
 
 
@@ -216,7 +216,7 @@ Built-in, called by DialogicGameHandler.
 
 
 
-<a class="header" id="method-delete_slot" href="#method-delete_slot">**<span class="hljs-attribute">func</span> [<span class="hljs-title">delete_slot</span>](#property-delete_slot) ( `slot_name`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) )</a>  ⇒ <span style = "color: gray">void</span>** 
+<a class="header" id="method-delete_slot" href="#method-delete_slot">**<span class="hljs-attribute">func</span> [<span class="hljs-title">delete_slot</span>](#method-delete_slot) ( `slot_name`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) )</a>  ⇒ <span style = "color: gray">void</span>** 
 
 
 
@@ -226,7 +226,7 @@ Removes all the given slot along with all it's info/files.
 
 
 
-<a class="header" id="method-get_default_slot" href="#method-get_default_slot">**<span class="hljs-attribute">func</span> [<span class="hljs-title">get_default_slot</span>](#property-get_default_slot) ( )</a>  ⇒ <span class="hljs-attribute">[String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string)</span>** 
+<a class="header" id="method-get_default_slot" href="#method-get_default_slot">**<span class="hljs-attribute">func</span> [<span class="hljs-title">get_default_slot</span>](#method-get_default_slot) ( )</a>  ⇒ <span class="hljs-attribute">[String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string)</span>** 
 
 
 
@@ -236,7 +236,7 @@ Returns the default slot name defined in the dialogic settings
 
 
 
-<a class="header" id="method-get_encryption_password" href="#method-get_encryption_password">**<span class="hljs-attribute">func</span> [<span class="hljs-title">get_encryption_password</span>](#property-get_encryption_password) ( )</a>  ⇒ <span class="hljs-attribute">[String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string)</span>** 
+<a class="header" id="method-get_encryption_password" href="#method-get_encryption_password">**<span class="hljs-attribute">func</span> [<span class="hljs-title">get_encryption_password</span>](#method-get_encryption_password) ( )</a>  ⇒ <span class="hljs-attribute">[String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string)</span>** 
 
 
 
@@ -246,7 +246,7 @@ Gets the encryption password from the project settings if it has been set. If no
 
 
 
-<a class="header" id="method-get_global_info" href="#method-get_global_info">**<span class="hljs-attribute">func</span> [<span class="hljs-title">get_global_info</span>](#property-get_global_info) ( `key`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string), `default`: [Variant](https://docs.godotengine.org/en/latest/classes/class_variant.html#class-variant) )</a>  ⇒ <span class="hljs-attribute">[Variant](https://docs.godotengine.org/en/latest/classes/class_variant.html#class-variant)</span>** 
+<a class="header" id="method-get_global_info" href="#method-get_global_info">**<span class="hljs-attribute">func</span> [<span class="hljs-title">get_global_info</span>](#method-get_global_info) ( `key`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string), `default`: [Variant](https://docs.godotengine.org/en/latest/classes/class_variant.html#class-variant) )</a>  ⇒ <span class="hljs-attribute">[Variant](https://docs.godotengine.org/en/latest/classes/class_variant.html#class-variant)</span>** 
 
 
 
@@ -256,7 +256,7 @@ Access the data unrelated to a save slot. First, the data must have been set wit
 
 
 
-<a class="header" id="method-get_latest_slot" href="#method-get_latest_slot">**<span class="hljs-attribute">func</span> [<span class="hljs-title">get_latest_slot</span>](#property-get_latest_slot) ( )</a>  ⇒ <span class="hljs-attribute">[String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string)</span>** 
+<a class="header" id="method-get_latest_slot" href="#method-get_latest_slot">**<span class="hljs-attribute">func</span> [<span class="hljs-title">get_latest_slot</span>](#method-get_latest_slot) ( )</a>  ⇒ <span class="hljs-attribute">[String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string)</span>** 
 
 
 
@@ -266,7 +266,7 @@ Returns the latest slot or empty if nothing was saved yet
 
 
 
-<a class="header" id="method-get_slot_info" href="#method-get_slot_info">**<span class="hljs-attribute">func</span> [<span class="hljs-title">get_slot_info</span>](#property-get_slot_info) ( `slot_name`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) = `""` )</a>  ⇒ <span class="hljs-attribute">[Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html#class-dictionary)</span>** 
+<a class="header" id="method-get_slot_info" href="#method-get_slot_info">**<span class="hljs-attribute">func</span> [<span class="hljs-title">get_slot_info</span>](#method-get_slot_info) ( `slot_name`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) = `""` )</a>  ⇒ <span class="hljs-attribute">[Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html#class-dictionary)</span>** 
 
 
 
@@ -276,7 +276,7 @@ Returns the latest slot or empty if nothing was saved yet
 
 
 
-<a class="header" id="method-get_slot_names" href="#method-get_slot_names">**<span class="hljs-attribute">func</span> [<span class="hljs-title">get_slot_names</span>](#property-get_slot_names) ( )</a>  ⇒ <span class="hljs-attribute">[Array](https://docs.godotengine.org/en/latest/classes/class_array.html#class-array)</span>** 
+<a class="header" id="method-get_slot_names" href="#method-get_slot_names">**<span class="hljs-attribute">func</span> [<span class="hljs-title">get_slot_names</span>](#method-get_slot_names) ( )</a>  ⇒ <span class="hljs-attribute">[Array](https://docs.godotengine.org/en/latest/classes/class_array.html#class-array)</span>** 
 
 
 
@@ -286,7 +286,7 @@ Returns the latest slot or empty if nothing was saved yet
 
 
 
-<a class="header" id="method-get_slot_path" href="#method-get_slot_path">**<span class="hljs-attribute">func</span> [<span class="hljs-title">get_slot_path</span>](#property-get_slot_path) ( `slot_name`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) )</a>  ⇒ <span class="hljs-attribute">[String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string)</span>** 
+<a class="header" id="method-get_slot_path" href="#method-get_slot_path">**<span class="hljs-attribute">func</span> [<span class="hljs-title">get_slot_path</span>](#method-get_slot_path) ( `slot_name`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) )</a>  ⇒ <span class="hljs-attribute">[String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string)</span>** 
 
 
 
@@ -296,7 +296,7 @@ Returns the full path to the given slot folder
 
 
 
-<a class="header" id="method-get_slot_thumbnail" href="#method-get_slot_thumbnail">**<span class="hljs-attribute">func</span> [<span class="hljs-title">get_slot_thumbnail</span>](#property-get_slot_thumbnail) ( `slot_name`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) )</a>  ⇒ <span class="hljs-attribute">[ImageTexture](https://docs.godotengine.org/en/latest/classes/class_imagetexture.html#class-imagetexture)</span>** 
+<a class="header" id="method-get_slot_thumbnail" href="#method-get_slot_thumbnail">**<span class="hljs-attribute">func</span> [<span class="hljs-title">get_slot_thumbnail</span>](#method-get_slot_thumbnail) ( `slot_name`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) )</a>  ⇒ <span class="hljs-attribute">[ImageTexture](https://docs.godotengine.org/en/latest/classes/class_imagetexture.html#class-imagetexture)</span>** 
 
 
 
@@ -306,7 +306,7 @@ Returns the thumbnail of the given slot.
 
 
 
-<a class="header" id="method-has_slot" href="#method-has_slot">**<span class="hljs-attribute">func</span> [<span class="hljs-title">has_slot</span>](#property-has_slot) ( `slot_name`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) )</a>  ⇒ <span class="hljs-attribute">[bool](https://docs.godotengine.org/en/latest/classes/class_bool.html#class-bool)</span>** 
+<a class="header" id="method-has_slot" href="#method-has_slot">**<span class="hljs-attribute">func</span> [<span class="hljs-title">has_slot</span>](#method-has_slot) ( `slot_name`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) )</a>  ⇒ <span class="hljs-attribute">[bool](https://docs.godotengine.org/en/latest/classes/class_bool.html#class-bool)</span>** 
 
 
 
@@ -316,7 +316,7 @@ Returns true if the given slot exists.
 
 
 
-<a class="header" id="method-load" href="#method-load">**<span class="hljs-attribute">func</span> [<span class="hljs-title">load</span>](#property-load) ( `slot_name`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) = `""` )</a>  ⇒ <span style = "color: gray">void</span>** 
+<a class="header" id="method-load" href="#method-load">**<span class="hljs-attribute">func</span> [<span class="hljs-title">load</span>](#method-load) ( `slot_name`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) = `""` )</a>  ⇒ <span style = "color: gray">void</span>** 
 
 
 
@@ -326,7 +326,7 @@ Loads all info from the given slot in the DialogicGameHandler (Dialogic Autoload
 
 
 
-<a class="header" id="method-load_file" href="#method-load_file">**<span class="hljs-attribute">func</span> [<span class="hljs-title">load_file</span>](#property-load_file) ( `slot_name`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string), `file_name`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string), `default`: [Variant](https://docs.godotengine.org/en/latest/classes/class_variant.html#class-variant) )</a>  ⇒ <span class="hljs-attribute">[Variant](https://docs.godotengine.org/en/latest/classes/class_variant.html#class-variant)</span>** 
+<a class="header" id="method-load_file" href="#method-load_file">**<span class="hljs-attribute">func</span> [<span class="hljs-title">load_file</span>](#method-load_file) ( `slot_name`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string), `file_name`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string), `default`: [Variant](https://docs.godotengine.org/en/latest/classes/class_variant.html#class-variant) )</a>  ⇒ <span class="hljs-attribute">[Variant](https://docs.godotengine.org/en/latest/classes/class_variant.html#class-variant)</span>** 
 
 
 
@@ -336,7 +336,7 @@ Loads a file using `slot_name` and returns the contained info.  This method allo
 
 
 
-<a class="header" id="method-perform_autosave" href="#method-perform_autosave">**<span class="hljs-attribute">func</span> [<span class="hljs-title">perform_autosave</span>](#property-perform_autosave) ( )</a>  ⇒ <span style = "color: gray">void</span>** 
+<a class="header" id="method-perform_autosave" href="#method-perform_autosave">**<span class="hljs-attribute">func</span> [<span class="hljs-title">perform_autosave</span>](#method-perform_autosave) ( )</a>  ⇒ <span style = "color: gray">void</span>** 
 
 
 
@@ -346,7 +346,7 @@ Perform an autosave. This method will be called automatically if the auto-save m
 
 
 
-<a class="header" id="method-reset_slot" href="#method-reset_slot">**<span class="hljs-attribute">func</span> [<span class="hljs-title">reset_slot</span>](#property-reset_slot) ( `slot_name`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) = `""` )</a>  ⇒ <span style = "color: gray">void</span>** 
+<a class="header" id="method-reset_slot" href="#method-reset_slot">**<span class="hljs-attribute">func</span> [<span class="hljs-title">reset_slot</span>](#method-reset_slot) ( `slot_name`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) = `""` )</a>  ⇒ <span style = "color: gray">void</span>** 
 
 
 
@@ -356,17 +356,17 @@ Reset the state of the given save folder (or default)
 
 
 
-<a class="header" id="method-save" href="#method-save">**<span class="hljs-attribute">func</span> [<span class="hljs-title">save</span>](#property-save) ( `slot_name`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) = `""`, `is_autosave`: [bool](https://docs.godotengine.org/en/latest/classes/class_bool.html#class-bool) = `false`, `thumbnail_mode`: [int](https://docs.godotengine.org/en/latest/classes/class_int.html#class-int) = `1`, `slot_info`: [Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html#class-dictionary) = `<unknown>` )</a>  ⇒ <span style = "color: gray">void</span>** 
+<a class="header" id="method-save" href="#method-save">**<span class="hljs-attribute">func</span> [<span class="hljs-title">save</span>](#method-save) ( `slot_name`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) = `""`, `is_autosave`: [bool](https://docs.godotengine.org/en/latest/classes/class_bool.html#class-bool) = `false`, `thumbnail_mode`: [int](https://docs.godotengine.org/en/latest/classes/class_int.html#class-int) = `1`, `slot_info`: [Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html#class-dictionary) = `<unknown>` )</a>  ⇒ <span style = "color: gray">void</span>** 
 
 
 
-Saves the current state to the given slot. If no slot is given, the default slot is used. You can change this name in the Dialogic editor. If you want to save to the last used slot, you can get its slot name with the [get_latest_slot()](#property-get_latest_slot()) method.
+Saves the current state to the given slot. If no slot is given, the default slot is used. You can change this name in the Dialogic editor. If you want to save to the last used slot, you can get its slot name with the [method get_latest_slot()] method.
 
 ---
 
 
 
-<a class="header" id="method-save_file" href="#method-save_file">**<span class="hljs-attribute">func</span> [<span class="hljs-title">save_file</span>](#property-save_file) ( `slot_name`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string), `file_name`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string), `data`: [Variant](https://docs.godotengine.org/en/latest/classes/class_variant.html#class-variant) )</a>  ⇒ <span style = "color: gray">void</span>** 
+<a class="header" id="method-save_file" href="#method-save_file">**<span class="hljs-attribute">func</span> [<span class="hljs-title">save_file</span>](#method-save_file) ( `slot_name`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string), `file_name`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string), `data`: [Variant](https://docs.godotengine.org/en/latest/classes/class_variant.html#class-variant) )</a>  ⇒ <span style = "color: gray">void</span>** 
 
 
 
@@ -376,7 +376,7 @@ Saves a variable to a file in the given slot.  Be aware, the `slot_name` will be
 
 
 
-<a class="header" id="method-save_slot_thumbnail" href="#method-save_slot_thumbnail">**<span class="hljs-attribute">func</span> [<span class="hljs-title">save_slot_thumbnail</span>](#property-save_slot_thumbnail) ( `slot_name`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) )</a>  ⇒ <span style = "color: gray">void</span>** 
+<a class="header" id="method-save_slot_thumbnail" href="#method-save_slot_thumbnail">**<span class="hljs-attribute">func</span> [<span class="hljs-title">save_slot_thumbnail</span>](#method-save_slot_thumbnail) ( `slot_name`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) )</a>  ⇒ <span style = "color: gray">void</span>** 
 
 
 
@@ -386,7 +386,7 @@ No need to call from outside. Used to store the latest thumbnail to the given sl
 
 
 
-<a class="header" id="method-set_global_info" href="#method-set_global_info">**<span class="hljs-attribute">func</span> [<span class="hljs-title">set_global_info</span>](#property-set_global_info) ( `key`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string), `value`: [Variant](https://docs.godotengine.org/en/latest/classes/class_variant.html#class-variant) )</a>  ⇒ <span style = "color: gray">void</span>** 
+<a class="header" id="method-set_global_info" href="#method-set_global_info">**<span class="hljs-attribute">func</span> [<span class="hljs-title">set_global_info</span>](#method-set_global_info) ( `key`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string), `value`: [Variant](https://docs.godotengine.org/en/latest/classes/class_variant.html#class-variant) )</a>  ⇒ <span style = "color: gray">void</span>** 
 
 
 
@@ -396,7 +396,7 @@ Data set in global info can be accessed unrelated to the save slots. For instanc
 
 
 
-<a class="header" id="method-set_latest_slot" href="#method-set_latest_slot">**<span class="hljs-attribute">func</span> [<span class="hljs-title">set_latest_slot</span>](#property-set_latest_slot) ( `slot_name`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) )</a>  ⇒ <span style = "color: gray">void</span>** 
+<a class="header" id="method-set_latest_slot" href="#method-set_latest_slot">**<span class="hljs-attribute">func</span> [<span class="hljs-title">set_latest_slot</span>](#method-set_latest_slot) ( `slot_name`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) )</a>  ⇒ <span style = "color: gray">void</span>** 
 
 
 
@@ -406,7 +406,7 @@ Data set in global info can be accessed unrelated to the save slots. For instanc
 
 
 
-<a class="header" id="method-set_slot_info" href="#method-set_slot_info">**<span class="hljs-attribute">func</span> [<span class="hljs-title">set_slot_info</span>](#property-set_slot_info) ( `slot_name`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string), `info`: [Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html#class-dictionary) )</a>  ⇒ <span style = "color: gray">void</span>** 
+<a class="header" id="method-set_slot_info" href="#method-set_slot_info">**<span class="hljs-attribute">func</span> [<span class="hljs-title">set_slot_info</span>](#method-set_slot_info) ( `slot_name`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string), `info`: [Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html#class-dictionary) )</a>  ⇒ <span style = "color: gray">void</span>** 
 
 
 
@@ -416,7 +416,7 @@ Data set in global info can be accessed unrelated to the save slots. For instanc
 
 
 
-<a class="header" id="method-take_thumbnail" href="#method-take_thumbnail">**<span class="hljs-attribute">func</span> [<span class="hljs-title">take_thumbnail</span>](#property-take_thumbnail) ( )</a>  ⇒ <span style = "color: gray">void</span>** 
+<a class="header" id="method-take_thumbnail" href="#method-take_thumbnail">**<span class="hljs-attribute">func</span> [<span class="hljs-title">take_thumbnail</span>](#method-take_thumbnail) ( )</a>  ⇒ <span style = "color: gray">void</span>** 
 
 
 

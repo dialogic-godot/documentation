@@ -14,12 +14,12 @@
 ## Methods
 Returns | Method 
 --- | --- 
-<span style = "color: gray">void</span> | [<span class="hljs-title">clear_game_state</span>](#property-clear_game_state) ( `clear_flag`: [int](https://docs.godotengine.org/en/latest/classes/class_int.html#class-int) = `0` ) 
-<span class="hljs-attribute">[bool](https://docs.godotengine.org/en/latest/classes/class_bool.html#class-bool)</span> | [<span class="hljs-title">is_jump_stack_empty</span>](#property-is_jump_stack_empty) ( ) 
-<span style = "color: gray">void</span> | [<span class="hljs-title">jump_to_label</span>](#property-jump_to_label) ( `label`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) ) 
-<span style = "color: gray">void</span> | [<span class="hljs-title">load_game_state</span>](#property-load_game_state) ( `load_flag`: [int](https://docs.godotengine.org/en/latest/classes/class_int.html#class-int) = `0` ) 
-<span style = "color: gray">void</span> | [<span class="hljs-title">push_to_jump_stack</span>](#property-push_to_jump_stack) ( ) 
-<span style = "color: gray">void</span> | [<span class="hljs-title">resume_from_last_jump</span>](#property-resume_from_last_jump) ( ) 
+<span style = "color: gray">void</span> | [<span class="hljs-title">clear_game_state</span>](#method-clear_game_state) ( `clear_flag`: [int](https://docs.godotengine.org/en/latest/classes/class_int.html#class-int) = `0` ) 
+<span class="hljs-attribute">[bool](https://docs.godotengine.org/en/latest/classes/class_bool.html#class-bool)</span> | [<span class="hljs-title">is_jump_stack_empty</span>](#method-is_jump_stack_empty) ( ) 
+<span style = "color: gray">void</span> | [<span class="hljs-title">jump_to_label</span>](#method-jump_to_label) ( `label`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) ) 
+<span style = "color: gray">void</span> | [<span class="hljs-title">load_game_state</span>](#method-load_game_state) ( `load_flag`: [int](https://docs.godotengine.org/en/latest/classes/class_int.html#class-int) = `0` ) 
+<span style = "color: gray">void</span> | [<span class="hljs-title">push_to_jump_stack</span>](#method-push_to_jump_stack) ( ) 
+<span style = "color: gray">void</span> | [<span class="hljs-title">resume_from_last_jump</span>](#method-resume_from_last_jump) ( ) 
 --- 
 
 ## Signals
@@ -57,7 +57,7 @@ Returns | Method
 
 
 
-<a class="header" id="method-clear_game_state" href="#method-clear_game_state">**<span class="hljs-attribute">func</span> [<span class="hljs-title">clear_game_state</span>](#property-clear_game_state) ( `clear_flag`: [int](https://docs.godotengine.org/en/latest/classes/class_int.html#class-int) = `0` )</a>  ⇒ <span style = "color: gray">void</span>** 
+<a class="header" id="method-clear_game_state" href="#method-clear_game_state">**<span class="hljs-attribute">func</span> [<span class="hljs-title">clear_game_state</span>](#method-clear_game_state) ( `clear_flag`: [int](https://docs.godotengine.org/en/latest/classes/class_int.html#class-int) = `0` )</a>  ⇒ <span style = "color: gray">void</span>** 
 
 
 
@@ -67,7 +67,7 @@ Returns | Method
 
 
 
-<a class="header" id="method-is_jump_stack_empty" href="#method-is_jump_stack_empty">**<span class="hljs-attribute">func</span> [<span class="hljs-title">is_jump_stack_empty</span>](#property-is_jump_stack_empty) ( )</a>  ⇒ <span class="hljs-attribute">[bool](https://docs.godotengine.org/en/latest/classes/class_bool.html#class-bool)</span>** 
+<a class="header" id="method-is_jump_stack_empty" href="#method-is_jump_stack_empty">**<span class="hljs-attribute">func</span> [<span class="hljs-title">is_jump_stack_empty</span>](#method-is_jump_stack_empty) ( )</a>  ⇒ <span class="hljs-attribute">[bool](https://docs.godotengine.org/en/latest/classes/class_bool.html#class-bool)</span>** 
 
 
 
@@ -77,7 +77,7 @@ Returns | Method
 
 
 
-<a class="header" id="method-jump_to_label" href="#method-jump_to_label">**<span class="hljs-attribute">func</span> [<span class="hljs-title">jump_to_label</span>](#property-jump_to_label) ( `label`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) )</a>  ⇒ <span style = "color: gray">void</span>** 
+<a class="header" id="method-jump_to_label" href="#method-jump_to_label">**<span class="hljs-attribute">func</span> [<span class="hljs-title">jump_to_label</span>](#method-jump_to_label) ( `label`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) )</a>  ⇒ <span style = "color: gray">void</span>** 
 
 
 
@@ -87,7 +87,7 @@ Returns | Method
 
 
 
-<a class="header" id="method-load_game_state" href="#method-load_game_state">**<span class="hljs-attribute">func</span> [<span class="hljs-title">load_game_state</span>](#property-load_game_state) ( `load_flag`: [int](https://docs.godotengine.org/en/latest/classes/class_int.html#class-int) = `0` )</a>  ⇒ <span style = "color: gray">void</span>** 
+<a class="header" id="method-load_game_state" href="#method-load_game_state">**<span class="hljs-attribute">func</span> [<span class="hljs-title">load_game_state</span>](#method-load_game_state) ( `load_flag`: [int](https://docs.godotengine.org/en/latest/classes/class_int.html#class-int) = `0` )</a>  ⇒ <span style = "color: gray">void</span>** 
 
 
 
@@ -97,7 +97,7 @@ Returns | Method
 
 
 
-<a class="header" id="method-push_to_jump_stack" href="#method-push_to_jump_stack">**<span class="hljs-attribute">func</span> [<span class="hljs-title">push_to_jump_stack</span>](#property-push_to_jump_stack) ( )</a>  ⇒ <span style = "color: gray">void</span>** 
+<a class="header" id="method-push_to_jump_stack" href="#method-push_to_jump_stack">**<span class="hljs-attribute">func</span> [<span class="hljs-title">push_to_jump_stack</span>](#method-push_to_jump_stack) ( )</a>  ⇒ <span style = "color: gray">void</span>** 
 
 
 
@@ -107,7 +107,7 @@ Returns | Method
 
 
 
-<a class="header" id="method-resume_from_last_jump" href="#method-resume_from_last_jump">**<span class="hljs-attribute">func</span> [<span class="hljs-title">resume_from_last_jump</span>](#property-resume_from_last_jump) ( )</a>  ⇒ <span style = "color: gray">void</span>** 
+<a class="header" id="method-resume_from_last_jump" href="#method-resume_from_last_jump">**<span class="hljs-attribute">func</span> [<span class="hljs-title">resume_from_last_jump</span>](#method-resume_from_last_jump) ( )</a>  ⇒ <span style = "color: gray">void</span>** 
 
 
 

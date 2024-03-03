@@ -24,12 +24,12 @@ Name | Type | Default
 ## Methods
 Returns | Method 
 --- | --- 
-<span style = "color: gray">void</span> | [<span class="hljs-title">clear_game_state</span>](#property-clear_game_state) ( `clear_flag`: [int](https://docs.godotengine.org/en/latest/classes/class_int.html#class-int) = `0` ) 
-<span class="hljs-attribute">[Array](https://docs.godotengine.org/en/latest/classes/class_array.html#class-array)</span> | [<span class="hljs-title">get_current_choice_indexes</span>](#property-get_current_choice_indexes) ( ) 
-<span style = "color: gray">void</span> | [<span class="hljs-title">hide_all_choices</span>](#property-hide_all_choices) ( ) 
-<span class="hljs-attribute">[bool](https://docs.godotengine.org/en/latest/classes/class_bool.html#class-bool)</span> | [<span class="hljs-title">is_question</span>](#property-is_question) ( `index`: [int](https://docs.godotengine.org/en/latest/classes/class_int.html#class-int) ) 
-<span style = "color: gray">void</span> | [<span class="hljs-title">show_choice</span>](#property-show_choice) ( `button_index`: [int](https://docs.godotengine.org/en/latest/classes/class_int.html#class-int), `text`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string), `enabled`: [bool](https://docs.godotengine.org/en/latest/classes/class_bool.html#class-bool), `event_index`: [int](https://docs.godotengine.org/en/latest/classes/class_int.html#class-int) ) 
-<span style = "color: gray">void</span> | [<span class="hljs-title">show_current_choices</span>](#property-show_current_choices) ( `instant`: [bool](https://docs.godotengine.org/en/latest/classes/class_bool.html#class-bool) = `true` ) 
+<span style = "color: gray">void</span> | [<span class="hljs-title">clear_game_state</span>](#method-clear_game_state) ( `clear_flag`: [int](https://docs.godotengine.org/en/latest/classes/class_int.html#class-int) = `0` ) 
+<span class="hljs-attribute">[Array](https://docs.godotengine.org/en/latest/classes/class_array.html#class-array)</span> | [<span class="hljs-title">get_current_choice_indexes</span>](#method-get_current_choice_indexes) ( ) 
+<span style = "color: gray">void</span> | [<span class="hljs-title">hide_all_choices</span>](#method-hide_all_choices) ( ) 
+<span class="hljs-attribute">[bool](https://docs.godotengine.org/en/latest/classes/class_bool.html#class-bool)</span> | [<span class="hljs-title">is_question</span>](#method-is_question) ( `index`: [int](https://docs.godotengine.org/en/latest/classes/class_int.html#class-int) ) 
+<span style = "color: gray">void</span> | [<span class="hljs-title">show_choice</span>](#method-show_choice) ( `button_index`: [int](https://docs.godotengine.org/en/latest/classes/class_int.html#class-int), `text`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string), `enabled`: [bool](https://docs.godotengine.org/en/latest/classes/class_bool.html#class-bool), `event_index`: [int](https://docs.godotengine.org/en/latest/classes/class_int.html#class-int) ) 
+<span style = "color: gray">void</span> | [<span class="hljs-title">show_current_choices</span>](#method-show_current_choices) ( `instant`: [bool](https://docs.godotengine.org/en/latest/classes/class_bool.html#class-bool) = `true` ) 
 --- 
 ## Constants
 
@@ -76,7 +76,7 @@ Returns | Method
 
 
 
-Emitted when a choice button was pressed. Info includes the keys 'button_index', 'text', 'event_index'.
+ Emitted when a choice button was pressed. Info includes the keys 'button_index', 'text', 'event_index'. 
 
 ---
 
@@ -86,7 +86,7 @@ Emitted when a choice button was pressed. Info includes the keys 'button_index',
 
 
 
-Emitted when a set of choices is reached and shown. Info includes the keys 'choices' (an array of dictionaries with infos on all the choices).
+ Emitted when a set of choices is reached and shown. Info includes the keys 'choices' (an array of dictionaries with infos on all the choices). 
 
 ---
 
@@ -166,7 +166,7 @@ The delay between the text finishing revealing and the choices appearing
 
 
 
-<a class="header" id="method-clear_game_state" href="#method-clear_game_state">**<span class="hljs-attribute">func</span> [<span class="hljs-title">clear_game_state</span>](#property-clear_game_state) ( `clear_flag`: [int](https://docs.godotengine.org/en/latest/classes/class_int.html#class-int) = `0` )</a>  ⇒ <span style = "color: gray">void</span>** 
+<a class="header" id="method-clear_game_state" href="#method-clear_game_state">**<span class="hljs-attribute">func</span> [<span class="hljs-title">clear_game_state</span>](#method-clear_game_state) ( `clear_flag`: [int](https://docs.godotengine.org/en/latest/classes/class_int.html#class-int) = `0` )</a>  ⇒ <span style = "color: gray">void</span>** 
 
 
 
@@ -176,7 +176,7 @@ The delay between the text finishing revealing and the choices appearing
 
 
 
-<a class="header" id="method-get_current_choice_indexes" href="#method-get_current_choice_indexes">**<span class="hljs-attribute">func</span> [<span class="hljs-title">get_current_choice_indexes</span>](#property-get_current_choice_indexes) ( )</a>  ⇒ <span class="hljs-attribute">[Array](https://docs.godotengine.org/en/latest/classes/class_array.html#class-array)</span>** 
+<a class="header" id="method-get_current_choice_indexes" href="#method-get_current_choice_indexes">**<span class="hljs-attribute">func</span> [<span class="hljs-title">get_current_choice_indexes</span>](#method-get_current_choice_indexes) ( )</a>  ⇒ <span class="hljs-attribute">[Array](https://docs.godotengine.org/en/latest/classes/class_array.html#class-array)</span>** 
 
 
 
@@ -186,7 +186,7 @@ The delay between the text finishing revealing and the choices appearing
 
 
 
-<a class="header" id="method-hide_all_choices" href="#method-hide_all_choices">**<span class="hljs-attribute">func</span> [<span class="hljs-title">hide_all_choices</span>](#property-hide_all_choices) ( )</a>  ⇒ <span style = "color: gray">void</span>** 
+<a class="header" id="method-hide_all_choices" href="#method-hide_all_choices">**<span class="hljs-attribute">func</span> [<span class="hljs-title">hide_all_choices</span>](#method-hide_all_choices) ( )</a>  ⇒ <span style = "color: gray">void</span>** 
 
 
 
@@ -196,7 +196,7 @@ Hides all choice buttons.
 
 
 
-<a class="header" id="method-is_question" href="#method-is_question">**<span class="hljs-attribute">func</span> [<span class="hljs-title">is_question</span>](#property-is_question) ( `index`: [int](https://docs.godotengine.org/en/latest/classes/class_int.html#class-int) )</a>  ⇒ <span class="hljs-attribute">[bool](https://docs.godotengine.org/en/latest/classes/class_bool.html#class-bool)</span>** 
+<a class="header" id="method-is_question" href="#method-is_question">**<span class="hljs-attribute">func</span> [<span class="hljs-title">is_question</span>](#method-is_question) ( `index`: [int](https://docs.godotengine.org/en/latest/classes/class_int.html#class-int) )</a>  ⇒ <span class="hljs-attribute">[bool](https://docs.godotengine.org/en/latest/classes/class_bool.html#class-bool)</span>** 
 
 
 
@@ -206,7 +206,7 @@ Hides all choice buttons.
 
 
 
-<a class="header" id="method-show_choice" href="#method-show_choice">**<span class="hljs-attribute">func</span> [<span class="hljs-title">show_choice</span>](#property-show_choice) ( `button_index`: [int](https://docs.godotengine.org/en/latest/classes/class_int.html#class-int), `text`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string), `enabled`: [bool](https://docs.godotengine.org/en/latest/classes/class_bool.html#class-bool), `event_index`: [int](https://docs.godotengine.org/en/latest/classes/class_int.html#class-int) )</a>  ⇒ <span style = "color: gray">void</span>** 
+<a class="header" id="method-show_choice" href="#method-show_choice">**<span class="hljs-attribute">func</span> [<span class="hljs-title">show_choice</span>](#method-show_choice) ( `button_index`: [int](https://docs.godotengine.org/en/latest/classes/class_int.html#class-int), `text`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string), `enabled`: [bool](https://docs.godotengine.org/en/latest/classes/class_bool.html#class-bool), `event_index`: [int](https://docs.godotengine.org/en/latest/classes/class_int.html#class-int) )</a>  ⇒ <span style = "color: gray">void</span>** 
 
 
 
@@ -216,7 +216,7 @@ Adds a button with the given text that leads to the given event.
 
 
 
-<a class="header" id="method-show_current_choices" href="#method-show_current_choices">**<span class="hljs-attribute">func</span> [<span class="hljs-title">show_current_choices</span>](#property-show_current_choices) ( `instant`: [bool](https://docs.godotengine.org/en/latest/classes/class_bool.html#class-bool) = `true` )</a>  ⇒ <span style = "color: gray">void</span>** 
+<a class="header" id="method-show_current_choices" href="#method-show_current_choices">**<span class="hljs-attribute">func</span> [<span class="hljs-title">show_current_choices</span>](#method-show_current_choices) ( `instant`: [bool](https://docs.godotengine.org/en/latest/classes/class_bool.html#class-bool) = `true` )</a>  ⇒ <span style = "color: gray">void</span>** 
 
 
 

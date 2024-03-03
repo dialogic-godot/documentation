@@ -30,19 +30,19 @@ Name | Type | Default
 ## Methods
 Returns | Method 
 --- | --- 
-<span style = "color: gray">void</span> | [<span class="hljs-title">build_event_editor</span>](#property-build_event_editor) ( ) 
-<span class="hljs-attribute">[bool](https://docs.godotengine.org/en/latest/classes/class_bool.html#class-bool)</span> | [<span class="hljs-title">do_any_characters_exist</span>](#property-do_any_characters_exist) ( ) 
-<span style = "color: gray">void</span> | [<span class="hljs-title">end_text_event</span>](#property-end_text_event) ( ) 
-<span style = "color: gray">void</span> | [<span class="hljs-title">from_text</span>](#property-from_text) ( `string`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) ) 
-<span class="hljs-attribute">[Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html#class-dictionary)</span> | [<span class="hljs-title">get_character_suggestions</span>](#property-get_character_suggestions) ( `search_text`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) ) 
-<span class="hljs-attribute">[Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html#class-dictionary)</span> | [<span class="hljs-title">get_portrait_suggestions</span>](#property-get_portrait_suggestions) ( `search_text`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) ) 
-<span class="hljs-attribute">[Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html#class-dictionary)</span> | [<span class="hljs-title">get_shortcode_parameters</span>](#property-get_shortcode_parameters) ( ) 
-<span class="hljs-attribute">[bool](https://docs.godotengine.org/en/latest/classes/class_bool.html#class-bool)</span> | [<span class="hljs-title">has_no_portraits</span>](#property-has_no_portraits) ( ) 
-<span class="hljs-attribute">[bool](https://docs.godotengine.org/en/latest/classes/class_bool.html#class-bool)</span> | [<span class="hljs-title">is_string_full_event</span>](#property-is_string_full_event) ( `string`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) ) 
-<span class="hljs-attribute">[bool](https://docs.godotengine.org/en/latest/classes/class_bool.html#class-bool)</span> | [<span class="hljs-title">is_valid_event</span>](#property-is_valid_event) ( `string`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) ) 
-<span style = "color: gray">void</span> | [<span class="hljs-title">load_text_effects</span>](#property-load_text_effects) ( ) 
-<span style = "color: gray">void</span> | [<span class="hljs-title">suggest_bbcode</span>](#property-suggest_bbcode) ( `text`: [CodeEdit](https://docs.godotengine.org/en/latest/classes/class_codeedit.html#class-codeedit) ) 
-<span class="hljs-attribute">[String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string)</span> | [<span class="hljs-title">to_text</span>](#property-to_text) ( ) 
+<span style = "color: gray">void</span> | [<span class="hljs-title">build_event_editor</span>](#method-build_event_editor) ( ) 
+<span class="hljs-attribute">[bool](https://docs.godotengine.org/en/latest/classes/class_bool.html#class-bool)</span> | [<span class="hljs-title">do_any_characters_exist</span>](#method-do_any_characters_exist) ( ) 
+<span style = "color: gray">void</span> | [<span class="hljs-title">end_text_event</span>](#method-end_text_event) ( ) 
+<span style = "color: gray">void</span> | [<span class="hljs-title">from_text</span>](#method-from_text) ( `string`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) ) 
+<span class="hljs-attribute">[Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html#class-dictionary)</span> | [<span class="hljs-title">get_character_suggestions</span>](#method-get_character_suggestions) ( `search_text`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) ) 
+<span class="hljs-attribute">[Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html#class-dictionary)</span> | [<span class="hljs-title">get_portrait_suggestions</span>](#method-get_portrait_suggestions) ( `search_text`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) ) 
+<span class="hljs-attribute">[Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html#class-dictionary)</span> | [<span class="hljs-title">get_shortcode_parameters</span>](#method-get_shortcode_parameters) ( ) 
+<span class="hljs-attribute">[bool](https://docs.godotengine.org/en/latest/classes/class_bool.html#class-bool)</span> | [<span class="hljs-title">has_no_portraits</span>](#method-has_no_portraits) ( ) 
+<span class="hljs-attribute">[bool](https://docs.godotengine.org/en/latest/classes/class_bool.html#class-bool)</span> | [<span class="hljs-title">is_string_full_event</span>](#method-is_string_full_event) ( `string`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) ) 
+<span class="hljs-attribute">[bool](https://docs.godotengine.org/en/latest/classes/class_bool.html#class-bool)</span> | [<span class="hljs-title">is_valid_event</span>](#method-is_valid_event) ( `string`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) ) 
+<span style = "color: gray">void</span> | [<span class="hljs-title">load_text_effects</span>](#method-load_text_effects) ( ) 
+<span style = "color: gray">void</span> | [<span class="hljs-title">suggest_bbcode</span>](#method-suggest_bbcode) ( `text`: [CodeEdit](https://docs.godotengine.org/en/latest/classes/class_codeedit.html#class-codeedit) ) 
+<span class="hljs-attribute">[String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string)</span> | [<span class="hljs-title">to_text</span>](#method-to_text) ( ) 
 --- 
 ## Constants
 
@@ -220,7 +220,7 @@ This is the content of the text event. It is supposed to be displayed by a Dialo
 
 
 
-<a class="header" id="method-build_event_editor" href="#method-build_event_editor">**<span class="hljs-attribute">func</span> [<span class="hljs-title">build_event_editor</span>](#property-build_event_editor) ( )</a>  ⇒ <span style = "color: gray">void</span>** 
+<a class="header" id="method-build_event_editor" href="#method-build_event_editor">**<span class="hljs-attribute">func</span> [<span class="hljs-title">build_event_editor</span>](#method-build_event_editor) ( )</a>  ⇒ <span style = "color: gray">void</span>** 
 
 
 
@@ -230,7 +230,7 @@ This is the content of the text event. It is supposed to be displayed by a Dialo
 
 
 
-<a class="header" id="method-do_any_characters_exist" href="#method-do_any_characters_exist">**<span class="hljs-attribute">func</span> [<span class="hljs-title">do_any_characters_exist</span>](#property-do_any_characters_exist) ( )</a>  ⇒ <span class="hljs-attribute">[bool](https://docs.godotengine.org/en/latest/classes/class_bool.html#class-bool)</span>** 
+<a class="header" id="method-do_any_characters_exist" href="#method-do_any_characters_exist">**<span class="hljs-attribute">func</span> [<span class="hljs-title">do_any_characters_exist</span>](#method-do_any_characters_exist) ( )</a>  ⇒ <span class="hljs-attribute">[bool](https://docs.godotengine.org/en/latest/classes/class_bool.html#class-bool)</span>** 
 
 
 
@@ -240,7 +240,7 @@ This is the content of the text event. It is supposed to be displayed by a Dialo
 
 
 
-<a class="header" id="method-end_text_event" href="#method-end_text_event">**<span class="hljs-attribute">func</span> [<span class="hljs-title">end_text_event</span>](#property-end_text_event) ( )</a>  ⇒ <span style = "color: gray">void</span>** 
+<a class="header" id="method-end_text_event" href="#method-end_text_event">**<span class="hljs-attribute">func</span> [<span class="hljs-title">end_text_event</span>](#method-end_text_event) ( )</a>  ⇒ <span style = "color: gray">void</span>** 
 
 
 
@@ -250,7 +250,7 @@ This is the content of the text event. It is supposed to be displayed by a Dialo
 
 
 
-<a class="header" id="method-from_text" href="#method-from_text">**<span class="hljs-attribute">func</span> [<span class="hljs-title">from_text</span>](#property-from_text) ( `string`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) )</a>  ⇒ <span style = "color: gray">void</span>** 
+<a class="header" id="method-from_text" href="#method-from_text">**<span class="hljs-attribute">func</span> [<span class="hljs-title">from_text</span>](#method-from_text) ( `string`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) )</a>  ⇒ <span style = "color: gray">void</span>** 
 
 
 
@@ -260,7 +260,7 @@ This is the content of the text event. It is supposed to be displayed by a Dialo
 
 
 
-<a class="header" id="method-get_character_suggestions" href="#method-get_character_suggestions">**<span class="hljs-attribute">func</span> [<span class="hljs-title">get_character_suggestions</span>](#property-get_character_suggestions) ( `search_text`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) )</a>  ⇒ <span class="hljs-attribute">[Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html#class-dictionary)</span>** 
+<a class="header" id="method-get_character_suggestions" href="#method-get_character_suggestions">**<span class="hljs-attribute">func</span> [<span class="hljs-title">get_character_suggestions</span>](#method-get_character_suggestions) ( `search_text`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) )</a>  ⇒ <span class="hljs-attribute">[Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html#class-dictionary)</span>** 
 
 
 
@@ -270,7 +270,7 @@ This is the content of the text event. It is supposed to be displayed by a Dialo
 
 
 
-<a class="header" id="method-get_portrait_suggestions" href="#method-get_portrait_suggestions">**<span class="hljs-attribute">func</span> [<span class="hljs-title">get_portrait_suggestions</span>](#property-get_portrait_suggestions) ( `search_text`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) )</a>  ⇒ <span class="hljs-attribute">[Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html#class-dictionary)</span>** 
+<a class="header" id="method-get_portrait_suggestions" href="#method-get_portrait_suggestions">**<span class="hljs-attribute">func</span> [<span class="hljs-title">get_portrait_suggestions</span>](#method-get_portrait_suggestions) ( `search_text`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) )</a>  ⇒ <span class="hljs-attribute">[Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html#class-dictionary)</span>** 
 
 
 
@@ -280,7 +280,7 @@ This is the content of the text event. It is supposed to be displayed by a Dialo
 
 
 
-<a class="header" id="method-get_shortcode_parameters" href="#method-get_shortcode_parameters">**<span class="hljs-attribute">func</span> [<span class="hljs-title">get_shortcode_parameters</span>](#property-get_shortcode_parameters) ( )</a>  ⇒ <span class="hljs-attribute">[Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html#class-dictionary)</span>** 
+<a class="header" id="method-get_shortcode_parameters" href="#method-get_shortcode_parameters">**<span class="hljs-attribute">func</span> [<span class="hljs-title">get_shortcode_parameters</span>](#method-get_shortcode_parameters) ( )</a>  ⇒ <span class="hljs-attribute">[Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html#class-dictionary)</span>** 
 
 
 
@@ -290,7 +290,7 @@ This is the content of the text event. It is supposed to be displayed by a Dialo
 
 
 
-<a class="header" id="method-has_no_portraits" href="#method-has_no_portraits">**<span class="hljs-attribute">func</span> [<span class="hljs-title">has_no_portraits</span>](#property-has_no_portraits) ( )</a>  ⇒ <span class="hljs-attribute">[bool](https://docs.godotengine.org/en/latest/classes/class_bool.html#class-bool)</span>** 
+<a class="header" id="method-has_no_portraits" href="#method-has_no_portraits">**<span class="hljs-attribute">func</span> [<span class="hljs-title">has_no_portraits</span>](#method-has_no_portraits) ( )</a>  ⇒ <span class="hljs-attribute">[bool](https://docs.godotengine.org/en/latest/classes/class_bool.html#class-bool)</span>** 
 
 
 
@@ -300,7 +300,7 @@ This is the content of the text event. It is supposed to be displayed by a Dialo
 
 
 
-<a class="header" id="method-is_string_full_event" href="#method-is_string_full_event">**<span class="hljs-attribute">func</span> [<span class="hljs-title">is_string_full_event</span>](#property-is_string_full_event) ( `string`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) )</a>  ⇒ <span class="hljs-attribute">[bool](https://docs.godotengine.org/en/latest/classes/class_bool.html#class-bool)</span>** 
+<a class="header" id="method-is_string_full_event" href="#method-is_string_full_event">**<span class="hljs-attribute">func</span> [<span class="hljs-title">is_string_full_event</span>](#method-is_string_full_event) ( `string`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) )</a>  ⇒ <span class="hljs-attribute">[bool](https://docs.godotengine.org/en/latest/classes/class_bool.html#class-bool)</span>** 
 
 
 
@@ -310,7 +310,7 @@ This is the content of the text event. It is supposed to be displayed by a Dialo
 
 
 
-<a class="header" id="method-is_valid_event" href="#method-is_valid_event">**<span class="hljs-attribute">func</span> [<span class="hljs-title">is_valid_event</span>](#property-is_valid_event) ( `string`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) )</a>  ⇒ <span class="hljs-attribute">[bool](https://docs.godotengine.org/en/latest/classes/class_bool.html#class-bool)</span>** 
+<a class="header" id="method-is_valid_event" href="#method-is_valid_event">**<span class="hljs-attribute">func</span> [<span class="hljs-title">is_valid_event</span>](#method-is_valid_event) ( `string`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) )</a>  ⇒ <span class="hljs-attribute">[bool](https://docs.godotengine.org/en/latest/classes/class_bool.html#class-bool)</span>** 
 
 
 
@@ -320,7 +320,7 @@ This is the content of the text event. It is supposed to be displayed by a Dialo
 
 
 
-<a class="header" id="method-load_text_effects" href="#method-load_text_effects">**<span class="hljs-attribute">func</span> [<span class="hljs-title">load_text_effects</span>](#property-load_text_effects) ( )</a>  ⇒ <span style = "color: gray">void</span>** 
+<a class="header" id="method-load_text_effects" href="#method-load_text_effects">**<span class="hljs-attribute">func</span> [<span class="hljs-title">load_text_effects</span>](#method-load_text_effects) ( )</a>  ⇒ <span style = "color: gray">void</span>** 
 
 
 
@@ -330,7 +330,7 @@ This is the content of the text event. It is supposed to be displayed by a Dialo
 
 
 
-<a class="header" id="method-suggest_bbcode" href="#method-suggest_bbcode">**<span class="hljs-attribute">func</span> [<span class="hljs-title">suggest_bbcode</span>](#property-suggest_bbcode) ( `text`: [CodeEdit](https://docs.godotengine.org/en/latest/classes/class_codeedit.html#class-codeedit) )</a>  ⇒ <span style = "color: gray">void</span>** 
+<a class="header" id="method-suggest_bbcode" href="#method-suggest_bbcode">**<span class="hljs-attribute">func</span> [<span class="hljs-title">suggest_bbcode</span>](#method-suggest_bbcode) ( `text`: [CodeEdit](https://docs.godotengine.org/en/latest/classes/class_codeedit.html#class-codeedit) )</a>  ⇒ <span style = "color: gray">void</span>** 
 
 
 
@@ -340,7 +340,7 @@ This is the content of the text event. It is supposed to be displayed by a Dialo
 
 
 
-<a class="header" id="method-to_text" href="#method-to_text">**<span class="hljs-attribute">func</span> [<span class="hljs-title">to_text</span>](#property-to_text) ( )</a>  ⇒ <span class="hljs-attribute">[String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string)</span>** 
+<a class="header" id="method-to_text" href="#method-to_text">**<span class="hljs-attribute">func</span> [<span class="hljs-title">to_text</span>](#method-to_text) ( )</a>  ⇒ <span class="hljs-attribute">[String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string)</span>** 
 
 
 

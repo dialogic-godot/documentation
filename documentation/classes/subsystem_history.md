@@ -26,19 +26,19 @@ Name | Type | Default
 ## Methods
 Returns | Method 
 --- | --- 
-<span style = "color: gray">void</span> | [<span class="hljs-title">close_history</span>](#property-close_history) ( ) 
-<span class="hljs-attribute">[Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html#class-dictionary)</span> | [<span class="hljs-title">get_saved_visited_history</span>](#property-get_saved_visited_history) ( ) 
-<span class="hljs-attribute">[Array](https://docs.godotengine.org/en/latest/classes/class_array.html#class-array)</span> | [<span class="hljs-title">get_simple_history</span>](#property-get_simple_history) ( ) 
-<span class="hljs-attribute">[bool](https://docs.godotengine.org/en/latest/classes/class_bool.html#class-bool)</span> | [<span class="hljs-title">has_event_been_visited</span>](#property-has_event_been_visited) ( `event_index`: [int](https://docs.godotengine.org/en/latest/classes/class_int.html#class-int) = `<unknown>`, `timeline`: [DialogicTimeline](class_dialogictimeline.md) = `<unknown>` ) 
-<span class="hljs-attribute">[bool](https://docs.godotengine.org/en/latest/classes/class_bool.html#class-bool)</span> | [<span class="hljs-title">has_last_event_been_visited</span>](#property-has_last_event_been_visited) ( ) 
-<span style = "color: gray">void</span> | [<span class="hljs-title">load_visited_history</span>](#property-load_visited_history) ( ) 
-<span style = "color: gray">void</span> | [<span class="hljs-title">mark_event_as_visited</span>](#property-mark_event_as_visited) ( `_event`: [DialogicEvent](class_dialogicevent.md) ) 
-<span style = "color: gray">void</span> | [<span class="hljs-title">open_history</span>](#property-open_history) ( ) 
-<span style = "color: gray">void</span> | [<span class="hljs-title">post_install</span>](#property-post_install) ( ) 
-<span style = "color: gray">void</span> | [<span class="hljs-title">reset_visited_history</span>](#property-reset_visited_history) ( `reset_property`: [bool](https://docs.godotengine.org/en/latest/classes/class_bool.html#class-bool) = `true` ) 
-<span style = "color: gray">void</span> | [<span class="hljs-title">save_visited_history</span>](#property-save_visited_history) ( ) 
-<span style = "color: gray">void</span> | [<span class="hljs-title">store_full_event</span>](#property-store_full_event) ( `event`: [DialogicEvent](class_dialogicevent.md) ) 
-<span style = "color: gray">void</span> | [<span class="hljs-title">store_simple_history_entry</span>](#property-store_simple_history_entry) ( `text`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string), `event_type`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string), `extra_info`: [Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html#class-dictionary) = `<unknown>` ) 
+<span style = "color: gray">void</span> | [<span class="hljs-title">close_history</span>](#method-close_history) ( ) 
+<span class="hljs-attribute">[Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html#class-dictionary)</span> | [<span class="hljs-title">get_saved_visited_history</span>](#method-get_saved_visited_history) ( ) 
+<span class="hljs-attribute">[Array](https://docs.godotengine.org/en/latest/classes/class_array.html#class-array)</span> | [<span class="hljs-title">get_simple_history</span>](#method-get_simple_history) ( ) 
+<span class="hljs-attribute">[bool](https://docs.godotengine.org/en/latest/classes/class_bool.html#class-bool)</span> | [<span class="hljs-title">has_event_been_visited</span>](#method-has_event_been_visited) ( `event_index`: [int](https://docs.godotengine.org/en/latest/classes/class_int.html#class-int) = `<unknown>`, `timeline`: [DialogicTimeline](class_dialogictimeline.md) = `<unknown>` ) 
+<span class="hljs-attribute">[bool](https://docs.godotengine.org/en/latest/classes/class_bool.html#class-bool)</span> | [<span class="hljs-title">has_last_event_been_visited</span>](#method-has_last_event_been_visited) ( ) 
+<span style = "color: gray">void</span> | [<span class="hljs-title">load_visited_history</span>](#method-load_visited_history) ( ) 
+<span style = "color: gray">void</span> | [<span class="hljs-title">mark_event_as_visited</span>](#method-mark_event_as_visited) ( `_event`: [DialogicEvent](class_dialogicevent.md) ) 
+<span style = "color: gray">void</span> | [<span class="hljs-title">open_history</span>](#method-open_history) ( ) 
+<span style = "color: gray">void</span> | [<span class="hljs-title">post_install</span>](#method-post_install) ( ) 
+<span style = "color: gray">void</span> | [<span class="hljs-title">reset_visited_history</span>](#method-reset_visited_history) ( `reset_property`: [bool](https://docs.godotengine.org/en/latest/classes/class_bool.html#class-bool) = `true` ) 
+<span style = "color: gray">void</span> | [<span class="hljs-title">save_visited_history</span>](#method-save_visited_history) ( ) 
+<span style = "color: gray">void</span> | [<span class="hljs-title">store_full_event</span>](#method-store_full_event) ( `event`: [DialogicEvent](class_dialogicevent.md) ) 
+<span style = "color: gray">void</span> | [<span class="hljs-title">store_simple_history_entry</span>](#method-store_simple_history_entry) ( `text`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string), `event_type`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string), `extra_info`: [Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html#class-dictionary) = `<unknown>` ) 
 --- 
 
 ## Signals
@@ -58,7 +58,7 @@ Returns | Method
 
 
 
-Emitted if a new event has been inserted into the full event history.
+ Emitted if a new event has been inserted into the full event history. 
 
 ---
 
@@ -88,7 +88,7 @@ Emitted if a new event has been inserted into the full event history.
 
 
 
-Emitted if an encountered timeline event has not been visited before.
+ Emitted if an encountered timeline event has not been visited before. 
 
 ---
 
@@ -98,7 +98,7 @@ Emitted if an encountered timeline event has not been visited before.
 
 
 
-Emitted if an encountered timeline event has been inserted into the visited event history.  This will trigger only once per unique event instance.
+ Emitted if an encountered timeline event has been inserted into the visited event history.  This will trigger only once per unique event instance. 
 
 ---
 
@@ -198,7 +198,7 @@ Used to store `visited_event_history_content` in the global info file. You can c
 
 
 
-<a class="header" id="method-close_history" href="#method-close_history">**<span class="hljs-attribute">func</span> [<span class="hljs-title">close_history</span>](#property-close_history) ( )</a>  ⇒ <span style = "color: gray">void</span>** 
+<a class="header" id="method-close_history" href="#method-close_history">**<span class="hljs-attribute">func</span> [<span class="hljs-title">close_history</span>](#method-close_history) ( )</a>  ⇒ <span style = "color: gray">void</span>** 
 
 
 
@@ -208,7 +208,7 @@ Used to store `visited_event_history_content` in the global info file. You can c
 
 
 
-<a class="header" id="method-get_saved_visited_history" href="#method-get_saved_visited_history">**<span class="hljs-attribute">func</span> [<span class="hljs-title">get_saved_visited_history</span>](#property-get_saved_visited_history) ( )</a>  ⇒ <span class="hljs-attribute">[Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html#class-dictionary)</span>** 
+<a class="header" id="method-get_saved_visited_history" href="#method-get_saved_visited_history">**<span class="hljs-attribute">func</span> [<span class="hljs-title">get_saved_visited_history</span>](#method-get_saved_visited_history) ( )</a>  ⇒ <span class="hljs-attribute">[Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html#class-dictionary)</span>** 
 
 
 
@@ -218,7 +218,7 @@ Returns the saved already-visited history from the global info save file. If non
 
 
 
-<a class="header" id="method-get_simple_history" href="#method-get_simple_history">**<span class="hljs-attribute">func</span> [<span class="hljs-title">get_simple_history</span>](#property-get_simple_history) ( )</a>  ⇒ <span class="hljs-attribute">[Array](https://docs.godotengine.org/en/latest/classes/class_array.html#class-array)</span>** 
+<a class="header" id="method-get_simple_history" href="#method-get_simple_history">**<span class="hljs-attribute">func</span> [<span class="hljs-title">get_simple_history</span>](#method-get_simple_history) ( )</a>  ⇒ <span class="hljs-attribute">[Array](https://docs.godotengine.org/en/latest/classes/class_array.html#class-array)</span>** 
 
 
 
@@ -228,7 +228,7 @@ Returns the saved already-visited history from the global info save file. If non
 
 
 
-<a class="header" id="method-has_event_been_visited" href="#method-has_event_been_visited">**<span class="hljs-attribute">func</span> [<span class="hljs-title">has_event_been_visited</span>](#property-has_event_been_visited) ( `event_index`: [int](https://docs.godotengine.org/en/latest/classes/class_int.html#class-int) = `<unknown>`, `timeline`: [DialogicTimeline](class_dialogictimeline.md) = `<unknown>` )</a>  ⇒ <span class="hljs-attribute">[bool](https://docs.godotengine.org/en/latest/classes/class_bool.html#class-bool)</span>** 
+<a class="header" id="method-has_event_been_visited" href="#method-has_event_been_visited">**<span class="hljs-attribute">func</span> [<span class="hljs-title">has_event_been_visited</span>](#method-has_event_been_visited) ( `event_index`: [int](https://docs.godotengine.org/en/latest/classes/class_int.html#class-int) = `<unknown>`, `timeline`: [DialogicTimeline](class_dialogictimeline.md) = `<unknown>` )</a>  ⇒ <span class="hljs-attribute">[bool](https://docs.godotengine.org/en/latest/classes/class_bool.html#class-bool)</span>** 
 
 
 
@@ -238,7 +238,7 @@ If called with with no arguments, the method will return whether the last encoun
 
 
 
-<a class="header" id="method-has_last_event_been_visited" href="#method-has_last_event_been_visited">**<span class="hljs-attribute">func</span> [<span class="hljs-title">has_last_event_been_visited</span>](#property-has_last_event_been_visited) ( )</a>  ⇒ <span class="hljs-attribute">[bool](https://docs.godotengine.org/en/latest/classes/class_bool.html#class-bool)</span>** 
+<a class="header" id="method-has_last_event_been_visited" href="#method-has_last_event_been_visited">**<span class="hljs-attribute">func</span> [<span class="hljs-title">has_last_event_been_visited</span>](#method-has_last_event_been_visited) ( )</a>  ⇒ <span class="hljs-attribute">[bool](https://docs.godotengine.org/en/latest/classes/class_bool.html#class-bool)</span>** 
 
 
 
@@ -248,7 +248,7 @@ Whether the last event has been visited for the first time or not. This will ret
 
 
 
-<a class="header" id="method-load_visited_history" href="#method-load_visited_history">**<span class="hljs-attribute">func</span> [<span class="hljs-title">load_visited_history</span>](#property-load_visited_history) ( )</a>  ⇒ <span style = "color: gray">void</span>** 
+<a class="header" id="method-load_visited_history" href="#method-load_visited_history">**<span class="hljs-attribute">func</span> [<span class="hljs-title">load_visited_history</span>](#method-load_visited_history) ( )</a>  ⇒ <span style = "color: gray">void</span>** 
 
 
 
@@ -258,7 +258,7 @@ Loads the seen events from the global info save file. Calling this when a game g
 
 
 
-<a class="header" id="method-mark_event_as_visited" href="#method-mark_event_as_visited">**<span class="hljs-attribute">func</span> [<span class="hljs-title">mark_event_as_visited</span>](#property-mark_event_as_visited) ( `_event`: [DialogicEvent](class_dialogicevent.md) )</a>  ⇒ <span style = "color: gray">void</span>** 
+<a class="header" id="method-mark_event_as_visited" href="#method-mark_event_as_visited">**<span class="hljs-attribute">func</span> [<span class="hljs-title">mark_event_as_visited</span>](#method-mark_event_as_visited) ( `_event`: [DialogicEvent](class_dialogicevent.md) )</a>  ⇒ <span style = "color: gray">void</span>** 
 
 
 
@@ -268,7 +268,7 @@ Loads the seen events from the global info save file. Calling this when a game g
 
 
 
-<a class="header" id="method-open_history" href="#method-open_history">**<span class="hljs-attribute">func</span> [<span class="hljs-title">open_history</span>](#property-open_history) ( )</a>  ⇒ <span style = "color: gray">void</span>** 
+<a class="header" id="method-open_history" href="#method-open_history">**<span class="hljs-attribute">func</span> [<span class="hljs-title">open_history</span>](#method-open_history) ( )</a>  ⇒ <span style = "color: gray">void</span>** 
 
 
 
@@ -278,7 +278,7 @@ Loads the seen events from the global info save file. Calling this when a game g
 
 
 
-<a class="header" id="method-post_install" href="#method-post_install">**<span class="hljs-attribute">func</span> [<span class="hljs-title">post_install</span>](#property-post_install) ( )</a>  ⇒ <span style = "color: gray">void</span>** 
+<a class="header" id="method-post_install" href="#method-post_install">**<span class="hljs-attribute">func</span> [<span class="hljs-title">post_install</span>](#method-post_install) ( )</a>  ⇒ <span style = "color: gray">void</span>** 
 
 
 
@@ -288,7 +288,7 @@ Loads the seen events from the global info save file. Calling this when a game g
 
 
 
-<a class="header" id="method-reset_visited_history" href="#method-reset_visited_history">**<span class="hljs-attribute">func</span> [<span class="hljs-title">reset_visited_history</span>](#property-reset_visited_history) ( `reset_property`: [bool](https://docs.godotengine.org/en/latest/classes/class_bool.html#class-bool) = `true` )</a>  ⇒ <span style = "color: gray">void</span>** 
+<a class="header" id="method-reset_visited_history" href="#method-reset_visited_history">**<span class="hljs-attribute">func</span> [<span class="hljs-title">reset_visited_history</span>](#method-reset_visited_history) ( `reset_property`: [bool](https://docs.godotengine.org/en/latest/classes/class_bool.html#class-bool) = `true` )</a>  ⇒ <span style = "color: gray">void</span>** 
 
 
 
@@ -298,7 +298,7 @@ Resets the already-visited history in the global info save file. If `reset_prope
 
 
 
-<a class="header" id="method-save_visited_history" href="#method-save_visited_history">**<span class="hljs-attribute">func</span> [<span class="hljs-title">save_visited_history</span>](#property-save_visited_history) ( )</a>  ⇒ <span style = "color: gray">void</span>** 
+<a class="header" id="method-save_visited_history" href="#method-save_visited_history">**<span class="hljs-attribute">func</span> [<span class="hljs-title">save_visited_history</span>](#method-save_visited_history) ( )</a>  ⇒ <span style = "color: gray">void</span>** 
 
 
 
@@ -308,7 +308,7 @@ Saves all seen events to the global info file. This can be useful when the playe
 
 
 
-<a class="header" id="method-store_full_event" href="#method-store_full_event">**<span class="hljs-attribute">func</span> [<span class="hljs-title">store_full_event</span>](#property-store_full_event) ( `event`: [DialogicEvent](class_dialogicevent.md) )</a>  ⇒ <span style = "color: gray">void</span>** 
+<a class="header" id="method-store_full_event" href="#method-store_full_event">**<span class="hljs-attribute">func</span> [<span class="hljs-title">store_full_event</span>](#method-store_full_event) ( `event`: [DialogicEvent](class_dialogicevent.md) )</a>  ⇒ <span style = "color: gray">void</span>** 
 
 
 
@@ -318,7 +318,7 @@ Called on each event.
 
 
 
-<a class="header" id="method-store_simple_history_entry" href="#method-store_simple_history_entry">**<span class="hljs-attribute">func</span> [<span class="hljs-title">store_simple_history_entry</span>](#property-store_simple_history_entry) ( `text`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string), `event_type`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string), `extra_info`: [Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html#class-dictionary) = `<unknown>` )</a>  ⇒ <span style = "color: gray">void</span>** 
+<a class="header" id="method-store_simple_history_entry" href="#method-store_simple_history_entry">**<span class="hljs-attribute">func</span> [<span class="hljs-title">store_simple_history_entry</span>](#method-store_simple_history_entry) ( `text`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string), `event_type`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string), `extra_info`: [Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html#class-dictionary) = `<unknown>` )</a>  ⇒ <span style = "color: gray">void</span>** 
 
 
 
