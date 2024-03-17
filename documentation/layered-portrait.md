@@ -168,3 +168,31 @@ separate them with a comma:
 update agustina [extra_data="show Glasses/Normal, set Emote/Shock"]
 ```
 
+# 6. FAQ
+
+## 6.1. My Portrait is hovering above the Scene Ground
+
+Make sure all of your layers have the correct size.
+
+The Layered Portrait will use the size of all layers combined. If one layer is
+extending further down than the others, it may appear floating above the ground
+if the layer is not enabled.
+
+Try enabling all of your layers and select all nodes, you will be able to see
+all boundaries in the editor window of your scene.
+
+
+## 6.2 My Portrait's Position is heavily off
+
+If you use a `Control` (and comparable types), ensure that its position aligns
+with the root's position. Otherwise, the overall coverage of your portrait
+will be visually unpredictable in the editor.
+
+
+## 6.3 Do I have to use `CanvasGroup` as Root Node?
+
+No, but if you use any transitions on your layered sprite, the player will see
+every single layer fading at once.
+
+If you have a Skin Layer covered mostly by a Dress Layer, you will see the Skin
+and Dress layer fading in and out separately.
