@@ -13,6 +13,8 @@ Oftentimes, you want something more complex than a simple image: an animated ima
 
 To achieve these, you will have to create a **custom portrait scene**.
 
+If you want to use a layered portrait, take a look here: [Layered Portrait](layered-portrait.md)
+
 One scene can be used for one or multiple portraits. If a scene is used for multiple portraits, switching between them will not re-instance the scene and only call `_update_portrait(portrait_name)` on that scene (see more below). This allows you to even animate from one portrait to the next.
 
 ---
