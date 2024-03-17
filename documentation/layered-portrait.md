@@ -59,9 +59,14 @@ your project organized.
 Right-click on the folder and hover **Create New**, and click **Scene...** on the
 follow-up menu.
 
-Select the **Root Type**, we recommend using a **2D Scene**. The **Scene Name**
-is up to you, but once again, we recommend keeping your project organized with
-a consistent naming scheme.
+Select the **Root Type**, we recommend using the **Node** option, selecting the
+ `CanvasGroup` type.
+
+The `CanvasGroup` type allows Godot to treat all layers as a single image,
+preventing the layers from fading in and out separately.
+
+The **Scene Name** is up to you, but once again, we recommend keeping your
+project organized with a consistent naming scheme.
 
 ![Creating a new scene](media/layered_portrait/create_scene.png)
 
@@ -101,7 +106,9 @@ folder.
 ## 4.2. Adding the Layers
 
 Your layered portrait can have multiple layers. We recommend using `Node2D` as
-grouping layers, and `Sprite` as the actual layers.
+grouping layers, and `Sprite2D` as the actual layers.
+
+There is no limitation what Node Types you use for your layers.
 
 This will require some manual work, but it gives you control over how the
 layers are organized. The node paths will be used in the
