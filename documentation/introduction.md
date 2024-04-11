@@ -92,4 +92,3 @@ First, Dialogic 1 is exclusively for Godot 3, while Dialogic 2 requires Godot 4.
 Hence, your project must work in Godot 4.1, it's a very different engine with plenty of changes.
 
 If you have already made a lot of progress in your game, there is no reason to upgrade. We recommend you stick to Godot 3 and Dialogic 1.
-However, if you want to give it a try, you can check out this [community-made converter-module](https://github.com/dialogic-godot/1to2-converter). Please feel invited to contribute to it if something doesn't work!
