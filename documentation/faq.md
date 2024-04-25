@@ -34,7 +34,7 @@ I see numerous people saying that the plugin should come with Godot, but I belie
 
 Use a `Music` event to set a resource and then cancel it with a `Music` event with no resource.
 
-![header_faq](/media/faq/background_music_toggling.png)
+![header_faq](./media/faq/background_music_toggling.png)
 
 This example will fade in the music over 4 seconds and then fade it out over 5 seconds.
 
@@ -67,11 +67,10 @@ Disabling the translation until you are done with most of the text is recommende
 The following code allows you to check if the text box is visible and then act based on its state.
 ```gdscript
 if Dialogic.Text.is_textbox_visible():
-	Dialogic.Text.hide_text_boxes()
+    Dialogic.Text.hide_text_boxes()
 else:
-	Dialogic.Text.show_text_boxes()
+    Dialogic.Text.show_text_boxes()
 ```
-
 
 ## I encounter a small lag or freeze when starting the dialogue!
 
@@ -85,3 +84,29 @@ style.prepare()
 
 Last, be aware that Godot's shader compiler runs on demand; whenever new shaders need to be loaded in a style (or any resource), it will compile, causing a freeze.\
 Hence, it's recommended to compile these ahead of time if you run into problems still.
+
+## How to transition from dialog to gameplay?
+
+When your dialog ends and you want to switch to a different context (e.g. gameplay) you will have to decide how to deal with the current dialog layout. In `Settings/General` you will find the `Layout Node Behaviour` setting, which you can switch between **Delete**, **Hide** and **Keep**. 
+
+If you plan to have a transition that is managed outside of dialogic, you might have to use **Hide** and then manually show it again and hide it later. E.g.:
+
+```gdscript
+func _on_dialogic_timeline_ended() -> void:
+    var layout := Dialogic.Styles.get_layout_node()
+    layout.show()
+    # do my transiton
+    await transtion_finished
+    layout.hide()
+```
+
+Or you trigger the transition from within the timeline, so that the timeline only ends once the transition asks for it. Then you can use the **Hide** or **Delete** modes. Here is an example scene transition code snippet (on an autoload), that is then called from the timeline:
+
+```gdscript
+func change_scene(scene_path: String):
+    Transition.fade_out()
+    await Transition.fade_out_completed
+    get_tree().change_scene_to_file(scene_path)
+```
+
+![transition-call-event.jpg](./media/faq/transition-call-event.jpg)
