@@ -207,7 +207,7 @@ Be aware, you have to:
 - **orig_pos** = the position you started at
 
 ## Naming animations
-Importantly the name of your animation file will determine if it is a Join, Leave or Update animation! If it ends with `_in` or contains `_in_` it is a join animation, ending in `_out` or containing `_out_` makes it a leave animation, while all other names are concidered update animations (often called attention seekers in other software). 
+Importantly the name of your animation file will determine if it is a Join, Leave or Update animation! If it ends with `_in` or contains `_in_` it is a Join animation, ending in `_out` or containing `_out_` makes it a Leave animation, while all other names are considered Update animations (often called attention seekers in other software). 
 
 ---
 
