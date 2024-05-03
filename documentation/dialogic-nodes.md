@@ -14,9 +14,11 @@ Usually, this means Dialogic will add a **layout scene** made of `DialogicNodes`
 
 This topic is closely related to [Styles and Layouts](styles-and-layouts.md), so take a look at that page if you haven't done so yet.
 
+You can find all Dialogic nodes in our [Node Class Reference Index](node_class_index.md).
+
 ---
 
-## 2. What is a dialogic node?
+## 2. What is a Dialogic Node?
 
 Many events have nodes that you need if you want them to actually affect the game:
 
@@ -30,7 +32,9 @@ Many events have nodes that you need if you want them to actually affect the gam
 
 - **Text Input event:** `TextInput`
 
-Here are some things to know about dialogic nodes:
+If you want to find all Dialogic nodes, check out the [Node Class Reference Index](node_class_index.md).
+
+Here are some things to know about Dialogic nodes:
 
 - Dialogic Nodes provide very different functionality. Hence, they have very different properties. Learn more about each Dialogic Node by adding it to your scene and taking a look at the inspector.
 
@@ -39,10 +43,10 @@ Here are some things to know about dialogic nodes:
 
 ---
 
-## 3. Using dialogic nodes
+## 3. Using Dialogic nodes
 
 You can add these nodes with the usual `Add Node` window.
 
 It's not relevant where they are placed in the tree, as they will be recognized by the group they are automatically added to.
 
-Some dialogic nodes require a somewhat special setup. For example, the `TypingSound` node expects to be the child of a `DialogText` node.
+Some Dialogic nodes require a special setup. For example, the `TypingSound` node expects to be the child of a `DialogText` node.

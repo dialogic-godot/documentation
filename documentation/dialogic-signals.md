@@ -93,6 +93,4 @@ Dialogic subsystems have many useful signals. Here is a selection of them:
     - signal `variable_changed(info:Dictionary)`
     - signal `variable_was_set(info:Dictionary)` # only on set variable events
 
-And many more. If you want to react to something particular happening, take a look to see if the responsible subsystem has a signal for that.
-
-If you need help, please open an issue or reach out to us.
+If you want to find all signals, head over to the [Subsystem Index](subsystem_class_index.md), select a subsystem and take a look at the related **Signals** category.
