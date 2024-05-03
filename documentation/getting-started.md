@@ -28,8 +28,8 @@ Now, let's verify you have correctly installed Dialogic:
 ## 🚧 How to install the latest WIP Version 🚧
 
 ```admonish
-*Dialogic is constantly evolving. Oftentimes fixes for bugs or new features might only be available on the main branch. This is especially true during the alpha and beta phase. If you are interested in using the main branch it's easy to do so.*
-*Go to [the main page of the repository](https://github.com/dialogic-godot/dialogic) and click on the green `Code` button then presse the `Download ZIP` button. From there you can install that ZIP's content like a release.*
+Dialogic is constantly evolving. Oftentimes, fixes for bugs or new features might only be available on the main branch. This is especially true during the alpha and beta phases. If you are interested in using the main branch, it's easy to do so.
+Go to [the main page of the repository](https://github.com/dialogic-godot/dialogic) and click on the green `Code` button, then press the `Download ZIP` button. From there, you can install that ZIP's content like a release.
 ```
 
 ---
