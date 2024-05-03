@@ -1,6 +1,6 @@
 
 <div class="header-banner purple">
-<div class="header-label purple">subsystem_Text</div>
+<div class="header-label purple">Text</div>
 </div>
 
 *This contains the source code documentation of the class `subsystem_Text`.*
@@ -38,6 +38,7 @@ Returns | Method
 <span style = "color: gray">void</span> | [<span class="hljs-title">effect_speed</span>](#method-effect_speed) ( `text_node`: [Control](https://docs.godotengine.org/en/latest/classes/class_control.html#class-control), `skipped`: [bool](https://docs.godotengine.org/en/latest/classes/class_bool.html#class-bool), `argument`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) ) 
 <span style = "color: gray">void</span> | [<span class="hljs-title">emit_meta_signal</span>](#method-emit_meta_signal) ( `meta`: [Variant](https://docs.godotengine.org/en/latest/classes/class_variant.html#class-variant), `sig`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) ) 
 <span style = "color: gray">void</span> | [<span class="hljs-title">execute_effects</span>](#method-execute_effects) ( `current_index`: [int](https://docs.godotengine.org/en/latest/classes/class_int.html#class-int), `text_node`: [Control](https://docs.godotengine.org/en/latest/classes/class_control.html#class-control), `skipping`: [bool](https://docs.godotengine.org/en/latest/classes/class_bool.html#class-bool) = `false` ) 
+<span class="hljs-attribute">[String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string)</span> | [<span class="hljs-title">get_character_name_parsed</span>](#method-get_character_name_parsed) ( `character`: [DialogicCharacter](class_dialogiccharacter.md) ) 
 <span class="hljs-attribute">[DialogicCharacter](class_dialogiccharacter.md)</span> | [<span class="hljs-title">get_current_speaker</span>](#method-get_current_speaker) ( ) 
 <span style = "color: gray">void</span> | [<span class="hljs-title">hide_next_indicators</span>](#method-hide_next_indicators) ( `_fake_arg`: [Variant](https://docs.godotengine.org/en/latest/classes/class_variant.html#class-variant) = `null` ) 
 <span style = "color: gray">void</span> | [<span class="hljs-title">hide_textbox</span>](#method-hide_textbox) ( `instant`: [bool](https://docs.godotengine.org/en/latest/classes/class_bool.html#class-bool) = `false` ) 
@@ -422,6 +423,16 @@ Returns | Method
 
 
  <span style = "color: gray">*No description available.*</span> 
+
+---
+
+
+
+<a class="header" id="method-get_character_name_parsed" href="#method-get_character_name_parsed">**<span class="hljs-attribute">func</span> [<span class="hljs-title">get_character_name_parsed</span>](#method-get_character_name_parsed) ( `character`: [DialogicCharacter](class_dialogiccharacter.md) )</a>  ⇒ <span class="hljs-attribute">[String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string)</span>** 
+
+
+
+Parses the character's display_name and returns the text that should be rendered. Note that characters may have variables in their name, therefore this function should be called to evaluate any potential variables in a character's name.
 
 ---
 

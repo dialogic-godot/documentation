@@ -1,6 +1,6 @@
 
 <div class="header-banner purple">
-<div class="header-label purple">subsystem_Text_input</div>
+<div class="header-label purple">Text_input</div>
 </div>
 
 *This contains the source code documentation of the class `subsystem_Text_input`.*

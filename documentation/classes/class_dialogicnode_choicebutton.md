@@ -8,7 +8,12 @@
 # DialogicNode_ChoiceButton
 **Inherits:** [Button](https://docs.godotengine.org/en/latest/classes/class_button.html#class-button)
 
-Dialogic Node that displays choices.
+The button allows the player to make a choice in the Dialogic system.
+## Description
+This class is used in the Choice Layer. 
+You may change the `text_node` to any [Node](class_node.md) that has a `text` property. 
+If you don't set the `text_node`, the text will be set on this button instead.  Using a different node may allow using rich text effects; they are not supported on buttons at this point.
+
 ## Properties
 Name | Type | Default 
 --- | --- | --- 
@@ -16,6 +21,7 @@ Name | Type | Default
 [<span class="hljs-title">sound_focus</span>](#property-sound_focus) | [AudioStream](https://docs.godotengine.org/en/latest/classes/class_audiostream.html#class-audiostream) |   
 [<span class="hljs-title">sound_hover</span>](#property-sound_hover) | [AudioStream](https://docs.godotengine.org/en/latest/classes/class_audiostream.html#class-audiostream) |   
 [<span class="hljs-title">sound_pressed</span>](#property-sound_pressed) | [AudioStream](https://docs.godotengine.org/en/latest/classes/class_audiostream.html#class-audiostream) |   
+[<span class="hljs-title">text_node</span>](#property-text_node) | [Node](https://docs.godotengine.org/en/latest/classes/class_node.html#class-node) |   
 ## Property Descriptions
 
 
@@ -55,6 +61,16 @@ Can be set to play this sound when hovered. Requires a sibling DialogicNode_Butt
 
 
 Can be set to play this sound when pressed. Requires a sibling DialogicNode_ButtonSound node.
+
+---
+
+
+
+<a class="header" id="property-text_node" href="#property-text_node">**<span class="hljs-attribute">var</span> <span class="hljs-title">text_node</span>** 
+
+
+
+If set, the text will be set on this node's `text` property instead.
 
 ---
 

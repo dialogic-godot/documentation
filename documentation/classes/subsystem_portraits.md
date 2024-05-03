@@ -1,6 +1,6 @@
 
 <div class="header-banner purple">
-<div class="header-label purple">subsystem_Portraits</div>
+<div class="header-label purple">Portraits</div>
 </div>
 
 *This contains the source code documentation of the class `subsystem_Portraits`.*
@@ -30,6 +30,7 @@ Returns | Method
 <span class="hljs-attribute">[Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html#class-dictionary)</span> | [<span class="hljs-title">get_character_info</span>](#method-get_character_info) ( `character`: [DialogicCharacter](class_dialogiccharacter.md) ) 
 <span class="hljs-attribute">[DialogicCharacter[]](https://docs.godotengine.org/en/latest/classes/class_dialogiccharacter.html#class-dialogiccharacter)</span> | [<span class="hljs-title">get_joined_characters</span>](#method-get_joined_characters) ( ) 
 <span class="hljs-attribute">[DialogicNode_PortraitContainer](class_dialogicnode_portraitcontainer.md)</span> | [<span class="hljs-title">get_portrait_container</span>](#method-get_portrait_container) ( `postion_index`: [int](https://docs.godotengine.org/en/latest/classes/class_int.html#class-int) ) 
+<span class="hljs-attribute">[String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string)</span> | [<span class="hljs-title">get_valid_portrait</span>](#method-get_valid_portrait) ( `character`: [DialogicCharacter](class_dialogiccharacter.md), `portrait`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) ) 
 <span class="hljs-attribute">[bool](https://docs.godotengine.org/en/latest/classes/class_bool.html#class-bool)</span> | [<span class="hljs-title">is_character_joined</span>](#method-is_character_joined) ( `character`: [DialogicCharacter](class_dialogiccharacter.md) ) 
 <span class="hljs-attribute">[Node](https://docs.godotengine.org/en/latest/classes/class_node.html#class-node)</span> | [<span class="hljs-title">join_character</span>](#method-join_character) ( `character`: [DialogicCharacter](class_dialogiccharacter.md), `portrait`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string), `position_idx`: [int](https://docs.godotengine.org/en/latest/classes/class_int.html#class-int), `mirrored`: [bool](https://docs.godotengine.org/en/latest/classes/class_bool.html#class-bool) = `false`, `z_index`: [int](https://docs.godotengine.org/en/latest/classes/class_int.html#class-int) = `0`, `extra_data`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) = `""`, `animation_name`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) = `""`, `animation_length`: [float](https://docs.godotengine.org/en/latest/classes/class_float.html#class-float) = `0.0`, `animation_wait`: [bool](https://docs.godotengine.org/en/latest/classes/class_bool.html#class-bool) = `false` ) 
 <span style = "color: gray">void</span> | [<span class="hljs-title">leave_all_characters</span>](#method-leave_all_characters) ( `animation_name`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) = `""`, `animation_length`: [float](https://docs.godotengine.org/en/latest/classes/class_float.html#class-float) = `0.0`, `animation_wait`: [bool](https://docs.godotengine.org/en/latest/classes/class_bool.html#class-bool) = `false` ) 
@@ -228,6 +229,16 @@ Returns a list of the joined charcters (as resources)
 
 
  <span style = "color: gray">*No description available.*</span> 
+
+---
+
+
+
+<a class="header" id="method-get_valid_portrait" href="#method-get_valid_portrait">**<span class="hljs-attribute">func</span> [<span class="hljs-title">get_valid_portrait</span>](#method-get_valid_portrait) ( `character`: [DialogicCharacter](class_dialogiccharacter.md), `portrait`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) )</a>  ⇒ <span class="hljs-attribute">[String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string)</span>** 
+
+
+
+Checks multiple cases to return a valid portrait to use.
 
 ---
 

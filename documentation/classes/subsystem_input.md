@@ -1,6 +1,6 @@
 
 <div class="header-banner purple">
-<div class="header-label purple">subsystem_Input</div>
+<div class="header-label purple">Input</div>
 </div>
 
 *This contains the source code documentation of the class `subsystem_Input`.*
@@ -8,7 +8,10 @@
 # subsystem_Input
 **Inherits:** [DialogicSubsystem](class_dialogicsubsystem.md)
 
-##############################################################################
+Subsystem that handles input, Auto-Advance, and skipping.
+## Description
+This subsystem can be accessed via GDScript: `Dialogic.Inputs`.
+
 ## Properties
 Name | Type | Default 
 --- | --- | --- 
@@ -16,23 +19,23 @@ Name | Type | Default
 [<span class="hljs-title">auto_advance</span>](#property-auto_advance) | [DialogicAutoAdvance](class_dialogicautoadvance.md) |  `null` 
 [<span class="hljs-title">auto_skip</span>](#property-auto_skip) | [DialogicAutoSkip](class_dialogicautoskip.md) |  `null` 
 [<span class="hljs-title">input_block_timer</span>](#property-input_block_timer) | [Timer](https://docs.godotengine.org/en/latest/classes/class_timer.html#class-timer) |   
+[<span class="hljs-title">manual_advance</span>](#property-manual_advance) | [DialogicManualAdvance](class_dialogicmanualadvance.md) |  `null` 
 --- 
 
 ## Methods
 Returns | Method 
 --- | --- 
 <span style = "color: gray">void</span> | [<span class="hljs-title">block_input</span>](#method-block_input) ( `time`: [float](https://docs.godotengine.org/en/latest/classes/class_float.html#class-float) = `0.1` ) 
-<span style = "color: gray">void</span> | [<span class="hljs-title">clear_game_state</span>](#method-clear_game_state) ( `clear_flag`: [int](https://docs.godotengine.org/en/latest/classes/class_int.html#class-int) = `0` ) 
+<span style = "color: gray">void</span> | [<span class="hljs-title">clear_game_state</span>](#method-clear_game_state) ( `_clear_flag`: [int](https://docs.godotengine.org/en/latest/classes/class_int.html#class-int) = `0` ) 
 <span style = "color: gray">void</span> | [<span class="hljs-title">effect_autoadvance</span>](#method-effect_autoadvance) ( `text_node`: [Control](https://docs.godotengine.org/en/latest/classes/class_control.html#class-control), `skipped`: [bool](https://docs.godotengine.org/en/latest/classes/class_bool.html#class-bool), `argument`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) ) 
 <span style = "color: gray">void</span> | [<span class="hljs-title">effect_input</span>](#method-effect_input) ( `text_node`: [Control](https://docs.godotengine.org/en/latest/classes/class_control.html#class-control), `skipped`: [bool](https://docs.godotengine.org/en/latest/classes/class_bool.html#class-bool), `argument`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) ) 
 <span style = "color: gray">void</span> | [<span class="hljs-title">effect_noskip</span>](#method-effect_noskip) ( `text_node`: [Control](https://docs.godotengine.org/en/latest/classes/class_control.html#class-control), `skipped`: [bool](https://docs.godotengine.org/en/latest/classes/class_bool.html#class-bool), `argument`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) ) 
 <span style = "color: gray">void</span> | [<span class="hljs-title">handle_input</span>](#method-handle_input) ( ) 
+<span style = "color: gray">void</span> | [<span class="hljs-title">handle_node_gui_input</span>](#method-handle_node_gui_input) ( `event`: [InputEvent](https://docs.godotengine.org/en/latest/classes/class_inputevent.html#class-inputevent) ) 
 <span class="hljs-attribute">[bool](https://docs.godotengine.org/en/latest/classes/class_bool.html#class-bool)</span> | [<span class="hljs-title">is_input_blocked</span>](#method-is_input_blocked) ( ) 
-<span class="hljs-attribute">[bool](https://docs.godotengine.org/en/latest/classes/class_bool.html#class-bool)</span> | [<span class="hljs-title">is_manualadvance_enabled</span>](#method-is_manualadvance_enabled) ( ) 
 <span style = "color: gray">void</span> | [<span class="hljs-title">pause</span>](#method-pause) ( ) 
 <span style = "color: gray">void</span> | [<span class="hljs-title">post_install</span>](#method-post_install) ( ) 
 <span style = "color: gray">void</span> | [<span class="hljs-title">resume</span>](#method-resume) ( ) 
-<span style = "color: gray">void</span> | [<span class="hljs-title">set_manualadvance</span>](#method-set_manualadvance) ( `enabled`: [bool](https://docs.godotengine.org/en/latest/classes/class_bool.html#class-bool) = `true`, `temp`: [bool](https://docs.godotengine.org/en/latest/classes/class_bool.html#class-bool) = `false` ) 
 <span style = "color: gray">void</span> | [<span class="hljs-title">start_autoskip_timer</span>](#method-start_autoskip_timer) ( ) 
 <span style = "color: gray">void</span> | [<span class="hljs-title">stop_timers</span>](#method-stop_timers) ( ) 
 --- 
@@ -44,7 +47,7 @@ Returns | Method
 
 
 
- <span style = "color: gray">*No description available.*</span> 
+ Whenever the Auto-Skip timer finishes, this signal is emitted. Configure Auto-Skip settings via `auto_skip`. 
 
 ---
 
@@ -110,6 +113,16 @@ Returns | Method
 
 ---
 
+
+
+<a class="header" id="property-manual_advance" href="#property-manual_advance">**<span class="hljs-attribute">var</span> <span class="hljs-title">manual_advance</span> <span style = "color: gray"> = </span> null** 
+
+
+
+ <span style = "color: gray">*No description available.*</span> 
+
+---
+
 ## Method Descriptions
 
 
@@ -124,7 +137,7 @@ Returns | Method
 
 
 
-<a class="header" id="method-clear_game_state" href="#method-clear_game_state">**<span class="hljs-attribute">func</span> [<span class="hljs-title">clear_game_state</span>](#method-clear_game_state) ( `clear_flag`: [int](https://docs.godotengine.org/en/latest/classes/class_int.html#class-int) = `0` )</a>  ⇒ <span style = "color: gray">void</span>** 
+<a class="header" id="method-clear_game_state" href="#method-clear_game_state">**<span class="hljs-attribute">func</span> [<span class="hljs-title">clear_game_state</span>](#method-clear_game_state) ( `_clear_flag`: [int](https://docs.godotengine.org/en/latest/classes/class_int.html#class-int) = `0` )</a>  ⇒ <span style = "color: gray">void</span>** 
 
 
 
@@ -174,17 +187,17 @@ Returns | Method
 
 
 
-<a class="header" id="method-is_input_blocked" href="#method-is_input_blocked">**<span class="hljs-attribute">func</span> [<span class="hljs-title">is_input_blocked</span>](#method-is_input_blocked) ( )</a>  ⇒ <span class="hljs-attribute">[bool](https://docs.godotengine.org/en/latest/classes/class_bool.html#class-bool)</span>** 
+<a class="header" id="method-handle_node_gui_input" href="#method-handle_node_gui_input">**<span class="hljs-attribute">func</span> [<span class="hljs-title">handle_node_gui_input</span>](#method-handle_node_gui_input) ( `event`: [InputEvent](https://docs.godotengine.org/en/latest/classes/class_inputevent.html#class-inputevent) )</a>  ⇒ <span style = "color: gray">void</span>** 
 
 
 
- <span style = "color: gray">*No description available.*</span> 
+This is called from the gui_input of the InputCatcher and DialogText nodes
 
 ---
 
 
 
-<a class="header" id="method-is_manualadvance_enabled" href="#method-is_manualadvance_enabled">**<span class="hljs-attribute">func</span> [<span class="hljs-title">is_manualadvance_enabled</span>](#method-is_manualadvance_enabled) ( )</a>  ⇒ <span class="hljs-attribute">[bool](https://docs.godotengine.org/en/latest/classes/class_bool.html#class-bool)</span>** 
+<a class="header" id="method-is_input_blocked" href="#method-is_input_blocked">**<span class="hljs-attribute">func</span> [<span class="hljs-title">is_input_blocked</span>](#method-is_input_blocked) ( )</a>  ⇒ <span class="hljs-attribute">[bool](https://docs.godotengine.org/en/latest/classes/class_bool.html#class-bool)</span>** 
 
 
 
@@ -215,16 +228,6 @@ Returns | Method
 
 
 <a class="header" id="method-resume" href="#method-resume">**<span class="hljs-attribute">func</span> [<span class="hljs-title">resume</span>](#method-resume) ( )</a>  ⇒ <span style = "color: gray">void</span>** 
-
-
-
- <span style = "color: gray">*No description available.*</span> 
-
----
-
-
-
-<a class="header" id="method-set_manualadvance" href="#method-set_manualadvance">**<span class="hljs-attribute">func</span> [<span class="hljs-title">set_manualadvance</span>](#method-set_manualadvance) ( `enabled`: [bool](https://docs.godotengine.org/en/latest/classes/class_bool.html#class-bool) = `true`, `temp`: [bool](https://docs.godotengine.org/en/latest/classes/class_bool.html#class-bool) = `false` )</a>  ⇒ <span style = "color: gray">void</span>** 
 
 
 

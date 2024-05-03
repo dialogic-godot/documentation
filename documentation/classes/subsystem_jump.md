@@ -1,6 +1,6 @@
 
 <div class="header-banner purple">
-<div class="header-label purple">subsystem_Jump</div>
+<div class="header-label purple">Jump</div>
 </div>
 
 *This contains the source code documentation of the class `subsystem_Jump`.*
@@ -15,6 +15,8 @@
 Returns | Method 
 --- | --- 
 <span style = "color: gray">void</span> | [<span class="hljs-title">clear_game_state</span>](#method-clear_game_state) ( `clear_flag`: [int](https://docs.godotengine.org/en/latest/classes/class_int.html#class-int) = `0` ) 
+<span class="hljs-attribute">[String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string)</span> | [<span class="hljs-title">get_last_label_identifier</span>](#method-get_last_label_identifier) ( ) 
+<span class="hljs-attribute">[String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string)</span> | [<span class="hljs-title">get_last_label_name</span>](#method-get_last_label_name) ( ) 
 <span class="hljs-attribute">[bool](https://docs.godotengine.org/en/latest/classes/class_bool.html#class-bool)</span> | [<span class="hljs-title">is_jump_stack_empty</span>](#method-is_jump_stack_empty) ( ) 
 <span style = "color: gray">void</span> | [<span class="hljs-title">jump_to_label</span>](#method-jump_to_label) ( `label`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) ) 
 <span style = "color: gray">void</span> | [<span class="hljs-title">load_game_state</span>](#method-load_game_state) ( `load_flag`: [int](https://docs.godotengine.org/en/latest/classes/class_int.html#class-int) = `0` ) 
@@ -26,6 +28,16 @@ Returns | Method
 
 
 <a class="header" id="signal-jumped_to_label" href="#signal-jumped_to_label">**<span class="hljs-attribute">signal</span> [<span class="hljs-title">jumped_to_label</span>](#signal-jumped_to_label) ( `info`: [Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html#class-dictionary) )** </a>
+
+
+
+ <span style = "color: gray">*No description available.*</span> 
+
+---
+
+
+
+<a class="header" id="signal-passed_label" href="#signal-passed_label">**<span class="hljs-attribute">signal</span> [<span class="hljs-title">passed_label</span>](#signal-passed_label) ( `info`: [Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html#class-dictionary) )** </a>
 
 
 
@@ -62,6 +74,26 @@ Returns | Method
 
 
  <span style = "color: gray">*No description available.*</span> 
+
+---
+
+
+
+<a class="header" id="method-get_last_label_identifier" href="#method-get_last_label_identifier">**<span class="hljs-attribute">func</span> [<span class="hljs-title">get_last_label_identifier</span>](#method-get_last_label_identifier) ( )</a>  ⇒ <span class="hljs-attribute">[String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string)</span>** 
+
+
+
+Returns the identifier name of the last passed label
+
+---
+
+
+
+<a class="header" id="method-get_last_label_name" href="#method-get_last_label_name">**<span class="hljs-attribute">func</span> [<span class="hljs-title">get_last_label_name</span>](#method-get_last_label_name) ( )</a>  ⇒ <span class="hljs-attribute">[String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string)</span>** 
+
+
+
+Returns the display name of the last passed label (translated if translation are enabled)
 
 ---
 

@@ -1,6 +1,6 @@
 
 <div class="header-banner purple">
-<div class="header-label purple">subsystem_Choices</div>
+<div class="header-label purple">Choices</div>
 </div>
 
 *This contains the source code documentation of the class `subsystem_Choices`.*
