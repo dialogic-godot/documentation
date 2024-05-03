@@ -1,6 +1,6 @@
 
 <div class="header-banner purple">
-<div class="header-label purple">subsystem_Voice</div>
+<div class="header-label purple">Voice</div>
 </div>
 
 *This contains the source code documentation of the class `subsystem_Voice`.*
@@ -8,7 +8,10 @@
 # subsystem_Voice
 **Inherits:** [DialogicSubsystem](class_dialogicsubsystem.md)
 
-##################################################################################################
+Subsystem that manages setting voice lines for text events.
+## Description
+It's recommended to use the [DialogicVoiceEvent](class_dialogicvoiceevent.md) to set the voice lines for text events and not start playing them directly.
+
 ## Properties
 Name | Type | Default 
 --- | --- | --- 
@@ -25,7 +28,7 @@ Returns | Method
 <span style = "color: gray">void</span> | [<span class="hljs-title">pause</span>](#method-pause) ( ) 
 <span style = "color: gray">void</span> | [<span class="hljs-title">play_voice</span>](#method-play_voice) ( ) 
 <span style = "color: gray">void</span> | [<span class="hljs-title">resume</span>](#method-resume) ( ) 
-<span style = "color: gray">void</span> | [<span class="hljs-title">set_bus</span>](#method-set_bus) ( `value`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) ) 
+<span style = "color: gray">void</span> | [<span class="hljs-title">set_bus</span>](#method-set_bus) ( `bus_name`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) ) 
 <span style = "color: gray">void</span> | [<span class="hljs-title">set_file</span>](#method-set_file) ( `path`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) ) 
 <span style = "color: gray">void</span> | [<span class="hljs-title">set_volume</span>](#method-set_volume) ( `value`: [float](https://docs.godotengine.org/en/latest/classes/class_float.html#class-float) ) 
 <span style = "color: gray">void</span> | [<span class="hljs-title">stop_audio</span>](#method-stop_audio) ( ) 
@@ -38,7 +41,12 @@ Returns | Method
 
 
 
- <span style = "color: gray">*No description available.*</span> 
+ Emitted whenever a voice line finished playing. The `info` contains the following keys and values: 
+Key              |   Value Type  | Value 
+---------------- | ------------- | ----- 
+`file`           | [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) | The path to file played. 
+`remaining_time` | [float](https://docs.godotengine.org/en/latest/classes/class_float.html#class-float)  | The remaining time of the voiceline. 
+ 
 
 ---
 
@@ -48,7 +56,11 @@ Returns | Method
 
 
 
- <span style = "color: gray">*No description available.*</span> 
+ Emitted whenever a new voice line starts playing. The `info` contains the following keys and values: 
+Key      |   Value Type  | Value 
+-------- | ------------- | ----- 
+`file`   | [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) | The path to file played. 
+ 
 
 ---
 
@@ -58,7 +70,12 @@ Returns | Method
 
 
 
- <span style = "color: gray">*No description available.*</span> 
+ Emitted whenever a voice line gets interrupted and does not finish playing. The `info` contains the following keys and values: 
+Key              |   Value Type  | Value 
+---------------- | ------------- | ----- 
+`file`           | [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) | The path to file played. 
+`remaining_time` | [float](https://docs.godotengine.org/en/latest/classes/class_float.html#class-float)  | The remaining time of the voiceline. 
+ 
 
 ---
 
@@ -70,7 +87,7 @@ Returns | Method
 
 
 
- <span style = "color: gray">*No description available.*</span> 
+The current audio file being played.
 
 ---
 
@@ -80,7 +97,7 @@ Returns | Method
 
 
 
- <span style = "color: gray">*No description available.*</span> 
+The audio player for the voiceline.
 
 ---
 
@@ -92,7 +109,7 @@ Returns | Method
 
 
 
- <span style = "color: gray">*No description available.*</span> 
+Returns the remaining time of the current voice line in seconds.  If there is no voice line playing, returns `0`.
 
 ---
 
@@ -102,7 +119,7 @@ Returns | Method
 
 
 
- <span style = "color: gray">*No description available.*</span> 
+Whether there is still positive time remaining for the current voiceline.
 
 ---
 
@@ -112,7 +129,7 @@ Returns | Method
 
 
 
- <span style = "color: gray">*No description available.*</span> 
+Whether the current event is a text event and has a voice event before it.
 
 ---
 
@@ -122,7 +139,7 @@ Returns | Method
 
 
 
- <span style = "color: gray">*No description available.*</span> 
+Stops the current voice from playing.
 
 ---
 
@@ -132,7 +149,7 @@ Returns | Method
 
 
 
- <span style = "color: gray">*No description available.*</span> 
+Plays the voice line. This will be invoked by Dialogic. Requires [set_file](#property-set_file) to be called before or nothing plays.
 
 ---
 
@@ -142,17 +159,17 @@ Returns | Method
 
 
 
- <span style = "color: gray">*No description available.*</span> 
+Resumes a paused voice.
 
 ---
 
 
 
-<a class="header" id="method-set_bus" href="#method-set_bus">**<span class="hljs-attribute">func</span> [<span class="hljs-title">set_bus</span>](#method-set_bus) ( `value`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) )</a>  ⇒ <span style = "color: gray">void</span>** 
+<a class="header" id="method-set_bus" href="#method-set_bus">**<span class="hljs-attribute">func</span> [<span class="hljs-title">set_bus</span>](#method-set_bus) ( `bus_name`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) )</a>  ⇒ <span style = "color: gray">void</span>** 
 
 
 
- <span style = "color: gray">*No description available.*</span> 
+Set the voice player's bus to a `bus_name`.
 
 ---
 
@@ -162,7 +179,7 @@ Returns | Method
 
 
 
- <span style = "color: gray">*No description available.*</span> 
+Set a voice file `path` to be played, then invoke [play_voice](#property-play_voice).  This method does not check if `path` is a valid file.
 
 ---
 
@@ -172,7 +189,7 @@ Returns | Method
 
 
 
- <span style = "color: gray">*No description available.*</span> 
+Set the volume to a `value` in decibels.
 
 ---
 
@@ -182,7 +199,7 @@ Returns | Method
 
 
 
- <span style = "color: gray">*No description available.*</span> 
+Stops the current voice line from playing.
 
 ---
 

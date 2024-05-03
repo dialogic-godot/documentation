@@ -26,7 +26,6 @@ Returns | Method
 <span class="hljs-attribute">[String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string)</span> | [<span class="hljs-title">get_set_glossary_entry_translation_id</span>](#method-get_set_glossary_entry_translation_id) ( `entry_key`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) ) 
 <span class="hljs-attribute">[String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string)</span> | [<span class="hljs-title">get_set_glossary_translation_id</span>](#method-get_set_glossary_translation_id) ( ) 
 <span class="hljs-attribute">[String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string)</span> | [<span class="hljs-title">get_set_regex_option</span>](#method-get_set_regex_option) ( `entry_key`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) ) 
-<span class="hljs-attribute">[String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string)</span> | [<span class="hljs-title">get_word_translation_key</span>](#method-get_word_translation_key) ( `word`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) ) 
 <span class="hljs-attribute">[bool](https://docs.godotengine.org/en/latest/classes/class_bool.html#class-bool)</span> | [<span class="hljs-title">remove_entry</span>](#method-remove_entry) ( `entry_key`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) ) 
 <span style = "color: gray">void</span> | [<span class="hljs-title">remove_entry_translation_ids</span>](#method-remove_entry_translation_ids) ( ) 
 <span style = "color: gray">void</span> | [<span class="hljs-title">remove_translation_id</span>](#method-remove_translation_id) ( ) 
@@ -109,15 +108,6 @@ Returns | Method
 
 
 <a class="header" id="constant-PRIVATE_PROPERTY_PREFIX" href="#constant-PRIVATE_PROPERTY_PREFIX">**<span class="hljs-attribute">const</span> <span class="hljs-title">PRIVATE_PROPERTY_PREFIX</span><span class="hljs-comment"> = "_"</span>**</a>
-
-
-
- <span style = "color: gray">*No description available.*</span> 
-
----
-
-
-<a class="header" id="constant-_MISSING_ENTRY_INDEX" href="#constant-_MISSING_ENTRY_INDEX">**<span class="hljs-attribute">const</span> <span class="hljs-title">_MISSING_ENTRY_INDEX</span><span class="hljs-comment"> = -1</span>**</a>
 
 
 
@@ -215,16 +205,6 @@ Tries to get the glossary's translation ID. If it does not exist, a new one will
 
 
 Gets the regex option for the given `entry_key`. If the regex option does not exist, it will be generated.  A regex option is the accumulation of valid words that can trigger the glossary popup.  The `entry_key` must be valid or an error will occur.
-
----
-
-
-
-<a class="header" id="method-get_word_translation_key" href="#method-get_word_translation_key">**<span class="hljs-attribute">func</span> [<span class="hljs-title">get_word_translation_key</span>](#method-get_word_translation_key) ( `word`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) )</a>  ⇒ <span class="hljs-attribute">[String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string)</span>** 
-
-
-
-Returns the matching translation key for the given `word`. This key can be used via [tr](#property-tr) to get the translation.  Time complexity: O(1) Uses an internal dictionary to find the translation key. This dictionary is generated when the glossary is translated. See `_translation_keys`.
 
 ---
 

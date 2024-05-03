@@ -1,6 +1,6 @@
 
 <div class="header-banner purple">
-<div class="header-label purple">subsystem_Audio</div>
+<div class="header-label purple">Audio</div>
 </div>
 
 *This contains the source code documentation of the class `subsystem_Audio`.*
@@ -41,13 +41,13 @@ Returns | Method
 
 
 
- Whenever a new background is set, this signal is emitted and contains a dictionary with the following keys: 
+ Whenever a new background music is started, this signal is emitted and contains a dictionary with the following keys: 
 
 Key         |   Value Type  | Value 
 ----------- | ------------- | ----- 
 `path`      | [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) | The path to the audio resource file. 
-`volume`    | [float](https://docs.godotengine.org/en/latest/classes/class_float.html#class-float)  | The volume of the audio resource that will be set to the audio player. 
-`audio_bus` | [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) | The audio bus name that the audio player will use. 
+`volume`    | [float](https://docs.godotengine.org/en/latest/classes/class_float.html#class-float)  | The volume of the audio resource that will be set to the `base_music_player`. 
+`audio_bus` | [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) | The audio bus name that the `base_music_player` will use. 
 `loop`      | [bool](https://docs.godotengine.org/en/latest/classes/class_bool.html#class-bool)   | Whether the audio resource will loop or not once it finishes playing. 
  
 
@@ -64,10 +64,10 @@ Key         |   Value Type  | Value
 Key         |   Value Type  | Value 
 ----------- | ------------- | ----- 
 `path`      | [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) | The path to the audio resource file. 
-`volume`    | [float](https://docs.godotengine.org/en/latest/classes/class_float.html#class-float)  | The volume of the audio resource that will be set to the audio player. 
-`audio_bus` | [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) | The audio bus name that the audio player will use. 
+`volume`    | [float](https://docs.godotengine.org/en/latest/classes/class_float.html#class-float)  | The volume of the audio resource that will be set to `base_sound_player`. 
+`audio_bus` | [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) | The audio bus name that the `base_sound_player` will use. 
 `loop`      | [bool](https://docs.godotengine.org/en/latest/classes/class_bool.html#class-bool)   | Whether the audio resource will loop or not once it finishes playing. 
-] 
+ 
 
 ---
 
@@ -79,7 +79,7 @@ Key         |   Value Type  | Value
 
 
 
-Audio player used to play background music. Background music is long audio.
+Audio player base duplicated to play background music.  Background music is long audio.
 
 ---
 
@@ -89,7 +89,7 @@ Audio player used to play background music. Background music is long audio.
 
 
 
-Audio player used to play sound effects. Sound effects are short audio.
+Audio player base, that will be duplicated to play sound effects.  Sound effects are short audio.
 
 ---
 
@@ -101,7 +101,7 @@ Audio player used to play sound effects. Sound effects are short audio.
 
 
 
-Clears the state on this subsystem and stops the all sounds.  If you want to stop audio only, use [stop_all_sounds](#property-stop_all_sounds).
+Clears the state on this subsystem and stops all audio.  If you want to stop sounds only, use [stop_all_sounds](#property-stop_all_sounds).
 
 ---
 

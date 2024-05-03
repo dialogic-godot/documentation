@@ -43,7 +43,6 @@ Returns | Method
 <span class="hljs-attribute">[Control](https://docs.godotengine.org/en/latest/classes/class_control.html#class-control)</span> | [<span class="hljs-title">setup_script_property_edit_node</span>](#method-setup_script_property_edit_node) ( `property_info`: [Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html#class-dictionary), `value`: [Variant](https://docs.godotengine.org/en/latest/classes/class_variant.html#class-variant), `property_changed`: [Callable](https://docs.godotengine.org/en/latest/classes/class_callable.html#class-callable) ) 
 <span class="hljs-attribute">[bool](https://docs.godotengine.org/en/latest/classes/class_bool.html#class-bool)</span> | [<span class="hljs-title">str_to_bool</span>](#method-str_to_bool) ( `boolstring`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) ) 
 <span class="hljs-attribute">[Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html#class-dictionary)</span> | [<span class="hljs-title">str_to_hash_set</span>](#method-str_to_hash_set) ( `source`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) ) 
-<span style = "color: gray">void</span> | [<span class="hljs-title">update_autoload_subsystem_access</span>](#method-update_autoload_subsystem_access) ( ) 
 <span style = "color: gray">void</span> | [<span class="hljs-title">update_timer_process_callback</span>](#method-update_timer_process_callback) ( `timer`: [Timer](https://docs.godotengine.org/en/latest/classes/class_timer.html#class-timer) ) 
 --- 
 ## Constants
@@ -417,16 +416,6 @@ Although this does in fact always return a EditorPlugin node, that class is appa
 
 
 Takes `source` and builds a dictionary of keys only. The values are `null`.
-
----
-
-
-
-<a class="header" id="method-update_autoload_subsystem_access" href="#method-update_autoload_subsystem_access">**<span class="hljs-attribute">func</span> [<span class="hljs-title">update_autoload_subsystem_access</span>](#method-update_autoload_subsystem_access) ( )</a>  ⇒ <span style = "color: gray">void</span>** 
-
-
-
- <span style = "color: gray">*No description available.*</span> 
 
 ---
 

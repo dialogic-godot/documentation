@@ -12,6 +12,7 @@
 ## Properties
 Name | Type | Default 
 --- | --- | --- 
+[<span class="hljs-title">display_name</span>](#property-display_name) | [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) |  `""` 
 [<span class="hljs-title">name</span>](#property-name) | [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) |  `""` 
 --- 
 
@@ -25,6 +26,16 @@ Returns | Method
 <span class="hljs-attribute">[String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string)</span> | [<span class="hljs-title">to_text</span>](#method-to_text) ( ) 
 --- 
 ## Property Descriptions
+
+
+
+<a class="header" id="property-display_name" href="#property-display_name">**<span class="hljs-attribute">var</span> <span class="hljs-title">display_name</span> <span style = "color: gray"> = </span> ""** 
+
+
+
+ <span style = "color: gray">*No description available.*</span> 
+
+---
 
 
 

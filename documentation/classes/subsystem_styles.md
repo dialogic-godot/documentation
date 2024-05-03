@@ -1,6 +1,6 @@
 
 <div class="header-banner purple">
-<div class="header-label purple">subsystem_Styles</div>
+<div class="header-label purple">Styles</div>
 </div>
 
 *This contains the source code documentation of the class `subsystem_Styles`.*

@@ -28,6 +28,7 @@ Returns | Method
 --- | --- 
 <span style = "color: gray">void</span> | [<span class="hljs-title">continue_reveal</span>](#method-continue_reveal) ( ) 
 <span style = "color: gray">void</span> | [<span class="hljs-title">finish_text</span>](#method-finish_text) ( ) 
+<span style = "color: gray">void</span> | [<span class="hljs-title">on_gui_input</span>](#method-on_gui_input) ( `event`: [InputEvent](https://docs.godotengine.org/en/latest/classes/class_inputevent.html#class-inputevent) ) 
 <span style = "color: gray">void</span> | [<span class="hljs-title">reveal_text</span>](#method-reveal_text) ( `_text`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string), `keep_previous`: [bool](https://docs.godotengine.org/en/latest/classes/class_bool.html#class-bool) = `false` ) 
 <span style = "color: gray">void</span> | [<span class="hljs-title">set_speed</span>](#method-set_speed) ( `delay_per_character`: [float](https://docs.godotengine.org/en/latest/classes/class_float.html#class-float) ) 
 --- 
@@ -202,6 +203,16 @@ Reveals one additional character.
 
 
 Reveals the entire text instantly.
+
+---
+
+
+
+<a class="header" id="method-on_gui_input" href="#method-on_gui_input">**<span class="hljs-attribute">func</span> [<span class="hljs-title">on_gui_input</span>](#method-on_gui_input) ( `event`: [InputEvent](https://docs.godotengine.org/en/latest/classes/class_inputevent.html#class-inputevent) )</a>  ⇒ <span style = "color: gray">void</span>** 
+
+
+
+Handle mouse input
 
 ---
 

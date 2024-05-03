@@ -17,7 +17,6 @@ Name | Type | Default
 [<span class="hljs-title">dialogic</span>](#property-dialogic) | [DialogicGameHandler](class_dialogicgamehandler.md) |  `null` 
 [<span class="hljs-title">dialogic_color_name</span>](#property-dialogic_color_name) | [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) |  `""` 
 [<span class="hljs-title">disable_editor_button</span>](#property-disable_editor_button) | [bool](https://docs.godotengine.org/en/latest/classes/class_bool.html#class-bool) |  `false` 
-[<span class="hljs-title">display_name</span>](#property-display_name) | [bool](https://docs.godotengine.org/en/latest/classes/class_bool.html#class-bool) |  `true` 
 [<span class="hljs-title">editor_list</span>](#property-editor_list) | [Array](https://docs.godotengine.org/en/latest/classes/class_array.html#class-array) |   
 [<span class="hljs-title">empty_lines_above</span>](#property-empty_lines_above) | [int](https://docs.godotengine.org/en/latest/classes/class_int.html#class-int) |  `0` 
 [<span class="hljs-title">end_branch_event</span>](#property-end_branch_event) | [DialogicEndBranchEvent](class_dialogicendbranchevent.md) |  `null` 
@@ -325,16 +324,6 @@ If you are using the default color palette
 
 
 If true the event will not have a button in the visual editor sidebar
-
----
-
-
-
-<a class="header" id="property-display_name" href="#property-display_name">**<span class="hljs-attribute">var</span> <span class="hljs-title">display_name</span> <span style = "color: gray"> = </span> true** 
-
-
-
-If false the name is not displayed on the event.
 
 ---
 

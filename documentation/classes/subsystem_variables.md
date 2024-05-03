@@ -1,6 +1,6 @@
 
 <div class="header-banner purple">
-<div class="header-label purple">subsystem_Variables</div>
+<div class="header-label purple">Variables</div>
 </div>
 
 *This contains the source code documentation of the class `subsystem_Variables`.*
@@ -16,8 +16,8 @@ Returns | Method
 --- | --- 
 <span style = "color: gray">void</span> | [<span class="hljs-title">clear_game_state</span>](#method-clear_game_state) ( `clear_flag`: [int](https://docs.godotengine.org/en/latest/classes/class_int.html#class-int) = `0` ) 
 <span class="hljs-attribute">[Array](https://docs.godotengine.org/en/latest/classes/class_array.html#class-array)</span> | [<span class="hljs-title">folders</span>](#method-folders) ( ) 
-<span class="hljs-attribute">[Array](https://docs.godotengine.org/en/latest/classes/class_array.html#class-array)</span> | [<span class="hljs-title">get_autoloads</span>](#method-get_autoloads) ( ) 
-<span class="hljs-attribute">[Variant](https://docs.godotengine.org/en/latest/classes/class_variant.html#class-variant)</span> | [<span class="hljs-title">get_variable</span>](#method-get_variable) ( `variable_path`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string), `default`: [Variant](https://docs.godotengine.org/en/latest/classes/class_variant.html#class-variant) = `null` ) 
+<span class="hljs-attribute">[Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html#class-dictionary)</span> | [<span class="hljs-title">get_autoloads</span>](#method-get_autoloads) ( ) 
+<span class="hljs-attribute">[Variant](https://docs.godotengine.org/en/latest/classes/class_variant.html#class-variant)</span> | [<span class="hljs-title">get_variable</span>](#method-get_variable) ( `variable_path`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string), `default`: [Variant](https://docs.godotengine.org/en/latest/classes/class_variant.html#class-variant) = `null`, `no_warning`: [bool](https://docs.godotengine.org/en/latest/classes/class_bool.html#class-bool) = `false` ) 
 <span class="hljs-attribute">[bool](https://docs.godotengine.org/en/latest/classes/class_bool.html#class-bool)</span> | [<span class="hljs-title">has</span>](#method-has) ( `variable`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) = `""` ) 
 <span style = "color: gray">void</span> | [<span class="hljs-title">load_game_state</span>](#method-load_game_state) ( `load_flag`: [int](https://docs.godotengine.org/en/latest/classes/class_int.html#class-int) = `0` ) 
 <span class="hljs-attribute">[Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html#class-dictionary)</span> | [<span class="hljs-title">merge_folder</span>](#method-merge_folder) ( `new`: [Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html#class-dictionary), `defs`: [Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html#class-dictionary) ) 
@@ -72,7 +72,7 @@ Returns | Method
 
 
 
-<a class="header" id="method-get_autoloads" href="#method-get_autoloads">**<span class="hljs-attribute">func</span> [<span class="hljs-title">get_autoloads</span>](#method-get_autoloads) ( )</a>  ⇒ <span class="hljs-attribute">[Array](https://docs.godotengine.org/en/latest/classes/class_array.html#class-array)</span>** 
+<a class="header" id="method-get_autoloads" href="#method-get_autoloads">**<span class="hljs-attribute">func</span> [<span class="hljs-title">get_autoloads</span>](#method-get_autoloads) ( )</a>  ⇒ <span class="hljs-attribute">[Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html#class-dictionary)</span>** 
 
 
 
@@ -82,7 +82,7 @@ Returns | Method
 
 
 
-<a class="header" id="method-get_variable" href="#method-get_variable">**<span class="hljs-attribute">func</span> [<span class="hljs-title">get_variable</span>](#method-get_variable) ( `variable_path`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string), `default`: [Variant](https://docs.godotengine.org/en/latest/classes/class_variant.html#class-variant) = `null` )</a>  ⇒ <span class="hljs-attribute">[Variant](https://docs.godotengine.org/en/latest/classes/class_variant.html#class-variant)</span>** 
+<a class="header" id="method-get_variable" href="#method-get_variable">**<span class="hljs-attribute">func</span> [<span class="hljs-title">get_variable</span>](#method-get_variable) ( `variable_path`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string), `default`: [Variant](https://docs.godotengine.org/en/latest/classes/class_variant.html#class-variant) = `null`, `no_warning`: [bool](https://docs.godotengine.org/en/latest/classes/class_bool.html#class-bool) = `false` )</a>  ⇒ <span class="hljs-attribute">[Variant](https://docs.godotengine.org/en/latest/classes/class_variant.html#class-variant)</span>** 
 
 
 

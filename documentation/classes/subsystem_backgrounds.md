@@ -1,6 +1,6 @@
 
 <div class="header-banner purple">
-<div class="header-label purple">subsystem_Backgrounds</div>
+<div class="header-label purple">Backgrounds</div>
 </div>
 
 *This contains the source code documentation of the class `subsystem_Backgrounds`.*
@@ -36,7 +36,15 @@ Returns | Method
 
 
 
- Whenever a new background is set, this signal is emitted and contains a dictionary with the following keys: key | value ------------------------------------ `scene` | The scene path of the new background. `argument` | Information given to the background on its update routine. `fade_time` | The time the background may take to transition in. `same_scene` | If the new background uses the same Godot scene. 
+ Whenever a new background is set, this signal is emitted and contains a dictionary with the following keys: 
+
+Key         |   Value Type  | Value 
+----------- | ------------- | ----- 
+`scene`     | [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) | The scene path of the new background. 
+`argument`  | [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) | Information given to the background on its update routine. 
+`fade_time` | [float](https://docs.godotengine.org/en/latest/classes/class_float.html#class-float)  | The time the background may take to transition in. 
+`same_scene`| [bool](https://docs.godotengine.org/en/latest/classes/class_bool.html#class-bool)   | If the new background uses the same Godot scene. 
+ 
 
 ---
 
@@ -48,7 +56,7 @@ Returns | Method
 
 
 
-The default background Dialogic will use.
+The default background scene Dialogic will use.
 
 ---
 
