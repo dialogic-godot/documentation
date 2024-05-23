@@ -67,9 +67,9 @@ Disabling the translation until you are done with most of the text is recommende
 The following code allows you to check if the text box is visible and then act based on its state.
 ```gdscript
 if Dialogic.Text.is_textbox_visible():
-    Dialogic.Text.hide_text_boxes()
+    Dialogic.Text.hide_text_box()
 else:
-    Dialogic.Text.show_text_boxes()
+    Dialogic.Text.show_text_box()
 ```
 
 ## I encounter a small lag or freeze when starting the dialogue!
