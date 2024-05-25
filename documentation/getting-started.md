@@ -57,12 +57,12 @@ We will start by using the first one.
 
 ## 3. Creating a timeline
 
-To create a timeline you press the `Add Timeline`. You will need to select a folder to put the timeline in and enter a file name. Timelines will be saved as `*.dtl` files.
+To create a timeline, press the `Add Timeline` button. You will need to select a folder to put the timeline in and enter a file name. Timelines will be saved as `*.dtl` files.
 
-Once you hit `Save`, you can start adding events from the panel at the right of the editor.
+Once you hit `Save`, you can start adding events from the panel to the right of the editor.
 <img src="/media/timeline_editor.png" width="600"/>
 
-*Tip: You can learn more about each event and its settings by right-clicking on an event and selecting `Documentation`.*
+*Tip: You can learn more about each event and its settings by right-clicking on the event and selecting `Documentation`.*
 
 If you like, you can switch to the text editor by clicking on the `Text Editor` button at the top right. You can find out more about writing timelines in text format here: [Writing timelines in text format](timeline-text-syntax.md).
 
@@ -72,7 +72,7 @@ You can test the timeline by clicking the `Play Timeline` button at the top righ
 
 ## 4. Creating a character
 
-To create a new character, press the `Add Character` button on the top right.
+To create a new character, press the `Add Character` button at the top right.
 
 As for timelines, you need to select the place to save to and a name.
 
@@ -85,18 +85,18 @@ You can change the name that will actually be displayed in game as the `display_
 Once your character is created, you will see the character editor. This editor has four main sections.
 <img src="/media/character_editor.png" width="600"/>
 
-You can learn more about portraits, custom portraits and the character settings in this tutorial: [Characters & Portraits](characters-and-portraits.md)
+You can learn more about portraits, custom portraits, and the character settings in this tutorial: [Characters & Portraits](characters-and-portraits.md)
 
 ---
 
-## 5. Adding the dialog to your game
+## 5. Adding dialog to your game
 
-The last important step is to actually have this dialog show up in your game.
+The last important step is to actually have your dialog show up in your game.
 
-For that, we need two things to happen:
+For that, we need two things:
 
-- A) having nodes that can display our timeline and
-- B) start the execution of the timeline.
+- A) to have nodes that can display our timeline
+- B) to start the execution of the timeline.
 
 Luckily for us, Dialogic provides a method that does both of those: `Dialogic.start(timeline_name_or_path)`
 
