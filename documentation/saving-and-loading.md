@@ -54,7 +54,7 @@ This snippet will automatically take the thumbnail saved at `Dialogic.Save.last_
 
 ## 1.2 Saving Extra Info
 
-By default, Savegames contain information about Dialogic's timeline only. If you want to store specific information, we can achieve this by using `Dialogic.Save.set_slot_info(slot_name:String, info: Dictionary)` and `Dialogic.Save.get_slot_info(slot_name: String)` methods. \
+By default, Savegames contain information about Dialogic's timeline and Dialogic variables. If you want to store specific information, we can achieve this by using `Dialogic.Save.set_slot_info(slot_name:String, info: Dictionary)` and `Dialogic.Save.get_slot_info(slot_name: String)` methods. \
 However, the `Dialogic.Save.save(...)` method can simplify our work and skip calling the set method.
 
 In the following code snippet, we will save the last used text line and the current time as extra information.
