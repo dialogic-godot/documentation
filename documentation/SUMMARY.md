@@ -29,9 +29,6 @@
 - [Text]()
     - [Text Tags](text-tags.md)
 
-- [Text]()
-    - [Text Tags](text-tags.md)
-
 - [Utilities]()
     - [Dialogic Signals](dialogic-signals.md)
     - [Pausing](pausing.md)
