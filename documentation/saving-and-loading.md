@@ -35,7 +35,7 @@ func _on_save_game_button_pressed() -> void:
     Dialogic.Save.save("", false, Dialogic.Save.ThumbnailMode.NONE)
 
 func _on_load_game_button_pressed() -> void:
-    Dialogic.Save.load("", false, Dialogic.Save.ThumbnailMode.NONE)
+    Dialogic.Save.load()
 ```
 
 
