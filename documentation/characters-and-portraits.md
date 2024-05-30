@@ -74,7 +74,10 @@ The preview shows the selected portrait (or nothing, if you don't have a portrai
 
 The portrait section consists of multiple sections, each containing settings for the currently selected portrait.
 
-The most important setting is the scene a portrait uses. The default scene allows you to select an image. Learn more about how to create a custom portrait here: [Custom portraits](custom-portraits.md)
+The most important setting is the scene a portrait uses. The default scene allows you to select an image.
+However, you can also use the [Layered Portrait](layered-portrait.md) scene.
+
+Learn more about how to create a custom portrait here: [Custom portraits](custom-portraits.md)
 
 For any portrait, you can set a scale, offset and mirror setting. These are additive to the main scale, offset and mirror. You can choose to ignore the main character scale to work around this.
 
