@@ -17,7 +17,7 @@ An extension is a folder that contains all the information about these things so
 - settings
 - character settings
 - layout presets
-- dialogic nodes.
+- Dialogic nodes.
 
 ## 📜 Content
 [toc]
@@ -50,13 +50,13 @@ func _get_events() -> Array:
 
 ## What is an event?
 
-A dialogic event is a script that defines a new class inheriting `DialogicEvent`. This script will define (a) how the event is represented in-editor, (b) how it is saved, and (c) what it does during timeline execution when the event is reached.
+A Dialogic event is a script that defines a new class inheriting `DialogicEvent`. This script will define (a) how the event is represented in-editor, (b) how it is saved, and (c) what it does during timeline execution when the event is reached.
 
 Often, events work together with subsystems.
 
 ## Your custom event
 
-The Extension Creator allows you to get a basic event script. It already set some values for you.
+The Extension Creator allows you to get a basic event script. It has already set some values for you.
 
 These are the things you need to do to make your event fully functional:
 
@@ -69,7 +69,7 @@ var print_text: String = ""
 var in_game: bool = false
 ```
 
-#### 2. Execution code:
+#### 3.1 Execution code:
 
 Add whatever should happen when your event is reached in the `_execute()` method:
 
@@ -85,7 +85,7 @@ func _execute() -> void:
 
 *The `finish()` method lets Dialogic know to continue with the next event.*
 
-#### 3. General settings:
+#### 3.2 General settings:
 
 In the `_init()` method, you can set some base settings of your event:
 
@@ -96,7 +96,7 @@ func _init() -> void:
     event_category = "Godot"
 ```
 
-#### 4. Saving & Loading
+#### 3.3 Saving & Loading
 
 We will cover working with shortcodes now. They are pretty much the text view of an event inside the timeline.
 The following is the shortcode for the Background event.
@@ -119,6 +119,33 @@ func get_shortcode_parameters() -> Dictionary:
 ```
 
 *The above event might be saved as `[print text="Some text to print" in_game="true"]`*
+
+### 3.34 My Variables are not changing
+
+If your variables are not changing despite setting values in your custom event in the timeline editor, here is a little checklist:
+
+- Remember the name of your variable; example variable name: `_audio_path`.
+- Check the `get_shortcode_parameters`:
+  - This would be correct: `"path" : { "property": "_audio_path", "default": "" },`
+  - `path` appears as text in the shortcode text view; this *can* match your variable.
+  - The `property` value must match your variable, see `_audio_path`.
+- Check `add_header_edit` including `add_body_edit` and others:
+  - The very first parameter is the `variable_name`, this must match your variable.
+  - An example:
+
+	```gdscript
+	add_header_edit(
+		"_audio_path",
+		ValueType.SINGLELINE_TEXT,
+		{
+			"left_text": "File Path",
+			"mode": 1,
+		},
+	)
+	```
+
+After all of these values match, the visual and text modes will both change the variables in your event, and you can access them in the `_execute`.
+
 
 ## 4.1 Custom Saving & Loading Syntax
 
@@ -144,7 +171,7 @@ If you would like to learn more about events, I strongly suggest looking at the 
 
 ---
 
-# 4. Custom Subsystems
+# 5. Custom Subsystems
 
 ## What is a subsystem?
 
@@ -167,7 +194,7 @@ If you want to save persistent data, store it in the `Dialogic.current_state_inf
 
 ---
 
-# 5. Custom animations
+# 6. Custom animations
 
 ## What is an animation?
 
@@ -219,11 +246,11 @@ Be aware, you have to:
 - **orig_pos** = the position you started at
 
 ## Naming animations
-Importantly the name of your animation file will determine if it is a Join, Leave or Update animation! If it ends with `_in` or contains `_in_` it is a Join animation, ending in `_out` or containing `_out_` makes it a Leave animation, while all other names are considered Update animations (often called attention seekers in other software). 
+Importantly, the name of your animation file will determine if it is a Join, Leave or Update animation! If it ends with `_in` or contains `_in_` it is a Join animation; ending in `_out` or containing `_out_` makes it a Leave animation, while all other names are considered Update animations (often called attention seekers in other software). 
 
 ---
 
-# 6. Custom dialogic nodes
+# 7. Custom dialogic nodes
 
 ## What are dialogic nodes?
 
@@ -234,7 +261,7 @@ They are generally managed by a subsystem and are found because they are automat
 
 ---
 
-# 7. Custom Settings Pages
+# 8. Custom Settings Pages
 
 An extension might want to add a dialogic settings editor. This is just a UI scene that has a script inheriting `DialogicSettingsPage`.
 
