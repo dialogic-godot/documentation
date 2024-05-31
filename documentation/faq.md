@@ -82,6 +82,8 @@ var style: DialogicStyle = load("res://path/to/my/style.tres")
 style.prepare()
 ```
 
+On top of this, you can preload an empty timeline during your loading segment of your game.
+
 Last, be aware that Godot's shader compiler runs on demand; whenever new shaders need to be loaded in a style (or any resource), it will compile, causing a freeze.\
 Hence, it's recommended to compile these ahead of time if you run into problems still.
 
