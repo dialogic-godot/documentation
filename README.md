@@ -59,7 +59,7 @@ These can be created via this syntax:
 </div>
 ```
 
-Alongside `ocean`, you can find the rest defined here: [header.css](https://github.com/dialogic-godot/documentation/blob/main/header.css).
+Alongside `ocean`, you can find the rest defined here: [header.css](https://github.com/dialogic-godot/documentation/blob/main/css/header.css).
 
 ## Table of Contents
 The table of contents is generated automatically when you use the `[toc]` tag in your markdown file.\
