@@ -4,11 +4,19 @@
 
 *Whether you write in the visual editor or text editor, inside texts you can use a bunch of special syntax to make them look and behave just the way you want.*
 
-*Additionally, you can also use **BBCode** about which you can learn more in the Godot docs: [BBCode in RichTextLabel](https://docs.godotengine.org/en/stable/tutorials/ui/bbcode_in_richtextlabel.html).*
+*Additionally, you can also use **BBCode,** about which you can learn more in the Godot docs: [BBCode in RichTextLabel](https://docs.godotengine.org/en/stable/tutorials/ui/bbcode_in_richtextlabel.html).*
 
 ## 📜 Content
 
 [toc]
+
+## What is a Text Effect?
+
+A Text Effect (or text-tag) is a written command in the form of a special [BBCode](https://docs.godotengine.org/en/stable/tutorials/ui/bbcode_in_richtextlabel.html).
+While Godot's BBCodes require a Rich Text Label, Dialogic's work inside the timeline's Text Events and do **not** use Godot's system for custom BBCode effects.
+
+Dialogic's Text Effects permit you to control Auto-Advance (whether text continues automatically), waiting some time, awaiting your own signals, or changing the text speed.
+
 
 ## 1. Variables
 
@@ -24,7 +32,7 @@ You can use dialogic variables (and even autoload variables) in your text events
 
 `[n]` Seemingly starts a new event, requiring some sort of advancement (user input or auto-advance)
 
-`[n+]` Requires some sort of advance (user input or auto-advance), but will append the following text to the previous, without clearing the text box.
+`[n+]` Requires some sort of advance (user input or auto-advance), but will append the following text to the previous without clearing the text box.
 
 `[input]` Will simply await any input. As opposed to [n+], it is not breaking the text up into multiple sections and can thus be skipped. 
 
@@ -68,7 +76,7 @@ You can pause the reveal with these effects:
 
 - `[pause=x!]` Pauses the reveal for x seconds. *This is **not multiplied** with the speed multipliers!*
 
-Related to this are **Auto-Pauses**, which can be configured in the text settings to insert pause effects after certain symbols. This can be used to easily alter the reveal flow of punctuation. 
+Related to this are **Auto-Pauses**, which can be configured in the text settings to insert pause effects after certain symbols. This can be used to easily alter the flow of punctuation. 
 
 ##### 3.4 User Speed multiplier setting
 
@@ -120,5 +128,5 @@ There are the following text effects to control Auto-Advance:
 
 - `[aa]` enables the Auto-Advance for the *current* text event.
 - `[aa=time]` enables Auto-Advance after a fixed delay of `time` seconds; four seconds before Auto-Advance continues: `[aa=4]`
-- `[aa=time?]` changes the fixed delay for the current text event, but does not enable Auto-Advance.
+- `[aa=time?]` changes the fixed delay for the current text event but does not enable Auto-Advance.
 
