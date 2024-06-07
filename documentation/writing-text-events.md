@@ -112,3 +112,13 @@ You can change the portrait or typing mood of the speaker with these effects:
 
 - `[mood=name]` Changes the typing mood to the one with the given name.
 
+---
+
+# 7. Auto-Advance
+
+There are the following text effects to control Auto-Advance:
+
+- `[aa]` enables the Auto-Advance for the *current* text event.
+- `[aa=time]` enables Auto-Advance after a fixed delay of `time` seconds; four seconds before Auto-Advance continues: `[aa=4]`
+- `[aa=time?]` changes the fixed delay for the current text event, but does not enable Auto-Advance.
+
