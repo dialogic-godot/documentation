@@ -132,3 +132,4 @@
         - [Util](classes/class_dialogicutil.md)
         - [VisualEditorField](classes/class_dialogicvisualeditorfield.md)
 
+[Contributing](contributing.md)
