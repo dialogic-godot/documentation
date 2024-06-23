@@ -56,6 +56,24 @@ However, you can access the resource path:
 var timeline_path := Dialogic.current_timeline.resource_path
 ```
 
+## I cannot see or press my buttons?
+You might have UI elements that you want to appear on top of a dialog that is playing, but they can't be clicked or are hidden behind the background.
+In that case these nodes should be in a Canvas Layer with a higher index!
+Learn about using canvas layers here: [Godot Docs about Canvas Layers](https://docs.godotengine.org/en/stable/tutorials/2d/canvas_layers.html)
+
+
+## My input action to start dialog conflicts with the advancing input action
+Many people start their dialog with some kind of "interaction" key, which can be the same as the Dialogic Input Action (e.g. Enter or X, etc.).
+In that case it can happen that a new dialog starts whenever you want to advance or on the last input of the dialog.
+It's easy to solve these issues with simple checks in your code, for example:
+```gdscript
+func _input(event):
+    if player_is_in_area and Input.is_action_pressed("start_interaction"):
+         # Only start a new dialog if no dialog is currently active
+         if Dialogic.current_timeline == null:
+              Dialogic.start("ARelevantTimeline")
+```
+
 ## I change the timeline text, but the game shows old text?
 
 If you have enabled translation, you will have to update the CSVs.\
