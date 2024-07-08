@@ -30,7 +30,7 @@ You can use dialogic variables (and even autoload variables) in your text events
 
 `[br]` Inserts a break into a text event.
 
-`[n]` Seemingly starts a new event, requiring some sort of advancement (user input or auto-advance)
+`[n]` Visually starts a new event, requiring manual advancement by the user or by the Auto-Advance system.
 
 `[n+]` Requires some sort of advance (user input or auto-advance), but will append the following text to the previous without clearing the text box.
 
