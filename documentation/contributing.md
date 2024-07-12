@@ -61,4 +61,4 @@ Answering questions is another valuable way to contribute to the Dialogic commun
 
 ### Donating
 
-If you like Dialogic and want to support its development, you can donate to the project via [Patreon](https://www.patreon.com/coppolaemilio), or [Ko-fi](https://ko-fi.com/coppolaemilio). Your support is greatly appreciated and helps to keep the project going!
+If you like Dialogic and want to support its development, you can donate to the project via [Patreon](https://www.patreon.com/jowanspooner), or [Ko-fi](https://ko-fi.com/jowan_spooner). Your support is greatly appreciated and helps to keep the project going!
