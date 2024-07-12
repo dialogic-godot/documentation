@@ -50,7 +50,7 @@ If you go this route, you need to instruct the `Dialogic.Save.save(...)` method 
 Dialogic.Save.save(slot_name_variable, false, Dialogic.Save.ThumbnailMode.STORE_ONLY, slot_extra_info)
 ```
 
-This snippet will automatically take the thumbnail saved at `Dialogic.Save.last_thumbnail` and use it.
+This snippet will automatically take the thumbnail saved at `Dialogic.Save.latest_thumbnail` and use it.
 
 ## 1.2 Saving Extra Info
 
