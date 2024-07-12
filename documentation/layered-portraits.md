@@ -56,7 +56,7 @@ You will usually have a "Base" layer, which should be the first Sprite we add. S
 
 For anything you have "variations" of, in this case for example the Eyes, Eyebrows, Mouths and Clothes, you'll want to have a "Group", like the one that is already in the scene. A group will later allow us to easily switch between these variations.
 
-By adding more Groups (Node2D) and Sprites (Sprite2D) naming them properly (we will use these later) and setting the textures, we will get something like this:
+By adding more Groups (Node2D) and Sprites (Sprite2D), naming them properly (we will use these later) and setting the textures, we will get something like this:
 
 ![](media/layered_portrait/scene_final.jpg)
 
