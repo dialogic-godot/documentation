@@ -22,6 +22,9 @@
   - [Timeline Text Syntax](timeline-text-syntax.md)
   - [Creating Timelines In Code](creating-timelines-in-code.md)
 
+- [Events]()
+  - [Character Event](event-character.md)
+
 - [Input]()
 
   - [Auto-Advance](auto-advance.md)
