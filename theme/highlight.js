@@ -145,11 +145,7 @@ function hljsDefineDialogicTimeline(hljs) {
 		begin: '\\b(\\S)+\\b(?=\\s*=)'
 	  };
 
-	var VARIABLE = {
-		class_name: 'keyword',
-		begin: '\\{',
-	};
-	
+
 	return {
 		aliases: ['dtl', 'timeline'],
 		keywords: KEYWORDS,
@@ -167,7 +163,6 @@ function hljsDefineDialogicTimeline(hljs) {
 				begin: /"""/, end: /"""/
 			},
 			hljs.QUOTE_STRING_MODE,
-			VARIABLE,
 		]
 	};
 }
