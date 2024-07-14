@@ -2,13 +2,12 @@
      <div class="header-label dawn">Timeline Text Syntax</div>
 </div>
 
-Timelines are saved in a text format, which means that you can use any text-editing software to edit and create them. The built-in text editor provides useful autocompletion and syntax highlighting.
+*Timelines are saved in a text format, which means that you can use any text-editing software to edit and create them. The built-in text editor provides useful autocompletion and syntax highlighting.*
 
-```admonish info
-For Dialogic to register your timeline file, it has to use the `.dtl` extension!
-```
+*For Dialogic to register your timeline file, it has to use the `.dtl` extension!*
 
 ## 📜 Content
+
 [toc]
 
 ## About short code events
@@ -27,52 +26,98 @@ To find all the parameters you can use on each event, check out their documentat
 
 Some events have a custom syntax to make writing them easier. This includes:
 
-- Character event:
+### Text Event
 
-  - `join Emilio (happy) 3 [animation="Bounce In"]`
-  - `leave Emilio [animation="Bounce Out" length="0.3"]`
-  - `update Emilio (excited) 4 [animation="Tada" wait="true" repeat="3" move_time="0.3"]`
+```dtl
+A wonderful text event, said by noone in particular.
 
-- Text event: 
+Emilio: Hello and welcome!
 
-  - `A wonderful text event, said by noone in particular.`
-  - `Emilio (excited): Hello and welcome!`
-  - Ending a text event with `\` will make it include the next line as well.
+Emilio (excited): I'm excited cann you tell?
 
-- Choice event:
+Emilio: This is a text event with \
+multiple lines. Isn't that great? It is!
+```
 
-  - `- I don't know about that`
-  - `- Yes [if {John.Relationship} > 23]`
-  - `- Sure, I'm the great wizard [if {Stats.Charisma} > 10] [else="disable" alt_text="I'm the great wizard [to insecure]"]`
+Ending a text event with `\` will make it include the next line as well.
 
-- Condition event:
+### Character event
 
-  - `if {Player.Wisdom} > 3:`
-  - `elif {Player.Health} <= 10:`
-  - `else:`
+```dtl
+join Emilio (happy) center [animation="Bounce In"]
 
-- Set Variable Event:
+leave Emilio [animation="Bounce Out" length="0.3"]
 
-  - `set {MyVariable} += 10`
-  - Supported Operators are =, += , -= , *=, /=
+update Emilio (excited) left [animation="Tada" wait="true" repeat="3" move_time="0.3"]
+```
 
-- Comment event:
+*Check the [Character Event](./event-character.md) documentation for more information and examples.*
 
-  - `# Todo: Finnish this!!!!`
+### Choice event
 
-- Label event:
+```dtl
+- Yes
+- No | [if {John.Relationship} > 23]
+- Maybe | [if {Stats.Charisma} > 10] [else="disable" alt_text="Maybe [to insecure]"]
+```
 
-  - `label MyLabelName`
+### Condition event
 
-- Jump event:
+```dtl
+if {Player.Wisdom} > 3:
+    # dialogics syntax is indentation based!
+elif {Player.Health} <= 10:
+    # some events
+else:
+    #...
+```
 
-  - `jump MyLabelName`
-  - `jump TimelineName/` # The slash is mandatory to clarify that this is a timeline, not a label.
-  - `jump TimelineName/LabelName`
+### Set Variable event
 
-- Return event:
+```dtl
+set {MyVariable} += 10
+```
 
-  - `return`
+Supported Operators are =, += , -= , *=, /=
+
+### Comment event
+
+```dtl
+# Some comment
+```
+
+### Label event
+
+```dtl
+label LabelIdentifier
+
+# a label with a display name
+label LabelIdentifier (Display Name)
+```
+
+### Jump event
+
+```dtl
+jump LabelIdentifier
+
+# Jump to a label in another timeline
+jump TimelineName/LabelIdentifier
+
+# Jump to the beginning of another timeline
+jump TimelineName/
+```
+
+### Return event
+
+```dtl
+return
+```
+
+### Do/Call event
+
+```dtl
+do Autoload.method("argument")
+```
 
 ## About indentation
 
@@ -83,10 +128,10 @@ Timelines use TAB indentation to know what events belong to a choice or conditio
 ```dtl
 [background path="res://assets/backgroudns/dialogic_factory.png"]
 
-join Jowan 4
+join Jowan left
 jowan (exited): Hello and welcome to[portrait=confused]...[pause=0.5] Wait? What is this?
 
-join Emilio (happy) 1
+join Emilio (happy) right
 Emilio: Well, this is is the example timeline.
 
 Jowan: I thought this was a cool new feature?
@@ -103,7 +148,7 @@ Jowan (default): So what should this example be about?
     Emilio (confused): Wait that hasn't to do with dialogic?!
     jump WhatAbout
 
-- How to reach the moon [if {Player.Name} == "NASA"]
+- How to reach the moon | [if {Player.Name} == "NASA"]
     Jowan (angry): NASA! It's you again. This is for making dialogs!\
     Please ask someone else about the moon!.
     
