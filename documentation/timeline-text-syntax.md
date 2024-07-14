@@ -32,11 +32,11 @@ Some events have a custom syntax to make writing them easier. This includes:
 A wonderful text event, said by noone in particular.
 
 Emilio: Hello and welcome!
-"""
-Comment
-"""
 
 Emilio (excited): I'm excited cann you tell?
+
+Emilio: This is a text event with \
+multiple lines. Isn't that great? It is!
 ```
 
 Ending a text event with `\` will make it include the next line as well.
@@ -128,10 +128,10 @@ Timelines use TAB indentation to know what events belong to a choice or conditio
 ```dtl
 [background path="res://assets/backgroudns/dialogic_factory.png"]
 
-join Jowan 4
+join Jowan left
 jowan (exited): Hello and welcome to[portrait=confused]...[pause=0.5] Wait? What is this?
 
-join Emilio (happy) center
+join Emilio (happy) right
 Emilio: Well, this is is the example timeline.
 
 Jowan: I thought this was a cool new feature?
