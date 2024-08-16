@@ -13,7 +13,7 @@ A glossary is a collection of terms with their definitions. It's a great way to 
 
 Some Visual Novels use a glossary to explain terms that may be unfamiliar to the player. For example, if your game is set in a fantasy world, you may want to explain the unique species that live in your world.
 
-## 1.1 What does a Dialogic glossary do?
+### 1.1 What does a Dialogic glossary do?
 
 If a glossary contains keys, Dialogic will automatically use the `name` and `alternatives` properties of each
 glossary entry to highlight them and provide a tooltip with the definition if hovered over.
@@ -22,7 +22,7 @@ glossary entry to highlight them and provide a tooltip with the definition if ho
 
 Take a look at [Translating Glossaries](translation.md#25-translating-glossaries) for more information.
 
-### 3 Implementation
+## 3. Implementation
 
 ```admonish info
 This section is aimed at programmers who may want to understand how the
