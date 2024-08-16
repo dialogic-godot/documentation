@@ -48,7 +48,7 @@ The info text goes here.
 
 Some available admonish categories: `info`, `warning`, `danger`, `tip`, `question`, `bug`, `example`, …
 
-All admonish categories: https://tommilligan.github.io/mdbook-admonish/reference.html#directivese
+All admonish categories: https://tommilligan.github.io/mdbook-admonish/reference.html#directives
 
 ## Chapter Banners
 Each page has its own header banner.\
