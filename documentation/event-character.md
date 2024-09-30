@@ -5,8 +5,8 @@
 *The character event is used for characters that have portraits. It allows joining, leaving and updating them and configuring how they appear in the game.*
 
 ## 📜 Content
+[toc]
 
-[TOC]
 
 ## Text Syntax
 
