@@ -12,11 +12,12 @@ Class that can be used to animate portraits. Can be extended to create animation
 ## Properties
 Name | Type | Default 
 --- | --- | --- 
-[<span class="hljs-title">end_position</span>](#property-end_position) | [Vector2](https://docs.godotengine.org/en/latest/classes/class_vector2.html#class-vector2) |   
 [<span class="hljs-title">node</span>](#property-node) | [Node](https://docs.godotengine.org/en/latest/classes/class_node.html#class-node) |   
-[<span class="hljs-title">orig_pos</span>](#property-orig_pos) | [Vector2](https://docs.godotengine.org/en/latest/classes/class_vector2.html#class-vector2) |   
-[<span class="hljs-title">repeats</span>](#property-repeats) | [int](https://docs.godotengine.org/en/latest/classes/class_int.html#class-int) |   
 [<span class="hljs-title">time</span>](#property-time) | [float](https://docs.godotengine.org/en/latest/classes/class_float.html#class-float) |   
+[<span class="hljs-title">base_position</span>](#property-base_position) | [Vector2](https://docs.godotengine.org/en/latest/classes/class_vector2.html#class-vector2) |   
+[<span class="hljs-title">base_scale</span>](#property-base_scale) | [Vector2](https://docs.godotengine.org/en/latest/classes/class_vector2.html#class-vector2) |   
+[<span class="hljs-title">repeats</span>](#property-repeats) | [int](https://docs.godotengine.org/en/latest/classes/class_int.html#class-int) |   
+[<span class="hljs-title">is_reversed</span>](#property-is_reversed) | [bool](https://docs.godotengine.org/en/latest/classes/class_bool.html#class-bool) |  `false` 
 --- 
 
 ## Methods
@@ -26,12 +27,12 @@ Returns | Method
 <span style = "color: gray">void</span> | [<span class="hljs-title">finished_one_loop</span>](#method-finished_one_loop) ( ) 
 <span style = "color: gray">void</span> | [<span class="hljs-title">pause</span>](#method-pause) ( ) 
 <span style = "color: gray">void</span> | [<span class="hljs-title">resume</span>](#method-resume) ( ) 
+<span class="hljs-attribute">[String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string)</span> | [<span class="hljs-title">get_modulation_property</span>](#method-get_modulation_property) ( ) 
 --- 
+## Constants
 
-## Signals
 
-
-<a class="header" id="signal-finished" href="#signal-finished">**<span class="hljs-attribute">signal</span> [<span class="hljs-title">finished</span>](#signal-finished) ( )** </a>
+<a class="header" id="constant-IN" href="#constant-IN">**<span class="hljs-attribute">const</span> <span class="hljs-title">IN</span><span class="hljs-comment"> = 1</span>**</a>
 
 
 
@@ -39,6 +40,34 @@ Returns | Method
 
 ---
 
+
+<a class="header" id="constant-OUT" href="#constant-OUT">**<span class="hljs-attribute">const</span> <span class="hljs-title">OUT</span><span class="hljs-comment"> = 2</span>**</a>
+
+
+
+ <span style = "color: gray">*No description available.*</span> 
+
+---
+
+
+<a class="header" id="constant-ACTION" href="#constant-ACTION">**<span class="hljs-attribute">const</span> <span class="hljs-title">ACTION</span><span class="hljs-comment"> = 3</span>**</a>
+
+
+
+ <span style = "color: gray">*No description available.*</span> 
+
+---
+
+
+<a class="header" id="constant-CROSSFADE" href="#constant-CROSSFADE">**<span class="hljs-attribute">const</span> <span class="hljs-title">CROSSFADE</span><span class="hljs-comment"> = 4</span>**</a>
+
+
+
+ <span style = "color: gray">*No description available.*</span> 
+
+---
+
+## Signals
 
 
 <a class="header" id="signal-finished_once" href="#signal-finished_once">**<span class="hljs-attribute">signal</span> [<span class="hljs-title">finished_once</span>](#signal-finished_once) ( )** </a>
@@ -49,17 +78,17 @@ Returns | Method
 
 ---
 
-## Property Descriptions
+
+
+<a class="header" id="signal-finished" href="#signal-finished">**<span class="hljs-attribute">signal</span> [<span class="hljs-title">finished</span>](#signal-finished) ( )** </a>
 
 
 
-<a class="header" id="property-end_position" href="#property-end_position">**<span class="hljs-attribute">var</span> <span class="hljs-title">end_position</span>** 
-
-
-
-Set at runtime, will be the position at which to end the animation.
+ <span style = "color: gray">*No description available.*</span> 
 
 ---
+
+## Property Descriptions
 
 
 
@@ -73,11 +102,31 @@ Set at runtime, will be the node to animate.
 
 
 
-<a class="header" id="property-orig_pos" href="#property-orig_pos">**<span class="hljs-attribute">var</span> <span class="hljs-title">orig_pos</span>** 
+<a class="header" id="property-time" href="#property-time">**<span class="hljs-attribute">var</span> <span class="hljs-title">time</span>** 
 
 
 
-Set at runtime. The position the node started at.
+Set at runtime, will be the length of the animation.
+
+---
+
+
+
+<a class="header" id="property-base_position" href="#property-base_position">**<span class="hljs-attribute">var</span> <span class="hljs-title">base_position</span>** 
+
+
+
+Set at runtime, will be the base position of the node. Depending on the animation, this might be the start, end or both.
+
+---
+
+
+
+<a class="header" id="property-base_scale" href="#property-base_scale">**<span class="hljs-attribute">var</span> <span class="hljs-title">base_scale</span>** 
+
+
+
+Set at runtime, will be the base scale of the node.
 
 ---
 
@@ -93,11 +142,11 @@ Used to repeate the animation for a number of times.
 
 
 
-<a class="header" id="property-time" href="#property-time">**<span class="hljs-attribute">var</span> <span class="hljs-title">time</span>** 
+<a class="header" id="property-is_reversed" href="#property-is_reversed">**<span class="hljs-attribute">var</span> <span class="hljs-title">is_reversed</span> <span style = "color: gray"> = </span> false** 
 
 
 
-Set at runtime, will be the length of the animation.
+If `true`, the animation will be reversed. This must be implemented by each animation or it will have no effect.
 
 ---
 
@@ -109,7 +158,7 @@ Set at runtime, will be the length of the animation.
 
 
 
-To be overridden. Do the actual animating/tweening in here. Use the properties , , , .
+To be overridden. Do the actual animating/tweening in here. Use the properties `node`, `time`, `base_position`, etc.
 
 ---
 
@@ -119,7 +168,7 @@ To be overridden. Do the actual animating/tweening in here. Use the properties ,
 
 
 
- <span style = "color: gray">*No description available.*</span> 
+This method controls whether to repeat the animation or not. Animations must call this once they finished an animation.
 
 ---
 
@@ -140,6 +189,16 @@ To be overridden. Do the actual animating/tweening in here. Use the properties ,
 
 
  <span style = "color: gray">*No description available.*</span> 
+
+---
+
+
+
+<a class="header" id="method-get_modulation_property" href="#method-get_modulation_property">**<span class="hljs-attribute">func</span> [<span class="hljs-title">get_modulation_property</span>](#method-get_modulation_property) ( )</a>  ⇒ <span class="hljs-attribute">[String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string)</span>** 
+
+
+
+If the animation wants to change the modulation, this method will return the property to change.  The [CanvasGroup](class_canvasgroup.md) can use `self_modulate` instead of `modulate` to uniformly change the modulation of all children without additively overlaying the modulations.
 
 ---
 

@@ -18,15 +18,27 @@ Name | Type | Default
 ## Methods
 Returns | Method 
 --- | --- 
-<span style = "color: gray">void</span> | [<span class="hljs-title">animation_finished</span>](#method-animation_finished) ( `arg`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) = `""` ) 
+<span style = "color: gray">void</span> | [<span class="hljs-title">clear_game_state</span>](#method-clear_game_state) ( `_clear_flag`: [int](https://docs.godotengine.org/en/latest/classes/class_int.html#class-int) = `0` ) 
 <span class="hljs-attribute">[bool](https://docs.godotengine.org/en/latest/classes/class_bool.html#class-bool)</span> | [<span class="hljs-title">is_animating</span>](#method-is_animating) ( ) 
 <span style = "color: gray">void</span> | [<span class="hljs-title">start_animating</span>](#method-start_animating) ( ) 
+<span style = "color: gray">void</span> | [<span class="hljs-title">animation_finished</span>](#method-animation_finished) ( `_arg`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) = `""` ) 
+<span style = "color: gray">void</span> | [<span class="hljs-title">stop_animation</span>](#method-stop_animation) ( ) 
 --- 
 
 ## Signals
 
 
 <a class="header" id="signal-finished" href="#signal-finished">**<span class="hljs-attribute">signal</span> [<span class="hljs-title">finished</span>](#signal-finished) ( )** </a>
+
+
+
+ <span style = "color: gray">*No description available.*</span> 
+
+---
+
+
+
+<a class="header" id="signal-animation_interrupted" href="#signal-animation_interrupted">**<span class="hljs-attribute">signal</span> [<span class="hljs-title">animation_interrupted</span>](#signal-animation_interrupted) ( )** </a>
 
 
 
@@ -50,7 +62,7 @@ Returns | Method
 
 
 
-<a class="header" id="method-animation_finished" href="#method-animation_finished">**<span class="hljs-attribute">func</span> [<span class="hljs-title">animation_finished</span>](#method-animation_finished) ( `arg`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) = `""` )</a>  ⇒ <span style = "color: gray">void</span>** 
+<a class="header" id="method-clear_game_state" href="#method-clear_game_state">**<span class="hljs-attribute">func</span> [<span class="hljs-title">clear_game_state</span>](#method-clear_game_state) ( `_clear_flag`: [int](https://docs.godotengine.org/en/latest/classes/class_int.html#class-int) = `0` )</a>  ⇒ <span style = "color: gray">void</span>** 
 
 
 
@@ -71,6 +83,26 @@ Returns | Method
 
 
 <a class="header" id="method-start_animating" href="#method-start_animating">**<span class="hljs-attribute">func</span> [<span class="hljs-title">start_animating</span>](#method-start_animating) ( )</a>  ⇒ <span style = "color: gray">void</span>** 
+
+
+
+ <span style = "color: gray">*No description available.*</span> 
+
+---
+
+
+
+<a class="header" id="method-animation_finished" href="#method-animation_finished">**<span class="hljs-attribute">func</span> [<span class="hljs-title">animation_finished</span>](#method-animation_finished) ( `_arg`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) = `""` )</a>  ⇒ <span style = "color: gray">void</span>** 
+
+
+
+ <span style = "color: gray">*No description available.*</span> 
+
+---
+
+
+
+<a class="header" id="method-stop_animation" href="#method-stop_animation">**<span class="hljs-attribute">func</span> [<span class="hljs-title">stop_animation</span>](#method-stop_animation) ( )</a>  ⇒ <span style = "color: gray">void</span>** 
 
 
 

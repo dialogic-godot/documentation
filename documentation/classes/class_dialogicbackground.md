@@ -12,19 +12,9 @@ This is the base class for dialogic backgrounds. Extend it and override it's met
 ## Properties
 Name | Type | Default 
 --- | --- | --- 
-[<span class="hljs-title">viewport</span>](#property-viewport) | [SubViewport](https://docs.godotengine.org/en/latest/classes/class_subviewport.html#class-subviewport) |   
 [<span class="hljs-title">viewport_container</span>](#property-viewport_container) | [SubViewportContainer](https://docs.godotengine.org/en/latest/classes/class_subviewportcontainer.html#class-subviewportcontainer) |   
+[<span class="hljs-title">viewport</span>](#property-viewport) | [SubViewport](https://docs.godotengine.org/en/latest/classes/class_subviewport.html#class-subviewport) |   
 ## Property Descriptions
-
-
-
-<a class="header" id="property-viewport" href="#property-viewport">**<span class="hljs-attribute">var</span> <span class="hljs-title">viewport</span>** 
-
-
-
-The viewport that holds this background. Set when instanced.
-
----
 
 
 
@@ -33,6 +23,16 @@ The viewport that holds this background. Set when instanced.
 
 
 The subviewport container that holds this background. Set when instanced.
+
+---
+
+
+
+<a class="header" id="property-viewport" href="#property-viewport">**<span class="hljs-attribute">var</span> <span class="hljs-title">viewport</span>** 
+
+
+
+The viewport that holds this background. Set when instanced.
 
 ---
 

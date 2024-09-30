@@ -12,30 +12,20 @@ Node that will show when a text input field is reached. Should be connected to a
 ## Properties
 Name | Type | Default 
 --- | --- | --- 
-[<span class="hljs-title">confirmation_button</span>](#property-confirmation_button) | [NodePath](https://docs.godotengine.org/en/latest/classes/class_nodepath.html#class-nodepath) |   
 [<span class="hljs-title">input_line_edit</span>](#property-input_line_edit) | [NodePath](https://docs.godotengine.org/en/latest/classes/class_nodepath.html#class-nodepath) |   
 [<span class="hljs-title">text_label</span>](#property-text_label) | [NodePath](https://docs.godotengine.org/en/latest/classes/class_nodepath.html#class-nodepath) |   
+[<span class="hljs-title">confirmation_button</span>](#property-confirmation_button) | [NodePath](https://docs.godotengine.org/en/latest/classes/class_nodepath.html#class-nodepath) |   
 --- 
 
 ## Methods
 Returns | Method 
 --- | --- 
-<span style = "color: gray">void</span> | [<span class="hljs-title">set_allow_empty</span>](#method-set_allow_empty) ( `boolean`: [bool](https://docs.godotengine.org/en/latest/classes/class_bool.html#class-bool) ) 
-<span style = "color: gray">void</span> | [<span class="hljs-title">set_default</span>](#method-set_default) ( `default`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) ) 
-<span style = "color: gray">void</span> | [<span class="hljs-title">set_placeholder</span>](#method-set_placeholder) ( `placeholder`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) ) 
 <span style = "color: gray">void</span> | [<span class="hljs-title">set_text</span>](#method-set_text) ( `text`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) ) 
+<span style = "color: gray">void</span> | [<span class="hljs-title">set_placeholder</span>](#method-set_placeholder) ( `placeholder`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) ) 
+<span style = "color: gray">void</span> | [<span class="hljs-title">set_default</span>](#method-set_default) ( `default`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) ) 
+<span style = "color: gray">void</span> | [<span class="hljs-title">set_allow_empty</span>](#method-set_allow_empty) ( `boolean`: [bool](https://docs.godotengine.org/en/latest/classes/class_bool.html#class-bool) ) 
 --- 
 ## Property Descriptions
-
-
-
-<a class="header" id="property-confirmation_button" href="#property-confirmation_button">**<span class="hljs-attribute">var</span> <span class="hljs-title">confirmation_button</span>** 
-
-
-
-The Button to use.
-
----
 
 
 
@@ -57,21 +47,21 @@ The Label to use.
 
 ---
 
+
+
+<a class="header" id="property-confirmation_button" href="#property-confirmation_button">**<span class="hljs-attribute">var</span> <span class="hljs-title">confirmation_button</span>** 
+
+
+
+The Button to use.
+
+---
+
 ## Method Descriptions
 
 
 
-<a class="header" id="method-set_allow_empty" href="#method-set_allow_empty">**<span class="hljs-attribute">func</span> [<span class="hljs-title">set_allow_empty</span>](#method-set_allow_empty) ( `boolean`: [bool](https://docs.godotengine.org/en/latest/classes/class_bool.html#class-bool) )</a>  ⇒ <span style = "color: gray">void</span>** 
-
-
-
- <span style = "color: gray">*No description available.*</span> 
-
----
-
-
-
-<a class="header" id="method-set_default" href="#method-set_default">**<span class="hljs-attribute">func</span> [<span class="hljs-title">set_default</span>](#method-set_default) ( `default`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) )</a>  ⇒ <span style = "color: gray">void</span>** 
+<a class="header" id="method-set_text" href="#method-set_text">**<span class="hljs-attribute">func</span> [<span class="hljs-title">set_text</span>](#method-set_text) ( `text`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) )</a>  ⇒ <span style = "color: gray">void</span>** 
 
 
 
@@ -91,7 +81,17 @@ The Label to use.
 
 
 
-<a class="header" id="method-set_text" href="#method-set_text">**<span class="hljs-attribute">func</span> [<span class="hljs-title">set_text</span>](#method-set_text) ( `text`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) )</a>  ⇒ <span style = "color: gray">void</span>** 
+<a class="header" id="method-set_default" href="#method-set_default">**<span class="hljs-attribute">func</span> [<span class="hljs-title">set_default</span>](#method-set_default) ( `default`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) )</a>  ⇒ <span style = "color: gray">void</span>** 
+
+
+
+ <span style = "color: gray">*No description available.*</span> 
+
+---
+
+
+
+<a class="header" id="method-set_allow_empty" href="#method-set_allow_empty">**<span class="hljs-attribute">func</span> [<span class="hljs-title">set_allow_empty</span>](#method-set_allow_empty) ( `boolean`: [bool](https://docs.godotengine.org/en/latest/classes/class_bool.html#class-bool) )</a>  ⇒ <span style = "color: gray">void</span>** 
 
 
 

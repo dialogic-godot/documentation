@@ -12,8 +12,8 @@
 ## Properties
 Name | Type | Default 
 --- | --- | --- 
-[<span class="hljs-title">event_resource</span>](#property-event_resource) | [DialogicEvent](class_dialogicevent.md) |  `null` 
 [<span class="hljs-title">property_name</span>](#property-property_name) | [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) |  `""` 
+[<span class="hljs-title">event_resource</span>](#property-event_resource) | [DialogicEvent](class_dialogicevent.md) |  `null` 
 --- 
 
 ## Methods
@@ -38,7 +38,7 @@ Returns | Method
 
 
 
-<a class="header" id="property-event_resource" href="#property-event_resource">**<span class="hljs-attribute">var</span> <span class="hljs-title">event_resource</span> <span style = "color: gray"> = </span> null** 
+<a class="header" id="property-property_name" href="#property-property_name">**<span class="hljs-attribute">var</span> <span class="hljs-title">property_name</span> <span style = "color: gray"> = </span> ""** 
 
 
 
@@ -48,7 +48,7 @@ Returns | Method
 
 
 
-<a class="header" id="property-property_name" href="#property-property_name">**<span class="hljs-attribute">var</span> <span class="hljs-title">property_name</span> <span style = "color: gray"> = </span> ""** 
+<a class="header" id="property-event_resource" href="#property-event_resource">**<span class="hljs-attribute">var</span> <span class="hljs-title">event_resource</span> <span style = "color: gray"> = </span> null** 
 
 
 

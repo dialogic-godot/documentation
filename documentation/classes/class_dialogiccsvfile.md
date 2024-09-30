@@ -12,22 +12,22 @@ Handles translation of a [DialogicTimeline](class_dialogictimeline.md) to a CSV 
 ## Properties
 Name | Type | Default 
 --- | --- | --- 
-[<span class="hljs-title">add_separator</span>](#property-add_separator) | [bool](https://docs.godotengine.org/en/latest/classes/class_bool.html#class-bool) |  `false` 
+[<span class="hljs-title">lines</span>](#property-lines) | [PackedStringArray[]](https://docs.godotengine.org/en/latest/classes/class_packedstringarray.html#class-packedstringarray) |  `[]` 
+[<span class="hljs-title">old_lines</span>](#property-old_lines) | [Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html#class-dictionary) |  `{}` 
 [<span class="hljs-title">column_count</span>](#property-column_count) | [int](https://docs.godotengine.org/en/latest/classes/class_int.html#class-int) |  `0` 
-[<span class="hljs-title">file</span>](#property-file) | [FileAccess](https://docs.godotengine.org/en/latest/classes/class_fileaccess.html#class-fileaccess) |   
 [<span class="hljs-title">is_new_file</span>](#property-is_new_file) | [bool](https://docs.godotengine.org/en/latest/classes/class_bool.html#class-bool) |  `false` 
-[<span class="hljs-title">lines</span>](#property-lines) | [PackedStringArray[]](https://docs.godotengine.org/en/latest/classes/class_packedstringarray.html#class-packedstringarray) |   
-[<span class="hljs-title">new_rows</span>](#property-new_rows) | [int](https://docs.godotengine.org/en/latest/classes/class_int.html#class-int) |  `0` 
-[<span class="hljs-title">old_lines</span>](#property-old_lines) | [Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html#class-dictionary) |   
-[<span class="hljs-title">updated_rows</span>](#property-updated_rows) | [int](https://docs.godotengine.org/en/latest/classes/class_int.html#class-int) |  `0` 
+[<span class="hljs-title">file</span>](#property-file) | [FileAccess](https://docs.godotengine.org/en/latest/classes/class_fileaccess.html#class-fileaccess) |   
 [<span class="hljs-title">used_file_path</span>](#property-used_file_path) | [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) |   
+[<span class="hljs-title">updated_rows</span>](#property-updated_rows) | [int](https://docs.godotengine.org/en/latest/classes/class_int.html#class-int) |  `0` 
+[<span class="hljs-title">new_rows</span>](#property-new_rows) | [int](https://docs.godotengine.org/en/latest/classes/class_int.html#class-int) |  `0` 
+[<span class="hljs-title">add_separator</span>](#property-add_separator) | [bool](https://docs.godotengine.org/en/latest/classes/class_bool.html#class-bool) |  `false` 
 --- 
 
 ## Methods
 Returns | Method 
 --- | --- 
-<span style = "color: gray">void</span> | [<span class="hljs-title">add_translation_keys_to_glossary</span>](#method-add_translation_keys_to_glossary) ( `glossary`: [DialogicGlossary](class_dialogicglossary.md) ) 
 <span style = "color: gray">void</span> | [<span class="hljs-title">collect_lines_from_characters</span>](#method-collect_lines_from_characters) ( `characters`: [Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html#class-dictionary) ) 
+<span style = "color: gray">void</span> | [<span class="hljs-title">add_translation_keys_to_glossary</span>](#method-add_translation_keys_to_glossary) ( `glossary`: [DialogicGlossary](class_dialogicglossary.md) ) 
 <span style = "color: gray">void</span> | [<span class="hljs-title">collect_lines_from_glossary</span>](#method-collect_lines_from_glossary) ( `glossary`: [DialogicGlossary](class_dialogicglossary.md) ) 
 <span style = "color: gray">void</span> | [<span class="hljs-title">collect_lines_from_timeline</span>](#method-collect_lines_from_timeline) ( `timeline`: [DialogicTimeline](class_dialogictimeline.md) ) 
 <span style = "color: gray">void</span> | [<span class="hljs-title">update_csv_file_on_disk</span>](#method-update_csv_file_on_disk) ( ) 
@@ -73,11 +73,21 @@ Returns | Method
 
 
 
-<a class="header" id="property-add_separator" href="#property-add_separator">**<span class="hljs-attribute">var</span> <span class="hljs-title">add_separator</span> <span style = "color: gray"> = </span> false** 
+<a class="header" id="property-lines" href="#property-lines">**<span class="hljs-attribute">var</span> <span class="hljs-title">lines</span> <span style = "color: gray"> = </span> []** 
 
 
 
-Whether this CSV handler should add newlines as a separator between sections. A section may be a new character, new timeline, or new glossary item inside a per-project file.
+ <span style = "color: gray">*No description available.*</span> 
+
+---
+
+
+
+<a class="header" id="property-old_lines" href="#property-old_lines">**<span class="hljs-attribute">var</span> <span class="hljs-title">old_lines</span> <span style = "color: gray"> = </span> {}** 
+
+
+
+Dictionary of lines from the original file. Key: String, Value: PackedStringArray
 
 ---
 
@@ -93,16 +103,6 @@ The amount of columns the CSV file has after loading it. Used to add trailing co
 
 
 
-<a class="header" id="property-file" href="#property-file">**<span class="hljs-attribute">var</span> <span class="hljs-title">file</span>** 
-
-
-
-The underlying file used to read and write the CSV file.
-
----
-
-
-
 <a class="header" id="property-is_new_file" href="#property-is_new_file">**<span class="hljs-attribute">var</span> <span class="hljs-title">is_new_file</span> <span style = "color: gray"> = </span> false** 
 
 
@@ -113,31 +113,21 @@ Whether this CSV file was able to be loaded a defined file path.
 
 
 
-<a class="header" id="property-lines" href="#property-lines">**<span class="hljs-attribute">var</span> <span class="hljs-title">lines</span> <span style = "color: gray"> = </span> <unknown>** 
+<a class="header" id="property-file" href="#property-file">**<span class="hljs-attribute">var</span> <span class="hljs-title">file</span>** 
 
 
 
- <span style = "color: gray">*No description available.*</span> 
-
----
-
-
-
-<a class="header" id="property-new_rows" href="#property-new_rows">**<span class="hljs-attribute">var</span> <span class="hljs-title">new_rows</span> <span style = "color: gray"> = </span> 0** 
-
-
-
-The amount of events that were added to the CSV file.
+The underlying file used to read and write the CSV file.
 
 ---
 
 
 
-<a class="header" id="property-old_lines" href="#property-old_lines">**<span class="hljs-attribute">var</span> <span class="hljs-title">old_lines</span> <span style = "color: gray"> = </span> <unknown>** 
+<a class="header" id="property-used_file_path" href="#property-used_file_path">**<span class="hljs-attribute">var</span> <span class="hljs-title">used_file_path</span>** 
 
 
 
-Dictionary of lines from the original file. Key: String, Value: PackedStringArray
+File path used to load the CSV file.
 
 ---
 
@@ -153,25 +143,25 @@ The amount of events that were updated in the CSV file.
 
 
 
-<a class="header" id="property-used_file_path" href="#property-used_file_path">**<span class="hljs-attribute">var</span> <span class="hljs-title">used_file_path</span>** 
+<a class="header" id="property-new_rows" href="#property-new_rows">**<span class="hljs-attribute">var</span> <span class="hljs-title">new_rows</span> <span style = "color: gray"> = </span> 0** 
 
 
 
-File path used to load the CSV file.
+The amount of events that were added to the CSV file.
+
+---
+
+
+
+<a class="header" id="property-add_separator" href="#property-add_separator">**<span class="hljs-attribute">var</span> <span class="hljs-title">add_separator</span> <span style = "color: gray"> = </span> false** 
+
+
+
+Whether this CSV handler should add newlines as a separator between sections. A section may be a new character, new timeline, or new glossary item inside a per-project file.
 
 ---
 
 ## Method Descriptions
-
-
-
-<a class="header" id="method-add_translation_keys_to_glossary" href="#method-add_translation_keys_to_glossary">**<span class="hljs-attribute">func</span> [<span class="hljs-title">add_translation_keys_to_glossary</span>](#method-add_translation_keys_to_glossary) ( `glossary`: [DialogicGlossary](class_dialogicglossary.md) )</a>  ⇒ <span style = "color: gray">void</span>** 
-
-
-
-Reads all `lines` and adds them to the given `glossary`'s internal collection of words-to-translation-key mappings.  Populate the CSV's lines with the method [collect_lines_from_glossary](#property-collect_lines_from_glossary) before.
-
----
 
 
 
@@ -180,6 +170,16 @@ Reads all `lines` and adds them to the given `glossary`'s internal collection of
 
 
 Collects names from the given `characters` and adds them to the `lines`.  If this is the character name CSV file, use this method to take previously collected characters from other [DialogicCsvFile](class_dialogiccsvfile.md)s.
+
+---
+
+
+
+<a class="header" id="method-add_translation_keys_to_glossary" href="#method-add_translation_keys_to_glossary">**<span class="hljs-attribute">func</span> [<span class="hljs-title">add_translation_keys_to_glossary</span>](#method-add_translation_keys_to_glossary) ( `glossary`: [DialogicGlossary](class_dialogicglossary.md) )</a>  ⇒ <span style = "color: gray">void</span>** 
+
+
+
+Reads all `lines` and adds them to the given `glossary`'s internal collection of words-to-translation-key mappings.  Populate the CSV's lines with the method [collect_lines_from_glossary](#property-collect_lines_from_glossary) before.
 
 ---
 

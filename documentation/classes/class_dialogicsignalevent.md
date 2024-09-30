@@ -12,16 +12,16 @@
 ## Properties
 Name | Type | Default 
 --- | --- | --- 
-[<span class="hljs-title">argument</span>](#property-argument) | [Variant](https://docs.godotengine.org/en/latest/classes/class_variant.html#class-variant) |  `""` 
 [<span class="hljs-title">argument_type</span>](#property-argument_type) | [int](https://docs.godotengine.org/en/latest/classes/class_int.html#class-int) |  `0` 
+[<span class="hljs-title">argument</span>](#property-argument) | [Variant](https://docs.godotengine.org/en/latest/classes/class_variant.html#class-variant) |  `""` 
 --- 
 
 ## Methods
 Returns | Method 
 --- | --- 
-<span style = "color: gray">void</span> | [<span class="hljs-title">build_event_editor</span>](#method-build_event_editor) ( ) 
 <span class="hljs-attribute">[String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string)</span> | [<span class="hljs-title">get_shortcode</span>](#method-get_shortcode) ( ) 
 <span class="hljs-attribute">[Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html#class-dictionary)</span> | [<span class="hljs-title">get_shortcode_parameters</span>](#method-get_shortcode_parameters) ( ) 
+<span style = "color: gray">void</span> | [<span class="hljs-title">build_event_editor</span>](#method-build_event_editor) ( ) 
 --- 
 ## Constants
 
@@ -46,16 +46,6 @@ Returns | Method
 
 
 
-<a class="header" id="property-argument" href="#property-argument">**<span class="hljs-attribute">var</span> <span class="hljs-title">argument</span> <span style = "color: gray"> = </span> ""** 
-
-
-
-The argument that will be provided with the signal.
-
----
-
-
-
 <a class="header" id="property-argument_type" href="#property-argument_type">**<span class="hljs-attribute">var</span> <span class="hljs-title">argument_type</span> <span style = "color: gray"> = </span> 0** 
 
 
@@ -64,17 +54,17 @@ The argument that will be provided with the signal.
 
 ---
 
-## Method Descriptions
+
+
+<a class="header" id="property-argument" href="#property-argument">**<span class="hljs-attribute">var</span> <span class="hljs-title">argument</span> <span style = "color: gray"> = </span> ""** 
 
 
 
-<a class="header" id="method-build_event_editor" href="#method-build_event_editor">**<span class="hljs-attribute">func</span> [<span class="hljs-title">build_event_editor</span>](#method-build_event_editor) ( )</a>  ⇒ <span style = "color: gray">void</span>** 
-
-
-
- <span style = "color: gray">*No description available.*</span> 
+The argument that will be provided with the signal.
 
 ---
+
+## Method Descriptions
 
 
 
@@ -89,6 +79,16 @@ The argument that will be provided with the signal.
 
 
 <a class="header" id="method-get_shortcode_parameters" href="#method-get_shortcode_parameters">**<span class="hljs-attribute">func</span> [<span class="hljs-title">get_shortcode_parameters</span>](#method-get_shortcode_parameters) ( )</a>  ⇒ <span class="hljs-attribute">[Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html#class-dictionary)</span>** 
+
+
+
+ <span style = "color: gray">*No description available.*</span> 
+
+---
+
+
+
+<a class="header" id="method-build_event_editor" href="#method-build_event_editor">**<span class="hljs-attribute">func</span> [<span class="hljs-title">build_event_editor</span>](#method-build_event_editor) ( )</a>  ⇒ <span style = "color: gray">void</span>** 
 
 
 

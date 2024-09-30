@@ -12,9 +12,9 @@ Node that is used for playing sound effects on hover/focus/press of sibling Dial
 ## Properties
 Name | Type | Default 
 --- | --- | --- 
-[<span class="hljs-title">sound_focus</span>](#property-sound_focus) | [AudioStream](https://docs.godotengine.org/en/latest/classes/class_audiostream.html#class-audiostream) |   
-[<span class="hljs-title">sound_hover</span>](#property-sound_hover) | [AudioStream](https://docs.godotengine.org/en/latest/classes/class_audiostream.html#class-audiostream) |   
 [<span class="hljs-title">sound_pressed</span>](#property-sound_pressed) | [AudioStream](https://docs.godotengine.org/en/latest/classes/class_audiostream.html#class-audiostream) |   
+[<span class="hljs-title">sound_hover</span>](#property-sound_hover) | [AudioStream](https://docs.godotengine.org/en/latest/classes/class_audiostream.html#class-audiostream) |   
+[<span class="hljs-title">sound_focus</span>](#property-sound_focus) | [AudioStream](https://docs.godotengine.org/en/latest/classes/class_audiostream.html#class-audiostream) |   
 --- 
 
 ## Methods
@@ -26,11 +26,11 @@ Returns | Method
 
 
 
-<a class="header" id="property-sound_focus" href="#property-sound_focus">**<span class="hljs-attribute">var</span> <span class="hljs-title">sound_focus</span>** 
+<a class="header" id="property-sound_pressed" href="#property-sound_pressed">**<span class="hljs-attribute">var</span> <span class="hljs-title">sound_pressed</span>** 
 
 
 
-Sound to be played on focus. See  for more.
+Sound to be played if one of the sibling ChoiceButtons is pressed. If sibling ChoiceButton has a sound_pressed set, that is prioritized.
 
 ---
 
@@ -46,11 +46,11 @@ Sound to be played on hover. See  for more.
 
 
 
-<a class="header" id="property-sound_pressed" href="#property-sound_pressed">**<span class="hljs-attribute">var</span> <span class="hljs-title">sound_pressed</span>** 
+<a class="header" id="property-sound_focus" href="#property-sound_focus">**<span class="hljs-attribute">var</span> <span class="hljs-title">sound_focus</span>** 
 
 
 
-Sound to be played if one of the sibling ChoiceButtons is pressed. If sibling ChoiceButton has a sound_pressed set, that is prioritized.
+Sound to be played on focus. See  for more.
 
 ---
 
