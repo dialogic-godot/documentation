@@ -56,6 +56,24 @@ However, you can access the resource path:
 var timeline_path := Dialogic.current_timeline.resource_path
 ```
 
+## I cannot see or press my buttons?
+You might have UI elements that you want to appear on top of a dialog that is playing, but they can't be clicked or are hidden behind the background.
+In that case these nodes should be in a Canvas Layer with a higher index!
+Learn about using canvas layers here: [Godot Docs about Canvas Layers](https://docs.godotengine.org/en/stable/tutorials/2d/canvas_layers.html)
+
+
+## My input action to start dialog conflicts with the advancing input action
+Many people start their dialog with some kind of "interaction" key, which can be the same as the Dialogic Input Action (e.g. Enter or X, etc.).
+In that case it can happen that a new dialog starts whenever you want to advance or on the last input of the dialog.
+It's easy to solve these issues with simple checks in your code, for example:
+```gdscript
+func _input(event):
+    if player_is_in_area and Input.is_action_pressed("start_interaction"):
+         # Only start a new dialog if no dialog is currently active
+         if Dialogic.current_timeline == null:
+              Dialogic.start("ARelevantTimeline")
+```
+
 ## I change the timeline text, but the game shows old text?
 
 If you have enabled translation, you will have to update the CSVs.\
@@ -67,9 +85,9 @@ Disabling the translation until you are done with most of the text is recommende
 The following code allows you to check if the text box is visible and then act based on its state.
 ```gdscript
 if Dialogic.Text.is_textbox_visible():
-    Dialogic.Text.hide_text_boxes()
+    Dialogic.Text.hide_textbox()
 else:
-    Dialogic.Text.show_text_boxes()
+    Dialogic.Text.show_textbox()
 ```
 
 ## I encounter a small lag or freeze when starting the dialogue!
@@ -81,6 +99,8 @@ This can be called on all styles you will need during the splash screen of your 
 var style: DialogicStyle = load("res://path/to/my/style.tres")
 style.prepare()
 ```
+
+On top of this, you can preload an empty timeline during your loading segment of your game.
 
 Last, be aware that Godot's shader compiler runs on demand; whenever new shaders need to be loaded in a style (or any resource), it will compile, causing a freeze.\
 Hence, it's recommended to compile these ahead of time if you run into problems still.

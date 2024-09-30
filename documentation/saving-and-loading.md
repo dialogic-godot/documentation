@@ -35,7 +35,7 @@ func _on_save_game_button_pressed() -> void:
     Dialogic.Save.save("", false, Dialogic.Save.ThumbnailMode.NONE)
 
 func _on_load_game_button_pressed() -> void:
-    Dialogic.Save.load("", false, Dialogic.Save.ThumbnailMode.NONE)
+    Dialogic.Save.load()
 ```
 
 
@@ -50,12 +50,14 @@ If you go this route, you need to instruct the `Dialogic.Save.save(...)` method 
 Dialogic.Save.save(slot_name_variable, false, Dialogic.Save.ThumbnailMode.STORE_ONLY, slot_extra_info)
 ```
 
-This snippet will automatically take the thumbnail saved at `Dialogic.Save.last_thumbnail` and use it.
+This snippet will automatically take the thumbnail saved at `Dialogic.Save.latest_thumbnail` and use it.
 
 ## 1.2 Saving Extra Info
 
-By default, Savegames contain information about Dialogic's timeline only. If you want to store specific information, we can achieve this by using `Dialogic.Save.set_slot_info(slot_name:String, info: Dictionary)` and `Dialogic.Save.get_slot_info(slot_name: String)` methods. \
+By default, Savegames contain information about Dialogic's timeline and Dialogic variables. If you want to store specific information about a Savegame, we can achieve this by using `Dialogic.Save.set_slot_info(slot_name:String, info: Dictionary)` and `Dialogic.Save.get_slot_info(slot_name: String)` methods. \
 However, the `Dialogic.Save.save(...)` method can simplify our work and skip calling the set method.
+
+Extra information is *not* loaded into the Dialogic state info. In other words, it solely serves to provide information *about* a Savegame.
 
 In the following code snippet, we will save the last used text line and the current time as extra information.
 
@@ -67,17 +69,34 @@ extra_info["date"] = Time.get_datetime_string_from_system(false, true)
 Dialogic.Save.save(slot_name, false, Dialogic.Save.ThumbnailMode.STORE_ONLY, extra_info)
 ```
 
+## 1.2.1 Accessing Extra Info
+
+Now, if you want to display your Savegames on your custom Savegame layer, you can access them via `Dialogic.Save.get_slot_info`.
+
+Here is an example on how to access a specific Savegame's extra data:
+
+```gdscript
+# Safety check, whether our Savegame even exists.
+if Dialogic.Save.has_slot(save_game_name):
+     var slot_info_dictionary := Dialogic.Save.get_slot_info(save_game_name)
+     var date: String = slot_info_dictionary.get("date", "")
+     var text: String = slot_info_dictionary.get("text", "")
+```
+
+This example checks if a Savegame `save_game_name` exists and if so, gets its extra data.
+From there on, you are free to do anything with the data. For instance, display it on your custom Savegame layer.
+
 ### 1.3 Global data
 
 
 
-The simple approach to store your game data slot-independently is to use the `Dialogic.Settings` subsystem.\
+The simple approach to storing your game data slot-independently is to use the `Dialogic.Settings` subsystem.\
 You can directly store the information on it:
 ```gdscript
 Dialogic.Settings.text_speed = 0.05
 ```
 
-On save, the data will be automatically stored into the global save file
+On save, the data will be automatically stored in the global save file
 
 However, if you want to write to the global save file directly, you can use the `Dialogic.Save` subsystem:
 ```gdscript
@@ -88,7 +107,7 @@ func set_player_name(name: String) -> void:
 
 There is no rule for the global info `key`'s value; being consistent is good, though.
 
-If you are interested in storing the history of visited text, take a look at the next chapter.
+If you are interested in storing the history of visited texts, take a look at the next chapter.
 
 
 ### 1.4 Saving Visited Events
@@ -99,7 +118,7 @@ By default, Dialogic does *not* save the events players have already visited; ho
 1. The first approach is via the Dialogic Editor. Head to the `Settings` tab and select `History`. From here on, you can decide if you want the already-visited events must auto-save.\
 
 2. This approach is a bit different: The following snippet will manually save the history to a file.
-Use this in case the player reached the end of the game (credits?) and you want to ensure that the visited-events are
+Use this in case the player has reached the end of the game (credits?) and you want to ensure that the visited events are
 properly updated a last time.
 
 ```gdscript
@@ -158,4 +177,4 @@ If you want to roll your own save and load system, you can use `Dialogic.get_ful
 Once you are read to load the data back, you will have to use `Dialogic.load_full_state(state: Dictionary)` to get your data back into Dialogic.
 
 Overall, it's better to have an idea *why* you want to do manual saving and take inspiration from Dialogic's `save` and `load` methods.\
-There is a chance, that Dialogic already supports your specific loading and saving requirements.
+There is a chance that Dialogic already supports your specific loading and saving requirements.

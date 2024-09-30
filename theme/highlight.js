@@ -81,18 +81,18 @@ function hljsDefineGDScript(hljs) {
 
 
 /*
-    Function returns a highlight definition for GDScript.
+    Function returns a highlight definition for Dialogic Timelines.
 */
 function hljsDefineDialogicTimeline(hljs) {
 	var KEYWORDS = {
         /* General keywords */
 		keyword:
-			'join leave update set jump label background set call ' +
-            'music voice sound style clear history end_timeline ',
-
+			'join leave update set jump label do return if elif else',
+		
+		
         /* Keywords altering the code flow. */
         control_flow_keyword:
-            'if and elif else for match while break continue pass return ',
+            'and or',
 
         /* Improves the Dialogic Autoload's visual clarity. */
         dialogic_keyword:
@@ -100,7 +100,8 @@ function hljsDefineDialogicTimeline(hljs) {
 
         /* Built-in types in GDScript. */
         built_in:
-            '',
+            'background music voice sound style clear history end_timeline ' +
+			'wait wait_input signal save',
 
 		literal:
 			'true false null'
@@ -108,17 +109,17 @@ function hljsDefineDialogicTimeline(hljs) {
 
     var SPEAKER_NAME = {
         className: 'dialogic_keyword',
-        begin: '\\b[A-Za-z]+\\b(?=\\s*(\\([^)]+\\)|:))'
+        begin: '\\b[A-Za-z]+\\b(?=\\s*(\\([^)]+\\)|:)(?!\\n))',
     };
-
+	
     var SPEAKER_TEXT = {
-        className: 'string',
+        className: 'text',
         begin: ':',
         end: '$',
         relevance: 0,
         contains: []
     };
-
+    
 	var SPEAKER_EXPRESSION = {
         className: 'built_in',
         begin: '\\([^)]+\\)'
@@ -128,7 +129,12 @@ function hljsDefineDialogicTimeline(hljs) {
 		className: 'dialogic_keyword',
 		begin: '(?<=\\b(?:join|leave|jump|label|update)\\s)\\b[A-Za-z]+\\b'
 	  };
-
+	
+	var CHOICE = {
+		className: 'keyword',
+		begin: '^(\\s)*-',
+	};
+	
     var SPEAKER_EXPRESSION = {
         className: 'built_in',
         begin: '\\([^)]+\\)'
@@ -136,8 +142,9 @@ function hljsDefineDialogicTimeline(hljs) {
 
 	var EVENT_PROPERTY = {
 		className: 'built_in',
-		begin: '\\b[A-Za-z]+\\b(?=\\s*=)'
+		begin: '\\b(\\S)+\\b(?=\\s*=)'
 	  };
+
 
 	return {
 		aliases: ['dtl', 'timeline'],
@@ -147,6 +154,7 @@ function hljsDefineDialogicTimeline(hljs) {
             SPEAKER_TEXT,
             SPEAKER_EXPRESSION,
 			EVENT_PROPERTY,
+			CHOICE,
 			SPEAKER_ARGUMENT,
 			hljs.NUMBER_MODE,
 			hljs.HASH_COMMENT_MODE,
@@ -155,22 +163,6 @@ function hljsDefineDialogicTimeline(hljs) {
 				begin: /"""/, end: /"""/
 			},
 			hljs.QUOTE_STRING_MODE,
-			{
-				variants: [
-					{
-						className: 'function',
-						beginKeywords: 'func'
-					},
-					{
-						className: 'class',
-						beginKeywords: 'class'
-					}
-				],
-				end: /:/,
-				contains: [
-					hljs.UNDERSCORE_TITLE_MODE
-				]
-			},
 		]
 	};
 }

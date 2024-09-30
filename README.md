@@ -48,7 +48,7 @@ The info text goes here.
 
 Some available admonish categories: `info`, `warning`, `danger`, `tip`, `question`, `bug`, `example`, …
 
-All admonish categories: https://tommilligan.github.io/mdbook-admonish/reference.html#directivese
+All admonish categories: https://tommilligan.github.io/mdbook-admonish/reference.html#directives
 
 ## Chapter Banners
 Each page has its own header banner.\
@@ -59,7 +59,7 @@ These can be created via this syntax:
 </div>
 ```
 
-Alongside `ocean`, you can find the rest defined here: [header.css](https://github.com/dialogic-godot/documentation/blob/main/header.css).
+Alongside `ocean`, you can find the rest defined here: [header.css](https://github.com/dialogic-godot/documentation/blob/main/css/header.css).
 
 ## Table of Contents
 The table of contents is generated automatically when you use the `[toc]` tag in your markdown file.\
