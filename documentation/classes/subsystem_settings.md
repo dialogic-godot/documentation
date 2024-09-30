@@ -12,24 +12,24 @@
 ## Properties
 Name | Type | Default 
 --- | --- | --- 
-[<span class="hljs-title">settings</span>](#property-settings) | [Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html#class-dictionary) |   
+[<span class="hljs-title">settings</span>](#property-settings) | [Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html#class-dictionary) |  `{}` 
 --- 
 
 ## Methods
 Returns | Method 
 --- | --- 
-<span style = "color: gray">void</span> | [<span class="hljs-title">clear_game_state</span>](#method-clear_game_state) ( `clear_flag`: [int](https://docs.godotengine.org/en/latest/classes/class_int.html#class-int) = `0` ) 
-<span style = "color: gray">void</span> | [<span class="hljs-title">connect_to_change</span>](#method-connect_to_change) ( `setting`: [StringName](https://docs.godotengine.org/en/latest/classes/class_stringname.html#class-stringname), `callable`: [Callable](https://docs.godotengine.org/en/latest/classes/class_callable.html#class-callable) ) 
+<span style = "color: gray">void</span> | [<span class="hljs-title">clear_game_state</span>](#method-clear_game_state) ( `_clear_flag`: [int](https://docs.godotengine.org/en/latest/classes/class_int.html#class-int) = `0` ) 
 <span class="hljs-attribute">[Variant](https://docs.godotengine.org/en/latest/classes/class_variant.html#class-variant)</span> | [<span class="hljs-title">get_setting</span>](#method-get_setting) ( `property`: [StringName](https://docs.godotengine.org/en/latest/classes/class_stringname.html#class-stringname), `default`: [Variant](https://docs.godotengine.org/en/latest/classes/class_variant.html#class-variant) ) 
 <span class="hljs-attribute">[bool](https://docs.godotengine.org/en/latest/classes/class_bool.html#class-bool)</span> | [<span class="hljs-title">has_setting</span>](#method-has_setting) ( `property`: [StringName](https://docs.godotengine.org/en/latest/classes/class_stringname.html#class-stringname) ) 
 <span style = "color: gray">void</span> | [<span class="hljs-title">reset_all</span>](#method-reset_all) ( ) 
 <span style = "color: gray">void</span> | [<span class="hljs-title">reset_setting</span>](#method-reset_setting) ( `property`: [StringName](https://docs.godotengine.org/en/latest/classes/class_stringname.html#class-stringname) ) 
+<span style = "color: gray">void</span> | [<span class="hljs-title">connect_to_change</span>](#method-connect_to_change) ( `property`: [StringName](https://docs.godotengine.org/en/latest/classes/class_stringname.html#class-stringname), `callable`: [Callable](https://docs.godotengine.org/en/latest/classes/class_callable.html#class-callable) ) 
 --- 
 ## Property Descriptions
 
 
 
-<a class="header" id="property-settings" href="#property-settings">**<span class="hljs-attribute">var</span> <span class="hljs-title">settings</span> <span style = "color: gray"> = </span> <unknown>** 
+<a class="header" id="property-settings" href="#property-settings">**<span class="hljs-attribute">var</span> <span class="hljs-title">settings</span> <span style = "color: gray"> = </span> {}** 
 
 
 
@@ -41,7 +41,7 @@ Returns | Method
 
 
 
-<a class="header" id="method-clear_game_state" href="#method-clear_game_state">**<span class="hljs-attribute">func</span> [<span class="hljs-title">clear_game_state</span>](#method-clear_game_state) ( `clear_flag`: [int](https://docs.godotengine.org/en/latest/classes/class_int.html#class-int) = `0` )</a>  ⇒ <span style = "color: gray">void</span>** 
+<a class="header" id="method-clear_game_state" href="#method-clear_game_state">**<span class="hljs-attribute">func</span> [<span class="hljs-title">clear_game_state</span>](#method-clear_game_state) ( `_clear_flag`: [int](https://docs.godotengine.org/en/latest/classes/class_int.html#class-int) = `0` )</a>  ⇒ <span style = "color: gray">void</span>** 
 
 
 
@@ -51,21 +51,11 @@ Built-in, called by DialogicGameHandler.
 
 
 
-<a class="header" id="method-connect_to_change" href="#method-connect_to_change">**<span class="hljs-attribute">func</span> [<span class="hljs-title">connect_to_change</span>](#method-connect_to_change) ( `setting`: [StringName](https://docs.godotengine.org/en/latest/classes/class_stringname.html#class-stringname), `callable`: [Callable](https://docs.godotengine.org/en/latest/classes/class_callable.html#class-callable) )</a>  ⇒ <span style = "color: gray">void</span>** 
-
-
-
- <span style = "color: gray">*No description available.*</span> 
-
----
-
-
-
 <a class="header" id="method-get_setting" href="#method-get_setting">**<span class="hljs-attribute">func</span> [<span class="hljs-title">get_setting</span>](#method-get_setting) ( `property`: [StringName](https://docs.godotengine.org/en/latest/classes/class_stringname.html#class-stringname), `default`: [Variant](https://docs.godotengine.org/en/latest/classes/class_variant.html#class-variant) )</a>  ⇒ <span class="hljs-attribute">[Variant](https://docs.godotengine.org/en/latest/classes/class_variant.html#class-variant)</span>** 
 
 
 
- <span style = "color: gray">*No description available.*</span> 
+Get a setting named `property`, if it does not exist, falls back to `default`.
 
 ---
 
@@ -75,7 +65,7 @@ Built-in, called by DialogicGameHandler.
 
 
 
- <span style = "color: gray">*No description available.*</span> 
+Whether a setting has been set/stored before.
 
 ---
 
@@ -96,6 +86,16 @@ Built-in, called by DialogicGameHandler.
 
 
  <span style = "color: gray">*No description available.*</span> 
+
+---
+
+
+
+<a class="header" id="method-connect_to_change" href="#method-connect_to_change">**<span class="hljs-attribute">func</span> [<span class="hljs-title">connect_to_change</span>](#method-connect_to_change) ( `property`: [StringName](https://docs.godotengine.org/en/latest/classes/class_stringname.html#class-stringname), `callable`: [Callable](https://docs.godotengine.org/en/latest/classes/class_callable.html#class-callable) )</a>  ⇒ <span style = "color: gray">void</span>** 
+
+
+
+If a setting named `property` changes its value, this will emit `Callable`.
 
 ---
 

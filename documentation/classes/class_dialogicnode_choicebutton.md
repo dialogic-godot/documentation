@@ -18,10 +18,17 @@ If you don't set the `text_node`, the text will be set on this button instead.  
 Name | Type | Default 
 --- | --- | --- 
 [<span class="hljs-title">choice_index</span>](#property-choice_index) | [int](https://docs.godotengine.org/en/latest/classes/class_int.html#class-int) |  `-1` 
-[<span class="hljs-title">sound_focus</span>](#property-sound_focus) | [AudioStream](https://docs.godotengine.org/en/latest/classes/class_audiostream.html#class-audiostream) |   
-[<span class="hljs-title">sound_hover</span>](#property-sound_hover) | [AudioStream](https://docs.godotengine.org/en/latest/classes/class_audiostream.html#class-audiostream) |   
 [<span class="hljs-title">sound_pressed</span>](#property-sound_pressed) | [AudioStream](https://docs.godotengine.org/en/latest/classes/class_audiostream.html#class-audiostream) |   
+[<span class="hljs-title">sound_hover</span>](#property-sound_hover) | [AudioStream](https://docs.godotengine.org/en/latest/classes/class_audiostream.html#class-audiostream) |   
+[<span class="hljs-title">sound_focus</span>](#property-sound_focus) | [AudioStream](https://docs.godotengine.org/en/latest/classes/class_audiostream.html#class-audiostream) |   
 [<span class="hljs-title">text_node</span>](#property-text_node) | [Node](https://docs.godotengine.org/en/latest/classes/class_node.html#class-node) |   
+--- 
+
+## Methods
+Returns | Method 
+--- | --- 
+<span style = "color: gray">void</span> | [<span class="hljs-title">set_choice_text</span>](#method-set_choice_text) ( `new_text`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) ) 
+--- 
 ## Property Descriptions
 
 
@@ -31,26 +38,6 @@ Name | Type | Default
 
 
 Used to identify what choices to put on. If you leave it at -1, choices will be distributed automatically.
-
----
-
-
-
-<a class="header" id="property-sound_focus" href="#property-sound_focus">**<span class="hljs-attribute">var</span> <span class="hljs-title">sound_focus</span>** 
-
-
-
-Can be set to play this sound when focused. Requires a sibling DialogicNode_ButtonSound node.
-
----
-
-
-
-<a class="header" id="property-sound_hover" href="#property-sound_hover">**<span class="hljs-attribute">var</span> <span class="hljs-title">sound_hover</span>** 
-
-
-
-Can be set to play this sound when hovered. Requires a sibling DialogicNode_ButtonSound node.
 
 ---
 
@@ -66,11 +53,43 @@ Can be set to play this sound when pressed. Requires a sibling DialogicNode_Butt
 
 
 
+<a class="header" id="property-sound_hover" href="#property-sound_hover">**<span class="hljs-attribute">var</span> <span class="hljs-title">sound_hover</span>** 
+
+
+
+Can be set to play this sound when hovered. Requires a sibling DialogicNode_ButtonSound node.
+
+---
+
+
+
+<a class="header" id="property-sound_focus" href="#property-sound_focus">**<span class="hljs-attribute">var</span> <span class="hljs-title">sound_focus</span>** 
+
+
+
+Can be set to play this sound when focused. Requires a sibling DialogicNode_ButtonSound node.
+
+---
+
+
+
 <a class="header" id="property-text_node" href="#property-text_node">**<span class="hljs-attribute">var</span> <span class="hljs-title">text_node</span>** 
 
 
 
 If set, the text will be set on this node's `text` property instead.
+
+---
+
+## Method Descriptions
+
+
+
+<a class="header" id="method-set_choice_text" href="#method-set_choice_text">**<span class="hljs-attribute">func</span> [<span class="hljs-title">set_choice_text</span>](#method-set_choice_text) ( `new_text`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) )</a>  ⇒ <span style = "color: gray">void</span>** 
+
+
+
+Called when the text changes.
 
 ---
 

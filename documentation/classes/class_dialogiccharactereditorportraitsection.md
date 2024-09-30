@@ -13,8 +13,8 @@ Base class for all portrait settings sections. Methods should be overriden. Chan
 Name | Type | Default 
 --- | --- | --- 
 [<span class="hljs-title">character_editor</span>](#property-character_editor) | [Control](https://docs.godotengine.org/en/latest/classes/class_control.html#class-control) |   
-[<span class="hljs-title">hint_text</span>](#property-hint_text) | [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) |  `""` 
 [<span class="hljs-title">selected_item</span>](#property-selected_item) | [TreeItem](https://docs.godotengine.org/en/latest/classes/class_treeitem.html#class-treeitem) |  `null` 
+[<span class="hljs-title">hint_text</span>](#property-hint_text) | [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) |  `""` 
 
 ## Signals
 
@@ -51,21 +51,21 @@ Reference to the character editor, set when instantiated
 
 
 
-<a class="header" id="property-hint_text" href="#property-hint_text">**<span class="hljs-attribute">var</span> <span class="hljs-title">hint_text</span> <span style = "color: gray"> = </span> ""** 
-
-
-
-If not empty a hint icon is added to the section title
-
----
-
-
-
 <a class="header" id="property-selected_item" href="#property-selected_item">**<span class="hljs-attribute">var</span> <span class="hljs-title">selected_item</span> <span style = "color: gray"> = </span> null** 
 
 
 
 Reference to the selected portrait item. `selected_item.get_metadata(0)` can access the portraits data
+
+---
+
+
+
+<a class="header" id="property-hint_text" href="#property-hint_text">**<span class="hljs-attribute">var</span> <span class="hljs-title">hint_text</span> <span style = "color: gray"> = </span> ""** 
+
+
+
+If not empty a hint icon is added to the section title
 
 ---
 

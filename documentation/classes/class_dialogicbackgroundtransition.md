@@ -12,20 +12,20 @@
 ## Properties
 Name | Type | Default 
 --- | --- | --- 
-[<span class="hljs-title">bg_holder</span>](#property-bg_holder) | [DialogicNode_BackgroundHolder](class_dialogicnode_backgroundholder.md) |   
-[<span class="hljs-title">next_scene</span>](#property-next_scene) | [Node](https://docs.godotengine.org/en/latest/classes/class_node.html#class-node) |   
-[<span class="hljs-title">next_texture</span>](#property-next_texture) | [ViewportTexture](https://docs.godotengine.org/en/latest/classes/class_viewporttexture.html#class-viewporttexture) |   
+[<span class="hljs-title">this_folder</span>](#property-this_folder) | [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) |  `get_base_dir()` 
 [<span class="hljs-title">prev_scene</span>](#property-prev_scene) | [Node](https://docs.godotengine.org/en/latest/classes/class_node.html#class-node) |   
 [<span class="hljs-title">prev_texture</span>](#property-prev_texture) | [ViewportTexture](https://docs.godotengine.org/en/latest/classes/class_viewporttexture.html#class-viewporttexture) |   
-[<span class="hljs-title">this_folder</span>](#property-this_folder) | [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) |   
+[<span class="hljs-title">next_scene</span>](#property-next_scene) | [Node](https://docs.godotengine.org/en/latest/classes/class_node.html#class-node) |   
+[<span class="hljs-title">next_texture</span>](#property-next_texture) | [ViewportTexture](https://docs.godotengine.org/en/latest/classes/class_viewporttexture.html#class-viewporttexture) |   
 [<span class="hljs-title">time</span>](#property-time) | [float](https://docs.godotengine.org/en/latest/classes/class_float.html#class-float) |   
+[<span class="hljs-title">bg_holder</span>](#property-bg_holder) | [DialogicNode_BackgroundHolder](class_dialogicnode_backgroundholder.md) |   
 --- 
 
 ## Methods
 Returns | Method 
 --- | --- 
-<span class="hljs-attribute">[ShaderMaterial](https://docs.godotengine.org/en/latest/classes/class_shadermaterial.html#class-shadermaterial)</span> | [<span class="hljs-title">set_shader</span>](#method-set_shader) ( `path_to_shader`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) = `<unknown>` ) 
-<span class="hljs-attribute">[PropertyTweener](https://docs.godotengine.org/en/latest/classes/class_propertytweener.html#class-propertytweener)</span> | [<span class="hljs-title">tween_shader_progress</span>](#method-tween_shader_progress) ( `progress_parameter`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) = `"progress"` ) 
+<span class="hljs-attribute">[ShaderMaterial](https://docs.godotengine.org/en/latest/classes/class_shadermaterial.html#class-shadermaterial)</span> | [<span class="hljs-title">set_shader</span>](#method-set_shader) ( `path_to_shader`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) = `path_join(...)` ) 
+<span class="hljs-attribute">[PropertyTweener](https://docs.godotengine.org/en/latest/classes/class_propertytweener.html#class-propertytweener)</span> | [<span class="hljs-title">tween_shader_progress</span>](#method-tween_shader_progress) ( `_progress_parameter`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) = `"progress"` ) 
 --- 
 
 ## Signals
@@ -43,31 +43,11 @@ Returns | Method
 
 
 
-<a class="header" id="property-bg_holder" href="#property-bg_holder">**<span class="hljs-attribute">var</span> <span class="hljs-title">bg_holder</span>** 
+<a class="header" id="property-this_folder" href="#property-this_folder">**<span class="hljs-attribute">var</span> <span class="hljs-title">this_folder</span> <span style = "color: gray"> = </span> get_base_dir()** 
 
 
 
-Set before _fade() is called, will be the background holder (TextureRect)
-
----
-
-
-
-<a class="header" id="property-next_scene" href="#property-next_scene">**<span class="hljs-attribute">var</span> <span class="hljs-title">next_scene</span>** 
-
-
-
-Set before _fade() is called, will be the root node of the upcoming bg scene.
-
----
-
-
-
-<a class="header" id="property-next_texture" href="#property-next_texture">**<span class="hljs-attribute">var</span> <span class="hljs-title">next_texture</span>** 
-
-
-
-Set before _fade() is called, will be the viewport texture of the upcoming bg scene.
+Helper
 
 ---
 
@@ -93,11 +73,21 @@ Set before _fade() is called, will be the viewport texture of the previous bg sc
 
 
 
-<a class="header" id="property-this_folder" href="#property-this_folder">**<span class="hljs-attribute">var</span> <span class="hljs-title">this_folder</span> <span style = "color: gray"> = </span> <unknown>** 
+<a class="header" id="property-next_scene" href="#property-next_scene">**<span class="hljs-attribute">var</span> <span class="hljs-title">next_scene</span>** 
 
 
 
-Helper
+Set before _fade() is called, will be the root node of the upcoming bg scene.
+
+---
+
+
+
+<a class="header" id="property-next_texture" href="#property-next_texture">**<span class="hljs-attribute">var</span> <span class="hljs-title">next_texture</span>** 
+
+
+
+Set before _fade() is called, will be the viewport texture of the upcoming bg scene.
 
 ---
 
@@ -111,11 +101,21 @@ Set before _fade() is called, will be the requested time for the fade
 
 ---
 
+
+
+<a class="header" id="property-bg_holder" href="#property-bg_holder">**<span class="hljs-attribute">var</span> <span class="hljs-title">bg_holder</span>** 
+
+
+
+Set before _fade() is called, will be the background holder (TextureRect)
+
+---
+
 ## Method Descriptions
 
 
 
-<a class="header" id="method-set_shader" href="#method-set_shader">**<span class="hljs-attribute">func</span> [<span class="hljs-title">set_shader</span>](#method-set_shader) ( `path_to_shader`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) = `<unknown>` )</a>  ⇒ <span class="hljs-attribute">[ShaderMaterial](https://docs.godotengine.org/en/latest/classes/class_shadermaterial.html#class-shadermaterial)</span>** 
+<a class="header" id="method-set_shader" href="#method-set_shader">**<span class="hljs-attribute">func</span> [<span class="hljs-title">set_shader</span>](#method-set_shader) ( `path_to_shader`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) = `path_join(...)` )</a>  ⇒ <span class="hljs-attribute">[ShaderMaterial](https://docs.godotengine.org/en/latest/classes/class_shadermaterial.html#class-shadermaterial)</span>** 
 
 
 
@@ -125,7 +125,7 @@ Set before _fade() is called, will be the requested time for the fade
 
 
 
-<a class="header" id="method-tween_shader_progress" href="#method-tween_shader_progress">**<span class="hljs-attribute">func</span> [<span class="hljs-title">tween_shader_progress</span>](#method-tween_shader_progress) ( `progress_parameter`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) = `"progress"` )</a>  ⇒ <span class="hljs-attribute">[PropertyTweener](https://docs.godotengine.org/en/latest/classes/class_propertytweener.html#class-propertytweener)</span>** 
+<a class="header" id="method-tween_shader_progress" href="#method-tween_shader_progress">**<span class="hljs-attribute">func</span> [<span class="hljs-title">tween_shader_progress</span>](#method-tween_shader_progress) ( `_progress_parameter`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) = `"progress"` )</a>  ⇒ <span class="hljs-attribute">[PropertyTweener](https://docs.godotengine.org/en/latest/classes/class_propertytweener.html#class-propertytweener)</span>** 
 
 
 
