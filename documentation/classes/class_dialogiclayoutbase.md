@@ -15,10 +15,10 @@ Base class that should be extended by custom layouts.
 Returns | Method 
 --- | --- 
 <span class="hljs-attribute">[Node](https://docs.godotengine.org/en/latest/classes/class_node.html#class-node)</span> | [<span class="hljs-title">add_layer</span>](#method-add_layer) ( `layer`: [DialogicLayoutLayer](class_dialogiclayoutlayer.md) ) 
-<span style = "color: gray">void</span> | [<span class="hljs-title">appply_export_overrides</span>](#method-appply_export_overrides) ( ) 
-<span class="hljs-attribute">[Variant](https://docs.godotengine.org/en/latest/classes/class_variant.html#class-variant)</span> | [<span class="hljs-title">get_global_setting</span>](#method-get_global_setting) ( `setting`: [StringName](https://docs.godotengine.org/en/latest/classes/class_stringname.html#class-stringname), `default`: [Variant](https://docs.godotengine.org/en/latest/classes/class_variant.html#class-variant) ) 
 <span class="hljs-attribute">[Node](https://docs.godotengine.org/en/latest/classes/class_node.html#class-node)</span> | [<span class="hljs-title">get_layer</span>](#method-get_layer) ( `index`: [int](https://docs.godotengine.org/en/latest/classes/class_int.html#class-int) ) 
 <span class="hljs-attribute">[Array](https://docs.godotengine.org/en/latest/classes/class_array.html#class-array)</span> | [<span class="hljs-title">get_layers</span>](#method-get_layers) ( ) 
+<span style = "color: gray">void</span> | [<span class="hljs-title">apply_export_overrides</span>](#method-apply_export_overrides) ( ) 
+<span class="hljs-attribute">[Variant](https://docs.godotengine.org/en/latest/classes/class_variant.html#class-variant)</span> | [<span class="hljs-title">get_global_setting</span>](#method-get_global_setting) ( `setting`: [StringName](https://docs.godotengine.org/en/latest/classes/class_stringname.html#class-stringname), `default`: [Variant](https://docs.godotengine.org/en/latest/classes/class_variant.html#class-variant) ) 
 --- 
 ## Method Descriptions
 
@@ -28,27 +28,7 @@ Returns | Method
 
 
 
- <span style = "color: gray">*No description available.*</span> 
-
----
-
-
-
-<a class="header" id="method-appply_export_overrides" href="#method-appply_export_overrides">**<span class="hljs-attribute">func</span> [<span class="hljs-title">appply_export_overrides</span>](#method-appply_export_overrides) ( )</a>  ⇒ <span style = "color: gray">void</span>** 
-
-
-
- <span style = "color: gray">*No description available.*</span> 
-
----
-
-
-
-<a class="header" id="method-get_global_setting" href="#method-get_global_setting">**<span class="hljs-attribute">func</span> [<span class="hljs-title">get_global_setting</span>](#method-get_global_setting) ( `setting`: [StringName](https://docs.godotengine.org/en/latest/classes/class_stringname.html#class-stringname), `default`: [Variant](https://docs.godotengine.org/en/latest/classes/class_variant.html#class-variant) )</a>  ⇒ <span class="hljs-attribute">[Variant](https://docs.godotengine.org/en/latest/classes/class_variant.html#class-variant)</span>** 
-
-
-
- <span style = "color: gray">*No description available.*</span> 
+Method that adds a node as a layer
 
 ---
 
@@ -58,7 +38,7 @@ Returns | Method
 
 
 
- <span style = "color: gray">*No description available.*</span> 
+Method that returns the given child
 
 ---
 
@@ -68,7 +48,27 @@ Returns | Method
 
 
 
- <span style = "color: gray">*No description available.*</span> 
+Method to return all the layers
+
+---
+
+
+
+<a class="header" id="method-apply_export_overrides" href="#method-apply_export_overrides">**<span class="hljs-attribute">func</span> [<span class="hljs-title">apply_export_overrides</span>](#method-apply_export_overrides) ( )</a>  ⇒ <span style = "color: gray">void</span>** 
+
+
+
+Method that is called to load the export overrides. This happens when the style is first introduced, but also when switching to a different style using the same scene!
+
+---
+
+
+
+<a class="header" id="method-get_global_setting" href="#method-get_global_setting">**<span class="hljs-attribute">func</span> [<span class="hljs-title">get_global_setting</span>](#method-get_global_setting) ( `setting`: [StringName](https://docs.godotengine.org/en/latest/classes/class_stringname.html#class-stringname), `default`: [Variant](https://docs.godotengine.org/en/latest/classes/class_variant.html#class-variant) )</a>  ⇒ <span class="hljs-attribute">[Variant](https://docs.godotengine.org/en/latest/classes/class_variant.html#class-variant)</span>** 
+
+
+
+Returns a setting on this base. This is useful so that layers can share settings like base_color, etc.
 
 ---
 

@@ -12,52 +12,22 @@
 ## Properties
 Name | Type | Default 
 --- | --- | --- 
-[<span class="hljs-title">allow_empty</span>](#property-allow_empty) | [bool](https://docs.godotengine.org/en/latest/classes/class_bool.html#class-bool) |  `false` 
-[<span class="hljs-title">default</span>](#property-default) | [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) |  `""` 
-[<span class="hljs-title">placeholder</span>](#property-placeholder) | [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) |  `""` 
 [<span class="hljs-title">text</span>](#property-text) | [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) |  `"Please enter some text:"` 
 [<span class="hljs-title">variable</span>](#property-variable) | [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) |  `""` 
+[<span class="hljs-title">placeholder</span>](#property-placeholder) | [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) |  `""` 
+[<span class="hljs-title">default</span>](#property-default) | [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) |  `""` 
+[<span class="hljs-title">allow_empty</span>](#property-allow_empty) | [bool](https://docs.godotengine.org/en/latest/classes/class_bool.html#class-bool) |  `false` 
 --- 
 
 ## Methods
 Returns | Method 
 --- | --- 
-<span style = "color: gray">void</span> | [<span class="hljs-title">build_event_editor</span>](#method-build_event_editor) ( ) 
 <span class="hljs-attribute">[String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string)</span> | [<span class="hljs-title">get_shortcode</span>](#method-get_shortcode) ( ) 
 <span class="hljs-attribute">[Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html#class-dictionary)</span> | [<span class="hljs-title">get_shortcode_parameters</span>](#method-get_shortcode_parameters) ( ) 
+<span style = "color: gray">void</span> | [<span class="hljs-title">build_event_editor</span>](#method-build_event_editor) ( ) 
 <span class="hljs-attribute">[Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html#class-dictionary)</span> | [<span class="hljs-title">get_var_suggestions</span>](#method-get_var_suggestions) ( `filter`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) = `""` ) 
 --- 
 ## Property Descriptions
-
-
-
-<a class="header" id="property-allow_empty" href="#property-allow_empty">**<span class="hljs-attribute">var</span> <span class="hljs-title">allow_empty</span> <span style = "color: gray"> = </span> false** 
-
-
-
-If true, the player can continue if nothing is entered.
-
----
-
-
-
-<a class="header" id="property-default" href="#property-default">**<span class="hljs-attribute">var</span> <span class="hljs-title">default</span> <span style = "color: gray"> = </span> ""** 
-
-
-
-The value that should be in the line edit by default.
-
----
-
-
-
-<a class="header" id="property-placeholder" href="#property-placeholder">**<span class="hljs-attribute">var</span> <span class="hljs-title">placeholder</span> <span style = "color: gray"> = </span> ""** 
-
-
-
-The placeholder text to show in the line edit.
-
----
 
 
 
@@ -79,17 +49,37 @@ The name/path of the variable to set.
 
 ---
 
-## Method Descriptions
+
+
+<a class="header" id="property-placeholder" href="#property-placeholder">**<span class="hljs-attribute">var</span> <span class="hljs-title">placeholder</span> <span style = "color: gray"> = </span> ""** 
 
 
 
-<a class="header" id="method-build_event_editor" href="#method-build_event_editor">**<span class="hljs-attribute">func</span> [<span class="hljs-title">build_event_editor</span>](#method-build_event_editor) ( )</a>  ⇒ <span style = "color: gray">void</span>** 
-
-
-
- <span style = "color: gray">*No description available.*</span> 
+The placeholder text to show in the line edit.
 
 ---
+
+
+
+<a class="header" id="property-default" href="#property-default">**<span class="hljs-attribute">var</span> <span class="hljs-title">default</span> <span style = "color: gray"> = </span> ""** 
+
+
+
+The value that should be in the line edit by default.
+
+---
+
+
+
+<a class="header" id="property-allow_empty" href="#property-allow_empty">**<span class="hljs-attribute">var</span> <span class="hljs-title">allow_empty</span> <span style = "color: gray"> = </span> false** 
+
+
+
+If true, the player can continue if nothing is entered.
+
+---
+
+## Method Descriptions
 
 
 
@@ -104,6 +94,16 @@ The name/path of the variable to set.
 
 
 <a class="header" id="method-get_shortcode_parameters" href="#method-get_shortcode_parameters">**<span class="hljs-attribute">func</span> [<span class="hljs-title">get_shortcode_parameters</span>](#method-get_shortcode_parameters) ( )</a>  ⇒ <span class="hljs-attribute">[Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html#class-dictionary)</span>** 
+
+
+
+ <span style = "color: gray">*No description available.*</span> 
+
+---
+
+
+
+<a class="header" id="method-build_event_editor" href="#method-build_event_editor">**<span class="hljs-attribute">func</span> [<span class="hljs-title">build_event_editor</span>](#method-build_event_editor) ( )</a>  ⇒ <span style = "color: gray">void</span>** 
 
 
 

@@ -12,54 +12,59 @@ Base event class for all dialogic events. Implements basic properties, translati
 ## Properties
 Name | Type | Default 
 --- | --- | --- 
-[<span class="hljs-title">can_contain_events</span>](#property-can_contain_events) | [bool](https://docs.godotengine.org/en/latest/classes/class_bool.html#class-bool) |  `false` 
-[<span class="hljs-title">created_by_button</span>](#property-created_by_button) | [bool](https://docs.godotengine.org/en/latest/classes/class_bool.html#class-bool) |  `false` 
-[<span class="hljs-title">dialogic</span>](#property-dialogic) | [DialogicGameHandler](class_dialogicgamehandler.md) |  `null` 
-[<span class="hljs-title">dialogic_color_name</span>](#property-dialogic_color_name) | [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) |  `""` 
-[<span class="hljs-title">disable_editor_button</span>](#property-disable_editor_button) | [bool](https://docs.godotengine.org/en/latest/classes/class_bool.html#class-bool) |  `false` 
-[<span class="hljs-title">editor_list</span>](#property-editor_list) | [Array](https://docs.godotengine.org/en/latest/classes/class_array.html#class-array) |   
-[<span class="hljs-title">empty_lines_above</span>](#property-empty_lines_above) | [int](https://docs.godotengine.org/en/latest/classes/class_int.html#class-int) |  `0` 
-[<span class="hljs-title">end_branch_event</span>](#property-end_branch_event) | [DialogicEndBranchEvent](class_dialogicendbranchevent.md) |  `null` 
-[<span class="hljs-title">event_category</span>](#property-event_category) | [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) |  `"Other"` 
-[<span class="hljs-title">event_color</span>](#property-event_color) | [Color](https://docs.godotengine.org/en/latest/classes/class_color.html#class-color) |  `Color(0.984314, 0.694118, 0.235294, 1)` 
 [<span class="hljs-title">event_name</span>](#property-event_name) | [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) |  `"Event"` 
+[<span class="hljs-title">dialogic</span>](#property-dialogic) | [DialogicGameHandler](class_dialogicgamehandler.md) |  `null` 
+[<span class="hljs-title">needs_indentation</span>](#property-needs_indentation) | [bool](https://docs.godotengine.org/en/latest/classes/class_bool.html#class-bool) |  `false` 
+[<span class="hljs-title">can_contain_events</span>](#property-can_contain_events) | [bool](https://docs.godotengine.org/en/latest/classes/class_bool.html#class-bool) |  `false` 
+[<span class="hljs-title">end_branch_event</span>](#property-end_branch_event) | [DialogicEndBranchEvent](class_dialogicendbranchevent.md) |  `null` 
+[<span class="hljs-title">wants_to_group</span>](#property-wants_to_group) | [bool](https://docs.godotengine.org/en/latest/classes/class_bool.html#class-bool) |  `false` 
 [<span class="hljs-title">event_node_as_text</span>](#property-event_node_as_text) | [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) |  `""` 
 [<span class="hljs-title">event_node_ready</span>](#property-event_node_ready) | [bool](https://docs.godotengine.org/en/latest/classes/class_bool.html#class-bool) |  `false` 
+[<span class="hljs-title">empty_lines_above</span>](#property-empty_lines_above) | [int](https://docs.godotengine.org/en/latest/classes/class_int.html#class-int) |  `0` 
+[<span class="hljs-title">event_color</span>](#property-event_color) | [Color](https://docs.godotengine.org/en/latest/classes/class_color.html#class-color) |  `Color(0.984314, 0.694118, 0.235294, 1)` 
+[<span class="hljs-title">dialogic_color_name</span>](#property-dialogic_color_name) | [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) |  `""` 
 [<span class="hljs-title">event_sorting_index</span>](#property-event_sorting_index) | [int](https://docs.godotengine.org/en/latest/classes/class_int.html#class-int) |  `0` 
+[<span class="hljs-title">disable_editor_button</span>](#property-disable_editor_button) | [bool](https://docs.godotengine.org/en/latest/classes/class_bool.html#class-bool) |  `false` 
 [<span class="hljs-title">expand_by_default</span>](#property-expand_by_default) | [bool](https://docs.godotengine.org/en/latest/classes/class_bool.html#class-bool) |  `false` 
 [<span class="hljs-title">help_page_path</span>](#property-help_page_path) | [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) |  `""` 
-[<span class="hljs-title">needs_indentation</span>](#property-needs_indentation) | [bool](https://docs.godotengine.org/en/latest/classes/class_bool.html#class-bool) |  `false` 
-[<span class="hljs-title">wants_to_group</span>](#property-wants_to_group) | [bool](https://docs.godotengine.org/en/latest/classes/class_bool.html#class-bool) |  `false` 
+[<span class="hljs-title">created_by_button</span>](#property-created_by_button) | [bool](https://docs.godotengine.org/en/latest/classes/class_bool.html#class-bool) |  `false` 
+[<span class="hljs-title">editor_node</span>](#property-editor_node) | [Control](https://docs.godotengine.org/en/latest/classes/class_control.html#class-control) |  `null` 
+[<span class="hljs-title">event_category</span>](#property-event_category) | [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) |  `"Other"` 
+[<span class="hljs-title">editor_list</span>](#property-editor_list) | [Array](https://docs.godotengine.org/en/latest/classes/class_array.html#class-array) |  `[]` 
+[<span class="hljs-title">this_folder</span>](#property-this_folder) | [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) |  `get_base_dir()` 
 --- 
 
 ## Methods
 Returns | Method 
 --- | --- 
-<span style = "color: gray">void</span> | [<span class="hljs-title">add_body_edit</span>](#method-add_body_edit) ( `variable`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string), `editor_type`: [int](https://docs.godotengine.org/en/latest/classes/class_int.html#class-int) = `16`, `extra_info`: [Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html#class-dictionary) = `<unknown>`, `condition`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) = `""` ) 
-<span style = "color: gray">void</span> | [<span class="hljs-title">add_body_line_break</span>](#method-add_body_line_break) ( `condition`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) = `""` ) 
-<span style = "color: gray">void</span> | [<span class="hljs-title">add_header_button</span>](#method-add_header_button) ( `text`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string), `callable`: [Callable](https://docs.godotengine.org/en/latest/classes/class_callable.html#class-callable), `tooltip`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string), `icon`: [Variant](https://docs.godotengine.org/en/latest/classes/class_variant.html#class-variant) = `null`, `condition`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) = `""` ) 
-<span style = "color: gray">void</span> | [<span class="hljs-title">add_header_edit</span>](#method-add_header_edit) ( `variable`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string), `editor_type`: [int](https://docs.godotengine.org/en/latest/classes/class_int.html#class-int) = `16`, `extra_info`: [Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html#class-dictionary) = `<unknown>`, `condition`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) = `""` ) 
-<span style = "color: gray">void</span> | [<span class="hljs-title">add_header_label</span>](#method-add_header_label) ( `text`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string), `condition`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) = `""` ) 
-<span class="hljs-attribute">[String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string)</span> | [<span class="hljs-title">add_translation_id</span>](#method-add_translation_id) ( ) 
-<span style = "color: gray">void</span> | [<span class="hljs-title">build_event_editor</span>](#method-build_event_editor) ( ) 
-<span class="hljs-attribute">[bool](https://docs.godotengine.org/en/latest/classes/class_bool.html#class-bool)</span> | [<span class="hljs-title">can_be_translated</span>](#method-can_be_translated) ( ) 
 <span style = "color: gray">void</span> | [<span class="hljs-title">execute</span>](#method-execute) ( `_dialogic_game_handler`: [Variant](https://docs.godotengine.org/en/latest/classes/class_variant.html#class-variant) ) 
 <span style = "color: gray">void</span> | [<span class="hljs-title">finish</span>](#method-finish) ( ) 
-<span style = "color: gray">void</span> | [<span class="hljs-title">from_text</span>](#method-from_text) ( `string`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) ) 
 <span class="hljs-attribute">[Control](https://docs.godotengine.org/en/latest/classes/class_control.html#class-control)</span> | [<span class="hljs-title">get_end_branch_control</span>](#method-get_end_branch_control) ( ) 
-<span class="hljs-attribute">[Array](https://docs.godotengine.org/en/latest/classes/class_array.html#class-array)</span> | [<span class="hljs-title">get_event_editor_info</span>](#method-get_event_editor_info) ( ) 
-<span class="hljs-attribute">[String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string)</span> | [<span class="hljs-title">get_property_translated</span>](#method-get_property_translated) ( `property_name`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) ) 
+<span class="hljs-attribute">[bool](https://docs.godotengine.org/en/latest/classes/class_bool.html#class-bool)</span> | [<span class="hljs-title">should_execute_this_branch</span>](#method-should_execute_this_branch) ( ) 
+<span class="hljs-attribute">[bool](https://docs.godotengine.org/en/latest/classes/class_bool.html#class-bool)</span> | [<span class="hljs-title">can_be_translated</span>](#method-can_be_translated) ( ) 
+<span class="hljs-attribute">[String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string)</span> | [<span class="hljs-title">add_translation_id</span>](#method-add_translation_id) ( ) 
+<span style = "color: gray">void</span> | [<span class="hljs-title">remove_translation_id</span>](#method-remove_translation_id) ( ) 
 <span class="hljs-attribute">[String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string)</span> | [<span class="hljs-title">get_property_translation_key</span>](#method-get_property_translation_key) ( `property_name`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) ) 
+<span class="hljs-attribute">[String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string)</span> | [<span class="hljs-title">get_property_translated</span>](#method-get_property_translated) ( `property_name`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) ) 
+<span style = "color: gray">void</span> | [<span class="hljs-title">update_text_version</span>](#method-update_text_version) ( ) 
 <span class="hljs-attribute">[String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string)</span> | [<span class="hljs-title">get_shortcode</span>](#method-get_shortcode) ( ) 
 <span class="hljs-attribute">[Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html#class-dictionary)</span> | [<span class="hljs-title">get_shortcode_parameters</span>](#method-get_shortcode_parameters) ( ) 
-<span class="hljs-attribute">[bool](https://docs.godotengine.org/en/latest/classes/class_bool.html#class-bool)</span> | [<span class="hljs-title">is_string_full_event</span>](#method-is_string_full_event) ( `string`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) ) 
-<span class="hljs-attribute">[bool](https://docs.godotengine.org/en/latest/classes/class_bool.html#class-bool)</span> | [<span class="hljs-title">is_valid_event</span>](#method-is_valid_event) ( `string`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) ) 
-<span class="hljs-attribute">[Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html#class-dictionary)</span> | [<span class="hljs-title">parse_shortcode_parameters</span>](#method-parse_shortcode_parameters) ( `shortcode`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) ) 
-<span style = "color: gray">void</span> | [<span class="hljs-title">remove_translation_id</span>](#method-remove_translation_id) ( ) 
-<span style = "color: gray">void</span> | [<span class="hljs-title">set_default_color</span>](#method-set_default_color) ( `value`: [Variant](https://docs.godotengine.org/en/latest/classes/class_variant.html#class-variant) ) 
-<span class="hljs-attribute">[bool](https://docs.godotengine.org/en/latest/classes/class_bool.html#class-bool)</span> | [<span class="hljs-title">should_execute_this_branch</span>](#method-should_execute_this_branch) ( ) 
 <span class="hljs-attribute">[String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string)</span> | [<span class="hljs-title">to_text</span>](#method-to_text) ( ) 
-<span style = "color: gray">void</span> | [<span class="hljs-title">update_text_version</span>](#method-update_text_version) ( ) 
+<span style = "color: gray">void</span> | [<span class="hljs-title">from_text</span>](#method-from_text) ( `string`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) ) 
+<span class="hljs-attribute">[String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string)</span> | [<span class="hljs-title">store_to_shortcode_parameters</span>](#method-store_to_shortcode_parameters) ( `params`: [Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html#class-dictionary) = `{}` ) 
+<span class="hljs-attribute">[String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string)</span> | [<span class="hljs-title">value_to_string</span>](#method-value_to_string) ( `value`: [Variant](https://docs.godotengine.org/en/latest/classes/class_variant.html#class-variant), `suggestions`: [Callable](https://docs.godotengine.org/en/latest/classes/class_callable.html#class-callable) = `Callable()` ) 
+<span style = "color: gray">void</span> | [<span class="hljs-title">load_from_shortcode_parameters</span>](#method-load_from_shortcode_parameters) ( `string`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) ) 
+<span class="hljs-attribute">[bool](https://docs.godotengine.org/en/latest/classes/class_bool.html#class-bool)</span> | [<span class="hljs-title">is_valid_event</span>](#method-is_valid_event) ( `string`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) ) 
+<span class="hljs-attribute">[bool](https://docs.godotengine.org/en/latest/classes/class_bool.html#class-bool)</span> | [<span class="hljs-title">is_string_full_event</span>](#method-is_string_full_event) ( `string`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) ) 
+<span class="hljs-attribute">[Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html#class-dictionary)</span> | [<span class="hljs-title">parse_shortcode_parameters</span>](#method-parse_shortcode_parameters) ( `shortcode`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) ) 
+<span style = "color: gray">void</span> | [<span class="hljs-title">set_default_color</span>](#method-set_default_color) ( `value`: [Variant](https://docs.godotengine.org/en/latest/classes/class_variant.html#class-variant) ) 
+<span class="hljs-attribute">[Array](https://docs.godotengine.org/en/latest/classes/class_array.html#class-array)</span> | [<span class="hljs-title">get_event_editor_info</span>](#method-get_event_editor_info) ( ) 
+<span style = "color: gray">void</span> | [<span class="hljs-title">build_event_editor</span>](#method-build_event_editor) ( ) 
+<span style = "color: gray">void</span> | [<span class="hljs-title">add_header_label</span>](#method-add_header_label) ( `text`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string), `condition`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) = `""` ) 
+<span style = "color: gray">void</span> | [<span class="hljs-title">add_header_edit</span>](#method-add_header_edit) ( `variable`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string), `editor_type`: [int](https://docs.godotengine.org/en/latest/classes/class_int.html#class-int) = `16`, `extra_info`: [Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html#class-dictionary) = `{}`, `condition`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) = `""` ) 
+<span style = "color: gray">void</span> | [<span class="hljs-title">add_header_button</span>](#method-add_header_button) ( `text`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string), `callable`: [Callable](https://docs.godotengine.org/en/latest/classes/class_callable.html#class-callable), `tooltip`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string), `icon`: [Variant](https://docs.godotengine.org/en/latest/classes/class_variant.html#class-variant) = `null`, `condition`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) = `""` ) 
+<span style = "color: gray">void</span> | [<span class="hljs-title">add_body_edit</span>](#method-add_body_edit) ( `variable`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string), `editor_type`: [int](https://docs.godotengine.org/en/latest/classes/class_int.html#class-int) = `16`, `extra_info`: [Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html#class-dictionary) = `{}`, `condition`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) = `""` ) 
+<span style = "color: gray">void</span> | [<span class="hljs-title">add_body_line_break</span>](#method-add_body_line_break) ( `condition`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) = `""` ) 
 --- 
 ## Constants
 
@@ -234,17 +239,16 @@ Returns | Method
 
 ---
 
-## Signals
 
-
-<a class="header" id="signal-event_finished" href="#signal-event_finished">**<span class="hljs-attribute">signal</span> [<span class="hljs-title">event_finished</span>](#signal-event_finished) ( `event_resource`: [DialogicEvent](class_dialogicevent.md) )** </a>
+<a class="header" id="constant-COLOR" href="#constant-COLOR">**<span class="hljs-attribute">const</span> <span class="hljs-title">COLOR</span><span class="hljs-comment"> = 17</span>**</a>
 
 
 
- Emmited when the event finish. The signal is emmited with the event resource event_resource[/code] 
+ <span style = "color: gray">*No description available.*</span> 
 
 ---
 
+## Signals
 
 
 <a class="header" id="signal-event_started" href="#signal-event_started">**<span class="hljs-attribute">signal</span> [<span class="hljs-title">event_started</span>](#signal-event_started) ( `event_resource`: [DialogicEvent](class_dialogicevent.md) )** </a>
@@ -252,6 +256,16 @@ Returns | Method
 
 
  Emmited when the event starts. The signal is emmited with the event resource event_resource[/code] 
+
+---
+
+
+
+<a class="header" id="signal-event_finished" href="#signal-event_finished">**<span class="hljs-attribute">signal</span> [<span class="hljs-title">event_finished</span>](#signal-event_finished) ( `event_resource`: [DialogicEvent](class_dialogicevent.md) )** </a>
+
+
+
+ Emmited when the event finish. The signal is emmited with the event resource event_resource[/code] 
 
 ---
 
@@ -279,21 +293,11 @@ Returns | Method
 
 
 
-<a class="header" id="property-can_contain_events" href="#property-can_contain_events">**<span class="hljs-attribute">var</span> <span class="hljs-title">can_contain_events</span> <span style = "color: gray"> = </span> false** 
+<a class="header" id="property-event_name" href="#property-event_name">**<span class="hljs-attribute">var</span> <span class="hljs-title">event_name</span> <span style = "color: gray"> = </span> "Event"** 
 
 
 
-If true this event will spawn with an END BRANCH event and higher the indentation
-
----
-
-
-
-<a class="header" id="property-created_by_button" href="#property-created_by_button">**<span class="hljs-attribute">var</span> <span class="hljs-title">created_by_button</span> <span style = "color: gray"> = </span> false** 
-
-
-
-Is the event block created by a button?
+The event name that'll be displayed in the editor.
 
 ---
 
@@ -309,41 +313,21 @@ A reference to dialogic during execution, can be used the same as Dialogic (refe
 
 
 
-<a class="header" id="property-dialogic_color_name" href="#property-dialogic_color_name">**<span class="hljs-attribute">var</span> <span class="hljs-title">dialogic_color_name</span> <span style = "color: gray"> = </span> ""** 
+<a class="header" id="property-needs_indentation" href="#property-needs_indentation">**<span class="hljs-attribute">var</span> <span class="hljs-title">needs_indentation</span> <span style = "color: gray"> = </span> false** 
 
 
 
-If you are using the default color palette
-
----
-
-
-
-<a class="header" id="property-disable_editor_button" href="#property-disable_editor_button">**<span class="hljs-attribute">var</span> <span class="hljs-title">disable_editor_button</span> <span style = "color: gray"> = </span> false** 
-
-
-
-If true the event will not have a button in the visual editor sidebar
+If true this event can not be toplevel (e.g. Choice)
 
 ---
 
 
 
-<a class="header" id="property-editor_list" href="#property-editor_list">**<span class="hljs-attribute">var</span> <span class="hljs-title">editor_list</span> <span style = "color: gray"> = </span> <unknown>** 
+<a class="header" id="property-can_contain_events" href="#property-can_contain_events">**<span class="hljs-attribute">var</span> <span class="hljs-title">can_contain_events</span> <span style = "color: gray"> = </span> false** 
 
 
 
-List that stores the fields for the editor
-
----
-
-
-
-<a class="header" id="property-empty_lines_above" href="#property-empty_lines_above">**<span class="hljs-attribute">var</span> <span class="hljs-title">empty_lines_above</span> <span style = "color: gray"> = </span> 0** 
-
-
-
-How many empty lines are before this event
+If true this event will spawn with an END BRANCH event and higher the indentation
 
 ---
 
@@ -359,31 +343,11 @@ If  is true this is a reference to the end branch event
 
 
 
-<a class="header" id="property-event_category" href="#property-event_category">**<span class="hljs-attribute">var</span> <span class="hljs-title">event_category</span> <span style = "color: gray"> = </span> "Other"** 
+<a class="header" id="property-wants_to_group" href="#property-wants_to_group">**<span class="hljs-attribute">var</span> <span class="hljs-title">wants_to_group</span> <span style = "color: gray"> = </span> false** 
 
 
 
-The categories and which one to put it in (in the visual editor sidebar)
-
----
-
-
-
-<a class="header" id="property-event_color" href="#property-event_color">**<span class="hljs-attribute">var</span> <span class="hljs-title">event_color</span> <span style = "color: gray"> = </span> Color(0.984314, 0.694118, 0.235294, 1)** 
-
-
-
-The event color that event node will take in the editor
-
----
-
-
-
-<a class="header" id="property-event_name" href="#property-event_name">**<span class="hljs-attribute">var</span> <span class="hljs-title">event_name</span> <span style = "color: gray"> = </span> "Event"** 
-
-
-
-The event name that'll be displayed in the editor.
+If this is true this event will group with other similar events (like choices do).
 
 ---
 
@@ -409,11 +373,51 @@ Flags if the event has been processed or is only stored as text
 
 
 
+<a class="header" id="property-empty_lines_above" href="#property-empty_lines_above">**<span class="hljs-attribute">var</span> <span class="hljs-title">empty_lines_above</span> <span style = "color: gray"> = </span> 0** 
+
+
+
+How many empty lines are before this event
+
+---
+
+
+
+<a class="header" id="property-event_color" href="#property-event_color">**<span class="hljs-attribute">var</span> <span class="hljs-title">event_color</span> <span style = "color: gray"> = </span> Color(0.984314, 0.694118, 0.235294, 1)** 
+
+
+
+The event color that event node will take in the editor
+
+---
+
+
+
+<a class="header" id="property-dialogic_color_name" href="#property-dialogic_color_name">**<span class="hljs-attribute">var</span> <span class="hljs-title">dialogic_color_name</span> <span style = "color: gray"> = </span> ""** 
+
+
+
+If you are using the default color palette
+
+---
+
+
+
 <a class="header" id="property-event_sorting_index" href="#property-event_sorting_index">**<span class="hljs-attribute">var</span> <span class="hljs-title">event_sorting_index</span> <span style = "color: gray"> = </span> 0** 
 
 
 
 To sort the buttons shown in the editor. Lower index is placed at the top of a category
+
+---
+
+
+
+<a class="header" id="property-disable_editor_button" href="#property-disable_editor_button">**<span class="hljs-attribute">var</span> <span class="hljs-title">disable_editor_button</span> <span style = "color: gray"> = </span> false** 
+
+
+
+If true the event will not have a button in the visual editor sidebar
 
 ---
 
@@ -439,105 +443,55 @@ The URL to open when right_click>Documentation is selected
 
 
 
-<a class="header" id="property-needs_indentation" href="#property-needs_indentation">**<span class="hljs-attribute">var</span> <span class="hljs-title">needs_indentation</span> <span style = "color: gray"> = </span> false** 
+<a class="header" id="property-created_by_button" href="#property-created_by_button">**<span class="hljs-attribute">var</span> <span class="hljs-title">created_by_button</span> <span style = "color: gray"> = </span> false** 
 
 
 
-If true this event can not be toplevel (e.g. Choice)
+Is the event block created by a button?
 
 ---
 
 
 
-<a class="header" id="property-wants_to_group" href="#property-wants_to_group">**<span class="hljs-attribute">var</span> <span class="hljs-title">wants_to_group</span> <span style = "color: gray"> = </span> false** 
+<a class="header" id="property-editor_node" href="#property-editor_node">**<span class="hljs-attribute">var</span> <span class="hljs-title">editor_node</span> <span style = "color: gray"> = </span> null** 
 
 
 
-If this is true this event will group with other similar events (like choices do).
+Reference to the node, that represents this event. Only works while in visual editor mode. Use with care.
+
+---
+
+
+
+<a class="header" id="property-event_category" href="#property-event_category">**<span class="hljs-attribute">var</span> <span class="hljs-title">event_category</span> <span style = "color: gray"> = </span> "Other"** 
+
+
+
+The categories and which one to put it in (in the visual editor sidebar)
+
+---
+
+
+
+<a class="header" id="property-editor_list" href="#property-editor_list">**<span class="hljs-attribute">var</span> <span class="hljs-title">editor_list</span> <span style = "color: gray"> = </span> []** 
+
+
+
+List that stores the fields for the editor
+
+---
+
+
+
+<a class="header" id="property-this_folder" href="#property-this_folder">**<span class="hljs-attribute">var</span> <span class="hljs-title">this_folder</span> <span style = "color: gray"> = </span> get_base_dir()** 
+
+
+
+ <span style = "color: gray">*No description available.*</span> 
 
 ---
 
 ## Method Descriptions
-
-
-
-<a class="header" id="method-add_body_edit" href="#method-add_body_edit">**<span class="hljs-attribute">func</span> [<span class="hljs-title">add_body_edit</span>](#method-add_body_edit) ( `variable`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string), `editor_type`: [int](https://docs.godotengine.org/en/latest/classes/class_int.html#class-int) = `16`, `extra_info`: [Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html#class-dictionary) = `<unknown>`, `condition`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) = `""` )</a>  ⇒ <span style = "color: gray">void</span>** 
-
-
-
- <span style = "color: gray">*No description available.*</span> 
-
----
-
-
-
-<a class="header" id="method-add_body_line_break" href="#method-add_body_line_break">**<span class="hljs-attribute">func</span> [<span class="hljs-title">add_body_line_break</span>](#method-add_body_line_break) ( `condition`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) = `""` )</a>  ⇒ <span style = "color: gray">void</span>** 
-
-
-
- <span style = "color: gray">*No description available.*</span> 
-
----
-
-
-
-<a class="header" id="method-add_header_button" href="#method-add_header_button">**<span class="hljs-attribute">func</span> [<span class="hljs-title">add_header_button</span>](#method-add_header_button) ( `text`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string), `callable`: [Callable](https://docs.godotengine.org/en/latest/classes/class_callable.html#class-callable), `tooltip`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string), `icon`: [Variant](https://docs.godotengine.org/en/latest/classes/class_variant.html#class-variant) = `null`, `condition`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) = `""` )</a>  ⇒ <span style = "color: gray">void</span>** 
-
-
-
- <span style = "color: gray">*No description available.*</span> 
-
----
-
-
-
-<a class="header" id="method-add_header_edit" href="#method-add_header_edit">**<span class="hljs-attribute">func</span> [<span class="hljs-title">add_header_edit</span>](#method-add_header_edit) ( `variable`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string), `editor_type`: [int](https://docs.godotengine.org/en/latest/classes/class_int.html#class-int) = `16`, `extra_info`: [Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html#class-dictionary) = `<unknown>`, `condition`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) = `""` )</a>  ⇒ <span style = "color: gray">void</span>** 
-
-
-
- <span style = "color: gray">*No description available.*</span> 
-
----
-
-
-
-<a class="header" id="method-add_header_label" href="#method-add_header_label">**<span class="hljs-attribute">func</span> [<span class="hljs-title">add_header_label</span>](#method-add_header_label) ( `text`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string), `condition`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) = `""` )</a>  ⇒ <span style = "color: gray">void</span>** 
-
-
-
- <span style = "color: gray">*No description available.*</span> 
-
----
-
-
-
-<a class="header" id="method-add_translation_id" href="#method-add_translation_id">**<span class="hljs-attribute">func</span> [<span class="hljs-title">add_translation_id</span>](#method-add_translation_id) ( )</a>  ⇒ <span class="hljs-attribute">[String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string)</span>** 
-
-
-
-This is automatically called, no need to use this.
-
----
-
-
-
-<a class="header" id="method-build_event_editor" href="#method-build_event_editor">**<span class="hljs-attribute">func</span> [<span class="hljs-title">build_event_editor</span>](#method-build_event_editor) ( )</a>  ⇒ <span style = "color: gray">void</span>** 
-
-
-
-to be overwritten by the sub_classes
-
----
-
-
-
-<a class="header" id="method-can_be_translated" href="#method-can_be_translated">**<span class="hljs-attribute">func</span> [<span class="hljs-title">can_be_translated</span>](#method-can_be_translated) ( )</a>  ⇒ <span class="hljs-attribute">[bool](https://docs.godotengine.org/en/latest/classes/class_bool.html#class-bool)</span>** 
-
-
-
-Returns true if there is any translatable properties on this event. Overwrite [_get_translatable_properties()] to change this.
-
----
 
 
 
@@ -561,16 +515,6 @@ Ends the event behaviour.
 
 
 
-<a class="header" id="method-from_text" href="#method-from_text">**<span class="hljs-attribute">func</span> [<span class="hljs-title">from_text</span>](#method-from_text) ( `string`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) )</a>  ⇒ <span style = "color: gray">void</span>** 
-
-
-
-loads the variables from the string stored above by default it uses the shortcode format, but can be overridden
-
----
-
-
-
 <a class="header" id="method-get_end_branch_control" href="#method-get_end_branch_control">**<span class="hljs-attribute">func</span> [<span class="hljs-title">get_end_branch_control</span>](#method-get_end_branch_control) ( )</a>  ⇒ <span class="hljs-attribute">[Control](https://docs.godotengine.org/en/latest/classes/class_control.html#class-control)</span>** 
 
 
@@ -581,7 +525,47 @@ to be overridden by sub-classes only called if can_contain_events is true. retur
 
 
 
-<a class="header" id="method-get_event_editor_info" href="#method-get_event_editor_info">**<span class="hljs-attribute">func</span> [<span class="hljs-title">get_event_editor_info</span>](#method-get_event_editor_info) ( )</a>  ⇒ <span class="hljs-attribute">[Array](https://docs.godotengine.org/en/latest/classes/class_array.html#class-array)</span>** 
+<a class="header" id="method-should_execute_this_branch" href="#method-should_execute_this_branch">**<span class="hljs-attribute">func</span> [<span class="hljs-title">should_execute_this_branch</span>](#method-should_execute_this_branch) ( )</a>  ⇒ <span class="hljs-attribute">[bool](https://docs.godotengine.org/en/latest/classes/class_bool.html#class-bool)</span>** 
+
+
+
+to be overridden by sub-classes only called if can_contain_events is true and the previous event was an end-branch event return true if this event should be executed if the previous event was an end-branch event basically only important for the Condition event but who knows. Some day someone might need this.
+
+---
+
+
+
+<a class="header" id="method-can_be_translated" href="#method-can_be_translated">**<span class="hljs-attribute">func</span> [<span class="hljs-title">can_be_translated</span>](#method-can_be_translated) ( )</a>  ⇒ <span class="hljs-attribute">[bool](https://docs.godotengine.org/en/latest/classes/class_bool.html#class-bool)</span>** 
+
+
+
+Returns true if there is any translatable properties on this event. Overwrite [_get_translatable_properties()] to change this.
+
+---
+
+
+
+<a class="header" id="method-add_translation_id" href="#method-add_translation_id">**<span class="hljs-attribute">func</span> [<span class="hljs-title">add_translation_id</span>](#method-add_translation_id) ( )</a>  ⇒ <span class="hljs-attribute">[String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string)</span>** 
+
+
+
+This is automatically called, no need to use this.
+
+---
+
+
+
+<a class="header" id="method-remove_translation_id" href="#method-remove_translation_id">**<span class="hljs-attribute">func</span> [<span class="hljs-title">remove_translation_id</span>](#method-remove_translation_id) ( )</a>  ⇒ <span style = "color: gray">void</span>** 
+
+
+
+ <span style = "color: gray">*No description available.*</span> 
+
+---
+
+
+
+<a class="header" id="method-get_property_translation_key" href="#method-get_property_translation_key">**<span class="hljs-attribute">func</span> [<span class="hljs-title">get_property_translation_key</span>](#method-get_property_translation_key) ( `property_name`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) )</a>  ⇒ <span class="hljs-attribute">[String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string)</span>** 
 
 
 
@@ -601,11 +585,11 @@ Call this whenever you are using a translatable property
 
 
 
-<a class="header" id="method-get_property_translation_key" href="#method-get_property_translation_key">**<span class="hljs-attribute">func</span> [<span class="hljs-title">get_property_translation_key</span>](#method-get_property_translation_key) ( `property_name`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) )</a>  ⇒ <span class="hljs-attribute">[String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string)</span>** 
+<a class="header" id="method-update_text_version" href="#method-update_text_version">**<span class="hljs-attribute">func</span> [<span class="hljs-title">update_text_version</span>](#method-update_text_version) ( )</a>  ⇒ <span style = "color: gray">void</span>** 
 
 
 
- <span style = "color: gray">*No description available.*</span> 
+Call this if you updated an event and want the changes to be saved.
 
 ---
 
@@ -615,7 +599,7 @@ Call this whenever you are using a translatable property
 
 
 
-if this uses the short-code format, return the shortcode
+If this uses the short-code format, return the shortcode.
 
 ---
 
@@ -625,7 +609,67 @@ if this uses the short-code format, return the shortcode
 
 
 
-if this uses the short-code format, return the parameters and corresponding property names
+If this uses the short-code format, return the parameters and corresponding property names.
+
+---
+
+
+
+<a class="header" id="method-to_text" href="#method-to_text">**<span class="hljs-attribute">func</span> [<span class="hljs-title">to_text</span>](#method-to_text) ( )</a>  ⇒ <span class="hljs-attribute">[String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string)</span>** 
+
+
+
+Returns a readable presentation of the event (This is how it's stored). By default it uses a shortcode format, but can be overridden.
+
+---
+
+
+
+<a class="header" id="method-from_text" href="#method-from_text">**<span class="hljs-attribute">func</span> [<span class="hljs-title">from_text</span>](#method-from_text) ( `string`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) )</a>  ⇒ <span style = "color: gray">void</span>** 
+
+
+
+Loads the variables from the string stored by [to_text](#property-to_text). By default it uses the shortcode format, but can be overridden.
+
+---
+
+
+
+<a class="header" id="method-store_to_shortcode_parameters" href="#method-store_to_shortcode_parameters">**<span class="hljs-attribute">func</span> [<span class="hljs-title">store_to_shortcode_parameters</span>](#method-store_to_shortcode_parameters) ( `params`: [Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html#class-dictionary) = `{}` )</a>  ⇒ <span class="hljs-attribute">[String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string)</span>** 
+
+
+
+Returns a string with all the shortcode parameters.
+
+---
+
+
+
+<a class="header" id="method-value_to_string" href="#method-value_to_string">**<span class="hljs-attribute">func</span> [<span class="hljs-title">value_to_string</span>](#method-value_to_string) ( `value`: [Variant](https://docs.godotengine.org/en/latest/classes/class_variant.html#class-variant), `suggestions`: [Callable](https://docs.godotengine.org/en/latest/classes/class_callable.html#class-callable) = `Callable()` )</a>  ⇒ <span class="hljs-attribute">[String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string)</span>** 
+
+
+
+ <span style = "color: gray">*No description available.*</span> 
+
+---
+
+
+
+<a class="header" id="method-load_from_shortcode_parameters" href="#method-load_from_shortcode_parameters">**<span class="hljs-attribute">func</span> [<span class="hljs-title">load_from_shortcode_parameters</span>](#method-load_from_shortcode_parameters) ( `string`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) )</a>  ⇒ <span style = "color: gray">void</span>** 
+
+
+
+ <span style = "color: gray">*No description available.*</span> 
+
+---
+
+
+
+<a class="header" id="method-is_valid_event" href="#method-is_valid_event">**<span class="hljs-attribute">func</span> [<span class="hljs-title">is_valid_event</span>](#method-is_valid_event) ( `string`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) )</a>  ⇒ <span class="hljs-attribute">[bool](https://docs.godotengine.org/en/latest/classes/class_bool.html#class-bool)</span>** 
+
+
+
+Has to return `true`, if the given string can be interpreted as this event. By default it uses the shortcode formta, but can be overridden.
 
 ---
 
@@ -641,31 +685,11 @@ has to return true if this string seems to be a full event of this kind (only te
 
 
 
-<a class="header" id="method-is_valid_event" href="#method-is_valid_event">**<span class="hljs-attribute">func</span> [<span class="hljs-title">is_valid_event</span>](#method-is_valid_event) ( `string`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) )</a>  ⇒ <span class="hljs-attribute">[bool](https://docs.godotengine.org/en/latest/classes/class_bool.html#class-bool)</span>** 
-
-
-
-has to return true, if the given string can be interpreted as this event by default it uses the shortcode formta, but can be overridden
-
----
-
-
-
 <a class="header" id="method-parse_shortcode_parameters" href="#method-parse_shortcode_parameters">**<span class="hljs-attribute">func</span> [<span class="hljs-title">parse_shortcode_parameters</span>](#method-parse_shortcode_parameters) ( `shortcode`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) )</a>  ⇒ <span class="hljs-attribute">[Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html#class-dictionary)</span>** 
 
 
 
-used to get all the shortcode parameters in a string as a dictionary
-
----
-
-
-
-<a class="header" id="method-remove_translation_id" href="#method-remove_translation_id">**<span class="hljs-attribute">func</span> [<span class="hljs-title">remove_translation_id</span>](#method-remove_translation_id) ( )</a>  ⇒ <span style = "color: gray">void</span>** 
-
-
-
- <span style = "color: gray">*No description available.*</span> 
+Used to get all the shortcode parameters in a string as a dictionary.
 
 ---
 
@@ -681,31 +705,71 @@ used to get all the shortcode parameters in a string as a dictionary
 
 
 
-<a class="header" id="method-should_execute_this_branch" href="#method-should_execute_this_branch">**<span class="hljs-attribute">func</span> [<span class="hljs-title">should_execute_this_branch</span>](#method-should_execute_this_branch) ( )</a>  ⇒ <span class="hljs-attribute">[bool](https://docs.godotengine.org/en/latest/classes/class_bool.html#class-bool)</span>** 
+<a class="header" id="method-get_event_editor_info" href="#method-get_event_editor_info">**<span class="hljs-attribute">func</span> [<span class="hljs-title">get_event_editor_info</span>](#method-get_event_editor_info) ( )</a>  ⇒ <span class="hljs-attribute">[Array](https://docs.godotengine.org/en/latest/classes/class_array.html#class-array)</span>** 
 
 
 
-to be overridden by sub-classes only called if can_contain_events is true and the previous event was an end-branch event return true if this event should be executed if the previous event was an end-branch event basically only important for the Condition event but who knows. Some day someone might need this.
-
----
-
-
-
-<a class="header" id="method-to_text" href="#method-to_text">**<span class="hljs-attribute">func</span> [<span class="hljs-title">to_text</span>](#method-to_text) ( )</a>  ⇒ <span class="hljs-attribute">[String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string)</span>** 
-
-
-
-returns a readable presentation of the event (This is how it's stored) by default it uses a shortcode format, but can be overridden
+ <span style = "color: gray">*No description available.*</span> 
 
 ---
 
 
 
-<a class="header" id="method-update_text_version" href="#method-update_text_version">**<span class="hljs-attribute">func</span> [<span class="hljs-title">update_text_version</span>](#method-update_text_version) ( )</a>  ⇒ <span style = "color: gray">void</span>** 
+<a class="header" id="method-build_event_editor" href="#method-build_event_editor">**<span class="hljs-attribute">func</span> [<span class="hljs-title">build_event_editor</span>](#method-build_event_editor) ( )</a>  ⇒ <span style = "color: gray">void</span>** 
 
 
 
-Call this if you updated an event and want the changes to be saved.
+to be overwritten by the sub_classes
+
+---
+
+
+
+<a class="header" id="method-add_header_label" href="#method-add_header_label">**<span class="hljs-attribute">func</span> [<span class="hljs-title">add_header_label</span>](#method-add_header_label) ( `text`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string), `condition`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) = `""` )</a>  ⇒ <span style = "color: gray">void</span>** 
+
+
+
+ <span style = "color: gray">*No description available.*</span> 
+
+---
+
+
+
+<a class="header" id="method-add_header_edit" href="#method-add_header_edit">**<span class="hljs-attribute">func</span> [<span class="hljs-title">add_header_edit</span>](#method-add_header_edit) ( `variable`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string), `editor_type`: [int](https://docs.godotengine.org/en/latest/classes/class_int.html#class-int) = `16`, `extra_info`: [Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html#class-dictionary) = `{}`, `condition`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) = `""` )</a>  ⇒ <span style = "color: gray">void</span>** 
+
+
+
+ <span style = "color: gray">*No description available.*</span> 
+
+---
+
+
+
+<a class="header" id="method-add_header_button" href="#method-add_header_button">**<span class="hljs-attribute">func</span> [<span class="hljs-title">add_header_button</span>](#method-add_header_button) ( `text`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string), `callable`: [Callable](https://docs.godotengine.org/en/latest/classes/class_callable.html#class-callable), `tooltip`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string), `icon`: [Variant](https://docs.godotengine.org/en/latest/classes/class_variant.html#class-variant) = `null`, `condition`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) = `""` )</a>  ⇒ <span style = "color: gray">void</span>** 
+
+
+
+ <span style = "color: gray">*No description available.*</span> 
+
+---
+
+
+
+<a class="header" id="method-add_body_edit" href="#method-add_body_edit">**<span class="hljs-attribute">func</span> [<span class="hljs-title">add_body_edit</span>](#method-add_body_edit) ( `variable`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string), `editor_type`: [int](https://docs.godotengine.org/en/latest/classes/class_int.html#class-int) = `16`, `extra_info`: [Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html#class-dictionary) = `{}`, `condition`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) = `""` )</a>  ⇒ <span style = "color: gray">void</span>** 
+
+
+
+ <span style = "color: gray">*No description available.*</span> 
+
+---
+
+
+
+<a class="header" id="method-add_body_line_break" href="#method-add_body_line_break">**<span class="hljs-attribute">func</span> [<span class="hljs-title">add_body_line_break</span>](#method-add_body_line_break) ( `condition`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) = `""` )</a>  ⇒ <span style = "color: gray">void</span>** 
+
+
+
+ <span style = "color: gray">*No description available.*</span> 
 
 ---
 
