@@ -30,6 +30,10 @@ The best way to create an extension is to use the extension creator in the dialo
 
 By clicking the `Create New Extension` button, you can set up an extension folder and a custom event script. Enter a name for the new module and select what you would like to add. Then click `Create`.
 
+```admonish warning
+Existing files will be overwritten!
+```
+
 ---
 
 ## 2. The essential part: `index.gd`
