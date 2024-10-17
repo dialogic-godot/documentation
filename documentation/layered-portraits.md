@@ -80,7 +80,11 @@ join Agustina center [extra_data="set Mouth/Happy"]
 update Agustina [extra_data="set Eyes/Wink, set Mouth/Laugh, set Clothes/Outfit2"]
 ```
 
-In the visual editor you can use the same commands in the "Extra Data" field.
+In the visual editor you can use the same commands in the "Extra Data" field:
+
+![](media/layered_portrait/character_join_extra_data.jpg)
+
+You can also control these layers using [Text Effects](./text-effects.md#extra-data-effect).
 
 ## 5.1. Layer Command Syntax
 
