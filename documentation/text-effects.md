@@ -106,6 +106,12 @@ Changes the portrait of the speaker to the portrait with the given name.
 
 Changes the typing mood to the one with the given name.
 
+### Extra Data Effect
+
+**Syntax:** `[extra_data=value]`
+
+Changes the extra data of the speaker to the given value.
+
 ---
 
 ## Auto-Advance Effect
