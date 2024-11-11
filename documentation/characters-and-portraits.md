@@ -43,6 +43,23 @@ The character resource has a number of settings:
 - **Sound Moods:**
   *A sound mood is a folder of sounds, and a random one is played for each letter these characters say. You can have different sound moods for different portraits.*
 
+#### 1.5 Text Prefix & Suffix
+
+Applying specific text segments before and after a spoken text by the character allows you to add quotation marks or rich tags.
+If you issue the player [multiple times to advance within a single Text Event](text-effects.md#effect-new-event), each message part will appear with Prefix and Suffix.
+
+- **Prefix:**
+  *Text that appears before character text via the Text Event.*
+
+- **Suffix:**
+  *Text that appears after character text via the Text Event.*
+
+```admonish info
+Custom tags do not make rich tags work automatically.
+
+Your Dialogic Style is responsible to support Rich Tags in the Text Box.
+By default, Dialogic's own Style Layers support Rich Tags in the Text Box.
+```
 ---
 
 ## 2. Portrait list
