@@ -126,7 +126,7 @@ Timelines use TAB indentation to know what events belong to a choice or conditio
 ## Example timeline
 
 ```dtl
-[background path="res://assets/backgroudns/dialogic_factory.png"]
+[background path="res://assets/backgrounds/dialogic_factory.png"]
 
 join Jowan left
 jowan (exited): Hello and welcome to[portrait=confused]...[pause=0.5] Wait? What is this?
