@@ -92,7 +92,7 @@ The preview shows the selected portrait (or nothing, if you don't have a portrai
 The portrait section consists of multiple sections, each containing settings for the currently selected portrait.
 
 The most important setting is the scene a portrait uses. The default scene allows you to select an image.
-However, you can also use the [Layered Portrait](layered-portrait.md) scene.
+However, you can also use the [Layered Portrait](layered-portraits.md) scene.
 
 Learn more about how to create a custom portrait here: [Custom portraits](custom-portraits.md)
 
