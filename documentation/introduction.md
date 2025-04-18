@@ -13,17 +13,18 @@ Dialogic 2 is still in-development and marked as Alpha, there may be workflow br
 
 ## What is Dialogic 2?
 
-The Dialogic plugin allows you to easily create in-game dialogs or fully fledged **Visual Novels** with Godot.
+The Dialogic plugin allows you to easily create **in-game dialogs** or fully fledged **Visual Novels** with Godot.
 
 Let's get an overview of what Dialogic 2 can do for you!
 
 ### 1. Timelines!
 
-They control the flow of your story. They can be edited in a writer-friendly **Visual Editor** or your editor of choice.
+Timelines represent your Dialogs. They are a list of events (e.g. text, conditions, animations, signals, etc.) and control the flow of your story. You can edit them in a writer-friendly **Visual Editor**, our very efficient **Text Editor** or any text editor of your choice.
 
+The **Visual Editor** has each event as a movable block with easy to use fields:
 ![Dialogic 2: Timeline in Visual Mode](media/introduction/visual_timeline.png)
 
-If you prefer to write your timelines as pure text, you can do that too! Dialogic even has a powerful text editor with autocompletion and syntax highlighting. You can use any text editor, though. Here is the same timeline in text format:
+The **Text Editor** allows you to write events in pure text format. It provides syntax highlighting and auto-completion making writing timelines super efficient. You can use any text editor, though. Here is the same timeline in the text format:
 
 ```dtl
 join juliet 1
@@ -33,10 +34,10 @@ romeo: Oh Juliet, it's simple...
 - Visual Novels
     jump VNs
 - JRPG
-    jump other_timeline
+    jump other_timeline/
 ```
 
-No threads attached; you can mix and match as you please!
+No strings attached; you can mix and match as you please!
 
 ### 2. Events
 
@@ -88,7 +89,7 @@ Need further details? Try the search or open an issue on the GitHub repository!
 
 There are several problems to overcome when upgrading from Dialogic 1.
 
-First, Dialogic 1 is exclusively for Godot 3, while Dialogic 2 requires Godot 4.1 or higher.
-Hence, your project must work in Godot 4.1, it's a very different engine with plenty of changes.
+First, Dialogic 1 is exclusively for Godot 3.x, while Dialogic 2 requires Godot 4.3 or higher.
+Hence, your project must work in that Godot version first, it's a very different engine with plenty of changes.
 
 If you have already made a lot of progress in your game, there is no reason to upgrade. We recommend you stick to Godot 3 and Dialogic 1.
