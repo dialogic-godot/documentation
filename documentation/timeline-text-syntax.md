@@ -129,7 +129,7 @@ Timelines use TAB indentation to know what events belong to a choice or conditio
 [background path="res://assets/backgrounds/dialogic_factory.png"]
 
 join Jowan left
-jowan (exited): Hello and welcome to[portrait=confused]...[pause=0.5] Wait? What is this?
+jowan (excited): Hello and welcome to[portrait=confused]...[pause=0.5] Wait? What is this?
 
 join Emilio (happy) right
 Emilio: Well, this is is the example timeline.
