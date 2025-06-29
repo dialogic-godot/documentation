@@ -22,7 +22,6 @@ While working on your project, you might encounter a bug or come up with an idea
 
 If your issue doesn’t exist, create it by pressing on the "New issue" button or by visiting [this page](https://github.com/dialogic-godot/dialogic/issues/new/choose). Remember to describe the issue in detail, including steps to reproduce it if it's a bug, the version of Godot and Dialogic you are using, or explaining why the new feature is beneficial. If it is a bug, it is extremely helpful to include a minimal code example that reproduces the issue, such as a small Godot+Dialogic project demonstrating the problem. This helps maintainers quickly identify the cause of the issue and fix it.
 
-Sure, here’s a more polished section on creating a pull request:
 
 ### Creating Pull Requests
 
