@@ -118,9 +118,9 @@ update agustina [extra_data="show Glasses/Normal, set Emote/Shock"]
 
 ## 6.1. My Portrait's Position is wrong
 
-The layered portrait calculate the combined size of all the layers. If your layers have different sizes/positions, make sure no layer extends further then needed. Try enabling all of your layers and select all nodes, you will be able to see all boundaries in the editor window of your scene.
+The layered portrait calculates the combined size of all the layers. If your layers have different sizes/positions, make sure no layer extends further than needed. Try enabling all of your layers and selecting all nodes; you will be able to see all boundaries in the editor window of your scene.
 
-By default the Layered Portraits scripts `fix_offset` parameter (in the inspector under Layered Portrait/Private/fix_offset) is on. This will adjust the position based on the first sprite on the assumption that it will be the base sprite. For many portraits that makes it easier, but for more granular control you can turn it off. In that case your sprites should be positioned so that the top-left corner of your character is at the scene origin!
+By default the Layered Portrait script's `fix_offset` parameter (in the inspector under Layered Portrait/Private/fix_offset) is on. This will adjust the position based on the first sprite on the assumption that it will be the base sprite. For many portraits, that makes it easier, but for more granular control, you can turn it off. In that case, your sprites should be positioned so that the top-left corner of your character is at the scene origin!
 
 ## 6.2 Do I have to use `CanvasGroup` as Root Node?
 
