@@ -101,6 +101,8 @@ func _init() -> void:
     event_category = "Godot"
 ```
 
+You can change the events icon by putting an `icon.svg` or `icon.png` file next to it's script, or by overwriting the `_get_icon()` method and returning a Texture2D. 
+
 ### 3.4 Saving & Loading (i.e. parsing, representation in timeline's text editor)
 
 We will cover working with shortcodes now. They are pretty much the text view of an event inside the timeline.
