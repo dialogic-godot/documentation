@@ -39,6 +39,8 @@ Dialogic's Auto-Advance class can be easily accessed via the Inputs subsystem an
 
 All of this functionality lives in `Dialogic.Inputs.auto_advance` an `DialogicAutoAdvance` object.
 
+Additionally, you can force an advance by emitting the `autoadvance` signal: `Dialogic.Inputs.auto_advance.autoadvance.emit()`.
+
 ### 3.1 Settings/Properties
 
 There are two types of settings/properties:
