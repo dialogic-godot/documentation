@@ -18,7 +18,7 @@ Dialogic's Manual-Advance class can be easily accessed via the Inputs subsystem 
 All of this functionality lives in `Dialogic.Inputs.Manual-Advance` an `DialogicManualAdvance` object.
 We can limit the player from interacting with the timeline to display a scripted timeline section.
 
-# 2.1 Limit Player Inputs via Code
+### 2.1 Limit Player Inputs via Code
 It's straightforward to script this behaviour. The following snippet showcases this:
 
 ```gdscript
