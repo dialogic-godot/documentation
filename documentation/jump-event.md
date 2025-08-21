@@ -22,8 +22,7 @@ jump
 
 Let's introduce labels using the Label event. This will print `Hello 1`, `Hello 2`, and `Hello 3`. After this, the jump will print `Hello 2` and `Hello 3`.
 
-```
-dtl
+```dtl
 character: Hello 1
 label your_label_name
 character: Hello 2
