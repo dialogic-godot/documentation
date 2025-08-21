@@ -9,6 +9,7 @@ You can also access the Dialogic variables from outside scripts.*
 To fully utilize these variables, this page contains all you need to know.
 
 ## 📜 Content
+
 [toc]
 
 ## 1. The Dialogic variable editor
@@ -46,8 +47,8 @@ In the visual editor, you can simply select the variable from the dropdown and c
 In conditions, you can use all the same tricks as in text events and a couple more:
 
 - Accessing autoloads: `Autoload.property`
-
- - In these conditions, Autoloads don't have to be wrapped in `{}` brackets.*
+  
+  - In these conditions, Autoloads don't have to be wrapped in `{}` brackets.*
 
 - Using autoload methods: `Autoload.check_info("Argument", false)`
 
@@ -133,6 +134,10 @@ You can also do so by string:
 ```gdscript
 Dialogic.VAR.set('my_variable', 20)
 print(Dialogic.VAR.get('Group').get('my_variable'))
+```
+
+```admonish Warning
+Variables are only accessible after the Dialogic autoload is ready, so do not use them before your nodes are ready either!
 ```
 
 Folders (as well as the root "folder") have some methods that might be useful:
