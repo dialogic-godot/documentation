@@ -27,6 +27,7 @@
 - [Input]()
   
   - [Auto-Advance](auto-advance.md)
+  - [Manual-Advance](manual-advance.md)
   - [Auto-Skip](auto-skip.md)
 
 - [Utilities]()
