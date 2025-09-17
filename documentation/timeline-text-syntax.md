@@ -55,10 +55,12 @@ update Emilio (excited) left [animation="Tada" wait="true" repeat="3" move_time=
 
 ### Choice event
 
+The `|` can be used to put logic behind the choice option.
+
 ```dtl
 - Yes
 - No | [if {John.Relationship} > 23]
-- Maybe | [if {Stats.Charisma} > 10] [else="disable" alt_text="Maybe [to insecure]"]
+- Maybe | [if {Stats.Charisma} > 10] [else="disable" alt_text="Maybe [too insecure]"]
 ```
 
 ### Condition event
