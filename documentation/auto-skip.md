@@ -45,6 +45,10 @@ If these settings are on, they tell dialogic to automatically disable Auto-Skip 
 
 - `disable_on_unread_text: bool` *If true (by default) dialogic will disable Auto-Skip when any unread text is reached.*
 
+```info
+`disable_on_unread_text` requires Dialogic's History feature to be enabled.
+```
+
 **Enable Condition**
 
 - `enable_on_seen: bool` *If true (by default) dialogic will enable Auto-Skip whenever a text event is reached that you visited before.*
