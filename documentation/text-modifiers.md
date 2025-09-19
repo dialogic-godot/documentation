@@ -72,7 +72,7 @@ func _get_text_modifiers() -> Array[Dictionary]:
         {
             "subsystem":"MySubsystem", 
              # alternatively do 
-             #"node_path":"root/MyAutoload",
+             #"node_path":"/root/MyAutoload",
             "method":"my_modifier_method", 
             "mode": -1}, #-1 = Text&Choice, 0 = TextsOnly, 1 = ChoicesOnly
     ]
