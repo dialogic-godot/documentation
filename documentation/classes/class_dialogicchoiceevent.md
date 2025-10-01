@@ -6,7 +6,7 @@
 *This contains the source code documentation of the class `DialogicChoiceEvent`.*
         
 # DialogicChoiceEvent
-**Inherits:** [DialogicEvent](class_dialogicevent.md)
+**Inherits:** [Resource](https://docs.godotengine.org/en/latest/classes/class_resource.html#class-resource)
 
 Event that allows adding choices. Needs to go after a text event (or another choices EndBranch).
 ## Properties
@@ -23,7 +23,6 @@ Name | Type | Default
 ## Methods
 Returns | Method 
 --- | --- 
-<span class="hljs-attribute">[Control](https://docs.godotengine.org/en/latest/classes/class_control.html#class-control)</span> | [<span class="hljs-title">get_end_branch_control</span>](#method-get_end_branch_control) ( ) 
 <span class="hljs-attribute">[String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string)</span> | [<span class="hljs-title">to_text</span>](#method-to_text) ( ) 
 <span style = "color: gray">void</span> | [<span class="hljs-title">from_text</span>](#method-from_text) ( `string`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) ) 
 <span class="hljs-attribute">[Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html#class-dictionary)</span> | [<span class="hljs-title">get_shortcode_parameters</span>](#method-get_shortcode_parameters) ( ) 
@@ -122,16 +121,6 @@ A dictionary that can be filled with arbitrary information This can then be inte
 ---
 
 ## Method Descriptions
-
-
-
-<a class="header" id="method-get_end_branch_control" href="#method-get_end_branch_control">**<span class="hljs-attribute">func</span> [<span class="hljs-title">get_end_branch_control</span>](#method-get_end_branch_control) ( )</a>  ⇒ <span class="hljs-attribute">[Control](https://docs.godotengine.org/en/latest/classes/class_control.html#class-control)</span>** 
-
-
-
- <span style = "color: gray">*No description available.*</span> 
-
----
 
 
 

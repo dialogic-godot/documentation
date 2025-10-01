@@ -8,11 +8,7 @@
 # DialogicGameHandler
 **Inherits:** [Node](https://docs.godotengine.org/en/latest/classes/class_node.html#class-node)
 
-Autoload script that allows you to interact with all of Dialogic's systems:
-- Holds all important information about the current state of Dialogic.
-- Provides access to all the subsystems.
-- Has methods to start/end timelines.
-
+Class that is used as the Dialogic autoload.
 ## Properties
 Name | Type | Default 
 --- | --- | --- 
@@ -22,17 +18,18 @@ Name | Type | Default
 [<span class="hljs-title">current_state_info</span>](#property-current_state_info) | [Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html#class-dictionary) |  `{}` 
 [<span class="hljs-title">current_state</span>](#property-current_state) | [int](https://docs.godotengine.org/en/latest/classes/class_int.html#class-int) |  `0` 
 [<span class="hljs-title">paused</span>](#property-paused) | [bool](https://docs.godotengine.org/en/latest/classes/class_bool.html#class-bool) |  `false` 
+[<span class="hljs-title">dialog_ending_timeline</span>](#property-dialog_ending_timeline) | [DialogicTimeline](class_dialogictimeline.md) |   
+[<span class="hljs-title">Animations</span>](#property-animations) | `Modules/Core/subsystem_animation.gd` |  `new()` 
 [<span class="hljs-title">Audio</span>](#property-audio) | `Modules/Audio/subsystem_audio.gd` |  `new()` 
 [<span class="hljs-title">Backgrounds</span>](#property-backgrounds) | `Modules/Background/subsystem_backgrounds.gd` |  `new()` 
-[<span class="hljs-title">Portraits</span>](#property-portraits) | `Modules/Character/subsystem_portraits.gd` |  `new()` 
-[<span class="hljs-title">PortraitContainers</span>](#property-portraitcontainers) | `Modules/Character/subsystem_containers.gd` |  `new()` 
 [<span class="hljs-title">Choices</span>](#property-choices) | `Modules/Choice/subsystem_choices.gd` |  `new()` 
 [<span class="hljs-title">Expressions</span>](#property-expressions) | `Modules/Core/subsystem_expression.gd` |  `new()` 
-[<span class="hljs-title">Animations</span>](#property-animations) | `Modules/Core/subsystem_animation.gd` |  `new()` 
-[<span class="hljs-title">Inputs</span>](#property-inputs) | `Modules/Core/subsystem_input.gd` |  `new()` 
 [<span class="hljs-title">Glossary</span>](#property-glossary) | `Modules/Glossary/subsystem_glossary.gd` |  `new()` 
 [<span class="hljs-title">History</span>](#property-history) | `Modules/History/subsystem_history.gd` |  `new()` 
+[<span class="hljs-title">Inputs</span>](#property-inputs) | `Modules/Core/subsystem_input.gd` |  `new()` 
 [<span class="hljs-title">Jump</span>](#property-jump) | `Modules/Jump/subsystem_jump.gd` |  `new()` 
+[<span class="hljs-title">PortraitContainers</span>](#property-portraitcontainers) | `Modules/Character/subsystem_containers.gd` |  `new()` 
+[<span class="hljs-title">Portraits</span>](#property-portraits) | `Modules/Character/subsystem_portraits.gd` |  `new()` 
 [<span class="hljs-title">Save</span>](#property-save) | `Modules/Save/subsystem_save.gd` |  `new()` 
 [<span class="hljs-title">Settings</span>](#property-settings) | `Modules/Settings/subsystem_settings.gd` |  `new()` 
 [<span class="hljs-title">Styles</span>](#property-styles) | `Modules/Style/subsystem_styles.gd` |  `new()` 
@@ -45,10 +42,11 @@ Name | Type | Default
 ## Methods
 Returns | Method 
 --- | --- 
-<span class="hljs-attribute">[Node](https://docs.godotengine.org/en/latest/classes/class_node.html#class-node)</span> | [<span class="hljs-title">start</span>](#method-start) ( `timeline`: [Variant](https://docs.godotengine.org/en/latest/classes/class_variant.html#class-variant), `label`: [Variant](https://docs.godotengine.org/en/latest/classes/class_variant.html#class-variant) = `""` ) 
+<span class="hljs-attribute">[Node](https://docs.godotengine.org/en/latest/classes/class_node.html#class-node)</span> | [<span class="hljs-title">start</span>](#method-start) ( `timeline`: [Variant](https://docs.godotengine.org/en/latest/classes/class_variant.html#class-variant), `label_or_idx`: [Variant](https://docs.godotengine.org/en/latest/classes/class_variant.html#class-variant) = `""` ) 
 <span style = "color: gray">void</span> | [<span class="hljs-title">start_timeline</span>](#method-start_timeline) ( `timeline`: [Variant](https://docs.godotengine.org/en/latest/classes/class_variant.html#class-variant), `label_or_idx`: [Variant](https://docs.godotengine.org/en/latest/classes/class_variant.html#class-variant) = `""` ) 
 <span class="hljs-attribute">[Variant](https://docs.godotengine.org/en/latest/classes/class_variant.html#class-variant)</span> | [<span class="hljs-title">preload_timeline</span>](#method-preload_timeline) ( `timeline_resource`: [Variant](https://docs.godotengine.org/en/latest/classes/class_variant.html#class-variant) ) 
-<span style = "color: gray">void</span> | [<span class="hljs-title">end_timeline</span>](#method-end_timeline) ( ) 
+<span style = "color: gray">void</span> | [<span class="hljs-title">end_timeline</span>](#method-end_timeline) ( `skip_ending`: [bool](https://docs.godotengine.org/en/latest/classes/class_bool.html#class-bool) = `false` ) 
+<span class="hljs-attribute">[bool](https://docs.godotengine.org/en/latest/classes/class_bool.html#class-bool)</span> | [<span class="hljs-title">timeline_exists</span>](#method-timeline_exists) ( `timeline`: [Variant](https://docs.godotengine.org/en/latest/classes/class_variant.html#class-variant) ) 
 <span style = "color: gray">void</span> | [<span class="hljs-title">handle_next_event</span>](#method-handle_next_event) ( `_ignore_argument`: [Variant](https://docs.godotengine.org/en/latest/classes/class_variant.html#class-variant) = `""` ) 
 <span style = "color: gray">void</span> | [<span class="hljs-title">handle_event</span>](#method-handle_event) ( `event_index`: [int](https://docs.godotengine.org/en/latest/classes/class_int.html#class-int) ) 
 <span style = "color: gray">void</span> | [<span class="hljs-title">clear</span>](#method-clear) ( `clear_flags`: [int](https://docs.godotengine.org/en/latest/classes/class_int.html#class-int) = `0` ) 
@@ -166,21 +164,21 @@ Returns | Method
 
 
 
-<a class="header" id="signal-timeline_ended" href="#signal-timeline_ended">**<span class="hljs-attribute">signal</span> [<span class="hljs-title">timeline_ended</span>](#signal-timeline_ended) ( )** </a>
-
-
-
- Emitted when the timeline ends. This can be a timeline ending or [end_timeline](#property-end_timeline) being called. 
-
----
-
-
-
 <a class="header" id="signal-timeline_started" href="#signal-timeline_started">**<span class="hljs-attribute">signal</span> [<span class="hljs-title">timeline_started</span>](#signal-timeline_started) ( )** </a>
 
 
 
  Emitted when a timeline starts by calling either [start](#property-start) or [start_timeline](#property-start_timeline). 
+
+---
+
+
+
+<a class="header" id="signal-timeline_ended" href="#signal-timeline_ended">**<span class="hljs-attribute">signal</span> [<span class="hljs-title">timeline_ended</span>](#signal-timeline_ended) ( )** </a>
+
+
+
+ Emitted when the timeline ends. This can be a timeline ending or [end_timeline](#property-end_timeline) being called. 
 
 ---
 
@@ -278,6 +276,26 @@ When `true`, many dialogic processes won't continue until it's `false` again.
 
 
 
+<a class="header" id="property-dialog_ending_timeline" href="#property-dialog_ending_timeline">**<span class="hljs-attribute">var</span> <span class="hljs-title">dialog_ending_timeline</span>** 
+
+
+
+A timeline that will be played when dialog ends. By default this timeline only contains a clear event.
+
+---
+
+
+
+<a class="header" id="property-animations" href="#property-animations">**<span class="hljs-attribute">var</span> <span class="hljs-title">Animations</span> <span style = "color: gray"> = </span> new()** 
+
+
+
+ <span style = "color: gray">*No description available.*</span> 
+
+---
+
+
+
 <a class="header" id="property-audio" href="#property-audio">**<span class="hljs-attribute">var</span> <span class="hljs-title">Audio</span> <span style = "color: gray"> = </span> new()** 
 
 
@@ -289,26 +307,6 @@ When `true`, many dialogic processes won't continue until it's `false` again.
 
 
 <a class="header" id="property-backgrounds" href="#property-backgrounds">**<span class="hljs-attribute">var</span> <span class="hljs-title">Backgrounds</span> <span style = "color: gray"> = </span> new()** 
-
-
-
- <span style = "color: gray">*No description available.*</span> 
-
----
-
-
-
-<a class="header" id="property-portraits" href="#property-portraits">**<span class="hljs-attribute">var</span> <span class="hljs-title">Portraits</span> <span style = "color: gray"> = </span> new()** 
-
-
-
- <span style = "color: gray">*No description available.*</span> 
-
----
-
-
-
-<a class="header" id="property-portraitcontainers" href="#property-portraitcontainers">**<span class="hljs-attribute">var</span> <span class="hljs-title">PortraitContainers</span> <span style = "color: gray"> = </span> new()** 
 
 
 
@@ -338,26 +336,6 @@ When `true`, many dialogic processes won't continue until it's `false` again.
 
 
 
-<a class="header" id="property-animations" href="#property-animations">**<span class="hljs-attribute">var</span> <span class="hljs-title">Animations</span> <span style = "color: gray"> = </span> new()** 
-
-
-
- <span style = "color: gray">*No description available.*</span> 
-
----
-
-
-
-<a class="header" id="property-inputs" href="#property-inputs">**<span class="hljs-attribute">var</span> <span class="hljs-title">Inputs</span> <span style = "color: gray"> = </span> new()** 
-
-
-
- <span style = "color: gray">*No description available.*</span> 
-
----
-
-
-
 <a class="header" id="property-glossary" href="#property-glossary">**<span class="hljs-attribute">var</span> <span class="hljs-title">Glossary</span> <span style = "color: gray"> = </span> new()** 
 
 
@@ -378,7 +356,37 @@ When `true`, many dialogic processes won't continue until it's `false` again.
 
 
 
+<a class="header" id="property-inputs" href="#property-inputs">**<span class="hljs-attribute">var</span> <span class="hljs-title">Inputs</span> <span style = "color: gray"> = </span> new()** 
+
+
+
+ <span style = "color: gray">*No description available.*</span> 
+
+---
+
+
+
 <a class="header" id="property-jump" href="#property-jump">**<span class="hljs-attribute">var</span> <span class="hljs-title">Jump</span> <span style = "color: gray"> = </span> new()** 
+
+
+
+ <span style = "color: gray">*No description available.*</span> 
+
+---
+
+
+
+<a class="header" id="property-portraitcontainers" href="#property-portraitcontainers">**<span class="hljs-attribute">var</span> <span class="hljs-title">PortraitContainers</span> <span style = "color: gray"> = </span> new()** 
+
+
+
+ <span style = "color: gray">*No description available.*</span> 
+
+---
+
+
+
+<a class="header" id="property-portraits" href="#property-portraits">**<span class="hljs-attribute">var</span> <span class="hljs-title">Portraits</span> <span style = "color: gray"> = </span> new()** 
 
 
 
@@ -460,7 +468,7 @@ When `true`, many dialogic processes won't continue until it's `false` again.
 
 
 
-<a class="header" id="method-start" href="#method-start">**<span class="hljs-attribute">func</span> [<span class="hljs-title">start</span>](#method-start) ( `timeline`: [Variant](https://docs.godotengine.org/en/latest/classes/class_variant.html#class-variant), `label`: [Variant](https://docs.godotengine.org/en/latest/classes/class_variant.html#class-variant) = `""` )</a>  ⇒ <span class="hljs-attribute">[Node](https://docs.godotengine.org/en/latest/classes/class_node.html#class-node)</span>** 
+<a class="header" id="method-start" href="#method-start">**<span class="hljs-attribute">func</span> [<span class="hljs-title">start</span>](#method-start) ( `timeline`: [Variant](https://docs.godotengine.org/en/latest/classes/class_variant.html#class-variant), `label_or_idx`: [Variant](https://docs.godotengine.org/en/latest/classes/class_variant.html#class-variant) = `""` )</a>  ⇒ <span class="hljs-attribute">[Node](https://docs.godotengine.org/en/latest/classes/class_node.html#class-node)</span>** 
 
 
 
@@ -490,11 +498,21 @@ Preloader function, prepares a timeline and returns an object to hold for later 
 
 
 
-<a class="header" id="method-end_timeline" href="#method-end_timeline">**<span class="hljs-attribute">func</span> [<span class="hljs-title">end_timeline</span>](#method-end_timeline) ( )</a>  ⇒ <span style = "color: gray">void</span>** 
+<a class="header" id="method-end_timeline" href="#method-end_timeline">**<span class="hljs-attribute">func</span> [<span class="hljs-title">end_timeline</span>](#method-end_timeline) ( `skip_ending`: [bool](https://docs.godotengine.org/en/latest/classes/class_bool.html#class-bool) = `false` )</a>  ⇒ <span style = "color: gray">void</span>** 
 
 
 
-Clears and stops the current timeline.
+Clears and stops the current timeline. If `skip_ending` is `true`, the dialog_ending_timeline is not getting played
+
+---
+
+
+
+<a class="header" id="method-timeline_exists" href="#method-timeline_exists">**<span class="hljs-attribute">func</span> [<span class="hljs-title">timeline_exists</span>](#method-timeline_exists) ( `timeline`: [Variant](https://docs.godotengine.org/en/latest/classes/class_variant.html#class-variant) )</a>  ⇒ <span class="hljs-attribute">[bool](https://docs.godotengine.org/en/latest/classes/class_bool.html#class-bool)</span>** 
+
+
+
+Method to check if timeline exists. @timeline can be either a loaded timeline resource or a path to a timeline file.
 
 ---
 

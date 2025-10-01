@@ -8,7 +8,7 @@
 # DialogicWaitInputEvent
 **Inherits:** [DialogicEvent](class_dialogicevent.md)
 
-############################################################################## SAVING/LOADING ##############################################################################
+Event that waits for input before continuing.
 ## Properties
 Name | Type | Default 
 --- | --- | --- 

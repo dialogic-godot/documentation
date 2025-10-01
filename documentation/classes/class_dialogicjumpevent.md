@@ -6,9 +6,9 @@
 *This contains the source code documentation of the class `DialogicJumpEvent`.*
         
 # DialogicJumpEvent
-**Inherits:** [DialogicEvent](class_dialogicevent.md)
+**Inherits:** [Resource](https://docs.godotengine.org/en/latest/classes/class_resource.html#class-resource)
 
-# Settings
+Event that allows starting another timeline. Also can jump to a label in that or the current timeline.
 ## Properties
 Name | Type | Default 
 --- | --- | --- 

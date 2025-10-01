@@ -8,7 +8,7 @@
 # subsystem_Jump
 **Inherits:** [DialogicSubsystem](class_dialogicsubsystem.md)
 
-##################################################################################################
+Subsystem that holds methods for jumping to specific labels, or return to the previous jump.
 --- 
 
 ## Methods
@@ -41,7 +41,12 @@ Returns | Method
 
 
 
- <span style = "color: gray">*No description available.*</span> 
+ Emitted when a jump event jumps to a label. Gives a dictionary witht the keys: 
+Key         | Value Type              | Value 
+----------- | ----------------------- | ----- 
+`timeline`  | [DialogicTimeline](class_dialogictimeline.md) | The timeline we are in now. 
+`label`     | [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string)           | The label we went to (empty if beginning). 
+ 
 
 ---
 
@@ -51,7 +56,12 @@ Returns | Method
 
 
 
- <span style = "color: gray">*No description available.*</span> 
+ Emitted when a return event is hit and there was a timeline to return to. Gives a dictionary witht the keys: 
+Key             | Value Type              | Value 
+--------------- | ----------------------- | ----- 
+`sub_timeline`  | [DialogicTimeline](class_dialogictimeline.md) | The timeline we were in before. 
+`label`         | [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string)           | The label we went back to (empty if beginning). 
+ 
 
 ---
 
@@ -61,7 +71,14 @@ Returns | Method
 
 
 
- <span style = "color: gray">*No description available.*</span> 
+ Emitted when a label event is executed (usually does nothing else). Gives a dictionary witht the keys: 
+Key                 | Value Type              | Value 
+------------------- | ----------------------- | ----- 
+`identifier`        | [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string)           | The identifier of the label event. 
+`display_name`      | [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string)           | The display name, possibly translated. 
+`display_name_orig` | [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string)           | The untranslated display name. 
+`timeline`          | [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string)           | The identifier of the timeline we are in. 
+ 
 
 ---
 

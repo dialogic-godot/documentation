@@ -29,8 +29,11 @@ Returns | Method
 <span style = "color: gray">void</span> | [<span class="hljs-title">reveal_text</span>](#method-reveal_text) ( `_text`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string), `keep_previous`: [bool](https://docs.godotengine.org/en/latest/classes/class_bool.html#class-bool) = `false` ) 
 <span style = "color: gray">void</span> | [<span class="hljs-title">set_speed</span>](#method-set_speed) ( `delay_per_character`: [float](https://docs.godotengine.org/en/latest/classes/class_float.html#class-float) ) 
 <span style = "color: gray">void</span> | [<span class="hljs-title">continue_reveal</span>](#method-continue_reveal) ( ) 
-<span style = "color: gray">void</span> | [<span class="hljs-title">finish_text</span>](#method-finish_text) ( ) 
+<span style = "color: gray">void</span> | [<span class="hljs-title">finish_text</span>](#method-finish_text) ( `is_organic`: [bool](https://docs.godotengine.org/en/latest/classes/class_bool.html#class-bool) = `false` ) 
 <span style = "color: gray">void</span> | [<span class="hljs-title">on_gui_input</span>](#method-on_gui_input) ( `event`: [InputEvent](https://docs.godotengine.org/en/latest/classes/class_inputevent.html#class-inputevent) ) 
+<span style = "color: gray">void</span> | [<span class="hljs-title">custom_fx_update</span>](#method-custom_fx_update) ( ) 
+<span style = "color: gray">void</span> | [<span class="hljs-title">custom_fx_reset</span>](#method-custom_fx_reset) ( ) 
+<span style = "color: gray">void</span> | [<span class="hljs-title">custom_fx_skip</span>](#method-custom_fx_skip) ( ) 
 --- 
 ## Constants
 
@@ -218,7 +221,7 @@ Reveals one additional character.
 
 
 
-<a class="header" id="method-finish_text" href="#method-finish_text">**<span class="hljs-attribute">func</span> [<span class="hljs-title">finish_text</span>](#method-finish_text) ( )</a>  ⇒ <span style = "color: gray">void</span>** 
+<a class="header" id="method-finish_text" href="#method-finish_text">**<span class="hljs-attribute">func</span> [<span class="hljs-title">finish_text</span>](#method-finish_text) ( `is_organic`: [bool](https://docs.godotengine.org/en/latest/classes/class_bool.html#class-bool) = `false` )</a>  ⇒ <span style = "color: gray">void</span>** 
 
 
 
@@ -233,6 +236,36 @@ Reveals the entire text instantly.
 
 
 Handle mouse input
+
+---
+
+
+
+<a class="header" id="method-custom_fx_update" href="#method-custom_fx_update">**<span class="hljs-attribute">func</span> [<span class="hljs-title">custom_fx_update</span>](#method-custom_fx_update) ( )</a>  ⇒ <span style = "color: gray">void</span>** 
+
+
+
+ <span style = "color: gray">*No description available.*</span> 
+
+---
+
+
+
+<a class="header" id="method-custom_fx_reset" href="#method-custom_fx_reset">**<span class="hljs-attribute">func</span> [<span class="hljs-title">custom_fx_reset</span>](#method-custom_fx_reset) ( )</a>  ⇒ <span style = "color: gray">void</span>** 
+
+
+
+ <span style = "color: gray">*No description available.*</span> 
+
+---
+
+
+
+<a class="header" id="method-custom_fx_skip" href="#method-custom_fx_skip">**<span class="hljs-attribute">func</span> [<span class="hljs-title">custom_fx_skip</span>](#method-custom_fx_skip) ( )</a>  ⇒ <span style = "color: gray">void</span>** 
+
+
+
+ <span style = "color: gray">*No description available.*</span> 
 
 ---
 

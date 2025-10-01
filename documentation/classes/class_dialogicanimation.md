@@ -28,6 +28,9 @@ Returns | Method
 <span style = "color: gray">void</span> | [<span class="hljs-title">pause</span>](#method-pause) ( ) 
 <span style = "color: gray">void</span> | [<span class="hljs-title">resume</span>](#method-resume) ( ) 
 <span class="hljs-attribute">[String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string)</span> | [<span class="hljs-title">get_modulation_property</span>](#method-get_modulation_property) ( ) 
+<span class="hljs-attribute">[Vector2](https://docs.godotengine.org/en/latest/classes/class_vector2.html#class-vector2)</span> | [<span class="hljs-title">get_node_size</span>](#method-get_node_size) ( ) 
+<span class="hljs-attribute">[Vector2](https://docs.godotengine.org/en/latest/classes/class_vector2.html#class-vector2)</span> | [<span class="hljs-title">get_node_origin</span>](#method-get_node_origin) ( ) 
+<span class="hljs-attribute">[Vector2](https://docs.godotengine.org/en/latest/classes/class_vector2.html#class-vector2)</span> | [<span class="hljs-title">get_viewport_size</span>](#method-get_viewport_size) ( ) 
 --- 
 ## Constants
 
@@ -199,6 +202,36 @@ This method controls whether to repeat the animation or not. Animations must cal
 
 
 If the animation wants to change the modulation, this method will return the property to change.  The [CanvasGroup](class_canvasgroup.md) can use `self_modulate` instead of `modulate` to uniformly change the modulation of all children without additively overlaying the modulations.
+
+---
+
+
+
+<a class="header" id="method-get_node_size" href="#method-get_node_size">**<span class="hljs-attribute">func</span> [<span class="hljs-title">get_node_size</span>](#method-get_node_size) ( )</a>  ⇒ <span class="hljs-attribute">[Vector2](https://docs.godotengine.org/en/latest/classes/class_vector2.html#class-vector2)</span>** 
+
+
+
+Tries to return the size of the node to be animated. For portraits this uses the portrait containers size. This is useful if your animation depends on the size of the node.
+
+---
+
+
+
+<a class="header" id="method-get_node_origin" href="#method-get_node_origin">**<span class="hljs-attribute">func</span> [<span class="hljs-title">get_node_origin</span>](#method-get_node_origin) ( )</a>  ⇒ <span class="hljs-attribute">[Vector2](https://docs.godotengine.org/en/latest/classes/class_vector2.html#class-vector2)</span>** 
+
+
+
+ <span style = "color: gray">*No description available.*</span> 
+
+---
+
+
+
+<a class="header" id="method-get_viewport_size" href="#method-get_viewport_size">**<span class="hljs-attribute">func</span> [<span class="hljs-title">get_viewport_size</span>](#method-get_viewport_size) ( )</a>  ⇒ <span class="hljs-attribute">[Vector2](https://docs.godotengine.org/en/latest/classes/class_vector2.html#class-vector2)</span>** 
+
+
+
+ <span style = "color: gray">*No description available.*</span> 
 
 ---
 

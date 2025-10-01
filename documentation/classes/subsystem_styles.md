@@ -8,7 +8,7 @@
 # subsystem_Styles
 **Inherits:** [DialogicSubsystem](class_dialogicsubsystem.md)
 
-##################################################################################################
+Subsystem that manages loading layouts with specific styles applied.
 --- 
 
 ## Methods
@@ -22,8 +22,9 @@ Returns | Method
 <span style = "color: gray">void</span> | [<span class="hljs-title">reload_current_info_into_new_style</span>](#method-reload_current_info_into_new_style) ( ) 
 <span class="hljs-attribute">[String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string)</span> | [<span class="hljs-title">get_current_style</span>](#method-get_current_style) ( ) 
 <span class="hljs-attribute">[bool](https://docs.godotengine.org/en/latest/classes/class_bool.html#class-bool)</span> | [<span class="hljs-title">has_active_layout_node</span>](#method-has_active_layout_node) ( ) 
-<span class="hljs-attribute">[Node](https://docs.godotengine.org/en/latest/classes/class_node.html#class-node)</span> | [<span class="hljs-title">get_layout_node</span>](#method-get_layout_node) ( ) 
+<span class="hljs-attribute">[DialogicLayoutBase](class_dialogiclayoutbase.md)</span> | [<span class="hljs-title">get_layout_node</span>](#method-get_layout_node) ( ) 
 <span class="hljs-attribute">[Node](https://docs.godotengine.org/en/latest/classes/class_node.html#class-node)</span> | [<span class="hljs-title">get_first_node_in_layout</span>](#method-get_first_node_in_layout) ( `group_name`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) ) 
+<span style = "color: gray">void</span> | [<span class="hljs-title">preload_style</span>](#method-preload_style) ( `name_or_path`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) = `""` ) 
 --- 
 
 ## Signals
@@ -122,7 +123,7 @@ Returns the style currently in use
 
 
 
-<a class="header" id="method-get_layout_node" href="#method-get_layout_node">**<span class="hljs-attribute">func</span> [<span class="hljs-title">get_layout_node</span>](#method-get_layout_node) ( )</a>  ⇒ <span class="hljs-attribute">[Node](https://docs.godotengine.org/en/latest/classes/class_node.html#class-node)</span>** 
+<a class="header" id="method-get_layout_node" href="#method-get_layout_node">**<span class="hljs-attribute">func</span> [<span class="hljs-title">get_layout_node</span>](#method-get_layout_node) ( )</a>  ⇒ <span class="hljs-attribute">[DialogicLayoutBase](class_dialogiclayoutbase.md)</span>** 
 
 
 
@@ -137,6 +138,16 @@ Returns the style currently in use
 
 
 Similar to get_tree().get_first_node_in_group('group_name') but filtered to the active layout node subtree
+
+---
+
+
+
+<a class="header" id="method-preload_style" href="#method-preload_style">**<span class="hljs-attribute">func</span> [<span class="hljs-title">preload_style</span>](#method-preload_style) ( `name_or_path`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) = `""` )</a>  ⇒ <span style = "color: gray">void</span>** 
+
+
+
+ <span style = "color: gray">*No description available.*</span> 
 
 ---
 

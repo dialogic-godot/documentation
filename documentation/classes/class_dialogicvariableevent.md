@@ -8,7 +8,7 @@
 # DialogicVariableEvent
 **Inherits:** [DialogicEvent](class_dialogicevent.md)
 
-Settings
+Event that allows changing a dialogic variable or a property of an autoload.
 ## Properties
 Name | Type | Default 
 --- | --- | --- 

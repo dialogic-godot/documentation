@@ -8,12 +8,13 @@
 # DialogicWaitEvent
 **Inherits:** [DialogicEvent](class_dialogicevent.md)
 
-# Settings
+Event that waits for some time before continuing.
 ## Properties
 Name | Type | Default 
 --- | --- | --- 
 [<span class="hljs-title">time</span>](#property-time) | [float](https://docs.godotengine.org/en/latest/classes/class_float.html#class-float) |  `1.0` 
 [<span class="hljs-title">hide_text</span>](#property-hide_text) | [bool](https://docs.godotengine.org/en/latest/classes/class_bool.html#class-bool) |  `true` 
+[<span class="hljs-title">skippable</span>](#property-skippable) | [bool](https://docs.godotengine.org/en/latest/classes/class_bool.html#class-bool) |  `false` 
 --- 
 
 ## Methods
@@ -42,6 +43,16 @@ The time in seconds that the event will stop before continuing.
 
 
 If true the text box will be hidden while the event waits.
+
+---
+
+
+
+<a class="header" id="property-skippable" href="#property-skippable">**<span class="hljs-attribute">var</span> <span class="hljs-title">skippable</span> <span style = "color: gray"> = </span> false** 
+
+
+
+If true the wait can be skipped with user input
 
 ---
 

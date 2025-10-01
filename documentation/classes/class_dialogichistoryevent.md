@@ -8,7 +8,7 @@
 # DialogicHistoryEvent
 **Inherits:** [DialogicEvent](class_dialogicevent.md)
 
-# Settings
+Event that allows clearing, pausing and resuming of history functionality.
 ## Properties
 Name | Type | Default 
 --- | --- | --- 

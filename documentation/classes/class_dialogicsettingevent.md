@@ -8,7 +8,7 @@
 # DialogicSettingEvent
 **Inherits:** [DialogicEvent](class_dialogicevent.md)
 
-# Settings
+Event that allows changing a specific setting.
 ## Properties
 Name | Type | Default 
 --- | --- | --- 

@@ -8,7 +8,7 @@
 # DialogicVisualEditorField
 **Inherits:** [Control](https://docs.godotengine.org/en/latest/classes/class_control.html#class-control)
 
-##############################################################################
+
 ## Properties
 Name | Type | Default 
 --- | --- | --- 

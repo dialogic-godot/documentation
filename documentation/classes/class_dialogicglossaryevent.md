@@ -8,7 +8,7 @@
 # DialogicGlossaryEvent
 **Inherits:** [DialogicEvent](class_dialogicevent.md)
 
-############################################################################## INITIALIZE ##############################################################################
+Event that does nothing right now.
 --- 
 
 ## Methods

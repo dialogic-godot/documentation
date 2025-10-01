@@ -8,9 +8,7 @@
 # DialogicLayoutLayer
 **Inherits:** [Node](https://docs.godotengine.org/en/latest/classes/class_node.html#class-node)
 
-This is turned on automatically when the layout is realized 
- 
-Turn it off, if you want to modify the settings of the nodes yourself.
+Base class that should be extended by custom dialogic layout layers.
 ## Properties
 Name | Type | Default 
 --- | --- | --- 

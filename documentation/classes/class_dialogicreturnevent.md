@@ -8,7 +8,7 @@
 # DialogicReturnEvent
 **Inherits:** [DialogicEvent](class_dialogicevent.md)
 
-############################################################################## INITIALIZE ##############################################################################
+Event that will make dialogic jump back to the last jump point.
 --- 
 
 ## Methods

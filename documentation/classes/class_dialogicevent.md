@@ -39,14 +39,14 @@ Returns | Method
 --- | --- 
 <span style = "color: gray">void</span> | [<span class="hljs-title">execute</span>](#method-execute) ( `_dialogic_game_handler`: [Variant](https://docs.godotengine.org/en/latest/classes/class_variant.html#class-variant) ) 
 <span style = "color: gray">void</span> | [<span class="hljs-title">finish</span>](#method-finish) ( ) 
-<span class="hljs-attribute">[Control](https://docs.godotengine.org/en/latest/classes/class_control.html#class-control)</span> | [<span class="hljs-title">get_end_branch_control</span>](#method-get_end_branch_control) ( ) 
-<span class="hljs-attribute">[bool](https://docs.godotengine.org/en/latest/classes/class_bool.html#class-bool)</span> | [<span class="hljs-title">should_execute_this_branch</span>](#method-should_execute_this_branch) ( ) 
+<span class="hljs-attribute">[int](https://docs.godotengine.org/en/latest/classes/class_int.html#class-int)</span> | [<span class="hljs-title">get_end_branch_index</span>](#method-get_end_branch_index) ( ) 
 <span class="hljs-attribute">[bool](https://docs.godotengine.org/en/latest/classes/class_bool.html#class-bool)</span> | [<span class="hljs-title">can_be_translated</span>](#method-can_be_translated) ( ) 
 <span class="hljs-attribute">[String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string)</span> | [<span class="hljs-title">add_translation_id</span>](#method-add_translation_id) ( ) 
 <span style = "color: gray">void</span> | [<span class="hljs-title">remove_translation_id</span>](#method-remove_translation_id) ( ) 
 <span class="hljs-attribute">[String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string)</span> | [<span class="hljs-title">get_property_translation_key</span>](#method-get_property_translation_key) ( `property_name`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) ) 
 <span class="hljs-attribute">[String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string)</span> | [<span class="hljs-title">get_property_translated</span>](#method-get_property_translated) ( `property_name`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) ) 
 <span style = "color: gray">void</span> | [<span class="hljs-title">update_text_version</span>](#method-update_text_version) ( ) 
+<span class="hljs-attribute">[PackedStringArray](https://docs.godotengine.org/en/latest/classes/class_packedstringarray.html#class-packedstringarray)</span> | [<span class="hljs-title">get_dependencies</span>](#method-get_dependencies) ( ) 
 <span class="hljs-attribute">[String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string)</span> | [<span class="hljs-title">get_shortcode</span>](#method-get_shortcode) ( ) 
 <span class="hljs-attribute">[Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html#class-dictionary)</span> | [<span class="hljs-title">get_shortcode_parameters</span>](#method-get_shortcode_parameters) ( ) 
 <span class="hljs-attribute">[String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string)</span> | [<span class="hljs-title">to_text</span>](#method-to_text) ( ) 
@@ -241,6 +241,24 @@ Returns | Method
 
 
 <a class="header" id="constant-COLOR" href="#constant-COLOR">**<span class="hljs-attribute">const</span> <span class="hljs-title">COLOR</span><span class="hljs-comment"> = 17</span>**</a>
+
+
+
+ <span style = "color: gray">*No description available.*</span> 
+
+---
+
+
+<a class="header" id="constant-AUDIO_PREVIEW" href="#constant-AUDIO_PREVIEW">**<span class="hljs-attribute">const</span> <span class="hljs-title">AUDIO_PREVIEW</span><span class="hljs-comment"> = 18</span>**</a>
+
+
+
+ <span style = "color: gray">*No description available.*</span> 
+
+---
+
+
+<a class="header" id="constant-IMAGE_PREVIEW" href="#constant-IMAGE_PREVIEW">**<span class="hljs-attribute">const</span> <span class="hljs-title">IMAGE_PREVIEW</span><span class="hljs-comment"> = 19</span>**</a>
 
 
 
@@ -515,21 +533,11 @@ Ends the event behaviour.
 
 
 
-<a class="header" id="method-get_end_branch_control" href="#method-get_end_branch_control">**<span class="hljs-attribute">func</span> [<span class="hljs-title">get_end_branch_control</span>](#method-get_end_branch_control) ( )</a>  ⇒ <span class="hljs-attribute">[Control](https://docs.godotengine.org/en/latest/classes/class_control.html#class-control)</span>** 
+<a class="header" id="method-get_end_branch_index" href="#method-get_end_branch_index">**<span class="hljs-attribute">func</span> [<span class="hljs-title">get_end_branch_index</span>](#method-get_end_branch_index) ( )</a>  ⇒ <span class="hljs-attribute">[int](https://docs.godotengine.org/en/latest/classes/class_int.html#class-int)</span>** 
 
 
 
-to be overridden by sub-classes only called if can_contain_events is true. return a control node that should show on the END BRANCH node
-
----
-
-
-
-<a class="header" id="method-should_execute_this_branch" href="#method-should_execute_this_branch">**<span class="hljs-attribute">func</span> [<span class="hljs-title">should_execute_this_branch</span>](#method-should_execute_this_branch) ( )</a>  ⇒ <span class="hljs-attribute">[bool](https://docs.godotengine.org/en/latest/classes/class_bool.html#class-bool)</span>** 
-
-
-
-to be overridden by sub-classes only called if can_contain_events is true and the previous event was an end-branch event return true if this event should be executed if the previous event was an end-branch event basically only important for the Condition event but who knows. Some day someone might need this.
+Returns the index of the end branch event of this event (Only use if can_contain_events is true).
 
 ---
 
@@ -590,6 +598,16 @@ Call this whenever you are using a translatable property
 
 
 Call this if you updated an event and want the changes to be saved.
+
+---
+
+
+
+<a class="header" id="method-get_dependencies" href="#method-get_dependencies">**<span class="hljs-attribute">func</span> [<span class="hljs-title">get_dependencies</span>](#method-get_dependencies) ( )</a>  ⇒ <span class="hljs-attribute">[PackedStringArray](https://docs.godotengine.org/en/latest/classes/class_packedstringarray.html#class-packedstringarray)</span>** 
+
+
+
+ <span style = "color: gray">*No description available.*</span> 
 
 ---
 

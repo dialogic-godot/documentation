@@ -19,7 +19,9 @@ Name | Type | Default
 [<span class="hljs-title">parsed_text_effect_info</span>](#property-parsed_text_effect_info) | [Dictionary[]](https://docs.godotengine.org/en/latest/classes/class_dictionary.html#class-dictionary) |  `[]` 
 [<span class="hljs-title">text_effects_regex</span>](#property-text_effects_regex) | [RegEx](https://docs.godotengine.org/en/latest/classes/class_regex.html#class-regex) |  `new()` 
 [<span class="hljs-title">text_modifiers</span>](#property-text_modifiers) | [Array](https://docs.godotengine.org/en/latest/classes/class_array.html#class-array) |  `[]` 
-[<span class="hljs-title">modifier_words_select_regex</span>](#property-modifier_words_select_regex) | [RegEx](https://docs.godotengine.org/en/latest/classes/class_regex.html#class-regex) |  `create_from_string(...)` 
+[<span class="hljs-title">parse_stack</span>](#property-parse_stack) | [Dictionary[]](https://docs.godotengine.org/en/latest/classes/class_dictionary.html#class-dictionary) |  `[]` 
+[<span class="hljs-title">modifier_select_regex</span>](#property-modifier_select_regex) | [RegEx](https://docs.godotengine.org/en/latest/classes/class_regex.html#class-regex) |  `create_from_string(...)` 
+[<span class="hljs-title">modifier_select_split_regex</span>](#property-modifier_select_split_regex) | [RegEx](https://docs.godotengine.org/en/latest/classes/class_regex.html#class-regex) |  `create_from_string(...)` 
 --- 
 
 ## Methods
@@ -28,10 +30,12 @@ Returns | Method
 <span style = "color: gray">void</span> | [<span class="hljs-title">clear_game_state</span>](#method-clear_game_state) ( `_clear_flag`: [int](https://docs.godotengine.org/en/latest/classes/class_int.html#class-int) = `0` ) 
 <span style = "color: gray">void</span> | [<span class="hljs-title">load_game_state</span>](#method-load_game_state) ( `_load_flag`: [int](https://docs.godotengine.org/en/latest/classes/class_int.html#class-int) = `0` ) 
 <span style = "color: gray">void</span> | [<span class="hljs-title">post_install</span>](#method-post_install) ( ) 
-<span class="hljs-attribute">[String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string)</span> | [<span class="hljs-title">parse_text</span>](#method-parse_text) ( `text`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string), `type`: [int](https://docs.godotengine.org/en/latest/classes/class_int.html#class-int) = `0`, `variables`: [bool](https://docs.godotengine.org/en/latest/classes/class_bool.html#class-bool) = `true`, `glossary`: [bool](https://docs.godotengine.org/en/latest/classes/class_bool.html#class-bool) = `true`, `modifiers`: [bool](https://docs.godotengine.org/en/latest/classes/class_bool.html#class-bool) = `true`, `effects`: [bool](https://docs.godotengine.org/en/latest/classes/class_bool.html#class-bool) = `true`, `color_names`: [bool](https://docs.godotengine.org/en/latest/classes/class_bool.html#class-bool) = `true` ) 
+<span class="hljs-attribute">[String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string)</span> | [<span class="hljs-title">parse_text</span>](#method-parse_text) ( `text`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string), `type`: [int](https://docs.godotengine.org/en/latest/classes/class_int.html#class-int) = `0` ) 
+<span style = "color: gray">void</span> | [<span class="hljs-title">load_parse_stack</span>](#method-load_parse_stack) ( ) 
 <span style = "color: gray">void</span> | [<span class="hljs-title">update_textbox</span>](#method-update_textbox) ( `text`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string), `instant`: [bool](https://docs.godotengine.org/en/latest/classes/class_bool.html#class-bool) = `false` ) 
 <span class="hljs-attribute">[String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string)</span> | [<span class="hljs-title">update_dialog_text</span>](#method-update_dialog_text) ( `text`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string), `instant`: [bool](https://docs.godotengine.org/en/latest/classes/class_bool.html#class-bool) = `false`, `additional`: [bool](https://docs.godotengine.org/en/latest/classes/class_bool.html#class-bool) = `false` ) 
 <span style = "color: gray">void</span> | [<span class="hljs-title">update_name_label</span>](#method-update_name_label) ( `character`: [DialogicCharacter](class_dialogiccharacter.md) ) 
+<span style = "color: gray">void</span> | [<span class="hljs-title">update_typing_sound_mood_from_character</span>](#method-update_typing_sound_mood_from_character) ( `character`: [DialogicCharacter](class_dialogiccharacter.md), `mood`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) ) 
 <span style = "color: gray">void</span> | [<span class="hljs-title">update_typing_sound_mood</span>](#method-update_typing_sound_mood) ( `mood`: [Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html#class-dictionary) = `{}` ) 
 <span style = "color: gray">void</span> | [<span class="hljs-title">show_textbox</span>](#method-show_textbox) ( `instant`: [bool](https://docs.godotengine.org/en/latest/classes/class_bool.html#class-bool) = `false` ) 
 <span style = "color: gray">void</span> | [<span class="hljs-title">hide_textbox</span>](#method-hide_textbox) ( `instant`: [bool](https://docs.godotengine.org/en/latest/classes/class_bool.html#class-bool) = `false` ) 
@@ -48,7 +52,6 @@ Returns | Method
 <span class="hljs-attribute">[String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string)</span> | [<span class="hljs-title">parse_text_effects</span>](#method-parse_text_effects) ( `text`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) ) 
 <span style = "color: gray">void</span> | [<span class="hljs-title">execute_effects</span>](#method-execute_effects) ( `current_index`: [int](https://docs.godotengine.org/en/latest/classes/class_int.html#class-int), `text_node`: [Control](https://docs.godotengine.org/en/latest/classes/class_control.html#class-control), `skipping`: [bool](https://docs.godotengine.org/en/latest/classes/class_bool.html#class-bool) = `false` ) 
 <span style = "color: gray">void</span> | [<span class="hljs-title">collect_text_modifiers</span>](#method-collect_text_modifiers) ( ) 
-<span class="hljs-attribute">[String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string)</span> | [<span class="hljs-title">parse_text_modifiers</span>](#method-parse_text_modifiers) ( `text`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string), `type`: [int](https://docs.godotengine.org/en/latest/classes/class_int.html#class-int) = `0` ) 
 <span class="hljs-attribute">[String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string)</span> | [<span class="hljs-title">get_character_name_parsed</span>](#method-get_character_name_parsed) ( `character`: [DialogicCharacter](class_dialogiccharacter.md) ) 
 <span class="hljs-attribute">[DialogicCharacter](class_dialogiccharacter.md)</span> | [<span class="hljs-title">get_current_speaker</span>](#method-get_current_speaker) ( ) 
 <span style = "color: gray">void</span> | [<span class="hljs-title">connect_meta_signals</span>](#method-connect_meta_signals) ( `text_node`: [Node](https://docs.godotengine.org/en/latest/classes/class_node.html#class-node) ) 
@@ -119,7 +122,25 @@ Returns | Method
 
 
 
- <span style = "color: gray">*No description available.*</span> 
+ Emitted when a text event is reached or a new text section is about to be shown. Gives a dictionary with the following keys: 
+
+Key         |   Value Type  | Value 
+----------- | ------------- | ----- 
+`text`      | [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) | The text that is being displayed. 
+`character` | [DialogicCharacter](class_dialogiccharacter.md)  | The character that says this text. 
+`portrait`  | [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) | The name of the portrait the character will use. 
+`append`    | [bool](https://docs.godotengine.org/en/latest/classes/class_bool.html#class-bool)   | Whether the text will be appended to the previous text. 
+ 
+
+---
+
+
+
+<a class="header" id="signal-text_started" href="#signal-text_started">**<span class="hljs-attribute">signal</span> [<span class="hljs-title">text_started</span>](#signal-text_started) ( `info`: [Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html#class-dictionary) )** </a>
+
+
+
+ Emitted when a text event (or a new text section) starts displaying. This will be AFTER the textox animation, while [about_to_show_text](#signal-about_to_show_text) is before. Gives a dictionary with the same values as [about_to_show_text](#signal-about_to_show_text) 
 
 ---
 
@@ -129,7 +150,7 @@ Returns | Method
 
 
 
- <span style = "color: gray">*No description available.*</span> 
+ When the text has finished revealing. Gives a dictionary with the keys text and character. 
 
 ---
 
@@ -139,7 +160,7 @@ Returns | Method
 
 
 
- <span style = "color: gray">*No description available.*</span> 
+ Emitted when the speaker changes. 
 
 ---
 
@@ -149,17 +170,7 @@ Returns | Method
 
 
 
- <span style = "color: gray">*No description available.*</span> 
-
----
-
-
-
-<a class="header" id="signal-animation_textbox_new_text" href="#signal-animation_textbox_new_text">**<span class="hljs-attribute">signal</span> [<span class="hljs-title">animation_textbox_new_text</span>](#signal-animation_textbox_new_text) ( )** </a>
-
-
-
- <span style = "color: gray">*No description available.*</span> 
+ Emitted when the textbox is shown or hidden. 
 
 ---
 
@@ -169,7 +180,7 @@ Returns | Method
 
 
 
- <span style = "color: gray">*No description available.*</span> 
+ Emitted when the textbox appears. Use this together with the Animations subsystem to implement animations. If you start an animation and want dialogic to wait for it to finish before showing text, call Dialogic.Animations.start_animating() and then Dialogic.animation_finished() once it's done. 
 
 ---
 
@@ -179,17 +190,17 @@ Returns | Method
 
 
 
- <span style = "color: gray">*No description available.*</span> 
+ Emitted when the textbox is hiding. Use like [animation_textbox_show](#signal-animation_textbox_show). 
 
 ---
 
 
 
-<a class="header" id="signal-meta_hover_ended" href="#signal-meta_hover_ended">**<span class="hljs-attribute">signal</span> [<span class="hljs-title">meta_hover_ended</span>](#signal-meta_hover_ended) ( `meta`: [Variant](https://docs.godotengine.org/en/latest/classes/class_variant.html#class-variant) )** </a>
+<a class="header" id="signal-animation_textbox_new_text" href="#signal-animation_textbox_new_text">**<span class="hljs-attribute">signal</span> [<span class="hljs-title">animation_textbox_new_text</span>](#signal-animation_textbox_new_text) ( )** </a>
 
 
 
- <span style = "color: gray">*No description available.*</span> 
+ Emitted when a new text starts. Use like [animation_textbox_show](#signal-animation_textbox_show). 
 
 ---
 
@@ -199,7 +210,17 @@ Returns | Method
 
 
 
- <span style = "color: gray">*No description available.*</span> 
+ Emitted when a meta text on any DialogText node is hovered. 
+
+---
+
+
+
+<a class="header" id="signal-meta_hover_ended" href="#signal-meta_hover_ended">**<span class="hljs-attribute">signal</span> [<span class="hljs-title">meta_hover_ended</span>](#signal-meta_hover_ended) ( `meta`: [Variant](https://docs.godotengine.org/en/latest/classes/class_variant.html#class-variant) )** </a>
+
+
+
+ Emitted when a meta text on any DialogText node is not hovered anymore. 
 
 ---
 
@@ -209,7 +230,7 @@ Returns | Method
 
 
 
- <span style = "color: gray">*No description available.*</span> 
+ Emitted when a meta text on any DialogText node is clicked. 
 
 ---
 
@@ -287,7 +308,27 @@ Returns | Method
 
 
 
-<a class="header" id="property-modifier_words_select_regex" href="#property-modifier_words_select_regex">**<span class="hljs-attribute">var</span> <span class="hljs-title">modifier_words_select_regex</span> <span style = "color: gray"> = </span> create_from_string(...)** 
+<a class="header" id="property-parse_stack" href="#property-parse_stack">**<span class="hljs-attribute">var</span> <span class="hljs-title">parse_stack</span> <span style = "color: gray"> = </span> []** 
+
+
+
+ <span style = "color: gray">*No description available.*</span> 
+
+---
+
+
+
+<a class="header" id="property-modifier_select_regex" href="#property-modifier_select_regex">**<span class="hljs-attribute">var</span> <span class="hljs-title">modifier_select_regex</span> <span style = "color: gray"> = </span> create_from_string(...)** 
+
+
+
+ <span style = "color: gray">*No description available.*</span> 
+
+---
+
+
+
+<a class="header" id="property-modifier_select_split_regex" href="#property-modifier_select_split_regex">**<span class="hljs-attribute">var</span> <span class="hljs-title">modifier_select_split_regex</span> <span style = "color: gray"> = </span> create_from_string(...)** 
 
 
 
@@ -329,11 +370,21 @@ Returns | Method
 
 
 
-<a class="header" id="method-parse_text" href="#method-parse_text">**<span class="hljs-attribute">func</span> [<span class="hljs-title">parse_text</span>](#method-parse_text) ( `text`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string), `type`: [int](https://docs.godotengine.org/en/latest/classes/class_int.html#class-int) = `0`, `variables`: [bool](https://docs.godotengine.org/en/latest/classes/class_bool.html#class-bool) = `true`, `glossary`: [bool](https://docs.godotengine.org/en/latest/classes/class_bool.html#class-bool) = `true`, `modifiers`: [bool](https://docs.godotengine.org/en/latest/classes/class_bool.html#class-bool) = `true`, `effects`: [bool](https://docs.godotengine.org/en/latest/classes/class_bool.html#class-bool) = `true`, `color_names`: [bool](https://docs.godotengine.org/en/latest/classes/class_bool.html#class-bool) = `true` )</a>  ⇒ <span class="hljs-attribute">[String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string)</span>** 
+<a class="header" id="method-parse_text" href="#method-parse_text">**<span class="hljs-attribute">func</span> [<span class="hljs-title">parse_text</span>](#method-parse_text) ( `text`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string), `type`: [int](https://docs.godotengine.org/en/latest/classes/class_int.html#class-int) = `0` )</a>  ⇒ <span class="hljs-attribute">[String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string)</span>** 
 
 
 
-Applies modifiers, effects and coloring to the text
+Applies modifiers, effects and coloring to the text. Utilizes the parse stack created and sorted in [method load_parse_stack()].
+
+---
+
+
+
+<a class="header" id="method-load_parse_stack" href="#method-load_parse_stack">**<span class="hljs-attribute">func</span> [<span class="hljs-title">load_parse_stack</span>](#method-load_parse_stack) ( )</a>  ⇒ <span style = "color: gray">void</span>** 
+
+
+
+Creates and sorts a stack of methods that take a text and return it. This includes: variables, text modifiers, text effects, autocolor names and the glossary.
 
 ---
 
@@ -364,6 +415,16 @@ Shows the given text on all visible DialogText nodes. Instant can be used to ski
 
 
 Updates the visible name on all name labels nodes. If a name changes, the [speaker_updated](#signal-speaker_updated) signal is emitted.
+
+---
+
+
+
+<a class="header" id="method-update_typing_sound_mood_from_character" href="#method-update_typing_sound_mood_from_character">**<span class="hljs-attribute">func</span> [<span class="hljs-title">update_typing_sound_mood_from_character</span>](#method-update_typing_sound_mood_from_character) ( `character`: [DialogicCharacter](class_dialogiccharacter.md), `mood`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) )</a>  ⇒ <span style = "color: gray">void</span>** 
+
+
+
+ <span style = "color: gray">*No description available.*</span> 
 
 ---
 
@@ -528,16 +589,6 @@ Returns the string with all text effects removed Use get_parsed_text_effects() a
 
 
 <a class="header" id="method-collect_text_modifiers" href="#method-collect_text_modifiers">**<span class="hljs-attribute">func</span> [<span class="hljs-title">collect_text_modifiers</span>](#method-collect_text_modifiers) ( )</a>  ⇒ <span style = "color: gray">void</span>** 
-
-
-
- <span style = "color: gray">*No description available.*</span> 
-
----
-
-
-
-<a class="header" id="method-parse_text_modifiers" href="#method-parse_text_modifiers">**<span class="hljs-attribute">func</span> [<span class="hljs-title">parse_text_modifiers</span>](#method-parse_text_modifiers) ( `text`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string), `type`: [int](https://docs.godotengine.org/en/latest/classes/class_int.html#class-int) = `0` )</a>  ⇒ <span class="hljs-attribute">[String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string)</span>** 
 
 
 

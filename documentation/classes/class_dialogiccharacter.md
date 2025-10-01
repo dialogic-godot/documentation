@@ -6,7 +6,7 @@
 *This contains the source code documentation of the class `DialogicCharacter`.*
         
 # DialogicCharacter
-**Inherits:** [Resource](https://docs.godotengine.org/en/latest/classes/class_resource.html#class-resource)
+**Inherits:** `Resources/dialogic_identifiable_resource.gd`
 
 Resource that represents a character in dialog. Manages/contains portraits, custom info and translation of characters.
 ## Properties
@@ -35,6 +35,7 @@ Returns | Method
 <span class="hljs-attribute">[String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string)</span> | [<span class="hljs-title">get_display_name_translated</span>](#method-get_display_name_translated) ( ) 
 <span class="hljs-attribute">[String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string)</span> | [<span class="hljs-title">get_character_name</span>](#method-get_character_name) ( ) 
 <span class="hljs-attribute">[Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html#class-dictionary)</span> | [<span class="hljs-title">get_portrait_info</span>](#method-get_portrait_info) ( `portrait_name`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) ) 
+<span style = "color: gray">void</span> | [<span class="hljs-title">add_portrait</span>](#method-add_portrait) ( `name`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string), `image`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string), `scene`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) = `""` ) 
 --- 
 ## Constants
 
@@ -236,6 +237,16 @@ Returns the best name for this character.
 
 
 Returns the info of the given portrait. Uses the default portrait if the given portrait doesn't exist.
+
+---
+
+
+
+<a class="header" id="method-add_portrait" href="#method-add_portrait">**<span class="hljs-attribute">func</span> [<span class="hljs-title">add_portrait</span>](#method-add_portrait) ( `name`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string), `image`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string), `scene`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) = `""` )</a>  ⇒ <span style = "color: gray">void</span>** 
+
+
+
+Helper method intended for a simplified creation of portraits at runtime. For more complex needs, manually writing to the portraits dict is recommended.
 
 ---
 

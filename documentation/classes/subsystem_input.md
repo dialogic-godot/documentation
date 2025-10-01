@@ -17,6 +17,7 @@ Name | Type | Default
 --- | --- | --- 
 [<span class="hljs-title">input_block_timer</span>](#property-input_block_timer) | [Timer](https://docs.godotengine.org/en/latest/classes/class_timer.html#class-timer) |  `new()` 
 [<span class="hljs-title">action_was_consumed</span>](#property-action_was_consumed) | [bool](https://docs.godotengine.org/en/latest/classes/class_bool.html#class-bool) |  `false` 
+[<span class="hljs-title">input_was_mouse_input</span>](#property-input_was_mouse_input) | [bool](https://docs.godotengine.org/en/latest/classes/class_bool.html#class-bool) |  `false` 
 [<span class="hljs-title">auto_skip</span>](#property-auto_skip) | [DialogicAutoSkip](class_dialogicautoskip.md) |  `null` 
 [<span class="hljs-title">auto_advance</span>](#property-auto_advance) | [DialogicAutoAdvance](class_dialogicautoadvance.md) |  `null` 
 [<span class="hljs-title">manual_advance</span>](#property-manual_advance) | [DialogicManualAdvance](class_dialogicmanualadvance.md) |  `null` 
@@ -87,6 +88,16 @@ Returns | Method
 
 
 <a class="header" id="property-action_was_consumed" href="#property-action_was_consumed">**<span class="hljs-attribute">var</span> <span class="hljs-title">action_was_consumed</span> <span style = "color: gray"> = </span> false** 
+
+
+
+ <span style = "color: gray">*No description available.*</span> 
+
+---
+
+
+
+<a class="header" id="property-input_was_mouse_input" href="#property-input_was_mouse_input">**<span class="hljs-attribute">var</span> <span class="hljs-title">input_was_mouse_input</span> <span style = "color: gray"> = </span> false** 
 
 
 

@@ -8,7 +8,7 @@
 # DialogicClearEvent
 **Inherits:** [DialogicEvent](class_dialogicevent.md)
 
-############################################################################## EDITOR REPRESENTATION ##############################################################################
+Event that clears audio & visuals (not variables). Useful to make sure the scene is clear for a completely new thing.
 ## Properties
 Name | Type | Default 
 --- | --- | --- 
