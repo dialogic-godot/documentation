@@ -8,7 +8,7 @@
 # DialogicTextInputEvent
 **Inherits:** [DialogicEvent](class_dialogicevent.md)
 
-# Settings
+Event that shows an input field and will change a dialogic variable.
 ## Properties
 Name | Type | Default 
 --- | --- | --- 

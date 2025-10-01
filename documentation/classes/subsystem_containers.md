@@ -8,7 +8,7 @@
 # subsystem_Containers
 **Inherits:** [DialogicSubsystem](class_dialogicsubsystem.md)
 
-##################################################################################################
+Subsystem that manages portrait positions.
 ## Properties
 Name | Type | Default 
 --- | --- | --- 

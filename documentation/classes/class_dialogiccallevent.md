@@ -8,7 +8,7 @@
 # DialogicCallEvent
 **Inherits:** [DialogicEvent](class_dialogicevent.md)
 
-# Settings
+Event that allows calling a method in a node or autoload.
 ## Properties
 Name | Type | Default 
 --- | --- | --- 
@@ -25,8 +25,7 @@ Returns | Method
 <span class="hljs-attribute">[bool](https://docs.godotengine.org/en/latest/classes/class_bool.html#class-bool)</span> | [<span class="hljs-title">is_valid_event</span>](#method-is_valid_event) ( `string`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) ) 
 <span class="hljs-attribute">[Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html#class-dictionary)</span> | [<span class="hljs-title">get_shortcode_parameters</span>](#method-get_shortcode_parameters) ( ) 
 <span style = "color: gray">void</span> | [<span class="hljs-title">build_event_editor</span>](#method-build_event_editor) ( ) 
-<span class="hljs-attribute">[Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html#class-dictionary)</span> | [<span class="hljs-title">get_autoload_suggestions</span>](#method-get_autoload_suggestions) ( `filter`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) = `""` ) 
-<span class="hljs-attribute">[Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html#class-dictionary)</span> | [<span class="hljs-title">get_method_suggestions</span>](#method-get_method_suggestions) ( `filter`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) = `""`, `temp_autoload`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) = `""` ) 
+<span class="hljs-attribute">[Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html#class-dictionary)</span> | [<span class="hljs-title">get_method_suggestions</span>](#method-get_method_suggestions) ( `filter`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) = `""` ) 
 <span style = "color: gray">void</span> | [<span class="hljs-title">update_argument_info</span>](#method-update_argument_info) ( ) 
 <span style = "color: gray">void</span> | [<span class="hljs-title">check_arguments_and_update_warning</span>](#method-check_arguments_and_update_warning) ( ) 
 --- 
@@ -116,17 +115,7 @@ A list of arguments to give to the call.
 
 
 
-<a class="header" id="method-get_autoload_suggestions" href="#method-get_autoload_suggestions">**<span class="hljs-attribute">func</span> [<span class="hljs-title">get_autoload_suggestions</span>](#method-get_autoload_suggestions) ( `filter`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) = `""` )</a>  ⇒ <span class="hljs-attribute">[Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html#class-dictionary)</span>** 
-
-
-
- <span style = "color: gray">*No description available.*</span> 
-
----
-
-
-
-<a class="header" id="method-get_method_suggestions" href="#method-get_method_suggestions">**<span class="hljs-attribute">func</span> [<span class="hljs-title">get_method_suggestions</span>](#method-get_method_suggestions) ( `filter`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) = `""`, `temp_autoload`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) = `""` )</a>  ⇒ <span class="hljs-attribute">[Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html#class-dictionary)</span>** 
+<a class="header" id="method-get_method_suggestions" href="#method-get_method_suggestions">**<span class="hljs-attribute">func</span> [<span class="hljs-title">get_method_suggestions</span>](#method-get_method_suggestions) ( `filter`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) = `""` )</a>  ⇒ <span class="hljs-attribute">[Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html#class-dictionary)</span>** 
 
 
 

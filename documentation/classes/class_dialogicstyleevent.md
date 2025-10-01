@@ -8,7 +8,7 @@
 # DialogicStyleEvent
 **Inherits:** [DialogicEvent](class_dialogicevent.md)
 
-# Settings
+Event that allows changing the currently displayed style.
 ## Properties
 Name | Type | Default 
 --- | --- | --- 

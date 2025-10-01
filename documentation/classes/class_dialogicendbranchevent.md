@@ -8,14 +8,14 @@
 # DialogicEndBranchEvent
 **Inherits:** [Resource](https://docs.godotengine.org/en/latest/classes/class_resource.html#class-resource)
 
-##############################################################################
+Event that indicates the end of a condition or choice (or custom branch). In text this is not stored (only as a change in indentation).
 --- 
 
 ## Methods
 Returns | Method 
 --- | --- 
 <span class="hljs-attribute">[int](https://docs.godotengine.org/en/latest/classes/class_int.html#class-int)</span> | [<span class="hljs-title">find_next_index</span>](#method-find_next_index) ( ) 
-<span class="hljs-attribute">[int](https://docs.godotengine.org/en/latest/classes/class_int.html#class-int)</span> | [<span class="hljs-title">find_opening_index</span>](#method-find_opening_index) ( `at_index`: [int](https://docs.godotengine.org/en/latest/classes/class_int.html#class-int) ) 
+<span class="hljs-attribute">[int](https://docs.godotengine.org/en/latest/classes/class_int.html#class-int)</span> | [<span class="hljs-title">get_opening_index</span>](#method-get_opening_index) ( ) 
 <span class="hljs-attribute">[String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string)</span> | [<span class="hljs-title">to_text</span>](#method-to_text) ( ) 
 <span style = "color: gray">void</span> | [<span class="hljs-title">from_text</span>](#method-from_text) ( `_string`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) ) 
 <span class="hljs-attribute">[bool](https://docs.godotengine.org/en/latest/classes/class_bool.html#class-bool)</span> | [<span class="hljs-title">is_valid_event</span>](#method-is_valid_event) ( `string`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) ) 
@@ -28,13 +28,13 @@ Returns | Method
 
 
 
- <span style = "color: gray">*No description available.*</span> 
+Returns the index of the first event that - is on the same "indentation" - is not a branching event (unless it is a branch starter)
 
 ---
 
 
 
-<a class="header" id="method-find_opening_index" href="#method-find_opening_index">**<span class="hljs-attribute">func</span> [<span class="hljs-title">find_opening_index</span>](#method-find_opening_index) ( `at_index`: [int](https://docs.godotengine.org/en/latest/classes/class_int.html#class-int) )</a>  ⇒ <span class="hljs-attribute">[int](https://docs.godotengine.org/en/latest/classes/class_int.html#class-int)</span>** 
+<a class="header" id="method-get_opening_index" href="#method-get_opening_index">**<span class="hljs-attribute">func</span> [<span class="hljs-title">get_opening_index</span>](#method-get_opening_index) ( )</a>  ⇒ <span class="hljs-attribute">[int](https://docs.godotengine.org/en/latest/classes/class_int.html#class-int)</span>** 
 
 
 

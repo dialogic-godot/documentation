@@ -17,6 +17,7 @@ Name | Type | Default
 [<span class="hljs-title">reveal_by_input</span>](#property-reveal_by_input) | [bool](https://docs.godotengine.org/en/latest/classes/class_bool.html#class-bool) |  `false` 
 [<span class="hljs-title">block_delay</span>](#property-block_delay) | [float](https://docs.godotengine.org/en/latest/classes/class_float.html#class-float) |  `0.2` 
 [<span class="hljs-title">autofocus_first_choice</span>](#property-autofocus_first_choice) | [bool](https://docs.godotengine.org/en/latest/classes/class_bool.html#class-bool) |  `true` 
+[<span class="hljs-title">use_input_action</span>](#property-use_input_action) | [bool](https://docs.godotengine.org/en/latest/classes/class_bool.html#class-bool) |  `false` 
 [<span class="hljs-title">default_false_behaviour</span>](#property-default_false_behaviour) | [int](https://docs.godotengine.org/en/latest/classes/class_int.html#class-int) |  `0` 
 [<span class="hljs-title">hotkey_behaviour</span>](#property-hotkey_behaviour) | [int](https://docs.godotengine.org/en/latest/classes/class_int.html#class-int) |  `0` 
 --- 
@@ -25,10 +26,14 @@ Name | Type | Default
 Returns | Method 
 --- | --- 
 <span style = "color: gray">void</span> | [<span class="hljs-title">clear_game_state</span>](#method-clear_game_state) ( `_clear_flag`: [int](https://docs.godotengine.org/en/latest/classes/class_int.html#class-int) = `0` ) 
+<span style = "color: gray">void</span> | [<span class="hljs-title">post_install</span>](#method-post_install) ( ) 
 <span style = "color: gray">void</span> | [<span class="hljs-title">hide_all_choices</span>](#method-hide_all_choices) ( ) 
 <span class="hljs-attribute">[Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html#class-dictionary)</span> | [<span class="hljs-title">get_current_question_info</span>](#method-get_current_question_info) ( ) 
 <span style = "color: gray">void</span> | [<span class="hljs-title">show_current_question</span>](#method-show_current_question) ( `instant`: [bool](https://docs.godotengine.org/en/latest/classes/class_bool.html#class-bool) = `true` ) 
-<span class="hljs-attribute">[DialogicNode_ChoiceButton](class_dialogicnode_choicebutton.md)</span> | [<span class="hljs-title">get_choice_button_node</span>](#method-get_choice_button_node) ( `button_index`: [int](https://docs.godotengine.org/en/latest/classes/class_int.html#class-int) ) 
+<span style = "color: gray">void</span> | [<span class="hljs-title">focus_choice</span>](#method-focus_choice) ( `button_index`: [int](https://docs.godotengine.org/en/latest/classes/class_int.html#class-int) ) 
+<span style = "color: gray">void</span> | [<span class="hljs-title">select_choice</span>](#method-select_choice) ( `button_index`: [int](https://docs.godotengine.org/en/latest/classes/class_int.html#class-int) ) 
+<span style = "color: gray">void</span> | [<span class="hljs-title">select_focused_choice</span>](#method-select_focused_choice) ( ) 
+<span class="hljs-attribute">[DialogicNode_ChoiceButton](class_dialogicnode_choicebutton.md)</span> | [<span class="hljs-title">get_choice_button</span>](#method-get_choice_button) ( `button_index`: [int](https://docs.godotengine.org/en/latest/classes/class_int.html#class-int) ) 
 <span class="hljs-attribute">[Array](https://docs.godotengine.org/en/latest/classes/class_array.html#class-array)</span> | [<span class="hljs-title">get_current_choice_indexes</span>](#method-get_current_choice_indexes) ( ) 
 <span class="hljs-attribute">[bool](https://docs.godotengine.org/en/latest/classes/class_bool.html#class-bool)</span> | [<span class="hljs-title">is_question</span>](#method-is_question) ( `index`: [int](https://docs.godotengine.org/en/latest/classes/class_int.html#class-int) ) 
 --- 
@@ -145,6 +150,16 @@ If true, the first (top-most) choice will be focused
 
 
 
+<a class="header" id="property-use_input_action" href="#property-use_input_action">**<span class="hljs-attribute">var</span> <span class="hljs-title">use_input_action</span> <span style = "color: gray"> = </span> false** 
+
+
+
+If true the dialogic input action is used to trigger choices. However mouse events will be ignored no matter what.
+
+---
+
+
+
 <a class="header" id="property-default_false_behaviour" href="#property-default_false_behaviour">**<span class="hljs-attribute">var</span> <span class="hljs-title">default_false_behaviour</span> <span style = "color: gray"> = </span> 0** 
 
 
@@ -168,6 +183,16 @@ Will add some hotkeys to the choices if different then HotkeyBehaviour.NONE.
 
 
 <a class="header" id="method-clear_game_state" href="#method-clear_game_state">**<span class="hljs-attribute">func</span> [<span class="hljs-title">clear_game_state</span>](#method-clear_game_state) ( `_clear_flag`: [int](https://docs.godotengine.org/en/latest/classes/class_int.html#class-int) = `0` )</a>  ⇒ <span style = "color: gray">void</span>** 
+
+
+
+ <span style = "color: gray">*No description available.*</span> 
+
+---
+
+
+
+<a class="header" id="method-post_install" href="#method-post_install">**<span class="hljs-attribute">func</span> [<span class="hljs-title">post_install</span>](#method-post_install) ( )</a>  ⇒ <span style = "color: gray">void</span>** 
 
 
 
@@ -207,7 +232,37 @@ Lists all current choices and shows buttons.
 
 
 
-<a class="header" id="method-get_choice_button_node" href="#method-get_choice_button_node">**<span class="hljs-attribute">func</span> [<span class="hljs-title">get_choice_button_node</span>](#method-get_choice_button_node) ( `button_index`: [int](https://docs.godotengine.org/en/latest/classes/class_int.html#class-int) )</a>  ⇒ <span class="hljs-attribute">[DialogicNode_ChoiceButton](class_dialogicnode_choicebutton.md)</span>** 
+<a class="header" id="method-focus_choice" href="#method-focus_choice">**<span class="hljs-attribute">func</span> [<span class="hljs-title">focus_choice</span>](#method-focus_choice) ( `button_index`: [int](https://docs.godotengine.org/en/latest/classes/class_int.html#class-int) )</a>  ⇒ <span style = "color: gray">void</span>** 
+
+
+
+ <span style = "color: gray">*No description available.*</span> 
+
+---
+
+
+
+<a class="header" id="method-select_choice" href="#method-select_choice">**<span class="hljs-attribute">func</span> [<span class="hljs-title">select_choice</span>](#method-select_choice) ( `button_index`: [int](https://docs.godotengine.org/en/latest/classes/class_int.html#class-int) )</a>  ⇒ <span style = "color: gray">void</span>** 
+
+
+
+ <span style = "color: gray">*No description available.*</span> 
+
+---
+
+
+
+<a class="header" id="method-select_focused_choice" href="#method-select_focused_choice">**<span class="hljs-attribute">func</span> [<span class="hljs-title">select_focused_choice</span>](#method-select_focused_choice) ( )</a>  ⇒ <span style = "color: gray">void</span>** 
+
+
+
+ <span style = "color: gray">*No description available.*</span> 
+
+---
+
+
+
+<a class="header" id="method-get_choice_button" href="#method-get_choice_button">**<span class="hljs-attribute">func</span> [<span class="hljs-title">get_choice_button</span>](#method-get_choice_button) ( `button_index`: [int](https://docs.godotengine.org/en/latest/classes/class_int.html#class-int) )</a>  ⇒ <span class="hljs-attribute">[DialogicNode_ChoiceButton](class_dialogicnode_choicebutton.md)</span>** 
 
 
 
@@ -221,7 +276,7 @@ Lists all current choices and shows buttons.
 
 
 
- <span style = "color: gray">*No description available.*</span> 
+Returns the indexes of the choice events related to the current question.
 
 ---
 
@@ -231,7 +286,7 @@ Lists all current choices and shows buttons.
 
 
 
- <span style = "color: gray">*No description available.*</span> 
+Returns `true` if the given index is a text event before a question or the first choice event of a question.
 
 ---
 

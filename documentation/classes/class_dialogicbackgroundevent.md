@@ -8,7 +8,7 @@
 # DialogicBackgroundEvent
 **Inherits:** [DialogicEvent](class_dialogicevent.md)
 
-# Settings
+Event to show scenes in the background and switch between them.
 ## Properties
 Name | Type | Default 
 --- | --- | --- 

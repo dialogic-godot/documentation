@@ -8,7 +8,10 @@
 # subsystem_Settings
 **Inherits:** [DialogicSubsystem](class_dialogicsubsystem.md)
 
-##################################################################################################
+Subsystem that allows setting and getting settings that are automatically saved slot independent.
+## Description
+All settings that are stored in the project settings dialogic/settings section are supported. For example the text_speed setting is stored there. How to access this subsystem via code: ```gd Dialogic.Settings.text_speed = 0.05 ```  Settings stored there can also be changed with the Settings event.
+
 ## Properties
 Name | Type | Default 
 --- | --- | --- 

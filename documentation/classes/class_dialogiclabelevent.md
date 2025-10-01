@@ -6,9 +6,9 @@
 *This contains the source code documentation of the class `DialogicLabelEvent`.*
         
 # DialogicLabelEvent
-**Inherits:** [DialogicEvent](class_dialogicevent.md)
+**Inherits:** [Resource](https://docs.godotengine.org/en/latest/classes/class_resource.html#class-resource)
 
-# Settings
+Event that is used as an anchor. You can use the DialogicJumpEvent to jump to this point.
 ## Properties
 Name | Type | Default 
 --- | --- | --- 

@@ -22,9 +22,7 @@ Name | Type | Default
 ## Methods
 Returns | Method 
 --- | --- 
-<span style = "color: gray">void</span> | [<span class="hljs-title">add_to_item_list</span>](#method-add_to_item_list) ( `item_list`: [ItemList](https://docs.godotengine.org/en/latest/classes/class_itemlist.html#class-itemlist), `current_file`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) ) 
 <span class="hljs-attribute">[String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string)</span> | [<span class="hljs-title">get_parent_directory</span>](#method-get_parent_directory) ( ) 
-<span style = "color: gray">void</span> | [<span class="hljs-title">current_file</span>](#method-current_file) ( `sidebar`: [Control](https://docs.godotengine.org/en/latest/classes/class_control.html#class-control), `resource_list`: [ItemList](https://docs.godotengine.org/en/latest/classes/class_itemlist.html#class-itemlist), `current_file`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) ) 
 --- 
 ## Property Descriptions
 
@@ -82,27 +80,7 @@ Returns | Method
 
 
 
-<a class="header" id="method-add_to_item_list" href="#method-add_to_item_list">**<span class="hljs-attribute">func</span> [<span class="hljs-title">add_to_item_list</span>](#method-add_to_item_list) ( `item_list`: [ItemList](https://docs.godotengine.org/en/latest/classes/class_itemlist.html#class-itemlist), `current_file`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) )</a>  ⇒ <span style = "color: gray">void</span>** 
-
-
-
- <span style = "color: gray">*No description available.*</span> 
-
----
-
-
-
 <a class="header" id="method-get_parent_directory" href="#method-get_parent_directory">**<span class="hljs-attribute">func</span> [<span class="hljs-title">get_parent_directory</span>](#method-get_parent_directory) ( )</a>  ⇒ <span class="hljs-attribute">[String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string)</span>** 
-
-
-
- <span style = "color: gray">*No description available.*</span> 
-
----
-
-
-
-<a class="header" id="method-current_file" href="#method-current_file">**<span class="hljs-attribute">func</span> [<span class="hljs-title">current_file</span>](#method-current_file) ( `sidebar`: [Control](https://docs.godotengine.org/en/latest/classes/class_control.html#class-control), `resource_list`: [ItemList](https://docs.godotengine.org/en/latest/classes/class_itemlist.html#class-itemlist), `current_file`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) )</a>  ⇒ <span style = "color: gray">void</span>** 
 
 
 

@@ -8,7 +8,7 @@
 # DialogicCommentEvent
 **Inherits:** [DialogicEvent](class_dialogicevent.md)
 
-# Settings
+Event that does nothing but store a comment string. Will print the comment in debug builds.
 ## Properties
 Name | Type | Default 
 --- | --- | --- 

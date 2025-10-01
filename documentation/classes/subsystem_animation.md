@@ -8,7 +8,7 @@
 # subsystem_Animation
 **Inherits:** [DialogicSubsystem](class_dialogicsubsystem.md)
 
-##################################################################################################
+Subsystem that allows entering and leaving an animation state.
 ## Properties
 Name | Type | Default 
 --- | --- | --- 

@@ -8,7 +8,7 @@
 # DialogicEndTimelineEvent
 **Inherits:** [DialogicEvent](class_dialogicevent.md)
 
-##############################################################################
+Event that ends a timeline (even if more events come after).
 --- 
 
 ## Methods

@@ -8,7 +8,7 @@
 # DialogicSaveEvent
 **Inherits:** [DialogicEvent](class_dialogicevent.md)
 
-# Settings
+Event that allows saving to a specific slot.
 ## Properties
 Name | Type | Default 
 --- | --- | --- 

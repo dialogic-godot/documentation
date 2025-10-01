@@ -33,10 +33,6 @@ Returns | Method
 <span class="hljs-attribute">[Array](https://docs.godotengine.org/en/latest/classes/class_array.html#class-array)</span> | [<span class="hljs-title">list_variables</span>](#method-list_variables) ( `dict`: [Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html#class-dictionary), `path`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) = `""`, `type`: [int](https://docs.godotengine.org/en/latest/classes/class_int.html#class-int) = `0` ) 
 <span class="hljs-attribute">[int](https://docs.godotengine.org/en/latest/classes/class_int.html#class-int)</span> | [<span class="hljs-title">get_variable_value_type</span>](#method-get_variable_value_type) ( `value`: [Variant](https://docs.godotengine.org/en/latest/classes/class_variant.html#class-variant) ) 
 <span class="hljs-attribute">[int](https://docs.godotengine.org/en/latest/classes/class_int.html#class-int)</span> | [<span class="hljs-title">get_variable_type</span>](#method-get_variable_type) ( `path`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string), `dict`: [Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html#class-dictionary) = `{}` ) 
-<span class="hljs-attribute">[PackedScene](https://docs.godotengine.org/en/latest/classes/class_packedscene.html#class-packedscene)</span> | [<span class="hljs-title">get_default_layout_base</span>](#method-get_default_layout_base) ( ) 
-<span class="hljs-attribute">[DialogicStyle](class_dialogicstyle.md)</span> | [<span class="hljs-title">get_fallback_style</span>](#method-get_fallback_style) ( ) 
-<span class="hljs-attribute">[DialogicStyle](class_dialogicstyle.md)</span> | [<span class="hljs-title">get_default_style</span>](#method-get_default_style) ( ) 
-<span class="hljs-attribute">[DialogicStyle](class_dialogicstyle.md)</span> | [<span class="hljs-title">get_style_by_name</span>](#method-get_style_by_name) ( `name`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) ) 
 <span style = "color: gray">void</span> | [<span class="hljs-title">apply_scene_export_overrides</span>](#method-apply_scene_export_overrides) ( `node`: [Node](https://docs.godotengine.org/en/latest/classes/class_node.html#class-node), `export_overrides`: [Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html#class-dictionary), `apply`: [bool](https://docs.godotengine.org/en/latest/classes/class_bool.html#class-bool) = `true` ) 
 <span class="hljs-attribute">[Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html#class-dictionary)</span> | [<span class="hljs-title">get_scene_export_defaults</span>](#method-get_scene_export_defaults) ( `node`: [Node](https://docs.godotengine.org/en/latest/classes/class_node.html#class-node) ) 
 <span class="hljs-attribute">[String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string)</span> | [<span class="hljs-title">make_file_custom</span>](#method-make_file_custom) ( `original_file`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string), `target_folder`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string), `new_file_name`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) = `""`, `new_folder_name`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) = `""` ) 
@@ -49,6 +45,14 @@ Returns | Method
 <span class="hljs-attribute">[Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html#class-dictionary)</span> | [<span class="hljs-title">get_character_suggestions</span>](#method-get_character_suggestions) ( `_search_text`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string), `current_value`: [DialogicCharacter](class_dialogiccharacter.md) = `null`, `allow_none`: [bool](https://docs.godotengine.org/en/latest/classes/class_bool.html#class-bool) = `true`, `allow_all`: [bool](https://docs.godotengine.org/en/latest/classes/class_bool.html#class-bool) = `false`, `editor_node`: [Node](https://docs.godotengine.org/en/latest/classes/class_node.html#class-node) = `null` ) 
 <span class="hljs-attribute">[Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html#class-dictionary)</span> | [<span class="hljs-title">get_portrait_suggestions</span>](#method-get_portrait_suggestions) ( `search_text`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string), `character`: [DialogicCharacter](class_dialogiccharacter.md), `allow_empty`: [bool](https://docs.godotengine.org/en/latest/classes/class_bool.html#class-bool) = `false`, `empty_text`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) = `"Don\'t Change"` ) 
 <span class="hljs-attribute">[Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html#class-dictionary)</span> | [<span class="hljs-title">get_portrait_position_suggestions</span>](#method-get_portrait_position_suggestions) ( `search_text`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) = `""` ) 
+<span class="hljs-attribute">[Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html#class-dictionary)</span> | [<span class="hljs-title">get_autoload_suggestions</span>](#method-get_autoload_suggestions) ( `filter`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) = `""` ) 
+<span class="hljs-attribute">[Script](https://docs.godotengine.org/en/latest/classes/class_script.html#class-script)</span> | [<span class="hljs-title">get_autoload_script_resource</span>](#method-get_autoload_script_resource) ( `autoload_name`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) ) 
+<span class="hljs-attribute">[Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html#class-dictionary)</span> | [<span class="hljs-title">get_autoload_method_suggestions</span>](#method-get_autoload_method_suggestions) ( `filter`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string), `autoload_name`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) ) 
+<span class="hljs-attribute">[Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html#class-dictionary)</span> | [<span class="hljs-title">get_autoload_property_suggestions</span>](#method-get_autoload_property_suggestions) ( `_filter`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string), `autoload_name`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) ) 
+<span class="hljs-attribute">[Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html#class-dictionary)</span> | [<span class="hljs-title">get_audio_bus_suggestions</span>](#method-get_audio_bus_suggestions) ( `_filter`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) = `""` ) 
+<span class="hljs-attribute">[Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html#class-dictionary)</span> | [<span class="hljs-title">get_audio_channel_suggestions</span>](#method-get_audio_channel_suggestions) ( `_search_text`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) ) 
+<span class="hljs-attribute">[Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html#class-dictionary)</span> | [<span class="hljs-title">get_audio_channel_defaults</span>](#method-get_audio_channel_defaults) ( ) 
+<span class="hljs-attribute">[Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html#class-dictionary)</span> | [<span class="hljs-title">validate_audio_channel_name</span>](#method-validate_audio_channel_name) ( `text`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) ) 
 --- 
 ## Constants
 
@@ -290,46 +294,6 @@ Turns a `file_path` from `some_file.png` to `Some File`.
 
 
 
-<a class="header" id="method-get_default_layout_base" href="#method-get_default_layout_base">**<span class="hljs-attribute">func</span> [<span class="hljs-title">get_default_layout_base</span>](#method-get_default_layout_base) ( )</a>  ⇒ <span class="hljs-attribute">[PackedScene](https://docs.godotengine.org/en/latest/classes/class_packedscene.html#class-packedscene)</span>** 
-
-
-
- <span style = "color: gray">*No description available.*</span> 
-
----
-
-
-
-<a class="header" id="method-get_fallback_style" href="#method-get_fallback_style">**<span class="hljs-attribute">func</span> [<span class="hljs-title">get_fallback_style</span>](#method-get_fallback_style) ( )</a>  ⇒ <span class="hljs-attribute">[DialogicStyle](class_dialogicstyle.md)</span>** 
-
-
-
- <span style = "color: gray">*No description available.*</span> 
-
----
-
-
-
-<a class="header" id="method-get_default_style" href="#method-get_default_style">**<span class="hljs-attribute">func</span> [<span class="hljs-title">get_default_style</span>](#method-get_default_style) ( )</a>  ⇒ <span class="hljs-attribute">[DialogicStyle](class_dialogicstyle.md)</span>** 
-
-
-
- <span style = "color: gray">*No description available.*</span> 
-
----
-
-
-
-<a class="header" id="method-get_style_by_name" href="#method-get_style_by_name">**<span class="hljs-attribute">func</span> [<span class="hljs-title">get_style_by_name</span>](#method-get_style_by_name) ( `name`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) )</a>  ⇒ <span class="hljs-attribute">[DialogicStyle](class_dialogicstyle.md)</span>** 
-
-
-
- <span style = "color: gray">*No description available.*</span> 
-
----
-
-
-
 <a class="header" id="method-apply_scene_export_overrides" href="#method-apply_scene_export_overrides">**<span class="hljs-attribute">func</span> [<span class="hljs-title">apply_scene_export_overrides</span>](#method-apply_scene_export_overrides) ( `node`: [Node](https://docs.godotengine.org/en/latest/classes/class_node.html#class-node), `export_overrides`: [Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html#class-dictionary), `apply`: [bool](https://docs.godotengine.org/en/latest/classes/class_bool.html#class-bool) = `true` )</a>  ⇒ <span style = "color: gray">void</span>** 
 
 
@@ -441,6 +405,86 @@ Takes `source` and builds a dictionary of keys only. The values are `null`.
 
 
 <a class="header" id="method-get_portrait_position_suggestions" href="#method-get_portrait_position_suggestions">**<span class="hljs-attribute">func</span> [<span class="hljs-title">get_portrait_position_suggestions</span>](#method-get_portrait_position_suggestions) ( `search_text`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) = `""` )</a>  ⇒ <span class="hljs-attribute">[Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html#class-dictionary)</span>** 
+
+
+
+ <span style = "color: gray">*No description available.*</span> 
+
+---
+
+
+
+<a class="header" id="method-get_autoload_suggestions" href="#method-get_autoload_suggestions">**<span class="hljs-attribute">func</span> [<span class="hljs-title">get_autoload_suggestions</span>](#method-get_autoload_suggestions) ( `filter`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) = `""` )</a>  ⇒ <span class="hljs-attribute">[Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html#class-dictionary)</span>** 
+
+
+
+ <span style = "color: gray">*No description available.*</span> 
+
+---
+
+
+
+<a class="header" id="method-get_autoload_script_resource" href="#method-get_autoload_script_resource">**<span class="hljs-attribute">func</span> [<span class="hljs-title">get_autoload_script_resource</span>](#method-get_autoload_script_resource) ( `autoload_name`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) )</a>  ⇒ <span class="hljs-attribute">[Script](https://docs.godotengine.org/en/latest/classes/class_script.html#class-script)</span>** 
+
+
+
+ <span style = "color: gray">*No description available.*</span> 
+
+---
+
+
+
+<a class="header" id="method-get_autoload_method_suggestions" href="#method-get_autoload_method_suggestions">**<span class="hljs-attribute">func</span> [<span class="hljs-title">get_autoload_method_suggestions</span>](#method-get_autoload_method_suggestions) ( `filter`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string), `autoload_name`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) )</a>  ⇒ <span class="hljs-attribute">[Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html#class-dictionary)</span>** 
+
+
+
+ <span style = "color: gray">*No description available.*</span> 
+
+---
+
+
+
+<a class="header" id="method-get_autoload_property_suggestions" href="#method-get_autoload_property_suggestions">**<span class="hljs-attribute">func</span> [<span class="hljs-title">get_autoload_property_suggestions</span>](#method-get_autoload_property_suggestions) ( `_filter`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string), `autoload_name`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) )</a>  ⇒ <span class="hljs-attribute">[Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html#class-dictionary)</span>** 
+
+
+
+ <span style = "color: gray">*No description available.*</span> 
+
+---
+
+
+
+<a class="header" id="method-get_audio_bus_suggestions" href="#method-get_audio_bus_suggestions">**<span class="hljs-attribute">func</span> [<span class="hljs-title">get_audio_bus_suggestions</span>](#method-get_audio_bus_suggestions) ( `_filter`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) = `""` )</a>  ⇒ <span class="hljs-attribute">[Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html#class-dictionary)</span>** 
+
+
+
+ <span style = "color: gray">*No description available.*</span> 
+
+---
+
+
+
+<a class="header" id="method-get_audio_channel_suggestions" href="#method-get_audio_channel_suggestions">**<span class="hljs-attribute">func</span> [<span class="hljs-title">get_audio_channel_suggestions</span>](#method-get_audio_channel_suggestions) ( `_search_text`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) )</a>  ⇒ <span class="hljs-attribute">[Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html#class-dictionary)</span>** 
+
+
+
+ <span style = "color: gray">*No description available.*</span> 
+
+---
+
+
+
+<a class="header" id="method-get_audio_channel_defaults" href="#method-get_audio_channel_defaults">**<span class="hljs-attribute">func</span> [<span class="hljs-title">get_audio_channel_defaults</span>](#method-get_audio_channel_defaults) ( )</a>  ⇒ <span class="hljs-attribute">[Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html#class-dictionary)</span>** 
+
+
+
+ <span style = "color: gray">*No description available.*</span> 
+
+---
+
+
+
+<a class="header" id="method-validate_audio_channel_name" href="#method-validate_audio_channel_name">**<span class="hljs-attribute">func</span> [<span class="hljs-title">validate_audio_channel_name</span>](#method-validate_audio_channel_name) ( `text`: [String](https://docs.godotengine.org/en/latest/classes/class_string.html#class-string) )</a>  ⇒ <span class="hljs-attribute">[Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html#class-dictionary)</span>** 
 
 
 

@@ -8,7 +8,7 @@
 # subsystem_Expression
 **Inherits:** [DialogicSubsystem](class_dialogicsubsystem.md)
 
-##################################################################################################
+Subsystem that allows executing strings (with the Expression class). This is used by conditions and to allow expresions as variables.
 ## Properties
 Name | Type | Default 
 --- | --- | --- 

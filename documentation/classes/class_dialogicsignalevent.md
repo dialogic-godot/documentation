@@ -8,7 +8,7 @@
 # DialogicSignalEvent
 **Inherits:** [DialogicEvent](class_dialogicevent.md)
 
-# Settings
+Event that emits the Dialogic.signal_event signal with an argument. You can connect to this signal like this: `Dialogic.signal_event.connect(myfunc)`
 ## Properties
 Name | Type | Default 
 --- | --- | --- 

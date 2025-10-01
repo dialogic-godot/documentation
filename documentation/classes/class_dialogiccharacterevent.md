@@ -6,9 +6,9 @@
 *This contains the source code documentation of the class `DialogicCharacterEvent`.*
         
 # DialogicCharacterEvent
-**Inherits:** [DialogicEvent](class_dialogicevent.md)
+**Inherits:** [Resource](https://docs.godotengine.org/en/latest/classes/class_resource.html#class-resource)
 
-# Settings
+Event that allows to manipulate character portraits.
 ## Properties
 Name | Type | Default 
 --- | --- | --- 
