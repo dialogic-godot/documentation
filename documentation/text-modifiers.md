@@ -48,7 +48,7 @@ If a text is encountered multiple times during your game, this can be a nice way
 
 **Supports:** *Text Events, Choice Events*
 
-This makes it easy to insert conditional text into text events without adding a whole condition event and two text events.
+This makes it easy to insert conditional text into text events without adding a whole condition event and two text events. 
 
 ---
 
