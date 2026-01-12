@@ -9,7 +9,7 @@
 
 ## 1. Installation & Activation
 
-Dialogic 2 requires Godot 4.2 or higher. If you don't know what version you have installed, take a look at the bottom of your Godot Editor.
+Dialogic 2 requires Godot 4.4 or higher. If you don't know what version you have installed, take a look at the bottom of your Godot Editor.
 
 Let's install Dialogic 2:
 
@@ -36,28 +36,19 @@ Go to [the main page of the repository](https://github.com/dialogic-godot/dialog
 
 ## 2. Meeting the editor
 
-You can now access the dialogic interface by clicking the new tab at the very top (next to 2D, 3D, Script and AssetLib).
+You can now access the dialogic interface by clicking the new tab at the very top (next to 2D, 3D, Script, Game and AssetLib).
 
 ![godot_main_tabs](media/godot_main_tabs.png)
 
-You will be greeted by the dialogic home screen. At the top you can see the different editors dialogic has, at the left a sidebar that will contain recently used characters and timelines.
+You will be greeted by the dialogic home screen. At the top you can see the different editors dialogic has, at the left a sidebar that will contain recently used characters and timelines and where you can create new timelines and characters.
 
 <img title="" src="media/editor_overview.png" alt="" width="600">
-
-In the top right, there are some helpful buttons:
-
-- Add Timeline
-- Add Character
-- Reference Manager
-- Play Timeline
-
-We will start by using the first one.
 
 ---
 
 ## 3. Creating a timeline
 
-To create a timeline, press the `Add Timeline` button. You will need to select a folder to put the timeline in and enter a file name. Timelines will be saved as `*.dtl` files.
+To create a timeline, press the `Add Timeline` button in the sidebar. You will need to select a folder to put the timeline in and enter a file name. Timelines will be saved as `*.dtl` files.
 
 Once you hit `Save`, you can start adding events from the panel to the right of the editor.
 <img src="/media/timeline_editor.png" width="600"/>
@@ -72,7 +63,7 @@ You can test the timeline by clicking the `Play Timeline` button at the top righ
 
 ## 4. Creating a character
 
-To create a new character, press the `Add Character` button at the top right.
+To create a new character, press the `Add Character` button in the sidebar.
 
 As for timelines, you need to select the place to save to and a name.
 
