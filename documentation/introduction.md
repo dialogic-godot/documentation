@@ -27,14 +27,14 @@ The **Visual Editor** has each event as a movable block with easy to use fields:
 The **Text Editor** allows you to write events in pure text format. It provides syntax highlighting and auto-completion making writing timelines super efficient. You can use any text editor, though. Here is the same timeline in the text format:
 
 ```dtl
-join juliet 1
-juliet: Oh Romeo, what's your favourite game type?
-join romeo 2
-romeo: Oh Juliet, it's simple...
+join Juliet left
+Juliet: Oh Romeo, what's your favorite game type?
+join Romeo right
+Romeo: Oh Juliet, it's simple...
 - Visual Novels
-    jump VNs
-- JRPG
-    jump other_timeline/
+	jump VNs
+- JRPGs
+	jump other_timeline/
 ```
 
 No strings attached; you can mix and match as you please!
