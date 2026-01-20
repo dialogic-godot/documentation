@@ -1,7 +1,6 @@
 [book]
 authors = ["Emilio Coppola", "Jowan Spooner", "Dialogic Contributors"]
 language = "en"
-multilingual = false
 src = "documentation"
 title = "Dialogic 2 Documentation"
 description = "Learn about Dialogic 2 and how to create beautiful dialogues in your games!"
