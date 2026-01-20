@@ -10,10 +10,10 @@ git-repository-url = "https://github.com/dialogic-godot/documentation/tree/main/
 edit-url-template = "https://github.com/dialogic-godot/documentation/edit/main/{path}"
 additional-css = ["css/mdbook-admonish.css", "css/header.css"]
 
-[preprocessor.admonish]
-after = ["links"]
-command = "mdbook-admonish"
-assets_version = "3.0.1" # do not edit: managed by `mdbook-admonish install`
+# [preprocessor.admonish]
+# after = ["links"]
+# command = "mdbook-admonish"
+# assets_version = "3.0.1" # do not edit: managed by `mdbook-admonish install`
 
 [preprocessor.toc]
 command = "mdbook-toc"
