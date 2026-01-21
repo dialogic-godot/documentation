@@ -71,9 +71,9 @@ You can use this to quickly advance through your timelines, for example, for deb
 Dialogic.Inputs.auto_skip.disable_on_unread_text = false
 ```
 
-```admonish
-This is implemented when you use `Play Timeline`. You can enable auto-skip there with the MiddleMouseButton and stop it with any user input.
-```
+> [!TIP]
+> This is implemented when you use `Play Timeline`. You can enable auto-skip there with the MiddleMouseButton and stop it with any user input.
+
 
 ## 4. Reacting to Auto-Skip
 

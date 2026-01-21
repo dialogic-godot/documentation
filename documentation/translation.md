@@ -24,10 +24,10 @@ However, keeping translation and localization in mind is an excellent idea:
 - What images do you want to localize?
 - Any features in mind that may complicate translation?
 
-```admonish info
-For now, Dialogic supports CSV translation only.
-Godot itself supports `gettext` as well.
-```
+> [!NOTE]
+> For now, Dialogic supports CSV translation only.
+> Godot itself supports `gettext` as well.
+
 
 ## 1.1 What can Dialogic translate?
 
@@ -74,13 +74,13 @@ Text/1/text,Hello World!,こんにちは世界！
 That's it! You can now hit "Collect translation," and Dialogic will generate a translation file for you.\
 The translation file is a specific Godot file. Here is their official documentation: [Internationalizing games](https://docs.godotengine.org/en/stable/tutorials/i18n/internationalizing_games.html)
 
-```admonish info
-In CSV, you use commas to separate columns. However, if you want to use commas inside your text, you will have to wrap your text in quotation marks and escape any nested quotations.
-```
+> [!NOTE]
+> In CSV, you use commas to separate columns. However, if you want to use commas inside your text, you will have to wrap your text in quotation marks and escape any nested quotations.
 
-```admonish warning
-Once you generated translation, if you change the text of a translated unit (text event, character name, or glossary entry), you must generate the translation again.
-```
+
+> [!WARNING]
+> Once you generated translation, if you change the text of a translated unit (text event, character name, or glossary entry), you must generate the translation again.
+
 
 ### 2.3 The Translation workflow
 
@@ -113,12 +113,11 @@ the translation key.
 These properties get automatically populated via the "Update CSV files" button.\
 Entries prefixed with `_` (underscore) are considered private and will be ignored. Every other `String` property will be translated and put into the CSV.
 
-```admonish warning
-The name and alternatives of a glossary entry must be unique, the same applies for the translated counterparts.\
-Otherwise, resolving the correct entry will be impossible.
+> [!WARNING]
+> The name and alternatives of a glossary entry must be unique, the same applies for the translated counterparts.\
+> Otherwise, resolving the correct entry will be impossible.
+> Glossary names or alternatives may not start with `Glossary/`.
 
-Glossary names or alternatives may not start with `Glossary/`.
-```
 
 Once translation has been enabled, and you are testing another locale,
 glossaries won't fall back to the default locale when an entry property has not been translated.

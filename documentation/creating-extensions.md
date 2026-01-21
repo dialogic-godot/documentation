@@ -30,9 +30,8 @@ The best way to create an extension is to use the extension creator in the dialo
 
 By clicking the `Create New Extension` button, you can set up an extension folder and a custom event script. Enter a name for the new module and select what you would like to add. Then click `Create`. This should create a folder inside your extensions folder with two scripts: `index.gd` and `event_(module name here).gd`.
 
-```admonish warning
-Existing files will be overwritten!
-```
+> [!WARNING]
+> Existing files will be overwritten!
 
 ---
 
@@ -243,12 +242,11 @@ func animate():
     tween.finished.connect(emit_signal.bind('finished_once'))
 ```
 
-```admonish note
-Be aware, you have to:
+> [!NOTE]
+> Be aware, you have to:
+> - extend the `DialogicAnimation` class and implement the `animate()` method
+> - at some point emit the `finished_once` signal; it's called like this because animations can be repeated by Dialogic
 
-- extend the `DialogicAnimation` class and implement the `animate()` method
-- at some point emit the `finished_once` signal; it's called like this because animations can be repeated by Dialogic
-```
 
 *You have the following variables to work with:*
 

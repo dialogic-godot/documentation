@@ -7,8 +7,7 @@
 *Most text modifiers work in text events AND in choice events, but not all.*
 
 ## 📜 Content
-
-[TOC]
+[toc]
 
 ## Line Break
 
