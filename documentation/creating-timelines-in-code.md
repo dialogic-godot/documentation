@@ -40,7 +40,7 @@ Dialogic.start(timeline)
 var events : Array = """
 Jowan (Surprised): Wow this is interesting!
 - Yes
-    [background path="res://icon.png"]
+    [background arg="res://icon.png"]
     [wait seconds="1"]
     set MyAutoload.exitement += 20
 - No
@@ -52,3 +52,4 @@ Dialogic.start(timeline)
 ```
 
 *In this case, you have to follow the syntax explained in [this tutorial](timeline-text-syntax.md).*
+
