@@ -5,8 +5,7 @@
 *Text effects are tags that define a position in text and an action that happens, when that position is reached during the reveal of the text. Many text effects take an additional argument. They are useful to change the behaviour of the text revealing (e.g. speed, pauses, skipping, etc.) or to react to specific moments in the text (signal, changing the speakers portrait or sound mood).*
 
 ## 📜 Content
-
-[TOC]
+[toc]
 
 ## Splitting Events
 

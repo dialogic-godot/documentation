@@ -2,11 +2,10 @@
      <div class="header-label dawn">Introduction to Dialogic 2</div>
 </div>
 
-```admonish
-This documentation is for Dialogic 2.
+> [!IMPORTANT]
+> This documentation is for Dialogic 2.
+> Dialogic 2 is still in-development and marked as Alpha, there may be workflow breakage!
 
-Dialogic 2 is still in-development and marked as Alpha, there may be workflow breakage!
-```
 
 ## 📜 Content
 [toc]

@@ -111,9 +111,9 @@ delay modifier, multiplying "Additional Delay".
 By default, if this value is not set, Dialogic uses a multiplier of 1, causing
 no change to the delay.
 
-```admonish
-Every setting added to `Dialogic.Settings` is automatically saved and loaded by Dialogic for the *player*.
-```
+> [!NOTE]
+> Every setting added to `Dialogic.Settings` is automatically saved and loaded by Dialogic for the *player*.
+
 
 ## 5. Auto-Advance Text-Effect
 

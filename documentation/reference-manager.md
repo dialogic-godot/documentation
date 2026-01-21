@@ -27,11 +27,11 @@ Dialogic will sometimes send you here. In those cases it has usually already add
 
 Simply click `Check Selected` which will scan all timelines for the references in the list above. Check if the results look like they contain the thing you want to actually replace. If not just uncheck them. Then click `Replace`.
 
-```admonish
-This performs a destructive operation on all affected timelines. It can not be easily undone if it goes wrong.
-It usually works fine, but if you use custom regexes you should be pretty careful. 
-If you use version control, this would be the perfect moment to commit! 
-```
+> [!WARNING]
+> This performs a destructive operation on all affected timelines. It can not be easily undone if it goes wrong.
+> It usually works fine, but if you use custom regexes you should be pretty careful. 
+> If you use version control, this would be the perfect moment to commit! 
+
 
 The tool will automatically remove any resolved (or irrelevant) renames from the list when you close the window.
 

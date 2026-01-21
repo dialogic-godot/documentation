@@ -24,10 +24,9 @@ Take a look at [Translating Glossaries](translation.md#25-translating-glossaries
 
 ## 3. Implementation
 
-```admonish info
-This section is aimed at programmers who may want to understand how the
-glossaries work under the hood.
-```
+> [!NOTE]
+> This section is aimed at programmers who may want to understand how the glossaries work under the hood.
+
 
 A glossary is a text resource file (`tres`) and after each change to the
 glossary, it has to be saved to the disk or the changes won't persist.

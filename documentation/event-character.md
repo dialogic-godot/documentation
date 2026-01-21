@@ -90,10 +90,10 @@ Moving the container to a preset position is as easy as writing the name of that
 
 In the default "5-Portraits" style layer the defined positions are `leftmost`,`left`, `center`, `right`, `rightmost`.
 
-```admonish
-If you want more/other preset positions you will have to create a custom portrait layer.
-You then have to change the position names that will be suggested in the timeline editor in the Settings>Portraits.
-```
+> [!TIP]
+> If you want more/other preset positions you will have to create a custom portrait layer.
+> You then have to change the position names that will be suggested in the timeline editor in the Settings>Portraits.
+
 
 ##### Using Transform Commands
 
