@@ -25,12 +25,10 @@ Now, let's verify you have correctly installed Dialogic:
 - Tick the `enabled` button next to Dialogic.
 - Restart Godot
 
-## 🚧 How to install the latest WIP Version 🚧
+## 🚧 Installing the latest WIP Version (main branch)
 
-```admonish
-Dialogic is constantly evolving. Oftentimes, fixes for bugs or new features might only be available on the main branch. This is especially true during the alpha and beta phases. If you are interested in using the main branch, it's easy to do so.
+Dialogic is constantly evolving. Oftentimes, fixes for bugs or new features might only be available on the main branch. This is especially true during the alpha and beta phases. If you are interested in using the main developement branch, it's easy to do so.
 Go to [the main page of the repository](https://github.com/dialogic-godot/dialogic) and click on the green `Code` button, then press the `Download ZIP` button. From there, you can install that ZIP's content like a release.
-```
 
 ---
 
@@ -67,11 +65,10 @@ To create a new character, press the `Add Character` button in the sidebar.
 
 As for timelines, you need to select the place to save to and a name.
 
-```admonish
-This name (without `.dch`) is what will be saved whenever you use that character in a timeline and what you will have to write when referencing the character (e.g. `Emilio: This is a text event.`, if the file is named `Emilio.dch`). So make sure to give it a good name.
+> [!NOTE]
+> This name (without `.dch`) is what will be saved whenever you use that character in a timeline and what you will have to write when referencing the character (e.g. `Emilio: This is a text event.`, if the file is named `Emilio.dch`). So make sure to give it a good name.
+> You can change the name that will actually be displayed in game as the `display_name` property.
 
-You can change the name that will actually be displayed in game as the `display_name` property.
-```
 
 Once your character is created, you will see the character editor. This editor has four main sections.
 <img src="/media/character_editor.png" width="600"/>
