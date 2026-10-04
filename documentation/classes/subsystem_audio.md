@@ -166,7 +166,7 @@ Stops audio on all channels.
 
 
 
-# Stops all one-shot sounds.
+Stops all one-shot sounds.
 
 ---
 
