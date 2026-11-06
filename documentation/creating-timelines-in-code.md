@@ -40,7 +40,7 @@ Dialogic.start(timeline)
 var events : Array = """
 Jowan (Surprised): Wow this is interesting!
 - Yes
-    [background path="res://icon.png"]
+    [background arg="res://icon.png"]
     [wait seconds="1"]
     set MyAutoload.exitement += 20
 - No

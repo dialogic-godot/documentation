@@ -15,7 +15,7 @@
 Most events follow a shortcodes-like style:
 
 ```dtl
-[background path="res://icon.png" fade="1.0"]
+[background arg="res://icon.png" fade="1.0"]
 ```
 
 The order of the parameters is not relevant, but they have to be separated by at least one space. All parameters, regardless of type, have to be contained in double quotation marks.
@@ -128,7 +128,7 @@ Timelines use TAB indentation to know what events belong to a choice or conditio
 ## Example timeline
 
 ```dtl
-[background path="res://assets/backgrounds/dialogic_factory.png"]
+[background arg="res://assets/backgrounds/dialogic_factory.png"]
 
 join Jowan left
 Jowan (excited): Hello and welcome to[portrait=confused]...[pause=0.5] Wait? What is this?
