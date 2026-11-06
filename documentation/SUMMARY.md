@@ -25,8 +25,10 @@
   - [Character Event](event-character.md)
   - [Jump, Label, and Return Event](jump-event.md)
 
+- [Customization]()
+  - [Custom Choice Button Extra Data](custom_choice_extra_data.md)
+
 - [Input]()
-  
   - [Auto-Advance](auto-advance.md)
   - [Manual-Advance](manual-advance.md)
   - [Auto-Skip](auto-skip.md)
