@@ -9,7 +9,6 @@ You can also access the Dialogic variables from outside scripts.*
 To fully utilize these variables, this page contains all you need to know.
 
 ## 📜 Content
-
 [toc]
 
 ## 1. The Dialogic variable editor
@@ -136,9 +135,9 @@ Dialogic.VAR.set('my_variable', 20)
 print(Dialogic.VAR.get('Group').get('my_variable'))
 ```
 
-```admonish Warning
-Variables are only accessible after the Dialogic autoload is ready, so do not use them before your nodes are ready either!
-```
+> [!WARNING]
+> Variables are only accessible after the Dialogic autoload is ready, so do not use them before your nodes are ready either!
+
 
 Folders (as well as the root "folder") have some methods that might be useful:
 

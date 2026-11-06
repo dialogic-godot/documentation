@@ -2,11 +2,10 @@
      <div class="header-label dawn">Introduction to Dialogic 2</div>
 </div>
 
-```admonish
-This documentation is for Dialogic 2.
+> [!IMPORTANT]
+> This documentation is for Dialogic 2.
+> Dialogic 2 is still in-development and marked as Alpha, there may be workflow breakage!
 
-Dialogic 2 is still in-development and marked as Alpha, there may be workflow breakage!
-```
 
 ## 📜 Content
 [toc]
@@ -27,14 +26,14 @@ The **Visual Editor** has each event as a movable block with easy to use fields:
 The **Text Editor** allows you to write events in pure text format. It provides syntax highlighting and auto-completion making writing timelines super efficient. You can use any text editor, though. Here is the same timeline in the text format:
 
 ```dtl
-join juliet 1
-juliet: Oh Romeo, what's your favourite game type?
-join romeo 2
-romeo: Oh Juliet, it's simple...
+join Juliet left
+Juliet: Oh Romeo, what's your favorite game type?
+join Romeo right
+Romeo: Oh Juliet, it's simple...
 - Visual Novels
-    jump VNs
-- JRPG
-    jump other_timeline/
+	jump VNs
+- JRPGs
+	jump other_timeline/
 ```
 
 No strings attached; you can mix and match as you please!
@@ -89,7 +88,7 @@ Need further details? Try the search or open an issue on the GitHub repository!
 
 There are several problems to overcome when upgrading from Dialogic 1.
 
-First, Dialogic 1 is exclusively for Godot 3.x, while Dialogic 2 requires Godot 4.3 or higher.
+First, Dialogic 1 is exclusively for Godot 3.x, while Dialogic 2 requires Godot 4.5 or higher.
 Hence, your project must work in that Godot version first, it's a very different engine with plenty of changes.
 
 If you have already made a lot of progress in your game, there is no reason to upgrade. We recommend you stick to Godot 3 and Dialogic 1.

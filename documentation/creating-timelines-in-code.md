@@ -53,3 +53,14 @@ Dialogic.start(timeline)
 
 *In this case, you have to follow the syntax explained in [this tutorial](timeline-text-syntax.md).*
 
+If you wish to create a character resource dynamically in code, you can do the following:
+- Create Character resource in code
+
+```gdscript
+var speaker:String = "Fred"
+var speaker_resource:DialogicCharacter = DialogicCharacter.new()
+speaker_resource.display_name = speaker
+speaker_resource.color = Color.WHITE
+speaker_resource.set_identifier(speaker)
+text_event.character = speaker_resource
+```

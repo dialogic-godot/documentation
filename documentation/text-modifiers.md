@@ -7,8 +7,7 @@
 *Most text modifiers work in text events AND in choice events, but not all.*
 
 ## 📜 Content
-
-[TOC]
+[toc]
 
 ## Line Break
 
@@ -48,7 +47,7 @@ If a text is encountered multiple times during your game, this can be a nice way
 
 **Supports:** *Text Events, Choice Events*
 
-This makes it easy to insert conditional text into text events without adding a whole condition event and two text events.
+This makes it easy to insert conditional text into text events without adding a whole condition event and two text events. 
 
 ---
 
