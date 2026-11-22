@@ -56,6 +56,6 @@ Which is equivalent to this in the text editor:
 ```
 
 ## Details
-You choice button script should extend [DialogicNode_ChoiceButton](/classes/class_dialogicnode_choicebutton.md).
+Your _choice button_ script should extend [DialogicNode_ChoiceButton](/classes/class_dialogicnode_choicebutton.md).
 
 If you overwrite `_load_info()` but still want Dialogic's basic text and condition logic to apply, call `super(info)` in it. 
